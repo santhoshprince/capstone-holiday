@@ -1,0 +1,9 @@
+.content {
+  background-color: #ff9900; /* Content background */
+  background-size: cover; /* Ensure the background covers the area */
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+  color: black;
+  /* background-image: url('path/to/your/content-background.jpg'); */
+}
