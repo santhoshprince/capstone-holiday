@@ -9,6 +9,7 @@ import '../assets/card/Tourcard.css'; // For styling the page
 // Array of tour details
 const tourPackages = [
   {
+    id:0,
     title: "Bali Tour Packages from Chennai | Best Travel Agency in Chennai",
     subtitle: "Bali Tour Packages from Chennai",
     duration: "6 Days 5 Nights",
@@ -17,6 +18,7 @@ const tourPackages = [
     imageUrl: "https://example.com/bali-tour.jpg"
   },
   {
+    id:1,
     title: "Bali Trip with Capstone Holidays",
     subtitle: "Explore Bali with Capstone",
     duration: "6 Days 5 Nights",
@@ -25,6 +27,7 @@ const tourPackages = [
     imageUrl: "https://example.com/capstone-bali-tour.jpg"
   },
   {
+    id:2,
     title: "Bali Adventure Tour",
     subtitle: "Exciting Adventure Activities",
     duration: "5 Days 4 Nights",
@@ -33,6 +36,7 @@ const tourPackages = [
     imageUrl: "https://example.com/adventure-tour.jpg"
   },
   {
+    id:3,
     title: "Bali Family Tour",
     subtitle: "Family Fun in Bali",
     duration: "7 Days 6 Nights",
@@ -41,6 +45,7 @@ const tourPackages = [
     imageUrl: "https://example.com/family-tour.jpg"
   },
   {
+    id:4,
     title: "Bali Luxury Tour",
     subtitle: "Luxurious Vacation in Bali",
     duration: "8 Days 7 Nights",
@@ -53,7 +58,6 @@ const tourPackages = [
 const Bali = () => {
   return (
     <div>
-      <Header />
       <ContentSection
         title="Content Area"
         backgroundImage="path/to/your/content-background.jpg"
@@ -75,14 +79,16 @@ const Bali = () => {
                   lg={24} // Two cards per row on large devices
                   xl={24}  // Three cards per row on extra large devices
                 >
-                  <TourCard
-                    title={tour.title}
-                    subtitle={tour.subtitle}
-                    duration={tour.duration}
-                    description={tour.description}
-                    price={tour.price}
-                    imageUrl={tour.imageUrl}
-                  />
+                 <TourCard
+            key={tour.id}
+            title={tour.title}
+            subtitle={tour.subtitle}
+            duration={tour.duration}
+            description={tour.description}
+            price={tour.price}
+            imageUrl={tour.imageUrl}
+            id={tour.id} // Pass the id here
+          />
                 </Col>
               ))}
             </Row>
@@ -109,7 +115,6 @@ const Bali = () => {
           </Col>
         </Row>
       </section>
-      <Footer />
     </div>
   );
 };

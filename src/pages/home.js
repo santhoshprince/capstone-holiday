@@ -4,7 +4,6 @@ import Footer from '../components/footer';
 const Home = () => {
   return (
     <div>
-      <Header />
       <section className="hero">
         <h1>Welcome to Capstone Holidays</h1>
         <p>Explore the world with us!</p>
@@ -15,7 +14,6 @@ const Home = () => {
           {/* Add TourCards here */}
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

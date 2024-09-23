@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, Button } from 'antd';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../assets/card/Tourcard.css';
 
-const TourCard = ({ title, subtitle, duration, description, price, imageUrl }) => {
+const TourCard = ({ title, subtitle, duration, description, price, imageUrl, id }) => {
   return (
     <Card className="tour-card" hoverable>
       <div className="tour-content">
@@ -23,7 +24,9 @@ const TourCard = ({ title, subtitle, duration, description, price, imageUrl }) =
         <div className="tour-price">
           <h4>From</h4>
           <h3 className="price">₹ {price}</h3>
-          <Button type="primary">View Details</Button>
+          <Link to={`/international/bali/${id}`}> {/* Link to details page */}
+            <Button type="primary">View Details</Button>
+          </Link>
         </div>
       </div>
     </Card>
