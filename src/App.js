@@ -7,12 +7,14 @@ import Bali from './desinationpage/bali';
 import Header from './components/header';
 import Footer from './components/footer';
 import BaliDetails from './detailspage/Balidetails'; // Import your details component
+import Layout from './components/layout';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
     <Router>
+       <Layout>
        <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,6 +30,7 @@ function App() {
         <Route path="/domestic/andaman" element={<Andaman />} /> */}
       </Routes>
       <Footer />
+      </Layout>
     </Router>
   );
 }
