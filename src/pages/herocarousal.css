@@ -1,0 +1,132 @@
+/* src/pages/herocarousal.css */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute; /* Change to absolute to overlap slides */
+    opacity: 0; /* Start with invisible slides */
+    transition: opacity 1s ease-in-out; /* Smooth transition for slide change */
+  }
+  
+  .slide.active {
+    opacity: 1; /* Fully visible for the active slide */
+  }
+  
+  .slide-content {
+    color: white; /* Change text color for better visibility */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure content is above background */
+    padding: 20px; /* Padding around text */
+    transition: transform 1s ease-in-out; /* Smooth content transition */
+    transform: translateY(30px); /* Start lower */
+  }
+  
+  .slide.active .slide-content {
+    transform: translateY(0); /* Slide content into view */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increased font size */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .btn-group {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50px; /* Width of circular button */
+    height: 50px; /* Height of circular button */
+    border-radius: 50%; /* Make the button circular */
+    z-index: 2; /* Above the slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken button on hover */
+  }
+  
+  .slider-button.left {
+    left: 20px; /* Adjust position */
+  }
+  
+  .slider-button.right {
+    right: 20px; /* Adjust position */
+  }
+  
+  .btn-group {
+    display: flex; /* Flexbox to align buttons in a row */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .btn {
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* Text color */
+    padding: 12px 42px; /* Padding around text */
+    border: 2px solid #e9e9e9; /* Transparent border */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Button text size */
+    position: relative; /* Position relative for arrow styling */
+    overflow: hidden; /* Hide overflow for the arrow */
+    transition: color 0.3s ease, border 0.3s ease; /* Smooth transition for color and border */
+  }
+  
+  .btn:hover {
+    color: white; /* Change text color on hover */
+    border: 2px solid transparent; /* Keep the transparent border */
+    background: linear-gradient(45deg, #ff6b6b, #f7a4a4); /* Gradient background on hover */
+    background-clip: padding-box; /* Ensures background applies to padding area */
+  }
+  
+  .btn::after {
+    content: ''; /* Create an empty content for arrow */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Position it to the right */
+    width: 0; /* Initial width */
+    height: 0; /* Initial height */
+    border-top: 8px solid transparent; /* Top triangle */
+    border-bottom: 8px solid transparent; /* Bottom triangle */
+    border-left: 10px solid white; /* Left triangle (arrow) */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    transition: right 0.3s ease; /* Smooth transition for the arrow */
+  }
+  
+  .btn:hover::after {
+    right: 10px; /* Move arrow closer on hover */
+  }
+  
+  
+
+  

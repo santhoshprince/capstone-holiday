@@ -4,6 +4,7 @@ import Home from './pages/home';
 import About from './pages/aboutus';
 import Contact from './pages/contact';
 import Bali from './desinationpage/bali';
+
 import Header from './components/header';
 import Footer from './components/footer';
 import BaliDetails from './detailspage/Balidetails'; // Import your details component
