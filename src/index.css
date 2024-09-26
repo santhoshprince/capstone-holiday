@@ -24277,3 +24277,10 @@ nav ul li.dropdown:hover .dropdown-content {
     font-size: 20px;
     margin-left: 10px;
 }
+.tournew{
+  display: block !important;
+}
+.boxnew a {
+
+font-size: 21px !important;
+}

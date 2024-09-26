@@ -411,7 +411,7 @@ style={{ backgroundImage: `url(${category1})` }}>
                     style={{ width: '100%', height: '250px', objectFit: 'cover' }} 
                     />
                   </div>
-                  <div className="tour-content">
+                  <div className="tour-content tournew">
                     <h3 className="box-title">
                       <a href="tour-details.html">{tour.title}</a>
                     </h3>
@@ -780,8 +780,8 @@ style={{ backgroundImage: `url(${category1})` }}>
                     <a href="blog.html">5 Days</a>
                     
                   </div>
-                  <h4>From <span className='prince'>₹ 9,350</span></h4>
-                  <h3 className="box-title">
+                  <h4 style={{marginBottom:"15px"}}>From <span className='prince'>₹ 9,350</span></h4>
+                  <h3 className="box-title boxnew">
                     <a href="blog-details.html">
                     Thailand Group Tour Package – 4N / 5D
                     </a>
@@ -800,8 +800,8 @@ style={{ backgroundImage: `url(${category1})` }}>
                     <a className="author" href="blog.html">4 Nights</a>
                     <a href="blog.html">5 Days</a>
                   </div>
-                  <h4>From <span className='prince'>₹ 21,250</span></h4>
-                  <h3 className="box-title">
+                  <h4 style={{marginBottom:"15px"}}>From <span className='prince'>₹ 21,250</span></h4>
+                  <h3 className="box-title boxnew">
                     <a href="blog-details.html">
                     Sri Lanka Group Tour Package – 4N/5D
                     </a>
@@ -820,8 +820,8 @@ style={{ backgroundImage: `url(${category1})` }}>
                     <a className="author" href="blog.html">4 Nights</a>
                     <a href="blog.html">5 Days</a>
                   </div>
-                  <h4>From <span className='prince'>₹ 34,000</span></h4>
-                  <h3 className="box-title">
+                  <h4 style={{marginBottom:"15px"}}>From <span className='prince'>₹ 34,000</span></h4>
+                  <h3 className="box-title boxnew">
                     <a href="blog-details.html">
                     Singapore Malaysia Group Tour – 4N / 5D
                     </a>
