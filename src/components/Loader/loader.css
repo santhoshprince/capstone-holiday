@@ -33,3 +33,19 @@
     }
   }
   
+  .global-loader .fa-plane {
+    background: linear-gradient(45deg, red, yellow); /* Gradient from red to yellow */
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* Fill text with gradient */
+    color: transparent; /* Ensure color is transparent */
+    font-size: 50px; /* Adjust icon size as needed */
+    display: inline-block; /* Ensure proper size for gradient */
+    margin-right: 5px; /* Space between icon and text */
+    transition: color 0.3s ease; /* Optional transition for hover effects */
+  }
+  
+  /* Optional: Change gradient on hover */
+  .global-loader .fa-plane:hover {
+    background: linear-gradient(45deg, yellow, red); /* Reverse the gradient on hover */
+  }
+  

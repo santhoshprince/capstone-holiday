@@ -13,7 +13,10 @@ const Header = () => {
     <header>
       <nav className="main-header">
         <div className="logo">
+          <a href='/'>
           <img src={logo} alt="Tourm Logo" />
+          </a>
+         
         </div>
         
         <ul className="main-menu">
@@ -27,7 +30,7 @@ const Header = () => {
               <ul className="dropdown">
                 <li className="dropdown-container">
                 <div className="dropdown-section">
-                    <strong>Domestic</strong>
+                    <strong>Domestic Packages</strong>
                     <ul>
                       <li>
                         <Link to="#">
@@ -42,7 +45,7 @@ const Header = () => {
                     </ul>
                   </div>
                   <div className="dropdown-section">
-                    <strong>International</strong>
+                    <strong>International Packages</strong>
                     <ul>
                       <li>
                         <Link to="#">

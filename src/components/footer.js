@@ -57,7 +57,8 @@ const galleryImages = [
               <div className="widget footer-widget">
                 <div className="th-widget-about">
                   <div className="about-logo">
-                    <a href="home-travel.html">
+                    <a href="/">
+                    
                       <img src={logo}alt="Tourm" />
                     </a>
                   </div>

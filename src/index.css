@@ -26,10 +26,14 @@
   --section-title-space: 60px;
   --ripple-ani-duration: 2s;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:wght@300..700&display=swap');
+
+/* Other styles here */
+
 html,
 body {
   scroll-behavior: auto !important;
+ 
 }
 body {
   font-family: var(--body-font);
@@ -7550,6 +7554,7 @@ ol.wp-block-rss {
   -ms-flex: none;
   flex: none;
   width: 40px;
+  display: contents !important;
   height: 40px;
   line-height: 37px;
   background-color: #e9f6f9;

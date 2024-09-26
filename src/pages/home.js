@@ -780,7 +780,7 @@ style={{ backgroundImage: `url(${category1})` }}>
                     <a href="blog.html">5 Days</a>
                     
                   </div>
-                  <h4>From <span className='prince' style={{color:"red"}}>₹ 9,350</span></h4>
+                  <h4>From <span className='prince'>₹ 9,350</span></h4>
                   <h3 className="box-title">
                     <a href="blog-details.html">
                     Thailand Group Tour Package – 4N / 5D
