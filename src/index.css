@@ -24256,3 +24256,8 @@ nav ul li.dropdown:hover .dropdown-content {
   opacity: 1;
   transform: translateX(5px);
 }
+.prince{
+  color: #1e8fb3;
+    font-size: 20px;
+    margin-left: 10px;
+}

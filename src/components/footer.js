@@ -62,8 +62,7 @@ const galleryImages = [
                     </a>
                   </div>
                   <p className="about-text">
-                    Rapidiously myocardinate cross-platform intellectual capital
-                    model. Appropriately create interactive infrastructures
+                  Join us Today as we travel the world and take you on incredible adventures to beautiful places
                   </p>
                   <div className="th-social">
                     <a href="https://www.facebook.com/">
@@ -110,12 +109,12 @@ const galleryImages = [
                     <div className="details">
                       <p>
                         <a href="tel:+01234567890" className="info-box_link">
-                          +01 234 567 890
+                        +91 73584 94431
                         </a>
                       </p>
                       <p>
                         <a href="tel:+09876543210" className="info-box_link">
-                          +09 876 543 210
+                         +91 89254 04222
                         </a>
                       </p>
                     </div>
@@ -127,12 +126,7 @@ const galleryImages = [
                     <div className="details">
                       <p>
                         <a href="mailto:mailinfo00@tourm.com" className="info-box_link">
-                          mailinfo00@tourm.com
-                        </a>
-                      </p>
-                      <p>
-                        <a href="mailto:support24@tourm.com" className="info-box_link">
-                          support24@tourm.com
+                        tour@capstoneholidays.com
                         </a>
                       </p>
                     </div>
@@ -142,7 +136,7 @@ const galleryImages = [
                       <img src={location1} alt="img" />
                     </div>
                     <div className="details">
-                      <p>789 Inner Lane, Holy park, California, USA</p>
+                      <p>PSK, Booshnam Mahal, 127, 2nd floor, Velachery Bypass Rd, Velachery, Chennai, Tamil Nadu 600042</p>
                     </div>
                   </div>
                 </div>
@@ -176,7 +170,7 @@ const galleryImages = [
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <p className="copyright-text">
-                Copyright 2024 <a href="home-travel.html">Tourm</a>. All Rights Reserved.
+                Copyright 2024  Capstone Holidays All Rights Reserved | Privacy Policy
               </p>
             </div>
             <div className="col-md-6 text-end d-none d-md-block">

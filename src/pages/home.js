@@ -32,9 +32,9 @@ import normal3 from '../img/normal/about_1_3.jpg'
 import icon1 from '../img/icon/map3.svg'
 import icon2 from '../img/icon/guide.svg'
 import tour1 from "../img/tour/tour-1_1.jpg"
-import tour2 from "../img/tour/tour-1_2.jpg"
-import tour3 from "../img/tour/tour-1_3.jpg"
-import tour4 from "../img/tour/tour_3_4.jpg"
+import tour2 from "../img/tour/tour_3_6.jpg"
+import tour3 from "../img/tour/tour_3_1.jpg"
+import tour4 from "../img/tour/tour_3_2.jpg"
 import gallery1 from "../img/gallery/gallery_1_1.jpg"
 import gallery2 from "../img/gallery/gallery_1_2.jpg"
 import gallery3 from "../img/gallery/gallery_1_3.jpg"
@@ -81,10 +81,10 @@ const HeroSlider = () => {
             <div className="container">
               <div className="hero-style1">
                 <span className="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s">
-                  Get unforgettable pleasure with us
+                 Capstone Holidays
                 </span>
                 <h1 className="hero-title" data-ani="slideinup" data-ani-delay="0.4s">
-                  Natural Wonder of the world
+                  Be Ready Explore New Things
                 </h1>
                 <div className="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                   <a href="tour.html" className="th-btn th-icon">Explore Tours</a>
@@ -183,7 +183,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata1} alt="Cruises"  style={{ width: '250px', height: '250px' }}/>
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Cruises</a>
+               <a href="destination.html">Vietnam Group Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -196,7 +196,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata2} alt="Cruises" style={{ width: '250px', height: '250px' }}/>
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Hiking</a>
+               <a href="destination.html">Thailand Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -209,7 +209,8 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata3} alt="Cruises" style={{ width: '250px', height: '250px' }} />
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Airbirds</a>
+               <a href="destination.html">
+               Goa Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -220,7 +221,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata4} alt="Cruises"  style={{ width: '250px', height: '250px' }} />
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Airbirds</a>
+               <a href="destination.html">Bali Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -231,7 +232,8 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata5} alt="Cruises" style={{ width: '250px', height: '250px' }} />
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Airbirds</a>
+               <a href="destination.html">
+               Andaman Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -242,7 +244,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata6} alt="Cruises"  style={{ width: '250px', height: '250px' }} />
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Airbirds</a>
+               <a href="destination.html">Maldives Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -253,7 +255,8 @@ style={{ backgroundImage: `url(${category1})` }}>
              <img src={cata7} alt="Cruises" style={{ width: '250px', height: '250px' }}/>
              </div>
              <h3 className="box-title">
-               <a href="destination.html">Airbirds</a>
+               <a href="destination.html">Vietnam Tour
+               </a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
            </div>
@@ -284,14 +287,12 @@ style={{ backgroundImage: `url(${category1})` }}>
         <div className="col-xl-6">
           <div className="ps-xl-4 ms-xl-2">
             <div className="title-area mb-20 pe-xl-5 me-xl-5">
-              <span className="sub-title style1">Let’s Go Together</span>
+              <span className="sub-title style1">TOP 4 DECISIONS TO CHOOSE US</span>
               <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
-                Plan Your Trip With us
+              Your thirst for adventurous travelling quenches here!
               </h2>
               <p className="sec-text mb-30">
-                There are many variations of passages of available but the
-                majority have suffered alteration in some form, by injected
-                hum randomised words which don't look even slightly.
+              Certified Consultants: Capstone loves Communication!. Our certified consultants are known for acknowledgement. All your queries will be responded back with an answer within an hour from our Travel Agency in Chennai, Velachery.
               </p>
             </div>
             <div className="about-item-wrap">
@@ -376,14 +377,14 @@ style={{ backgroundImage: `url(${category1})` }}>
             {[
               {
                 img:tour1,
-                title: "Greece Tour Package",
+                title: "Vietnam Group Tour",
                 rating: "4.8",
                 price: "$980.00",
                 duration: "7 Days"
               },
               {
                 img: tour2,
-                title: "Italy Tour Package",
+                title: "Thailand Tour",
                 rating: "4.8",
                 price: "$980.00",
                 duration: "7 Days"
@@ -743,7 +744,7 @@ style={{ backgroundImage: `url(${category1})` }}>
             <div className="col-md-7">
               <div className="title-area mb-md-0">
                 <span className="sub-title">About Us Restaurant</span>
-                <h2 className="sec-title">News & Articles From Tourm</h2>
+                <h2 className="sec-title">News & Package Details</h2>
               </div>
             </div>
             <div className="col-md-auto">
@@ -775,12 +776,14 @@ style={{ backgroundImage: `url(${category1})` }}>
                 </div>
                 <div className="blog-box_content">
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">July 05 2024</a>
-                    <a href="blog.html">6 min read</a>
+                    <a className="author" href="blog.html">4 Nights</a>
+                    <a href="blog.html">5 Days</a>
+                    
                   </div>
+                  <h4>From <span className='prince' style={{color:"red"}}>₹ 9,350</span></h4>
                   <h3 className="box-title">
                     <a href="blog-details.html">
-                      10 Reason why you should visit New Jersey
+                    Thailand Group Tour Package – 4N / 5D
                     </a>
                   </h3>
                   <a href="blog-details.html" className="th-btn style4 th-icon">Read More</a>
@@ -794,12 +797,13 @@ style={{ backgroundImage: `url(${category1})` }}>
                 </div>
                 <div className="blog-box_content">
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">July 06 2024</a>
-                    <a href="blog.html">7 min read</a>
+                    <a className="author" href="blog.html">4 Nights</a>
+                    <a href="blog.html">5 Days</a>
                   </div>
+                  <h4>From <span className='prince'>₹ 21,250</span></h4>
                   <h3 className="box-title">
                     <a href="blog-details.html">
-                      The best time to visit Japan & enjoy the cherry blossoms
+                    Sri Lanka Group Tour Package – 4N/5D
                     </a>
                   </h3>
                   <a href="blog-details.html" className="th-btn style4 th-icon">Read More</a>
@@ -813,12 +817,13 @@ style={{ backgroundImage: `url(${category1})` }}>
                 </div>
                 <div className="blog-box_content">
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">July 07 2024</a>
-                    <a href="blog.html">8 min read</a>
+                    <a className="author" href="blog.html">4 Nights</a>
+                    <a href="blog.html">5 Days</a>
                   </div>
+                  <h4>From <span className='prince'>₹ 34,000</span></h4>
                   <h3 className="box-title">
                     <a href="blog-details.html">
-                    The 7 amazing destinations for adventure seekers
+                    Singapore Malaysia Group Tour – 4N / 5D
                     </a>
                   </h3>
                   <a href="blog-details.html" className="th-btn style4 th-icon">Read More</a>
