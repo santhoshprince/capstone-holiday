@@ -11,6 +11,8 @@ import BaliDetails from './detailspage/Balidetails'; // Import your details comp
 import Layout from './components/layout';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'typeface-poppins';
+
 
 
 function App() {

@@ -182,7 +182,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata1} alt="Cruises"  style={{ width: '250px', height: '250px' }}/>
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">Vietnam Group Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
@@ -195,7 +195,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata2} alt="Cruises" style={{ width: '250px', height: '250px' }}/>
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">Thailand Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
@@ -208,7 +208,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata3} alt="Cruises" style={{ width: '250px', height: '250px' }} />
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">
                Goa Tour</a>
              </h3>
@@ -220,7 +220,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata4} alt="Cruises"  style={{ width: '250px', height: '250px' }} />
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">Bali Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
@@ -231,7 +231,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata5} alt="Cruises" style={{ width: '250px', height: '250px' }} />
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">
                Andaman Tour</a>
              </h3>
@@ -243,7 +243,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata6} alt="Cruises"  style={{ width: '250px', height: '250px' }} />
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">Maldives Tour</a>
              </h3>
              <a className="line-btn" href="destination.html">See more</a>
@@ -254,7 +254,7 @@ style={{ backgroundImage: `url(${category1})` }}>
              <div className="box-img global-img">
              <img src={cata7} alt="Cruises" style={{ width: '250px', height: '250px' }}/>
              </div>
-             <h3 className="box-title">
+             <h3 className="box-title boxnew">
                <a href="destination.html">Vietnam Tour
                </a>
              </h3>
@@ -288,7 +288,7 @@ style={{ backgroundImage: `url(${category1})` }}>
           <div className="ps-xl-4 ms-xl-2">
             <div className="title-area mb-20 pe-xl-5 me-xl-5">
               <span className="sub-title style1">TOP 4 DECISIONS TO CHOOSE US</span>
-              <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
+              <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading heading-new">
               Your thirst for adventurous travelling quenches here!
               </h2>
               <p className="sec-text mb-30">
@@ -341,7 +341,7 @@ style={{ backgroundImage: `url(${category1})` }}>
           <div className="col-lg-6 offset-lg-3">
             <div className="title-area text-center">
               <span className="sub-title">Best Place For You</span>
-              <h2 className="sec-title">Most Popular Tour</h2>
+              <h2 className="sec-title sec-new">Most Popular Tour</h2>
               <p className="sec-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
