@@ -24308,3 +24308,61 @@ font-size: 19px !important;
 .swipper-new .swiper-pagination{
   bottom: -20px !important ;
 }
+
+/* Keyframe for fadeIn effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in the default position */
+  }
+}
+
+/* Applying the fadeIn animation */
+.fadeIn {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Control the delay for different elements */
+[data-ani-delay="0.2s"] {
+  animation-delay: 0.2s;
+}
+[data-ani-delay="0.4s"] {
+  animation-delay: 0.4s;
+}
+[data-ani-delay="0.6s"] {
+  animation-delay: 0.6s;
+}
+
+/* Optional: Adjust image transition for a smooth fade */
+.th-hero-bg {
+  transition: background-image 1.5s ease-in-out; /* Smooth transition for the image */
+}
+
+
+.swiper {
+  width: 100% !important;
+  height: 100vh !important; /* Full screen height */
+}
+
+.hero-inner {
+  position: relative !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.th-hero-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  z-index: -1 !important; /* Ensure background is behind content */
+}

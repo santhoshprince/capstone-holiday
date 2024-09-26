@@ -5,7 +5,7 @@ import "../css/magnific-popup.min.css";
 import "../css/swiper-bundle.min.css";
 import "../css/style.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Pagination, Navigation, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -57,9 +57,13 @@ const HeroSlider = () => {
     <>
       <div className="th-hero-wrapper hero-1" id="hero">
         <Swiper
-          modules={[Pagination, Navigation, EffectFade]}
+          modules={[Pagination, Navigation, EffectFade,Autoplay]}
           effect="fade"
           pagination={{ clickable: true, el: ".slider-pagination" }}
+          autoplay={{
+            delay: 3000, // Automatically transition every 5 seconds
+            disableOnInteraction: false,
+          }}
           navigation={{
             prevEl: ".slider-prev",
             nextEl: ".slider-next",
