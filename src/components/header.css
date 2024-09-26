@@ -37,16 +37,31 @@
 
 /* Links in Menu */
 .main-menu a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px;
-    transition: color 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.main-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff; /* Underline color */
+  transition: width 0.3s ease;
+}
+.main-menu a:hover::after {
+  width: 100%; /* Full underline on hover */
 }
 
+
 .main-menu a:hover {
-    color: #007bff; /* Change color on hover */
+  color: #007bff; /* Change color on hover */
 }
 
 /* Dropdown Styling */
@@ -172,10 +187,28 @@
   }
   
   .dropdown-section a {
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Text color */
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .dropdown-section a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Underline color */
+    transition: width 0.3s ease;
+  }
+  .dropdown-section a:hover::after {
+    width: 100%; /* Full underline on hover */
   }
   
+  .dropdown-section a:hover {
+    color: #007bff; /* Change color on hover */
+  }
   /* Change hover effect for dropdown links */
   .dropdown-section a:hover {
     color: #007bff; /* Change color on hover */
