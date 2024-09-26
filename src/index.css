@@ -20041,8 +20041,8 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 .tour-box .tour-action .th-btn:after {
-  -webkit-mask-image: url('../img/icon/arrow-right3.svg');
-  mask-image: url("../src/img/icon/arrow-right3.svg");
+  -webkit-mask-image: url('./img/icon/arrow-right3.svg');
+  mask-image: url("./img/icon/arrow-right3.svg");
 }
 .tour-box:hover {
   box-shadow: 0px 20px 20px rgba(204, 204, 204, 0.25);
@@ -20190,8 +20190,8 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--white-color);
 }
 .tour-card .tour-action .th-btn:after {
-  -webkit-mask-image: url('../src/img/icon/arrow-right3.svg');
-  mask-image: url("../src/img/icon/arrow-right3.svg");
+  -webkit-mask-image: url('./img/icon/arrow-right3.svg');
+  mask-image: url("./img/icon/arrow-right3.svg");
 }
 .tour-card .tour-action .th-btn:hover {
   color: var(--black-color2);
@@ -21972,8 +21972,8 @@ span.select2-selection.select2-selection--single:focus {
   padding: 11.5px 34px;
 }
 .destination-box .th-btn:after {
-  -webkit-mask-image: url("../src/img/icon/arrow-right3.svg");
-  mask-image: url("../src/img/icon/arrow-right3.svg");
+  -webkit-mask-image: url("./img/icon/arrow-right3.svg");
+  mask-image: url("./img/icon/arrow-right3.svg");
   width: 16px;
   height: 16px;
 }
