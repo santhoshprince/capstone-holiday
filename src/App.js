@@ -4,13 +4,14 @@ import Home from './pages/home';
 import About from './pages/aboutus';
 import Contact from './pages/contact';
 import Bali from './desinationpage/bali';
-
+import './index.css';
 import Header from './components/header';
 import Footer from './components/footer';
 import BaliDetails from './detailspage/Balidetails'; // Import your details component
 import Layout from './components/layout';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (
