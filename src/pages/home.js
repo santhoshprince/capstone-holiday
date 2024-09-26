@@ -55,7 +55,7 @@ import blog4 from "../img/blog/blog_2_1.jpg";
 const HeroSlider = () => {
   return (
     <>
-      <div className="th-hero-wrapper hero-1" id="hero">
+      <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         <Swiper
           modules={[Pagination, Navigation, EffectFade,Autoplay]}
           effect="fade"
