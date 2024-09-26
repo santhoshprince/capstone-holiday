@@ -24304,3 +24304,7 @@ font-size: 19px !important;
 .sec-new{
   font-family: Poppins-Medium !important;
 }
+
+.swipper-new .swiper-pagination{
+  bottom: -20px !important ;
+}
