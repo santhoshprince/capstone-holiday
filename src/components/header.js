@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
+import logo from "../img/logo/capstonelogo.png"
+import "../components/header.css"
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -10,39 +11,26 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li 
-            onMouseEnter={handleMouseEnter} 
-            onMouseLeave={handleMouseLeave} 
-            className="dropdown"
-          >
-            <Link to="#">Tour Packages</Link>
-            {showDropdown && (
-              <div className="dropdown-content">
-                <div className="package-group">
-                  <h4>International Packages</h4>
-                  <ul>
-                    <li><Link to="/international/bali"><i className="fas fa-plane"></i> Bali</Link></li>
-                    <li><Link to="/international/dubai"><i className="fas fa-plane"></i> Dubai</Link></li>
-                  </ul>
-                </div>
-                <div className="package-group">
-                  <h4>Domestic Packages</h4>
-                  <ul>
-                    <li><Link to="/domestic/goa"><i className="fas fa-plane"></i> Goa</Link></li>
-                    <li><Link to="/domestic/andaman"><i className="fas fa-plane"></i> Andaman</Link></li>
-                  </ul>
-                </div>
-              </div>
-            )}
-          </li>
-          <li><Link to="/contact">Contact Us</Link></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="main-header">
+      <div class="logo">
+        <img src={logo} alt="Tourm Logo" />
+      </div>
+      
+      <ul class="main-menu">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Tour Package</a></li>
+        <li><a href="#">Group Tour</a></li>
+        <li><a href="#">Luxury Tour</a></li>
+        <li><a href="#">Honeymoon Tour</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+  
+      <div class="header-button">
+        <a href="#" class="th-btn">Book Now</a>
+      </div>
+    </nav>
+  </header>
   );
 };
 

@@ -1,0 +1,158 @@
+/* General Reset for Padding and Margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Bar Styling */
+  .top-bar {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .top-bar .contact-info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top-bar-links a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .top-bar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Header Section */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    /* border-bottom: 1px solid #e0e0e0; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust the logo size as needed */
+  }
+  
+  .main-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    position: relative;
+  }
+  
+  .main-menu > li {
+    position: relative;
+  }
+  
+  .main-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px;
+  }
+  
+  .main-menu a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Dropdown Styling */
+  .dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #fff;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown li {
+    padding: 10px 20px;
+  }
+  
+  .dropdown a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show the dropdown on hover */
+  .main-menu li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Button Styling */
+  .header-button {
+    display: flex;
+  }
+  
+  .th-btn {
+    background-color: #00475e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .th-btn:hover {
+    background-color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .main-menu {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  
+    .dropdown {
+      position: static;
+    }
+  
+    .header-button {
+      margin-top: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .th-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

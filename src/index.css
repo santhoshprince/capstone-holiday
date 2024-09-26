@@ -6600,6 +6600,7 @@ ol.wp-block-rss {
   font-family: var(--body-font);
   color: var(--black-color2);
   text-transform: capitalize;
+  text-decoration: none;
 }
 .main-menu a:hover {
   color: var(--theme-color);
@@ -6613,14 +6614,23 @@ ol.wp-block-rss {
 .main-menu > ul > li > a:hover {
   color: var(--theme-color);
 }
-.main-menu ul {
+/* .main-menu ul {
   margin: 0;
   padding: 0;
+} */
+.main-menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
-.main-menu ul li {
+/* .main-menu ul li {
   list-style-type: none;
   display: inline-block;
   position: relative;
+} */
+.main-menu ul li {
+  padding: 10px 20px;
 }
 .main-menu ul li.menu-item-has-children > a:after {
   content: "\f107";
@@ -6782,16 +6792,9 @@ ol.wp-block-rss {
   font-size: 12px;
 }
 .header-button {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  justify-content: flex-end;
   align-items: center;
-  gap: 15px;
 }
 .header-button .th-btn {
   margin-left: 15px;
@@ -14105,6 +14108,14 @@ span.select2-selection.select2-selection--single:focus {
 .tinv-wishlist .social-buttons li a.social:first-child {
   margin-left: 0;
 }
+
+.th-btn {
+  padding: 10px 20px;
+  background-color: #00475e;
+  color: #fff;
+  border-radius: 25px;
+}
+
 .tinv-wishlist .social-buttons li a.social i {
   line-height: inherit;
 }
@@ -24109,7 +24120,7 @@ span.select2-selection.select2-selection--single:focus {
 
 /* Header styles */
 header {
-  background-color: #333;
+  /* background-color: #333; */
   padding: 10px;
   position: relative;
 }
