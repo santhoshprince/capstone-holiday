@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../img/logo/capstonelogo.png";
+import "../components/header.css";
 
-import logo from "../img/logo/capstonelogo.png"
-import "../components/header.css"
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -11,26 +11,67 @@ const Header = () => {
 
   return (
     <header>
-    <nav class="main-header">
-      <div class="logo">
-        <img src={logo} alt="Tourm Logo" />
-      </div>
-      
-      <ul class="main-menu">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Tour Package</a></li>
-        <li><a href="#">Group Tour</a></li>
-        <li><a href="#">Luxury Tour</a></li>
-        <li><a href="#">Honeymoon Tour</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-  
-      <div class="header-button">
-        <a href="#" class="th-btn">Book Now</a>
-      </div>
-    </nav>
-  </header>
+      <nav className="main-header">
+        <div className="logo">
+          <img src={logo} alt="Tourm Logo" />
+        </div>
+        
+        <ul className="main-menu">
+          <li><Link to="#">About Us</Link></li>
+          <li 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link to="#">Tour Package</Link>
+            {showDropdown && (
+              <ul className="dropdown">
+                <li className="dropdown-container">
+                <div className="dropdown-section">
+                    <strong>Domestic</strong>
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Goa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Kerala
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="dropdown-section">
+                    <strong>International</strong>
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Dubai
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Qatar
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            )}
+          </li>
+          <li><Link to="#">Group Tour</Link></li>
+          <li><Link to="#">Luxury Tour</Link></li>
+          <li><Link to="#">Honeymoon Tour</Link></li>
+          <li><Link to="#">Contact Us</Link></li>
+          <li><Link to="#">Blog</Link></li>
+        </ul>
+
+        <div className="header-button">
+          <Link to="#" className="th-btn">Book Now</Link>
+        </div>
+      </nav>
+    </header>
   );
 };
 

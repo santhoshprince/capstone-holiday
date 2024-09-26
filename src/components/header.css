@@ -3,115 +3,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  /* Top Bar Styling */
-  .top-bar {
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .top-bar .contact-info {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .top-bar-links a {
-    margin-left: 20px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .top-bar-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Header Section */
-  .main-header {
+}
+
+/* Main Header Section */
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     background-color: #fff;
-    /* border-bottom: 1px solid #e0e0e0; */
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  
-  .logo img {
+}
+
+/* Logo Styling */
+.logo img {
     width: 150px; /* Adjust the logo size as needed */
-  }
-  
-  .main-menu {
+}
+
+/* Main Menu Styling */
+.main-menu {
     display: flex;
     gap: 30px;
     list-style: none;
     position: relative;
-  }
-  
-  .main-menu > li {
+}
+
+.main-menu li {
     position: relative;
-  }
-  
-  .main-menu a {
+}
+
+/* Links in Menu */
+.main-menu a {
     color: #333;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    transition: color 0.3s ease;
     padding: 10px;
-  }
-  
-  .main-menu a:hover {
+    transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
     color: #007bff; /* Change color on hover */
-  }
-  
-  /* Dropdown Styling */
-  .dropdown {
-    display: none; /* Hidden by default */
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: block; /* Default to block to make it visible */
     position: absolute;
     background-color: #fff;
     top: 100%; /* Position below the parent link */
     left: 0;
     list-style: none;
-    padding: 10px 0;
+    padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-  }
-  
-  .dropdown li {
+}
+
+/* Dropdown Container */
+.dropdown-container {
+    display: flex; /* Flexbox to align sections side by side */
+    justify-content: space-between;
+    width: 300px; /* Set a width for the dropdown container */
+}
+
+/* Dropdown Section */
+.dropdown-section {
+    margin-right: 20px; /* Space between sections */
+}
+
+/* Dropdown List Items */
+.dropdown li {
     padding: 10px 20px;
-  }
-  
-  .dropdown a {
+}
+
+/* Dropdown Links */
+.dropdown a {
     color: #333;
     text-decoration: none;
-  }
-  
-  .dropdown a:hover {
+}
+
+.dropdown a:hover {
     background-color: #f0f0f0;
-  }
-  
-  /* Show the dropdown on hover */
-  .main-menu li:hover .dropdown {
-    display: block;
-  }
-  
-  /* Button Styling */
-  .header-button {
+}
+
+/* Button Styling */
+.header-button {
     display: flex;
-  }
-  
-  .th-btn {
+}
+
+.th-btn {
     background-color: #00475e;
     color: white;
     padding: 10px 20px;
@@ -120,39 +106,133 @@
     font-size: 16px;
     font-weight: 500;
     transition: background-color 0.3s ease;
-  }
-  
-  .th-btn:hover {
+}
+
+.th-btn:hover {
     background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .header-button {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .th-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Add this to your header.css */
+/* Add this to your header.css */
+
+/* Flight Icon Styling */
+.icon {
+    margin-right: 5px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icon with the text */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animation for scaling and color */
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .main-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  /* Animation for arrival effect */
+  .dropdown-section li {
+    transition: transform 0.3s ease; /* Add transition to the list item */
+  }
   
-    .main-menu {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 15px;
-    }
+  /* Change for hover effect */
+  .dropdown-section li:hover .icon {
+    transform: scale(1.2) translateY(-5px) rotate(15deg); /* Scale up and move slightly up */
+  }
   
-    .dropdown {
-      position: static;
-    }
+  /* Change the position of the text and icon */
+  .dropdown-section li:hover {
+    transform: translateX(5px); /* Move the whole item slightly to the right */
+  }
   
-    .header-button {
-      margin-top: 15px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
+  /* Ensures the icon and text are in line */
+  .dropdown-section ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
   
-    .th-btn {
-      width: 100%;
-      text-align: center;
+  .dropdown-section li {
+    padding: 5px 10px; /* Space around each item */
+  }
+  
+  .dropdown-section a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+  }
+  
+  /* Change hover effect for dropdown links */
+  .dropdown-section a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  /* header.css */
+/* ... existing styles ... */
+
+@keyframes flightArrival {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); /* Start off-screen to the left */
     }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the default position */
+    }
+  }
+  
+  /* Flight Icon Styling */
+  .icon {
+    margin-right: 5px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icon with the text */
+    transition: color 0.3s ease; /* Only animate color for icon */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  /* Dropdown Section */
+  .dropdown-section li {
+    position: relative; /* To ensure absolute positioned children are in relation to this */
+  }
+  
+  /* Show icon when dropdown is visible */
+  .dropdown-section li .icon {
+    opacity: 1; /* Make the icon visible */
+    animation: flightArrival 0.5s forwards; /* Animate the icon when dropdown is visible */
+  }
+  
+  /* Ensure proper styling */
+  .dropdown-section ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .dropdown-section li {
+    padding: 5px 10px; /* Space around each item */
+  }
+  
+  .dropdown-section a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+  }
+  
+  /* Change hover effect for dropdown links */
+  .dropdown-section a:hover {
+    color: #007bff; /* Change color on hover */
   }
   
