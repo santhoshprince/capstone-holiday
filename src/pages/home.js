@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect}from "react";
 import "../css/bootstrap.min.css";
 import "../css/fontawesome.min.css";
 import "../css/magnific-popup.min.css";
@@ -10,6 +10,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import "swiper/css";
 // import './index.css';
 // Import required modules
@@ -57,6 +61,14 @@ import normal6 from "../img/normal/choose_3.jpg"
 import normal7 from "../img/normal/choose_4.jpg"
 
 const HeroSlider = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+      once: true, // Animation only once
+    });
+  }, []);
+
   return (
     <>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
@@ -213,8 +225,8 @@ const HeroSlider = () => {
       >
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title">Wonderful Place For You</span>
-            <h2 className="sec-title">Tour Categories</h2>
+            <span className="sub-title" data-aos="fade-down">Wonderful Place For You</span>
+            <h2 className="sec-title"  data-aos="fade-down">Tour Categories</h2>
           </div>
 
           {/* Swiper carousel */}
@@ -226,6 +238,7 @@ const HeroSlider = () => {
             pagination={{ clickable: true }}
             className="categorySlider"
             id="categorySlide"
+            data-aos="fade-down"
           >
             {/* First slide */}
             <SwiperSlide>
@@ -358,93 +371,75 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      <div class="bg-smoke overflow-hidden space">
-      <div class="container">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="title-area">
-              <span class="sub-title style1">Why Choose Us</span>
-              <h2 class="sec-title">Why Choose Us for Your Forest Tour?</h2>
+      <div className="bg-smoke overflow-hidden space">
+      <div className="container">
+        <div className="row gy-4 align-items-center">
+          <div className="col-lg-6" data-aos="fade-up">
+            <div className="title-area">
+              <span className="sub-title style1">Why Choose Us</span>
+              <h2 className="sec-title">Why Choose Us for Your Forest Tour?</h2>
             </div>
-            <div class="choose-about wow fadeInUp">
-              <div class="choose-about_icon">
-                <img src={normal1} alt="image" />
+            <div className="choose-about">
+              <div className="choose-about_icon">
+                <img src={normal1} alt="Top-notch Security" />
               </div>
-              <div class="media-body">
-                <h3 class="box-title">Top-notch Security</h3>
-                <p class="choose-about_text">
-                  Tourm is driven by a set of core values and principles that
-                  place unwavering focus on our commitment.
-                </p>
+              <div className="media-body">
+                <h3 className="box-title">Top-notch Security</h3>
+                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
               </div>
             </div>
-            <div class="choose-about wow fadeInUp">
-              <div class="choose-about_icon">
-                <img src={normal2} alt="image" />
+            <div className="choose-about" data-aos="fade-up" data-aos-delay="200">
+              <div className="choose-about_icon">
+                <img src={normal2} alt="Budget Efficiency" />
               </div>
-              <div class="media-body">
-                <h3 class="box-title">Budget Efficiency</h3>
-                <p class="choose-about_text">
-                  Tourm is driven by a set of core values and principles that
-                  place unwavering focus on our commitment.
-                </p>
+              <div className="media-body">
+                <h3 className="box-title">Budget Efficiency</h3>
+                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
               </div>
             </div>
-            <div class="choose-about wow fadeInUp">
-              <div class="choose-about_icon">
-                <img src={normal3} alt="image" />
+            <div className="choose-about" data-aos="fade-up" data-aos-delay="400">
+              <div className="choose-about_icon">
+                <img src={normal3} alt="Global Pathway" />
               </div>
-              <div class="media-body">
-                <h3 class="box-title">Global Pathway</h3>
-                <p class="choose-about_text">
-                  Tourm is driven by a set of core values and principles that
-                  place unwavering focus on our commitment.
-                </p>
+              <div className="media-body">
+                <h3 className="box-title">Global Pathway</h3>
+                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="choose-wrapp">
-              <div class="img1 global-img">
-                <img src={normal4} alt="Choose" />
-              </div>
-              <div class="img1 global-img">
-                <img src={normal5} alt="Choose" />
-              </div>
-              <div class="img1 global-img">
-                <img src={normal6} alt="Choose" />
-              </div>
-              <div class="img1 global-img">
-                <img src={normal7} alt="Choose" />
-              </div>
+          <div className="col-lg-6 choose-wrapp" data-aos="fade-up" data-aos-delay="600">
+            <div className="global-img">
+              <img src={normal4} alt="Choose" />
+            </div>
+            <div className="global-img">
+              <img src={normal5} alt="Choose" />
+            </div>
+            <div className="global-img">
+              <img src={normal6} alt="Choose" />
+            </div>
+            <div className="global-img">
+              <img src={normal7} alt="Choose" />
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="shape-mockup d-none d-xxl-block"
-        data-top="5%"
-        data-right="0%"
-      >
+      {/* Shapes for styling */}
+      <div className="shape-mockup d-none d-xxl-block" data-top="5%" data-right="0%">
         <img src="assets/img/shape/shape_19.png" alt="" />
       </div>
-      <div
-        class="shape-mockup d-none d-xxl-block"
-        data-bottom="0%"
-        data-left="0%"
-      >
+      <div className="shape-mockup d-none d-xxl-block" data-bottom="0%" data-left="0%">
         <img src="assets/img/shape/shape_20.png" alt="" />
       </div>
     </div>
-
+  
       
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title">Make Your Tour More Pleasure</span>
-            <h2 className="sec-title">Recent Gallery</h2>
+            <span className="sub-title" data-aos="slide-left">Make Your Tour More Pleasure</span>
+            <h2 className="sec-title" data-aos="slide-right">Recent Gallery</h2>
           </div>
-          <div className="row gy-10 gx-10 justify-content-center align-items-center">
+          <div className="row gy-10 gx-10 justify-content-center align-items-center" data-aos="slide-right">
             <div className="col-md-6 col-lg-2">
               <div className="gallery-card">
                 <div className="box-img global-img">
@@ -548,9 +543,9 @@ const HeroSlider = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="title-area text-center">
-                <span className="sub-title">Best Place For You</span>
-                <h2 className="sec-title sec-new">Most Popular Tour</h2>
-                <p className="sec-text">
+                <span className="sub-title"   data-aos="fade-down">Best Place For You</span>
+                <h2 className="sec-title sec-new"   data-aos="fade-down">Most Popular Tour</h2>
+                <p className="sec-text" data-aos="fade-up">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -560,6 +555,8 @@ const HeroSlider = () => {
           <div className="slider-area tour-slider">
             <Swiper
               spaceBetween={30}
+  data-aos="fade-down"
+                data-aos-easing="ease-out"
               slidesPerView={3} // You can adjust this according to your responsive needs
               breakpoints={{
                 0: {
@@ -613,7 +610,7 @@ const HeroSlider = () => {
                 },
               ].map((tour, index) => (
                 <SwiperSlide key={index}>
-                  <div className="tour-box th-ani gsap-cursor">
+                  <div className="tour-box th-ani gsap-cursor" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in">
                     <div className="tour-box_img global-img">
                       <img
                         src={tour.img}
@@ -675,8 +672,8 @@ const HeroSlider = () => {
       <section className="testi-area overflow-hidden space" id="testi-sec">
         <div className="container-fluid p-0">
           <div className="title-area mb-20 text-center">
-            <span className="sub-title">Testimonial</span>
-            <h2 className="sec-title">What Client Say About us</h2>
+            <span className="sub-title" data-aos="flip-left">Testimonial</span>
+            <h2 className="sec-title" data-aos="flip-left">What Client Say About us</h2>
           </div>
           <div className="slider-area">
             <Swiper
@@ -697,14 +694,14 @@ const HeroSlider = () => {
             >
               {/* Testimonial Card 1 */}
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
                         <img src={test1} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Maria Doe</h3>
+                        <h3 className="box-title" >Maria Doe</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -727,7 +724,7 @@ const HeroSlider = () => {
 
               {/* Testimonial Card 2 */}
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -756,7 +753,7 @@ const HeroSlider = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -785,7 +782,7 @@ const HeroSlider = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -813,7 +810,7 @@ const HeroSlider = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -845,226 +842,18 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      {/* <section
-        className="bg-smoke overflow-hidden space section-four"
-        id="blog-sec"
-      >
-        <div className="container">
-          <div className="mb-30 text-center text-md-start">
-            <div className="row align-items-center justify-content-between">
-              <div className="col-md-7">
-                <div className="title-area mb-md-0">
-                  <span className="sub-title">About Us Restaurant</span>
-                  <h2 className="sec-title">News & Package Details</h2>
-                </div>
-              </div>
-              <div className="col-md-auto">
-                <a href="blog.html" className="th-btn style4 th-icon">
-                  See More Articles
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-area">
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={3}
-              pagination={{ clickable: true }}
-              navigation={true} // Enable navigation
-              modules={[Navigation, Pagination]} // Include Navigation and Pagination modules
-              breakpoints={{
-                576: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                992: { slidesPerView: 2 },
-                1200: { slidesPerView: 3 },
-              }}
-              className="swiper has-shadow"
-            >
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog1} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        4 Nights
-                      </a>
-                      <a href="blog.html">5 Days</a>
-                    </div>
-                    <h4 style={{ marginBottom: "15px" }}>
-                      From <span className="prince">₹ 9,350</span>
-                    </h4>
-                    <h3 className="box-title boxnew">
-                      <a href="blog-details.html">
-                        Thailand Group Tour Package – 4N / 5D
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog2} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        4 Nights
-                      </a>
-                      <a href="blog.html">5 Days</a>
-                    </div>
-                    <h4 style={{ marginBottom: "15px" }}>
-                      From <span className="prince">₹ 21,250</span>
-                    </h4>
-                    <h3 className="box-title boxnew">
-                      <a href="blog-details.html">
-                        Sri Lanka Group Tour Package – 4N/5D
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog3} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        4 Nights
-                      </a>
-                      <a href="blog.html">5 Days</a>
-                    </div>
-                    <h4 style={{ marginBottom: "15px" }}>
-                      From <span className="prince">₹ 34,000</span>
-                    </h4>
-                    <h3 className="box-title boxnew">
-                      <a href="blog-details.html">
-                        Singapore Malaysia Group Tour – 4N / 5D
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog4} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        July 07 2024
-                      </a>
-                      <a href="blog.html">8 min read</a>
-                    </div>
-                    <h3 className="box-title">
-                      <a href="blog-details.html">
-                        10 Reason why you should visit New Jersy
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog4} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        July 07 2024
-                      </a>
-                      <a href="blog.html">8 min read</a>
-                    </div>
-                    <h3 className="box-title">
-                      <a href="blog-details.html">
-                        10 Reason why you should visit New Jersy
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="blog-box th-ani">
-                  <div className="blog-img global-img">
-                    <img src={blog4} alt="blog image" />
-                  </div>
-                  <div className="blog-box_content">
-                    <div className="blog-meta">
-                      <a className="author" href="blog.html">
-                        July 07 2024
-                      </a>
-                      <a href="blog.html">8 min read</a>
-                    </div>
-                    <h3 className="box-title">
-                      <a href="blog-details.html">
-                        10 Reason why you should visit New Jersy
-                      </a>
-                    </h3>
-                    <a
-                      href="blog-details.html"
-                      className="th-btn style4 th-icon"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* Repeat SwiperSlides for other blog entries */}
-            {/* </Swiper>
-          </div>
-        </div> */}
-        {/* Shape elements */}
-      {/* </section>  */}
 
       <section className="overflow-hidden space">
       <div className="container">
         <div className="row justify-content-lg-between justify-content-center align-items-end">
           <div className="col-lg">
             <div className="title-area text-center text-lg-start">
-              <span className="sub-title">News & Blog</span>
-              <h2 className="sec-title">Beach News and Insights</h2>
+              <span className="sub-title"data-aos="slide-left" >News & Blog</span>
+              <h2 className="sec-title" data-aos="slide-left">Beach News and Insights</h2>
             </div>
           </div>
           <div className="col-lg-auto d-none d-lg-block">
-            <div className="sec-btn">
+            <div className="sec-btn" data-aos="slide-right">
               <a href="blog.html" className="th-btn style4 th-icon">
                 See More Articles
               </a>
@@ -1077,7 +866,7 @@ const HeroSlider = () => {
               <div className="blog-img global-img">
                 <img src={blog1} alt="blog" />
               </div>
-              <div className="blog-grid2_content">
+              <div className="blog-grid2_content" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
                 <div className="blog-meta">
                   <a className="author" href="blog.html">Sep 09, 2024</a>
                   <a href="blog.html">6 min read</a>
@@ -1093,7 +882,7 @@ const HeroSlider = () => {
               </div>
             </div>
 
-            <div className="blog-grid2 th-ani style2 mt-24">
+            <div className="blog-grid2 th-ani style2 mt-24" data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
               <div className="blog-img global-img">
                 <img src={blog2} alt="blog" />
               </div>
@@ -1115,7 +904,7 @@ const HeroSlider = () => {
           </div>
 
           <div className="col-xl-4">
-            <div className="blog-grid2 th-ani">
+            <div className="blog-grid2 th-ani" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in">
               <div className="blog-img global-img">
                 <img src={blog3} alt="blog" />
               </div>
