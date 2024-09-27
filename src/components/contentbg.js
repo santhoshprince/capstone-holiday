@@ -1,11 +1,24 @@
 import React from 'react';
-import '../assets/contentbg.css';
+// import '../assets/contentbg.css';
+import  bg1 from "../img/bg/breadcumb-bg.jpg";
+import '../components/contentbg.css'; // Import the CSS file
+
 
 const ContentSection = ({ title, children, backgroundImage }) => {
+  const sectionStyle = {
+    backgroundImage: `url(${bg1})`,
+    backgroundSize: 'cover', // Ensures the image covers the entire div
+    backgroundPosition: 'center', // Centers the image
+  };
+
   return (
-    <div className="content" >
-      <h2>{title}</h2>
-      <p>{children}</p>
+    <div className="breadcumb-wrapper" style={sectionStyle}>
+      <div className="container">
+        <div className="breadcumb-content">
+          <p>{children}</p>
+          <h1 className="breadcumb-title">{title}</h1>
+        </div>
+      </div>
     </div>
   );
 };

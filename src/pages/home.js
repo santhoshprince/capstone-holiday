@@ -26,11 +26,6 @@ import cata4 from "../img/category/category_1_4.jpg";
 import cata5 from "../img/category/category_1_5.jpg";
 import cata6 from "../img/category/category_3_2.jpg";
 import cata7 from "../img/category/category_3_1.jpg";
-import normal1 from "../img/normal/about_1_1.jpg";
-import normal2 from "../img/normal/about_1_2.jpg";
-import normal3 from "../img/normal/about_1_3.jpg";
-import icon1 from "../img/icon/map3.svg";
-import icon2 from "../img/icon/guide.svg";
 import tour1 from "../img/tour/tour-1_1.jpg";
 import tour2 from "../img/tour/tour_3_6.jpg";
 import tour3 from "../img/tour/tour_3_1.jpg";
@@ -47,10 +42,19 @@ import tourbg1 from "../img/bg/tour_bg_1.jpg";
 import test1 from "../img/testimonial/testi_1_1.jpg";
 import icont1 from "../img/icon/testi-quote.svg";
 import test2 from "../img/testimonial/testi_1_2.jpg";
-import blog1 from "../img/blog/blog_1_1.jpg";
-import blog2 from "../img/blog/blog_1_2.jpg";
-import blog3 from "../img/blog/blog_1_3.jpg";
-import blog4 from "../img/blog/blog_2_1.jpg";
+import blog1 from "../img/blog/blog_4_1.jpg";
+import blog2 from "../img/blog/blog_4_3.jpg";
+import blog3 from "../img/blog/blog_6_3.jpg";
+
+
+import normal1 from "../img/icon/choose_1_1.svg";
+import normal2 from "../img/icon/choose_1_2.svg";
+import normal3 from "../img/icon/choose_1_3.svg";
+
+import normal4 from "../img/normal/choose_1.jpg"
+import normal5 from "../img/normal/choose_2.jpg"
+import normal6 from "../img/normal/choose_3.jpg"
+import normal7 from "../img/normal/choose_4.jpg"
 
 const HeroSlider = () => {
   return (
@@ -354,71 +358,181 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-6">
-            <div className="img-box1">
-              <div className="img1">
-                <img src={normal1} alt="About" />
+      <div class="bg-smoke overflow-hidden space">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="title-area">
+              <span class="sub-title style1">Why Choose Us</span>
+              <h2 class="sec-title">Why Choose Us for Your Forest Tour?</h2>
+            </div>
+            <div class="choose-about wow fadeInUp">
+              <div class="choose-about_icon">
+                <img src={normal1} alt="image" />
               </div>
-              <div className="img2">
-                <img src={normal2} alt="About" />
+              <div class="media-body">
+                <h3 class="box-title">Top-notch Security</h3>
+                <p class="choose-about_text">
+                  Tourm is driven by a set of core values and principles that
+                  place unwavering focus on our commitment.
+                </p>
               </div>
-              <div className="img3">
-                <img src={normal3} alt="About" />
+            </div>
+            <div class="choose-about wow fadeInUp">
+              <div class="choose-about_icon">
+                <img src={normal2} alt="image" />
+              </div>
+              <div class="media-body">
+                <h3 class="box-title">Budget Efficiency</h3>
+                <p class="choose-about_text">
+                  Tourm is driven by a set of core values and principles that
+                  place unwavering focus on our commitment.
+                </p>
+              </div>
+            </div>
+            <div class="choose-about wow fadeInUp">
+              <div class="choose-about_icon">
+                <img src={normal3} alt="image" />
+              </div>
+              <div class="media-body">
+                <h3 class="box-title">Global Pathway</h3>
+                <p class="choose-about_text">
+                  Tourm is driven by a set of core values and principles that
+                  place unwavering focus on our commitment.
+                </p>
               </div>
             </div>
           </div>
-          <div className="col-xl-6">
-            <div className="ps-xl-4 ms-xl-2">
-              <div className="title-area mb-20 pe-xl-5 me-xl-5">
-                <span className="sub-title style1">
-                  TOP 4 DECISIONS TO CHOOSE US
-                </span>
-                <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading heading-new">
-                  Your thirst for adventurous travelling quenches here!
-                </h2>
-                <p className="sec-text mb-30">
-                  Certified Consultants: Capstone loves Communication!. Our
-                  certified consultants are known for acknowledgement. All your
-                  queries will be responded back with an answer within an hour
-                  from our Travel Agency in Chennai, Velachery.
-                </p>
+          <div class="col-lg-6">
+            <div class="choose-wrapp">
+              <div class="img1 global-img">
+                <img src={normal4} alt="Choose" />
               </div>
-              <div className="about-item-wrap">
-                <div className="about-item">
-                  <div className="about-item_img">
-                    <img src={icon1} alt="Icon 1" />
-                  </div>
-                  <div className="about-item_centent">
-                    <h5 className="box-title">Exclusive Trip</h5>
-                    <p className="about-item_text">
-                      There are many variations of passages of available but the
-                      majority.
-                    </p>
-                  </div>
-                </div>
-                <div className="about-item">
-                  <div className="about-item_img">
-                    <img src={icon2} alt="Icon 2" />
-                  </div>
-                  <div className="about-item_centent">
-                    <h5 className="box-title">Professional Guide</h5>
-                    <p className="about-item_text">
-                      There are many variations of passages of available but the
-                      majority.
-                    </p>
-                  </div>
-                </div>
+              <div class="img1 global-img">
+                <img src={normal5} alt="Choose" />
               </div>
-              <div className="mt-35">
-                <a href="about.html" className="th-btn style3 th-icon">
-                  Learn More
-                </a>
+              <div class="img1 global-img">
+                <img src={normal6} alt="Choose" />
+              </div>
+              <div class="img1 global-img">
+                <img src={normal7} alt="Choose" />
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="shape-mockup d-none d-xxl-block"
+        data-top="5%"
+        data-right="0%"
+      >
+        <img src="assets/img/shape/shape_19.png" alt="" />
+      </div>
+      <div
+        class="shape-mockup d-none d-xxl-block"
+        data-bottom="0%"
+        data-left="0%"
+      >
+        <img src="assets/img/shape/shape_20.png" alt="" />
+      </div>
+    </div>
+
+      
+      <div className="gallery-area">
+        <div className="container th-container">
+          <div className="title-area text-center">
+            <span className="sub-title">Make Your Tour More Pleasure</span>
+            <h2 className="sec-title">Recent Gallery</h2>
+          </div>
+          <div className="row gy-10 gx-10 justify-content-center align-items-center">
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery1} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery1} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery2} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery2} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery3} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery3} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery4} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery4} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery5} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery5} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery6} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery6} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery7} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery7} alt="gallery image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%">
+        <img src={""} alt="shape" />
+      </div>
+      <div className="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%">
+        <img className="gmovingX" src={""} alt="shape" />
+      </div> */}
       </div>
 
       <section
@@ -557,102 +671,6 @@ const HeroSlider = () => {
           </div>
         </div>
       </section>
-      <div className="gallery-area">
-        <div className="container th-container">
-          <div className="title-area text-center">
-            <span className="sub-title">Make Your Tour More Pleasure</span>
-            <h2 className="sec-title">Recent Gallery</h2>
-          </div>
-          <div className="row gy-10 gx-10 justify-content-center align-items-center">
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery1} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery1} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery2} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery2} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery3} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery3} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery4} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery4} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery5} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery5} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery6} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery6} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery7} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery7} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%">
-        <img src={""} alt="shape" />
-      </div>
-      <div className="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%">
-        <img className="gmovingX" src={""} alt="shape" />
-      </div> */}
-      </div>
 
       <section className="testi-area overflow-hidden space" id="testi-sec">
         <div className="container-fluid p-0">
@@ -827,7 +845,7 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="bg-smoke overflow-hidden space section-four"
         id="blog-sec"
       >
@@ -1030,11 +1048,98 @@ const HeroSlider = () => {
               </SwiperSlide>
 
               {/* Repeat SwiperSlides for other blog entries */}
-            </Swiper>
+            {/* </Swiper>
+          </div>
+        </div> */}
+        {/* Shape elements */}
+      {/* </section>  */}
+
+      <section className="overflow-hidden space">
+      <div className="container">
+        <div className="row justify-content-lg-between justify-content-center align-items-end">
+          <div className="col-lg">
+            <div className="title-area text-center text-lg-start">
+              <span className="sub-title">News & Blog</span>
+              <h2 className="sec-title">Beach News and Insights</h2>
+            </div>
+          </div>
+          <div className="col-lg-auto d-none d-lg-block">
+            <div className="sec-btn">
+              <a href="blog.html" className="th-btn style4 th-icon">
+                See More Articles
+              </a>
+            </div>
           </div>
         </div>
-        {/* Shape elements */}
-      </section>
+        <div className="row gx-24 gy-30">
+          <div className="col-xl-8">
+            <div className="blog-grid2 style2 th-ani">
+              <div className="blog-img global-img">
+                <img src={blog1} alt="blog" />
+              </div>
+              <div className="blog-grid2_content">
+                <div className="blog-meta">
+                  <a className="author" href="blog.html">Sep 09, 2024</a>
+                  <a href="blog.html">6 min read</a>
+                </div>
+                <h3 className="box-title">
+                  <a href="blog-details.html">
+                    Tourm Reveals New Eco-Friendly Resort in Maldives
+                  </a>
+                </h3>
+                <a href="blog-details.html" className="th-btn style4 th-icon">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div className="blog-grid2 th-ani style2 mt-24">
+              <div className="blog-img global-img">
+                <img src={blog2} alt="blog" />
+              </div>
+              <div className="blog-grid2_content">
+                <div className="blog-meta">
+                  <a className="author" href="blog.html">Sep 10, 2024</a>
+                  <a href="blog.html">8 min read</a>
+                </div>
+                <h3 className="box-title">
+                  <a href="blog-details.html">
+                    Essential Packing List for Your Next Beach Vacation
+                  </a>
+                </h3>
+                <a href="blog-details.html" className="th-btn style4 th-icon">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-xl-4">
+            <div className="blog-grid2 th-ani">
+              <div className="blog-img global-img">
+                <img src={blog3} alt="blog" />
+              </div>
+              <div className="blog-grid2_content">
+                <div className="blog-meta">
+                  <a className="author" href="blog.html">Sep 05, 2024</a>
+                  <a href="blog.html">6 min read</a>
+                </div>
+                <h3 className="box-title">
+                  <a href="blog-details.html">
+                    Tourm Commits to Carbon-Neutral Beach Holidays
+                  </a>
+                </h3>
+                <a href="blog-details.html" className="th-btn style4 th-icon">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     </>
   );
 };

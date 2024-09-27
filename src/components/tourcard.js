@@ -1,36 +1,40 @@
 import React from 'react';
-import { Card, Button } from 'antd';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import '../assets/card/Tourcard.css';
 
-const TourCard = ({ title, subtitle, duration, description, price, imageUrl, id }) => {
+const TourItem = ({ imgSrc, title, rating, price, duration, id }) => { // Add id to props
+  const detailLink = `/international/bali/${id}`;// Generate the detail link using id
+
   return (
-    <Card className="tour-card" hoverable>
-      <div className="tour-content">
-        {/* Column 1: Image */}
-        <div className="tour-image">
-          <img src={imageUrl} alt={title} />
+    <div className="col-md-6">
+      <div className="tour-box th-ani">
+        <div className="tour-box_img global-img">
+          <img src={imgSrc} alt="image" />
         </div>
-
-        {/* Column 2: Tour Details */}
-        <div className="tour-details">
-          <h3>{title}</h3>
-          <h4>{subtitle}</h4>
-          <p>{duration}</p>
-          <p>{description}</p>
-        </div>
-
-        {/* Column 3: Price */}
-        <div className="tour-price">
-          <h4>From</h4>
-          <h3 className="price">₹ {price}</h3>
-          <Link to={`/international/bali/${id}`}> {/* Link to details page */}
-            <Button type="primary">View Details</Button>
-          </Link>
+        <div className="tour-content">
+          <h3 className="box-title">
+            <Link to={detailLink}>{title}</Link> {/* Use Link instead of a regular anchor tag */}
+          </h3>
+          <div className="tour-rating">
+            <div className="star-rating" role="img" aria-label={`Rated ${rating} out of 5`}>
+              <span style={{ width: '100%' }}>
+                Rated <strong className="rating">{rating}</strong> out of 5 based on <span className="rating">{rating}</span> Rating
+              </span>
+            </div>
+            <Link to={detailLink} className="woocommerce-review-link">
+              (<span className="count">{rating}</span> Rating)
+            </Link>
+          </div>
+          <h4 className="tour-box_price">
+            <span className="currency">₹ {price}</span>/Person
+          </h4>
+          <div className="tour-action">
+            <span><i className="fa-light fa-clock"></i>{duration} Days</span>
+            <Link to={detailLink} className="th-btn style4">Detail View</Link>
+          </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 
-export default TourCard;
+export default TourItem;

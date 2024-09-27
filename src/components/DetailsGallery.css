@@ -1,0 +1,43 @@
+.details-gallery-wrapper {
+    margin: 0 auto;
+    padding: 20px 0 !important; /* Added !important */
+}
+
+.gallery-title {
+    text-align: start;
+    margin-bottom: 20px !important; 
+    font-family: Poppins-Medium !important;
+}
+
+.gallery-row {
+    display: flex !important; /* Added !important */
+    flex-wrap: wrap !important; /* Added !important */
+}
+
+.gallery-img {
+    position: relative !important; /* Ensure positioning is applied */
+    overflow: hidden !important; /* Ensure overflow is hidden */
+    width: 100% !important; /* Set width to full */
+    height: 300px !important; /* Fixed height for uniformity */
+}
+
+.gallery-image {
+    width: 100% !important; /* Ensure image takes full width */
+    height: 100% !important; /* Ensure image takes full height */
+    object-fit: cover !important; /* Fill container without distortion */
+    transition: transform 0.3s ease !important; /* Smooth zoom effect */
+}
+.gallery-img:hover .gallery-image {
+    transform: scale(1.05) !important; /* Slight zoom on hover for better focus */
+}
+
+.icon-btn {
+    position: absolute !important; /* Ensure position is absolute */
+    bottom: 10px !important; /* Adjust position of the icon button */
+    right: 10px !important; /* Adjust position of the icon button */
+    border-radius: 50% !important; /* Make the button circular */
+    padding: 10px !important; /* Padding for the button */
+    transition: background-color 0.3s ease !important; /* Smooth transition for background color */
+    z-index: 10; /* Ensure it is above other elements */
+    pointer-events: auto; /* Ensure it can respond to hover events */
+}

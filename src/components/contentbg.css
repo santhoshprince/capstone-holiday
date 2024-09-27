@@ -1,0 +1,37 @@
+
+
+.breadcumb-content {
+    opacity: 0; /* Start with content invisible */
+    transform: translateY(20px); /* Slightly translate the content down */
+    animation: fadeInUp 1s forwards; /* Apply fade-in animation */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Animation class */
+.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Translate back to original position */
+    animation: fadeInUp 1s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Translate back to original position */
+    }
+}
+
+.breadcumb-title {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin: 0; /* Remove default margin */
+    font-family: Poppins-Medium !important;
+
+
+}
+
+.breadcumb-content p {
+    margin: 15px 0 0; /* Add margin for the paragraph */
+    font-size: 1.2rem; /* Adjust as needed */
+    color: white;
+    font-family: Poppins-Medium !important;
+}

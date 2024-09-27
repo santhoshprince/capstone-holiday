@@ -24366,3 +24366,8 @@ font-size: 19px !important;
   background-position: center !important;
   z-index: -1 !important; /* Ensure background is behind content */
 }
+
+.gallery-area{
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}

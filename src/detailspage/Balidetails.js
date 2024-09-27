@@ -1,124 +1,86 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { Tabs, Row, Col } from 'antd';
-import "../detailspage/Detailspage.css";
+import React from "react";
+import TourList from "../components/tourlist";
+import Sidebar from "../components/sidebar";
+import Contentsection from "../components/contentbg";
+import DetailSlider from "../components/detailslider";
+import DetailsGallery from "../components/detailsgallery";
+import LocationMap from "../components/deatilsmap";
+import galleryImage1 from '../img/tour/tour_inner_1.jpg';
+import galleryImage2 from '../img/tour/tour_inner_2.jpg';
+import galleryImage3 from '../img/tour/tour_inner_3.jpg';
+import galleryImage4 from '../img/tour/tour_inner_2_4.jpg';
+import galleryImage5 from '../img/tour/tour_inner_1.jpg';
+import galleryImage6 from '../img/tour/tour_inner_2_4.jpg';
 
-const { TabPane } = Tabs;
+import galleryImage1_1 from '../img/gallery/gallery_5_1.jpg';
+import galleryImage2_2 from '../img/gallery/gallery_5_2.jpg';
+import galleryImage3_3 from '../img/gallery/gallery_5_3.jpg';
+import galleryImage4_4 from '../img/gallery/gallery_5_4.jpg';
+import galleryImage5_5 from '../img/gallery/gallery_5_5.jpg';
+import galleryImage6_6 from '../img/gallery/gallery_6_1.jpg';
 
-const BaliDetails = () => {
-  const { id } = useParams();
-  const [activeTab, setActiveTab] = useState('1'); // State to track the active tab for animation
+import location1 from "../img/icon/location-dot3.svg"
 
-  const tourDetails = {
-    0: {
-      title: "Bali Adventure",
-      overview: "Bali is known for its beautiful beaches, vibrant culture, and scenic landscapes...",
-      highlights: ["Explore the stunning beaches", "Visit historical temples", "Experience local Balinese culture"],
-      itinerary: "Day 1: Arrival and beach relaxation...",
-      map: "https://example.com/map.jpg",
-      photos: ["https://example.com/photo1.jpg", "https://example.com/photo2.jpg"],
-      reviews: [
-        { user: "John Doe", comment: "Amazing experience!", rating: 5 },
-        { user: "Jane Smith", comment: "Had a great time!", rating: 4 },
-      ],
-    },
-  };
-
-  const tour = tourDetails[id];
-
-  if (!tour) {
-    return <div style={{ textAlign: "center" }}>Tour Details not found!</div>;
-  }
-
-  // Inline styles for CSS animations
-  const fadeInAnimation = {
-    animation: 'fadeIn 0.8s ease-in-out',
-    opacity: '0',
-    animationFillMode: 'forwards',
-  };
+const TourPage = () => {
+  const galleryImages = [
+    galleryImage1,
+    galleryImage2,
+    galleryImage3,
+    galleryImage4,
+    galleryImage5,
+    galleryImage6
+  ];
+  const gallerydata = [
+    galleryImage1_1,
+    galleryImage2_2,
+    galleryImage3_3,
+    galleryImage4_4,
+    galleryImage5_5,
+    galleryImage6_6
+  ];
+  
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin";
+  const iconSrc = location1
 
   return (
-    <div className="bali-details-page">
-      <h1 style={{ textAlign: 'center', animation: 'fadeIn 1s forwards', fontSize: '2.5rem', color: '#333' }}>
-        {tour.title}
-      </h1>
-      <Tabs
-        defaultActiveKey="1"
-        centered
-        onChange={(key) => setActiveTab(key)} // Update activeTab on change
-      >
-        <TabPane tab="Details" key="1">
-          <div style={activeTab === '1' ? fadeInAnimation : null}>
-            <Row gutter={16}>
-              <Col span={12}>
-                <h2>Tour Overview</h2>
-                <p>{tour.overview}</p>
-              </Col>
-              <Col span={12}>
-                <h2>Highlights</h2>
-                <ul>
-                  {tour.highlights.map((highlight, index) => (
-                    <li key={index}>{highlight}</li>
-                  ))}
-                </ul>
-              </Col>
-            </Row>
-          </div>
-        </TabPane>
+    <>
+      <Contentsection title={"Bali Tour Packages from Chennai"} children={""} />
 
-        <TabPane tab="Itinerary" key="2">
-          <div style={activeTab === '2' ? fadeInAnimation : null}>
-            <h2>Itinerary</h2>
-            <p>{tour.itinerary}</p>
-          </div>
-        </TabPane>
-
-        <TabPane tab="Map" key="3">
-          <div style={activeTab === '3' ? fadeInAnimation : null}>
-            <h2>Map</h2>
-            <img src={tour.map} alt="Tour Map" className="tour-map" style={{ width: '100%', borderRadius: '8px' }} />
-          </div>
-        </TabPane>
-
-        <TabPane tab="Photos" key="4">
-          <div style={activeTab === '4' ? fadeInAnimation : null}>
-            <h2>Photos</h2>
-            <Row gutter={[16, 16]}>
-              {tour.photos.map((photo, index) => (
-                <Col key={index} span={12}>
-                  <img
-                    src={photo}
-                    alt={`Tour Photo ${index + 1}`}
-                    className="tour-photo"
-                    style={{
-                      width: '100%',
-                      borderRadius: '8px',
-                      transition: 'transform 0.3s ease',
-                    }}
-                    onMouseOver={(e) => (e.target.style.transform = 'scale(1.05)')}
-                    onMouseOut={(e) => (e.target.style.transform = 'scale(1)')}
-                  />
-                </Col>
-              ))}
-            </Row>
-          </div>
-        </TabPane>
-
-        <TabPane tab="Reviews" key="5">
-          <div style={activeTab === '5' ? fadeInAnimation : null}>
-            <h2>Reviews</h2>
-            {tour.reviews.map((review, index) => (
-              <div key={index} className="review">
-                <strong>{review.user}</strong>
-                <p>{review.comment}</p>
-                <p>Rating: {review.rating} / 5</p>
+      <section className="space">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-8 col-lg-7">
+              <div className="tab-content" id="nav-tabContent">
+                <div
+                  className="tab-pane fade active show"
+                  id="tab-grid"
+                  role="tabpanel"
+                >
+                  <DetailSlider images={galleryImages} />
+                  {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="col-xxl-4 col-lg-5">
+              <Sidebar />
+            </div>
           </div>
-        </TabPane>
-      </Tabs>
-    </div>
+          {/* Full-width gallery */}
+          <div className="row">
+            <div className="col-12">
+              <DetailsGallery images={gallerydata} />
+            </div>
+          </div>
+          {/* Full-width map */}
+          <div className="row">
+            <div className="col-12">
+            <LocationMap title="Location" mapSrc={mapSrc} iconSrc={iconSrc} />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
-export default BaliDetails;
+export default TourPage;

@@ -33,8 +33,8 @@ const Header = () => {
                     <strong>Domestic Packages</strong>
                     <ul>
                       <li>
-                        <Link to="#">
-                          <span className="icon fas fa-plane"></span> Goa
+                        <Link to="/international/bali">
+                          <span className="icon fas fa-plane"></span> Bali
                         </Link>
                       </li>
                       <li>
