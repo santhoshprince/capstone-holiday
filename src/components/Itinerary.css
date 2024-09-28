@@ -1,0 +1,213 @@
+.itinerary {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .itinerary-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 50px;
+    letter-spacing: 1.2px;
+  }
+  
+  .itinerary-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .itinerary-day {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    position: relative;
+    padding-left: 60px;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .itinerary-day::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  
+  .itinerary-day:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 35px;
+    width: 2px;
+    height: calc(100% - 40px);
+    background-color: #ecf0f1;
+  }
+  
+  .itinerary-day-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 25px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+  
+  .itinerary-details {
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.8;
+    word-spacing: 2px;
+  }
+  
+  .itinerary-day:hover {
+    background-color: #f1f8ff;
+    border-radius: 12px;
+    padding: 15px 25px;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .itinerary {
+      padding: 25px;
+    }
+  
+    .itinerary-title {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+  
+    .itinerary-day-number {
+      font-size: 22px;
+    }
+  
+    .itinerary-details {
+      font-size: 18px;
+    }
+  
+    .itinerary-day {
+      padding-left: 40px;
+      margin-bottom: 25px;
+    }
+  
+    .itinerary-day::before {
+      width: 10px;
+      height: 10px;
+      top: 6px;
+    }
+  }
+  .itinerary {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .itinerary-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 50px;
+    letter-spacing: 1.2px;
+  }
+  
+  .itinerary-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .itinerary-day {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    position: relative;
+    padding-left: 60px;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .itinerary-day::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  
+  .itinerary-day:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 35px;
+    width: 2px;
+    height: calc(100% - 40px);
+    background-color: #ecf0f1;
+  }
+  
+  .itinerary-day-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 25px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+  
+  .itinerary-details {
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.8;
+    word-spacing: 2px;
+  }
+  
+  .itinerary-day:hover {
+    background-color: #f1f8ff;
+    border-radius: 12px;
+    padding: 15px 25px;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .itinerary {
+      padding: 25px;
+    }
+  
+    .itinerary-title {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+  
+    .itinerary-day-number {
+      font-size: 22px;
+    }
+  
+    .itinerary-details {
+      font-size: 18px;
+    }
+  
+    .itinerary-day {
+      padding-left: 40px;
+      margin-bottom: 25px;
+    }
+  
+    .itinerary-day::before {
+      width: 10px;
+      height: 10px;
+      top: 6px;
+    }
+  }
+    

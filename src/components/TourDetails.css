@@ -1,0 +1,83 @@
+/* Container styling */
+.tour-details {
+    padding: 40px;
+    background-color: #ffffff; /* White background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    /* max-width: 800px; */
+    margin: 0 auto; /* Center the container */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styles */
+  .tour-details h1 {
+    font-size: 32px;
+    color: #2c3e50; /* Darker color for heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:Poppins-Medium !important;
+    font-weight: bold;
+  }
+  
+  .tour-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7f8c8d; /* Softer text color */
+    margin-bottom: 30px;
+    font-family:Poppins-Medium !important; 
+    text-align: center;
+  }
+  
+  /* Info section styles */
+  .tour-info h4 {
+    font-size: 18px;
+    color: #34495e; /* Darker text for info */
+    margin-bottom: 10px;
+    font-family:Poppins-Medium !important;
+  }
+  
+  /* Section heading styles */
+  .tour-includes h3, .tour-hotels h3 {
+    font-size: 22px;
+    color: #2980b9; /* Blue color for section titles */
+    margin-bottom: 15px;
+    font-family:Poppins-Medium !important;
+  }
+  
+  /* List styles */
+  .tour-includes ul, .tour-hotels ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .tour-includes li, .tour-hotels li {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    position: relative;
+    font-family:Poppins-Medium !important;
+  }
+  
+  /* List item bullet point */
+  .tour-includes li::before, .tour-hotels li::before {
+    content: '•'; /* Bullet point */
+    color: #2980b9; /* Bullet color */
+    font-size: 18px;
+    position: absolute;
+    left: -20px;
+  }
+  
+  /* Styling for borders between sections */
+  .tour-info, .tour-includes, .tour-hotels {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  /* Adding a hover effect to the list items */
+  .tour-includes li:hover, .tour-hotels li:hover {
+    color: #2980b9; /* Highlight on hover */
+    transition: color 0.3s ease;
+  }
+  
