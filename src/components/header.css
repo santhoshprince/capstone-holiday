@@ -213,3 +213,32 @@ li:hover .dropdown {
   background-color: #555;
   border-radius: 10px;
 }
+
+
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Background color for the header */
+  padding: 10px 20px; /* Padding around the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+
+
+nav ul {
+  list-style: none; /* Remove bullets from the list */
+  display: flex; /* Display list items in a row */
+  gap: 15px; /* Space between links */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Change color on hover */
+}
