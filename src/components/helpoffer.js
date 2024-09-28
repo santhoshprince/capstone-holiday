@@ -14,7 +14,7 @@ const HelpOffer = () => {
           </div>
           <div className="offer-details">
             <h6 className="offer-title">You Get Online Support</h6>
-            <a className="offer-num" href="tel:+256214203215">+256 214 203 215</a>
+            <a className="offer-num" href="tel:+256214203215"> +91 89254 04222 / +91 73584 94431</a>
           </div>
           <a href="contact.html" className="th-btn style2 th-icon">Read More</a>
         </div>
