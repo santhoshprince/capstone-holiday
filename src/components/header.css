@@ -143,9 +143,9 @@ li:hover .dropdown {
   transition: background-color 0.3s ease;
 }
 
-.th-btn:hover {
+/* .th-btn:hover {
   background-color: #007bff;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {

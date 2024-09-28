@@ -12,7 +12,7 @@ const HelpOffer = () => {
           <div className="banner-logo">
             <img src={logo} alt="Tourm" />
           </div>
-          <div className="offer-details">
+          <div className="offer-details offer-new">
             <h6 className="offer-title">You Get Online Support</h6>
             <a className="offer-num" href="tel:+256214203215"> +91 89254 04222 / +91 73584 94431</a>
           </div>
