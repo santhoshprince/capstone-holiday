@@ -30,23 +30,18 @@ const Header = () => {
               <ul className="dropdown">
                 <li className="dropdown-container">
                 <div className="dropdown-section">
-                    <strong>Domestic Packages</strong>
+                    <strong>International Packages</strong>
                     <ul>
                       <li>
-                        <Link to="/international/bali">
+                        <Link to="/tour-destination/bali-tour">
                           <span className="icon fas fa-plane"></span> Bali
                         </Link>
                       </li>
                       <li>
                         <Link to="#">
-                          <span className="icon fas fa-plane"></span> Kerala
+                          <span className="icon fas fa-plane"></span>Maldives 
                         </Link>
                       </li>
-                    </ul>
-                  </div>
-                  <div className="dropdown-section">
-                    <strong>International Packages</strong>
-                    <ul>
                       <li>
                         <Link to="#">
                           <span className="icon fas fa-plane"></span> Dubai
@@ -54,7 +49,67 @@ const Header = () => {
                       </li>
                       <li>
                         <Link to="#">
-                          <span className="icon fas fa-plane"></span> Qatar
+                          <span className="icon fas fa-plane"></span>Thailand
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Mauritius
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Turkey
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Singapore & Malaysia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Vietnam
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="dropdown-section">
+                    <strong>Domestic Packages</strong>
+                    <ul>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Andaman
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Goa
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Himachal
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Kerala
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Jammu And Kashmir
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span>Rajasthan
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <span className="icon fas fa-plane"></span> Sikkim And West Bengal
                         </Link>
                       </li>
                     </ul>

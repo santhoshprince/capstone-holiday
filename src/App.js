@@ -26,8 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         
         {/* International Packages */}
-        <Route path="/international/bali" element={<Bali />} />
-        <Route path="/international/bali/:id" element={<BaliDetails />} /> {/* Add this route for details */}
+        <Route path="/tour-destination/bali-tour" element={<Bali />} />
+        <Route path="/tour/bali-tour-packages-from-chennai/:id" element={<BaliDetails />} /> {/* Add this route for details */}
         
         {/* Domestic Packages */}
         {/* <Route path="/domestic/goa" element={<Goa />} />
