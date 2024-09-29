@@ -7396,10 +7396,10 @@ fieldset, label {
   border-radius: 50px;
 }
 
-.main-menu {
+/* .main-menu {
   float: left;
   width: 65%;
-}
+} */
 
 .main-menu ul {
   margin: 0px auto;
