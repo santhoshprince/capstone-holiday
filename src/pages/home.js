@@ -18,47 +18,47 @@ import "swiper/css";
 // import './index.css';
 // Import required modules
 
-import heroBg1 from "../img/hero/hero_bg_1_1.jpg";
-import heroBg2 from "../img/hero/hero_bg_1_2.jpg";
-import heroBg3 from "../img/hero/hero_bg_1_3.jpg";
+import heroBg1 from "../img/hero/2149153257.jpg";
+import heroBg2 from "../img/hero/3372.jpg";
+import heroBg3 from "../img/hero/2149153258.jpg";
 import leftArrow from "../img/icon/left-arrow.svg";
 import rightArrow from "../img/icon/right-arrow.svg";
-import cata1 from "../img/category/category_1_1.jpg";
-import cata2 from "../img/category/category_1_2.jpg";
-import cata3 from "../img/category/category_1_3.jpg";
-import cata4 from "../img/category/category_1_4.jpg";
-import cata5 from "../img/category/category_1_5.jpg";
-import cata6 from "../img/category/category_3_2.jpg";
-import cata7 from "../img/category/category_3_1.jpg";
-import tour1 from "../img/tour/tour-1_1.jpg";
-import tour2 from "../img/tour/tour_3_6.jpg";
-import tour3 from "../img/tour/tour_3_1.jpg";
-import tour4 from "../img/tour/tour_3_2.jpg";
-import gallery1 from "../img/gallery/gallery_1_1.jpg";
-import gallery2 from "../img/gallery/gallery_1_2.jpg";
-import gallery3 from "../img/gallery/gallery_1_3.jpg";
-import gallery4 from "../img/gallery/gallery_1_4.jpg";
-import gallery5 from "../img/gallery/gallery_1_5.jpg";
-import gallery6 from "../img/gallery/gallery_1_6.jpg";
-import gallery7 from "../img/gallery/gallery_1_7.jpg";
+import cata1 from "../img/category/2151851404.jpg";
+import cata2 from "../img/category/2151383048.jpg";
+import cata3 from "../img/category/2151793553.jpg";
+import cata4 from "../img/category/2151794920.jpg";
+import cata5 from "../img/category/2151694019.jpg";
+import cata6 from "../img/category/2151683003.jpg";
+import cata7 from "../img/category/32967.jpg";
+import tour1 from "../img/tour/2151794920.jpg";
+import tour2 from "../img/tour/2151694019.jpg";
+import tour3 from "../img/tour/2151793553.jpg";
+import tour4 from "../img/tour/2151383048.jpg";
+import gallery1 from "../img/gallery/2151609230.jpg";
+import gallery2 from "../img/gallery/—Pngtree—large bright boat traveling through_15295893.jpg";
+import gallery3 from "../img/gallery/—Pngtree—thailand ayutthaya chedi of wat_15673580.png";
+import gallery4 from "../img/gallery/2151851404.jpg";
+import gallery5 from "../img/gallery/—Pngtree—3d rendering of an exotic_13292831.jpg";
+import gallery6 from "../img/gallery/—Pngtree—travel travel maldives island resort_15181168.png";
+import gallery7 from "../img/gallery/—Pngtree—wat phra singh temple in_15578971.png";
 import category1 from "../img/bg/category_bg_1.png";
-import tourbg1 from "../img/bg/tour_bg_1.jpg";
+import tourbg1 from "../img/bg/category_bg_1.cac7ae5ed9cfdb5eeacf.png";
 import test1 from "../img/testimonial/testi_1_1.jpg";
 import icont1 from "../img/icon/testi-quote.svg";
 import test2 from "../img/testimonial/testi_1_2.jpg";
-import blog1 from "../img/blog/blog_4_1.jpg";
-import blog2 from "../img/blog/blog_4_3.jpg";
-import blog3 from "../img/blog/blog_6_3.jpg";
+import blog1 from "../img/blog/—Pngtree—guangzhou guangzhou airport waiting room_15189769.jpg";
+import blog2 from "../img/blog/—Pngtree—a group of people standing_15302237.jpg";
+import blog3 from "../img/blog/—Pngtree—people are sitting and watching_13334566.jpg";
 
 
 import normal1 from "../img/icon/choose_1_1.svg";
 import normal2 from "../img/icon/choose_1_2.svg";
 import normal3 from "../img/icon/choose_1_3.svg";
 
-import normal4 from "../img/normal/choose_1.jpg"
-import normal5 from "../img/normal/choose_2.jpg"
-import normal6 from "../img/normal/choose_3.jpg"
-import normal7 from "../img/normal/choose_4.jpg"
+import normal4 from "../img/normal/—Pngtree—forest with waterfalls image hd_15483124.png"
+import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest_15491363.jpeg"
+import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg"
+import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg"
 
 const HeroSlider = () => {
 
@@ -669,7 +669,7 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      <section className="testi-area overflow-hidden space" id="testi-sec">
+      <section className="testi-area overflow-hidden" id="testi-sec">
         <div className="container-fluid p-0">
           <div className="title-area mb-20 text-center">
             <span className="sub-title" data-aos="flip-left">Testimonial</span>

@@ -1,10 +1,10 @@
 import React from 'react';
-import galleryImage1 from '../img/widget/gallery_1_1.jpg';
-import galleryImage2 from '../img/widget/gallery_1_2.jpg';
-import galleryImage3 from '../img/widget/gallery_1_3.jpg';
-import galleryImage4 from '../img/widget/gallery_1_4.jpg';
-import galleryImage5 from '../img/widget/gallery_1_5.jpg';
-import galleryImage6 from '../img/widget/gallery_1_6.jpg';
+import galleryImage1 from '../img/widget/1.png';
+import galleryImage2 from '../img/widget/2.png';
+import galleryImage3 from '../img/widget/3.png';
+import galleryImage4 from '../img/widget/4.jpg';
+import galleryImage5 from '../img/widget/5.jpg';
+import galleryImage6 from '../img/widget/6.jpg';
 import phone1 from "../img/icon/phone.svg" 
 import envelope1 from "../img/icon/envelope.svg" 
 import location1 from "../img/icon/location-dot.svg"
@@ -21,7 +21,10 @@ const galleryImages = [
   galleryImage3,
   galleryImage4,
   galleryImage5,
-  galleryImage6
+  galleryImage6,
+  galleryImage4,
+  galleryImage3,
+  galleryImage2,
 ];
     return (
       <footer className="footer-wrapper footer-layout1">
@@ -161,11 +164,7 @@ const galleryImages = [
           </div>
         </div>
       </div>
-      <div
-        className="copyright-wrap"
-      
-
-        style={{ backgroundImage: `url(${copy1})` }}
+      <div className="copyright-wrap"
       >
         <div className="container">
           <div className="row justify-content-between align-items-center">
