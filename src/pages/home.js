@@ -108,7 +108,7 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                    Be Ready Explore New Things
+                   Travelling is the healthiest addiction. We serve you with an unlimited dosage.
                   </h1>
                   <div
                     className="btn-group"
@@ -148,7 +148,7 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                    Let’s make your best trip with us
+                  Discover and Explore fresh destinations with our tourism champion. 
                   </h1>
                   <div
                     className="btn-group"
@@ -188,7 +188,7 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                    Explore beauty of the whole world
+                    Connect with us in just a click to discover the best chances to experience adventure.
                   </h1>
                   <div
                     className="btn-group"
