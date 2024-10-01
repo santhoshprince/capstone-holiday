@@ -35,7 +35,7 @@ const galleryImages = [
               <div className="row gy-4 align-items-center">
                 <div className="col-lg-5">
                   <h2 className="newsletter-title text-capitalize mb-0">
-                    Get updated with the latest newsletter
+                  Get updated with the latest newsletter
                   </h2>
                 </div>
                 <div className="col-lg-7">

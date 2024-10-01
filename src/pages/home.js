@@ -225,8 +225,10 @@ const HeroSlider = () => {
       >
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title" data-aos="fade-down">Wonderful Place For You</span>
-            <h2 className="sec-title"  data-aos="fade-down">Tour Categories</h2>
+            <span className="sub-title" data-aos="fade-down">
+Loop Delightful Tour Memories That Last a Lifetime
+</span>
+            <h2 className="sec-title"  data-aos="fade-down">Tremendous Tour packages</h2>
           </div>
 
           {/* Swiper carousel */}
@@ -251,7 +253,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Vietnam Group Tour</a>
+                  <a href="destination.html">International Tour</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -270,7 +272,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Thailand Tour</a>
+                  <a href="destination.html">Domestic Tour</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -289,7 +291,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Goa Tour</a>
+                  <a href="destination.html">Europe Tour</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -306,7 +308,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Bali Tour</a>
+                  <a href="destination.html">Honeymoon Package</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -323,7 +325,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Andaman Tour</a>
+                  <a href="destination.html">Group Tour</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -340,7 +342,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Maldives Tour</a>
+                  <a href="destination.html">Educational Tour</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -357,7 +359,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Vietnam Tour</a>
+                  <a href="destination.html">Cruise</a>
                 </h3>
                 <a className="line-btn" href="destination.html">
                   See more
@@ -377,15 +379,15 @@ const HeroSlider = () => {
           <div className="col-lg-6" data-aos="fade-up">
             <div className="title-area">
               <span className="sub-title style1">Why Choose Us</span>
-              <h2 className="sec-title">Why Choose Us for Your Forest Tour?</h2>
+              <h2 className="sec-title">Your thirst for adventurous travelling quenches here!</h2>
             </div>
             <div className="choose-about">
               <div className="choose-about_icon">
                 <img src={normal1} alt="Top-notch Security" />
               </div>
               <div className="media-body">
-                <h3 className="box-title">Top-notch Security</h3>
-                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
+                <h3 className="box-title">Approaching 1000 delightful tour experiences</h3>
+                <p className="choose-about_text">Join hands with us. We promise you’ll not alone witness just travelling but enjoy the destination’s adventure, culture, colour and what not. Truly more!.</p>
               </div>
             </div>
             <div className="choose-about" data-aos="fade-up" data-aos-delay="200">
@@ -393,8 +395,8 @@ const HeroSlider = () => {
                 <img src={normal2} alt="Budget Efficiency" />
               </div>
               <div className="media-body">
-                <h3 className="box-title">Budget Efficiency</h3>
-                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
+                <h3 className="box-title">A relaxing vacation planned by our certified consultants</h3>
+                <p className="choose-about_text">Our leading Travel Agency in Chennai, Velachery delivers you a joyous and relaxed journey throughout the travel. Since we took great care to construct our honeymoon tour packages and group tour packages, our certified consultants took responsibilities seriously and prioritized our customers’ comfort.</p>
               </div>
             </div>
             <div className="choose-about" data-aos="fade-up" data-aos-delay="400">
@@ -402,8 +404,8 @@ const HeroSlider = () => {
                 <img src={normal3} alt="Global Pathway" />
               </div>
               <div className="media-body">
-                <h3 className="box-title">Global Pathway</h3>
-                <p className="choose-about_text">Tourm is driven by a set of core values and principles...</p>
+                <h3 className="box-title">Reasonable Package Price</h3>
+                <p className="choose-about_text">We make your travel budget comfortable too!. Check with us to know our exciting honeymoon tour packages, group tour packages, corporate tour packages and educational tour packages at amazing offer prices with incredible easy EMI options</p>
               </div>
             </div>
           </div>
@@ -436,8 +438,10 @@ const HeroSlider = () => {
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title" data-aos="slide-left">Make Your Tour More Pleasure</span>
-            <h2 className="sec-title" data-aos="slide-right">Recent Gallery</h2>
+            <span className="sub-title" data-aos="slide-left">
+Capturing Eternal Reminiscences, Not Just Pictures 
+</span>
+            <h2 className="sec-title" data-aos="slide-right">Recent from Gallery</h2>
           </div>
           <div className="row gy-10 gx-10 justify-content-center align-items-center" data-aos="slide-right">
             <div className="col-md-6 col-lg-2">
@@ -543,11 +547,10 @@ const HeroSlider = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="title-area text-center">
-                <span className="sub-title"   data-aos="fade-down">Best Place For You</span>
-                <h2 className="sec-title sec-new"   data-aos="fade-down">Most Popular Tour</h2>
+                <span className="sub-title"   data-aos="fade-down">Plan a trip for a life-lasting experience</span>
+                <h2 className="sec-title sec-new"   data-aos="fade-down">We execute it for you</h2>
                 <p className="sec-text" data-aos="fade-up">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The Best travel agency in Chennai, Velachery incorporates Domestic, International, Honeymoon tour packages group tour packages with incredible hospitality and exceptional customer service. 
                 </p>
               </div>
             </div>
@@ -673,7 +676,7 @@ const HeroSlider = () => {
         <div className="container-fluid p-0">
           <div className="title-area mb-20 text-center">
             <span className="sub-title" data-aos="flip-left">Testimonial</span>
-            <h2 className="sec-title" data-aos="flip-left">What Client Say About us</h2>
+            <h2 className="sec-title" data-aos="flip-left">Our Customer value us more, so we tend to serve more</h2>
           </div>
           <div className="slider-area">
             <Swiper
@@ -849,7 +852,7 @@ const HeroSlider = () => {
           <div className="col-lg">
             <div className="title-area text-center text-lg-start">
               <span className="sub-title"data-aos="slide-left" >News & Blog</span>
-              <h2 className="sec-title" data-aos="slide-left">Beach News and Insights</h2>
+              <h2 className="sec-title" data-aos="slide-left">Tourism News and Insights</h2>
             </div>
           </div>
           <div className="col-lg-auto d-none d-lg-block">
