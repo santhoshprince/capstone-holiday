@@ -12,7 +12,7 @@ const TourList = () => {
       rating: 4.7,
       price: "96,390",
       duration: "4 Days 5 Nights",
-      detailLink: '/tour/maldivestour-package-from-chennai',
+      detailPath: '/tour/maldivestour-package-from-chennai',
     },
   ];
 

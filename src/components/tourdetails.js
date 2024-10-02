@@ -28,14 +28,16 @@ const TourDetails = ({
           ))}
         </ul>
       </div>
-      {priceIncludes ?( <div className="tour-includes">
-        <h3>Price Includes</h3>
-        <ul>
-          {priceIncludes?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>) : null } 
+      {priceIncludes && priceIncludes.length > 0 && (
+  <div className="tour-includes">
+    <h3>Price Includes</h3>
+    <ul>
+      {priceIncludes.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </div>
+)}
      
       {allInclusion ?(<div className="tour-includes">
         <h3>All Inclusion</h3>
