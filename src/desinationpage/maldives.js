@@ -1,14 +1,14 @@
 import React from "react";
-import TourList from "../components/tourlist";
+import TourList from "../components/maledivescard";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
-import BaliDescription from "../components/tourdescription";
+import Maldives from "../components/tourdescription";
 import Balidesc from "../img/tour/tour_inner_3.jpg";
 
 const TourPage = () => {
   return (
     <>
-      <Contentsection heading={"Bali"} children={"Destination"} />
+      <Contentsection heading={"Maldives Tour"} children={"Destination"} />
 
       <section className="space">
         <div className="container">
@@ -21,9 +21,9 @@ const TourPage = () => {
                   role="tabpanel"
                 >
                   <TourList />
-                  <BaliDescription
-                    title="Explore Bali"
-                    description="A Bali tour offers an unforgettable journey through one of Indonesia's most enchanting islands. Explore Bali's breathtaking beaches, such as Kuta, Seminyak, and Nusa Dua, where you can relax on golden sands, surf world-class waves, or indulge in luxurious resorts. Venture inland to the cultural heart of Ubud, where terraced rice paddies, art markets, and ancient temples like the iconic Uluwatu Temple await. Experience Bali's rich traditions through captivating dance performances, temple ceremonies, and local crafts."
+                  <Maldives
+                    title="Explore Maldives"
+                    description="Escape to the breathtaking paradise of the Maldives, where crystal-clear waters meet pristine white-sand beaches. Our Maldives Tour Packages are designed for travelers seeking luxury, relaxation, and adventure in one of the world's most beautiful destinations."
                     imageUrl={Balidesc}
                   />
                 </div>

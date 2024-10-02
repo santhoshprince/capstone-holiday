@@ -37,7 +37,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/maldives-tour">
                             <span className="icon fas fa-plane"></span>Maldives
                           </Link>
                         </li>

@@ -12,7 +12,7 @@ const TourList = () => {
       rating: 4.8,
       price: "20,825",
       duration: "6 Days 5 Nights",
-      detailLink: "tour-details.html",
+      detailPath: '/tour/bali-tour-packages-from-chennai',
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const TourList = () => {
       rating: 4.8,
       price: "19,635",
       duration: "6 Days 5 Nights",
-      detailLink: "tour-details.html",
+      detailPath: '/tour/bali-tour-packages-from-chennai',
     },
   ];
 

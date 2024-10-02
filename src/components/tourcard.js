@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-const TourItem = ({ imgSrc, title, rating, price, duration, id }) => { // Add id to props
-  const detailLink = `/tour/bali-tour-packages-from-chennai/${id}`;// Generate the detail link using id
+const TourItem = ({ imgSrc, title, rating, price, duration,id }) => { 
+  const detailPath = '/tour/maldivestour-package-from-chennai';// Add id to props
+  const detailLink = `${detailPath}/${id}`;// Generate the detail link using id
 
   return (
     <div className="col-md-6">

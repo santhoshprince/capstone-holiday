@@ -4,7 +4,7 @@ import  bg1 from "../img/bg/breadcumb-bg.jpg";
 import '../components/contentbg.css'; // Import the CSS file
 
 
-const ContentSection = ({ title, children, backgroundImage }) => {
+const ContentSection = ({ heading, children, backgroundImage }) => {
   const sectionStyle = {
     backgroundImage: `url(${bg1})`,
     backgroundSize: 'cover', // Ensures the image covers the entire div
@@ -16,7 +16,7 @@ const ContentSection = ({ title, children, backgroundImage }) => {
       <div className="container">
         <div className="breadcumb-content">
           <p>{children}</p>
-          <h1 className="breadcumb-title">{title}</h1>
+          <h1 className="breadcumb-title">{heading}</h1>
         </div>
       </div>
     </div>
