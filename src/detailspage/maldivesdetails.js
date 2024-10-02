@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
@@ -26,6 +27,12 @@ import location1 from "../img/icon/location-dot3.svg";
 
 const TourMaldives = () => {
   const { id } = useParams();
+    
+  const detailSliderRef = useRef(null);
+  const detailsGalleryRef = useRef(null);
+  const tourDetailsRef = useRef(null);
+  const locationMapRef = useRef(null);
+
   const toursData = {
     1: {
       heading: "Maldives Tour Package from Chennai",
@@ -116,9 +123,22 @@ const TourMaldives = () => {
   };
 
   const selectedTour = toursData[id] || toursData[1];
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  };
   return (
     <>
       <Contentsection heading={selectedTour.heading} children={""} />
+        {/* Navigation Links */}
+        <nav className="tour-navigation">
+        <ul>
+          {/* <li onClick={() => scrollToSection(detailSliderRef)}>Detail Slider</li> */}
+          <li onClick={() => scrollToSection(detailsGalleryRef)}>Gallery</li>
+          <li onClick={() => scrollToSection(tourDetailsRef)}>Tour Details</li>
+          <li onClick={() => scrollToSection(locationMapRef)}>Location</li>
+        </ul>
+      </nav>
 
       <section className="space">
         <div className="container">
@@ -130,7 +150,10 @@ const TourMaldives = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <div ref={detailSliderRef}>
+                  <DetailSlider images={selectedTour.galleryImages}  />
+                  </div>
+                
                   <PopularTags />
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -142,13 +165,13 @@ const TourMaldives = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12">
+            <div className="col-12"  ref={detailsGalleryRef}>
               <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title={selectedTour.title}
                 description={selectedTour.description}
@@ -173,7 +196,7 @@ const TourMaldives = () => {
           </div> */}
           {/* Full-width map */}
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
                 mapSrc={selectedTour.mapSrc}

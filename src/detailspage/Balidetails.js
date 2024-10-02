@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
@@ -26,6 +26,11 @@ import location1 from "../img/icon/location-dot3.svg";
 
 const TourPage = () => {
   const { id } = useParams();
+
+  const detailsitinerary = useRef(null);
+  const detailsGalleryRef = useRef(null);
+  const tourDetailsRef = useRef(null);
+  const locationMapRef = useRef(null);
   const toursData = {
     1: {
       heading:"Bali Tour Packages from Chennai",
@@ -169,9 +174,24 @@ const TourPage = () => {
   };
 
   const selectedTour = toursData[id] || toursData[1];
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  };
   return (
     <>
       <Contentsection heading={selectedTour.heading} children={""} />
+
+      <nav className="tour-navigation">
+        <ul>
+          {/* <li onClick={() => scrollToSection(detailSliderRef)}>Detail Slider</li> */}
+          <li onClick={() => scrollToSection(detailsGalleryRef)}>Gallery</li>
+          <li onClick={() => scrollToSection(tourDetailsRef)}>Tour Details</li>
+          <li onClick={() => scrollToSection(detailsitinerary)}>Itinerary</li>
+          <li onClick={() => scrollToSection(locationMapRef)}>Location</li>
+        </ul>
+      </nav>
+
 
       <section className="space">
         <div className="container">
@@ -195,13 +215,13 @@ const TourPage = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={detailsGalleryRef}>
               <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title={selectedTour.title}
                 description={selectedTour.description}
@@ -213,7 +233,7 @@ const TourPage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
                 itineraryData={selectedTour.itinerary}
@@ -222,7 +242,7 @@ const TourPage = () => {
           </div>
           {/* Full-width map */}
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
                 mapSrc={selectedTour.mapSrc}
