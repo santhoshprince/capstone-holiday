@@ -2,7 +2,7 @@ import React from 'react';
 
 const PopularTags = () => {
   return (
-    <div className="widget widget_tag_cloud">
+    <div className="widget widget_tag_cloud new-tag">
       <h3 className="widget_title">Popular Tags</h3>
       <div className="tagcloud">
         <a href="blog.html">Tour</a>

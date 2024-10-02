@@ -4,6 +4,7 @@ import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
+import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/tour_inner_1.jpg";
@@ -103,6 +104,7 @@ const TourPage = () => {
                   role="tabpanel"
                 >
                   <DetailSlider images={galleryImages} />
+                  <PopularTags />
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>

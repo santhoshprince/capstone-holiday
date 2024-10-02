@@ -1,5 +1,8 @@
 
-
+@font-face {
+    font-family:Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
 .breadcumb-content {
     opacity: 0; /* Start with content invisible */
     transform: translateY(20px); /* Slightly translate the content down */
@@ -24,14 +27,12 @@
 .breadcumb-title {
     font-size: 2.5rem; /* Adjust as needed */
     margin: 0; /* Remove default margin */
-    font-family: Poppins-Medium !important;
-
-
+    font-family:Montserrat !important;
 }
 
 .breadcumb-content p {
     margin: 15px 0 0; /* Add margin for the paragraph */
     font-size: 1.2rem; /* Adjust as needed */
     color: white;
-    font-family: Poppins-Medium !important;
+    font-family:Montserrat;
 }

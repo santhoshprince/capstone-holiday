@@ -24380,3 +24380,9 @@ font-size: 19px !important;
   margin-top: 50px !important;
   margin-bottom: 50px !important;
 }
+.new-tag{
+  margin-top: 50px !important;
+}
+.new-tag a {
+  margin-right: 10px !important;
+}
