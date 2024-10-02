@@ -1,21 +1,37 @@
 /* Container styling */
+
+@font-face {
+  font-family:Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+  --primary-color: #F9AF2A;
+   --secondary-color: #DF1F2C;
+  --accent-color: #00796b;
+  --bg-color: #fff8ea;
+  --font-family:Montserrat;
+  --border-radius: 8px;
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 .tour-details {
     padding: 40px;
-    background-color: #ffffff; /* White background */
+    background-color: var(--bg-color); /* White background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     /* max-width: 800px; */
     margin: 0 auto; /* Center the container */
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family);
   }
   
   /* Heading styles */
   .tour-details h1 {
     font-size: 32px;
-    color: #2c3e50; /* Darker color for heading */
+    color: var(--primary-color); /* Darker color for heading */
     margin-bottom: 20px;
     text-align: center;
-    font-family:Poppins-Medium !important;
+    font-family:var(--font-family);
     font-weight: bold;
   }
   
@@ -24,7 +40,7 @@
     line-height: 1.6;
     color: #7f8c8d; /* Softer text color */
     margin-bottom: 30px;
-    font-family:Poppins-Medium !important; 
+    font-family:var(--font-family); 
     text-align: center;
   }
   
@@ -33,15 +49,15 @@
     font-size: 18px;
     color: #34495e; /* Darker text for info */
     margin-bottom: 10px;
-    font-family:Poppins-Medium !important;
+    font-family:var(--font-family)
   }
   
   /* Section heading styles */
   .tour-includes h3, .tour-hotels h3 {
     font-size: 22px;
-    color: #2980b9; /* Blue color for section titles */
+    color: var(--primary-color); /* Blue color for section titles */
     margin-bottom: 15px;
-    font-family:Poppins-Medium !important;
+    font-family:var(--font-family)
   }
   
   /* List styles */
@@ -56,7 +72,7 @@
     color: #2c3e50;
     margin-bottom: 10px;
     position: relative;
-    font-family:Poppins-Medium !important;
+    font-family:var(--font-family)
   }
   
   /* List item bullet point */
@@ -77,7 +93,7 @@
   
   /* Adding a hover effect to the list items */
   .tour-includes li:hover, .tour-hotels li:hover {
-    color: #2980b9; /* Highlight on hover */
+    color: var(--secondary-color); /* Highlight on hover */
     transition: color 0.3s ease;
   }
   

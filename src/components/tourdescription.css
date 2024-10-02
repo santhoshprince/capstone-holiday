@@ -1,0 +1,86 @@
+/* BaliDescription.css */
+
+/* Define global variables for easy theming */
+@font-face {
+    font-family:Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+
+:root {
+    --primary-color: #F9AF2A;
+    /* --secondary-color: ; */
+    --accent-color: #00796b;
+    --bg-color: #fff8ea;
+    --font-family:Montserrat;
+    --border-radius: 8px;
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .container-css {
+    max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  }
+  
+  .container-css:hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    /* color: var(--secondary-color); */
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    text-align: justify;
+    padding: 0 15px;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container-css {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+      padding: 0 10px;
+    }
+  }
+  
