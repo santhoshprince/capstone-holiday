@@ -857,7 +857,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
           </div>
           <div className="col-lg-auto d-none d-lg-block">
             <div className="sec-btn" data-aos="slide-right">
-              <a href="blog.html" className="th-btn style4 th-icon">
+              <a href="blog.html" className="th-btn style4 th-icon new-but">
                 See More Articles
               </a>
             </div>
