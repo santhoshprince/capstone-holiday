@@ -435,104 +435,99 @@ Loop Delightful Tour Memories That Last a Lifetime
     </div>
   
       
-      <div className="gallery-area">
-        <div className="container th-container">
-          <div className="title-area text-center">
-            <span className="sub-title" data-aos="slide-left">
-Capturing Eternal Reminiscences, Not Just Pictures 
-</span>
-            <h2 className="sec-title" data-aos="slide-right">Recent from Gallery</h2>
-          </div>
-          <div className="row gy-10 gx-10 justify-content-center align-items-center" data-aos="slide-right">
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery1} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery1} alt="gallery image" />
-                  </a>
-                </div>
+    <div className="gallery-area">
+  <div className="container th-container">
+    <div className="title-area text-center">
+      <span className="sub-title" data-aos="slide-left">
+        Capturing Eternal Reminiscences, Not Just Pictures
+      </span>
+      <h2 className="sec-title" data-aos="slide-right">Recent from Gallery</h2>
+    </div>
+    <div className="row gy-10 gx-10 justify-content-center align-items-center" data-aos="slide-right">
+      <div className="col-md-6 col-lg-2">
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery1} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery2} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery2} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery3} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery3} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery4} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery4} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery5} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery5} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery6} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery6} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-2">
-              <div className="gallery-card">
-                <div className="box-img global-img">
-                  <a href={gallery7} className="popup-image">
-                    <div className="icon-btn">
-                      <i className="fal fa-magnifying-glass-plus"></i>
-                    </div>
-                    <img src={gallery7} alt="gallery image" />
-                  </a>
-                </div>
-              </div>
-            </div>
+              <img src={gallery1} alt="gallery image" loading="lazy" />
+            </a>
           </div>
         </div>
-        {/* <div className="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%">
-        <img src={""} alt="shape" />
       </div>
-      <div className="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%">
-        <img className="gmovingX" src={""} alt="shape" />
-      </div> */}
+      <div className="col-md-6 col-lg-2">
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery2} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery2} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery3} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery3} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
       </div>
+      <div className="col-md-6 col-lg-2">
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery4} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery4} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-6 col-lg-2">
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery5} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery5} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery6} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery6} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-6 col-lg-2">
+        <div className="gallery-card">
+          <div className="box-img global-img">
+            <a href={gallery7} className="popup-image">
+              <div className="icon-btn">
+                <i className="fal fa-magnifying-glass-plus"></i>
+              </div>
+              <img src={gallery7} alt="gallery image" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <section
         className="position-relative bg-top-center overflow-hidden space"
@@ -697,7 +692,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
             >
               {/* Testimonial Card 1 */}
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -727,7 +722,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
 
               {/* Testimonial Card 2 */}
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -756,7 +751,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -785,7 +780,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -813,7 +808,7 @@ Capturing Eternal Reminiscences, Not Just Pictures
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="testi-card">
+                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -845,91 +840,90 @@ Capturing Eternal Reminiscences, Not Just Pictures
         </div>
       </section>
 
-
       <section className="overflow-hidden space">
-      <div className="container">
-        <div className="row justify-content-lg-between justify-content-center align-items-end">
-          <div className="col-lg">
-            <div className="title-area text-center text-lg-start">
-              <span className="sub-title" >News & Blog</span>
-              <h2 className="sec-title">Tourism News and Insights</h2>
-            </div>
+  <div className="container">
+    <div className="row justify-content-lg-between justify-content-center align-items-end">
+      <div className="col-lg">
+        <div className="title-area text-center text-lg-start">
+          <span className="sub-title" data-aos="slide-left" >News & Blog</span>
+          <h2 className="sec-title" data-aos="slide-left">Tourism News and Insights</h2>
+        </div>
+      </div>
+      <div className="col-lg-auto d-none d-lg-block">
+        <div className="sec-btn" data-aos="slide-right">
+          <a href="blog.html" className="th-btn style4 th-icon new-but">
+            See More Articles
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className="row gx-24 gy-30">
+      <div className="col-xl-8">
+        <div className="blog-grid2 style2 th-ani">
+          <div className="blog-img global-img">
+            <img src={blog1} alt="blog" loading="lazy" />
           </div>
-          <div className="col-lg-auto d-none d-lg-block">
-            <div className="sec-btn">
-              <a href="blog.html" className="th-btn style4 th-icon new-but">
-                See More Articles
-              </a>
+          <div className="blog-grid2_content"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
+            <div className="blog-meta">
+              <a className="author" href="blog.html">Sep 09, 2024</a>
+              <a href="blog.html">6 min read</a>
             </div>
+            <h3 className="box-title">
+              <a href="blog-details.html">
+                Tourm Reveals New Eco-Friendly Resort in Maldives
+              </a>
+            </h3>
+            <a href="blog-details.html" className="th-btn style4 th-icon">
+              Read More
+            </a>
           </div>
         </div>
-        <div className="row gx-24 gy-30">
-          <div className="col-xl-8">
-            <div className="blog-grid2 style2 th-ani">
-              <div className="blog-img global-img">
-                <img src={blog1} alt="blog" />
-              </div>
-              <div className="blog-grid2_content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">Sep 09, 2024</a>
-                  <a href="blog.html">6 min read</a>
-                </div>
-                <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Tourm Reveals New Eco-Friendly Resort in Maldives
-                  </a>
-                </h3>
-                <a href="blog-details.html" className="th-btn style4 th-icon">
-                  Read More
-                </a>
-              </div>
-            </div>
 
-            <div className="blog-grid2 th-ani style2 mt-24">
-              <div className="blog-img global-img">
-                <img src={blog2} alt="blog" />
-              </div>
-              <div className="blog-grid2_content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">Sep 10, 2024</a>
-                  <a href="blog.html">8 min read</a>
-                </div>
-                <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Essential Packing List for Your Next Beach Vacation
-                  </a>
-                </h3>
-                <a href="blog-details.html" className="th-btn style4 th-icon">
-                  Read More
-                </a>
-              </div>
-            </div>
+        <div className="blog-grid2 th-ani style2 mt-24"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
+          <div className="blog-img global-img">
+            <img src={blog2} alt="blog" loading="lazy" />
           </div>
-
-          <div className="col-xl-4">
-            <div className="blog-grid2 th-ani">
-              <div className="blog-img global-img">
-                <img src={blog3} alt="blog" />
-              </div>
-              <div className="blog-grid2_content">
-                <div className="blog-meta">
-                  <a className="author" href="blog.html">Sep 05, 2024</a>
-                  <a href="blog.html">6 min read</a>
-                </div>
-                <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Tourm Commits to Carbon-Neutral Beach Holidays
-                  </a>
-                </h3>
-                <a href="blog-details.html" className="th-btn style4 th-icon">
-                  Read More
-                </a>
-              </div>
+          <div className="blog-grid2_content">
+            <div className="blog-meta">
+              <a className="author" href="blog.html">Sep 10, 2024</a>
+              <a href="blog.html">8 min read</a>
             </div>
+            <h3 className="box-title">
+              <a href="blog-details.html">
+                Essential Packing List for Your Next Beach Vacation
+              </a>
+            </h3>
+            <a href="blog-details.html" className="th-btn style4 th-icon">
+              Read More
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+      <div className="col-xl-4">
+        <div className="blog-grid2 th-ani"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
+          <div className="blog-img global-img">
+            <img src={blog3} alt="blog" loading="lazy" />
+          </div>
+          <div className="blog-grid2_content">
+            <div className="blog-meta">
+              <a className="author" href="blog.html">Sep 05, 2024</a>
+              <a href="blog.html">6 min read</a>
+            </div>
+            <h3 className="box-title">
+              <a href="blog-details.html">
+                Tourm Commits to Carbon-Neutral Beach Holidays
+              </a>
+            </h3>
+            <a href="blog-details.html" className="th-btn style4 th-icon">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
     </>
