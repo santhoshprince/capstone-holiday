@@ -3,7 +3,7 @@ import TourList from "../components/tourlist";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import BaliDescription from "../components/tourdescription";
-import Balidesc from "../img/tour/tour_inner_3.jpg";
+import Balidesc from "../img/tour/358.jpg";
 
 const TourPage = () => {
   return (

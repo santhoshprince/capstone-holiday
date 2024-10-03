@@ -1,9 +1,9 @@
 import React from "react";
 import TourList from "../components/maledivescard";
 import Sidebar from "../components/sidebar";
-import Contentsection from "../components/contentbg";
+import Contentsection from "../components/maldivesbg";
 import Maldives from "../components/tourdescription";
-import Balidesc from "../img/tour/tour_inner_3.jpg";
+import Balidesc from "../img/tour/2151682922.jpg";
 
 const TourPage = () => {
   return (

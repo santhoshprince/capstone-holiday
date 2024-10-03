@@ -2,26 +2,26 @@
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
-import Contentsection from "../components/contentbg";
+import Contentsection from "../components/maldivesbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/tour/tour_inner_1.jpg";
-import galleryImage2 from "../img/tour/tour_inner_2.jpg";
-import galleryImage3 from "../img/tour/tour_inner_3.jpg";
-import galleryImage4 from "../img/tour/tour_inner_2_4.jpg";
-import galleryImage5 from "../img/tour/tour_inner_1.jpg";
-import galleryImage6 from "../img/tour/tour_inner_2_4.jpg";
+import galleryImage1 from "../img/tour/2151682890.jpg";
+import galleryImage2 from "../img/tour/2151682910.jpg";
+import galleryImage3 from "../img/tour/2151682922.jpg";
+import galleryImage4 from "../img/tour/2151682907.jpg";
+import galleryImage5 from "../img/tour/2151682912.jpg";
+import galleryImage6 from "../img/tour/2151682911.jpg";
 
-import galleryImage1_1 from "../img/gallery/gallery_5_1.jpg";
-import galleryImage2_2 from "../img/gallery/gallery_5_2.jpg";
-import galleryImage3_3 from "../img/gallery/gallery_5_3.jpg";
-import galleryImage4_4 from "../img/gallery/gallery_5_4.jpg";
-import galleryImage5_5 from "../img/gallery/gallery_5_5.jpg";
-import galleryImage6_6 from "../img/gallery/gallery_6_1.jpg";
+import galleryImage1_1 from "../img/gallery/2151682890.jpg";
+import galleryImage2_2 from "../img/gallery/4900.jpg";
+import galleryImage3_3 from "../img/gallery/4911.jpg";
+import galleryImage4_4 from "../img/gallery/4852.jpg";
+import galleryImage5_5 from "../img/gallery/835.jpg";
+import galleryImage6_6 from "../img/gallery/1110.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 
