@@ -46,7 +46,7 @@ import tourbg1 from "../img/bg/category_bg_1.cac7ae5ed9cfdb5eeacf.png";
 import test1 from "../img/testimonial/testi_1_1.jpg";
 import icont1 from "../img/icon/testi-quote.svg";
 import test2 from "../img/testimonial/testi_1_2.jpg";
-import blog1 from "../img/blog/—Pngtree—guangzhou guangzhou airport waiting room_15189769.jpg";
+import blog1 from "../img/blog/pexels-streetwindy-2108831.jpg";
 import blog2 from "../img/blog/—Pngtree—a group of people standing_15302237.jpg";
 import blog3 from "../img/blog/—Pngtree—people are sitting and watching_13334566.jpg";
 
