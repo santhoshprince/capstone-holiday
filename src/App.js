@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import About from "./pages/aboutus";
 import Contact from "./pages/contact";
 import Bali from "./desinationpage/bali";
-
+import ScrollToTop from "./components/ScrollToTop";
 import Maldives from "./desinationpage/maldives";
 import "./index.css";
 import Header from "./components/header";
@@ -20,6 +20,7 @@ function App() {
   return (
     <Router>
       <Layout>
+      <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
