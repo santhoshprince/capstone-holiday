@@ -246,6 +246,6 @@ nav ul li a:hover {
   color: #F9AF2A; /* Change color on hover */
 }
 
-a:hover {
+.sticky-header a:hover {
   color: #F9AF2A !important;
 }
