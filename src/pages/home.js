@@ -1,4 +1,4 @@
-import React,{useEffect}from "react";
+import React, { useEffect,useState } from "react";
 import "../css/bootstrap.min.css";
 import "../css/fontawesome.min.css";
 import "../css/magnific-popup.min.css";
@@ -11,8 +11,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "swiper/css";
 // import './index.css';
@@ -50,18 +51,17 @@ import blog1 from "../img/blog/pexels-streetwindy-2108831.jpg";
 import blog2 from "../img/blog/—Pngtree—a group of people standing_15302237.jpg";
 import blog3 from "../img/blog/—Pngtree—people are sitting and watching_13334566.jpg";
 
-
 import normal1 from "../img/icon/choose_1_1.svg";
 import normal2 from "../img/icon/choose_1_2.svg";
 import normal3 from "../img/icon/choose_1_3.svg";
 
-import normal4 from "../img/normal/—Pngtree—forest with waterfalls image hd_15483124.png"
-import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest_15491363.jpeg"
-import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg"
-import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg"
+import normal4 from "../img/normal/—Pngtree—forest with waterfalls image hd_15483124.png";
+import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest_15491363.jpeg";
+import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg";
+import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg";
+import { Modal, Button } from 'react-bootstrap';
 
 const HeroSlider = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration
@@ -69,11 +69,23 @@ const HeroSlider = () => {
     });
   }, []);
 
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState({ title: '', description: '' });
+
+  const handleShowModal = (title, description) => {
+    setModalContent({ title, description });
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => setShowModal(false);
+
+
   return (
     <>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         <Swiper
-          modules={[Pagination, Navigation, EffectFade,Autoplay]}
+          modules={[Pagination, Navigation, EffectFade, Autoplay]}
           effect="fade"
           pagination={{ clickable: true, el: ".slider-pagination" }}
           autoplay={{
@@ -108,7 +120,8 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                   Travelling is the healthiest addiction. We serve you with an unlimited dosage.
+                    Travelling is the healthiest addiction. We serve you with an
+                    unlimited dosage.
                   </h1>
                   <div
                     className="btn-group"
@@ -148,7 +161,8 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                  Discover and Explore fresh destinations with our tourism champion. 
+                    Discover and Explore fresh destinations with our tourism
+                    champion.
                   </h1>
                   <div
                     className="btn-group"
@@ -188,7 +202,8 @@ const HeroSlider = () => {
                     data-ani="slideinup"
                     data-ani-delay="0.4s"
                   >
-                    Connect with us in just a click to discover the best chances to experience adventure.
+                    Connect with us in just a click to discover the best chances
+                    to experience adventure.
                   </h1>
                   <div
                     className="btn-group"
@@ -226,9 +241,11 @@ const HeroSlider = () => {
         <div className="container th-container">
           <div className="title-area text-center">
             <span className="sub-title" data-aos="fade-down">
-Loop Delightful Tour Memories That Last a Lifetime
-</span>
-            <h2 className="sec-title"  data-aos="fade-down">Tremendous Tour packages</h2>
+              Loop Delightful Tour Memories That Last a Lifetime
+            </span>
+            <h2 className="sec-title" data-aos="fade-down">
+              Tremendous Tour packages
+            </h2>
           </div>
 
           {/* Swiper carousel */}
@@ -253,11 +270,13 @@ Loop Delightful Tour Memories That Last a Lifetime
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">International Tour</a>
-                </h3>
-                <a className="line-btn" href="destination.html">
-                  See more
-                </a>
+                <h5>
+                  International Tour
+                </h5>
+              </h3>
+              <a className="line-btn" href="#!" onClick={() => handleShowModal('International Tour', 'Details about International Tours')}>
+                See more
+              </a>
               </div>
             </SwiperSlide>
 
@@ -272,9 +291,9 @@ Loop Delightful Tour Memories That Last a Lifetime
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Domestic Tour</a>
+                  <h5>Domestic Tour</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Domestic Tour', 'Details about Domestic Tour')}>
                   See more
                 </a>
               </div>
@@ -291,11 +310,12 @@ Loop Delightful Tour Memories That Last a Lifetime
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Europe Tour</a>
+                  <h5>Europe Tour</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Europe Tour', 'Details about Europe Tour')}>
                   See more
                 </a>
+        
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -307,10 +327,11 @@ Loop Delightful Tour Memories That Last a Lifetime
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
+    
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Honeymoon Package</a>
+                  <h5>Honeymoon Package</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Honeymoon Package', 'Details about Honeymoon Package')}>
                   See more
                 </a>
               </div>
@@ -324,10 +345,11 @@ Loop Delightful Tour Memories That Last a Lifetime
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
+              
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Group Tour</a>
+                  <h5>Group Tour</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Group Tour', 'Details about Group Tour')}>
                   See more
                 </a>
               </div>
@@ -341,10 +363,11 @@ Loop Delightful Tour Memories That Last a Lifetime
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
+            
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Educational Tour</a>
+                  <h5>Educational Tour</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Educational Tour', 'Details about Educational Tour')}>
                   See more
                 </a>
               </div>
@@ -358,10 +381,11 @@ Loop Delightful Tour Memories That Last a Lifetime
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
+               
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Cruise</a>
+                  <h5>Cruise</h5>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a className="line-btn" href="#!" onClick={() => handleShowModal('Cruise', 'Details about Cruise')}>
                   See more
                 </a>
               </div>
@@ -370,164 +394,221 @@ Loop Delightful Tour Memories That Last a Lifetime
             {/* Add more slides as needed */}
             {/* The SwiperSlide component can be repeated for each category */}
           </Swiper>
+           <Modal show={showModal} onHide={handleCloseModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>{modalContent.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{modalContent.description}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
         </div>
       </section>
 
       <div className="bg-smoke overflow-hidden space">
-      <div className="container">
-        <div className="row gy-4 align-items-center">
-          <div className="col-lg-6" data-aos="fade-up">
-            <div className="title-area">
-              <span className="sub-title style1">Why Choose Us</span>
-              <h2 className="sec-title">Your thirst for adventurous travelling quenches here!</h2>
-            </div>
-            <div className="choose-about">
-              <div className="choose-about_icon">
-                <img src={normal1} alt="Top-notch Security" />
+        <div className="container">
+          <div className="row gy-4 align-items-center">
+            <div className="col-lg-6" data-aos="fade-up">
+              <div className="title-area">
+                <span className="sub-title style1">Why Choose Us</span>
+                <h2 className="sec-title">
+                  Your thirst for adventurous travelling quenches here!
+                </h2>
               </div>
-              <div className="media-body">
-                <h3 className="box-title">Approaching 1000 delightful tour experiences</h3>
-                <p className="choose-about_text">Join hands with us. We promise you’ll not alone witness just travelling but enjoy the destination’s adventure, culture, colour and what not. Truly more!.</p>
+              <div className="choose-about">
+                <div className="choose-about_icon">
+                  <img src={normal1} alt="Top-notch Security" />
+                </div>
+                <div className="media-body">
+                  <h3 className="box-title">
+                    Approaching 1000 delightful tour experiences
+                  </h3>
+                  <p className="choose-about_text">
+                    Join hands with us. We promise you’ll not alone witness just
+                    travelling but enjoy the destination’s adventure, culture,
+                    colour and what not. Truly more!.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="choose-about"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div className="choose-about_icon">
+                  <img src={normal2} alt="Budget Efficiency" />
+                </div>
+                <div className="media-body">
+                  <h3 className="box-title">
+                    A relaxing vacation planned by our certified consultants
+                  </h3>
+                  <p className="choose-about_text">
+                    Our leading Travel Agency in Chennai, Velachery delivers you
+                    a joyous and relaxed journey throughout the travel. Since we
+                    took great care to construct our honeymoon tour packages and
+                    group tour packages, our certified consultants took
+                    responsibilities seriously and prioritized our customers’
+                    comfort.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="choose-about"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div className="choose-about_icon">
+                  <img src={normal3} alt="Global Pathway" />
+                </div>
+                <div className="media-body">
+                  <h3 className="box-title">Reasonable Package Price</h3>
+                  <p className="choose-about_text">
+                    We make your travel budget comfortable too!. Check with us
+                    to know our exciting honeymoon tour packages, group tour
+                    packages, corporate tour packages and educational tour
+                    packages at amazing offer prices with incredible easy EMI
+                    options
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="choose-about" data-aos="fade-up" data-aos-delay="200">
-              <div className="choose-about_icon">
-                <img src={normal2} alt="Budget Efficiency" />
+            <div
+              className="col-lg-6 choose-wrapp"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div className="global-img">
+                <img src={normal4} alt="Choose" />
               </div>
-              <div className="media-body">
-                <h3 className="box-title">A relaxing vacation planned by our certified consultants</h3>
-                <p className="choose-about_text">Our leading Travel Agency in Chennai, Velachery delivers you a joyous and relaxed journey throughout the travel. Since we took great care to construct our honeymoon tour packages and group tour packages, our certified consultants took responsibilities seriously and prioritized our customers’ comfort.</p>
+              <div className="global-img">
+                <img src={normal5} alt="Choose" />
               </div>
-            </div>
-            <div className="choose-about" data-aos="fade-up" data-aos-delay="400">
-              <div className="choose-about_icon">
-                <img src={normal3} alt="Global Pathway" />
+              <div className="global-img">
+                <img src={normal6} alt="Choose" />
               </div>
-              <div className="media-body">
-                <h3 className="box-title">Reasonable Package Price</h3>
-                <p className="choose-about_text">We make your travel budget comfortable too!. Check with us to know our exciting honeymoon tour packages, group tour packages, corporate tour packages and educational tour packages at amazing offer prices with incredible easy EMI options</p>
+              <div className="global-img">
+                <img src={normal7} alt="Choose" />
               </div>
-            </div>
-          </div>
-          <div className="col-lg-6 choose-wrapp" data-aos="fade-up" data-aos-delay="600">
-            <div className="global-img">
-              <img src={normal4} alt="Choose" />
-            </div>
-            <div className="global-img">
-              <img src={normal5} alt="Choose" />
-            </div>
-            <div className="global-img">
-              <img src={normal6} alt="Choose" />
-            </div>
-            <div className="global-img">
-              <img src={normal7} alt="Choose" />
             </div>
           </div>
         </div>
-      </div>
-      {/* Shapes for styling */}
-      <div className="shape-mockup d-none d-xxl-block" data-top="5%" data-right="0%">
-        <img src="assets/img/shape/shape_19.png" alt="" />
-      </div>
-      <div className="shape-mockup d-none d-xxl-block" data-bottom="0%" data-left="0%">
-        <img src="assets/img/shape/shape_20.png" alt="" />
-      </div>
-    </div>
-  
-      
-    <div className="gallery-area">
-  <div className="container th-container">
-    <div className="title-area text-center">
-      <span className="sub-title" data-aos="slide-left">
-        Capturing Eternal Reminiscences, Not Just Pictures
-      </span>
-      <h2 className="sec-title" data-aos="slide-right">Recent from Gallery</h2>
-    </div>
-    <div className="row gy-10 gx-10 justify-content-center align-items-center" data-aos="slide-right">
-      <div className="col-md-6 col-lg-2">
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery1} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery1} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
+        {/* Shapes for styling */}
+        <div
+          className="shape-mockup d-none d-xxl-block"
+          data-top="5%"
+          data-right="0%"
+        >
+          <img src="assets/img/shape/shape_19.png" alt="" />
+        </div>
+        <div
+          className="shape-mockup d-none d-xxl-block"
+          data-bottom="0%"
+          data-left="0%"
+        >
+          <img src="assets/img/shape/shape_20.png" alt="" />
         </div>
       </div>
-      <div className="col-md-6 col-lg-2">
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery2} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery2} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery3} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery3} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 col-lg-2">
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery4} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery4} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 col-lg-2">
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery5} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery5} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery6} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery6} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-6 col-lg-2">
-        <div className="gallery-card">
-          <div className="box-img global-img">
-            <a href={gallery7} className="popup-image">
-              <div className="icon-btn">
-                <i className="fal fa-magnifying-glass-plus"></i>
-              </div>
-              <img src={gallery7} alt="gallery image" loading="lazy" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+      <div className="gallery-area">
+        <div className="container th-container">
+          <div className="title-area text-center">
+            <span className="sub-title" data-aos="slide-left">
+              Capturing Eternal Reminiscences, Not Just Pictures
+            </span>
+            <h2 className="sec-title" data-aos="slide-right">
+              Recent from Gallery
+            </h2>
+          </div>
+          <div
+            className="row gy-10 gx-10 justify-content-center align-items-center"
+            data-aos="slide-right"
+          >
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery1} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery1} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery2} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery2} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery3} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery3} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery4} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery4} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery5} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery5} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery6} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery6} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-2">
+              <div className="gallery-card">
+                <div className="box-img global-img">
+                  <a href={gallery7} className="popup-image">
+                    <div className="icon-btn">
+                      <i className="fal fa-magnifying-glass-plus"></i>
+                    </div>
+                    <img src={gallery7} alt="gallery image" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section
         className="position-relative bg-top-center overflow-hidden space"
@@ -542,10 +623,17 @@ Loop Delightful Tour Memories That Last a Lifetime
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="title-area text-center">
-                <span className="sub-title"   data-aos="fade-down">Plan a trip for a life-lasting experience</span>
-                <h2 className="sec-title sec-new"   data-aos="fade-down">We execute it for you</h2>
+                <span className="sub-title" data-aos="fade-down">
+                  Plan a trip for a life-lasting experience
+                </span>
+                <h2 className="sec-title sec-new" data-aos="fade-down">
+                  We execute it for you
+                </h2>
                 <p className="sec-text" data-aos="fade-up">
-                The Best travel agency in Chennai, Velachery incorporates Domestic, International, Honeymoon tour packages group tour packages with incredible hospitality and exceptional customer service. 
+                  The Best travel agency in Chennai, Velachery incorporates
+                  Domestic, International, Honeymoon tour packages group tour
+                  packages with incredible hospitality and exceptional customer
+                  service.
                 </p>
               </div>
             </div>
@@ -553,8 +641,8 @@ Loop Delightful Tour Memories That Last a Lifetime
           <div className="slider-area tour-slider">
             <Swiper
               spaceBetween={30}
-  data-aos="fade-down"
-                data-aos-easing="ease-out"
+              data-aos="fade-down"
+              data-aos-easing="ease-out"
               slidesPerView={3} // You can adjust this according to your responsive needs
               breakpoints={{
                 0: {
@@ -608,7 +696,12 @@ Loop Delightful Tour Memories That Last a Lifetime
                 },
               ].map((tour, index) => (
                 <SwiperSlide key={index}>
-                  <div className="tour-box th-ani gsap-cursor" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in">
+                  <div
+                    className="tour-box th-ani gsap-cursor"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                    data-aos-easing="ease-in"
+                  >
                     <div className="tour-box_img global-img">
                       <img
                         src={tour.img}
@@ -670,8 +763,12 @@ Loop Delightful Tour Memories That Last a Lifetime
       <section className="testi-area overflow-hidden" id="testi-sec">
         <div className="container-fluid p-0">
           <div className="title-area mb-20 text-center">
-            <span className="sub-title" data-aos="flip-left">Testimonial</span>
-            <h2 className="sec-title" data-aos="flip-left">Our Customer value us more, so we tend to serve more</h2>
+            <span className="sub-title" data-aos="flip-left">
+              Testimonial
+            </span>
+            <h2 className="sec-title" data-aos="flip-left">
+              Our Customer value us more, so we tend to serve more
+            </h2>
           </div>
           <div className="slider-area">
             <Swiper
@@ -692,14 +789,19 @@ Loop Delightful Tour Memories That Last a Lifetime
             >
               {/* Testimonial Card 1 */}
               <SwiperSlide>
-                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <div
+                  className="testi-card"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
                         <img src={test1} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title" >Maria Doe</h3>
+                        <h3 className="box-title">Maria Doe</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -722,7 +824,12 @@ Loop Delightful Tour Memories That Last a Lifetime
 
               {/* Testimonial Card 2 */}
               <SwiperSlide>
-                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <div
+                  className="testi-card"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -751,7 +858,12 @@ Loop Delightful Tour Memories That Last a Lifetime
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <div
+                  className="testi-card"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -780,7 +892,12 @@ Loop Delightful Tour Memories That Last a Lifetime
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <div
+                  className="testi-card"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -808,7 +925,12 @@ Loop Delightful Tour Memories That Last a Lifetime
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="testi-card"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <div
+                  className="testi-card"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                >
                   <div className="testi-card_wrapper">
                     <div className="testi-card_profile">
                       <div className="testi-card_avater">
@@ -841,91 +963,114 @@ Loop Delightful Tour Memories That Last a Lifetime
       </section>
 
       <section className="overflow-hidden space">
-  <div className="container">
-    <div className="row justify-content-lg-between justify-content-center align-items-end">
-      <div className="col-lg">
-        <div className="title-area text-center text-lg-start">
-          <span className="sub-title" data-aos="slide-left" >News & Blog</span>
-          <h2 className="sec-title" data-aos="slide-left">Tourism News and Insights</h2>
-        </div>
-      </div>
-      <div className="col-lg-auto d-none d-lg-block">
-        <div className="sec-btn" data-aos="slide-right">
-          <a href="blog.html" className="th-btn style4 th-icon new-but">
-            See More Articles
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="row gx-24 gy-30">
-      <div className="col-xl-8">
-        <div className="blog-grid2 style2 th-ani">
-          <div className="blog-img global-img">
-            <img src={blog1} alt="blog" loading="lazy" />
-          </div>
-          <div className="blog-grid2_content"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
-            <div className="blog-meta">
-              <a className="author" href="blog.html">Sep 09, 2024</a>
-              <a href="blog.html">6 min read</a>
+        <div className="container">
+          <div className="row justify-content-lg-between justify-content-center align-items-end">
+            <div className="col-lg">
+              <div className="title-area text-center text-lg-start">
+                <span className="sub-title" data-aos="slide-left">
+                  News & Blog
+                </span>
+                <h2 className="sec-title" data-aos="slide-left">
+                  Tourism News and Insights
+                </h2>
+              </div>
             </div>
-            <h3 className="box-title">
-              <a href="blog-details.html">
-                Tourm Reveals New Eco-Friendly Resort in Maldives
-              </a>
-            </h3>
-            <a href="blog-details.html" className="th-btn style4 th-icon">
-              Read More
-            </a>
-          </div>
-        </div>
-
-        <div className="blog-grid2 th-ani style2 mt-24"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
-          <div className="blog-img global-img">
-            <img src={blog2} alt="blog" loading="lazy" />
-          </div>
-          <div className="blog-grid2_content">
-            <div className="blog-meta">
-              <a className="author" href="blog.html">Sep 10, 2024</a>
-              <a href="blog.html">8 min read</a>
+            <div className="col-lg-auto d-none d-lg-block">
+              <div className="sec-btn" data-aos="slide-right">
+                <a href="blog.html" className="th-btn style4 th-icon new-but">
+                  See More Articles
+                </a>
+              </div>
             </div>
-            <h3 className="box-title">
-              <a href="blog-details.html">
-                Essential Packing List for Your Next Beach Vacation
-              </a>
-            </h3>
-            <a href="blog-details.html" className="th-btn style4 th-icon">
-              Read More
-            </a>
           </div>
-        </div>
-      </div>
+          <div className="row gx-24 gy-30">
+            <div className="col-xl-8">
+              <div className="blog-grid2 style2 th-ani">
+                <div className="blog-img global-img">
+                  <img src={blog1} alt="blog" loading="lazy" />
+                </div>
+                <div
+                  className="blog-grid2_content"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in"
+                >
+                  <div className="blog-meta">
+                    <a className="author" href="blog.html">
+                      Sep 09, 2024
+                    </a>
+                    <a href="blog.html">6 min read</a>
+                  </div>
+                  <h3 className="box-title">
+                    <a href="blog-details.html">
+                      Tourm Reveals New Eco-Friendly Resort in Maldives
+                    </a>
+                  </h3>
+                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                    Read More
+                  </a>
+                </div>
+              </div>
 
-      <div className="col-xl-4">
-        <div className="blog-grid2 th-ani"  data-aos="fade-left" data-aos-delay="100" data-aos-easing="ease-in">
-          <div className="blog-img global-img">
-            <img src={blog3} alt="blog" loading="lazy" />
-          </div>
-          <div className="blog-grid2_content">
-            <div className="blog-meta">
-              <a className="author" href="blog.html">Sep 05, 2024</a>
-              <a href="blog.html">6 min read</a>
+              <div
+                className="blog-grid2 th-ani style2 mt-24"
+                data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-easing="ease-in"
+              >
+                <div className="blog-img global-img">
+                  <img src={blog2} alt="blog" loading="lazy" />
+                </div>
+                <div className="blog-grid2_content">
+                  <div className="blog-meta">
+                    <a className="author" href="blog.html">
+                      Sep 10, 2024
+                    </a>
+                    <a href="blog.html">8 min read</a>
+                  </div>
+                  <h3 className="box-title">
+                    <a href="blog-details.html">
+                      Essential Packing List for Your Next Beach Vacation
+                    </a>
+                  </h3>
+                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                    Read More
+                  </a>
+                </div>
+              </div>
             </div>
-            <h3 className="box-title">
-              <a href="blog-details.html">
-                Tourm Commits to Carbon-Neutral Beach Holidays
-              </a>
-            </h3>
-            <a href="blog-details.html" className="th-btn style4 th-icon">
-              Read More
-            </a>
+
+            <div className="col-xl-4">
+              <div
+                className="blog-grid2 th-ani"
+                data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-easing="ease-in"
+              >
+                <div className="blog-img global-img">
+                  <img src={blog3} alt="blog" loading="lazy" />
+                </div>
+                <div className="blog-grid2_content">
+                  <div className="blog-meta">
+                    <a className="author" href="blog.html">
+                      Sep 05, 2024
+                    </a>
+                    <a href="blog.html">6 min read</a>
+                  </div>
+                  <h3 className="box-title">
+                    <a href="blog-details.html">
+                      Tourm Commits to Carbon-Neutral Beach Holidays
+                    </a>
+                  </h3>
+                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+      </section>
     </>
   );
 };
