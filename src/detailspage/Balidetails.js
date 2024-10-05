@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
@@ -33,7 +33,7 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading:"Bali Tour Packages from Chennai",
+      heading: "Bali Tour Packages from Chennai",
       title: "Bali Tour Packages from Chennai",
       galleryImages: [
         galleryImage1,
@@ -60,7 +60,7 @@ const TourPage = () => {
         "1 Jimbaran Bay Dinner",
         "4 Set Menu Dinner at Hotel",
         "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar"
+        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
       ],
       description: [
         "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
@@ -100,18 +100,18 @@ const TourPage = () => {
         {
           day: "Day 5",
           details:
-           "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)"
+            "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)",
         },
         { day: "Day 6", details: "Hotel to Bali Airport Transfer.(B)" },
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
 
-        iconSrc:[location1]
+      iconSrc: [location1],
     },
     2: {
-      heading:"Bali Trip with Capstone Holidays",
-      title: "Bali Trip with Capstone Holidays",
+      heading: "Bali Tourist Places",
+      title: "Bali Tourist Places",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -128,55 +128,53 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      priceIncludes: [
-        "Luxury Beach Villas",
-        "Private Transfers",
-        "All-inclusive Meals",
-        "Snorkeling Gear",
-        "Guided Island Tours",
-      ],
       description: [
-        "Discover Bali Tour Package! Unveil the Beauty of the Island of Gods! Create an unforgettable Bali Trip experience with our Capstone Holidays Bali Tour Packages. Enjoy the crystal-clear waters at Bali’s blue beaches and its captivating landscape as well.",
+        "Welcome to Bali The Island of Paradise,Bali Sightseeing Places are so fascinating with its tropical destination and breathtaking beaches and mountains. Its rich cultural heritage adds to the allure of this picturesque island.",
       ],
-      tourCode: ["CBT-22/05"],
-      duration: ["6 Days 5 Nights (BALI)"],
+      tourCode: ["CBT-22/01"],
+      duration: ["3 Days 2 Nights (BALI)"],
       hotelDetails: [
+        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
+        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
+      ],
+      PackageInclusion: [
         "Twin Sharing Accommodation with Breakfast",
         "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
         "English Speaking Driver",
         "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar, Panida Hotel - Samuh Ocean Sunset Hotel (4*)",
+        "1 Jimbaran Bay Dinner + 1 Set Menu Dinner",
       ],
       itinerary: [
         {
           day: "Day 1",
-          details: "After Arrive transfer Hotel. Dinner set menu at Hotel.(B)",
+          details: "After Arrive transfer Hotel. Evening visit Uluwatu Temple & Jimbarn Dinner. (D)",
         },
         {
           day: "Day 2",
-          details: "Full Day Visit NusaDua Water Sports , Padang Padang Beach, Uluwatu Temple & Jimbarn Dinner.(B/D)",
+          details:
+            "Full Day Visit kintamani volcano &Tanah Lot. Evening Dinner set menu at Hotel. (B/D)",
         },
         {
           day: "Day 3",
-          details: "Full Day Visit Nusa Penida West Tour (SIC) 6.30 AM Pickup at your hotel (depends on the area),,08.00 – 09.00 AM Go to Sanur Harbour – Until Harbour Nusa Penida , 10.00 AM Visit Angel Billabong,,11.00 AM Visit Broken Beach ,12.30 PM Lunch Time ,13.30 PM Visit Klingking Beach ,14.30 PM Visit Crystal Bay,,14.30 PM Back to Harbour ,16.30 PM Drop to Hotel. Dinner set menu at Hotel.(B/D)",
+          details:
+            "Hotel to Bali Airport Transfer.(B)",
         },
-        { day: "Day 4", details: "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)" },
-        { day: "Day 5", details: "Hotel to Bali Airport Transfer.(B)" },
       ],
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sMaldives!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
 
-        iconSrc:[location1]
+      iconSrc: [location1],
     },
   };
 
   const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
   return (
     <>
@@ -191,7 +189,6 @@ const TourPage = () => {
           <li onClick={() => scrollToSection(locationMapRef)}>Location</li>
         </ul>
       </nav>
-
 
       <section className="space">
         <div className="container">
@@ -219,6 +216,14 @@ const TourPage = () => {
               <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
 
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
@@ -229,17 +234,11 @@ const TourPage = () => {
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}
                 hotelDetails={selectedTour.hotelDetails}
+                PackageInclusion={selectedTour.PackageInclusion}
               />
             </div>
           </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
+          
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

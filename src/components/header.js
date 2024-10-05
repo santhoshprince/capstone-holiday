@@ -42,33 +42,33 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/dubai-tour">
                             <span className="icon fas fa-plane"></span> Dubai
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/thailand-tour">
                             <span className="icon fas fa-plane"></span>Thailand
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/mauritius-tour">
                             <span className="icon fas fa-plane"></span>Mauritius
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/turkey-tour-package">
                             <span className="icon fas fa-plane"></span>Turkey
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/singapore-malaysia-tour">
                             <span className="icon fas fa-plane"></span>Singapore
                             & Malaysia
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/vietnam-tour-package/">
                             <span className="icon fas fa-plane"></span>Vietnam
                           </Link>
                         </li>
