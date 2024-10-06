@@ -1,0 +1,92 @@
+/* InquiryFormWithPrice.css */
+@font-face {
+  font-family:Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.inquiry-form-container {
+    max-width: 600px; /* Max width for the entire container */
+    margin: auto; /* Center the container */
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 30px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .price-section {
+    background-color: #007bff; /* Bright background for price section */
+    color: white; /* White text for contrast */
+    padding: 15px; /* Padding for price section */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Space below the price section */
+  }
+  
+  .price {
+    font-size: 24px; /* Larger font size for price */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  .inquiry-form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  h2 {
+    margin-bottom: 20px; /* Space below the heading */
+ 
+    font-size: 17px;
+    color: #333; /* Dark color for text */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Space between form elements */
+  }
+  
+  label {
+    display: block; /* Labels on a new line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold label text */
+    font-family:Montserrat !important;
+  }
+  
+  input, textarea {
+    width: 100%; /* Full width of the input fields */
+    padding: 12px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger text for readability */
+    transition: border 0.3s ease; /* Animation for border color change */
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  .checkbox {
+    display: flex; /* Flexbox for checkbox */
+    align-items: center; /* Center align items */
+  }
+  
+  button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 12px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger text for readability */
+    transition: background-color 0.3s ease; /* Animation for background color change */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  
+  textarea {
+    min-height: 100px; /* Minimum height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
