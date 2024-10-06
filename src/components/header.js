@@ -5,9 +5,14 @@ import "../components/header.css";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [grouptour,setGroupTour] = useState(false)
 
   const handleMouseEnter = () => setShowDropdown(true);
   const handleMouseLeave = () => setShowDropdown(false);
+  
+  const handleMouseEnters = () => setGroupTour(true);
+  const handleMouseLeaves = () => setGroupTour(false);
+
 
   return (
     <header className="sticky-header">
@@ -125,8 +130,60 @@ const Header = () => {
                 </ul>
               )}
             </li>
-            <li>
+            <li onMouseEnter={handleMouseEnters} onMouseLeave={handleMouseLeaves}>
               <Link to="#">Group Tour</Link>
+              {grouptour && (
+                <ul className="dropdown">
+                  <li className="dropdown-container">
+                    <div className="dropdown-section">
+                      {/* <strong>International Packages</strong> */}
+                      <ul>
+                        <li>
+                          <Link to="/tour-destination/kerala-group-tour">
+                            <span className="icon fas fa-plane"></span>Kerala
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/andaman-group-tour-packages">
+                            <span className="icon fas fa-plane"></span>Andaman
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/bali-group-tour-package">
+                            <span className="icon fas fa-plane"></span> Bali
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/shimla-manali-group-tour">
+                            <span className="icon fas fa-plane"></span>Shimla & Manali
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/sri-lanka-group-tour-package/">
+                            <span className="icon fas fa-plane"></span>Srilanka
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/singapore-malaysia-group-tour">
+                            <span className="icon fas fa-plane"></span>Singapore & Malaysia
+                          </Link>
+                        </li>
+                      
+                        <li>
+                          <Link to="/tour/thailand-group-tour-package">
+                            <span className="icon fas fa-plane"></span>Thailand
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/tour/vietnam-group-tour-packages">
+                            <span className="icon fas fa-plane"></span>Vietnam
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              )}
             </li>
             <li>
               <Link to="#">Luxury Tour</Link>

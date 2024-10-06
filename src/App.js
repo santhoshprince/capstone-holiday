@@ -48,6 +48,16 @@ import KashmirDetails from "./domesticdetailspage/kashmirdetails"
 import RajasthanDetails from "./domesticdetailspage/rajasthandetails"
 import SikkimDetails from "./domesticdetailspage/sikkimdetails"
 
+import KeralalaGroup from "./grouptour/keraladetails"
+import AndamanGroup from "./grouptour/andamangroupdetails"
+import BaliGroup from "./grouptour/baligroupdetails"
+import ShimlaGroup from "./grouptour/shimlagroupdetails"
+import SingaporeGroup from "./grouptour/singaporegroupdetails"
+import SrilankaGroup from "./grouptour/srilankagroupdetails"
+import ThailandGroup from "./grouptour/thailandgroupdetails"
+import VietnamGroup from "./grouptour/vietnamgroupdetails"
+
+
 
 import Layout from "./components/layout";
 import "./App.css";
@@ -178,6 +188,41 @@ function App() {
             path="tour/sikkim-travel-packages/:id"
             element={<SikkimDetails />}
           />
+
+         {/* Gropu Tour  */}
+          <Route
+            path="tour-destination/kerala-group-tour"
+            element={<KeralalaGroup />}
+          />
+           <Route
+            path="/tour/andaman-group-tour-packages"
+            element={<AndamanGroup />}
+          />
+           <Route
+            path="/tour/bali-group-tour-package"
+            element={<BaliGroup />}
+          />
+          <Route
+            path="/tour/shimla-manali-group-tour"
+            element={<ShimlaGroup />}
+          />
+           <Route
+            path="/tour/sri-lanka-group-tour-package"
+            element={<SrilankaGroup />}
+          />
+           <Route
+            path="/tour/singapore-malaysia-group-tour"
+            element={<SingaporeGroup />}
+          />
+           <Route
+            path="/tour/thailand-group-tour-package"
+            element={<ThailandGroup />}
+          />
+              <Route
+            path="/tour/vietnam-group-tour-packages/"
+            element={<VietnamGroup />}
+          />
+          
         </Routes>
         <Footer />
       </Layout>
