@@ -14,6 +14,7 @@ const TourDetails = ({
   Priceexclusions,
   hotelDetailsv2,
   sightseeingDetails,
+  note
 }) => {
   return (
     <div className="tour-details">
@@ -48,6 +49,16 @@ const TourDetails = ({
           <h3>Price Exclusions</h3>
           <ul>
             {Priceexclusions.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+       {note && note.length > 0 && (
+        <div className="tour-includes">
+          <h3>Note</h3>
+          <ul>
+            {note.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>

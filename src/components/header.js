@@ -72,44 +72,49 @@ const Header = () => {
                             <span className="icon fas fa-plane"></span>Vietnam
                           </Link>
                         </li>
+                        <li>
+                          <Link to="/tour-destination/sri-lanka-tour-package/">
+                            <span className="icon fas fa-plane"></span>Srilanka
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                     <div className="dropdown-section">
                       <strong>Domestic Packages</strong>
                       <ul>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/andaman-tour-package/">
                             <span className="icon fas fa-plane"></span> Andaman
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/goa-tour">
                             <span className="icon fas fa-plane"></span> Goa
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/himachal-tour/">
                             <span className="icon fas fa-plane"></span> Himachal
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/kerala-tour/">
                             <span className="icon fas fa-plane"></span> Kerala
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/jammu-and-kashmir-tour/">
                             <span className="icon fas fa-plane"></span>Jammu And
                             Kashmir
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/rajasthan-tour/">
                             <span className="icon fas fa-plane"></span>Rajasthan
                           </Link>
                         </li>
                         <li>
-                          <Link to="#">
+                          <Link to="/tour-destination/sikkim-and-west-bengal-tour/">
                             <span className="icon fas fa-plane"></span> Sikkim
                             And West Bengal
                           </Link>
