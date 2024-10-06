@@ -24418,3 +24418,32 @@ font-size: 19px !important;
   background-color: #DF1F2C ;/* Light blue background on hover */
   color: #ffffff; /* Darker shade for the text on hover */
 }
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the iframe */
+}
+
+.th-hero-wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-style1 {
+  position: relative;
+  z-index: 1;
+}
