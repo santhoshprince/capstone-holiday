@@ -4,136 +4,182 @@ import logo from "../img/logo/capstonelogo.png";
 import "../components/header.css";
 
 const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const handleMouseEnter = () => setShowDropdown(true);
-  const handleMouseLeave = () => setShowDropdown(false);
+  const handleMouseEnter = (dropdown) => setActiveDropdown(dropdown);
+  const handleMouseLeave = () => setActiveDropdown(null);
+
+  const tourPackages = {
+    international: [
+      { name: "Bali", link: "/tour-destination/bali-tour" },
+      { name: "Maldives", link: "/tour-destination/maldives-tour" },
+      { name: "Dubai", link: "/tour-destination/dubai-tour" },
+      { name: "Thailand", link: "/tour-destination/thailand-tour" },
+      { name: "Mauritius", link: "/tour-destination/mauritius-tour" },
+      { name: "Turkey", link: "/tour-destination/turkey-tour-package" },
+      {
+        name: "Singapore & Malaysia",
+        link: "/tour-destination/singapore-malaysia-tour",
+      },
+      { name: "Vietnam", link: "/tour-destination/vietnam-tour-package" },
+      { name: "Sri Lanka", link: "/tour-destination/sri-lanka-tour-package" },
+    ],
+    domestic: [
+      { name: "Andaman", link: "/tour-destination/andaman-tour-package/" },
+      { name: "Goa", link: "/tour-destination/goa-tour" },
+      { name: "Himachal", link: "/tour-destination/himachal-tour/" },
+      { name: "Kerala", link: "/tour-destination/kerala-tour/" },
+      {
+        name: "Jammu and Kashmir",
+        link: "/tour-destination/jammu-and-kashmir-tour/",
+      },
+      { name: "Rajasthan", link: "/tour-destination/rajasthan-tour/" },
+      {
+        name: "Sikkim and West Bengal",
+        link: "/tour-destination/sikkim-and-west-bengal-tour/",
+      },
+    ],
+    groupTour: [
+      { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
+      { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
+      { name: "Bali", link: "/tour/bali-group-tour-package" },
+      { name: "Shimla & Manali", link: "/tour/shimla-manali-group-tour" },
+      { name: "Sri Lanka", link: "/tour/sri-lanka-group-tour-package/" },
+      {
+        name: "Singapore & Malaysia",
+        link: "/tour/singapore-malaysia-group-tour",
+      },
+      { name: "Thailand", link: "/tour/thailand-group-tour-package" },
+      { name: "Vietnam", link: "/tour/vietnam-group-tour-packages" },
+    ],
+    EuropeTour: [
+      { name: "Azerbaijan", link: "/tour-destination/azerbaijan-europe-tour" },
+      { name: "China", link: "/tour/china-europe-tour-package" },
+      { name: "Greece", link: "/tour/greece-europe-tour-package" },
+    ],
+    HoneymoonTour: [
+      { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
+      { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
+      { name: "Bali", link: "/tour/bali-group-tour-package" },
+    ],
+  };
+
+
 
   return (
     <header className="sticky-header">
       <div className="header-content">
         <nav className="main-header">
           <div className="logo">
-            <a href="/">
+            <Link to="/">
               <img src={logo} alt="Tourm Logo" />
-            </a>
+            </Link>
           </div>
 
           <ul className="main-menu">
             <li>
-              <Link to="#">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
-            <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <Link to="#">Tour Package</Link>
-              {showDropdown && (
-                <ul className="dropdown">
-                  <li className="dropdown-container">
-                    <div className="dropdown-section">
-                      <strong>International Packages</strong>
-                      <ul>
-                        <li>
-                          <Link to="/tour-destination/bali-tour">
-                            <span className="icon fas fa-plane"></span> Bali
+            <li>
+              <a href="#">Tour Packages</a>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>International Packages</h3>
+                    <ul>
+                      {tourPackages.international.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
                           </Link>
                         </li>
-                        <li>
-                          <Link to="/tour-destination/maldives-tour">
-                            <span className="icon fas fa-plane"></span>Maldives
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="divider" /> {/* Divider between sections */}
+                  <div className="dropdown-section domestic">
+                    <h3>Domestic Packages</h3>
+                    <ul>
+                      {tourPackages.domestic.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
                           </Link>
                         </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Dubai
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Thailand
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Mauritius
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Turkey
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Singapore
-                            & Malaysia
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Vietnam
-                          </Link>
-                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+            <Link to="#">Group Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Group Tour Countrys</h3>
+                    <ul>
+                        {tourPackages.groupTour.map((pkg, index) => (
+                          <li key={index}>
+                            <Link to={pkg.link}>
+                              <span className="icon fas fa-plane"></span>{" "}
+                              {pkg.name}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
-                    </div>
-                    <div className="dropdown-section">
-                      <strong>Domestic Packages</strong>
-                      <ul>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Andaman
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Goa
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Himachal
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Kerala
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Jammu And
-                            Kashmir
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span>Rajasthan
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <span className="icon fas fa-plane"></span> Sikkim
-                            And West Bengal
-                          </Link>
-                        </li>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+            <Link to="#">Europe Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Europe Tour Countrys</h3>
+                    <ul>
+                        {tourPackages.EuropeTour.map((pkg, index) => (
+                          <li key={index}>
+                            <Link to={pkg.link}>
+                              <span className="icon fas fa-plane"></span>{" "}
+                              {pkg.name}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
-                    </div>
-                  </li>
-                </ul>
-              )}
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="#">Group Tour</Link>
+            <Link to="#">Honeymoon Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Honeymoon Tour Countrys</h3>
+                    <ul>
+                        {tourPackages. HoneymoonTour.map((pkg, index) => (
+                          <li key={index}>
+                            <Link to={pkg.link}>
+                              <span className="icon fas fa-plane"></span>{" "}
+                              {pkg.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li>
-              <Link to="#">Luxury Tour</Link>
-            </li>
-            <li>
-              <Link to="#">Honeymoon Tour</Link>
-            </li>
+          
             <li>
               <Link to="#">Contact Us</Link>
             </li>
             <li>
-              <Link to="#">Blog</Link>
+              <Link to="/tours-and-travels-in-chennai">Blog</Link>
             </li>
           </ul>
 

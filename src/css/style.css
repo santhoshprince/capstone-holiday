@@ -7412,14 +7412,14 @@ fieldset, label {
   display: inline-block;
 }
 
-.main-menu ul li a {
+/* .main-menu ul li a {
   color: rgb(0, 0, 0);
   padding: 20px 10px;
   line-height: 58px;
   font-size: 15px;
   font-weight: 500;
   position: relative;
-}
+} */
 
 .main-menu ul li a:hover {
   color: rgb(226, 52, 100);

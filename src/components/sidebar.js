@@ -1,14 +1,12 @@
 import React from 'react';
-import Categories from '../components/categories';
-import RecentPosts from '../components/recentblogs';
 import HelpOffer from '../components/helpoffer';
+import EnquieryForm from "../components/inquieryform"
 
 
 const Sidebar = () => {
   return (
     <aside className="sidebar-area">
-      <Categories />
-      <RecentPosts />
+      <EnquieryForm />
       <HelpOffer />
     </aside>
   );

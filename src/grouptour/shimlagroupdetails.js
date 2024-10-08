@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/12.jpg";
+import galleryImage2 from "../img/tour/354.jpg";
 import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
@@ -33,8 +33,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Bali Tour Packages from Chennai",
-      title: "Bali Tour Packages from Chennai",
+      heading: "Shimla Manali Group Tour",
+      title: "Shimla Manali Group Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -53,115 +53,86 @@ const TourPage = () => {
       ],
 
       priceIncludes: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
+        "Accommodation on twin share basis at hotel specified /Similar. (Tipple share for extra person)",
+        "Daily breakfast as per hotel menu",
+        "All meals during houseboat stay",
+        "All tours and transfers as stated in private Air-conditioned vehicle. (Swift / Etios / Innova etc.)",
+        "English / Hindi speaking friendly driver cum guide throughout your trip",
+        "Driver’s Bata, Toll, Parking, Road tax, Fuel charge, Interstate charges",
+        "Local Assistance & 24x7 Helpline",
+      ],
+      Priceexclusions: [
+        "Airfare / Train Fare.",
+        "Travel insurance",
+        "Entry fees for Shows, Parks, Safaris, Rides, Monuments, Boats, Room Heater Charges etc.",
+        "Tipping for driver, restaurant and guide",
+        "Extra expenses for Early check in / Late check out",
+        "Charge extra for Candle Light Dinner, Flower Bed Decoration, Cakes etc. in Honeymoon Packages",
+        "Expenses for condition beyond control",
+        "Any service, Sightseeing which not mentioned in inclusion.",
+        "GST 5% (On final bill amount)",
       ],
       description: [
-        "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
+        "Want to have fun with your group of friends or family? Our Shimla Manali group tour package is specially designed for group tours to Himachal Pradesh. We organize the Shimla Manali Group Tour efficiently and ensure everyone’s comfort and enjoyment to the fullest. We curated this Shimla Manali group tour which can be modified according to group size which influences accommodation choices, transportation arrangements, and overall logistics.",
       ],
-      tourCode: ["CBT-22/04"],
-      duration: ["6 Days 5 Nights (BALI)"],
+      // tourCode: ["CBT-22/01"],
+      duration: ["6 Days 5 Nights"],
       hotelDetails: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar, Panida Hotel - Samuh Ocean Sunset Hotel (4*)",
+        "Peak View",
+        "Tourist Nest",
+        "Soland Holidays",
+        "Asia Holiday",
+        "Snow Peak Retreat",
+        "Lifestyle",
+        "Six season",
+        "Natraj",
+        "Sitara",
+        "Neha",
+        "Sun Park",
+        "Royal Park",
+        "AHR",
+        "Fern",
+        "Citrus",
+        "Manali Grand",
+        "White Meadows",
+        "Orchard Green",
+        "Corel",
+        "Highland",
       ],
       itinerary: [
         {
           day: "Day 1",
-          details: "After Arrive transfer Hotel. Dinner set menu at Hotel. (D)",
+          details:
+            "Arrival at Delhi or Chandigarh airport/railway station, immediately we transfer you Chandigarh to Manali (250 Kms. / 8 Hrs) or Delhi to Manali (530 Kms. / 12 Hrs) Whenever reach at Manali check into your Hotel & get fresh. Take your dinner at Hotel. Overnight stay at Hotel in Manali.",
         },
         {
           day: "Day 2",
           details:
-            "Full Day Visit NusaDua Water Sports, Padang Padang Beach, Uluwatu Temple & Jimbaran Dinner. (B/D)",
+            "After breakfast proceed for full day local sightseeing of Manali like Hadimba Temple, Tibetan Monastery, Lord Buddha and Tankha paintings, Vashistha Temple for “Hot & Cold water Kund”, Club House. The evening is free leisure & you can move around to the Mall Road for shopping. When ever reach at Hotel take your dinner at hotel. Overnight stay at hotel in Manali.",
         },
         {
           day: "Day 3",
           details:
-            "Full Day Visit Jatiluwih, Tanah Lot, Taman Ayun Temple, Chocolate Factory. Dinner set menu at Hotel. (B/D)",
+            "After breakfast proceed on a day excursion to the Rohtang Pass also called Snow Point of Himachal – enjoy the beauty of year round snow capped mountains. The rest of the day is free to explore this picturesque town on your own. If weather not permit to Rohtang Pass You can visit Naggar castle or Solangvally as a alternate sightseeing for Rohtang Pass Evening free for leisure & enjoy your dinner at Hotel. Overnight stay at hotel in Manali.",
         },
         {
           day: "Day 4",
           details:
-            "Full Day Visit Nusa Penida West Tour (SIC) 6.30 AM Pickup at your hotel (depends on the area),,08.00 – 09.00 AM Go to Sanur Harbour – Until Harbour Nusa Penida , 10.00 AM Visit Angel Billabong,,11.00 AM Visit Broken Beach ,12.30 PM Lunch Time ,13.30 PM Visit Klingking Beach ,14.30 PM Visit Crystal Bay,,14.30 PM Back to Harbour ,16.30 PM Drop to Hotel. Dinner set menu at Hotel.(B/D)",
+            "Today after breakfast we checkout from hotel and proceed for Shimla by Road (250km/7Hrs). Enroute visit to famous Kullu Shawl factories or enjoy white water rafting in River Beas (at your own cost) Whenever reach at Shimla check into your hotel & get fresh. Evening free for leisure & take your dinner at hotel. Overnight stay at hotel in Shimla.",
         },
         {
           day: "Day 5",
           details:
-            "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)",
-        },
-        { day: "Day 6", details: "Hotel to Bali Airport Transfer.(B)" },
-      ],
-      mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
-
-      iconSrc: [location1],
-    },
-    2: {
-      heading: "Bali Tourist Places",
-      title: "Bali Tourist Places",
-      galleryImages: [
-        galleryImage1,
-        galleryImage2,
-        galleryImage3,
-        galleryImage4,
-        galleryImage5,
-        galleryImage6,
-      ],
-      gallerydata: [
-        galleryImage1_1,
-        galleryImage2_2,
-        galleryImage3_3,
-        galleryImage4_4,
-        galleryImage5_5,
-        galleryImage6_6,
-      ],
-      description: [
-        "Welcome to Bali The Island of Paradise,Bali Sightseeing Places are so fascinating with its tropical destination and breathtaking beaches and mountains. Its rich cultural heritage adds to the allure of this picturesque island.",
-      ],
-      tourCode: ["CBT-22/01"],
-      duration: ["3 Days 2 Nights (BALI)"],
-      hotelDetails: [
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
-      ],
-      PackageInclusion: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner + 1 Set Menu Dinner",
-      ],
-      itinerary: [
-        {
-          day: "Day 1",
-          details: "After Arrive transfer Hotel. Evening visit Uluwatu Temple & Jimbarn Dinner. (D)",
+            "After breakfast proceed for wonderful day excursion to Kufri. In Kufri enjoy a walk through thick ceder woods to Mahasu Pick for amazing view of mighty Himalayas. Enjoy Horse riding at your own cost. You can do wonderful photography also. Evening come back to the Resort & do some shopping at very famous Mall road of Shimla. Enjoy your dinner at Hotel. Overnight stay at hotel in Shimla.",
         },
         {
-          day: "Day 2",
+          day: "Day 6",
           details:
-            "Full Day Visit kintamani volcano &Tanah Lot. Evening Dinner set menu at Hotel. (B/D)",
-        },
-        {
-          day: "Day 3",
-          details:
-            "Hotel to Bali Airport Transfer.(B)",
+            "After breakfast we transfer you Shimla to Delhi (340 Kms / 7 Hrs) or Shimla to Chandigarh (110 Kms / 3.30 Hrs) Whenever reach at Delhi or Chandigarh airport/railway station proceed as per your further journey schedule towards to your home town. Tour ends with sweet memorize by Capstone Holidays. .",
         },
       ],
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3471664.9927754677!2d77.301755!3d31.816881000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal%20Pradesh!5e0!3m2!1sen!2sin!4v1728206339141!5m2!1sen!2sin",
 
       iconSrc: [location1],
     },
@@ -235,10 +206,11 @@ const TourPage = () => {
                 priceIncludes={selectedTour.priceIncludes}
                 hotelDetails={selectedTour.hotelDetails}
                 PackageInclusion={selectedTour.PackageInclusion}
+                Priceexclusions={selectedTour.Priceexclusions}
               />
             </div>
           </div>
-          
+
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

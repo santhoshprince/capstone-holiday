@@ -9,7 +9,7 @@ const TourList = () => {
       id: 1,
       imgSrc: bali,
       title: "Bali Tour Packages from Chennai",
-      rating: 4.8,
+      // rating: 4.8,
       price: "20,825",
       duration: "6 Days 5 Nights",
       detailPath: '/tour/bali-tour-packages-from-chennai',
@@ -17,11 +17,11 @@ const TourList = () => {
     {
       id: 2,
       imgSrc: bali2,
-      title: "Bali Trip with Capstone Holidays",
-      rating: 4.8,
-      price: "19,635",
-      duration: "6 Days 5 Nights",
-      detailPath: '/tour/bali-tour-packages-from-chennai',
+      title: "Bali Tourist Places",
+      // rating: 4.8,
+      price: "₹ 6,800",
+      duration: "3 Days 2 Nights (BALI)",
+      detailPath: '/tour/bali-tour-places',
     },
   ];
 

@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/12.jpg";
+import galleryImage2 from "../img/tour/354.jpg";
 import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/gallery/2151625212.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 
-const TourPage = () => {
+const GroupTour = () => {
   const { id } = useParams();
 
   const detailsitinerary = useRef(null);
@@ -33,8 +33,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Bali Tour Packages from Chennai",
-      title: "Bali Tour Packages from Chennai",
+      heading: "Kerala Group Tour package",
+     title: "Kerala Group Tour package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -53,116 +53,71 @@ const TourPage = () => {
       ],
 
       priceIncludes: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
+        "Accommodation on twin share basis at hotel specified / Similar. (Tipple share for extra person)",
+        "Train Fare",
+        "All Meals as per hotel menu",
+        "All meals during houseboat stay",
+        "All tours and transfers as stated in private Vehicle",
+        "English / Hindi speaking friendly driver cum Guide throughout your trip",
+        "Driver’s Bata, Toll, Parking, Road tax, Fuel charge, Interstate charges",
+        "Local Assistance & 24x7 Helpline",
       ],
+      Priceexclusions: [
+        "Travel insurance",
+        "Entry fees for Shows, Parks, Safaris, Rides, Monuments, Boats, Room Heater Charges etc.",
+        "Tipping for driver, restaurant and guide",
+        "Extra expenses for Early check in / Late check out",
+        "Charge extra for Candle Light Dinner, Flower Bed, Decoration, Cakes etc. in Honeymoon Packages.",
+        "Expenses for condition beyond control",
+        "Any service, Sightseeing which not mentioned.",
+        "GST 5% (On final bill amount)",
+      ],
+
       description: [
-        "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
+        "Get ready to have a delightful experience of cultural exploration, natural beauty, and relaxing moments with our Kerala group tour package. The specially curated Kerala family tour package all the important places in Kerala like Kochi, Thiruvananthapuram, and Alappuzha. With our family and group-friendly accommodations, we provide amenities suitable for all age groups. Create a memorable experience with our Kerala group tour package.",
       ],
-      tourCode: ["CBT-22/04"],
-      duration: ["6 Days 5 Nights (BALI)"],
+      duration: ["05 Days,04 Nights"],
+      // tourCode: ["AH-KRL-17"],
       hotelDetails: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar, Panida Hotel - Samuh Ocean Sunset Hotel (4*)",
+        "Ayur Green",
+        "Amuse Vista",
+        "Munnar Queen",
+        "T & U",
+        "Periyar Meadows",
+        "Grand Thakkady",
+        "Peppervine",
+        "Crown Valley",
+        "Deluxe Houseboat",
       ],
       itinerary: [
         {
           day: "Day 1",
-          details: "After Arrive transfer Hotel. Dinner set menu at Hotel. (D)",
+          details:
+            "Arrive Cochin Airport and Transfer to hotel in Munnar by road on the way visit Spice Plantations. Arrival at a place which is called ‘nature’s lovers paradise’. On arrival at Munnar, check in at Hotel. If time permits you can visit some place of day two. Overnight stay in Munnar",
         },
         {
           day: "Day 2",
           details:
-            "Full Day Visit NusaDua Water Sports, Padang Padang Beach, Uluwatu Temple & Jimbaran Dinner. (B/D)",
+            "Early morning After breakfast proceed to Munnar sightseeing. Visit Eravikulam National Park, Madupetty Dam, Echo Point, Kundala Lake, Photo Point, Indo-Swiss Project, Elephant Arrival Spot, Tea museum, etc. overnight stay at hotel. (You can visit some places on day one as per time availability)",
         },
         {
           day: "Day 3",
           details:
-            "Full Day Visit Jatiluwih, Tanah Lot, Taman Ayun Temple, Chocolate Factory. Dinner set menu at Hotel. (B/D)",
+            "After breakfast, drive to Thekkady/Periyar. The Periyar wildlife sanctuary is one of the India’s majorwild life sanctuary. On arrival Thekkady check in hotel and get fresh. Afternoon proceed for localsightseeing. Visit Spice Plantation, Periyar Lake, Periyar wild life sanctuary etc. Evening boating at Periyar lake (optional). Overnight stay in Thekkady.",
         },
         {
           day: "Day 4",
           details:
-            "Full Day Visit Nusa Penida West Tour (SIC) 6.30 AM Pickup at your hotel (depends on the area),,08.00 – 09.00 AM Go to Sanur Harbour – Until Harbour Nusa Penida , 10.00 AM Visit Angel Billabong,,11.00 AM Visit Broken Beach ,12.30 PM Lunch Time ,13.30 PM Visit Klingking Beach ,14.30 PM Visit Crystal Bay,,14.30 PM Back to Harbour ,16.30 PM Drop to Hotel. Dinner set menu at Hotel.(B/D)",
+            "After breakfast transfer to Alleppey/Kumarakom. After reach check in to the Hotel and later proceedfor visit Alleppey beach, sunset and othe activities or enjoy shopping. Overnight stay in Alleppy.Or Thekkady- Kumarakom – After breakfast transfer to Kumarakom by road. Check in to hotel andlater proceed for Bird Sanctuary visit. Overnight at the hotel. Overnight stay in Kumarakom.",
         },
         {
           day: "Day 5",
           details:
-            "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)",
-        },
-        { day: "Day 6", details: "Hotel to Bali Airport Transfer.(B)" },
-      ],
-      mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
-
-      iconSrc: [location1],
-    },
-    2: {
-      heading: "Bali Tourist Places",
-      title: "Bali Tourist Places",
-      galleryImages: [
-        galleryImage1,
-        galleryImage2,
-        galleryImage3,
-        galleryImage4,
-        galleryImage5,
-        galleryImage6,
-      ],
-      gallerydata: [
-        galleryImage1_1,
-        galleryImage2_2,
-        galleryImage3_3,
-        galleryImage4_4,
-        galleryImage5_5,
-        galleryImage6_6,
-      ],
-      description: [
-        "Welcome to Bali The Island of Paradise,Bali Sightseeing Places are so fascinating with its tropical destination and breathtaking beaches and mountains. Its rich cultural heritage adds to the allure of this picturesque island.",
-      ],
-      tourCode: ["CBT-22/01"],
-      duration: ["3 Days 2 Nights (BALI)"],
-      hotelDetails: [
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
-      ],
-      PackageInclusion: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner + 1 Set Menu Dinner",
-      ],
-      itinerary: [
-        {
-          day: "Day 1",
-          details: "After Arrive transfer Hotel. Evening visit Uluwatu Temple & Jimbarn Dinner. (D)",
-        },
-        {
-          day: "Day 2",
-          details:
-            "Full Day Visit kintamani volcano &Tanah Lot. Evening Dinner set menu at Hotel. (B/D)",
-        },
-        {
-          day: "Day 3",
-          details:
-            "Hotel to Bali Airport Transfer.(B)",
+            "After breakfast check out from Houseboat and you will be driven back to CochinAirport/Railway station for your onward journey. Tour ends with wonderful memorize of Kerala by Capstone Holidays",
         },
       ],
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
-
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8033168.194719898!2d76.138367!3d10.544276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1728191882805!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
@@ -235,10 +190,11 @@ const TourPage = () => {
                 priceIncludes={selectedTour.priceIncludes}
                 hotelDetails={selectedTour.hotelDetails}
                 PackageInclusion={selectedTour.PackageInclusion}
+                Priceexclusions={selectedTour.Priceexclusions}
               />
             </div>
           </div>
-          
+
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>
@@ -255,4 +211,4 @@ const TourPage = () => {
   );
 };
 
-export default TourPage;
+export default GroupTour;

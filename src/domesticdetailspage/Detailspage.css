@@ -1,0 +1,104 @@
+.bali-details-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .tabs-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .ant-tabs-nav {
+    margin-bottom: 20px;
+  }
+  
+  .ant-tabs-tab {
+    font-weight: bold;
+  }
+  
+  .ant-tabs-tab-active {
+    color: #1890ff; /* Active tab color */
+  }
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .photo-gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+  
+  .reviews-section {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .reviews-section p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .bali-details-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .tour-map {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .tour-photo {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tour-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  

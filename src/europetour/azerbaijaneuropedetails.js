@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/12.jpg";
+import galleryImage2 from "../img/tour/354.jpg";
 import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
@@ -33,8 +33,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Bali Tour Packages from Chennai",
-      title: "Bali Tour Packages from Chennai",
+      heading: "Azerbaijan Europe Tour",
+      title: "Azerbaijan Europe Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -53,120 +53,97 @@ const TourPage = () => {
       ],
 
       priceIncludes: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
+      "Accommodation in Baku, 3 nights.",
+    "Accommodation in Guba, 3 nights.",
+    "Accommodation in Gabala, 3 nights.",
+    "Breakfasts at the hotels.",
+    "Transfers from/to airport.",
+    "Transportation during program with comfortable car.",
+    "English speaking driver.",
+    "Water per each excursion day." 
+      ],
+      Priceexclusions: [
+        "Air tickets and insurance.",
+        "Lunches and dinners.",
+        "Entrance fees to museums/entertainment.",
+        "Personal expenses.",
+        "PCR test costs.",
+        "Visa cost."
       ],
       description: [
-        "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
+       "Explore the enchanting beauty and rich cultural heritage of Azerbaijan, a country where the East meets the West. Your journey begins in the vibrant capital, Baku, known for its stunning architecture, including the modern Flame Towers and the historic Old City, a UNESCO World Heritage site. Enjoy leisurely walks along the picturesque Baku Boulevard and indulge in local cuisine at charming restaurants."
       ],
-      tourCode: ["CBT-22/04"],
-      duration: ["6 Days 5 Nights (BALI)"],
+      // tourCode: ["CBT-22/01"],
+      duration: ["10 Days 9 Nights"],
       hotelDetails: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner",
-        "4 Set Menu Dinner at Hotel",
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar, Panida Hotel - Samuh Ocean Sunset Hotel (4*)",
+        "Baku – West Shine or Alba Hotel 4*.",
+    "Gabala – White Boutique 4*.",
+    "Guba – Gold Guba Hotel 3*."
+      ],
+      note:[
+"Additionally, 3% will be added to the cost during the payment process; the company has the right to change the program in case of necessity. Package is not valid during the Eid period (26.06-01.07). Kindly check availability before quoting to the customers."
       ],
       itinerary: [
         {
           day: "Day 1",
-          details: "After Arrive transfer Hotel. Dinner set menu at Hotel. (D)",
+          details:
+            "Arrive at the Azerbaijan International Airport. You will be welcomed and then transferred to your hotel. Check-in at the hotel. The rest of the day is free for you to explore this windy capital. Overnight in Baku.",
         },
         {
           day: "Day 2",
           details:
-            "Full Day Visit NusaDua Water Sports, Padang Padang Beach, Uluwatu Temple & Jimbaran Dinner. (B/D)",
+            "Breakfast at the hotel in Baku. Excursion program (pick-up time 10:00): Highland Park and Flame Towers Complex. Ferris Wheel. International Mugham and 'Baku Venice.' Azerbaijan Carpet Museum. Baku Boulevard. Old city tour (Maiden Tower, Shirvanshah Palace, etc). Fountain Square. The Heydar Aliyev Center. Transfer to Hotel. Overnight in Baku."
+
         },
         {
           day: "Day 3",
           details:
-            "Full Day Visit Jatiluwih, Tanah Lot, Taman Ayun Temple, Chocolate Factory. Dinner set menu at Hotel. (B/D)",
+            "Breakfast at the hotel. Transfer to Gabala (pick-up time 12:00). On the way guests will pass: Shamakhi Juma Mosque. Reaching Gabala. Check-in to the hotel. Free time. Overnight in Gabala.",
         },
         {
           day: "Day 4",
           details:
-            "Full Day Visit Nusa Penida West Tour (SIC) 6.30 AM Pickup at your hotel (depends on the area),,08.00 – 09.00 AM Go to Sanur Harbour – Until Harbour Nusa Penida , 10.00 AM Visit Angel Billabong,,11.00 AM Visit Broken Beach ,12.30 PM Lunch Time ,13.30 PM Visit Klingking Beach ,14.30 PM Visit Crystal Bay,,14.30 PM Back to Harbour ,16.30 PM Drop to Hotel. Dinner set menu at Hotel.(B/D)",
+            "Breakfast at the hotel. Excursion program (pick-up time 10:00). 7 Gozal Waterfall (7 Beauties). Nohur Lake. Lunch break 13.00-14.00. Tufandagh Tourism Complex. Gabala Shooting Club. Return to the hotel. Free time. Overnight in Gabala.",
         },
         {
           day: "Day 5",
           details:
-            "Full Day Visit Kintamani Volcano , Tirta empul temple Gunung kawi bali, Goa Gajah. Dinner set menu at Hotel. (B/D)",
+           "Breakfast at the hotel. Excursion program (pick-up time 10:00). 7 Gozal Waterfall (7 Beauties). Nohur Lake. Lunch break 13.00-14.00. Tufandagh Tourism Complex. Gabala Shooting Club. Return to the hotel. Free time. Overnight in Gabala."
         },
-        { day: "Day 6", details: "Hotel to Bali Airport Transfer.(B)" },
-      ],
-      mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
+        {
+          day: "Day 6",
+          details:
+         "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 10:00). Arrival to Guba hotel. Check-in to the hotel. Free time for rest. Overnight in Guba."
+        },
+        {
+          day: "Day 7",
+          details:
+         "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 09:00). Excursion program: Besh Barmag Shrine, Red settlement, Carpet weaving factory, Gachrash Forests, Mastdargah. Lunch break. Check-in to the hotel. Overnight in Guba."
 
-      iconSrc: [location1],
-    },
-    2: {
-      heading: "Bali Tourist Places",
-      title: "Bali Tourist Places",
-      galleryImages: [
-        galleryImage1,
-        galleryImage2,
-        galleryImage3,
-        galleryImage4,
-        galleryImage5,
-        galleryImage6,
-      ],
-      gallerydata: [
-        galleryImage1_1,
-        galleryImage2_2,
-        galleryImage3_3,
-        galleryImage4_4,
-        galleryImage5_5,
-        galleryImage6_6,
-      ],
-      description: [
-        "Welcome to Bali The Island of Paradise,Bali Sightseeing Places are so fascinating with its tropical destination and breathtaking beaches and mountains. Its rich cultural heritage adds to the allure of this picturesque island.",
-      ],
-      tourCode: ["CBT-22/01"],
-      duration: ["3 Days 2 Nights (BALI)"],
-      hotelDetails: [
-        "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
-        "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
-      ],
-      PackageInclusion: [
-        "Twin Sharing Accommodation with Breakfast",
-        "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
-        "English Speaking Driver",
-        "Entrance fee",
-        "1 Jimbaran Bay Dinner + 1 Set Menu Dinner",
-      ],
-      itinerary: [
-        {
-          day: "Day 1",
-          details: "After Arrive transfer Hotel. Evening visit Uluwatu Temple & Jimbarn Dinner. (D)",
         },
         {
-          day: "Day 2",
+          day: "Day 8",
           details:
-            "Full Day Visit kintamani volcano &Tanah Lot. Evening Dinner set menu at Hotel. (B/D)",
+         "Breakfast at the hotel in Baku. Transfer to Shahdag Mountain Resort (pick-up time 10:00). Excursion program: Visiting Shahdag Mountain Resort, Using activities which are available at that moment, Going to Laza village. Lunch break. Return to the hotel. Overnight in Guba."
         },
         {
-          day: "Day 3",
+          day: "Day 9",
           details:
-            "Hotel to Bali Airport Transfer.(B)",
+         "Breakfast at the hotel. Check-out from the hotel by 12:00. Way to Baku (around 3 hours). Check-in to the hotel. Shopping time in local bazaars (Sharg Bazaar, Yashil Bazaar) and shopping malls (Daniz Mall, 28 Mall, Ganjlik Mall). Overnight in Baku."
+
+        },
+        {
+          day: "Day 10",
+          details:
+         "Breakfast at the hotel. Check-out. Transfer to the Azerbaijan International Airport (3 hours before the flight timing). Departure."
         },
       ],
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
-
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121649.7397364983!2d47.75466659999999!3d40.17599485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307cd91aa21ddf%3A0xe6c9526b3e83cd08!2sAzerbaijan!5e0!3m2!1sen!2sin!4v1728305759113!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
-
+ 
   const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
@@ -235,10 +212,12 @@ const TourPage = () => {
                 priceIncludes={selectedTour.priceIncludes}
                 hotelDetails={selectedTour.hotelDetails}
                 PackageInclusion={selectedTour.PackageInclusion}
+                Priceexclusions={selectedTour.Priceexclusions}
+                note={selectedTour.note}
               />
             </div>
           </div>
-          
+
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>
