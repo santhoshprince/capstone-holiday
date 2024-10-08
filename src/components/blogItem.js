@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BlogItem = ({ id, image, author, date, category, title, text, videoLink, isVideo }) => {
+const BlogItem = ({ id, slug, image, author, date, category, title, text, videoLink, isVideo }) => {
   return (
     <div className="th-blog blog-single has-post-thumbnail">
       {isVideo ? (
         <div className="blog-img" data-overlay="bg-title" data-opacity="5">
-          <Link to={`/blog/${id}`}>
+          <Link to={`/${slug}`}> {/* Use slug here */}
             <img src={image} alt="Blog Image" />
           </Link>
           <a href={videoLink} className="play-btn popup-video">
@@ -15,7 +15,7 @@ const BlogItem = ({ id, image, author, date, category, title, text, videoLink, i
         </div>
       ) : (
         <div className="blog-img">
-          <Link to={`/blog/${id}`}>
+          <Link to={`/${slug}`}> {/* Use slug here */}
             <img src={image} alt="Blog Image" />
           </Link>
         </div>
@@ -33,10 +33,10 @@ const BlogItem = ({ id, image, author, date, category, title, text, videoLink, i
           </a>
         </div>
         <h2 className="blog-title">
-          <Link to={`/blog/${id}`}>{title}</Link>
+          <Link to={`/${slug}`}>{title}</Link> {/* Use slug here */}
         </h2>
         <p className="blog-text">{text}</p>
-        <Link to={`/blog/${id}`} className="th-btn style4 th-icon">Read More</Link>
+        <Link to={`/${slug}`} className="th-btn style4 th-icon">Read More</Link> {/* Use slug here */}
       </div>
     </div>
   );

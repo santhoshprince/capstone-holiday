@@ -12,14 +12,14 @@ const BlogPage = () => {
         
       <div className="container">
         <div className="row">
-          <div className="col-xxl-12 col-lg-12">
+          <div className="col-xxl-8 col-lg-7">
         
             <BlogList />
             <Pagination />
           </div>
-          {/* <div className="col-xxl-4 col-lg-5">
+          <div className="col-xxl-4 col-lg-3">
               <Sidebar />
-            </div> */}
+            </div>
         </div>
       </div>
     </section>

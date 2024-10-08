@@ -82,7 +82,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/tours-and-travels-in-chennai" element={<Blog />} />
 
-          <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
           <Route path="/tour-destination/bali-tour" element={<Bali />} />
           <Route

@@ -11,7 +11,8 @@ const blogs = [
     {
       id: 1,  // Add unique IDs
       image: blog1,
-      author: "David Smith",
+      author: "Blog",
+      slug:"best-travel-agents-in-chennai",
       date: "September 27, 2024",
       category: "Tour Guide",
       title: "Best Travel Agents in Chennai",
@@ -21,7 +22,8 @@ const blogs = [
     {
       id: 2,
       image: blog2,
-      author: "David Smith",
+      author: "Blog",
+      slug: "kashmir-tour-packages",
       date: "September 24, 2024",
       category: "Tour Guide",
       title: "Kashmir Tour Packages",
@@ -31,7 +33,8 @@ const blogs = [
     {
       id: 3,
       image: blog3,
-      author: "David Smith",
+      author: "Blog",
+      slug: "best-tours-and-travels-in-chennai",
       date: "September 14, 2024",
       category: "Tour Guide",
       title: "Best Tours And Travels in Chennai",
@@ -42,7 +45,8 @@ const blogs = [
     {
       id: 4,
       image: blog3,
-      author: "David Smith",
+      author: "blog",
+      slug: "best-tour-operators-in-chennai",
       date: "September 6, 2024",
       category: "Tour Guide",
       title: "Best Tour Operators in Chennai",
@@ -54,7 +58,8 @@ const blogs = [
     {
       id: 5,
       image: blog3,
-      author: "David Smith",
+      author: "Blog",
+      slug: "bali-tour-package",
       date: "August 22, 2024",
       category: "Tour Guide",
       title: "Bali Tour Package",
@@ -65,7 +70,8 @@ const blogs = [
     {
       id: 6,
       image: blog3,
-      author: "David Smith",
+      author: "Blog",
+      slug: "best-travel-agency-in-velachery",
       date: "August 9, 2024",
       category: "Tour Guide",
       title: "Best Travel agency in Velachery",
@@ -76,7 +82,8 @@ const blogs = [
     {
       id: 7,
       image: blog3,
-      author: "David Smith",
+      slug: "thailand-tour-package",
+      author: "Blog",
       date: "August 5, 2024",
       category: "Tour Guide",
       title: "Thailand Tour Package",
@@ -88,6 +95,7 @@ const blogs = [
     {
       id: 8,
       image: blog3,
+      slug: "maldives-honeymoon-package",
       author: "David Smith",
       date: "July 23, 2024",
       category: "Tour Guide",
@@ -99,7 +107,8 @@ const blogs = [
     {
       id: 9,
       image: blog3,
-      author: "David Smith",
+      slug: "srilanka-tour-package",
+      author: "Blog",
       date: "July 16, 2024",
       category: "Tour Guide",
       title: "Sri Lanka Tour Package",
@@ -110,7 +119,8 @@ const blogs = [
     {
       id: 10,
       image: blog3,
-      author: "David Smith",
+      author: "Blog",
+      slug: "dubai-tour-packages-from-india",
       date: "June 26, 2024",
       category: "Tour Guide",
       title: "Dubai Tour Packages from India",
@@ -121,7 +131,8 @@ const blogs = [
     {
       id: 11,
       image: blog3,
-      author: "David Smith",
+      author: "Blog",
+      slug: "vietnam-tour-packages-from-india",
       date: "June 24, 2024",
       category: "Tour Guide",
       title: "Vietnam Tour Packages from India",
@@ -133,7 +144,8 @@ const blogs = [
     {
       id: 12,
       image: blog3,
-      author: "David Smith",
+      slug:"singapore-malaysia-tour-package-from-chennai",
+      author: "Blog",
       date: "June 24, 2024",
       category: "Tour Guide",
       title: "Singapore Malaysia Tour Package from Chennai",
@@ -145,7 +157,8 @@ const blogs = [
     {
       id: 13,
       image: blog3,
-      author: "David Smith",
+      slug:"tours-and-travels-in-chennai",
+      author: "Blog",
       date: "June 24, 2024",
       category: "Tour Guide",
       title: "Best Travel Agency in Chennai",
