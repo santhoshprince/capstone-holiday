@@ -89,13 +89,13 @@ const HeroSlider = () => {
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         {/* YouTube Background */}
         <div className="video-background">
-          {/* <iframe
+          <iframe
             src="https://www.youtube.com/embed/pbEfYpU9IQA?autoplay=1&mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
             className="background-video"
-          ></iframe> */}
+          ></iframe>
         </div>
 
         <div className="container">
