@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/aboutus";
 import Contact from "./pages/contact";
+import Blog from "./pages/blog";
+import BlogDetails from "./pages/blogdeatils";
+
 import Bali from "./desinationpage/bali";
 import ScrollToTop from "./components/ScrollToTop";
 import Maldives from "./desinationpage/maldives";
@@ -58,6 +61,9 @@ import ThailandGroup from "./grouptour/thailandgroupdetails"
 import VietnamGroup from "./grouptour/vietnamgroupdetails"
 
 
+import AzerbaijanEurope from "./europetour/azerbaijaneuropedetails"
+import ChinaEurope from "./europetour/chinaeuropedetails"
+import GreeceEurope from "./europetour/greeceuropedetails"
 
 import Layout from "./components/layout";
 import "./App.css";
@@ -74,7 +80,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tours-and-travels-in-chennai" element={<Blog />} />
 
+          <Route path="/blog/:id" element={<BlogDetails />} />
           {/* International Packages */}
           <Route path="/tour-destination/bali-tour" element={<Bali />} />
           <Route
@@ -221,6 +229,19 @@ function App() {
               <Route
             path="/tour/vietnam-group-tour-packages/"
             element={<VietnamGroup />}
+          />
+          
+          <Route
+            path="/tour-destination/azerbaijan-europe-tour"
+            element={<AzerbaijanEurope />}
+          />
+            <Route
+            path="/tour/china-europe-tour-package"
+            element={<ChinaEurope />}
+          />
+            <Route
+            path="/tour/greece-europe-tour-package"
+            element={<GreeceEurope />}
           />
           
         </Routes>

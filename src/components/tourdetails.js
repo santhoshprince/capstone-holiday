@@ -25,14 +25,14 @@ const TourDetails = ({
         {tourCode ? <h4>Tour Code: {tourCode}</h4> : null}
         {duration ? <h4>Tour Duration: {duration}</h4> : null}
       </div>
-      <div className="tour-hotels">
+      {hotelDetails && hotelDetails.length > 0 &&(<div className="tour-hotels">
         <h3>Hotels</h3>
         <ul>
           {hotelDetails?.map((hotel, index) => (
             <li key={index}>{hotel}</li>
           ))}
         </ul>
-      </div>
+      </div>)}
 
       {priceIncludes && priceIncludes.length > 0 && (
         <div className="tour-includes">

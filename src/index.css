@@ -24447,3 +24447,14 @@ font-size: 19px !important;
   position: relative;
   z-index: 1;
 }
+
+.blog-content-section-new{
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center the section by compensating for the container's margin */
+  background-color: #f5f5f5; /* Optional background color */
+  padding: 20px 0; /* Adjust the padding as needed */
+}
+.blog-content-section-new .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}

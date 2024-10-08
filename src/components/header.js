@@ -52,7 +52,19 @@ const Header = () => {
       { name: "Thailand", link: "/tour/thailand-group-tour-package" },
       { name: "Vietnam", link: "/tour/vietnam-group-tour-packages" },
     ],
+    EuropeTour: [
+      { name: "Azerbaijan", link: "/tour-destination/azerbaijan-europe-tour" },
+      { name: "China", link: "/tour/china-europe-tour-package" },
+      { name: "Greece", link: "/tour/greece-europe-tour-package" },
+    ],
+    HoneymoonTour: [
+      { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
+      { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
+      { name: "Bali", link: "/tour/bali-group-tour-package" },
+    ],
   };
+
+
 
   return (
     <header className="sticky-header">
@@ -68,39 +80,6 @@ const Header = () => {
             <li>
               <Link to="/about">About Us</Link>
             </li>
-            {/* <li onMouseEnter={() => handleMouseEnter("tourPackages")} onMouseLeave={handleMouseLeave}>
-              <Link to="#">Tour Package</Link>
-              {activeDropdown === "tourPackages" && (
-                <ul className="dropdown">
-                  <li className="dropdown-container">
-                    <div className="dropdown-section">
-                      <strong>International Packages</strong>
-                      <ul>
-                        {tourPackages.international.map((pkg, index) => (
-                          <li key={index}>
-                            <Link to={pkg.link}>
-                              <span className="icon fas fa-plane"></span> {pkg.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="dropdown-section">
-                      <strong>Domestic Packages</strong>
-                      <ul>
-                        {tourPackages.domestic.map((pkg, index) => (
-                          <li key={index}>
-                            <Link to={pkg.link}>
-                              <span className="icon fas fa-plane"></span> {pkg.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              )}
-            </li> */}
             <li>
               <a href="#">Tour Packages</a>
               <div className="dropdown">
@@ -135,16 +114,13 @@ const Header = () => {
                 </div>
               </div>
             </li>
-            <li
-              onMouseEnter={() => handleMouseEnter("groupTour")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Link to="#">Group Tour</Link>
-              {activeDropdown === "groupTour" && (
-                <ul className="dropdown">
-                  <li className="dropdown-container">
-                    <div className="dropdown-section">
-                      <ul>
+            <li>
+            <Link to="#">Group Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Group Tour Countrys</h3>
+                    <ul>
                         {tourPackages.groupTour.map((pkg, index) => (
                           <li key={index}>
                             <Link to={pkg.link}>
@@ -154,22 +130,56 @@ const Header = () => {
                           </li>
                         ))}
                       </ul>
-                    </div>
-                  </li>
-                </ul>
-              )}
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="#">Luxury Tour</Link>
+            <Link to="#">Europe Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Europe Tour Countrys</h3>
+                    <ul>
+                        {tourPackages.EuropeTour.map((pkg, index) => (
+                          <li key={index}>
+                            <Link to={pkg.link}>
+                              <span className="icon fas fa-plane"></span>{" "}
+                              {pkg.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
-              <Link to="#">Honeymoon Tour</Link>
+            <Link to="#">Honeymoon Tour</Link>
+              <div className="dropdown">
+                <div className="dropdown-container">
+                  <div className="dropdown-section international">
+                    <h3>Honeymoon Tour Countrys</h3>
+                    <ul>
+                        {tourPackages. HoneymoonTour.map((pkg, index) => (
+                          <li key={index}>
+                            <Link to={pkg.link}>
+                              <span className="icon fas fa-plane"></span>{" "}
+                              {pkg.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                  </div>
+                </div>
+              </div>
             </li>
+          
             <li>
               <Link to="#">Contact Us</Link>
             </li>
             <li>
-              <Link to="#">Blog</Link>
+              <Link to="/tours-and-travels-in-chennai">Blog</Link>
             </li>
           </ul>
 

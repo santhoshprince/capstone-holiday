@@ -18,11 +18,12 @@ import "swiper/css";
 // import './index.css';
 // Import required modules
 
-import heroBg1 from "../img/hero/2149153257.jpg";
-import heroBg2 from "../img/hero/3372.jpg";
-import heroBg3 from "../img/hero/2149153258.jpg";
-import leftArrow from "../img/icon/left-arrow.svg";
-import rightArrow from "../img/icon/right-arrow.svg";
+// import heroBg1 from "../img/hero/2149153257.jpg";
+// import heroBg2 from "../img/hero/3372.jpg";
+// import heroBg3 from "../img/hero/2149153258.jpg";
+// import leftArrow from "../img/icon/left-arrow.svg";
+// import rightArrow from "../img/icon/right-arrow.svg";
+import VideoSliders from "../components/videoslider";
 import cata1 from "../img/category/2151851404.jpg";
 import cata2 from "../img/category/2151383048.jpg";
 import cata3 from "../img/category/2151793553.jpg";
@@ -50,6 +51,7 @@ import blog1 from "../img/blog/pexels-streetwindy-2108831.jpg";
 import blog2 from "../img/blog/—Pngtree—a group of people standing_15302237.jpg";
 import blog3 from "../img/blog/—Pngtree—people are sitting and watching_13334566.jpg";
 
+
 import normal1 from "../img/icon/choose_1_1.svg";
 import normal2 from "../img/icon/choose_1_2.svg";
 import normal3 from "../img/icon/choose_1_3.svg";
@@ -58,6 +60,7 @@ import normal4 from "../img/normal/—Pngtree—forest with waterfalls image hd_
 import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest_15491363.jpeg";
 import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg";
 import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg";
+import VideoSlider from "../components/videoslider";
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -86,13 +89,13 @@ const HeroSlider = () => {
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         {/* YouTube Background */}
         <div className="video-background">
-          <iframe
+          {/* <iframe
             src="https://www.youtube.com/embed/pbEfYpU9IQA?autoplay=1&mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
             className="background-video"
-          ></iframe>
+          ></iframe> */}
         </div>
 
         <div className="container">
@@ -379,6 +382,7 @@ const HeroSlider = () => {
         </div>
       </div>
 
+ <VideoSliders />
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
