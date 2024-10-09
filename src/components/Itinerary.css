@@ -84,14 +84,7 @@
     line-height: 1.8;
     word-spacing: 2px;
   }
-  
-  .itinerary-day:hover {
-    background-color: #ffffff !important;
-    border-radius: 12px;
-    padding: 15px 25px;
-    transform: translateY(-5px);
-    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
-  }
+
   
   @media (max-width: 768px) {
     .itinerary {
@@ -191,13 +184,13 @@
     word-spacing: 2px;
   }
   
-  .itinerary-day:hover {
+  /* .itinerary-day:hover {
     background-color: #f1f8ff;
     border-radius: 12px;
     padding: 15px 25px;
     transform: translateY(-5px);
     transition: background-color 0.3s ease-out, transform 0.3s ease-out;
-  }
+  } */
   
   @media (max-width: 768px) {
     .itinerary {
