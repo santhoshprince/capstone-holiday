@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;display=swap"); @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"); body {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap");
+body {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   color: rgb(114, 112, 112);
@@ -15,18 +17,24 @@ a:hover {
   transition: all 0.5s ease 0s;
 }
 
-a, p, li, td, span {
+a,
+p,
+li,
+td,
+span {
   font-size: 14.5px;
   line-height: 24px;
   font-weight: 400;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -68,15 +76,16 @@ div::after {
 .com-colo-abou {
 }
 
-.com-colo-abou p, li {
+.com-colo-abou p,
+li {
   color: rgb(136, 136, 136);
 }
-:root{
-  --topspac:70px;
+:root {
+  --topspac: 70px;
 }
-@media screen and (max-width:992px) {
-  :root{
-      --topspac:54px;
+@media screen and (max-width: 992px) {
+  :root {
+    --topspac: 54px;
   }
 }
 .inn-page-bg {
@@ -85,7 +94,9 @@ div::after {
   background: rgb(243, 243, 243);
   margin-top: var(--topspac);
 }
-.inn-page-bg.com-colo{margin-top: 0;}
+.inn-page-bg.com-colo {
+  margin-top: 0;
+}
 .inn-page-con-bg {
   position: relative;
   overflow: hidden;
@@ -133,7 +144,6 @@ div::after {
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
-  
 }
 
 .head_right ul li:first-child a {
@@ -182,7 +192,7 @@ div::after {
   margin-bottom: 50px;
 }
 
-.spe-title h2{
+.spe-title h2 {
   margin-bottom: 0px;
   padding-bottom: 20px;
   margin-top: 0px;
@@ -191,13 +201,15 @@ div::after {
   color: rgb(37, 61, 82);
 }
 
-.spe-title h2 span{
+.spe-title h2 span {
   color: rgb(244, 54, 79);
   font-size: 44px;
   font-weight: 600;
 }
-.tit-inn-pg h1{}
-.tit-inn-pg h1 span{}
+.tit-inn-pg h1 {
+}
+.tit-inn-pg h1 span {
+}
 .spe-title p {
   margin-bottom: 0px;
   font-size: 20px;
@@ -260,13 +272,11 @@ div::after {
 .nav > li > a {
   font-weight: 600;
   font-size: 14px;
-  
 }
 
 .dropdown-menu > li > a {
   font-weight: 500;
   font-size: 14px;
-  
 }
 
 .menu_book a {
@@ -277,7 +287,6 @@ div::after {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(26, 165, 216), rgb(19, 134, 177));
-  
 }
 
 .menu_book a:hover {
@@ -308,17 +317,21 @@ div::after {
 
 .tourz-hom-ser ul {
 }
-.ban-shrt-cut-link{
+.ban-shrt-cut-link {
   float: left;
   width: 100%;
   padding-top: 30px;
 }
-.tourz-hom-ser ul li, .ban-shrt-cut-link ul li {
+.tourz-hom-ser ul li,
+.ban-shrt-cut-link ul li {
   float: left;
   width: 33.333%;
   padding: 0px 15px;
 }
-.ban-shrt-cut-link ul li{width: auto;padding: 0 12px 12px 0;}
+.ban-shrt-cut-link ul li {
+  width: auto;
+  padding: 0 12px 12px 0;
+}
 .ban-shrt-cut-link ul li a {
   background: #e8095a00;
   width: 90px;
@@ -334,7 +347,7 @@ div::after {
   line-height: 24px;
   border: 1px solid #9fa8a0;
 }
-.ban-shrt-cut-link ul li img{
+.ban-shrt-cut-link ul li img {
   display: table;
   text-align: center;
   margin: 0 auto;
@@ -343,7 +356,11 @@ div::after {
 }
 .hom-quick-acc {
   position: relative;
-  background-image: linear-gradient(225deg, rgb(240, 240, 255) 0%, rgb(227, 210, 255) 99%);
+  background-image: linear-gradient(
+    225deg,
+    rgb(240, 240, 255) 0%,
+    rgb(227, 210, 255) 99%
+  );
   border-radius: 45px;
   padding: 40px;
   text-align: center;
@@ -372,7 +389,8 @@ div::after {
 }
 
 .cta-2 {
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   color: rgb(255, 255, 255);
   border: 0px solid rgb(255, 167, 120);
   padding: 12px 40px;
@@ -391,19 +409,35 @@ div::after {
 }
 
 .hom-quick-acc-2 {
-  background-image: linear-gradient(225deg, rgb(255, 237, 254) 0%, rgb(255, 210, 210) 99%);
+  background-image: linear-gradient(
+    225deg,
+    rgb(255, 237, 254) 0%,
+    rgb(255, 210, 210) 99%
+  );
 }
 
 .hom-quick-acc-3 {
-  background-image: linear-gradient(135deg, rgb(253, 252, 251) 0%, rgb(226, 209, 195) 100%);
+  background-image: linear-gradient(
+    135deg,
+    rgb(253, 252, 251) 0%,
+    rgb(226, 209, 195) 100%
+  );
 }
 
 .hom-quick-acc-4 {
-  background-image: linear-gradient(to top, rgb(204, 237, 208) 0%, rgb(238, 255, 236) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgb(204, 237, 208) 0%,
+    rgb(238, 255, 236) 100%
+  );
 }
 
 .hom-quick-acc-5 {
-  background-image: linear-gradient(to top, rgb(234, 241, 184) 0%, rgb(250, 255, 218) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgb(234, 241, 184) 0%,
+    rgb(250, 255, 218) 100%
+  );
 }
 
 .hom-quick-acc h2 {
@@ -452,7 +486,7 @@ div::after {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   border-radius: 2px;
-  
+
   background: linear-gradient(rgb(232, 9, 90), rgb(212, 8, 82));
 }
 
@@ -507,23 +541,23 @@ div::after {
 
 @keyframes roatepro {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   25% {
-      transform: rotate(-20deg);
+    transform: rotate(-20deg);
   }
 
   50% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   75% {
-      transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -623,12 +657,14 @@ div::after {
 .ban-search ul li.sr-btn {
 }
 
-.ban-search ul li.sr-look .chosen-container-single, .ban-search ul li.sr-look .chosen-container-single .chosen-single {
+.ban-search ul li.sr-look .chosen-container-single,
+.ban-search ul li.sr-look .chosen-container-single .chosen-single {
   border-radius: 30px 0px 0px 30px;
   border: 0px;
 }
 
-.ban-search ul li input, .ban-search ul li .chosen-select {
+.ban-search ul li input,
+.ban-search ul li .chosen-select {
   height: 52px;
   border: 0px solid rgb(56, 73, 106);
 }
@@ -643,7 +679,13 @@ div::after {
 .ban-search ul li.sr-look .chosen-container-single .chosen-single span {
 }
 
-.ban-search ul li.sr-look .chosen-container-single .chosen-single div b::before {
+.ban-search
+  ul
+  li.sr-look
+  .chosen-container-single
+  .chosen-single
+  div
+  b::before {
   top: 7px;
 }
 
@@ -735,7 +777,12 @@ div::after {
   border-radius: 5px;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
   border: 0px solid rgb(180, 180, 180);
   background: rgb(241, 244, 245);
   font-weight: 500;
@@ -744,19 +791,41 @@ div::after {
   border-radius: 2px;
 }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
   color: rgb(69, 69, 69);
   text-decoration: none;
 }
 
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
   font-weight: normal;
   border: 0px solid rgb(218, 213, 94);
   background: rgb(19, 175, 17);
   color: rgb(255, 255, 255);
 }
 
-.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited, a.ui-button:hover, a.ui-button:focus {
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
   color: rgb(43, 43, 43);
   text-decoration: none;
 }
@@ -765,19 +834,27 @@ div::after {
   box-shadow: rgb(94, 158, 214) 0px 0px 3px 1px;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
   font-weight: normal;
   border: 0px solid rgb(218, 213, 94);
   background: rgb(4, 69, 250);
   color: rgb(255, 255, 255);
 }
 
-.ui-icon-background, .ui-state-active .ui-icon-background {
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
   border: rgb(0, 62, 255);
   background-color: rgb(255, 255, 255);
 }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -958,7 +1035,10 @@ div::after {
   background-position: right -11px;
 }
 
-.chosen-container-single .chosen-single.chosen-disabled .chosen-single abbr:hover {
+.chosen-container-single
+  .chosen-single.chosen-disabled
+  .chosen-single
+  abbr:hover {
   background-position: right 2px;
 }
 
@@ -1087,7 +1167,10 @@ div::after {
   cursor: pointer;
 }
 
-.chosen-container-multi .chosen-choices .search-choice .search-choice-close:hover {
+.chosen-container-multi
+  .chosen-choices
+  .search-choice
+  .search-choice-close:hover {
   background-position: right -11px;
 }
 
@@ -1095,7 +1178,10 @@ div::after {
   background: rgb(212, 212, 212);
 }
 
-.chosen-container-multi .chosen-choices .search-choice-focus .search-choice-close {
+.chosen-container-multi
+  .chosen-choices
+  .search-choice-focus
+  .search-choice-close {
   background-position: right -11px;
 }
 
@@ -1141,7 +1227,11 @@ div::after {
   position: relative;
 }
 
-.job-sear .chosen-container.chosen-container-single .chosen-single div b::before {
+.job-sear
+  .chosen-container.chosen-container-single
+  .chosen-single
+  div
+  b::before {
   margin-top: 8px;
 }
 
@@ -1382,7 +1472,8 @@ div::after {
   position: relative;
 }
 
-.menu-pop2 .menu-pop-help .user-pro::before, .menu-pop2 .menu-pop-help .user-pro::after {
+.menu-pop2 .menu-pop-help .user-pro::before,
+.menu-pop2 .menu-pop-help .user-pro::after {
   content: "";
   position: absolute;
   width: 70px;
@@ -1411,11 +1502,11 @@ div::after {
 
 @keyframes rotat-light {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -1511,7 +1602,8 @@ div::after {
   transition: all 0.5s ease 0s;
 }
 
-.menu-pop-soci i:hover, .menu-pop-soci i.fa:hover {
+.menu-pop-soci i:hover,
+.menu-pop-soci i.fa:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -1519,7 +1611,8 @@ i.fa-facebook:hover {
   background: rgb(0, 90, 255);
 }
 
-.ed-com-t1-social ul li a i:hover, .foot-social ul li i:hover {
+.ed-com-t1-social ul li a i:hover,
+.foot-social ul li i:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -1727,12 +1820,12 @@ section.c3 {
 .item {
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
   float: right;
 }
 
 .slider-cap {
- 
 }
 
 .slider-cap h1 {
@@ -1900,7 +1993,7 @@ section.c3 {
 .b_pack h4 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  
+
   font-weight: 600;
 }
 
@@ -2065,18 +2158,29 @@ section.c3 {
   float: left;
   width: 100%;
 }
-.book-slie-pg{
+.book-slie-pg {
   margin-top: var(--topspac);
   padding: 0 0 50px 0;
   background-image: linear-gradient(to top, #f4f4f4 0%, #e5eeff 100%);
 }
-.book-slie-pg .container{
-  width: 100%;padding: 0;
+.book-slie-pg .container {
+  width: 100%;
+  padding: 0;
 }
-.book-slie-pg .to-ho-hotel ul li{padding: 0;float: left;}
-.book-slie-pg .to-ho-hotel-con{border:0;border-radius: 0;}
-.book-slie-pg .pack-new-box .to-ho-hotel-con-1 img{height: calc(100vh - 80px);}
-.book-slie-pg .hom-pack-deta{padding: 0px 50px 70px;}
+.book-slie-pg .to-ho-hotel ul li {
+  padding: 0;
+  float: left;
+}
+.book-slie-pg .to-ho-hotel-con {
+  border: 0;
+  border-radius: 0;
+}
+.book-slie-pg .pack-new-box .to-ho-hotel-con-1 img {
+  height: calc(100vh - 80px);
+}
+.book-slie-pg .hom-pack-deta {
+  padding: 0px 50px 70px;
+}
 .to-ho-hotel-con {
   position: relative;
   overflow: hidden;
@@ -2097,7 +2201,11 @@ section.c3 {
 .to-ho-hotel-con-1::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 14%, rgba(0, 0, 0, 0.08) 35%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 14%,
+    rgba(0, 0, 0, 0.08) 35%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -2106,7 +2214,11 @@ section.c3 {
 }
 
 .pack-new-box .to-ho-hotel-con-1::before {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.68) 15%, rgba(0, 0, 0, 0) 87%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.68) 15%,
+    rgba(0, 0, 0, 0) 87%
+  );
 }
 
 .pack-new-box * {
@@ -2317,7 +2429,6 @@ section.c3 {
   color: rgb(255, 255, 255);
   border-radius: 25px;
   border: 1px solid rgb(37, 55, 71);
-  
 }
 
 .hom-hot-av-tic-list {
@@ -2325,7 +2436,7 @@ section.c3 {
   right: inherit;
   bottom: 10px;
   border-radius: 2px;
-  background: #4CAF50;
+  background: #4caf50;
   color: #fff;
   font-weight: 600;
   padding: 1px 8px;
@@ -2346,7 +2457,8 @@ section.c3 {
   z-index: 3;
 }
 
-.plac-hom-box-im::before, .plac-det-ban-im::before {
+.plac-hom-box-im::before,
+.plac-det-ban-im::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -2359,7 +2471,8 @@ section.c3 {
 .plac-hom-box:hover {
 }
 
-.plac-hom-box:hover .plac-hom-box-im img, .pack-new-box:hover .to-ho-hotel-con-1 img {
+.plac-hom-box:hover .plac-hom-box-im img,
+.pack-new-box:hover .to-ho-hotel-con-1 img {
   transform: scale(1.1);
 }
 
@@ -2385,7 +2498,8 @@ section.c3 {
   height: 270px;
 }
 
-.plac-det-eve img, .plac-det-eve .plac-hom-box-im::before {
+.plac-det-eve img,
+.plac-det-eve .plac-hom-box-im::before {
   border-radius: 10px;
 }
 
@@ -2444,7 +2558,8 @@ section.c3 {
   margin-bottom: 105px;
 }
 
-.carousel-inner1 > .item > img, .carousel-inner1 > .item > a > img {
+.carousel-inner1 > .item > img,
+.carousel-inner1 > .item > a > img {
   width: 100%;
   margin: auto;
 }
@@ -2571,7 +2686,6 @@ section.c3 {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(46, 157, 162), rgb(19, 177, 148));
-  
 }
 
 .to-con-3 {
@@ -2582,7 +2696,6 @@ section.c3 {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(26, 165, 216), rgb(19, 134, 177));
-  
 }
 
 .to-con-4 {
@@ -2593,7 +2706,6 @@ section.c3 {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(26, 165, 216), rgb(19, 134, 177));
-  
 }
 
 .ho-con-cont {
@@ -2685,7 +2797,8 @@ section.c3 {
   font-size: 18px;
 }
 
-#myTable th, #myTable td {
+#myTable th,
+#myTable td {
   text-align: left;
   padding: 0px 12px;
 }
@@ -2694,7 +2807,8 @@ section.c3 {
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-#myTable tr.header, #myTable tr:hover {
+#myTable tr.header,
+#myTable tr:hover {
   background-color: rgb(241, 241, 241);
 }
 
@@ -2750,7 +2864,7 @@ section.c3 {
   line-height: 34px;
   margin-top: 0px;
   margin-bottom: 0px;
-  
+
   font-weight: 600;
 }
 
@@ -2758,7 +2872,7 @@ section.c3 {
   color: rgb(37, 61, 82);
   display: block;
   font-weight: 600;
-  
+
   text-transform: capitalize;
 }
 
@@ -2868,7 +2982,7 @@ section.c3 {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(26, 165, 216), rgb(19, 134, 177));
-  
+
   border: 0px;
   text-transform: uppercase;
 }
@@ -2968,7 +3082,9 @@ section.c3 {
   padding-bottom: 15px;
 }
 
-.testi h4 {color: #000;}
+.testi h4 {
+  color: #000;
+}
 
 .testi p {
   color: rgb(30, 32, 33);
@@ -3097,7 +3213,7 @@ footer ul li a {
 .foot-spec span {
   color: rgb(172, 173, 175);
   text-transform: uppercase;
-  
+
   font-weight: 700;
   font-size: 18px;
 }
@@ -3263,7 +3379,7 @@ footer ul li a {
   padding: 6px 15px;
   border-radius: 2px;
   display: inline-block;
-  
+
   transition: all 0.5s ease 0s;
   font-weight: 700;
   background: linear-gradient(rgb(244, 54, 79), rgb(220, 32, 57));
@@ -3325,7 +3441,11 @@ footer ul li a {
 }
 
 .open > .dropdown-menu {
-  transition: background-color 0.3s ease 0s, border 0s ease 0s, color 0.3s ease 0s, opacity 0.3s ease-in-out 0s;
+  transition:
+    background-color 0.3s ease 0s,
+    border 0s ease 0s,
+    color 0.3s ease 0s,
+    opacity 0.3s ease-in-out 0s;
 }
 
 .inner_banner {
@@ -3334,11 +3454,17 @@ footer ul li a {
   position: relative;
   margin-top: var(--topspac);
 }
-.mt-top{margin-top: var(--topspac);}
+.mt-top {
+  margin-top: var(--topspac);
+}
 .inner_banner::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, rgb(0 0 0 / 70%) 15%, rgb(0 0 0 / 28%) 100%);
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 70%) 15%,
+    rgb(0 0 0 / 28%) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -3366,7 +3492,8 @@ footer ul li a {
   background: url("../public/images/banner/5.jpg") center center / cover no-repeat;
 } */
 
-.inner_banner div.spe-title, .inner_banner div ul {
+.inner_banner div.spe-title,
+.inner_banner div ul {
   position: relative;
   margin-bottom: 20px;
 }
@@ -3475,7 +3602,9 @@ footer ul li a {
   font-size: 20px;
 }
 
-.ticket {margin-bottom: 10px;}
+.ticket {
+  margin-bottom: 10px;
+}
 
 .ticket ul {
   padding: 0px;
@@ -3548,7 +3677,12 @@ footer ul li a {
   border: 2px solid rgb(21 133 232);
 }
 
-.p2_book ul li:nth-child(2) a {background: #fff;border: 2px solid #000;color: #000;margin-left: 5px;}
+.p2_book ul li:nth-child(2) a {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  margin-left: 5px;
+}
 
 .p2_book ul li:nth-child(2) a:hover {
   transition: all 0.5s ease 0s;
@@ -3659,7 +3793,6 @@ footer ul li a {
 }
 
 .post_author {
-  
   font-weight: 700;
 }
 
@@ -3688,11 +3821,12 @@ footer ul li a {
   line-height: 25px;
 }
 
-.tour_head {}
-.tour_rhs{
+.tour_head {
+}
+.tour_rhs {
   padding-left: 25px;
 }
-.tour_lhs{
+.tour_lhs {
   padding: 0 25px;
 }
 .tour_head h2 {
@@ -3830,7 +3964,7 @@ footer ul li a {
   /* text-transform: uppercase; */
   padding: 15px;
   margin-bottom: 0px;
-  border-radius: 7px 7px  0 0;
+  border-radius: 7px 7px 0 0;
 }
 
 .tour_incl {
@@ -4381,7 +4515,9 @@ footer ul li a {
   text-align: center;
   transition: all 0.5s ease 0s;
   border: 1px dashed rgb(224, 224, 224);
-  text-shadow: rgb(255, 255, 255) 0px 1px, rgb(38, 47, 51) 0px -1px;
+  text-shadow:
+    rgb(255, 255, 255) 0px 1px,
+    rgb(38, 47, 51) 0px -1px;
 }
 
 .tips_travel_2 h4 {
@@ -4402,10 +4538,22 @@ footer ul li a {
   /* background: url("../public/images/places/12.jpg") center center / cover no-repeat; */
   padding: 20px;
   text-align: center;
-  border-radius: 20px 20px 0 0;position: relative;
+  border-radius: 20px 20px 0 0;
+  position: relative;
 }
-.pack_title *{position: relative;z-index: 1;}
-.pack_title:before{content:'';position: absolute;background: #00000063;top: 0;right: 0;bottom: 0;left: 0;/* z-index: -1; */}
+.pack_title * {
+  position: relative;
+  z-index: 1;
+}
+.pack_title:before {
+  content: "";
+  position: absolute;
+  background: #00000063;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* z-index: -1; */
+}
 .pack_title h3 {
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -4417,7 +4565,7 @@ footer ul li a {
 }
 
 .pack_title h2 {
-  color: #FFEB3B;
+  color: #ffeb3b;
   font-weight: 600;
   font-size: 50px;
   text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 5px;
@@ -4464,7 +4612,8 @@ footer ul li a {
   font-size: 16px;
   text-transform: uppercase;
   background: #197ee3;
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   color: rgb(255, 255, 255);
   border-radius: 0 0 20px 20px;
 }
@@ -4692,7 +4841,8 @@ element.style {
   margin-top: 50px;
 }
 
-fieldset, label {
+fieldset,
+label {
   margin: 0px;
   padding: 0px;
 }
@@ -4722,7 +4872,8 @@ fieldset, label {
   color: rgb(33, 61, 68);
 }
 
-.dir-rat-form input, textarea {
+.dir-rat-form input,
+textarea {
   width: 100%;
   border: 1px solid rgb(222, 222, 222);
   border-radius: 3px;
@@ -5014,7 +5165,8 @@ fieldset, label {
   font-size: 18px;
 }
 
-.hot-page2-hom-pre-head::after, .hot-page2-hom-pre-head::before {
+.hot-page2-hom-pre-head::after,
+.hot-page2-hom-pre-head::before {
   top: 59px;
   left: 48%;
   border: solid transparent;
@@ -5051,7 +5203,10 @@ fieldset, label {
 .hot-page2-alp::before {
   content: "";
   position: fixed;
-  background: linear-gradient(rgba(29, 36, 42, 0.75) 15%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    rgba(29, 36, 42, 0.75) 15%,
+    rgba(0, 0, 0, 0) 100%
+  );
   inset: 0px;
   width: 100%;
   height: 100%;
@@ -5108,7 +5263,8 @@ fieldset, label {
   padding: 25px;
 }
 
-.hot-page2-alp-con-left-1::after, .hot-page2-alp-con-left-1::before {
+.hot-page2-alp-con-left-1::after,
+.hot-page2-alp-con-left-1::before {
   top: 72px;
   left: 48%;
   border: solid transparent;
@@ -5264,7 +5420,7 @@ fieldset, label {
 .hot-page2-alp-p3 ul {
 }
 
-.hot-page2-alp-p3 ul li:nth-child(n+6) {
+.hot-page2-alp-p3 ul li:nth-child(n + 6) {
   display: none;
 }
 
@@ -5276,7 +5432,7 @@ fieldset, label {
   display: none;
 }
 
-.hot-page2-alp-p4 ul li:nth-child(n+6) {
+.hot-page2-alp-p4 ul li:nth-child(n + 6) {
   display: none;
 }
 
@@ -5396,7 +5552,8 @@ fieldset, label {
   color: rgb(255, 255, 255);
   display: block;
   text-align: center;
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   border: 0px;
 }
 
@@ -5807,7 +5964,11 @@ fieldset, label {
 .hom-hotels::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, rgba(22, 40, 105, 0.91) 46%, rgba(0, 0, 0, 0.41) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(22, 40, 105, 0.91) 46%,
+    rgba(0, 0, 0, 0.41) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -5841,7 +6002,11 @@ fieldset, label {
 .tour-mig-like-com::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 10%, rgba(84, 84, 84, 0.35) 80%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82) 10%,
+    rgba(84, 84, 84, 0.35) 80%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -5946,7 +6111,11 @@ fieldset, label {
 .foot-mob-sec::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.55) 0%, rgba(240, 240, 240, 0.8) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(240, 240, 240, 0.8) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -6008,7 +6177,6 @@ fieldset, label {
   padding: 12px 20px;
   font-weight: 500;
   cursor: pointer;
-  
 }
 
 .mob-top {
@@ -6343,7 +6511,9 @@ fieldset, label {
   padding: 20px;
 }
 
-.db-2-main-com-table table{width:100%}
+.db-2-main-com-table table {
+  width: 100%;
+}
 
 .db-2-main-com-table th {
   font-weight: 600;
@@ -6379,7 +6549,8 @@ fieldset, label {
 .db2-form-com form input[type="submit"] {
   padding: 0px;
   background: #197ee3;
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   color: rgb(255, 255, 255);
 }
 
@@ -6399,7 +6570,7 @@ fieldset, label {
   font-size: 16px;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
+
   text-transform: uppercase;
   text-align: center;
   display: block !important;
@@ -6546,7 +6717,8 @@ fieldset, label {
   border-radius: 5px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 20px;
-  margin-top: var(--topspac);    max-width: 900px;
+  margin-top: var(--topspac);
+  max-width: 900px;
 }
 
 .tr-regi-form input {
@@ -6564,7 +6736,8 @@ fieldset, label {
   width: 100%;
   font-size: 18px !important;
   background: #1b7de3;
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   border: 0;
   font-weight: 600;
   padding: 5px;
@@ -6596,7 +6769,10 @@ fieldset, label {
   margin-bottom: 10px;
   text-align: center;
 }
-.tr-regi-form p *, .tr-regi-form p{font-size: 16px;}
+.tr-regi-form p *,
+.tr-regi-form p {
+  font-size: 16px;
+}
 .tr-regi-form p a {
 }
 
@@ -6654,12 +6830,14 @@ fieldset, label {
   padding-right: 5px;
 }
 
-.v2-ho-se-ri {padding-top: 100px;}
+.v2-ho-se-ri {
+  padding-top: 100px;
+}
 
 .v2-ho-se-ri h5 {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  
+
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 100;
@@ -6676,7 +6854,7 @@ fieldset, label {
   font-size: 16px;
   margin-bottom: 0px;
   font-weight: 100;
-  
+
   line-height: 30px;
 }
 
@@ -6715,7 +6893,11 @@ fieldset, label {
 
 .v2-hom-search::before {
   content: "";
-  background: linear-gradient(to right, rgba(25, 42, 103, 0.8), rgba(20, 30, 48, 0));
+  background: linear-gradient(
+    to right,
+    rgba(25, 42, 103, 0.8),
+    rgba(20, 30, 48, 0)
+  );
   position: absolute;
   inset: 0px;
 }
@@ -6775,14 +6957,16 @@ fieldset, label {
   padding: 0.2em 0px;
 }
 
-.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
   position: absolute;
   top: -4px;
   width: 1.8em;
   height: 1.8em;
 }
 
-.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
   top: 1px;
 }
 
@@ -6802,7 +6986,8 @@ fieldset, label {
   right: 1px;
 }
 
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
   display: block;
   position: absolute;
   left: 50%;
@@ -6822,7 +7007,8 @@ fieldset, label {
   margin: 1px 0px;
 }
 
-.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
   width: 45%;
 }
 
@@ -6846,7 +7032,8 @@ fieldset, label {
   padding: 1px;
 }
 
-.ui-datepicker td span, .ui-datepicker td a {
+.ui-datepicker td span,
+.ui-datepicker td a {
   display: block;
   padding: 9px;
   text-align: center;
@@ -6902,7 +7089,8 @@ fieldset, label {
   width: 25%;
 }
 
-.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
   border-left-width: 0px;
 }
 
@@ -6948,11 +7136,13 @@ fieldset, label {
   float: left;
 }
 
-.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current, .ui-datepicker-rtl .ui-datepicker-group {
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
   float: right;
 }
 
-.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
   border-right-width: 0px;
   border-left-width: 1px;
 }
@@ -6975,7 +7165,10 @@ fieldset, label {
   font-size: 1em;
 }
 
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
@@ -7005,19 +7198,37 @@ fieldset, label {
   color: rgb(51, 51, 51);
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
   border: 0px solid rgb(180, 180, 180);
   background: rgb(246, 246, 246);
   font-weight: normal;
   color: rgb(79, 79, 79);
 }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
   color: rgb(69, 69, 69);
   text-decoration: none;
 }
 
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
   font-weight: normal;
   border: 0px solid rgb(218, 213, 94);
   background: rgb(246, 89, 142);
@@ -7025,7 +7236,16 @@ fieldset, label {
   border-radius: 27px;
 }
 
-.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited, a.ui-button:hover, a.ui-button:focus {
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
   color: rgb(43, 43, 43);
   text-decoration: none;
 }
@@ -7034,7 +7254,12 @@ fieldset, label {
   box-shadow: rgb(94, 158, 214) 0px 0px 3px 1px;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
   font-weight: normal;
   border: 0px solid rgb(218, 213, 94);
   background: rgb(22, 146, 192);
@@ -7042,12 +7267,15 @@ fieldset, label {
   border-radius: 27px;
 }
 
-.ui-icon-background, .ui-state-active .ui-icon-background {
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
   border: rgb(0, 62, 255);
   background-color: rgb(255, 255, 255);
 }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -7086,7 +7314,6 @@ fieldset, label {
   line-height: 35px;
   font-weight: 600;
   font-size: 14px;
-  
 }
 
 .v2-sub-sinl-men {
@@ -7114,7 +7341,7 @@ fieldset, label {
   border-radius: 2px;
   display: inline-block;
   background: linear-gradient(rgb(26, 165, 216), rgb(19, 134, 177));
-  
+
   font-size: 13px;
 }
 
@@ -7206,7 +7433,7 @@ fieldset, label {
   color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: 11.5px;
- 
+
   padding: 10px;
   border-radius: 3px;
 }
@@ -7234,7 +7461,8 @@ fieldset, label {
   border: 0;
   width: 100%;
   background: #1b7de3;
-  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0% 0% / 100% 100% rgb(37, 111, 218);
+  background: linear-gradient(39deg, rgb(68, 68, 189), rgb(3, 158, 249) 80%) 0%
+    0% / 100% 100% rgb(37, 111, 218);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -7264,9 +7492,12 @@ fieldset, label {
 
 .alert-success {
   text-align: center;
-  font-size: 18px;    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
-.alert{display: none;}
+.alert {
+  display: none;
+}
 .wed-logo {
   float: left;
   width: 20%;
@@ -7368,7 +7599,11 @@ fieldset, label {
 
 .wed-search::before {
   content: "";
-  background: linear-gradient(to right, rgba(36, 59, 85, 0.55), rgba(20, 30, 48, 0.82));
+  background: linear-gradient(
+    to right,
+    rgba(36, 59, 85, 0.55),
+    rgba(20, 30, 48, 0.82)
+  );
   position: absolute;
   inset: 0px;
 }
@@ -8083,7 +8318,11 @@ fieldset, label {
 .in2-ban::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, rgba(2, 35, 74, 0.95) 14%, rgba(0, 33, 71, 0.87) 66%);
+  background: linear-gradient(
+    to top,
+    rgba(2, 35, 74, 0.95) 14%,
+    rgba(0, 33, 71, 0.87) 66%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -8149,7 +8388,9 @@ fieldset, label {
   left: 0px;
 }
 
-.about-mm, .admi-mm, .cour-mm {
+.about-mm,
+.admi-mm,
+.cour-mm {
   display: none;
 }
 
@@ -9395,7 +9636,11 @@ fieldset, label {
 .offer::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, rgba(22, 40, 105, 0.91) 46%, rgba(0, 0, 0, 0.41) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(22, 40, 105, 0.91) 46%,
+    rgba(0, 0, 0, 0.41) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -9472,7 +9717,6 @@ fieldset, label {
 .offer-l ul li span {
   display: block;
   color: rgb(236, 222, 224);
-  
 }
 
 .offer-l ul li a {
@@ -9496,7 +9740,7 @@ fieldset, label {
 .or-1 {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
+
   display: inline-block;
   line-height: 46px;
   text-transform: uppercase;
@@ -9519,7 +9763,6 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(244, 54, 79);
   font-weight: 600;
-  
 }
 
 .or-12 {
@@ -9534,7 +9777,7 @@ fieldset, label {
 .or-2 {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
+
   display: inline-block;
   line-height: 46px;
   text-transform: uppercase;
@@ -9571,7 +9814,6 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
 }
 
 .or-22 {
@@ -9580,7 +9822,6 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
 }
 
 .or-23 {
@@ -9589,7 +9830,6 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
 }
 
 .or-24 {
@@ -9597,7 +9837,7 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
+
   border: 1px solid rgb(251, 175, 185);
   padding: 6px;
   border-radius: 25px;
@@ -9608,7 +9848,6 @@ fieldset, label {
   text-transform: capitalize;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  
 }
 
 .slider-wid {
@@ -9618,7 +9857,11 @@ fieldset, label {
 .slides li img::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, rgba(88, 25, 39, 0.91) 46%, rgba(0, 0, 0, 0.41) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(88, 25, 39, 0.91) 46%,
+    rgba(0, 0, 0, 0.41) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -9655,7 +9898,7 @@ fieldset, label {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: 600;
-  
+
   border-radius: 2px;
   font-size: 14px;
   margin-right: 10px;
@@ -9683,7 +9926,10 @@ fieldset, label {
 .cus-pack-form::before {
   content: "";
   position: absolute;
-  background: linear-gradient(rgba(22, 40, 105, 0.91) 46%, rgba(0, 0, 0, 0.41) 100%);
+  background: linear-gradient(
+    rgba(22, 40, 105, 0.91) 46%,
+    rgba(0, 0, 0, 0.41) 100%
+  );
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -9704,7 +9950,10 @@ fieldset, label {
   margin-top: var(--topspac);
 }
 
-.book-tit {text-align: center;padding-bottom: 30px;}
+.book-tit {
+  text-align: center;
+  padding-bottom: 30px;
+}
 
 .book-tit h2 {
   font-size: 42px;
@@ -9729,7 +9978,10 @@ fieldset, label {
   font-size: 32px;
 }
 
-.book-tab-inn p {color: #333;font-size: 16px;}
+.book-tab-inn p {
+  color: #333;
+  font-size: 16px;
+}
 
 .book-tab-body {
   background: rgb(255, 255, 255);
@@ -9742,7 +9994,9 @@ fieldset, label {
   padding: 50px 50px 0px;
   text-align: center;
 }
-.book-tab-tit + .book-tab-form{padding-top: 30px;}
+.book-tab-tit + .book-tab-form {
+  padding-top: 30px;
+}
 .book-tab-form {
   box-shadow: none;
   padding-top: 0px;
@@ -9759,7 +10013,9 @@ fieldset, label {
   background: rgb(255, 255, 255);
 }
 
-.book-tab-inn .nav-tabs > li.active > a, .book-tab-inn .nav-tabs > li.active > a:hover, .book-tab-inn .nav-tabs > li.active > a:focus {
+.book-tab-inn .nav-tabs > li.active > a,
+.book-tab-inn .nav-tabs > li.active > a:hover,
+.book-tab-inn .nav-tabs > li.active > a:focus {
   background: rgb(241, 51, 76);
   color: rgb(255, 255, 255);
   border: 1px solid rgb(241, 51, 76);
@@ -9803,11 +10059,12 @@ fieldset, label {
   padding: 0px;
   background: none;
 }
-.package-form label{
+.package-form label {
   font-size: 14px;
   color: #000;
 }
-select, input {
+select,
+input {
   font-size: 14px;
   color: #000;
   /* font-family: 'Poppins'; */
@@ -10020,7 +10277,10 @@ select, input {
   opacity: 1;
 }
 
-.form-login .form-group input, .form-login .form-group select, .form-login .form-group textarea, .form-login .form-group .chosen-container {
+.form-login .form-group input,
+.form-login .form-group select,
+.form-login .form-group textarea,
+.form-login .form-group .chosen-container {
   font-size: 14px;
   font-weight: 500;
   color: rgb(0, 0, 0);
@@ -10047,28 +10307,32 @@ select, input {
   left: auto;
   right: auto;
 }
-.input-field{
+.input-field {
   margin-bottom: 20px;
 }
-.input-field select, .input-field input{
+.input-field select,
+.input-field input {
   width: 100%;
   border: 2px solid #000;
   border-radius: 4px;
   font-weight: 500;
   font-size: 15px;
 }
-.input-field input{}
-.input-field select{}
-.input-field .chosen-container-single .chosen-single{
+.input-field input {
+}
+.input-field select {
+}
+.input-field .chosen-container-single .chosen-single {
   height: 45px;
   padding-top: 9px;
   border: 2px solid #000;
 }
-.input-field .chosen-container-single .chosen-single span{}
+.input-field .chosen-container-single .chosen-single span {
+}
 .row .col.s12 {
   width: 100%;
 }
-.file-field input[type=file] {
+.file-field input[type="file"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -10082,7 +10346,6 @@ select, input {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-
 
 .swiper-pagination {
   display: flex;

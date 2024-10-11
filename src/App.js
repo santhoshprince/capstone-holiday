@@ -265,7 +265,7 @@ function App() {
             element={<GreeceEurope />}
           />
           <Route
-            path="/international-packages"
+            path="/international-tour-package"
             element={<InternationalPackages />}
           />
         </Routes>

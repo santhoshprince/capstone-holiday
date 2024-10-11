@@ -85,7 +85,7 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <Link to="international-packages"><h3>International Packages</h3></Link>
+                    <Link to="international-tour-package"><h3>International Packages</h3></Link>
                     <ul>
                       {tourPackages.international.map((pkg, index) => (
                         <li key={index}>

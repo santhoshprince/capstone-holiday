@@ -1,10 +1,10 @@
 @use "sass:math";
 :root {
-  --theme-color: #DF1F2C;
-  --primary-color: #DF1F2C;
-  --title-color: #F9AF2A;
+  --theme-color: #df1f2c;
+  --primary-color: #df1f2c;
+  --title-color: #f9af2a;
   --body-color: #6e7070;
-  --smoke-color: #fff8ea  ;
+  --smoke-color: #fff8ea;
   --smoke-color2: #f3f4f6;
   --black-color: #000000;
   --black-color2: #0d0d0c;
@@ -26,22 +26,21 @@
   --section-title-space: 60px;
   --ripple-ani-duration: 2s;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&family=Poppins:wght@300..700&display=swap");
 
 /* Other styles here */
 @font-face {
-  font-family:Sundae Ice;
+  font-family: Sundae Ice;
   src: url(../public/fonts/SundaeIce.ttf);
 }
 @font-face {
-  font-family:Montserrat;
+  font-family: Montserrat;
   src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 html,
 body {
   scroll-behavior: auto !important;
- 
 }
 body {
   font-family: var(--body-font);
@@ -1359,9 +1358,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   -webkit-transform: scale(0.75) translateY(-28px);
   -ms-transform: scale(0.75) translateY(-28px);
   transform: scale(0.75) translateY(-28px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+  -webkit-transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
     opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
   z-index: 9;
 }
 .nice-select .list:hover .option:not(:hover) {
@@ -1719,10 +1721,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 100% !important;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  -webkit-transition:
+    opacity 1s,
+    -webkit-transform 1s;
+  transition:
+    opacity 1s,
+    -webkit-transform 1s;
+  transition:
+    transform 1s,
+    opacity 1s;
+  transition:
+    transform 1s,
+    opacity 1s,
+    -webkit-transform 1s;
 }
 .slick-3d-active .slick-3d-next,
 .slick-3d-active .slick-3d-prev,
@@ -3047,13 +3058,17 @@ hr.title-line {
   line-height: 16px;
   border-radius: 100%;
   z-index: 9999999;
-  -webkit-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  -webkit-transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
   -webkit-user-select: none;
@@ -3102,13 +3117,17 @@ hr.title-line {
   background: rgba(17, 61, 72, 0.7);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  -webkit-transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
 }
@@ -3123,16 +3142,20 @@ hr.title-line {
   border-radius: 100%;
   z-index: 99999999;
   background-color: var(--theme-color);
-  -webkit-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  -webkit-transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background,
     0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
@@ -4764,7 +4787,7 @@ a.text-theme:hover,
   color: var(--black-color);
   border-radius: 0;
   border-bottom: 1px solid var(--gray-color);
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 .widget_nav_menu a img,
 .widget_nav_menu a i,
@@ -7395,10 +7418,11 @@ ol.wp-block-rss {
   margin-bottom: 0;
 }
 .heading-title .sec-title .split-heading-title {
-  -webkit-animation: heading-anim-fade-out 2s ease
-      calc(0.05s * var(--char-index)),
+  -webkit-animation:
+    heading-anim-fade-out 2s ease calc(0.05s * var(--char-index)),
     heading-anim-fade-in 3s ease calc(0.05s * var(--char-index));
-  animation: heading-anim-fade-out 2s ease calc(0.05s * var(--char-index)),
+  animation:
+    heading-anim-fade-out 2s ease calc(0.05s * var(--char-index)),
     heading-anim-fade-in 3s ease calc(0.05s * var(--char-index));
 }
 @-webkit-keyframes heading-anim-fade-out {
@@ -7461,7 +7485,7 @@ ol.wp-block-rss {
 }
 .copyright-wrap {
   padding: 18px 0;
-  background-color: #DF1F2C;
+  background-color: #df1f2c;
 }
 .copyright-wrap .copyright-text {
   color: var(--white-color);
@@ -11471,7 +11495,9 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
   -webkit-transition: -webkit-transform ease 0.4s;
   transition: -webkit-transform ease 0.4s;
   transition: transform ease 0.4s;
-  transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+  transition:
+    transform ease 0.4s,
+    -webkit-transform ease 0.4s;
 }
 @media (max-width: 1199px) {
   .popup-search-box form {
@@ -20075,7 +20101,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 .tour-box .tour-action .th-btn:after {
-  -webkit-mask-image: url('./img/icon/arrow-right3.svg');
+  -webkit-mask-image: url("./img/icon/arrow-right3.svg");
   mask-image: url("./img/icon/arrow-right3.svg");
 }
 .tour-box:hover {
@@ -20224,7 +20250,7 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--white-color);
 }
 .tour-card .tour-action .th-btn:after {
-  -webkit-mask-image: url('./img/icon/arrow-right3.svg');
+  -webkit-mask-image: url("./img/icon/arrow-right3.svg");
   mask-image: url("./img/icon/arrow-right3.svg");
 }
 .tour-card .tour-action .th-btn:hover {
@@ -22670,12 +22696,22 @@ span.select2-selection.select2-selection--single:focus {
   transform-origin: top center;
   -webkit-transform: scaleY(0) translateZ(100px);
   transform: scaleY(0) translateZ(100px);
-  -webkit-transition: opacity 500ms ease, visibility 500ms ease,
+  -webkit-transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
     -webkit-transform 700ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease,
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
     -webkit-transform 700ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease,
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    transform 700ms ease;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    transform 700ms ease,
     -webkit-transform 700ms ease;
   z-index: 99;
   background-color: var(--white-color);
@@ -22799,7 +22835,9 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-transition: -webkit-filter 500ms ease;
   transition: -webkit-filter 500ms ease;
   transition: filter 500ms ease;
-  transition: filter 500ms ease, -webkit-filter 500ms ease;
+  transition:
+    filter 500ms ease,
+    -webkit-filter 500ms ease;
   -webkit-filter: blur(0px);
   filter: blur(0px);
 }
@@ -22832,10 +22870,18 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-transform: scale(1, 0);
   -ms-transform: scale(1, 0);
   transform: scale(1, 0);
-  -webkit-transition: opacity 600ms linear, -webkit-transform 500ms ease;
-  transition: opacity 600ms linear, -webkit-transform 500ms ease;
-  transition: transform 500ms ease, opacity 600ms linear;
-  transition: transform 500ms ease, opacity 600ms linear,
+  -webkit-transition:
+    opacity 600ms linear,
+    -webkit-transform 500ms ease;
+  transition:
+    opacity 600ms linear,
+    -webkit-transform 500ms ease;
+  transition:
+    transform 500ms ease,
+    opacity 600ms linear;
+  transition:
+    transform 500ms ease,
+    opacity 600ms linear,
     -webkit-transform 500ms ease;
   -webkit-transform-origin: bottom center;
   -ms-transform-origin: bottom center;
@@ -24121,10 +24167,9 @@ span.select2-selection.select2-selection--single:focus {
   margin: -35px 0;
   z-index: 8;
 }
-.section-four .swiper-pagination{
-    display: none !important;
+.section-four .swiper-pagination {
+  display: none !important;
 }
-
 
 .tour-grid {
   display: grid;
@@ -24137,9 +24182,6 @@ span.select2-selection.select2-selection--single:focus {
   padding: 20px;
   text-align: center;
 }
-
-
-
 
 /* Header styles */
 header {
@@ -24210,7 +24252,7 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .package-group h4::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -24230,8 +24272,6 @@ nav ul li.dropdown:hover .dropdown-content {
 .package-group ul li {
   margin-bottom: 5px;
 }
-
-
 
 /* Flight arrival animation */
 @keyframes flightArrival {
@@ -24253,7 +24293,9 @@ nav ul li.dropdown:hover .dropdown-content {
   padding-left: 10px;
   display: flex;
   align-items: center;
-  transition: color 0.3s ease, transform 0.3s;
+  transition:
+    color 0.3s ease,
+    transform 0.3s;
 }
 
 /* Animation for flight icon */
@@ -24272,51 +24314,46 @@ nav ul li.dropdown:hover .dropdown-content {
   transform: translateX(5px);
 }
 
-
-
-
-
-
-
-
 .package-group ul li a::before {
-  content: '→'; /* Add an arrow before each link */
+  content: "→"; /* Add an arrow before each link */
   margin-right: 8px;
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .package-group ul li a:hover::before {
   opacity: 1;
   transform: translateX(5px);
 }
-.prince{
+.prince {
   color: #1e8fb3;
-    font-size: 20px;
-    margin-left: 10px;
+  font-size: 20px;
+  margin-left: 10px;
 }
-.tournew{
+.tournew {
   display: block !important;
 }
 .boxnew a {
   font-family: Montserrat !important;
-font-size: 19px !important;
+  font-size: 19px !important;
 }
 .hero-title {
   font-family: Montserrat !important;
   font-size: 40px !important;
 }
-.sec-title{
+.sec-title {
   font-family: Montserrat !important;
 }
-.heading-new{
+.heading-new {
   font-family: Montserrat !important;
 }
-.sec-new{
+.sec-new {
   font-family: Montserrat !important;
 }
 
-.swipper-new .swiper-pagination{
+.swipper-new .swiper-pagination {
   bottom: -20px !important ;
 }
 
@@ -24353,7 +24390,6 @@ font-size: 19px !important;
   transition: background-image 1.5s ease-in-out; /* Smooth transition for the image */
 }
 
-
 .new-swipper .swiper {
   width: 100% !important;
   height: 100vh !important; /* Full screen height */
@@ -24378,17 +24414,16 @@ font-size: 19px !important;
   z-index: -1 !important; /* Ensure background is behind content */
 }
 
-.gallery-area{
+.gallery-area {
   margin-top: 50px !important;
   margin-bottom: 50px !important;
 }
-.new-tag{
+.new-tag {
   margin-top: 50px !important;
 }
 .new-tag a {
   margin-right: 10px !important;
 }
-
 
 .tour-navigation {
   margin-bottom: 20px;
@@ -24406,16 +24441,18 @@ font-size: 19px !important;
 
 .tour-navigation li {
   cursor: pointer;
-  color: #F9AF2A; /* Bootstrap primary color */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  color: #f9af2a; /* Bootstrap primary color */
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease; /* Smooth transition */
   padding: 5px 10px; /* Add some padding for better click area */
   border-radius: 3px; /* Rounded corners for each item */
-  font-family:Montserrat;
+  font-family: Montserrat;
   font-weight: 600;
 }
 
 .tour-navigation li:hover {
-  background-color: #DF1F2C ;/* Light blue background on hover */
+  background-color: #df1f2c; /* Light blue background on hover */
   color: #ffffff; /* Darker shade for the text on hover */
 }
 
@@ -24448,9 +24485,11 @@ font-size: 19px !important;
   z-index: 1;
 }
 
-.blog-content-section-new{
+.blog-content-section-new {
   width: 100vw; /* Full viewport width */
-  margin-left: calc(-50vw + 50%); /* Center the section by compensating for the container's margin */
+  margin-left: calc(
+    -50vw + 50%
+  ); /* Center the section by compensating for the container's margin */
   background-color: #f5f5f5; /* Optional background color */
   padding: 20px 0; /* Adjust the padding as needed */
   margin-bottom: 40px;
@@ -24460,13 +24499,12 @@ font-size: 19px !important;
   padding-right: 0;
 }
 
-
-.modal-title{
-  font-family:Montserrat;
+.modal-title {
+  font-family: Montserrat;
 }
 
-.modal-body p{
-  font-family:Montserrat;
+.modal-body p {
+  font-family: Montserrat;
 }
 
 .hero-description {
