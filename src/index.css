@@ -9486,7 +9486,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
 }
 .hero-style1 .hero-title {
   color: var(--white-color);
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   margin-top: 40px;
 }
 .hero-style1 .hero-text {
@@ -24461,3 +24461,16 @@ font-size: 19px !important;
 }
 
 
+.modal-title{
+  font-family:Montserrat;
+}
+
+.modal-body p{
+  font-family:Montserrat;
+}
+
+.hero-description {
+  font-size: 1.2rem; /* Change the font size as needed */
+  color: white; /* Change the color to match your design */
+  margin-top: 10px; /* Add some spacing above the description */
+}

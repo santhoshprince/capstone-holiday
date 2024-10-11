@@ -71,11 +71,16 @@ const HeroSlider = () => {
     });
   }, []);
   const headings = [
-    "Travelling is the healthiest addiction. We serve you with an unlimited dosage of Tour packages from Chennai",
+    "Travelling is the healthiest addiction",
     "Discover and Explore fresh destinations with our tourism champion. ",
     "Connect with us in just a click to discover the best chances to experience adventure.",
   ];
 
+  const descriptions = [
+    "We serve you with an unlimited dosage of Tour packages from Chennai",
+    "Join us for thrilling adventures, from trekking in the hills to relaxing on sandy shores, ensuring you have the trip of a lifetime.",
+    "Connect with us in just a click to discover the best chances to experience adventure."
+  ];
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
 
   useEffect(() => {
@@ -148,43 +153,47 @@ const HeroSlider = () => {
   };
   return (
     <>
-      <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
-        {/* YouTube Background */}
-        <div className="video-background">
-          <iframe
-            src="https://www.youtube.com/embed/pbEfYpU9IQA?autoplay=1&mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            className="background-video"
-          ></iframe>
-        </div>
+ <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
+  {/* YouTube Background */}
+  <div className="video-background">
+    <iframe
+      src="https://www.youtube.com/embed/pbEfYpU9IQA?autoplay=1&mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
+      frameBorder="0"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+      className="background-video"
+    ></iframe>
+  </div>
 
-        <div className="container">
-          <div className="hero-style1">
-            <h1
-              className="hero-title"
-              data-ani="slideinup"
-              data-ani-delay="0.4s"
-            >
-              {headings[currentHeadingIndex]} {/* Display current heading */}
-            </h1>
-            <p></p>
-            <div
-              className="btn-group"
-              data-ani="slideinup"
-              data-ani-delay="0.6s"
-            >
-              <a href="tour.html" className="th-btn th-icon">
-                Explore Tours
-              </a>
-              <a href="service.html" className="th-btn style2 th-icon">
-                Our Services
-              </a>
-            </div>
-          </div>
-        </div>
+  <div className="container">
+    <div className="hero-style1">
+      <h1
+        className="hero-title"
+        data-ani="slideinup"
+        data-ani-delay="0.4s"
+      >
+        {headings[currentHeadingIndex]} {/* Display current heading */}
+      </h1>
+      {/* Display corresponding description */}
+      <p className="hero-description" data-ani="slideinup" data-ani-delay="0.5s">
+        {descriptions[currentHeadingIndex]} {/* Display current description */}
+      </p>
+      <div
+        className="btn-group"
+        data-ani="slideinup"
+        data-ani-delay="0.6s"
+      >
+        <a href="tour.html" className="th-btn th-icon">
+          Explore Tours
+        </a>
+        <a href="service.html" className="th-btn style2 th-icon">
+          Our Services
+        </a>
       </div>
+    </div>
+  </div>
+</div>
+
       <section
         className="category-area bg-top-center"
         style={{ backgroundImage: `url(${category1})` }}
