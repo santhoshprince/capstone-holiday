@@ -183,10 +183,10 @@ const HeroSlider = () => {
         data-ani="slideinup"
         data-ani-delay="0.6s"
       >
-        <a href="tour.html" className="th-btn th-icon">
+        <a href="#" className="th-btn th-icon">
           Explore Tours
         </a>
-        <a href="service.html" className="th-btn style2 th-icon">
+        <a href="#" className="th-btn style2 th-icon">
           Our Services
         </a>
       </div>

@@ -15,7 +15,7 @@ const TourList = () => {
     {
       imgSrc: bali2,
       title: "Bali Tourist Places",
-      price: "₹ 6,800",
+      price: "6,800",
       duration: "3 Days 2 Nights (BALI)",
       detailPath: '/tour/bali-tour-places', // Direct path without id
     },
