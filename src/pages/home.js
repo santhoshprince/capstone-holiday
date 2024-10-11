@@ -61,6 +61,7 @@ import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest
 import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg";
 import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg";
 import VideoSlider from "../components/videoslider";
+import { useNavigate } from 'react-router-dom'; 
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -84,6 +85,42 @@ const HeroSlider = () => {
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
+  const navigate = useNavigate(); // Hook for navigation
+
+  const tours = [
+    {
+      img: tour1,
+      title: "Vietnam Group Tour",
+      // rating: "4.8",
+      price: "₹ 21,250",
+      duration: "4 Days",
+      slug: "vietnam-group-tour-packages", // Add a slug or identifier for navigation
+    },
+    {
+      img: tour2,
+      title: "Thailand Tour",
+      rating: "4.8",
+      price: "₹ 14,025",
+      duration: "5 Days",
+      slug: "thailand-group-tour-package",
+    },
+    {
+      img: tour3,
+      title: "Dubai Tour Package",
+      rating: "4.8",
+      price: "₹ 43,350",
+      duration: "5 Days",
+      slug: "dubai-tour-packages-from-chennai",
+    },
+    {
+      img: tour4,
+      title: "Shimla Manali Group Tour",
+      rating: "4.8",
+      price: "₹ 9,350",
+      duration: "6 Days",
+      slug: "shimla-manali-group-tour",
+    },
+  ];
   return (
     <>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
@@ -278,7 +315,7 @@ const HeroSlider = () => {
         </div>
       </section>
 
-      <div className="bg-smoke overflow-hidden space">
+      <div className="bg-smoke overflow-hidden space"style={{marginBottom:"30px"}}>
         <div className="container">
           <div className="row gy-4 align-items-center">
             <div className="col-lg-6" data-aos="fade-up">
@@ -510,123 +547,88 @@ const HeroSlider = () => {
             </div>
           </div>
           <div className="slider-area tour-slider">
-            <Swiper
-              spaceBetween={30}
-              data-aos="fade-down"
-              data-aos-easing="ease-out"
-              slidesPerView={3} // You can adjust this according to your responsive needs
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                576: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-                992: {
-                  slidesPerView: 2,
-                },
-                1200: {
-                  slidesPerView: 3,
-                },
-                1300: {
-                  slidesPerView: 4,
-                },
-              }}
-            >
-              {[
-                {
-                  img: tour1,
-                  title: "Vietnam Group Tour",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour2,
-                  title: "Thailand Tour",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour3,
-                  title: "Dubai Tour Package",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour4,
-                  title: "Switzerland",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-              ].map((tour, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="tour-box th-ani gsap-cursor"
-                    data-aos="fade-right"
-                    data-aos-delay="100"
-                    data-aos-easing="ease-in"
-                  >
-                    <div className="tour-box_img global-img">
-                      <img
-                        src={tour.img}
-                        alt="image"
-                        style={{
-                          width: "100%",
-                          height: "250px",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                    <div className="tour-content tournew">
-                      <h3 className="box-title">
-                        <a href="tour-details.html">{tour.title}</a>
-                      </h3>
-                      <div className="tour-rating">
-                        <div
-                          className="star-rating"
-                          role="img"
-                          aria-label={`Rated ${tour.rating} out of 5`}
-                        >
-                          <span style={{ width: "100%" }}>
-                            Rated{" "}
-                            <strong className="rating">{tour.rating}</strong>{" "}
-                            out of 5
-                          </span>
-                        </div>
-                        <a
-                          href="tour-details.html"
-                          className="woocommerce-review-link"
-                        >
-                          (<span className="count">{tour.rating}</span> Rating)
-                        </a>
-                      </div>
-                      <h4 className="tour-box_price">
-                        <span className="currency">{tour.price}</span>/Person
-                      </h4>
-                      <div className="tour-action">
-                        <span>
-                          <i className="fa-light fa-clock"></i>
-                          {tour.duration}
-                        </span>
-                        <a
-                          href="contact.html"
-                          className="th-btn style4 th-icon"
-                        >
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <Swiper
+      spaceBetween={30}
+      data-aos="fade-down"
+      data-aos-easing="ease-out"
+      slidesPerView={3}
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1300: {
+          slidesPerView: 4,
+        },
+      }}
+    >
+      {tours.map((tour, index) => (
+        <SwiperSlide key={index}>
+          <div
+            className="tour-box th-ani gsap-cursor"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-easing="ease-in"
+          >
+            <div className="tour-box_img global-img">
+              <img
+                src={tour.img}
+                alt="image"
+                style={{
+                  width: "100%",
+                  height: "250px",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="tour-content tournew">
+              <h3 className="box-title">
+                <a href="tour-details.html">{tour.title}</a>
+              </h3>
+              <div className="tour-rating">
+                <div
+                  className="star-rating"
+                  role="img"
+                  aria-label={`Rated ${tour.rating} out of 5`}
+                >
+                  <span style={{ width: "100%" }}>
+                    Rated <strong className="rating">{tour.rating}</strong> out of 5
+                  </span>
+                </div>
+                {/* <a href="tour-details.html" className="woocommerce-review-link">
+                  (<span className="count">{tour.rating}</span> Rating)
+                </a> */}
+              </div>
+              <h4 className="tour-box_price">
+                <span className="currency">{tour.price}</span>/Person
+              </h4>
+              <div className="tour-action">
+                <span>
+                  <i className="fa-light fa-clock"></i> {tour.duration}
+                </span>
+                <button
+                  className="th-btn style4 th-icon"
+                  onClick={() => navigate(`/tour/${tour.slug}`)} // Navigate to dynamic page
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
           </div>
         </div>
       </section>

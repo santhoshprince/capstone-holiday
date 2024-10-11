@@ -31,8 +31,9 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
-    1: {
+
+  const tourDetails = {
+    "kerala-tour-packages-from-chennai": {
       heading: "Kerala Tour Packages from Chennai",
       title: "Kerala Tour Packages from Chennai",
       galleryImages: [
@@ -110,7 +111,7 @@ const TourPage = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8033168.194719898!2d76.138367!3d10.544276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1728191882805!5m2!1sen!2sin",
       iconSrc: [location1],
     },
-    2: {
+    "munnar-tour-package": {
       heading: "Cochin Munnar Tour Package",
       title: "Cochin Munnar Tour Package",
       galleryImages: [
@@ -192,8 +193,9 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
-
-  const selectedTour = toursData[id] || toursData[1];
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const selectedTour = tourDetails[path];
+  // const tourDetails = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({

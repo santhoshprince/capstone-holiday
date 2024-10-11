@@ -32,7 +32,7 @@ const TourPage = () => {
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
   const toursData = {
-    1: {
+    "kashmir-tour-packages-from-chennai": {
       heading: "Kashmir Tour Packages from Chennai",
       title: "Kashmir Tour Packages from Chennai",
       galleryImages: [
@@ -143,7 +143,7 @@ const TourPage = () => {
       iconSrc: [location1],
     },
 
-    2: {
+   "srinagar-tour-packages" : {
       heading: "Srinagar Gulmarg Pahalgam Tour Packages",
       title: "Srinagar Gulmarg Pahalgam Tour Packages",
       galleryImages: [
@@ -241,8 +241,10 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
-  const selectedTour = toursData[id] || toursData[1];
 
+
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const selectedTour = toursData[path];
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",

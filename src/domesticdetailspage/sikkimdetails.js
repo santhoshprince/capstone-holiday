@@ -32,7 +32,7 @@ const TourPage = () => {
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
   const toursData = {
-    1: {
+    "darjeeling-gangtok-tour-packages": {
       heading: "Darjeeling Gangtok Tour Packages",
       title: "Darjeeling Gangtok Tour Packages",
       galleryImages: [
@@ -123,7 +123,7 @@ const TourPage = () => {
       iconSrc: [location1],
     },
    
-    2: {
+    "sikkim-travel-packages": {
       heading: "Sikkim Travel Packages",
       title: "Sikkim Travel Packages",
       galleryImages: [
@@ -207,7 +207,10 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
-  const selectedTour = toursData[id] || toursData[1];
+  
+  
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const selectedTour = toursData[path];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({

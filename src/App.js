@@ -85,57 +85,52 @@ function App() {
           <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
           <Route path="/tour-destination/bali-tour" element={<Bali />} />
-          <Route
-            path="/tour/bali-tour-packages-from-chennai/:id"
-            element={<BaliDetails />}
-          />
-           <Route
-            path="/tour/bali-tour-places/:id"
-            element={<BaliDetails />}
-          />
+          <Route path="/tour/bali-tour-packages-from-chennai" element={<BaliDetails />} />
+<Route path="/tour/bali-tour-places" element={<BaliDetails />} />
+
           <Route path="/tour-destination/maldives-tour" element={<Maldives />} />
           <Route
-            path="/tour/maldivestour-package-from-chennai/:id"
+            path="/tour/maldivestour-package-from-chennai"
             element={<Maldivesdetails />}
           />
            <Route path="/tour-destination/dubai-tour" element={<Dubai />} />
           <Route
-            path="/tour/dubai-tour-packages-from-chennai/:id"
+            path="/tour/dubai-tour-packages-from-chennai"
             element={<Dubaidetails />}
           />
              <Route path="/tour-destination/thailand-tour" element={<Thailand />} />
           <Route
-            path="/tour/thailand-tour-package-from-chennai/:id"
+            path="/tour/thailand-tour-package-from-chennai"
             element={<Thailanddetails />}
           />
             <Route path="/tour-destination/mauritius-tour" element={<Mauritius />} />
           <Route
-            path="/tour/mauritius-tour-package-from-chennai/:id"
+            path="/tour/mauritius-tour-package-from-chennai"
             element={<Mauritiusdetails />}
           />
            <Route path="/tour-destination/turkey-tour-package" element={<Turkey />} />
           <Route
-            path="/tour/turkey-tour-packages-from-india/:id"
+            path="/tour/turkey-tour-packages-from-india"
             element={<Turkeydetails />}
           />
               <Route path="/tour-destination/singapore-malaysia-tour" element={<Singapore />} />
           <Route
-            path="/tour/singapore-and-malaysia-tour-packages/:id"
+            path="/tour/singapore-and-malaysia-tour-packages"
             element={<Singaporedetails />}
           />
            <Route path="/tour-destination/vietnam-tour-package" element={<Vietnam />} />
           <Route
-            path="/tour/vietnam-cambodia-tour-package/:id"
+            path="/tour/vietnam-cambodia-tour-package/"
             element={<Vietnamdetails />}
           />
             <Route path="/tour-destination/sri-lanka-tour-package" element={<Srilanka />} />
           <Route
-            path="tour/srilanka-tour-package-from-chennai/:id"
+            path="tour/srilanka-tour-package-from-chennai"
             element={<Srilankadetails />}
           />
            <Route path="/tour-destination/andaman-tour-package" element={<Andaman />} />
           <Route
-            path="/tour/andaman-tour-package-from-chennai/:id"
+            path="/tour/andaman-tour-package-from-chennai"
             element={<AndamanDetails />}
           />
            <Route
@@ -144,56 +139,56 @@ function App() {
           />
            <Route path="/tour-destination/goa-tour" element={<Goa />} />
           <Route
-            path="/tour/goa-tour-package-from-chennai/:id"
+            path="/tour/goa-tour-package-from-chennai"
             element={<GoaDetails />}
           />
            <Route
-            path="/tour/goa-travel-packages/:id"
+            path="/tour/goa-travel-packages"
             element={<GoaDetails />}
           />
           <Route path="/tour-destination/himachal-tour/" element={<Himachal />} />
           <Route
-            path="/tour/shimla-manali-tour-package-from-chennai/:id"
+            path="/tour/shimla-manali-tour-package-from-chennai"
             element={<HimachalDetails />}
           />
            <Route
-            path="/tour/himachal-tour-package/:id"
+            path="/tour/himachal-tour-package/"
             element={<HimachalDetails />}
           />
             <Route path="/tour-destination/kerala-tour/" element={<Kerala />} />
           <Route
-            path="/tour/kerala-tour-packages-from-chennai/:id"
+            path="/tour/kerala-tour-packages-from-chennai"
             element={<KeralaDetails />}
           />
            <Route
-            path="tour/munnar-tour-package/:id"
+            path="tour/munnar-tour-package"
             element={<KeralaDetails />}
           />
            <Route path="tour-destination/jammu-and-kashmir-tour/" element={<Kashmir />} />
           <Route
-            path="/tour/kashmir-tour-packages-from-chennai/:id"
+            path="/tour/kashmir-tour-packages-from-chennai"
             element={<KashmirDetails />}
           />
            <Route
-            path="/tour/srinagar-tour-packages/:id"
+            path="/tour/srinagar-tour-packages"
             element={<KashmirDetails />}
           />
            <Route path="/tour-destination/rajasthan-tour/" element={<Rajasthan />} />
           <Route
-            path="/tour/delhi-agra-jaipur-tour-package/:id"
+            path="/tour/delhi-agra-jaipur-tour-package"
             element={<RajasthanDetails />}
           />
            <Route
-            path="tour/rajasthan-trip-package/:id"
+            path="tour/rajasthan-trip-package"
             element={<RajasthanDetails />}
           />
            <Route path="/tour-destination/sikkim-and-west-bengal-tour/" element={<Sikkim />} />
           <Route
-            path="/tour/darjeeling-gangtok-tour-packages/:id"
+            path="/tour/darjeeling-gangtok-tour-packages"
             element={<SikkimDetails />}
           />
            <Route
-            path="tour/sikkim-travel-packages/:id"
+            path="tour/sikkim-travel-packages"
             element={<SikkimDetails />}
           />
 

@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/354.jpg";
+import galleryImage2 from "../img/tour/354.jpg";x 
 import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
@@ -21,16 +21,18 @@ import galleryImage3_3 from "../img/gallery/369.jpg";
 import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+
 import location1 from "../img/icon/location-dot3.svg";
 
-const BaliDetails = () => {
+const TourPage = () => {
+  const { id } = useParams();
+
   const detailsitinerary = useRef(null);
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  // Sample data - you can replace this with your actual content
-  const tourDetails = {
-    "bali-tour-packages-from-chennai": {
+  const toursData = {
+    1: {
       heading: "Bali Tour Packages from Chennai",
       title: "Bali Tour Packages from Chennai",
       galleryImages: [
@@ -107,7 +109,7 @@ const BaliDetails = () => {
 
       iconSrc: [location1],
     },
-    "bali-tour-places": {
+    2: {
       heading: "Bali Tourist Places",
       title: "Bali Tourist Places",
       galleryImages: [
@@ -162,16 +164,10 @@ const BaliDetails = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
 
       iconSrc: [location1],
-    }
+    },
   };
 
-  // Get the path name to determine which tour details to show
-  const path = window.location.pathname.split('/').pop(); // Gets the last part of the URL
-  const tour = tourDetails[path];
-
-  if (!tour) {
-    return <div>Tour not found!</div>; // Fallback in case of no match
-  }
+  const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
@@ -181,9 +177,8 @@ const BaliDetails = () => {
     });
   };
   return (
-    <div>
-      <>
-      <Contentsection heading={tour.heading} children={""} />
+    <>
+      <Contentsection heading={selectedTour.heading} children={""} />
 
       <nav className="tour-navigation">
         <ul>
@@ -205,7 +200,7 @@ const BaliDetails = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={tour.galleryImages} />
+                  <DetailSlider images={selectedTour.galleryImages} />
                   <PopularTags />
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -218,14 +213,14 @@ const BaliDetails = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={tour.gallerydata} />
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={tour.itinerary}
+                itineraryData={selectedTour.itinerary}
               />
             </div>
           </div>
@@ -233,13 +228,13 @@ const BaliDetails = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={tour.title}
-                description={tour.description}
-                duration={tour.duration}
-                tourCode={tour.tourCode}
-                priceIncludes={tour.priceIncludes}
-                hotelDetails={tour.hotelDetails}
-                PackageInclusion={tour.PackageInclusion}
+                title={selectedTour.title}
+                description={selectedTour.description}
+                duration={selectedTour.duration}
+                tourCode={selectedTour.tourCode}
+                priceIncludes={selectedTour.priceIncludes}
+                hotelDetails={selectedTour.hotelDetails}
+                PackageInclusion={selectedTour.PackageInclusion}
               />
             </div>
           </div>
@@ -249,16 +244,15 @@ const BaliDetails = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={tour.mapSrc}
-                iconSrc={tour.iconSrc}
+                mapSrc={selectedTour.mapSrc}
+                iconSrc={selectedTour.iconSrc}
               />
             </div>
           </div>
         </div>
       </section>
     </>
-    </div>
   );
 };
 
-export default BaliDetails;
+export default TourPage;
