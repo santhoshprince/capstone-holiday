@@ -85,7 +85,7 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>International Packages</h3>
+                    <Link to="international-packages"><h3>International Packages</h3></Link>
                     <ul>
                       {tourPackages.international.map((pkg, index) => (
                         <li key={index}>
@@ -99,7 +99,8 @@ const Header = () => {
                   </div>
                   <div className="divider" /> {/* Divider between sections */}
                   <div className="dropdown-section domestic">
-                    <h3>Domestic Packages</h3>
+                  <Link to="#"><h3>Domestic Packages</h3></Link>
+                    
                     <ul>
                       {tourPackages.domestic.map((pkg, index) => (
                         <li key={index}>
