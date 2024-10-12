@@ -63,7 +63,7 @@ import InternationalPackages from "./components/internationalcards/international
 import DomesticPackages from "./components/domesticcards/domesticpackage";
 import GroupTourPackages from "./components/groupcards/grouptourpackage";
 import EuropeTourPackages from "./components/europecards/europetourpackage"
-
+import HoneymoonTourPackages from "./components/honeymooncards/honeymoontourpackage"
 
 import AndamanHoneymoon from "./honeymoontour/andmandetails"
 import BaliHoneymoon from "./honeymoontour/balidetails"
@@ -282,6 +282,7 @@ function App() {
           <Route path="/domestic-tour-package" element={<DomesticPackages />} />
           <Route path="/group-tour-packages" element={<GroupTourPackages />} />
           <Route path="/europe-tour-packages" element={<EuropeTourPackages />} />
+          <Route path="/honeymoon-tour-packages" element={<HoneymoonTourPackages />} />
 
 
           <Route path="/tour/anadaman-honeymoon-tour-packages" element={<AndamanHoneymoon />} />
