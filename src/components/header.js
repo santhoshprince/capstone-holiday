@@ -99,7 +99,7 @@ const Header = () => {
                   </div>
                   <div className="divider" /> {/* Divider between sections */}
                   <div className="dropdown-section domestic">
-                  <Link to="#"><h3>Domestic Packages</h3></Link>
+                  <Link to="domestic-tour-package"><h3>Domestic Packages</h3></Link>
                     
                     <ul>
                       {tourPackages.domestic.map((pkg, index) => (
@@ -120,7 +120,8 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>Group Tour Countrys</h3>
+                    <Link to="group-tour-packages"><h3>Group Tour Countrys</h3></Link>
+                 
                     <ul>
                         {tourPackages.groupTour.map((pkg, index) => (
                           <li key={index}>
@@ -140,7 +141,8 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>Europe Tour Countrys</h3>
+                    <Link to="europe-tour-packages"><h3>Europe Tour Countrys</h3></Link>
+                  
                     <ul>
                         {tourPackages.EuropeTour.map((pkg, index) => (
                           <li key={index}>

@@ -60,6 +60,9 @@ import ChinaEurope from "./europetour/chinaeuropedetails";
 import GreeceEurope from "./europetour/greeceuropedetails";
 
 import InternationalPackages from "./components/internationalcards/internationalpackage";
+import DomesticPackages from "./components/domesticcards/domesticpackage";
+import GroupTourPackages from "./components/groupcards/grouptourpackage";
+import EuropeTourPackages from "./components/europecards/europetourpackage"
 
 import Layout from "./components/layout";
 import "./App.css";
@@ -268,6 +271,10 @@ function App() {
             path="/international-tour-package"
             element={<InternationalPackages />}
           />
+
+          <Route path="/domestic-tour-package" element={<DomesticPackages />} />
+          <Route path="/group-tour-packages" element={<GroupTourPackages />} />
+          <Route path="/europe-tour-packages" element={<EuropeTourPackages />} />
         </Routes>
         <Footer />
       </Layout>

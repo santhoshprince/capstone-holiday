@@ -12,83 +12,67 @@ const TourList = () => {
   const tours = [
     {
       imgSrc: bali,
-      title: "Bali Tour Packages from Chennai",
+      title: "Kerala Group Tour package",
       rating: 4.7,
-      price: "20,825",
-      duration: "6 Days 5 Nights",
-      detailPath: "/tour/bali-tour-packages-from-chennai",
+      price: "7,225",
+      duration: "5 Days 4 Nights",
+      detailPath: "/tour-destination/kerala-group-tour",
     },
     {
       imgSrc: bali2,
-      title: "Bali Tourist Places",
+      title: "Andaman Group Tour Packages",
+      rating: 4.7,
+      price: "8,925",
+      duration: "5 Days 4 Nights",
+      detailPath: "/tour/andaman-group-tour-packages",
+    },
+    {
+      imgSrc: maldives,
+      title: "Bali Group Tour Package",
       rating: 4.7,
       price: "6,800",
-      duration: "3 Days 2 Nights (BALI)",
-      detailPath: "/tour/bali-tour-places",
+      duration: "3 Days 2 Nights",
+      detailPath: "/tour/bali-group-tour-package",
     },
     {
       imgSrc: maldives,
-      title: "Maldives Tour Package from Chennai",
+      title: "Shimla Manali Group Tour",
       rating: 4.7,
-      price: "96,390",
-      duration: "4 Days 5 Nights",
-      detailPath: "/tour/maldives-tour-package-from-chennai",
-    },
-    {
-      imgSrc: maldives,
-      title: "Dubai Tour Packages from Chennai",
-      rating: 4.7,
-      price: "43,350",
-      duration: "4 Nights, 5 Days",
+      price: "9,350",
+      duration: "5 Nights, 6 Days",
       detailPath: "/tour/dubai-tour-packages-from-chennai",
     },
     {
       imgSrc: maldives,
-      title: "Thailand Tour Package from Chennai 4N / 5D",
+      title: "Sri Lanka Group Tour Package – 4N/5D",
       rating: 4.7,
-      price: "15,130",
+      price: "21,250",
       duration: "4 Nights, 5 Days",
-      detailPath: "/tour/thailand-tour-package-from-chennai",
+      detailPath: "/tour/sri-lanka-group-tour-package/",
     },
     {
       imgSrc: maldives,
-      title: "Turkey Tour Packages from India – 4N / 5D",
+      title: "Singapore Malaysia Group Tour – 4N / 5D",
       rating: 4.7,
-      price: "25,075",
+      price: "34,000",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/mauritius-tour-package-from-chennai',
+      detailPath: '/tour-destination/singapore-malaysia-tour',
     },
     {
       imgSrc: maldives,
-      title: "Mauritius Tour Package from Chennai",
+      title: "Thailand Group Tour Package – 4N / 5D",
       rating: 4.7,
-      price: "135,320",
+      price: "14,025",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/turkey-tour-packages-from-india',
+      detailPath: '/tour/thailand-group-tour-package',
     },
     {
       imgSrc: maldives,
-      title: "Singapore and Malaysia Tour Packages",
+      title: "Vietnam Group Tour Packages – 3N / 4D",
       rating: 4.7,
-      price: "38,250",
-      duration: "4 Nights, 5 Days",
-      detailPath: '/tour/singapore-and-malaysia-tour-packages',
-    },
-    {
-      imgSrc: maldives,
-      title: "Vietnam Cambodia Tour Package – 3N / 4D",
-      rating: 4.7,
-      price: "20,400",
+      price: "17,000",
       duration: "3 Nights, 4 Days",
-      detailPath: '/tour/vietnam-cambodia-tour-package',
-    },
-    {
-      imgSrc: maldives,
-      title: "Sri Lanka Tour Package from Chennai 4N/5D",
-      rating: 4.7,
-      price: "25,415",
-      duration: "4 Nights, 5 Days",
-      detailPath: '/tour/srilanka-tour-package-from-chennai',
+      detailPath: '/tour/vietnam-group-tour-packages',
     },
   ];
 
@@ -111,7 +95,7 @@ const TourList = () => {
 
   return (
     <>
-      <Contentbg heading={"International Tour Packages"} />
+      <Contentbg heading={"Group Tour Packages"} />
 
       <section className="space">
         <div className="container">
