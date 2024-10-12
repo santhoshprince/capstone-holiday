@@ -90,11 +90,11 @@ const Footer = () => {
                 <h3 className="widget_title">Quick Links</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="service.html">Our Service</a></li>
-                    <li><a href="contact.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Tour Booking Now</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="#">Our Service</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="/contact">Tour Booking Now</a></li>
                   </ul>
                 </div>
               </div>

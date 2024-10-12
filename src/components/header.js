@@ -184,7 +184,7 @@ const Header = () => {
               <Link to="#">Contact Us</Link>
             </li>
             <li>
-              <Link to="/tours-and-travels-in-chennai">Blog</Link>
+              <Link to="/blogs">Blog</Link>
             </li>
           </ul>
 

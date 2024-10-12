@@ -86,7 +86,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/tours-and-travels-in-chennai" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
 
           <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
