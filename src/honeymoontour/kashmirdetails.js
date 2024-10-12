@@ -94,7 +94,7 @@ const TourPage = () => {
         },
         {
           day: "Day 4",
-          details: "Srinagar/Pahalgam",
+          details: "Srinagar / Pahalgam",
         },
         {
           day: "Day 5",
