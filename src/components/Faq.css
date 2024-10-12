@@ -1,0 +1,96 @@
+.accordion-header {
+    background-color: transparent; /* Keep transparent */
+    padding: 18px 20px; /* More horizontal padding for better spacing */
+    cursor: pointer; /* Pointer cursor for clickability */
+    font-weight: 600; /* Bold text */
+    color: var(--primary-color) !important; /* Keep your text color */
+    border-bottom: 1px solid #ddd; /* Subtle border */
+    transition: color 0.3s ease; /* Smooth color transition */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between question and icon */
+}
+
+.accordion-collapse {
+    height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide overflow */
+    transition: height 0.3s ease-out, padding 0.3s ease; /* Smooth transitions */
+}
+
+.accordion-button:hover + .accordion-collapse {
+    background-color: #ffffff; /* Change background color to white on hover */
+}
+
+.accordion-collapse.show {
+    height: auto; /* Expand height automatically */
+    padding: 10px 0; /* Add vertical padding when shown */
+}
+
+.accordion-body {
+    padding: 20px; /* Padding for body content */
+    background-color: #fafafa; /* Light background for body */
+    color: #555; /* Text color for body */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+    opacity: 1; /* Full opacity */
+}
+
+.accordion-button {
+    all: unset; /* Reset default button styles */
+    font-size: 18px; /* Font size for button */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space out text and icon */
+    width: 100%; /* Full width */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Comfortable padding */
+    cursor: pointer; /* Pointer cursor */
+    border: 1px solid transparent; /* Invisible border for hover effect */
+    background-color: #f7f9fc; /* Light background */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    color: #333; /* Default text color */
+}
+
+.accordion-button:hover {
+    background-color: #dc3545; /* Light gray background on hover */
+    border-color: var(--primary-color) !important;
+    color: #f7f9fc !important; /* Highlight border color on hover */
+}
+
+.accordion-button.collapsed {
+    color: var(--primary-color);
+    font-family: Montserrat !important; /* Change text color for collapsed state */
+}
+
+.accordion-button::after {
+    content: ''; /* Placeholder for icon */
+    font-size: 20px; /* Icon size */
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    display: inline-block; /* Inline-block for icon positioning */
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+/* Plus icon when collapsed */
+.accordion-button.collapsed::after {
+    content: '+'; /* Plus icon for collapsed state */
+    font-size: 24px; /* Larger icon size */
+    color: var(--primary-color) !important; /* Color for the plus icon */
+}
+
+/* Minus icon when expanded */
+.accordion-button:not(.collapsed)::after {
+    content: '-'; /* Minus icon for expanded state */
+    transform: rotate(0); /* No rotation */
+    color: var(--primary-color) !important; /* Color for the minus icon */
+}
+
+.new-section .accordion-button:not(.collapsed) {
+    color: #dc3545 !important; 
+}
+
+.new-section .accordion-button:not(.collapsed) {
+    background-color: unset !important;
+}
+
+.accordion-button:hover + .accordion-collapse .accordion-body {
+    color: #333; /* Change text color when hovered */
+}
