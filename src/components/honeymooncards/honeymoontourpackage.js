@@ -8,7 +8,6 @@ import Sidebar from "../../components/sidebar";
 import Pagination from "../../components/blogpagination"; // Your Pagination component
 
 const TourList = () => {
-  // The array of tour items
   const tours = [
     {
       imgSrc: bali,
@@ -16,7 +15,7 @@ const TourList = () => {
       rating: 4.7,
       price: "19,900",
       duration: "5 Days 4 Nights",
-      detailPath: "tour/anadaman-honeymoon-tour-packages",
+      detailPath: "/tour/anadaman-honeymoon-tour-packages",
     },
     {
       imgSrc: bali2,
@@ -24,7 +23,7 @@ const TourList = () => {
       rating: 4.7,
       price: "21,000",
       duration: "5 Days 4 Nights",
-      detailPath: "tour/bali-honeymoon-tour-packages",
+      detailPath: "/tour/bali-honeymoon-tour-packages",
     },
     {
       imgSrc: maldives,
@@ -32,7 +31,7 @@ const TourList = () => {
       rating: 4.7,
       price: "20,500",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/greece-europe-tour-package",
+      detailPath: "/tour/kashmir-honeymoon-tour-packages",
     },
     {
       imgSrc: maldives,
@@ -40,7 +39,7 @@ const TourList = () => {
       rating: 4.7,
       price: "19,000",
       duration: "5 Days 4 Nights",
-      detailPath: "tour/kerala-honeymoon-tour-packages",
+      detailPath: "/tour/kerala-honeymoon-tour-packages",
     },
     {
       imgSrc: maldives,
@@ -48,23 +47,18 @@ const TourList = () => {
       rating: 4.7,
       price: "17,500",
       duration: "5 Days 4 Nights",
-      detailPath: "tour/rajasthan-honeymoon-tour-packages",
+      detailPath: "/tour/rajasthan-honeymoon-tour-packages",
     },
   ];
 
-  // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2; // Number of items to show per page
+  const itemsPerPage = 2;
 
-  // Calculate total pages
   const totalPages = Math.ceil(tours.length / itemsPerPage);
-
-  // Get current page items
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentTours = tours.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Function to handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -80,7 +74,6 @@ const TourList = () => {
               {currentTours.map((tour, index) => (
                 <TotalCard key={index} {...tour} />
               ))}
-              {/* Pagination component */}
               <Pagination
                 totalPages={totalPages}
                 currentPage={currentPage}

@@ -83,7 +83,7 @@ const Header = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#">Tour Packages</a>
+              <Link to="international-tour-package">Tour Packages</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
@@ -118,7 +118,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-            <Link to="#">Group Tour</Link>
+            <Link to="/group-tour-packages">Group Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
@@ -139,7 +139,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-            <Link to="#">Europe Tour</Link>
+            <Link to="europe-tour-packages">Europe Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
@@ -160,11 +160,11 @@ const Header = () => {
               </div>
             </li>
             <li>
-            <Link to="#">Honeymoon Tour</Link>
+            <Link to="/honeymoon-tour-packages">Honeymoon Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <Link to="honeymoon-tour-packages"><h3>Honeymoon Tour Countrys</h3></Link>
+                    <Link to="/honeymoon-tour-packages"><h3>Honeymoon Tour Countrys</h3></Link>
                     <ul>
                         {tourPackages. HoneymoonTour.map((pkg, index) => (
                           <li key={index}>
