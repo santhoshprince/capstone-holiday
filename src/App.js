@@ -64,6 +64,13 @@ import DomesticPackages from "./components/domesticcards/domesticpackage";
 import GroupTourPackages from "./components/groupcards/grouptourpackage";
 import EuropeTourPackages from "./components/europecards/europetourpackage"
 
+
+import AndamanHoneymoon from "./honeymoontour/andmandetails"
+import BaliHoneymoon from "./honeymoontour/balidetails"
+import KashmirHoneymoon from "./honeymoontour/kashmirdetails"
+import KeralaHoneymoon  from "./honeymoontour/keraladetails"
+import RajasthanHoneymoon from "./honeymoontour/rajathandetails"
+
 import Layout from "./components/layout";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -275,6 +282,15 @@ function App() {
           <Route path="/domestic-tour-package" element={<DomesticPackages />} />
           <Route path="/group-tour-packages" element={<GroupTourPackages />} />
           <Route path="/europe-tour-packages" element={<EuropeTourPackages />} />
+
+
+          <Route path="/tour/anadaman-honeymoon-tour-packages" element={<AndamanHoneymoon />} />
+          <Route path="/tour/bali-honeymoon-tour-packages" element={<BaliHoneymoon />} />
+          <Route path="/tour/kashmir-honeymoon-tour-packages" element={<KashmirHoneymoon />} />
+          <Route path="/tour/kerala-honeymoon-tour-packages" element={<KeralaHoneymoon />} />
+          <Route path="/tour/rajasthan-honeymoon-tour-packages" element={<RajasthanHoneymoon />} />
+         
+  
         </Routes>
         <Footer />
       </Layout>

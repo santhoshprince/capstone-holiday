@@ -57,11 +57,13 @@ const Header = () => {
       { name: "China", link: "/tour/china-europe-tour-package" },
       { name: "Greece", link: "/tour/greece-europe-tour-package" },
     ],
-    // HoneymoonTour: [
-      // { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
-      // { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
-      // { name: "Bali", link: "/tour/bali-group-tour-package" },
-    // ],
+    HoneymoonTour: [
+      { name: "Andaman", link: "/tour/anadaman-honeymoon-tour-packages" },
+      { name: "Bali", link: "/tour/bali-honeymoon-tour-packages" },
+      { name: "Kashmir", link: "/tour/kashmir-honeymoon-tour-packages" },
+      { name: "Kerala", link: "/tour/kerala-honeymoon-tour-packages" },
+      { name: "Rajasthan", link: "/tour/rajasthan-honeymoon-tour-packages" },
+    ],
   };
 
 
@@ -159,7 +161,7 @@ const Header = () => {
             </li>
             <li>
             <Link to="#">Honeymoon Tour</Link>
-              {/* <div className="dropdown">
+              <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
                     <h3>Honeymoon Tour Countrys</h3>
@@ -175,7 +177,7 @@ const Header = () => {
                       </ul>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </li>
           
             <li>
