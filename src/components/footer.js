@@ -96,8 +96,8 @@ const Footer = () => {
                   <ul className="menu">
                     <li><a href="./">Home</a></li>
                     <li><a href="/about">About us</a></li>
-                    <li><a href="#">Our Service</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="/contact">Our Service</a></li>
+                    <li><a href="/contact">Terms of Service</a></li>
                     <li><a href="/contact">Tour Booking Now</a></li>
                   </ul>
                 </div>
