@@ -24549,3 +24549,8 @@ nav ul li.dropdown:hover .dropdown-content {
   margin-bottom: 0;
 }
 
+
+.about-contact-details-text{
+  color: #000000 !important;
+  font-family: Montserrat !important;
+}
