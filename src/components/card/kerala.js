@@ -6,7 +6,6 @@ import bali2 from "../../img/tour/34.jpg";
 const TourList = () => {
   const tours = [
     {
-      id: 1,
       imgSrc: bali,
       title: "Kerala Tour Packages from Chennai",
       // rating: 4.8,
@@ -15,7 +14,6 @@ const TourList = () => {
       detailPath: '/tour/kerala-tour-packages-from-chennai',
     },
     {
-      id: 2,
       imgSrc: bali2,
       title: "Cochin Munnar Tour Package",
       // rating: 4.8,

@@ -1,89 +1,47 @@
-// src/components/VideoSlider.js
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules'; // Only import Pagination since Navigation is not needed
-import './videoslider.css'; // Ensure this path is correct
+import { Pagination } from 'swiper/modules';
+import './videoslider.css';
 
 const VideoSlider = () => {
-  // State to manage visibility of the play button
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayClick = (e) => {
-    // Get the iframe and set autoplay
-    const iframe = e.currentTarget.previousSibling; // Get the iframe that is before the button
-    iframe.src += "&autoplay=1"; // Start autoplay when clicked
-    setIsPlaying(true); // Hide the play button
+    const iframe = e.currentTarget.previousSibling;
+    iframe.src += "&autoplay=1";
+    setIsPlaying(true);
   };
 
   return (
-    <div className="video-slider-wrapper">
+    <div className="video-slider-wrapper bullet-new">
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20} // Spacing between videos
+        slidesPerView={3} // Display 3 videos at once
         centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         loop={true}
-        modules={[Pagination]} // Only using Pagination
+        modules={[Pagination]}
         className="mySwiper"
       >
-        {/* Slide 1 */}
-        <SwiperSlide>
-          <div className="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/pbEfYpU9IQA?mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="video-iframe"
-            ></iframe>
-            {!isPlaying && (
-              <div className="play-button" onClick={handlePlayClick}></div>
-            )}
-          </div>
-        </SwiperSlide>
-
-        {/* Slide 2 */}
-        <SwiperSlide>
-          <div className="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/pbEfYpU9IQA?mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="video-iframe"
-            ></iframe>
-            {!isPlaying && (
-              <div className="play-button" onClick={handlePlayClick}></div>
-            )}
-          </div>
-        </SwiperSlide>
-
-
-          {/* Slide 3 */}
-          <SwiperSlide>
-          <div className="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/pbEfYpU9IQA?mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="video-iframe"
-            ></iframe>
-            {!isPlaying && (
-              <div className="play-button" onClick={handlePlayClick}></div>
-            )}
-          </div>
-        </SwiperSlide>
-
-
-        {/* Only Swiper Pagination */}
-        <div className="swiper-pagination"></div>
+        {["pbEfYpU9IQA", "pbEfYpU9IQA", "pbEfYpU9IQA","pbEfYpU9IQA"].map((videoId, index) => (
+          <SwiperSlide key={index}>
+            <div className="video-container">
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}?mute=1&controls=0&loop=1&playlist=${videoId}&vq=hd1080`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="video-iframe"
+              ></iframe>
+              {!isPlaying && (
+                <div className="play-button" onClick={handlePlayClick}></div>
+              )}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

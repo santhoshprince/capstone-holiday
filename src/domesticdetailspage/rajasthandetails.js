@@ -32,7 +32,7 @@ const TourPage = () => {
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
   const toursData = {
-    1: {
+    "delhi-agra-jaipur-tour-package": {
       heading: "Delhi Agra Jaipur Tour Package",
       title: "Delhi Agra Jaipur Tour Package",
       galleryImages: [
@@ -124,7 +124,7 @@ const TourPage = () => {
       iconSrc: [location1],
     },
 
-    2: {
+    "rajasthan-trip-package": {
       heading: "Rajasthan Trip package",
       title: "Rajasthan Trip package",
       galleryImages: [
@@ -208,8 +208,10 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
-  const selectedTour = toursData[id] || toursData[1];
+ 
 
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const selectedTour = toursData[path];
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",

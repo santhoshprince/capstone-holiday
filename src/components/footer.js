@@ -10,6 +10,7 @@ import envelope1 from "../img/icon/envelope.svg";
 import location1 from "../img/icon/location-dot.svg";
 import logo from "../img/logo/capstonelogo.png";
 import card1 from "../img/shape/cards.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const galleryImages = [
@@ -44,10 +45,13 @@ const Footer = () => {
                       placeholder="Enter Email"
                       required
                     />
+                    <Link to="/contact">
                     <button type="submit" className="th-btn style3">
                       Subscribe Now
                       <img src="assets/img/icon/plane.svg" alt="" loading="lazy" />
                     </button>
+                    </Link>
+                   
                   </form>
                 </div>
               </div>
@@ -90,11 +94,11 @@ const Footer = () => {
                 <h3 className="widget_title">Quick Links</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="service.html">Our Service</a></li>
-                    <li><a href="contact.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Tour Booking Now</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/contact">Our Service</a></li>
+                    <li><a href="/contact">Terms of Service</a></li>
+                    <li><a href="/contact">Tour Booking Now</a></li>
                   </ul>
                 </div>
               </div>

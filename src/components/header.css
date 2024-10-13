@@ -156,18 +156,18 @@ li:hover .dropdown {
   background-color: #555;
   border-radius: 10px;
 }
-
+/* 
 
 
 .sticky-header {
   position: sticky;
   top: 0;
   background-color: #fff; /* Background color for the header */
-  padding: 10px 20px; /* Padding around the header */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  z-index: 1000; /* Ensure the header is above other content */
-}
-
+  /* padding: 10px 20px; /* Padding around the header */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  /* z-index: 1000; Ensure the header is above other content  */
+/* } */
+ 
 
 
 nav ul {

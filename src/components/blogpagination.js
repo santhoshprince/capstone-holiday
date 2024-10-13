@@ -1,19 +1,25 @@
 import React from "react";
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
-  const handlePageClick = (pageNumber) => {
+  const handlePageClick = (pageNumber, e) => {
+    e.preventDefault(); // Prevent default anchor behavior
     onPageChange(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
   };
 
-  const handleNextPage = () => {
+  const handleNextPage = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
     if (currentPage < totalPages) {
       onPageChange(currentPage + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
     }
   };
 
-  const handlePreviousPage = () => {
+  const handlePreviousPage = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
     if (currentPage > 1) {
       onPageChange(currentPage - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
     }
   };
 
@@ -35,7 +41,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
             <a
               href="#"
               className={currentPage === pageNumber ? "active" : ""}
-              onClick={() => handlePageClick(pageNumber)}
+              onClick={(e) => handlePageClick(pageNumber, e)}
             >
               {pageNumber}
             </a>

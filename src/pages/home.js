@@ -51,7 +51,6 @@ import blog1 from "../img/blog/pexels-streetwindy-2108831.jpg";
 import blog2 from "../img/blog/—Pngtree—a group of people standing_15302237.jpg";
 import blog3 from "../img/blog/—Pngtree—people are sitting and watching_13334566.jpg";
 
-
 import normal1 from "../img/icon/choose_1_1.svg";
 import normal2 from "../img/icon/choose_1_2.svg";
 import normal3 from "../img/icon/choose_1_3.svg";
@@ -61,6 +60,7 @@ import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest
 import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg";
 import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg";
 import VideoSlider from "../components/videoslider";
+import { useNavigate } from "react-router-dom";
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -70,11 +70,16 @@ const HeroSlider = () => {
     });
   }, []);
   const headings = [
-    "Travelling is the healthiest addiction. We serve you with an unlimited dosage of Tour packages from Chennai",
+    "Travelling is the healthiest addiction",
     "Discover and Explore fresh destinations with our tourism champion. ",
     "Connect with us in just a click to discover the best chances to experience adventure.",
   ];
 
+  const descriptions = [
+    "We serve you with an unlimited dosage of Tour packages from Chennai",
+    "Join us for thrilling adventures, from trekking in the hills to relaxing on sandy shores, ensuring you have the trip of a lifetime.",
+    "Connect with us in just a click to discover the best chances to experience adventure.",
+  ];
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
 
   useEffect(() => {
@@ -84,6 +89,68 @@ const HeroSlider = () => {
 
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, []);
+  const navigate = useNavigate(); // Hook for navigation
+
+  const tours = [
+    {
+      img: tour1,
+      title: "Vietnam Group Tour",
+      // rating: "4.8",
+      price: "₹ 21,250",
+      duration: "4 Days",
+      slug: "vietnam-group-tour-packages", // Add a slug or identifier for navigation
+    },
+    {
+      img: tour2,
+      title: "Thailand Tour",
+      rating: "4.8",
+      price: "₹ 14,025",
+      duration: "5 Days",
+      slug: "thailand-group-tour-package",
+    },
+    {
+      img: tour3,
+      title: "Dubai Tour Package",
+      rating: "4.8",
+      price: "₹ 43,350",
+      duration: "5 Days",
+      slug: "dubai-tour-packages-from-chennai",
+    },
+    {
+      img: tour4,
+      title: "Shimla Manali Group Tour",
+      rating: "4.8",
+      price: "₹ 9,350",
+      duration: "6 Days",
+      slug: "shimla-manali-group-tour",
+    },
+  ];
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    title: "",
+    description: "",
+  });
+
+  // State to track visited categories
+  const [visited, setVisited] = useState({});
+
+  // Function to show modal and mark category as visited
+  const handleShowModal = (title, description, category) => {
+    setModalContent({ title, description });
+    setShowModal(true);
+
+    // Mark the category as visited
+    setVisited((prevVisited) => ({
+      ...prevVisited,
+      [category]: true,
+    }));
+  };
+
+  // Function to close modal
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
@@ -107,21 +174,31 @@ const HeroSlider = () => {
             >
               {headings[currentHeadingIndex]} {/* Display current heading */}
             </h1>
+            {/* Display corresponding description */}
+            <p
+              className="hero-description"
+              data-ani="slideinup"
+              data-ani-delay="0.5s"
+            >
+              {descriptions[currentHeadingIndex]}{" "}
+              {/* Display current description */}
+            </p>
             <div
               className="btn-group"
               data-ani="slideinup"
               data-ani-delay="0.6s"
             >
-              <a href="tour.html" className="th-btn th-icon">
+              <a href="international-tour-package" className="th-btn th-icon">
                 Explore Tours
               </a>
-              <a href="service.html" className="th-btn style2 th-icon">
+              <a href="contact" className="th-btn style2 th-icon">
                 Our Services
               </a>
             </div>
           </div>
         </div>
       </div>
+
       <section
         className="category-area bg-top-center"
         style={{ backgroundImage: `url(${category1})` }}
@@ -129,7 +206,8 @@ const HeroSlider = () => {
         <div className="container th-container">
           <div className="title-area text-center">
             <span className="sub-title" data-aos="fade-down">
-              Loop Delightful Tour Memories That Last a Lifetime
+              Loop Delightful Tour Memories with our Tremendous Tour packages
+              That Lasts a Lifetime
             </span>
             <h2 className="sec-title" data-aos="fade-down">
               Tremendous Tour packages
@@ -158,9 +236,18 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">International Tour</a>
+                  <a href="/international-tour-package">International Tour</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+
+                <a
+                  className={`line-btn ${visited["International Tour"] ? "visited" : ""}`}
+                  onClick={() =>
+                    handleShowModal(
+                      "International Tour Package",
+                      "International Tours are unique because they offer experiences you will never have. We have a stellar record for keeping our word and organizing fantastic international trips and international tour packages at affordable prices"
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -177,9 +264,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Domestic Tour</a>
+                  <a href="domestic-tour-package">Domestic Tour</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Domestic Tour Package",
+                      "There is no denying that India is an incredible country. Is exploring our nation from all four angles your long-term goal? We offer customized domestic tour packages to suit your travel needs at one go."
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -196,9 +291,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Europe Tour</a>
+                  <a href="europe-tour-packages">Europe Tour</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Europe Tour Package",
+                      "Welcome to our Europe Tour Packages, designed with greater travel comfort by Capstone Holidays! Without a doubt, our trip operator has carefully planned every detail of the Europe itinerary, taking into account your important time. Contact our Europe tour operator to personalize your Europe holiday packages, including the length of the trip."
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -213,9 +316,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Honeymoon Package</a>
+                  <a href="honeymoon-tour-packages">Honeymoon Package</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Honeymoon tour package",
+                      "Selecting an interesting location that fulfills your idealistic fantasies of the perfect holiday is the first step in organizing an unforgettable honeymoon. Check out our suggested Honeymoon tour package to see some of the most stunning locations for a romantic escape with your partner."
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -230,9 +341,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Group Tour</a>
+                  <a href="group-tour-packages">Group Tour</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Group Tour packages",
+                      "Planning a fun-filled and unforgettable group excursion alongside your colleagues and aiming to select a fascinating location that aligns with your perfect vision of the perfect retreat? View our top-rated group tour packages as well as our most stunning group destinations."
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -247,9 +366,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Educational Tour</a>
+                  <a href="#">Educational Tour</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Educational Tour Package (Almaty, Paris Swiss)",
+                      "We realize the significance of taking a vacation from a demanding and intense academic routine. As a result, we take great pride in setting up affordable research and educational tour packages for student groups."
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -264,9 +391,17 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="destination.html">Cruise</a>
+                  <a href="#">Cruise</a>
                 </h3>
-                <a className="line-btn" href="destination.html">
+                <a
+                  className="line-btn"
+                  onClick={() =>
+                    handleShowModal(
+                      "Cruise Packages (SINGAPORE PENANG)",
+                      "Capstone Holidays offers the best holiday packages, including Cruise packages. The packages are intended to give the best cruising experience with all the deluxe facilities at your favorite beach spots. "
+                    )
+                  }
+                >
                   See more
                 </a>
               </div>
@@ -275,10 +410,62 @@ const HeroSlider = () => {
             {/* Add more slides as needed */}
             {/* The SwiperSlide component can be repeated for each category */}
           </Swiper>
+          {showModal && (
+            <div
+              className="modal fade show"
+              tabIndex="-1"
+              role="dialog"
+              style={{
+                display: "block",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title">{modalContent.title}</h5>
+                  </div>
+                  <div className="modal-body">
+                    <p>{modalContent.description}</p>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      onClick={handleCloseModal}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Add styles for visited state */}
+          <style jsx>{`
+            .line-btn {
+              cursor: pointer;
+              color: blue; /* Default color for the button */
+              text-decoration: underline; /* Underline the button */
+            }
+
+            .line-btn:hover {
+              color: #df1f2c; /* Change text color on hover */
+            }
+
+            .line-btn.visited {
+              color: red; /* Change color when visited */
+            }
+          `}</style>
+          {/* Add styles for visited state */}
         </div>
       </section>
 
-      <div className="bg-smoke overflow-hidden space">
+      <div
+        className="bg-smoke overflow-hidden space"
+        style={{ marginBottom: "30px" }}
+      >
         <div className="container">
           <div className="row gy-4 align-items-center">
             <div className="col-lg-6" data-aos="fade-up">
@@ -382,12 +569,12 @@ const HeroSlider = () => {
         </div>
       </div>
 
- <VideoSliders />
+      <VideoSliders />
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
             <span className="sub-title" data-aos="slide-left">
-              Capturing Eternal Reminiscences, Not Just Pictures
+              Collection of everlasting memories in our gallery
             </span>
             <h2 className="sec-title" data-aos="slide-right">
               Recent from Gallery
@@ -498,13 +685,13 @@ const HeroSlider = () => {
                   Plan a trip for a life-lasting experience
                 </span>
                 <h2 className="sec-title sec-new" data-aos="fade-down">
-                  We execute it for you
+                  We execute vibrant tour packages for you.
                 </h2>
                 <p className="sec-text" data-aos="fade-up">
-                  The Best travel agency in Chennai, Velachery incorporates
-                  Domestic, International, Honeymoon tour packages group tour
-                  packages with incredible hospitality and exceptional customer
-                  service.
+                  Our Best travel agency in Chennai, Velachery incorporates
+                  Domestic Tour Packages, International Tour Packages, Honeymoon
+                  tour packages, group tour packages with incredible hospitality
+                  and exceptional customer service.
                 </p>
               </div>
             </div>
@@ -514,7 +701,7 @@ const HeroSlider = () => {
               spaceBetween={30}
               data-aos="fade-down"
               data-aos-easing="ease-out"
-              slidesPerView={3} // You can adjust this according to your responsive needs
+              slidesPerView={3}
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -536,36 +723,7 @@ const HeroSlider = () => {
                 },
               }}
             >
-              {[
-                {
-                  img: tour1,
-                  title: "Vietnam Group Tour",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour2,
-                  title: "Thailand Tour",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour3,
-                  title: "Dubai Tour Package",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-                {
-                  img: tour4,
-                  title: "Switzerland",
-                  rating: "4.8",
-                  price: "$980.00",
-                  duration: "7 Days",
-                },
-              ].map((tour, index) => (
+              {tours.map((tour, index) => (
                 <SwiperSlide key={index}>
                   <div
                     className="tour-box th-ani gsap-cursor"
@@ -586,7 +744,7 @@ const HeroSlider = () => {
                     </div>
                     <div className="tour-content tournew">
                       <h3 className="box-title">
-                        <a href="tour-details.html">{tour.title}</a>
+                        <a href={`/tour/${tour.slug}`}>{tour.title}</a>
                       </h3>
                       <div className="tour-rating">
                         <div
@@ -600,27 +758,23 @@ const HeroSlider = () => {
                             out of 5
                           </span>
                         </div>
-                        <a
-                          href="tour-details.html"
-                          className="woocommerce-review-link"
-                        >
-                          (<span className="count">{tour.rating}</span> Rating)
-                        </a>
+                        {/* <a href="tour-details.html" className="woocommerce-review-link">
+                  (<span className="count">{tour.rating}</span> Rating)
+                </a> */}
                       </div>
                       <h4 className="tour-box_price">
                         <span className="currency">{tour.price}</span>/Person
                       </h4>
                       <div className="tour-action">
                         <span>
-                          <i className="fa-light fa-clock"></i>
-                          {tour.duration}
+                          <i className="fa-light fa-clock"></i> {tour.duration}
                         </span>
-                        <a
-                          href="contact.html"
+                        <button
                           className="th-btn style4 th-icon"
+                          onClick={() => navigate(`/tour/${tour.slug}`)} // Navigate to dynamic page
                         >
                           Book Now
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -848,7 +1002,7 @@ const HeroSlider = () => {
             </div>
             <div className="col-lg-auto d-none d-lg-block">
               <div className="sec-btn" data-aos="slide-right">
-                <a href="blog.html" className="th-btn style4 th-icon new-but">
+                <a href="blogs" className="th-btn style4 th-icon new-but">
                   See More Articles
                 </a>
               </div>
@@ -867,17 +1021,17 @@ const HeroSlider = () => {
                   data-aos-easing="ease-in"
                 >
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">
+                    <a className="author" href="blogs">
                       Sep 09, 2024
                     </a>
-                    <a href="blog.html">6 min read</a>
+                    <a href="blogs">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blog-details.html">
-                      Tourm Reveals New Eco-Friendly Resort in Maldives
+                    <a href="blogs">
+                    Best Travel Agents in Chennai
                     </a>
                   </h3>
-                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                  <a href="blogs" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>
@@ -894,17 +1048,17 @@ const HeroSlider = () => {
                 </div>
                 <div className="blog-grid2_content">
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">
+                    <a className="author" href="blogs">
                       Sep 10, 2024
                     </a>
-                    <a href="blog.html">8 min read</a>
+                    <a href="blogs">8 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blog-details.html">
-                      Essential Packing List for Your Next Beach Vacation
+                    <a href="blogs">
+                    Best Travel agency in Velachery
                     </a>
                   </h3>
-                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                  <a href="blogs" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>
@@ -923,17 +1077,17 @@ const HeroSlider = () => {
                 </div>
                 <div className="blog-grid2_content">
                   <div className="blog-meta">
-                    <a className="author" href="blog.html">
+                    <a className="author" href="blogs">
                       Sep 05, 2024
                     </a>
-                    <a href="blog.html">6 min read</a>
+                    <a href="#">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blog-details.html">
-                      Tourm Commits to Carbon-Neutral Beach Holidays
+                    <a href="blogs">
+                    Best Tour Operators in Chennai
                     </a>
                   </h3>
-                  <a href="blog-details.html" className="th-btn style4 th-icon">
+                  <a href="blogs" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>

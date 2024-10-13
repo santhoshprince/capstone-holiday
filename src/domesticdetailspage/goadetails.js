@@ -31,8 +31,9 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
-    1: {
+ 
+  const tourDetails = {
+    "goa-tour-package-from-chennai": {
       heading: "Goa Tour Package from Chennai",
       title: "Goa Tour Package from Chennai",
       galleryImages: [
@@ -128,9 +129,8 @@ const TourPage = () => {
 
       iconSrc: [location1],
     },
-
-    2: {
-      heading: "Goa Travel packages",
+    "goa-travel-packages": {
+         heading: "Goa Travel packages",
       title: "Goa Travel packages",
       galleryImages: [
         galleryImage1,
@@ -148,11 +148,33 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
+
+      priceIncludes: [
+        "Accommodation on twin share basis at hotel specified /Similar. (Triple share for extra person)",
+        "Welcome Drink (Non Alcoholic)",
+        "Daily breakfast as per hotel menu",
+        "Airport/Railway Station/Bus Stop Pickup-drop",
+        "All tours and transfers as stated in private Air-Conditioned vehicle. (Swift / Etios / Innova etc.)",
+        "English / Hindi speaking friendly driver cum guide throughout your trip",
+        "Driver’s Bata, Toll, Tax, Parking, Fuel charge",
+      ],
+      Priceexclusions: [
+        "Airfare / Train Fare.",
+        "Travel insurance",
+        "Entry fees for Shows, Parks, Safaris, Rides, Monuments, Boats, Sightseeing etc.",
+        "Tipping for driver, restaurant and guide",
+        "Extra use of swimming pool, game zone, pub etc.",
+        "Extra for Early check-in/Late check-out",
+        "Charge extra for Candle Light Dinner, Flower Bed, Cake etc., in Honeymoon Package",
+        "Any service, which not mentioned in inclusion",
+        "GST 5% (On final bill amount)",
+      ],
+
       description: [
         "Excited to explore which Goa tour places to visit? We got you! Our Goa travel packages give you an unforgettable experience of beaches, nightlife, water sports, historical sites, cuisine, and festivals. Our Goa travel packages are fun-filled ones where we provide few like parasailing, jet-skiing, windsurfing, and banana boat rides. This Goa travel packages is your best choice to revamp your holidays.",
       ],
-      duration: ["3 Nights, 4 Days"],
-      tourCode: ["AH-GOA-21"],
+      duration: ["4 Days,3 Nights"],
+      tourCode:["AH-GOA-21"],
       hotelDetails: [
         "Rahi",
         "Renton Manor",
@@ -171,26 +193,6 @@ const TourPage = () => {
         "Fern",
         "The Park",
       ],
-      PackageInclusion: [
-        "Accommodation on twin share basis at hotel specified /Similar. (Triple share for extra person)",
-        "Welcome Drink (Non Alcoholic)",
-        "Daily breakfast as per hotel menu",
-        "Airport/Railway Station/Bus Stop Pickup-drop",
-        "All tours and transfers as stated in private Air-Conditioned vehicle. (Swift / Etios / Innova etc.)",
-        "English / Hindi speaking friendly driver cum guide throughout your trip",
-        "Driver’s Bata, Toll, Tax, Parking, Fuel charge",
-      ],
-      Priceexclusions: [
-        "Airfare / Train Fare",
-        "Travel insurance",
-        "Entry fees for Shows, Parks, Safaris, Rides, Monuments, Boats, Sightseeing etc.",
-        "Tipping for driver, restaurant and guide",
-        "Extra use of swimming pool, game zone, pub etc.",
-        "Extra for Early check-in/Late check-out",
-        "Charge extra for Candle Light Dinner, Flower Bed, Cake etc., in Honeymoon Package",
-        "Any service not mentioned in inclusion",
-        "GST 5% (On final bill amount)",
-      ],
       itinerary: [
         {
           day: "Day 1",
@@ -205,17 +207,30 @@ const TourPage = () => {
         {
           day: "Day 3",
           details:
-            "After breakfast transfer you to Airport/Railway Station for your onward journey.Dolphin Trip in Senquerim, Snow Park in Baga, Crocodile sighting trip, Snorkeling, Scuba Diving at Grande Island or at Malvan, Water Sports, Parasailing, Jetlev Flyer Adventure, Fly boarding. Adventure, Hot Air Balloon Safari, Adventure Boat Party Trip, Water Rafting, Butterfly & Honeymoon Island trip, Dudhsagar Waterfall, Spice Plantation tour, Boat Cruise, Casino etc., ",
+            "After breakfast transfer you to Airport/Railway Station for your onward journey.",
         },
+        {
+          day: "Day 4",
+          details:
+            "Dolphin Trip in Senquerim, Snow Park in Baga, Crocodile sighting trip, Snorkeling, Scuba Diving at Grande Island or at Malvan, Water Sports, Parasailing, Jetlev Flyer Adventure, Fly boarding. Adventure, Hot Air Balloon Safari, Adventure Boat Party Trip, Water Rafting, Butterfly & Honeymoon Island trip, Dudhsagar Waterfall, Spice Plantation tour, Boat Cruise, Casino etc.,",
+        },
+        {
+          day: "Day 5",
+          details:
+            "After breakfast transfer you to Airport/Railway Station for your onward journey.Dolphin Trip in Senquerim, Snow Park in Baga, Crocodile sighting trip, Snorkeling, Scuba Diving at Grande Island or at Malvan, Water Sports, Parasailing, Jetlev Flyer Adventure, Fly boarding Adventure, Hot Air Balloon Safari, Adventure Boat Party Trip, Water Rafting, Butterfly & Honeymoon Island trip, Dudhsagar Waterfall, Spice Plantation tour, Boat Cruise, Casino etc",
+        },
+      
       ],
-
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d984958.3773877182!2d74.006694!3d15.349728000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1728186707186!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d984958.3773877182!2d74.006694!3d15.349728000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1728186448972!5m2!1sen!2sin",
+
       iconSrc: [location1],
-    },
+    }
   };
 
-  const selectedTour = toursData[id] || toursData[1];
+
+  const path = window.location.pathname.split('/').pop(); // Gets the last part of the URL
+  const tour = tourDetails[path];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
@@ -226,7 +241,7 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={tour.heading} children={""} />
 
       <nav className="tour-navigation">
         <ul>
@@ -248,7 +263,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   <PopularTags />
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -261,14 +276,14 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={selectedTour.itinerary}
+                itineraryData={tour.itinerary}
               />
             </div>
           </div>
@@ -276,14 +291,14 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
+                title={tour.title}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
               />
             </div>
           </div>
@@ -293,8 +308,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

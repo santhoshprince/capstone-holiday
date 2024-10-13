@@ -4,8 +4,33 @@ import Sidebar from "../components/sidebar";
 import Contentsection from "../components/maldivesbg";
 import Maldives from "../components/tourdescription";
 import Balidesc from "../img/tour/2151682922.jpg";
+import FAQ from "../components/Faq";
+
 
 const TourPage = () => {
+  const faqMaldives = [
+    {
+        question: 'Tell us about the perfect season for a Maldives honeymoon trip.',
+        answer: "If you are a summer lover, immediately book a flight to Maldives, since tropical summer is the perfect time to visit and enjoy all that the island possesses to offer."
+    },
+    {
+        question: 'How many days is the Maldives honeymoon trip scheduled?',
+        answer: "Although you can easily stay longer to enjoy the sunlight, a week should be more than enough to see the stunning island."
+    },
+    {
+        question: 'How to land in Maldives?',
+        answer: "Our Maldives Tour Package from Chennai takes you to the Maldives by either flight or a cruise. From the port, certain modes of transportation are accessible to you to get to your destination safely, like domestic airplanes and seaplanes."
+    },
+    {
+        question: 'How to clear the visa procedures for the Maldives Tour Package from Chennai?',
+        answer: "You will need to have acceptable travel documentation, such as a passport, hotel bookings, and confirmed return tickets. A 30-day tourist visa is available for application at Male Airport and can also be extended for up to 90 days."
+    },
+    {
+        question: 'How to travel within the Maldives?',
+        answer: "We customize your Maldives Honeymoon Trip and Maldives Tour Package from Chennai as a budget-friendly trip. Since everything in the Maldives is accessible by foot, you may wander down the white sand beach and become fascinated with its splendour."
+    }
+];
+
   return (
     <>
       <Contentsection heading={"Maldives Tour"} children={"Destination"} />
@@ -33,6 +58,15 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+            <h1 className="text-center mt-5">Frequently Asked Questions</h1>
+            <FAQ faqData={faqMaldives} />
+            </div>
+          </div>
+
         </div>
       </section>
     </>

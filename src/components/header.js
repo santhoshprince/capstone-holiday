@@ -58,13 +58,13 @@ const Header = () => {
       { name: "Greece", link: "/tour/greece-europe-tour-package" },
     ],
     HoneymoonTour: [
-      { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
-      { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
-      { name: "Bali", link: "/tour/bali-group-tour-package" },
+      { name: "Andaman", link: "/tour/anadaman-honeymoon-tour-packages" },
+      { name: "Bali", link: "/tour/bali-honeymoon-tour-packages" },
+      { name: "Kashmir", link: "/tour/kashmir-honeymoon-tour-packages" },
+      { name: "Kerala", link: "/tour/kerala-honeymoon-tour-packages" },
+      { name: "Rajasthan", link: "/tour/rajasthan-honeymoon-tour-packages" },
     ],
   };
-
-
 
   return (
     <header className="sticky-header">
@@ -81,11 +81,13 @@ const Header = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#">Tour Packages</a>
+              <Link to="international-tour-package">Tour Packages</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>International Packages</h3>
+                    <Link to="international-tour-package">
+                      <h3>International Packages</h3>
+                    </Link>
                     <ul>
                       {tourPackages.international.map((pkg, index) => (
                         <li key={index}>
@@ -99,7 +101,10 @@ const Header = () => {
                   </div>
                   <div className="divider" /> {/* Divider between sections */}
                   <div className="dropdown-section domestic">
-                    <h3>Domestic Packages</h3>
+                    <Link to="domestic-tour-package">
+                      <h3>Domestic Packages</h3>
+                    </Link>
+
                     <ul>
                       {tourPackages.domestic.map((pkg, index) => (
                         <li key={index}>
@@ -115,76 +120,85 @@ const Header = () => {
               </div>
             </li>
             <li>
-            <Link to="#">Group Tour</Link>
+              <Link to="/group-tour-packages">Group Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>Group Tour Countrys</h3>
+                    <Link to="group-tour-packages">
+                      <h3>Group Tour Countrys</h3>
+                    </Link>
+
                     <ul>
-                        {tourPackages.groupTour.map((pkg, index) => (
-                          <li key={index}>
-                            <Link to={pkg.link}>
-                              <span className="icon fas fa-plane"></span>{" "}
-                              {pkg.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      {tourPackages.groupTour.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
             </li>
             <li>
-            <Link to="#">Europe Tour</Link>
+              <Link to="europe-tour-packages">Europe Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>Europe Tour Countrys</h3>
+                    <Link to="europe-tour-packages">
+                      <h3>Europe Tour Countrys</h3>
+                    </Link>
+
                     <ul>
-                        {tourPackages.EuropeTour.map((pkg, index) => (
-                          <li key={index}>
-                            <Link to={pkg.link}>
-                              <span className="icon fas fa-plane"></span>{" "}
-                              {pkg.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      {tourPackages.EuropeTour.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
             </li>
             <li>
-            <Link to="#">Honeymoon Tour</Link>
+              <Link to="/honeymoon-tour-packages">Honeymoon Tour</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <h3>Honeymoon Tour Countrys</h3>
+                    <Link to="/honeymoon-tour-packages">
+                      <h3>Honeymoon Tour Countrys</h3>
+                    </Link>
                     <ul>
-                        {tourPackages. HoneymoonTour.map((pkg, index) => (
-                          <li key={index}>
-                            <Link to={pkg.link}>
-                              <span className="icon fas fa-plane"></span>{" "}
-                              {pkg.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      {tourPackages.HoneymoonTour.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
             </li>
-          
+
             <li>
-              <Link to="#">Contact Us</Link>
+              <Link to="/blogs">Blog</Link>
             </li>
+
             <li>
-              <Link to="/tours-and-travels-in-chennai">Blog</Link>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
 
           <div className="header-button">
-            <Link to="#" className="th-btn">
+            <Link to="/contact" className="th-btn">
               Book Now
             </Link>
           </div>

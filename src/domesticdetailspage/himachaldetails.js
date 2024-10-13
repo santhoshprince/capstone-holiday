@@ -31,8 +31,8 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
-    1: {
+  const tourDetails = {
+    "shimla-manali-tour-package-from-chennai": {
       heading: "Himachal – Shimla Manali Tour Package from Chennai",
       title: "Himachal – Shimla Manali Tour Package from Chennai",
       galleryImages: [
@@ -136,7 +136,7 @@ const TourPage = () => {
 
       iconSrc: [location1],
     },
-    2: {
+    "himachal-tour-package": {
       heading: "Himachal Tour Package",
       title: "Himachal Tour Package",
       galleryImages: [
@@ -240,7 +240,8 @@ const TourPage = () => {
     },
   };
 
-  const selectedTour = toursData[id] || toursData[1];
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const selectedTour = tourDetails[path];
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
