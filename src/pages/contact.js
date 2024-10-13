@@ -91,9 +91,11 @@ const ContactForm = () => {
     </form>
   );
 };
+
+
   return (
     <>
-    <ContentSection heading={"CONTACT US"} children={""} />
+    <ContentSection heading={"CONTACT US"} children={""}  />
       <div className="space">
       <div className="container">
         <div className="title-area text-center">
@@ -114,7 +116,7 @@ const ContactForm = () => {
           />
              <ContactCard
             icon={icon1}
-            title="Coimbatore"
+            title="Location - Coimbatore"
             details={[
              "24A, Srinagar Rd, Peelamedu,",
              "Chitra Nagar, Hope College,",
