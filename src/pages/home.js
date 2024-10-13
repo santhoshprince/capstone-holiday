@@ -24,23 +24,23 @@ import "swiper/css";
 // import leftArrow from "../img/icon/left-arrow.svg";
 // import rightArrow from "../img/icon/right-arrow.svg";
 import VideoSliders from "../components/videoslider";
-import cata1 from "../img/category/2151851404.jpg";
-import cata2 from "../img/category/2151383048.jpg";
-import cata3 from "../img/category/2151793553.jpg";
-import cata4 from "../img/category/2151794920.jpg";
-import cata5 from "../img/category/2151694019.jpg";
-import cata6 from "../img/category/2151683003.jpg";
-import cata7 from "../img/category/32967.jpg";
-import tour1 from "../img/tour/2151794920.jpg";
-import tour2 from "../img/tour/2151694019.jpg";
-import tour3 from "../img/tour/2151793553.jpg";
-import tour4 from "../img/tour/2151383048.jpg";
+import cata1 from "../img/category/international.jpg";
+import cata2 from "../img/category/domestic.jpg";
+import cata3 from "../img/category/europe.jpg";
+import cata4 from "../img/category/honey.jpg";
+import cata5 from "../img/category/group.jpg";
+import cata6 from "../img/category/edu.jpg";
+import cata7 from "../img/category/cruise.jpg";
+import tour1 from "../img/tour/river-8105970_1920.jpg";
+import tour2 from "../img/tour/thai.jpg";
+import tour3 from "../img/tour/dubai.jpg";
+import tour4 from "../img/tour/123.jpg";
 import gallery1 from "../img/gallery/2151609230.jpg";
 import gallery2 from "../img/gallery/—Pngtree—large bright boat traveling through_15295893.jpg";
 import gallery3 from "../img/gallery/—Pngtree—thailand ayutthaya chedi of wat_15673580.png";
-import gallery4 from "../img/gallery/2151851404.jpg";
-import gallery5 from "../img/gallery/—Pngtree—3d rendering of an exotic_13292831.jpg";
-import gallery6 from "../img/gallery/—Pngtree—travel travel maldives island resort_15181168.png";
+import gallery4 from "../img/gallery/1.jpg";
+import gallery5 from "../img/gallery/2.jpg";
+import gallery6 from "../img/gallery/5.jpg";
 import gallery7 from "../img/gallery/—Pngtree—wat phra singh temple in_15578971.png";
 import category1 from "../img/bg/category_bg_1.png";
 import tourbg1 from "../img/bg/category_bg_1.cac7ae5ed9cfdb5eeacf.png";
@@ -55,10 +55,10 @@ import normal1 from "../img/icon/choose_1_1.svg";
 import normal2 from "../img/icon/choose_1_2.svg";
 import normal3 from "../img/icon/choose_1_3.svg";
 
-import normal4 from "../img/normal/—Pngtree—forest with waterfalls image hd_15483124.png";
-import normal5 from "../img/normal/—Pngtree—a waterfall with tropical forest_15491363.jpeg";
-import normal6 from "../img/normal/—Pngtree—serenity in the wilderness forest_15758516 (1).jpeg";
-import normal7 from "../img/normal/—Pngtree—a waterfall with tropical forest_15493322.jpeg";
+import normal4 from "../img/normal/721.jpg";
+import normal5 from "../img/normal/6.jpg";
+import normal6 from "../img/normal/3.jpg";
+import normal7 from "../img/normal/4.jpg";
 import VideoSlider from "../components/videoslider";
 import { useNavigate } from "react-router-dom";
 
@@ -164,7 +164,7 @@ const HeroSlider = () => {
       playsInline
       controls={false}
     >
-      <source src="/video/video-banner.mp4" type="video/mp4" />
+      <source src="/video/video-banners.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
@@ -681,7 +681,7 @@ const HeroSlider = () => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3">
+            <div className="col-lg-12">
               <div className="title-area text-center">
                 <span className="sub-title" data-aos="fade-down">
                   Plan a trip for a life-lasting experience
