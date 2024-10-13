@@ -154,16 +154,20 @@ const HeroSlider = () => {
   return (
     <>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
-        {/* YouTube Background */}
-        <div className="video-background">
-          <iframe
-            src="https://www.youtube.com/embed/pbEfYpU9IQA?autoplay=1&mute=1&controls=0&loop=1&playlist=pbEfYpU9IQA&vq=hd1080"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            className="background-video"
-          ></iframe>
-        </div>
+  {/* Video Background */}
+  <div className="video-background">
+    <video
+      className="background-video"
+      autoPlay
+      loop
+      muted
+      playsInline
+      controls={false}
+    >
+      <source src="/video/video-banner.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
         <div className="container">
           <div className="hero-style1">
@@ -174,14 +178,12 @@ const HeroSlider = () => {
             >
               {headings[currentHeadingIndex]} {/* Display current heading */}
             </h1>
-            {/* Display corresponding description */}
             <p
               className="hero-description"
               data-ani="slideinup"
               data-ani-delay="0.5s"
             >
-              {descriptions[currentHeadingIndex]}{" "}
-              {/* Display current description */}
+              {descriptions[currentHeadingIndex]} {/* Display current description */}
             </p>
             <div
               className="btn-group"
