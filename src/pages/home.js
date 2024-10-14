@@ -368,7 +368,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="#">Educational Tour</a>
+                  <a href="/tour-destination/educational-tour">Educational Tour</a>
                 </h3>
                 <a
                   className="line-btn"

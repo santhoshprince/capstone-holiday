@@ -71,6 +71,13 @@ import KashmirHoneymoon from "./honeymoontour/kashmirdetails"
 import KeralaHoneymoon  from "./honeymoontour/keraladetails"
 import RajasthanHoneymoon from "./honeymoontour/rajathandetails"
 
+import EducationalTour from "./components/educationalpage/eductionaltour";
+
+import SwissDetails from "./components/educationtour/educationaltourdetails";
+
+import AlmatyDetails from "./components/educationtour/educationaltourdetails";
+
+
 import Layout from "./components/layout";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -291,7 +298,18 @@ function App() {
           <Route path="/tour/kerala-honeymoon-tour-packages" element={<KeralaHoneymoon />} />
           <Route path="/tour/rajasthan-honeymoon-tour-packages" element={<RajasthanHoneymoon />} />
          
-  
+          <Route
+            path="/tour-destination/educational-tour/"
+            element={<EducationalTour />}
+          />
+          <Route
+            path="/tour/almaty-tour-package"
+            element={<SwissDetails />}
+          />
+          <Route
+            path="/tour/paris-and-swiss-tour-package"
+            element={<AlmatyDetails />}
+          />
         </Routes>
         <Footer />
       </Layout>
