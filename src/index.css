@@ -928,7 +928,7 @@ select,
 .form-select,
 textarea,
 input {
-  height: 56px;
+  height: 50px;
   padding: 0 25px 0 25px;
   padding-right: 50px;
   border: 1px solid var(--gray-color);
