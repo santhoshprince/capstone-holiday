@@ -99,7 +99,7 @@ const Header = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="divider" /> {/* Divider between sections */}
+                  {/* <div className="divider" />  */}
                   <div className="dropdown-section domestic">
                     <Link to="domestic-tour-package">
                       <h3>Domestic Packages</h3>
@@ -125,12 +125,12 @@ const Header = () => {
                 <div className="dropdown-containernew">
                   <div className="dropdown-sectionnew international">
                     <Link to="group-tour-packages" className="link-container">
-                      <h3>Group Tour Countrys</h3>
+                      <h3>Group Tour Packages</h3>
                     </Link>
 
                     <ul>
                       {tourPackages.groupTour.map((pkg, index) => (
-                        <li key={index}>
+                        <li key={index} className="link-container">
                           <Link to={pkg.link}>
                             <span className="icon fas fa-plane"></span>{" "}
                             {pkg.name}
@@ -148,7 +148,7 @@ const Header = () => {
                 <div className="dropdown-containernew">
                   <div className="dropdown-sectionnew international">
                     <Link to="europe-tour-packages" className="link-container">
-                      <h3>Europe Tour Countrys</h3>
+                      <h3>Europe Tour Packages</h3>
                     </Link>
 
                     <ul>
@@ -171,7 +171,7 @@ const Header = () => {
                 <div className="dropdown-containernew">
                   <div className="dropdown-sectionnew international">
                     <Link to="/honeymoon-tour-packages" className="link-container">
-                      <h3>Honeymoon Tour Countrys</h3>
+                      <h3>Honeymoon Tour Packages</h3>
                     </Link>
                     <ul>
                       {tourPackages.HoneymoonTour.map((pkg, index) => (

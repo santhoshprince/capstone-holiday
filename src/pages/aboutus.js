@@ -182,7 +182,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="service-details.html">Tailor-Made Travel</a>
+                    <a href="#">Tailor-Made Travel</a>
                   </h3>
                   <p className="destination-text">5 Listing</p>
                   <a
@@ -207,7 +207,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="service-details.html">Group Tours</a>
+                    <a href="group-tour-packages">Group Tours</a>
                   </h3>
                   <p className="destination-text">8 Listing</p>
                   <a
@@ -232,7 +232,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="service-details.html">International Tour</a>
+                    <a href="international-tour-package">International Tour</a>
                   </h3>
                   <p className="destination-text">9 Listing</p>
                   <a
@@ -257,7 +257,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="service-details.html">Domestic Tour</a>
+                    <a href="domestic-tour-package">Domestic Tour</a>
                   </h3>
                   <p className="destination-text">7 Listing</p>
                   <a
