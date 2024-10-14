@@ -19,9 +19,9 @@ const TourItem = ({ imgSrc, title, rating, price, duration, detailPath }) => {
                   Rated <strong className="rating">{rating}</strong> out of 5 based on <span className="rating">{rating}</span> Rating
                 </span>
               </div>
-              <Link to={detailPath} className="woocommerce-review-link">
+              {/* <Link to={detailPath} className="woocommerce-review-link">
                 (<span className="count">{rating}</span> Rating)
-              </Link>
+              </Link> */}
             </div>
           )}
           <h4 className="tour-box_price">
