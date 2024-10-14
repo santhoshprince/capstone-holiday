@@ -8,10 +8,11 @@
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background-color: #000; /* Background color for the video container */
 }
 
 .video-iframe {
@@ -59,29 +60,64 @@
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-/* Styling for pagination bullets */
-.bullet-new .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.8); /* Light white bullets */
-  width: 10px;
-  height: 10px;
-  margin: 3px;
+/* Custom button styles */
+.custom-button {
+  background: linear-gradient(135deg, #f9af2a, #ff5a5f) !important; /* Gradient background */
+  border: none;
   border-radius: 50%;
-  border: 2px solid #ff5a5f; /* Border for bullet */
-  opacity: 1; /* Ensure the bullets are visible */
-  transition: background-color 0.3s;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: absolute; /* Make button position absolute */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
 }
 
-/* Active bullet style */
-.bullet-new .swiper-pagination-bullet-active {
-  background-color: #ff5a5f; /* Change to a stronger color when active */
+/* Positioning left and right buttons */
+.custom-button-left {
+  left: -40px; /* Position left button outside */
 }
 
-/* Position the pagination inside the video but down a bit */
-.bullet-new .swiper-pagination {
-  position: absolute;
-  bottom: 0px; /* Move down a bit */
-  left: 0;
-  right: 0;
+.custom-button-right {
+  right: -40px; /* Position right button outside */
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background: linear-gradient(135deg, #ff5a5f, #f9af2a) !important; /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly scale up */
+}
+
+/* Active effect */
+.custom-button:active {
+  transform: scale(0.95); /* Scale down on click */
+}
+
+/* Optional: Arrow styles */
+.custom-button:before {
+  font-size: 30px; /* Adjust size of the arrow */
+  color: white; /* Change arrow color to white for contrast */
+}
+
+
+.youtube-section {
   text-align: center;
-  z-index: 20; /* Ensure it appears on top of the video */
+  padding: 50px 20px;
+  /* background-color: #f9f9f9; Light background for contrast */
+}
+
+.youtube-heading {
+  font-size: 2.5rem; /* Large font size for prominence */
+  color: #f9af2a; /* Primary color */
+  margin-bottom: 20px;
+}
+
+.youtube-description {
+  font-size: 1.2rem; /* Slightly smaller for readability */
+  color: #333; /* Dark color for contrast */
 }

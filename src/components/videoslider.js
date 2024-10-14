@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import 'swiper/css/navigation'; // Import for navigation arrows
+import 'swiper/css/autoplay'; // Import for autoplay
+import { Navigation, Autoplay } from 'swiper/modules'; // Import required modules
 import './videoslider.css';
 
 const VideoSlider = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const swiperRef = useRef(null); // Create a reference for the Swiper
 
   const handlePlayClick = (e) => {
     const iframe = e.currentTarget.previousSibling;
@@ -14,18 +16,37 @@ const VideoSlider = () => {
     setIsPlaying(true);
   };
 
+  const slideNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext(); // Slide to the next video
+    }
+  };
+
+  const slidePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev(); // Slide to the previous video
+    }
+  };
+
   return (
-    <div className="video-slider-wrapper bullet-new">
+    <>
+    <section class="youtube-section">
+  <h2 class="youtube-heading">Explore the World Through Our Lens</h2>
+  <p class="youtube-description">Join us on our adventures as we discover breathtaking destinations and share travel tips through our captivating videos!</p>
+</section>
+       <div className="video-slider-wrapper">
       <Swiper
+        ref={swiperRef} // Attach the ref to Swiper
         spaceBetween={20} // Spacing between videos
         slidesPerView={3} // Display 3 videos at once
         centeredSlides={true}
-        pagination={{ clickable: true }}
-        loop={true}
-        modules={[Pagination]}
+        loop={true} // Enable looping
+        navigation={false} // Disable default navigation
+        autoplay={{ delay: 3000, disableOnInteraction: false }} // Enable autoplay
+        modules={[Navigation, Autoplay]} // Include modules
         className="mySwiper"
       >
-        {["BMB3boMwZwY", "pbEfYpU9IQA", "W52dYREUkC8","F2V2--JDFdY"].map((videoId, index) => (
+        {["BMB3boMwZwY", "pbEfYpU9IQA", "W52dYREUkC8", "F2V2--JDFdY"].map((videoId, index) => (
           <SwiperSlide key={index}>
             <div className="video-container">
               <iframe
@@ -43,7 +64,16 @@ const VideoSlider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      {/* Custom Navigation Buttons */}
+      <button className="custom-button custom-button-left" onClick={slidePrev}>
+        <span>&lt;</span> {/* Replace with your arrow icon */}
+      </button>
+      <button className="custom-button custom-button-right" onClick={slideNext}>
+        <span>&gt;</span> {/* Replace with your arrow icon */}
+      </button>
     </div>
+    </>
+ 
   );
 };
 

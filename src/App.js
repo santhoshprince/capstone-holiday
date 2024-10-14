@@ -5,6 +5,8 @@ import About from "./pages/aboutus";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import BlogDetails from "./pages/blogdeatils";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 import Bali from "./desinationpage/bali";
 import ScrollToTop from "./components/ScrollToTop";
