@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/354.jpg";
+import galleryImage2 from "../img/tour/12.jpg";
 import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
