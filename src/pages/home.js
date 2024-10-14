@@ -393,7 +393,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="#">Cruise</a>
+                  <a href="/tour/cruise-package">Cruise</a>
                 </h3>
                 <a
                   className="line-btn"

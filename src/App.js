@@ -76,7 +76,7 @@ import EducationalTour from "./components/educationalpage/eductionaltour";
 import SwissDetails from "./components/educationtour/educationaltourdetails";
 
 import AlmatyDetails from "./components/educationtour/educationaltourdetails";
-
+import CruiseDetails from "./cursiedeatils/shippagedetails";
 
 import Layout from "./components/layout";
 import "./App.css";
@@ -309,6 +309,11 @@ function App() {
           <Route
             path="/tour/paris-and-swiss-tour-package"
             element={<AlmatyDetails />}
+          />
+ 
+            <Route
+            path="/tour/cruise-package"
+            element={<CruiseDetails />}
           />
         </Routes>
         <Footer />
