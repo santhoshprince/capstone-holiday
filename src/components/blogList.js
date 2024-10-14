@@ -3,9 +3,12 @@ import BlogItem from "./blogItem";
 import Pagination from "./blogpagination";
 
 // Dummy blog data
-import blog1 from "../img/blog/blog-s-1-1.jpg";
-import blog2 from "../img/blog/blog-s-1-2.jpg";
-import blog3 from "../img/blog/blog-s-1-2.jpg";
+import blog1 from "../assets/blogsimg/mahabalipuram-554237_1280.jpg";
+import blog2 from "../assets/blogsimg/mountains-5969476_1280.jpg";
+import blog3 from "../assets/blogsimg/reflection-3239899_1280.jpg";
+import blog4 from "../assets/blogsimg/town-6843799_1280.jpg";
+import blog5 from "../assets/blogsimg/bali-tour-packages-4706037_1280.jpg";
+import blog6 from "../assets/blogsimg/camera-1130731_1280.jpg";
 
 const blogs = [
     {
@@ -39,12 +42,11 @@ const blogs = [
       category: "Tour Guide",
       title: "Best Tours And Travels in Chennai",
       text: "Witness the extraordinary travel destinations & enjoy compatible services with our best tour operators in Chennai - Capstone Holidays...",
-      videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
     {
       id: 4,
-      image: blog3,
+      image: blog4,
       author: "blog",
       slug: "best-tour-operators-in-chennai",
       date: "September 6, 2024",
@@ -52,12 +54,12 @@ const blogs = [
       title: "Best Tour Operators in Chennai",
       text: "Witness the extraordinary travel destinations & enjoy compatible services with our best tour operators in Chennai - Capstone Holidays...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
 
     {
       id: 5,
-      image: blog3,
+      image: blog5,
       author: "Blog",
       slug: "bali-tour-package",
       date: "August 22, 2024",
@@ -65,11 +67,11 @@ const blogs = [
       title: "Bali Tour Package",
       text: "Witness the blue beaches, volcanoes, waterfalls, & landscapes in our Capstone Bali Tour Package, which drags you to a vibrant world...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo:false,
     },
     {
       id: 6,
-      image: blog3,
+      image: blog6,
       author: "Blog",
       slug: "best-travel-agency-in-velachery",
       date: "August 9, 2024",
@@ -77,7 +79,7 @@ const blogs = [
       title: "Best Travel agency in Velachery",
       text: "The Best Travel agency in Velachery is Capstone because it goes far surpassing the call of duty to satisfy customers in the travels industry...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
     {
       id: 7,

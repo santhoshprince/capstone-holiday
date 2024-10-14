@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import blog1 from "../img/blog/blog-s-1-1.jpg";
-import blog2 from "../img/blog/blog-s-1-2.jpg";
+import blog1 from "../assets/blogsimg/mahabalipuram-554237_1280.jpg";
+import blog2 from "../assets/blogsimg/mountains-5969476_1280.jpg";
 import blog3 from "../img/blog/blog-s-1-2.jpg";
 import blogimg1 from "../img/blog/blog_inner_1.jpg";
 import "./blogdeatils.css";
