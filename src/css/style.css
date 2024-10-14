@@ -1607,15 +1607,15 @@ a.ui-button:active,
   color: rgb(255, 255, 255);
 }
 
-i.fa-facebook:hover {
+/* i.fa-facebook:hover {
   background: rgb(0, 90, 255);
-}
+} */
 
 .ed-com-t1-social ul li a i:hover,
 .foot-social ul li i:hover {
   color: rgb(255, 255, 255);
 }
-
+/* 
 i.fa-twitter:hover {
   background: rgb(0, 172, 237);
 }
@@ -1634,7 +1634,7 @@ i.fa-whatsapp:hover {
 
 i.fa-instagram:hover {
   background: rgb(188, 42, 141);
-}
+} */ 
 
 .late-news {
   float: left;
