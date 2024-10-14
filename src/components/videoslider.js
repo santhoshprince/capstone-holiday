@@ -25,7 +25,7 @@ const VideoSlider = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {["pbEfYpU9IQA", "pbEfYpU9IQA", "pbEfYpU9IQA","pbEfYpU9IQA"].map((videoId, index) => (
+        {["BMB3boMwZwY", "pbEfYpU9IQA", "W52dYREUkC8","F2V2--JDFdY"].map((videoId, index) => (
           <SwiperSlide key={index}>
             <div className="video-container">
               <iframe
