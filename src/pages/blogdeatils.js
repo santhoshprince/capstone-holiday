@@ -388,15 +388,15 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
                             <a href="blog.html">Buyer</a>
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
-                          </div>
-                        </div>
+                          </div> 
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -678,7 +678,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -686,7 +686,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -1057,7 +1057,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -1065,7 +1065,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -1442,7 +1442,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -1450,7 +1450,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -1766,7 +1766,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -1774,7 +1774,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -2076,7 +2076,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -2084,7 +2084,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -2346,7 +2346,7 @@ const BlogDetails = () => {
                     </p>
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -2354,7 +2354,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -2687,7 +2687,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -2695,7 +2695,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -3045,7 +3045,7 @@ const BlogDetails = () => {
                     </p>
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -3053,7 +3053,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -3568,7 +3568,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -3576,7 +3576,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -3911,7 +3911,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -3919,7 +3919,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -4300,7 +4300,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -4308,7 +4308,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>
@@ -4716,7 +4716,7 @@ const BlogDetails = () => {
 
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
-                        <div className="col-md-auto">
+                        {/* <div className="col-md-auto">
                           <span className="share-links-title">Tags:</span>
                           <div className="tagcloud">
                             <a href="blog.html">Apartment</a>
@@ -4724,7 +4724,7 @@ const BlogDetails = () => {
                             <a href="blog.html">Modern</a>
                             <a href="blog.html">Luxury</a>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-auto text-xl-end">
                           <div className="share-links_wrapp">
                             <span className="share-links-title">Share:</span>

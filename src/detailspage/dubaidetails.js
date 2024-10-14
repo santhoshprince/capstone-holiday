@@ -146,7 +146,7 @@ const TourDubai = () => {
                     <DetailSlider images={selectedTour.galleryImages} />
                   </div>
 
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>

@@ -264,7 +264,7 @@ const TourPage = () => {
                   role="tabpanel"
                 >
                   <DetailSlider images={tour.galleryImages} />
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>
