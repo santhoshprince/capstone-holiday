@@ -144,8 +144,8 @@ li:hover .dropdown {
 
 /* Scrollable if necessary */
 .dropdown-container {
-  max-height: 300px; /* Adjust height if you want to make it scrollable */
-  overflow-y: auto;
+  display: flex; /* Aligns items horizontally */
+  align-items: stretch; 
 }
 
 .dropdown-container::-webkit-scrollbar {
@@ -243,7 +243,7 @@ nav ul li a:hover {
 /* Dropdown Sections */
 .dropdown-section {
   flex: 1;
-  padding: 0 10px; /* Reduce padding between sections */
+  padding: 10px; /* Reduce padding between sections */
 }
 
 /* Section Heading */
@@ -290,7 +290,8 @@ nav ul li a:hover {
 .divider {
   width: 1px;
   background-color: #ddd;
-  margin: 0 10px; /* Reduce margin around the divider */
+  margin: 0 10px; /* Margin around the divider */
+  height: auto;  /* Reduce margin around the divider */
 }
 
 /* Hover Effect */
@@ -319,6 +320,11 @@ nav ul li a:hover {
 /* Show dropdown on hover */
 .main-menu li:hover .dropdownnew {
   display: block; /* Show dropdown when parent is hovered */
+}
+
+.dropdown {
+  max-height: 400px; /* Max height for dropdown */
+  overflow: auto; /* Scroll if content overflows */
 }
 
 /* Dropdown Container */

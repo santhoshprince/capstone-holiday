@@ -85,7 +85,7 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <Link to="international-tour-package">
+                    <Link to="international-tour-package"  className="link-container">
                       <h3>International Packages</h3>
                     </Link>
                     <ul>
