@@ -1,6 +1,6 @@
 .accordion-header {
     background-color: transparent; /* Keep transparent */
-    padding: 18px 20px; /* More horizontal padding for better spacing */
+    /* More horizontal padding for better spacing */
     cursor: pointer; /* Pointer cursor for clickability */
     font-weight: 600; /* Bold text */
     color: var(--primary-color) !important; /* Keep your text color */

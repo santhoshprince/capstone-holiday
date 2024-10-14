@@ -19439,7 +19439,7 @@ span.select2-selection.select2-selection--single:focus {
 .accordion-card .accordion-body {
   border-radius: 0;
   border: none;
-  padding: 0px 30px 30px;
+  padding: 30px 30px 30px;
 }
 .accordion-card .faq-text {
   color: var(--body-color);
