@@ -121,10 +121,10 @@ const Header = () => {
             </li>
             <li>
               <Link to="/group-tour-packages">Group Tour</Link>
-              <div className="dropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-section international">
-                    <Link to="group-tour-packages">
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="group-tour-packages" className="link-container">
                       <h3>Group Tour Countrys</h3>
                     </Link>
 
@@ -144,10 +144,10 @@ const Header = () => {
             </li>
             <li>
               <Link to="europe-tour-packages">Europe Tour</Link>
-              <div className="dropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-section international">
-                    <Link to="europe-tour-packages">
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="europe-tour-packages" className="link-container">
                       <h3>Europe Tour Countrys</h3>
                     </Link>
 
@@ -167,10 +167,10 @@ const Header = () => {
             </li>
             <li>
               <Link to="/honeymoon-tour-packages">Honeymoon Tour</Link>
-              <div className="dropdown">
-                <div className="dropdown-container">
-                  <div className="dropdown-section international">
-                    <Link to="/honeymoon-tour-packages">
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="/honeymoon-tour-packages" className="link-container">
                       <h3>Honeymoon Tour Countrys</h3>
                     </Link>
                     <ul>
