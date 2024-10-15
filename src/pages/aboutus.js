@@ -2,15 +2,18 @@ import React, { useState } from "react";
 
 import ContentSection from "../components/contentbg";
 
-import aboutImage1 from "../img/normal/about_3_1.jpg"; // Replace with your image paths
-import aboutImage2 from "../img/normal/about_3_2.jpg";
-import aboutImage3 from "../img/normal/about_3_3.jpg";
+import aboutImage1 from "../assets/aboutusimg/mountain-7986371_640.jpg"; // Replace with your image paths
+import aboutImage2 from "../assets/aboutusimg/tower-6521842_640.jpg";
+import aboutImage3 from "../assets/aboutusimg/steam-locomotive-6580128_640.jpg";
 
-import destinationImg1 from "../img/destination/destination_4_1.jpg";
-import destinationImg2 from "../img/destination/destination_4_2.jpg";
-import destinationImg3 from "../img/destination/destination_4_3.jpg";
-import destinationImg4 from "../img/destination/destination_4_4.jpg";
+import destinationImg1 from "../assets/aboutusimg/man-1850181.jpg";
+import destinationImg2 from "../assets/aboutusimg/tour-guide-6816049_1920.jpg";
+import destinationImg3 from "../assets/aboutusimg/plane-723888_1920.jpg";
+import destinationImg4 from "../assets/aboutusimg/map-of-the-world-60526_1920.jpg";
 
+
+
+import aboutbg from "../assets/aboutusimg/passport-2606782_1920.jpg";
 const AboutUs = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({
@@ -42,6 +45,7 @@ const AboutUs = () => {
       <ContentSection
         heading={"About Us"}
         children={"Tours and Travels company in Chennai"}
+        backgroundImage={aboutbg}
       />
       <section className="about-us-section py-5">
         <div className="container">
@@ -178,7 +182,7 @@ const AboutUs = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="destination-item th-ani">
                 <div className="destination-item_img global-img">
-                  <img src={destinationImg1} alt="Photo Shoot" />
+                  <img src={destinationImg1} alt="Photo Shoot" style={{width:"300px",height:"300px"}} />
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
@@ -203,7 +207,7 @@ const AboutUs = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="destination-item th-ani">
                 <div className="destination-item_img global-img">
-                  <img src={destinationImg2} alt="Tour Guide" />
+                  <img src={destinationImg2} alt="Tour Guide" style={{width:"300px",height:"300px"}} />
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
@@ -228,7 +232,7 @@ const AboutUs = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="destination-item th-ani">
                 <div className="destination-item_img global-img">
-                  <img src={destinationImg3} alt="Cozy Event" />
+                  <img src={destinationImg3} alt="Cozy Event" style={{width:"300px",height:"300px"}} />
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
@@ -253,7 +257,7 @@ const AboutUs = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="destination-item th-ani">
                 <div className="destination-item_img global-img">
-                  <img src={destinationImg4} alt="Interesting Rest" />
+                  <img src={destinationImg4} alt="Interesting Rest" style={{width:"300px",height:"300px"}}/>
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
