@@ -2591,7 +2591,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .sub-title {
   display: block;
   color: var(--title-color);
-  font-size: 40px;
+  font-size: 33px;
   line-height: 40px;
   font-weight: 400;
   font-family: var(--style-font) !important;
@@ -19267,6 +19267,7 @@ span.select2-selection.select2-selection--single:focus {
 .category-area {
   padding: 165px 0 120px 0;
   margin-top: -55px;
+  padding-bottom: 55px;
 }
 .category-area .th-container {
   --main-container: 1750px;
@@ -24432,7 +24433,7 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .gallery-area {
-  margin-top: 50px !important;
+  margin-top: 100px !important;
   margin-bottom: 50px !important;
 }
 .new-tag {

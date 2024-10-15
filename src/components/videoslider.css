@@ -65,8 +65,8 @@
   background: linear-gradient(135deg, #f9af2a, #ff5a5f) !important; /* Gradient background */
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,11 +80,11 @@
 
 /* Positioning left and right buttons */
 .custom-button-left {
-  left: -40px; /* Position left button outside */
+  left: -60px; /* Position left button outside */
 }
 
 .custom-button-right {
-  right: -40px; /* Position right button outside */
+  right: -60px; /* Position right button outside */
 }
 
 /* Hover effect */
