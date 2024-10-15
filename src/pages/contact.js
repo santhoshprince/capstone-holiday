@@ -186,20 +186,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="" style={{marginTop:"20px"}}>
-        <div className="container-fluid">
-          <div className="contact-map style2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15664.699930412033!2d77.0210447!3d11.0254947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8596042e23f3d%3A0x7dd18e73285061f7!2sCapstone%20holidays%20-%20No%3A1%20Travel%20Agency%20in%20Coimbatore!5e0!3m2!1sen!2sin!4v1728922411781!5m2!1sen!2sin"
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-            <div className="contact-icon">
-              <img src={icon4} alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+  
     </div>
     </>
  
