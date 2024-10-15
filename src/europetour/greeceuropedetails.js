@@ -8,21 +8,22 @@ import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/354.jpg";
-import galleryImage3 from "../img/tour/835.jpg";
-import galleryImage4 from "../img/tour/15793.jpg";
-import galleryImage5 from "../img/tour/340.jpg";
-import galleryImage6 from "../img/tour/365.jpg";
+import galleryImage1 from "../img/greece/13.jpg";
+import galleryImage2 from "../img/greece/14.jpg";
+import galleryImage3 from "../img/greece/3.jpg";
+import galleryImage4 from "../img/greece/4.jpg";
+import galleryImage5 from "../img/greece/5.jpg";
+import galleryImage6 from "../img/greece/6.jpg";
 
-import galleryImage1_1 from "../img/gallery/358.jpg";
-import galleryImage2_2 from "../img/gallery/343.jpg";
-import galleryImage3_3 from "../img/gallery/369.jpg";
-import galleryImage4_4 from "../img/gallery/963.jpg";
-import galleryImage5_5 from "../img/gallery/11021.jpg";
-import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+import galleryImage1_1 from "../img/greece/7.jpg";
+import galleryImage2_2 from "../img/greece/8.jpg";
+import galleryImage3_3 from "../img/greece/9.jpg";
+import galleryImage4_4 from "../img/greece/10.jpg";
+import galleryImage5_5 from "../img/greece/11.jpg";
+import galleryImage6_6 from "../img/greece/12.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
+import bg1 from "../img/greece/8.jpg";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -148,7 +149,7 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
         <ul>

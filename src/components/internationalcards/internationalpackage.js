@@ -2,10 +2,18 @@ import React, { useState } from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
 import bali from "../../img/tour/12.jpg";
 import bali2 from "../../img/tour/34.jpg";
-import maldives from "../../img/tour/2151682910.jpg";
+import maldives from "../../img/bg/7.jpg";
+import dubai from "../../img/Dubai/d4.jpg";
+import thailand from "../../img/Thailand/895.jpg";
+import turkey from "../../img/Turkey/313.jpg";
+import mauritius from "../../img/mauritius/4224.jpg";
+import singapore from "../../img/singapore/s5.jpg";
+import vietnam from "../../img/vietnam/8.jpg";
+import srilanka from "../../img/srilanka/travels-3758193_1920.jpg";
 import Contentbg from "../../components/contentbg";
 import Sidebar from "../../components/sidebar";
 import Pagination from "../../components/blogpagination"; // Your Pagination component
+import bg1 from "../../img/tour/emirates.jpg";
 
 const TourList = () => {
   // The array of tour items
@@ -35,7 +43,7 @@ const TourList = () => {
       detailPath: "/tour/maldives-tour-package-from-chennai",
     },
     {
-      imgSrc: maldives,
+      imgSrc: dubai,
       title: "Dubai Tour Packages from Chennai",
       rating: 4.7,
       price: "43,350",
@@ -43,7 +51,7 @@ const TourList = () => {
       detailPath: "/tour/dubai-tour-packages-from-chennai",
     },
     {
-      imgSrc: maldives,
+      imgSrc: thailand,
       title: "Thailand Tour Package from Chennai 4N / 5D",
       rating: 4.7,
       price: "15,130",
@@ -51,7 +59,7 @@ const TourList = () => {
       detailPath: "/tour/thailand-tour-package-from-chennai",
     },
     {
-      imgSrc: maldives,
+      imgSrc: turkey,
       title: "Turkey Tour Packages from India – 4N / 5D",
       rating: 4.7,
       price: "25,075",
@@ -59,7 +67,7 @@ const TourList = () => {
       detailPath: '/tour/mauritius-tour-package-from-chennai',
     },
     {
-      imgSrc: maldives,
+      imgSrc: mauritius,
       title: "Mauritius Tour Package from Chennai",
       rating: 4.7,
       price: "135,320",
@@ -67,7 +75,7 @@ const TourList = () => {
       detailPath: '/tour/turkey-tour-packages-from-india',
     },
     {
-      imgSrc: maldives,
+      imgSrc: singapore,
       title: "Singapore and Malaysia Tour Packages",
       rating: 4.7,
       price: "38,250",
@@ -75,7 +83,7 @@ const TourList = () => {
       detailPath: '/tour/singapore-and-malaysia-tour-packages',
     },
     {
-      imgSrc: maldives,
+      imgSrc: vietnam,
       title: "Vietnam Cambodia Tour Package – 3N / 4D",
       rating: 4.7,
       price: "20,400",
@@ -83,7 +91,7 @@ const TourList = () => {
       detailPath: '/tour/vietnam-cambodia-tour-package',
     },
     {
-      imgSrc: maldives,
+      imgSrc: srilanka,
       title: "Sri Lanka Tour Package from Chennai 4N/5D",
       rating: 4.7,
       price: "25,415",
@@ -111,7 +119,7 @@ const TourList = () => {
 
   return (
     <>
-      <Contentbg heading={"International Tour Packages"} />
+      <Contentbg heading={"International Tour Packages"} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

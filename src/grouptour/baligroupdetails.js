@@ -23,6 +23,7 @@ import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/gallery/2151625212.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
+import bg1 from "../img/bg/contact_bg_7.jpg";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -108,7 +109,7 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
         <ul>

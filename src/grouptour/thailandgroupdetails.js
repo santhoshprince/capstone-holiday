@@ -1,28 +1,29 @@
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
-import Contentsection from "../components/maldivesbg";
+import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/tour/2151682890.jpg";
-import galleryImage2 from "../img/tour/2151682910.jpg";
-import galleryImage3 from "../img/tour/2151682922.jpg";
-import galleryImage4 from "../img/tour/2151682907.jpg";
-import galleryImage5 from "../img/tour/2151682912.jpg";
-import galleryImage6 from "../img/tour/2151682911.jpg";
+import galleryImage1 from "../img/Thailand/568.jpg";
+import galleryImage2 from "../img/Thailand/970.jpg";
+import galleryImage3 from "../img/Thailand/1025.jpg";
+import galleryImage4 from "../img/Thailand/1358.jpg";
+import galleryImage5 from "../img/Thailand/568.jpg";
+import galleryImage6 from "../img/Thailand/771.jpg";
 
-import galleryImage1_1 from "../img/gallery/2151682890.jpg";
-import galleryImage2_2 from "../img/gallery/4900.jpg";
-import galleryImage3_3 from "../img/gallery/4911.jpg";
-import galleryImage4_4 from "../img/gallery/4852.jpg";
-import galleryImage5_5 from "../img/gallery/835.jpg";
-import galleryImage6_6 from "../img/gallery/1110.jpg";
+import galleryImage1_1 from "../img/Thailand/434.jpg";
+import galleryImage2_2 from "../img/Thailand/895.jpg";
+import galleryImage3_3 from "../img/Thailand/570.jpg";
+import galleryImage4_4 from "../img/Thailand/607.jpg";
+import galleryImage5_5 from "../img/Thailand/779.jpg";
+import galleryImage6_6 from "../img/Thailand/786.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
+import bg1 from "../img/Thailand/2150668931.jpg";
 
 const TourThailand = () => {
   const { id } = useParams();
@@ -111,7 +112,7 @@ const TourThailand = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
-import bali from "../../img/tour/12.jpg";
-import bali2 from "../../img/tour/34.jpg";
-import maldives from "../../img/tour/2151682910.jpg";
+import bali from "../../img/andaman/8.jpg";
+import bali2 from "../../img/tour/365.jpg";
+import maldives from "../../img/kashmir/12.jpg";
+import kerala from "../../img/kerala/6.jpg";
+import rajasthan from "../../img/Rajasthan/10.jpg";
 import Contentbg from "../../components/contentbg";
 import Sidebar from "../../components/sidebar";
 import Pagination from "../../components/blogpagination"; // Your Pagination component
+import bg1 from "../../img/tour/99.jpg";
 
 const TourList = () => {
   const tours = [
@@ -34,7 +37,7 @@ const TourList = () => {
       detailPath: "/tour/kashmir-honeymoon-tour-packages",
     },
     {
-      imgSrc: maldives,
+      imgSrc: kerala,
       title: "Kerala Honeymoon Tour",
       rating: 4.7,
       price: "19,000",
@@ -42,7 +45,7 @@ const TourList = () => {
       detailPath: "/tour/kerala-honeymoon-tour-packages",
     },
     {
-      imgSrc: maldives,
+      imgSrc: rajasthan,
       title: "Rajasthan Honeymoon Tour",
       rating: 4.7,
       price: "17,500",
@@ -65,7 +68,7 @@ const TourList = () => {
 
   return (
     <>
-      <Contentbg heading={"Honeymoon Tour Packages"} />
+      <Contentbg heading={"Honeymoon Tour Packages"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
