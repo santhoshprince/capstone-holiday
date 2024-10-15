@@ -3,8 +3,9 @@ import TourList from "../components/card/himachal";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import HimachalDescription from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/Himachal/8.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/Himachal/11.jpg";
 
 const HimchalTour = () => {
   const faqShimlaManali = [
@@ -44,7 +45,7 @@ const HimchalTour = () => {
 
   return (
     <>
-      <Contentsection heading={"Himachal"} children={"Destination"} />
+      <Contentsection heading={"Himachal"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

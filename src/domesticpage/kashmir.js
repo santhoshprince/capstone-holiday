@@ -3,8 +3,9 @@ import TourList from "../components/card/kashmir";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import KashmirDescription from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/kashmir/4.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/kashmir/9.jpg";
 
 const KashmirTour = () => {
   const faqKashmir = [
@@ -36,7 +37,7 @@ const KashmirTour = () => {
 
   return (
     <>
-      <Contentsection heading={"Kashmir"} children={"Destination"} />
+      <Contentsection heading={"Kashmir"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

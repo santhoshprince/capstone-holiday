@@ -3,8 +3,9 @@ import TourList from "../components/card/kerala";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import HimachalDescription from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/kerala/13.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/kerala/17.jpg";
 
 const HimchalTour = () => {
   const faqKerala = [
@@ -36,7 +37,7 @@ const HimchalTour = () => {
 
   return (
     <>
-      <Contentsection heading={"Kerala"} children={"Destination"} />
+      <Contentsection heading={"Kerala"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
