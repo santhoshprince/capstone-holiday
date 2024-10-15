@@ -3,8 +3,9 @@ import TourList from "../components/card/srilanka";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import Singapore from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/srilanka/water-fall-4579771_1920.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/srilanka/sunrise-4823732_1920.jpg";
 
 const Srilanka = () => {
   const faqSriLanka = [
@@ -40,7 +41,7 @@ const Srilanka = () => {
 
   return (
     <>
-      <Contentsection heading={"Sri Lanka Tour"} children={"Destination"} />
+      <Contentsection heading={"Sri Lanka Tour"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

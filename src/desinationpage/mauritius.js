@@ -3,8 +3,9 @@ import TourList from "../components/card/mauritius";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import Mauritius from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/mauritius/2.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/mauritius/1343.jpg";
 
 
 const mauritius = () => {
@@ -33,7 +34,7 @@ const mauritius = () => {
 
   return (
     <>
-      <Contentsection heading={"Mauritius Tour"} children={"Destination"} />
+      <Contentsection heading={"Mauritius Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
