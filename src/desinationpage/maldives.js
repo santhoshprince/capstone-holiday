@@ -1,10 +1,11 @@
 import React from "react";
 import TourList from "../components/maledivescard";
 import Sidebar from "../components/sidebar";
-import Contentsection from "../components/maldivesbg";
+import Contentsection from "../components/contentbg";
 import Maldives from "../components/tourdescription";
-import Balidesc from "../img/tour/2151682922.jpg";
+import Balidesc from "../img/tour/99.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/bg/6.jpg";
 
 
 const TourPage = () => {
@@ -33,7 +34,7 @@ const TourPage = () => {
 
   return (
     <>
-      <Contentsection heading={"Maldives Tour"} children={"Destination"} />
+      <Contentsection heading={"Maldives Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

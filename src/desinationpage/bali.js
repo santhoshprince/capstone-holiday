@@ -5,6 +5,7 @@ import Contentsection from "../components/contentbg";
 import BaliDescription from "../components/tourdescription";
 import FAQ from "../components/Faq";
 import Balidesc from "../img/tour/358.jpg";
+import bg1 from "../img/bg/contact_bg_7.jpg";
 
 const TourPage = () => {
   const faqBali = [
@@ -36,7 +37,7 @@ const TourPage = () => {
 
   return (
     <>
-      <Contentsection heading={"Bali"} children={"Destination"} />
+      <Contentsection heading={"Bali"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

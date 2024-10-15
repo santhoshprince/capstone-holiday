@@ -1,6 +1,6 @@
 import React from "react";
 import TourItem from "../components/tourcard";
-import maldives from "../img/tour/2151682910.jpg";
+import maldives from "../img/tour/d2.jpg";
 import bali2 from "../img/tour/tour_4_2.jpg";
 
 const TourList = () => {

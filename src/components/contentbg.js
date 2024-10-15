@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../assets/contentbg.css';
-import  bg1 from "../img/bg/woman-walking-big-entrance-gate-bali-indonesia.jpg";
+
 import '../components/contentbg.css'; // Import the CSS file
 
 

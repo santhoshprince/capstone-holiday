@@ -3,8 +3,9 @@ import TourList from "../components/card/singapore";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import Singapore from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/singapore/s3.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/singapore/s2.jpg";
 
 const mauritius = () => {
   const faqSingaporeMalaysia = [
@@ -32,7 +33,7 @@ const mauritius = () => {
 
   return (
     <>
-      <Contentsection heading={"Singapore & Malaysia Tour"} children={"Destination"} />
+      <Contentsection heading={"Singapore & Malaysia Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
