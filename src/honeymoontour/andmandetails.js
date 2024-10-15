@@ -5,14 +5,13 @@ import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
-import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/354.jpg";
-import galleryImage3 from "../img/tour/835.jpg";
-import galleryImage4 from "../img/tour/15793.jpg";
-import galleryImage5 from "../img/tour/340.jpg";
+import galleryImage1 from "../assets/honeymoonimg/anadman/thailand-4470985_1920.jpg";
+import galleryImage2 from "../assets/honeymoonimg/anadman/jail-6810893_1920.jpg";
+import galleryImage3 from "../assets/honeymoonimg/anadman/phuket-4092829_1920.jpg";
+import galleryImage4 from "../assets/honeymoonimg/anadman/phuket-4092829_1920.jpg";
+import galleryImage5 from "../assets/honeymoonimg/anadman/beach-3492416_1920.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
 
 import galleryImage1_1 from "../img/gallery/358.jpg";
@@ -21,6 +20,8 @@ import galleryImage3_3 from "../img/gallery/369.jpg";
 import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+
+import anadamanbg from "../assets/honeymoonimg/anadman/phi-phi-island-5076128_1920.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 
@@ -175,7 +176,7 @@ Airport. Tour Ends.
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={anadamanbg} />
 
       <nav className="tour-navigation">
         <ul>
