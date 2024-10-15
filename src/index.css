@@ -7577,7 +7577,7 @@ ol.wp-block-rss {
   border: 1px solid #f9af2a;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  height: 60px;
+  height: 50px;
   border-radius: 35px;
 }
 .form-control {
