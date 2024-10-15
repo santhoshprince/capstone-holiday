@@ -1,9 +1,43 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import blog1 from "../assets/blogsimg/mahabalipuram-554237_1280.jpg";
+import blog1 from "../assets/blogdetailsimg/1/mahabalipuram-554237_1920.jpg";
+import blogimg1 from "../assets/blogdetailsimg/1/tour-7612130_1920.jpg";
+
+
+import blog4 from "../assets/blogsimg/town-6843799_1280.jpg";
 import blog2 from "../assets/blogsimg/mountains-5969476_1280.jpg";
-import blog3 from "../img/blog/blog-s-1-2.jpg";
-import blogimg1 from "../img/blog/blog_inner_1.jpg";
+import blogimg2 from "../assets/blogdetailsimg/1/village-7098270_1920.jpg";
+
+import blog3 from "../assets/blogsimg/reflection-3239899_1280.jpg";
+import blogimg3 from "../assets/blogdetailsimg/1/sky-3243038_1920.jpg";
+import blog5 from "../assets/blogsimg/bali-tour-packages-4706037_1280.jpg";
+
+import blogimg5 from "../assets/blogdetailsimg/1/dance-4271941_1920.jpg";
+
+import blog6 from "../assets/blogsimg/camera-1130731_1280.jpg";
+import blogimg6 from "../assets/blogdetailsimg/1/india-4044210_1920.jpg";
+
+import blog7 from "../assets/blogsimg/temple-4128662_1280.jpg";
+import blogimg7 from "../assets/blogdetailsimg/1/rocks-7499199_1920.jpg";
+
+import blog8 from "../assets/blogsimg/veligandu-island-1044366_1280.jpg";
+import blogimg8 from "../assets/blogdetailsimg/1//beach-2245867_1920.jpg";
+
+import blog9 from "../assets/blogsimg/sigiriya-459197_1280.jpg";
+import blogimg9 from "../assets/blogdetailsimg/1/sri-lanka-170864_1920.jpg";
+
+import blog10 from "../assets/blogsimg/dubai-4044183_1280.jpg";
+import blogimg10 from "../assets/blogdetailsimg/1/dubai-4722074_1920.jpg";
+
+import blog11 from "../assets/blogsimg/pham-ngu-lao-3989110_1280.jpg";
+import blogimg11 from "../assets/blogdetailsimg/1/vinpearl-land-6847412_1920.jpg";
+
+import blog12 from "../assets/blogsimg/marina-bay-of-singapore-2714866_1280.jpg";
+import blogimg12 from "../assets/blogdetailsimg/1/kuala-lumpur-1283140_1920.jpg";
+
+import blog13 from "../assets/blogsimg/temple-2033409_1280.jpg";
+import blogimg13 from "../assets/blogdetailsimg/1/beach-5281431_1920.jpg";
+
 import "./blogdeatils.css";
 import { Link } from "react-router-dom";
 
@@ -483,7 +517,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg2} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -771,7 +805,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg3} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -1099,7 +1133,7 @@ const BlogDetails = () => {
     },
     {
       id: 4,
-      image: blog3,
+      image: blog4,
       slug: "best-tour-operators-in-chennai",
       author: "Blog",
       date: "September 6, 2024",
@@ -1484,7 +1518,7 @@ const BlogDetails = () => {
     },
     {
       id: 5,
-      image: blog3,
+      image: blog5,
       slug: "bali-tour-package",
       author: "Blog",
       date: "August 22, 2024",
@@ -1534,7 +1568,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg5} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -1808,7 +1842,7 @@ const BlogDetails = () => {
     },
     {
       id: 6,
-      image: blog3,
+      image: blog6,
       slug: "best-travel-agency-in-velachery",
       author: "Blog",
       date: "August 9, 2024",
@@ -1859,7 +1893,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg6} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -2118,7 +2152,7 @@ const BlogDetails = () => {
     },
     {
       id: 7,
-      image: blog3,
+      image: blog7,
       author: "Blog",
       slug: "thailand-tour-package",
       date: "August 5, 2024",
@@ -2175,7 +2209,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg7} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -2388,7 +2422,7 @@ const BlogDetails = () => {
     },
     {
       id: 8,
-      image: blog3,
+      image: blog8,
       slug: "maldives-honeymoon-package",
       author: "Blog",
       date: "July 23, 2024",
@@ -2444,7 +2478,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg8} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -2729,7 +2763,7 @@ const BlogDetails = () => {
     },
     {
       id: 9,
-      image: blog3,
+      image: blog9,
       slug: "srilanka-tour-package",
       author: "Blog",
       date: "July 16, 2024",
@@ -2784,7 +2818,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg9} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -3088,7 +3122,7 @@ const BlogDetails = () => {
 
     {
       id: 10,
-      image: blog3,
+      image: blog10,
       slug: "dubai-tour-packages-from-india",
       author: "Blog",
       date: "June 26, 2024",
@@ -3134,7 +3168,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg10} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -3610,7 +3644,7 @@ const BlogDetails = () => {
     },
     {
       id: 11,
-      image: blog3,
+      image: blog11,
       slug: "vietnam-tour-packages-from-india",
       author: "Blog",
       date: "June 24, 2024",
@@ -3659,7 +3693,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg11} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -3953,7 +3987,7 @@ const BlogDetails = () => {
     },
     {
       id: 12,
-      image: blog3,
+      image: blog12,
       slug:"singapore-malaysia-tour-package-from-chennai",
       author: "Blog",
       date: "June 24, 2024",
@@ -3999,7 +4033,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg12} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -4342,7 +4376,7 @@ const BlogDetails = () => {
     },
     {
       id: 13,
-      image: blog3,
+      image: blog13,
       slug:"tours-and-travels-in-chennai",
       author: "Blog",
       date: "June 24, 2024",
@@ -4386,7 +4420,7 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blog1} alt="Blog Image" />
+                          <img className="w-100" src={blogimg13} alt="Blog Image" />
                         </div>
                       </div>
                     </div>
@@ -4770,7 +4804,7 @@ const BlogDetails = () => {
       {/* Full-width image section */}
       <div
         className="blog-header"
-        style={{ backgroundImage: `url(${blog.image})` }}
+        style={{ backgroundImage: `url(${blog.image})` ,backgroundPosition:"center"}}
       >
         <div className="overlay">
           <div className="container">

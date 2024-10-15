@@ -4,11 +4,12 @@ import  bg1 from "../img/bg/woman-walking-big-entrance-gate-bali-indonesia.jpg";
 import '../components/contentbg.css'; // Import the CSS file
 
 
-const ContentSection = ({ heading, children, backgroundImage }) => {
+const ContentSection = ({ heading, children, backgroundImage ,backgroundPosition}) => {
   const sectionStyle = {
-    backgroundImage: `url(${bg1})`,
+    backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover', // Ensures the image covers the entire div
     backgroundPosition: 'center', // Centers the image
+    backgroundPosition: backgroundPosition || 'center',
   };
 
   return (

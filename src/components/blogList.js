@@ -9,6 +9,13 @@ import blog3 from "../assets/blogsimg/reflection-3239899_1280.jpg";
 import blog4 from "../assets/blogsimg/town-6843799_1280.jpg";
 import blog5 from "../assets/blogsimg/bali-tour-packages-4706037_1280.jpg";
 import blog6 from "../assets/blogsimg/camera-1130731_1280.jpg";
+import blog7 from "../assets/blogsimg/temple-4128662_1280.jpg";
+import blog8 from "../assets/blogsimg/veligandu-island-1044366_1280.jpg";
+import blog9 from "../assets/blogsimg/sigiriya-459197_1280.jpg";
+import blog10 from "../assets/blogsimg/dubai-4044183_1280.jpg";
+import blog11 from "../assets/blogsimg/pham-ngu-lao-3989110_1280.jpg";
+import blog12 from "../assets/blogsimg/marina-bay-of-singapore-2714866_1280.jpg";
+import blog13 from "../assets/blogsimg/temple-2033409_1280.jpg";
 
 const blogs = [
     {
@@ -83,7 +90,7 @@ const blogs = [
     },
     {
       id: 7,
-      image: blog3,
+      image: blog7,
       slug: "thailand-tour-package",
       author: "Blog",
       date: "August 5, 2024",
@@ -91,12 +98,12 @@ const blogs = [
       title: "Thailand Tour Package",
       text: "Thailand is geographically located in the midst of Southeast Asia. Thailand is known for its numerous islands with beautiful beaches and a mild climate. The largest and most significant economic sector in the country is tourism...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
 
     {
       id: 8,
-      image: blog3,
+      image: blog8,
       slug: "maldives-honeymoon-package",
       author: "David Smith",
       date: "July 23, 2024",
@@ -104,11 +111,11 @@ const blogs = [
       title: "Maldives Honeymoon Package",
       text: "The Maldives is an experience unlike any other; it's a small group of islands in the Indian Ocean with flawless beaches, the purest turquoise waters, amazing marine life, over-the-water cottages, and much more—it's an island nation that should be on everyone's bucket list!...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
     {
       id: 9,
-      image: blog3,
+      image: blog9,
       slug: "srilanka-tour-package",
       author: "Blog",
       date: "July 16, 2024",
@@ -116,11 +123,11 @@ const blogs = [
       title: "Sri Lanka Tour Package",
       text: "One of the most popular South Asian vacation destinations, Sri Lanka is a region of a fairy tale, historical significance, and one of its most treasured cultures, enticing tourists of all stripes. With more than 2,000 years of documented history, historical Sri Lankan tourist places are long-standing...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
     {
       id: 10,
-      image: blog3,
+      image: blog10,
       author: "Blog",
       slug: "dubai-tour-packages-from-india",
       date: "June 26, 2024",
@@ -128,11 +135,11 @@ const blogs = [
       title: "Dubai Tour Packages from India",
       text: "Dubai is an adventurous vacation spot with its breathtaking skyscrapers, rich historical legacy, gorgeous white sand beaches, vast desert dunes, exhilarating adventure sports, terrifying theme parks, opulent retail complexes, and more...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
     {
       id: 11,
-      image: blog3,
+      image: blog11,
       author: "Blog",
       slug: "vietnam-tour-packages-from-india",
       date: "June 24, 2024",
@@ -140,12 +147,12 @@ const blogs = [
       title: "Vietnam Tour Packages from India",
       text: "I grew tired of handling my regular responsibilities and staying idle. Let's unlock the happiness within you by a spectacular journey in capstone holidays with Vietnam and Cambodia tour package. Get close with your loved ones by planning a love journey to Vietnam and Cambodia tour package...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
 
     {
       id: 12,
-      image: blog3,
+      image: blog12,
       slug:"singapore-malaysia-tour-package-from-chennai",
       author: "Blog",
       date: "June 24, 2024",
@@ -153,12 +160,12 @@ const blogs = [
       title: "Singapore Malaysia Tour Package from Chennai",
       text: "People know Capstone Holidays for its exceptional service in both domestic and international services from Chennai and Coimbatore. Choosing the Malaysia Singapore trip package from Capstone allows you to sit back and enjoy your holidays without the hassle of planning everything...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
 
     {
       id: 13,
-      image: blog3,
+      image: blog13,
       slug:"tours-and-travels-in-chennai",
       author: "Blog",
       date: "June 24, 2024",
@@ -166,7 +173,7 @@ const blogs = [
       title: "Best Travel Agency in Chennai",
       text: "If you are one of those curious souls yearning for cosy and exquisite travel experiences that delight you or simply looking for a tour to refresh your body and soul, there are many destinations that our planet has to offer you...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
-      isVideo: true,
+      isVideo: false,
     },
 
     // Add more blogs here...
