@@ -1,10 +1,11 @@
 import React from 'react';
 import ContentSection from '../components/contentbg';
-import contact1 from "../img/bg/video_bg_1.jpg"
+import contact1 from "../assets/contactusimg/ship-5551818_1920.jpg"
 import icon1 from "../img/icon/location-dot2.svg"
 import icon2 from "../img/icon/call.svg"
 import icon3 from "../img/icon/mail.svg"
 import icon4 from "../img/icon/location-dot3.svg"
+import contactbg from "../assets/contactusimg/paris-6803796_1920.jpg"
 
 
 const ContactPage = () => {
@@ -95,7 +96,7 @@ const ContactForm = () => {
 
   return (
     <>
-    <ContentSection heading={"CONTACT US"} children={""}  />
+    <ContentSection heading={"CONTACT US"} children={""}  backgroundImage={contactbg} />
       <div className="space">
       <div className="container">
         <div className="title-area text-center">
@@ -158,7 +159,7 @@ const ContactForm = () => {
             href="https://www.youtube.com/watch?v=cQfIUPw72Dk"
             className="play-btn style2 popup-video"
           >
-            <i className="fa-sharp fa-solid fa-play"></i>
+            {/* <i className="fa-sharp fa-solid fa-play"></i> */}
           </a>
         </div>
       </div>
@@ -185,9 +186,24 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <div className="" style={{marginTop:"20px"}}>
+        <div className="container-fluid">
+          <div className="contact-map style2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15664.699930412033!2d77.0210447!3d11.0254947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8596042e23f3d%3A0x7dd18e73285061f7!2sCapstone%20holidays%20-%20No%3A1%20Travel%20Agency%20in%20Coimbatore!5e0!3m2!1sen!2sin!4v1728922411781!5m2!1sen!2sin"
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+            <div className="contact-icon">
+              <img src={icon4} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </>
-  
+ 
+
   );
 };
 
