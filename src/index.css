@@ -189,6 +189,19 @@ span a {
   font-weight: inherit;
   line-height: inherit;
 }
+h2.blog-title{
+  font-family: "Amaranth-Bold", sans-serif;
+  font-size: 26px;
+  color: #f9af2a;
+}
+p.blog-text{
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 16px;
+}
+h1.blog-title{
+  font-family: "Amaranth-Bold", sans-serif;
+  font-size: 26px;
+}
 .h1,
 h1,
 .h2,
@@ -19396,7 +19409,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 24px;
 }
 .accordion-card .accordion-button {
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: 600;
   font-family: var(--title-font);
   border: 0;
