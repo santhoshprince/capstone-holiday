@@ -33,7 +33,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "SINGAPORE PENANG & PHUKET CRUISE",
-      title: "SINGAPORE PENANG & PHUKET CRUISE",
+      title1: "SINGAPORE PENANG & PHUKET CRUISE",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -165,7 +165,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
