@@ -24634,3 +24634,12 @@ nav ul li.dropdown:hover .dropdown-content {
   height: 350px !important; /* Fixed height */
   object-fit: cover !important; /* Crop to fill, preserving aspect ratio */
 }
+.faq-text{
+  font-size: 13px !important;
+}
+.accordion-button{
+  font-size: 16px !important;
+}
+.mt-5{
+  padding-bottom: 20px;
+}
