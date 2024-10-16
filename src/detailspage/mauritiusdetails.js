@@ -14,7 +14,7 @@ import galleryImage3 from "../img/mauritius/1356.jpg";
 import galleryImage4 from "../img/mauritius/1821.jpg";
 import galleryImage5 from "../img/mauritius/2684.jpg";
 import galleryImage6 from "../img/mauritius/4224.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import galleryImage1_1 from "../img/mauritius/2.jpg";
 import galleryImage2_2 from "../img/mauritius/47014.jpg";
@@ -25,7 +25,6 @@ import galleryImage6_6 from "../img/mauritius/7768.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/mauritius/1343.jpg";
-
 
 const TourMauritius = () => {
   const { id } = useParams();
@@ -39,7 +38,7 @@ const TourMauritius = () => {
   const toursData = {
     1: {
       heading: "Mauritius Tour Package from Chennai",
-      title: "Mauritius Tour Package from Chennai",
+      title1: "Mauritius Tour Package from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -112,7 +111,7 @@ const TourMauritius = () => {
       iconSrc: [location1],
     },
   };
- 
+
   const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
@@ -124,25 +123,36 @@ const TourMauritius = () => {
   };
   return (
     <>
-     <Helmet>
-                <title>Mauritius Tour Package from Chennai | Velachery</title>
-                <meta name="description" content="The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers" />
-                <meta name="keywords" content="mauritius tour package from chennai, mauritius tour, mauritius flight tickets, chennai, Coimbatore, Mauritius tour package" />
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "WebSite",
-                        "name": "Capstone Holidays",
-                        "url": "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/",
-                        "potentialAction": {
-                            "@type": "SearchAction",
-                            "target": "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/{search_term_string}",
-                            "query-input": "required name=search_term_string"
-                        }
-                    })}
-                </script>
-            </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+      <Helmet>
+        <title>Mauritius Tour Package from Chennai | Velachery</title>
+        <meta
+          name="description"
+          content="The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers"
+        />
+        <meta
+          name="keywords"
+          content="mauritius tour package from chennai, mauritius tour, mauritius flight tickets, chennai, Coimbatore, Mauritius tour package"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/",
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          })}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -177,24 +187,10 @@ const TourMauritius = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          {/* <div className="row">
-            <div className="col-12" ref={InitiaryMapRef}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div> */}
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
@@ -211,8 +207,8 @@ const TourMauritius = () => {
                       "Fruit platter in room",
                       "Sparkling wine",
                       "Floral decoration in room",
-                      "One candlelight dinner (excluding drinks)"
-                    ]
+                      "One candlelight dinner (excluding drinks)",
+                    ],
                   },
                   {
                     name: "Casuarina Resort – Privilege Garden View Room",
@@ -223,33 +219,47 @@ const TourMauritius = () => {
                   {
                     name: "Honeymoon Freebies:",
                     honeymoonFreebies: [
-                     "bottle of Sparkling Wine, 1 Fruit basket, 20% discount on Spa treatments during the stay"
-                    ]
+                      "bottle of Sparkling Wine, 1 Fruit basket, 20% discount on Spa treatments during the stay",
+                    ],
                   },
                   {
                     name: "InterContinental Resort – Deluxe Ocean Room",
                     honeymoonFreebies: [
-                      "Private check in with a tropical welcome Mocktail, Personalized escort to the room, Romantic Room Set up with amenities, 1 bottle of Sparkling Wine in the room upon arrival, 1 Romantic 3 course candle lit dinner on the beach, Free use of Sauna, Steam Room and whirlpool at Yug Spa"
-                     ]
+                      "Private check in with a tropical welcome Mocktail, Personalized escort to the room, Romantic Room Set up with amenities, 1 bottle of Sparkling Wine in the room upon arrival, 1 Romantic 3 course candle lit dinner on the beach, Free use of Sauna, Steam Room and whirlpool at Yug Spa",
+                    ],
                   },
                 ]}
                 sightseeingDetails={[
                   {
                     name: "Ile Aux Cerf Island",
                     description: `After breakfast, Drive to Belle Mare to enjoy aquatic activities like parasailing*, undersea walk*, waterfall visit * or banana tube ride*. Drive to Trou d’Eau douce for the speedboat transfer to Ile aux Cerfs, the islet with the most beautiful beach and the clearest turquoise water. Free on island up to 15h30. Return back to the mainland by speedboat. Drive back to the hotel. *Optional activities are extra chargeable,`,
-                    note: "CARRY BEACH TOWEL FROM THE HOTEL (RETURNABLE BASIS), EXTRA CLOTHES, SWIMWEAR, SUNSCREEN, CAP/HAT."
+                    note: "CARRY BEACH TOWEL FROM THE HOTEL (RETURNABLE BASIS), EXTRA CLOTHES, SWIMWEAR, SUNSCREEN, CAP/HAT.",
                   },
                   {
                     name: "North Tour",
-                    description: `Port Louis City-After breakfast, Drive to Port Louis for a visit of the capital via the Citadel & its surrounding area. View the Champ de Mars race course, inaugurated in 1812 it the oldest horse-racing club in the Southern Hemisphere, and one of the oldest in the world. Afterwards drive to Le Caudan/Port Louis Waterfront, with some 170 shops it is a must shopping stop. Drive back to hotel.`
+                    description: `Port Louis City-After breakfast, Drive to Port Louis for a visit of the capital via the Citadel & its surrounding area. View the Champ de Mars race course, inaugurated in 1812 it the oldest horse-racing club in the Southern Hemisphere, and one of the oldest in the world. Afterwards drive to Le Caudan/Port Louis Waterfront, with some 170 shops it is a must shopping stop. Drive back to hotel.`,
                   },
                   {
                     name: "Scenic South Tour",
-                    description: `After breakfast, Drive to Curepipe. Visit the ship making factory. Shopping at the duty free shops in Floreal. View the scenic town of Curepipe & its surroundings from the extinct crater of Trou aux Cerfs. Stop at Grand Bassin (Ganga Talao) sacred lake & view the stunning 108 feet statue of “Mangal Mahadev”. Visit 23 colored earth created by volcanic eruption, the earth forms beautiful patterns of colour in the exposed hillsides. Enjoy various activities and lateron drive back to the hotel.`
-                  }
+                    description: `After breakfast, Drive to Curepipe. Visit the ship making factory. Shopping at the duty free shops in Floreal. View the scenic town of Curepipe & its surroundings from the extinct crater of Trou aux Cerfs. Stop at Grand Bassin (Ganga Talao) sacred lake & view the stunning 108 feet statue of “Mangal Mahadev”. Visit 23 colored earth created by volcanic eruption, the earth forms beautiful patterns of colour in the exposed hillsides. Enjoy various activities and lateron drive back to the hotel.`,
+                  },
                 ]}
-                
               />
+            </div>
+          </div>
+          {/* Full-width gallery */}
+
+          {/* <div className="row">
+            <div className="col-12" ref={InitiaryMapRef}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div> */}
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

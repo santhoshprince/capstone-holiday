@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/srilanka/10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/srilanka/sunrise-4823732_1920.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const TourSrilanka = () => {
   const { id } = useParams();
@@ -38,7 +38,7 @@ const TourSrilanka = () => {
   const toursData = {
     1: {
       heading: "Sri Lanka Tour Package from Chennai – 4N/5D",
-      title: "Sri Lanka Tour Package from Chennai – 4N/5D",
+      title1: "Sri Lanka Tour Package from Chennai – 4N/5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -136,27 +136,40 @@ const TourSrilanka = () => {
   };
   return (
     <>
-     <Helmet>
-        <title>Srilanka Tour Package from Chennai | Sri Lanka Holiday Packages</title>
-        <meta name="description" content="With our valuable Srilanka Tour Package from Chennai, experience the historic yet trendy Sri Lanka tourist spots." />
-        <meta name="keywords" content="Srilanka Tour Package from Chennai, Sri Lanka Holiday Packages, srilankan airlines, srilanka tour, srilanka" />
+      <Helmet>
+        <title>
+          Srilanka Tour Package from Chennai | Sri Lanka Holiday Packages
+        </title>
+        <meta
+          name="description"
+          content="With our valuable Srilanka Tour Package from Chennai, experience the historic yet trendy Sri Lanka tourist spots."
+        />
+        <meta
+          name="keywords"
+          content="Srilanka Tour Package from Chennai, Sri Lanka Holiday Packages, srilankan airlines, srilanka tour, srilanka"
+        />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/tour/srilanka-tour-package-from-chennai/",
-            "potentialAction": {
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/srilanka-tour-package-from-chennai/",
+            potentialAction: {
               "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/srilanka-tour-package-from-chennai/{search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+              target:
+                "https://www.capstoneholidays.in/tour/srilanka-tour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
           })}
         </script>
       </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -193,10 +206,19 @@ const TourSrilanka = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+            <div className="col-12" ref={tourDetailsRef}>
+              <TourDetails
+                title1={selectedTour.title1}
+                description={selectedTour.description}
+                duration={selectedTour.duration}
+                // tourCode={selectedTour.tourCode}
+                priceIncludes={selectedTour.priceIncludes}
+                hotelDetails={selectedTour.hotelDetails}
+                Priceexclusions={selectedTour.Priceexclusions}
+              />
             </div>
           </div>
+         
           <div className="row">
             <div className="col-12" ref={InitiaryMapRef}>
               <Itinerary
@@ -205,17 +227,10 @@ const TourSrilanka = () => {
               />
             </div>
           </div>
+         
           <div className="row">
-            <div className="col-12" ref={tourDetailsRef}>
-              <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                // tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                Priceexclusions={selectedTour.Priceexclusions}
-              />
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

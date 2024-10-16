@@ -320,21 +320,6 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -350,6 +335,22 @@ const TourPage = () => {
             </div>
           </div>
 
+          {/* Full-width gallery */}
+
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

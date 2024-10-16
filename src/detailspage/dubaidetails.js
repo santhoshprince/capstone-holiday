@@ -9,7 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/Dubai/d7.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import galleryImage2 from "../img/Dubai/d8.jpg";
 import galleryImage3 from "../img/Dubai/d9.jpg";
 import galleryImage4 from "../img/Dubai/d10.jpg";
@@ -37,7 +37,7 @@ const TourDubai = () => {
   const toursData = {
     1: {
       heading: "Dubai Tour Packages from Chennai",
-      title: "Dubai Tour Packages from Chennai",
+      title1: "Dubai Tour Packages from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -85,8 +85,7 @@ const TourDubai = () => {
         },
         {
           day: "Day 2",
-          details:
-            "Dubai Half Day City Tour,Desert Safari – Private Jeep",
+          details: "Dubai Half Day City Tour,Desert Safari – Private Jeep",
         },
         {
           day: "Day 3",
@@ -95,22 +94,18 @@ const TourDubai = () => {
         },
         {
           day: "Day 4",
-          details:
-            "Miracle Garden + Global Village",
+          details: "Miracle Garden + Global Village",
         },
         {
           day: "Day 5",
-          details:
-            "Leasure Day Departure",
+          details: "Leasure Day Departure",
         },
-      
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d925123.3183073788!2d55.227488!3d25.076022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1728102863933!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
-
 
   const selectedTour = toursData[id] || toursData[1];
 
@@ -123,25 +118,36 @@ const TourDubai = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""}  backgroundImage={bg1}/>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       <Helmet>
-                <title>Dubai Tour Packages from Chennai | Coimbatore | Capstone</title>
-                <meta name="description" content="Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots" />
-                <meta name="keywords" content="Dubai tour packages from chennai, dubai tour, dubai tourist places, dubai flight, dubai tour package" />
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "WebSite",
-                        "name": "Capstone Holidays",
-                        "url": "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/",
-                        "potentialAction": {
-                            "@type": "SearchAction",
-                            "target": "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/{search_term_string}",
-                            "query-input": "required name=search_term_string"
-                        }
-                    })}
-                </script>
-            </Helmet>
+        <title>Dubai Tour Packages from Chennai | Coimbatore | Capstone</title>
+        <meta
+          name="description"
+          content="Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots"
+        />
+        <meta
+          name="keywords"
+          content="Dubai tour packages from chennai, dubai tour, dubai tourist places, dubai flight, dubai tour package"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/",
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          })}
+        </script>
+      </Helmet>
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -177,8 +183,16 @@ const TourDubai = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+            <div className="col-12" ref={tourDetailsRef}>
+              <TourDetails
+                title1={selectedTour.title1}
+                description={selectedTour.description}
+                duration={selectedTour.duration}
+                // tourCode={selectedTour.tourCode}
+                priceIncludes={selectedTour.priceIncludes}
+                hotelDetails={selectedTour.hotelDetails}
+                Priceexclusions={selectedTour.Priceexclusions}
+              />
             </div>
           </div>
           <div className="row">
@@ -189,20 +203,12 @@ const TourDubai = () => {
               />
             </div>
           </div>
+         
           <div className="row">
-            <div className="col-12" ref={tourDetailsRef}>
-              <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                // tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                Priceexclusions={selectedTour.Priceexclusions}
-              />
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
-          
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

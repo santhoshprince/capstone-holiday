@@ -74,12 +74,12 @@ const TourPage = () => {
       // ],
       PackageInclusion: [
         "Accommodation on twin share basis at hotel specified / Similar. (Triple share for extra person)",
-    "Daily breakfast as per hotel menu",
-    "All maintain sightseeing as per tour itinerary",
-    "All tours and transfers as stated in private Air-conditioned vehicle. (Scorpio/Innova/Xylo for 4-7 person and Alto/WagonR/Similar for 1-3 person group.)",
-    "English / Hindi speaking friendly driver cum guide throughout your trip.",
-    "Driver’s Bata, Toll, Parking, Road tax, Fuel charge, Interstate charges.",
-    "Local Assistance & 24x7 Helpline"
+        "Daily breakfast as per hotel menu",
+        "All maintain sightseeing as per tour itinerary",
+        "All tours and transfers as stated in private Air-conditioned vehicle. (Scorpio/Innova/Xylo for 4-7 person and Alto/WagonR/Similar for 1-3 person group.)",
+        "English / Hindi speaking friendly driver cum guide throughout your trip.",
+        "Driver’s Bata, Toll, Parking, Road tax, Fuel charge, Interstate charges.",
+        "Local Assistance & 24x7 Helpline",
       ],
       Priceexclusions: [
         "Airfare / Train Fare. # Travel insurance",
@@ -90,7 +90,7 @@ const TourPage = () => {
         "Charge extra for Candle Light Dinner, Flower Bed Decoration, Cakes etc. in Honeymoon Packages",
         "Expenses for condition beyond control",
         "Any service, Sightseeing which not mentioned in inclusion.",
-        "@ GST 5% (On final bill amount)"
+        "@ GST 5% (On final bill amount)",
       ],
       itinerary: [
         {
@@ -124,22 +124,25 @@ const TourPage = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d907105.3984781149!2d88.185276!3d27.363831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6886dd7a93aad%3A0x89f571f15943050d!2sWest%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1728202748525!5m2!1sen!2sin",
       iconSrc: [location1],
 
-      title: 'Darjeeling Gangtok Tour Packages | Capstone Holidays Chennai',
-      keywords: 'darjeeling gangtok tour packages, darjeeling gangtok tour, darjeeling gangtok, darjeeling, gangtok',
-      description: 'Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year.',
+      title: "Darjeeling Gangtok Tour Packages | Capstone Holidays Chennai",
+      keywords:
+        "darjeeling gangtok tour packages, darjeeling gangtok tour, darjeeling gangtok, darjeeling, gangtok",
+      description:
+        "Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year.",
       schema: {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "Capstone Holidays",
-          "url": "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/",
-          "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/{search_term_string}",
-              "query-input": "required name=search_term_string"
-          }
-      }
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
-   
+
     "sikkim-travel-packages": {
       heading: "Sikkim Travel Packages",
       title1: "Sikkim Travel Packages",
@@ -181,7 +184,7 @@ const TourPage = () => {
         "All tours and transfers as stated in private Air-conditioned vehicle. (Scarpio/Innova/Xylo for 4-7 person and Alto/WagonR/Similar for 1-3 person group.)",
         "English / Hindi speaking friendly driver cum guide throughout your trip.",
         "Driver’s Bata, Toll, Parking, Road tax, Fuel charge, Interstate charges.",
-        "Local Assistance & 24x7 Helpline"
+        "Local Assistance & 24x7 Helpline",
       ],
       Priceexclusions: [
         "Airfare / Train Fare.",
@@ -193,7 +196,7 @@ const TourPage = () => {
         "Charge extra for Candle Light Dinner, Flower Bed Decoration, Cakes etc. in Honeymoon Packages",
         "Expenses for condition beyond control",
         "Any service, Sightseeing which not mentioned in inclusion.",
-        "@ GST 5% (On final bill amount)"
+        "@ GST 5% (On final bill amount)",
       ],
 
       itinerary: [
@@ -220,27 +223,28 @@ const TourPage = () => {
       ],
 
       mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d907105.3984781149!2d88.185276!3d27.363831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6886dd7a93aad%3A0x89f571f15943050d!2sWest%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1728202748525!5m2!1sen!2s",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d907105.3984781149!2d88.185276!3d27.363831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6886dd7a93aad%3A0x89f571f15943050d!2sWest%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1728202748525!5m2!1sen!2s",
       iconSrc: [location1],
-      title: 'Sikkim Travel Packages | Sikkim Tour Itinerary',
-        keywords: 'sikkim travel packages, sikkim tour itinerary, sikkim travel, sikkim tour, sikkim tour plan',
-        description: 'Sikkim travel packages are best sold in December where you can experience bright and clear weather, making it perfect for outdoor activities and touring.',
-        schema: {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/tour/sikkim-travel-packages/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://www.capstoneholidays.in/tour/sikkim-travel-packages/{search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-        }
+      title: "Sikkim Travel Packages | Sikkim Tour Itinerary",
+      keywords:
+        "sikkim travel packages, sikkim tour itinerary, sikkim travel, sikkim tour, sikkim tour plan",
+      description:
+        "Sikkim travel packages are best sold in December where you can experience bright and clear weather, making it perfect for outdoor activities and touring.",
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/sikkim-travel-packages/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/sikkim-travel-packages/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
   };
-  
-  
-  
+
   const { tourId } = useParams();
 
   // Get the path name to determine which tour details to show
@@ -263,7 +267,6 @@ const TourPage = () => {
     return <div>Tour not found!</div>; // Fallback in case of no match
   }
 
-
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",
@@ -273,15 +276,19 @@ const TourPage = () => {
   };
   return (
     <>
-     <Helmet>
-          <title>{metaDetails.title}</title>
-          <meta name="description" content={metaDetails.description} />
-          <meta name="keywords" content={metaDetails.keywords} />
-          <script type="application/ld+json">
-            {JSON.stringify(tour.schema)}
-          </script>
-        </Helmet>
-      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>{metaDetails.title}</title>
+        <meta name="description" content={metaDetails.description} />
+        <meta name="keywords" content={metaDetails.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(tour.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={tour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -313,21 +320,6 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={tour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={tour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -341,6 +333,19 @@ const TourPage = () => {
                 Priceexclusions={tour.Priceexclusions}
                 note={tour.note}
               />
+            </div>
+          </div>
+          {/* Full-width gallery */}
+
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
 

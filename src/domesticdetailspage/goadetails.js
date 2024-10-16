@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/goa/17.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/goa/9.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -33,7 +33,7 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
- 
+
   const tourDetails = {
     "goa-tour-package-from-chennai": {
       heading: "Goa Tour Package from Chennai",
@@ -124,29 +124,31 @@ const TourPage = () => {
           details:
             "After breakfast transfer you to Airport/Railway Station for your onward journey.Dolphin Trip in Senquerim, Snow Park in Baga, Crocodile sighting trip, Snorkeling, Scuba Diving at Grande Island or at Malvan, Water Sports, Parasailing, Jetlev Flyer Adventure, Fly boarding Adventure, Hot Air Balloon Safari, Adventure Boat Party Trip, Water Rafting, Butterfly & Honeymoon Island trip, Dudhsagar Waterfall, Spice Plantation tour, Boat Cruise, Casino etc",
         },
-      
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d984958.3773877182!2d74.006694!3d15.349728000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1728186448972!5m2!1sen!2sin",
 
       iconSrc: [location1],
-      title: 'Goa Tour Package from Chennai | Capstone Holidays',
-        keywords: 'goa tour package from chennai, goa tour package, goa tour, north goa, south goa, goa',
-        description: 'The greatest time to look for discounts on Goa Tour Package From Chennai rates is during the summer when you can explore its greatest beaches',
-        schema: {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/tour/goa-tour-package-from-chennai/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://www.capstoneholidays.in/tour/goa-tour-package-from-chennai/{search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-        }
+      title: "Goa Tour Package from Chennai | Capstone Holidays",
+      keywords:
+        "goa tour package from chennai, goa tour package, goa tour, north goa, south goa, goa",
+      description:
+        "The greatest time to look for discounts on Goa Tour Package From Chennai rates is during the summer when you can explore its greatest beaches",
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/goa-tour-package-from-chennai/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/goa-tour-package-from-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
     "goa-travel-packages": {
-         heading: "Goa Travel packages",
+      heading: "Goa Travel packages",
       title1: "Goa Travel packages",
       galleryImages: [
         galleryImage1,
@@ -190,7 +192,7 @@ const TourPage = () => {
         "Excited to explore which Goa tour places to visit? We got you! Our Goa travel packages give you an unforgettable experience of beaches, nightlife, water sports, historical sites, cuisine, and festivals. Our Goa travel packages are fun-filled ones where we provide few like parasailing, jet-skiing, windsurfing, and banana boat rides. This Goa travel packages is your best choice to revamp your holidays.",
       ],
       duration: ["4 Days,3 Nights"],
-      tourCode:["AH-GOA-21"],
+      tourCode: ["AH-GOA-21"],
       hotelDetails: [
         "Rahi",
         "Renton Manor",
@@ -235,34 +237,35 @@ const TourPage = () => {
           details:
             "After breakfast transfer you to Airport/Railway Station for your onward journey.Dolphin Trip in Senquerim, Snow Park in Baga, Crocodile sighting trip, Snorkeling, Scuba Diving at Grande Island or at Malvan, Water Sports, Parasailing, Jetlev Flyer Adventure, Fly boarding Adventure, Hot Air Balloon Safari, Adventure Boat Party Trip, Water Rafting, Butterfly & Honeymoon Island trip, Dudhsagar Waterfall, Spice Plantation tour, Boat Cruise, Casino etc",
         },
-      
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d984958.3773877182!2d74.006694!3d15.349728000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1728186448972!5m2!1sen!2sin",
 
       iconSrc: [location1],
-      title: 'Goa Travel Packages | North and South Goa Tour',
-      keywords: 'goa travel packages, north and south goa tour, goa travel, goa, north goa, south goa',
-      description: 'Almost all the popular beaches are covered in our Goa Travel Packages and also you can witness its vibrant churches, party culture, and stunning beaches',
+      title: "Goa Travel Packages | North and South Goa Tour",
+      keywords:
+        "goa travel packages, north and south goa tour, goa travel, goa, north goa, south goa",
+      description:
+        "Almost all the popular beaches are covered in our Goa Travel Packages and also you can witness its vibrant churches, party culture, and stunning beaches",
       schema: {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "Capstone Holidays",
-          "url": "https://www.capstoneholidays.in/tour/goa-travel-packages/",
-          "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/goa-travel-packages/{search_term_string}",
-              "query-input": "required name=search_term_string"
-          }
-      }
-    }
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/goa-travel-packages/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/goa-travel-packages/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+    },
   };
 
   const { tourId } = useParams();
-  const path = window.location.pathname.split('/').pop(); // Gets the last part of the URL
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
   const tour = tourDetails[path] || [tourId];
 
-  
   const metaDetails = tour
     ? {
         title: tour.title || "Default Title",
@@ -287,15 +290,19 @@ const TourPage = () => {
   };
   return (
     <>
-       <Helmet>
-          <title>{metaDetails.title}</title>
-          <meta name="description" content={metaDetails.description} />
-          <meta name="keywords" content={metaDetails.keywords} />
-          <script type="application/ld+json">
-            {JSON.stringify(tour.schema)}
-          </script>
-        </Helmet>
-      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>{metaDetails.title}</title>
+        <meta name="description" content={metaDetails.description} />
+        <meta name="keywords" content={metaDetails.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(tour.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={tour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -329,20 +336,6 @@ const TourPage = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={tour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={tour.itinerary}
-              />
-            </div>
-          </div>
-
-          <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title}
@@ -357,6 +350,17 @@ const TourPage = () => {
             </div>
           </div>
 
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={tour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

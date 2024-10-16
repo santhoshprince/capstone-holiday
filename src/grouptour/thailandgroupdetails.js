@@ -14,7 +14,7 @@ import galleryImage3 from "../img/Thailand/1025.jpg";
 import galleryImage4 from "../img/Thailand/1358.jpg";
 import galleryImage5 from "../img/Thailand/568.jpg";
 import galleryImage6 from "../img/Thailand/771.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import galleryImage1_1 from "../img/Thailand/434.jpg";
 import galleryImage2_2 from "../img/Thailand/895.jpg";
 import galleryImage3_3 from "../img/Thailand/570.jpg";
@@ -32,8 +32,7 @@ const TourThailand = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const InitiaryMapRef = useRef(null);  
-
+  const InitiaryMapRef = useRef(null);
 
   const toursData = {
     1: {
@@ -56,26 +55,25 @@ const TourThailand = () => {
         galleryImage6_6,
       ],
 
-      Priceexclusions: [
-        "GST 5%",
-        "Air Fare",
-      ],
+      Priceexclusions: ["GST 5%", "Air Fare"],
 
       description: [
         "Without a question, one of the greatest places to go on a vacation is Thailand. Thailand is a country in Southeast Asia that receives thousands of visitors every year. A group vacation to Thailand is just what you need if you love to travel and want to have the best tour of your life. Capstone Holidays has created the greatest thailand group tour package at an incredibly low cost. You may experience the vibrant nightlife of the city, as well as stunning beaches, islands, resorts, monasteries, temples, and other well-known tourist destinations. With Thailand group travel, you may escape the hustle and bustle of your everyday life and venture out to discover this incredible nation.",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
-      hotelDetails: ["Anya Nana @ Sukhumvit (Superior),Bella Express (Standard)"],
+      hotelDetails: [
+        "Anya Nana @ Sukhumvit (Superior),Bella Express (Standard)",
+      ],
       itinerary: [
         {
           day: "Day 1",
-          details: "Bangkok (BKK) Airport to Pattaya Hotel (Private Transfer) Pattaya – Alcazar Show (Standard) (Show with Private Transfer)",
+          details:
+            "Bangkok (BKK) Airport to Pattaya Hotel (Private Transfer) Pattaya – Alcazar Show (Standard) (Show with Private Transfer)",
         },
         {
           day: "Day 2",
-          details:
-            "Pattaya – Coral Island Tour with Lunch (Shared Transfer)",
+          details: "Pattaya – Coral Island Tour with Lunch (Shared Transfer)",
         },
         {
           day: "Day 3",
@@ -92,14 +90,12 @@ const TourThailand = () => {
           details:
             "Bangkok – City Tour (Wat Traimit + Wat Mahapruttaram with Gems Gallery) (Entry with Shared Transfer) Bangkok Hotel to Bangkok (BKK) Airport (Private Transfer)",
         },
-      
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15920938.03956205!2d101.490104!3d13.038997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sin!4v1728104089716!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
-
 
   const selectedTour = toursData[id] || toursData[1];
 
@@ -112,33 +108,40 @@ const TourThailand = () => {
   };
 
   const seoData = {
-    title: 'Thailand Group Tour Package | 4N/5D Thailand Tour Packages',
-    keywords: 'thailand group tour package, 4n 5d thailand tour packages, thailand group tour package, thailand group tour, thailand group, thailand',
-    description: 'Thailand is the ideal destination for group tours. Choose the Thailand Group Tour Package when it comes to group tours.',
+    title: "Thailand Group Tour Package | 4N/5D Thailand Tour Packages",
+    keywords:
+      "thailand group tour package, 4n 5d thailand tour packages, thailand group tour package, thailand group tour, thailand group, thailand",
+    description:
+      "Thailand is the ideal destination for group tours. Choose the Thailand Group Tour Package when it comes to group tours.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/tour/thailand-group-tour-package/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/tour/thailand-group-tour-package/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/tour/thailand-group-tour-package/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/tour/thailand-group-tour-package/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
 
   return (
     <>
-    <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -173,20 +176,6 @@ const TourThailand = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={InitiaryMapRef}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -200,7 +189,22 @@ const TourThailand = () => {
               />
             </div>
           </div>
-          
+
+          {/* Full-width gallery */}
+
+          <div className="row">
+            <div className="col-12" ref={InitiaryMapRef}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

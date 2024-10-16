@@ -37,7 +37,7 @@ const TourMaldives = () => {
   const toursData = {
     1: {
       heading: "Maldives Tour Package from Chennai",
-      title: "Maldives Tour Package from Chennai",
+      title1: "Maldives Tour Package from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -186,16 +186,12 @@ const TourMaldives = () => {
             </div>
           </div>
           {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12"  ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
+         
 
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
@@ -217,6 +213,11 @@ const TourMaldives = () => {
             </div>
           </div> */}
           {/* Full-width map */}
+          <div className="row">
+            <div className="col-12"  ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           <div className="row">
             <div className="col-12" ref={locationMapRef}>
               <LocationMap

@@ -37,7 +37,7 @@ const TourSingapore = () => {
   const toursData = {
     1: {
       heading: "Vietnam Cambodia Tour Package – 3N / 4D",
-      title: "Vietnam Cambodia Tour Package – 3N / 4D",
+      title1: "Vietnam Cambodia Tour Package – 3N / 4D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -177,10 +177,19 @@ const TourSingapore = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+            <div className="col-12" ref={tourDetailsRef}>
+              <TourDetails
+                title1={selectedTour.title1}
+                description={selectedTour.description}
+                duration={selectedTour.duration}
+                // tourCode={selectedTour.tourCode}
+                priceIncludes={selectedTour.priceIncludes}
+                hotelDetails={selectedTour.hotelDetails}
+                Priceexclusions={selectedTour.Priceexclusions}
+              />
             </div>
           </div>
+          
           <div className="row">
             <div className="col-12" ref={InitiaryMapRef}>
               <Itinerary
@@ -189,17 +198,11 @@ const TourSingapore = () => {
               />
             </div>
           </div>
+         
+
           <div className="row">
-            <div className="col-12" ref={tourDetailsRef}>
-              <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                // tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                Priceexclusions={selectedTour.Priceexclusions}
-              />
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

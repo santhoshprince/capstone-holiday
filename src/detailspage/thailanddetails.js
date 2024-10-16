@@ -15,7 +15,6 @@ import galleryImage4 from "../img/Thailand/1358.jpg";
 import galleryImage5 from "../img/Thailand/568.jpg";
 import galleryImage6 from "../img/Thailand/771.jpg";
 
-
 import galleryImage1_1 from "../img/Thailand/434.jpg";
 import galleryImage2_2 from "../img/Thailand/895.jpg";
 import galleryImage3_3 from "../img/Thailand/570.jpg";
@@ -25,7 +24,7 @@ import galleryImage6_6 from "../img/Thailand/786.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/Thailand/2150668931.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const TourThailand = () => {
   const { id } = useParams();
@@ -34,13 +33,12 @@ const TourThailand = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const InitiaryMapRef = useRef(null);  
-
+  const InitiaryMapRef = useRef(null);
 
   const toursData = {
     1: {
       heading: "Thailand Tour Package from Chennai – 4N / 5D",
-      title: "Thailand Tour Package from Chennai – 4N / 5D",
+      title1: "Thailand Tour Package from Chennai – 4N / 5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -58,26 +56,25 @@ const TourThailand = () => {
         galleryImage6_6,
       ],
 
-      Priceexclusions: [
-        "GST 5%",
-        "Air Fare",
-      ],
+      Priceexclusions: ["GST 5%", "Air Fare"],
 
       description: [
         "Thailand’s friendly, hospitable populace has earned it its nickname, “Land of Smiles.” It is among the most well-liked locations for tourists from all over the world to visit when using a Thailand trip package. Most tourists choose a Thailand tour package in order to visit beaches, go island hopping, or learn more about the Buddhist culture. The islands of Thailand are well-known for their distinctive food, water sports, and underwater explorations. Thailand is a fantastic destination for a Thailand vacation because of these factors.",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
-      hotelDetails: ["Anya Nana @ Sukhumvit (Superior),Bella Express (Standard)"],
+      hotelDetails: [
+        "Anya Nana @ Sukhumvit (Superior),Bella Express (Standard)",
+      ],
       itinerary: [
         {
           day: "Day 1",
-          details: "Bangkok (BKK) Airport to Pattaya Hotel (Private Transfer) Pattaya – Alcazar Show (Standard) (Show with Private Transfer)",
+          details:
+            "Bangkok (BKK) Airport to Pattaya Hotel (Private Transfer) Pattaya – Alcazar Show (Standard) (Show with Private Transfer)",
         },
         {
           day: "Day 2",
-          details:
-            "Pattaya – Coral Island Tour with Lunch (Shared Transfer)",
+          details: "Pattaya – Coral Island Tour with Lunch (Shared Transfer)",
         },
         {
           day: "Day 3",
@@ -94,14 +91,12 @@ const TourThailand = () => {
           details:
             "Bangkok – City Tour (Wat Traimit + Wat Mahapruttaram with Gems Gallery) (Entry with Shared Transfer) Bangkok Hotel to Bangkok (BKK) Airport (Private Transfer)",
         },
-      
       ],
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15920938.03956205!2d101.490104!3d13.038997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sin!4v1728104089716!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
-
 
   const selectedTour = toursData[id] || toursData[1];
 
@@ -114,27 +109,38 @@ const TourThailand = () => {
   };
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Thailand Tour Package from Chennai | Coimbatore</title>
-        <meta name="description" content="Our Thailand Tour Package from Chennai takes you to the finest tourist destinations to explore the Thai cultural identity and cuisines." />
-        <meta name="keywords" content="Thailand tour package from chennai, thailand tour, alcazar show, coral island, bangkok, pattaya, phuket, krabi, thai airways" />
+        <meta
+          name="description"
+          content="Our Thailand Tour Package from Chennai takes you to the finest tourist destinations to explore the Thai cultural identity and cuisines."
+        />
+        <meta
+          name="keywords"
+          content="Thailand tour package from chennai, thailand tour, alcazar show, coral island, bangkok, pattaya, phuket, krabi, thai airways"
+        />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/",
-            "potentialAction": {
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/",
+            potentialAction: {
               "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/{search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+              target:
+                "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
           })}
         </script>
       </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -171,22 +177,9 @@ const TourThailand = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={InitiaryMapRef}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-          <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
@@ -196,7 +189,21 @@ const TourThailand = () => {
               />
             </div>
           </div>
-          
+
+          <div className="row">
+            <div className="col-12" ref={InitiaryMapRef}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

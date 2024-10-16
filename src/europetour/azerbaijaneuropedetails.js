@@ -5,7 +5,6 @@ import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
-import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/azerbaijan/10.jpg";
@@ -220,20 +219,6 @@ const TourPage = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-
-          <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
@@ -248,7 +233,22 @@ const TourPage = () => {
               />
             </div>
           </div>
+         
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
 
+         
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

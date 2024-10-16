@@ -37,7 +37,7 @@ const TourTurkey = () => {
   const toursData = {
     1: {
       heading: "Turkey Tour Packages from India – 4N / 5D",
-      title: "Turkey Tour Packages from India – 4N / 5D",
+      title1: "Turkey Tour Packages from India – 4N / 5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -192,22 +192,9 @@ const TourTurkey = () => {
           </div>
           {/* Full-width gallery */}
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={InitiaryMapRef}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-          <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
@@ -217,7 +204,21 @@ const TourTurkey = () => {
               />
             </div>
           </div>
-
+        
+          <div className="row">
+            <div className="col-12" ref={InitiaryMapRef}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+          
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

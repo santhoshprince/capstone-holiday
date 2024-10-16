@@ -10,7 +10,7 @@ import thailand from "../../img/Thailand/779.jpg";
 import vietnam from "../../img/vietnam/12.jpg";
 import Contentbg from "../../components/contentbg";
 import bg1 from "../../img/bg/hero_bg_7_1.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const TourList = () => {
   // The array of tour items
@@ -61,7 +61,7 @@ const TourList = () => {
       rating: 4.7,
       price: "34,000",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour-destination/singapore-malaysia-tour',
+      detailPath: "/tour-destination/singapore-malaysia-tour",
     },
     {
       imgSrc: thailand,
@@ -69,7 +69,7 @@ const TourList = () => {
       rating: 4.7,
       price: "14,025",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/thailand-group-tour-package',
+      detailPath: "/tour/thailand-group-tour-package",
     },
     {
       imgSrc: vietnam,
@@ -77,26 +77,29 @@ const TourList = () => {
       rating: 4.7,
       price: "17,000",
       duration: "3 Nights, 4 Days",
-      detailPath: '/tour/vietnam-group-tour-packages',
+      detailPath: "/tour/vietnam-group-tour-packages",
     },
   ];
 
   const seoData = {
-    title: 'Group Tour Packages | International Group Tour Packages',
-    keywords: 'group tour packages, international group tour packages, domestic group tour packages from india, international group tour, domestic group tour',
-    description: 'Avail our Group Tour Packages for thrilling yet memorable domestic and international trips. Choose Capstone Holidays for customized group tours.',
+    title: "Group Tour Packages | International Group Tour Packages",
+    keywords:
+      "group tour packages, international group tour packages, domestic group tour packages from india, international group tour, domestic group tour",
+    description:
+      "Avail our Group Tour Packages for thrilling yet memorable domestic and international trips. Choose Capstone Holidays for customized group tours.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/group-tour-packages/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/group-tour-packages/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/group-tour-packages/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/group-tour-packages/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
 
   return (
     <>

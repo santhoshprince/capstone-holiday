@@ -6,7 +6,6 @@ import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
-import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/11021.jpg";
 import galleryImage2 from "../img/tour/354.jpg";
@@ -15,7 +14,7 @@ import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import galleryImage1_1 from "../img/gallery/358.jpg";
 import galleryImage2_2 from "../img/gallery/343.jpg";
@@ -23,8 +22,6 @@ import galleryImage3_3 from "../img/gallery/369.jpg";
 import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/gallery/2151625212.jpg";
-
-import location1 from "../img/icon/location-dot3.svg";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -54,8 +51,6 @@ const TourPage = () => {
         galleryImage6_6,
       ],
 
-     
-
       description: [
         "Embark on an unforgettable journey through Southeast Asia with our Singapore, Penang, and Phuket Cruise! This extraordinary voyage combines vibrant cityscapes, rich cultural heritage, and breathtaking beaches, offering the perfect blend of adventure and relaxation.",
       ],
@@ -68,30 +63,25 @@ const TourPage = () => {
         "Rush hour gets a thrilling spin at the largest indoor activity space ever to set sail at SeaPlex.",
         "Scope out the surrounding sights from the North Star.",
         "Power up vacation playtime with the whole family at SeaPlex.",
-        "Fill your days with non-stop thrills onboard the adventure-packed Anthem of the Seas. Check off your bucket list for good onboard the award-winning, Anthem of the Seas®. From 360-degree views in the North Star observation capsule to simulated skydiving on RipCord® by iFLY and the only bumper cars at sea, this memory-maxing ship is your ticket to next-level experiences and once-in-a-lifetime adventure."
+        "Fill your days with non-stop thrills onboard the adventure-packed Anthem of the Seas. Check off your bucket list for good onboard the award-winning, Anthem of the Seas®. From 360-degree views in the North Star observation capsule to simulated skydiving on RipCord® by iFLY and the only bumper cars at sea, this memory-maxing ship is your ticket to next-level experiences and once-in-a-lifetime adventure.",
       ],
       itinerary: [
         {
           day: "Day 1",
-          details:
-            "SINGAPORE, SINGAPORE",
+          details: "SINGAPORE, SINGAPORE",
         },
         {
           day: "Day 2",
-          details:
-            "PENANG, MALAYSIA",
+          details: "PENANG, MALAYSIA",
         },
         {
           day: "Day 3",
-          details:
-            "PHUKET, THAILAND",
+          details: "PHUKET, THAILAND",
         },
         {
           day: "Day 4",
-          details:
-            "SINGAPORE, SINGAPORE",
+          details: "SINGAPORE, SINGAPORE",
         },
-     
       ],
       // mapSrc:
       //   "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d250116.67994327686!2d92.722464!3d11.618137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088946c176b5971%3A0x5bfa43a5e9a5ed30!2sSri%20Vijaya%20Puram%2C%20Andaman%20and%20Nicobar%20Islands!5e0!3m2!1sen!2sin!4v1728185002454!5m2!1sen!2sin",
@@ -111,32 +101,34 @@ const TourPage = () => {
   };
 
   const seoData = {
-    title: 'Singapore Malaysia Tour Package with Cruise',
-    keywords: 'singapore malaysia tour package with cruise, cruise tour packages, cruise packages, cruise tour, cruise ship tour plan',
-    description: 'Choose our Singapore Malaysia tour package with cruise on these months to experience the ultimate adventurous and fun trip.',
+    title: "Singapore Malaysia Tour Package with Cruise",
+    keywords:
+      "singapore malaysia tour package with cruise, cruise tour packages, cruise packages, cruise tour, cruise ship tour plan",
+    description:
+      "Choose our Singapore Malaysia tour package with cruise on these months to experience the ultimate adventurous and fun trip.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
-
-<Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} />
 
       <nav className="tour-navigation">
@@ -160,7 +152,7 @@ const TourPage = () => {
                   role="tabpanel"
                 >
                   <DetailSlider images={selectedTour.galleryImages} />
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>
@@ -170,20 +162,6 @@ const TourPage = () => {
             </div>
           </div>
           {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -197,6 +175,21 @@ const TourPage = () => {
                 Priceexclusions={selectedTour.Priceexclusions}
                 shiphighlights={selectedTour.shiphighlights}
               />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

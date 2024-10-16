@@ -220,17 +220,6 @@ const BaliDetails = () => {
             </div>
             {/* Full-width gallery */}
             <div className="row">
-              <div className="col-12" ref={detailsGalleryRef}>
-                <DetailsGallery images={tour.gallerydata} />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12" ref={detailsitinerary}>
-                <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
-              </div>
-            </div>
-
-            <div className="row">
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
                   title1={tour.title1}
@@ -244,6 +233,18 @@ const BaliDetails = () => {
                   tours={tour.tours}
                   note={tour.note}
                 />
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-12" ref={detailsitinerary}>
+                <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-12" ref={detailsGalleryRef}>
+                <DetailsGallery images={tour.gallerydata} />
               </div>
             </div>
 

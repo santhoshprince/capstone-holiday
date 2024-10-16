@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/singapore/s10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/singapore/s2.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 const TourSingapore = () => {
   const { id } = useParams();
 
@@ -37,7 +37,7 @@ const TourSingapore = () => {
   const toursData = {
     1: {
       heading: "Singapore and Malaysia Tour Packages",
-      title: "Singapore and Malaysia Tour Packages",
+      title1: "Singapore and Malaysia Tour Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -60,27 +60,24 @@ const TourSingapore = () => {
         "Accommodation with Breakfast only",
         "All sightseeing as per itinerary",
         "Vehicle for shopping",
-        "All entry tickets"
+        "All entry tickets",
       ],
-      Priceexclusions:[
+      Priceexclusions: [
         "GST 5%",
         "Lunch & Dinner",
         "Laundry service",
         "Mineral Water",
         "Tips",
         "Other than inclusions",
-        "Air Fare"
+        "Air Fare",
       ],
 
       description: [
-        "Our Singapore-Malaysia trip packages provide tourists with visits to all the captivating and well-liked tourist attractions, including Universal Studios, Sentosa Island, and Marina Bay. With our Singapore-Malaysia vacation packages, you may discover the dynamic cultures of both amazing locations. Singapore and Malaysia both have rich cultural histories dating back many generations."
+        "Our Singapore-Malaysia trip packages provide tourists with visits to all the captivating and well-liked tourist attractions, including Universal Studios, Sentosa Island, and Marina Bay. With our Singapore-Malaysia vacation packages, you may discover the dynamic cultures of both amazing locations. Singapore and Malaysia both have rich cultural histories dating back many generations.",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
-      hotelDetails: [
-       "Thomson Hotel",
-"Metro star Hotel"
-      ],
+      hotelDetails: ["Thomson Hotel", "Metro star Hotel"],
 
       itinerary: [
         {
@@ -90,15 +87,18 @@ const TourSingapore = () => {
         },
         {
           day: "Day 2",
-          details: "Universal Studio w/o guide + SEA Aquarium + Wings of Time w/guide",
+          details:
+            "Universal Studio w/o guide + SEA Aquarium + Wings of Time w/guide",
         },
         {
           day: "Day 3",
-          details: "City tour of Singapore on PVT basis with Guide Singapore hotel to Malaysia hotel transfer",
+          details:
+            "City tour of Singapore on PVT basis with Guide Singapore hotel to Malaysia hotel transfer",
         },
         {
           day: "Day 4",
-          details: "Twin Tower photo stop with Fountain show Genting Highlands with 02 way Cable car",
+          details:
+            "Twin Tower photo stop with Fountain show Genting Highlands with 02 way Cable car",
         },
         {
           day: "Day 5",
@@ -123,26 +123,39 @@ const TourSingapore = () => {
   return (
     <>
       <Helmet>
-        <title>Singapore and Malaysia Tour Packages | Chennai & Coimbatore</title>
-        <meta name="description" content="Check our customizable Singapore and Malaysia tour packages at Capstone Holidays to have a relaxed yet entertaining holiday." />
-        <meta name="keywords" content="Singapore and malaysia tour packages, singapore tour package, malaysia tour packages, flight tickets, malaysian airlines" />
-        
+        <title>
+          Singapore and Malaysia Tour Packages | Chennai & Coimbatore
+        </title>
+        <meta
+          name="description"
+          content="Check our customizable Singapore and Malaysia tour packages at Capstone Holidays to have a relaxed yet entertaining holiday."
+        />
+        <meta
+          name="keywords"
+          content="Singapore and malaysia tour packages, singapore tour package, malaysia tour packages, flight tickets, malaysian airlines"
+        />
+
         {/* Schema Markup */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/",
-            "potentialAction": {
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/",
+            potentialAction: {
               "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/{search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+              target:
+                "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
           })}
         </script>
       </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>
@@ -178,23 +191,11 @@ const TourSingapore = () => {
             </div>
           </div>
           {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={InitiaryMapRef}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
+
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
@@ -205,6 +206,19 @@ const TourSingapore = () => {
             </div>
           </div>
 
+          <div className="row">
+            <div className="col-12" ref={InitiaryMapRef}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

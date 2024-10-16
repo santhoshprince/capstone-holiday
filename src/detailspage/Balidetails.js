@@ -32,7 +32,7 @@ const BaliDetails = () => {
   const tourDetails = {
     "bali-tour-packages-from-chennai": {
       heading: "Bali Tour Packages from Chennai",
-      title: "Bali Tour Packages from Chennai",
+      title1: "Bali Tour Packages from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -279,20 +279,9 @@ const BaliDetails = () => {
             </div>
             {/* Full-width gallery */}
             <div className="row">
-              <div className="col-12" ref={detailsGalleryRef}>
-                <DetailsGallery images={tour.gallerydata} />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12" ref={detailsitinerary}>
-                <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
-              </div>
-            </div>
-
-            <div className="row">
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
-                  title={tour.title}
+                  title1={tour.title1}
                   description={tour.description}
                   duration={tour.duration}
                   tourCode={tour.tourCode}
@@ -302,7 +291,18 @@ const BaliDetails = () => {
                 />
               </div>
             </div>
+            <div className="row">
+              <div className="col-12" ref={detailsitinerary}>
+                <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
+              </div>
+            </div>
 
+           
+            <div className="row">
+              <div className="col-12" ref={detailsGalleryRef}>
+                <DetailsGallery images={tour.gallerydata} />
+              </div>
+            </div>
             {/* Full-width map */}
             <div className="row">
               <div className="col-12" ref={locationMapRef}>

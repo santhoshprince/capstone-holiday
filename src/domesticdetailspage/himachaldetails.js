@@ -24,8 +24,7 @@ import galleryImage6_6 from "../img/Himachal/14.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/Himachal/11.jpg";
-import { Helmet } from 'react-helmet';
-
+import { Helmet } from "react-helmet";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -37,7 +36,7 @@ const TourPage = () => {
   const tourDetails = {
     "shimla-manali-tour-package-from-chennai": {
       heading: "Himachal – Shimla Manali Tour Package from Chennai",
-      title: "Himachal – Shimla Manali Tour Package from Chennai",
+      title1: "Himachal – Shimla Manali Tour Package from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -138,24 +137,27 @@ const TourPage = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3471664.9927754677!2d77.301755!3d31.816881000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal%20Pradesh!5e0!3m2!1sen!2sin!4v1728190814872!5m2!1sen!2sin",
 
       iconSrc: [location1],
-      title: 'Shimla Manali Tour package from Chennai | Coimbatore',
-      keywords: 'shimla manali tour package from chennai, shimla tour package, manali tour package, shimla manali tour packages, shimla manali tour',
-      description: 'Our Shimla Manali Tour package from Chennai arranges a Shimla trip in the winter season, Since Winter is the most admired time to enjoy snowfall in Shimla',
+      title: "Shimla Manali Tour package from Chennai | Coimbatore",
+      keywords:
+        "shimla manali tour package from chennai, shimla tour package, manali tour package, shimla manali tour packages, shimla manali tour",
+      description:
+        "Our Shimla Manali Tour package from Chennai arranges a Shimla trip in the winter season, Since Winter is the most admired time to enjoy snowfall in Shimla",
       schema: {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "Capstone Holidays",
-          "url": "https://www.capstoneholidays.in/tour/shimla-manali-tour-package-from-chennai/",
-          "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/shimla-manali-tour-package-from-chennai/{search_term_string}",
-              "query-input": "required name=search_term_string"
-          }
-      }
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/shimla-manali-tour-package-from-chennai/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/shimla-manali-tour-package-from-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
     "himachal-tour-package": {
       heading: "Himachal Tour Package",
-      title: "Himachal Tour Package",
+      title1: "Himachal Tour Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -254,20 +256,23 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3471664.9927754677!2d77.301755!3d31.816881000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal%20Pradesh!5e0!3m2!1sen!2sin!4v1728191109370!5m2!1sen!2sin",
       iconSrc: [location1],
-      title: 'Himachal Tour Package | Himachal Tourist Attractions',
-      keywords: 'himachal tour package, himachal tourist attractions, himachal tour, himachal tourist places, himachal, himachal, himachal flight ticket',
-      description: 'The greatest season for a reasonably priced Himachal Tour Package is during the monsoon, which runs from July to October',
+      title: "Himachal Tour Package | Himachal Tourist Attractions",
+      keywords:
+        "himachal tour package, himachal tourist attractions, himachal tour, himachal tourist places, himachal, himachal, himachal flight ticket",
+      description:
+        "The greatest season for a reasonably priced Himachal Tour Package is during the monsoon, which runs from July to October",
       schema: {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "Capstone Holidays",
-          "url": "https://www.capstoneholidays.in/tour/himachal-tour-package/",
-          "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/tour/himachal-tour-package/{search_term_string}",
-              "query-input": "required name=search_term_string"
-          }
-      }
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/himachal-tour-package/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/himachal-tour-package/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
   };
 
@@ -275,7 +280,7 @@ const TourPage = () => {
 
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
   const tour = tourDetails[path] || [tourId];
-  
+
   const metaDetails = tour
     ? {
         title: tour.title || "Default Title",
@@ -302,14 +307,18 @@ const TourPage = () => {
   return (
     <>
       <Helmet>
-          <title>{metaDetails.title}</title>
-          <meta name="description" content={metaDetails.description} />
-          <meta name="keywords" content={metaDetails.keywords} />
-          <script type="application/ld+json">
-            {JSON.stringify(tour.schema)}
-          </script>
-        </Helmet>
-      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
+        <title>{metaDetails.title}</title>
+        <meta name="description" content={metaDetails.description} />
+        <meta name="keywords" content={metaDetails.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(tour.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={tour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -341,25 +350,10 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={tour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={tour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={tour.title}
+                title1={tour.title1}
                 description={tour.description}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
@@ -371,6 +365,19 @@ const TourPage = () => {
             </div>
           </div>
 
+          {/* Full-width gallery */}
+
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={tour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>

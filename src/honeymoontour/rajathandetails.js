@@ -14,7 +14,7 @@ import galleryImage3 from "../img/Rajasthan/8.jpg";
 import galleryImage4 from "../img/Rajasthan/9.jpg";
 import galleryImage5 from "../img/Rajasthan/10.jpg";
 import galleryImage6 from "../img/Rajasthan/2.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import galleryImage1_1 from "../img/Rajasthan/12.jpg";
 import galleryImage2_2 from "../img/Rajasthan/11.jpg";
 import galleryImage3_3 from "../img/Rajasthan/14.jpg";
@@ -56,11 +56,11 @@ const TourPage = () => {
 
       priceIncludes: [
         "04 Nights’ Accommodation in Hotel",
-  "Air fare",
-  "Accommodation: Double Sharing Basis",
-  "Meal Plan: MAPAI (04 Breakfast + 04 Dinner)",
-  "With all transfer, driver allowances, parking, toll taxes, fuel and with all",
-  "Airport/Railway Station pickup drop off and sightseeing as per the itinerary"
+        "Air fare",
+        "Accommodation: Double Sharing Basis",
+        "Meal Plan: MAPAI (04 Breakfast + 04 Dinner)",
+        "With all transfer, driver allowances, parking, toll taxes, fuel and with all",
+        "Airport/Railway Station pickup drop off and sightseeing as per the itinerary",
       ],
       // Priceexclusions: [
       //   "Pickup & Drop Cochin Airport / Railway Station",
@@ -74,7 +74,7 @@ const TourPage = () => {
       // ],
 
       description: [
-       "Ready to explore the ‘Land of Kings’ with our Rajasthan tout package? Yes, our Rajasthan travel packages offer the exciting experience of a vibrant and culturally rich state in northern India. With our Rajasthan tour packages, you can explore majestic palaces, forts, colorful festivals, and desert landscapes. Some key spots in Rajasthan that our Rajasthan tour package covers are Jaipur: The Pink City, Udaipur: The City of Lakes, Jodhpur: The Blue City, and many more."
+        "Ready to explore the ‘Land of Kings’ with our Rajasthan tout package? Yes, our Rajasthan travel packages offer the exciting experience of a vibrant and culturally rich state in northern India. With our Rajasthan tour packages, you can explore majestic palaces, forts, colorful festivals, and desert landscapes. Some key spots in Rajasthan that our Rajasthan tour package covers are Jaipur: The Pink City, Udaipur: The City of Lakes, Jodhpur: The Blue City, and many more.",
       ],
       duration: ["05 Days,04 Nights"],
       // hotelDetails: [
@@ -110,11 +110,10 @@ const TourPage = () => {
         },
       ],
       mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.76975425675!2d77.98001294999999!3d27.1761745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1729060120261!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.76975425675!2d77.98001294999999!3d27.1761745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1729060120261!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
-
 
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
   const selectedTour = tourDetails[path];
@@ -128,32 +127,39 @@ const TourPage = () => {
     });
   };
   const seoData = {
-    title: 'Agra Honeymoon Package | Capstone Holidays Coimbatore',
-    keywords: 'agra honeymoon package, agra honeymoon package from Chennai, agra honeymoon packages, agra honeymoon tour, agra honeymoon tour plan',
-    description: 'The Agra honeymoon package is intended for honeymoon couples to rediscover their love in the city that is home to the pinnacle of romantic architecture.',
+    title: "Agra Honeymoon Package | Capstone Holidays Coimbatore",
+    keywords:
+      "agra honeymoon package, agra honeymoon package from Chennai, agra honeymoon packages, agra honeymoon tour, agra honeymoon tour plan",
+    description:
+      "The Agra honeymoon package is intended for honeymoon couples to rediscover their love in the city that is home to the pinnacle of romantic architecture.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/agra-honeymoon-package/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/agra-honeymoon-package/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/agra-honeymoon-package/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/agra-honeymoon-package/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
       <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -185,21 +191,6 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -212,6 +203,22 @@ const TourPage = () => {
                 PackageInclusion={selectedTour.PackageInclusion}
                 Priceexclusions={selectedTour.Priceexclusions}
               />
+            </div>
+          </div>
+          {/* Full-width gallery */}
+
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

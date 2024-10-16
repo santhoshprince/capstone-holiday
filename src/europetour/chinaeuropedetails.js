@@ -15,7 +15,7 @@ import galleryImage4 from "../img/china/1.jpg";
 import galleryImage5 from "../img/china/9.jpg";
 import galleryImage6 from "../img/china/15.jpg";
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import galleryImage1_1 from "../img/china/10.jpg";
 import galleryImage2_2 from "../img/china/11.jpg";
@@ -37,7 +37,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "China Europe Tour",
-      title: "China Europe Tour",
+      title1: "China Europe Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -138,7 +138,6 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
- 
 
   const selectedTour = toursData[id] || toursData[1];
 
@@ -150,32 +149,39 @@ const TourPage = () => {
     });
   };
   const seoData = {
-    title: 'China Tour Package from Chennai | Velachery',
-        keywords: 'china tour package from chennai, china tour package, china tour, china, china tour from india',
-        description: 'Our China tour package from Chennai is designed ideally so that our customers do not miss these legacies in China.',
-        schema: {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/china-tour-package-from-chennai/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://www.capstoneholidays.in/china-tour-package-from-chennai/{search_term_string}",
-                "query-input": "required name=search_term_string"
-        }
-    }
-};
+    title: "China Tour Package from Chennai | Velachery",
+    keywords:
+      "china tour package from chennai, china tour package, china tour, china, china tour from india",
+    description:
+      "Our China tour package from Chennai is designed ideally so that our customers do not miss these legacies in China.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/china-tour-package-from-chennai/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/china-tour-package-from-chennai/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
-     <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -208,9 +214,20 @@ const TourPage = () => {
             </div>
           </div>
           {/* Full-width gallery */}
+
           <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+            <div className="col-12" ref={tourDetailsRef}>
+              <TourDetails
+                title1={selectedTour.title1}
+                description={selectedTour.description}
+                duration={selectedTour.duration}
+                tourCode={selectedTour.tourCode}
+                priceIncludes={selectedTour.priceIncludes}
+                hotelDetails={selectedTour.hotelDetails}
+                PackageInclusion={selectedTour.PackageInclusion}
+                Priceexclusions={selectedTour.Priceexclusions}
+                note={selectedTour.note}
+              />
             </div>
           </div>
           <div className="row">
@@ -223,18 +240,8 @@ const TourPage = () => {
           </div>
 
           <div className="row">
-            <div className="col-12" ref={tourDetailsRef}>
-              <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
-                note={selectedTour.note}
-              />
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>
 

@@ -14,7 +14,7 @@ import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import galleryImage1_1 from "../img/gallery/358.jpg";
 import galleryImage2_2 from "../img/gallery/343.jpg";
 import galleryImage3_3 from "../img/gallery/369.jpg";
@@ -134,32 +134,35 @@ const TourPage = () => {
     });
   };
   const seoData = {
-    title: 'Andaman Group Tour Packages | Coimbatore & Chennai',
-    keywords: 'andaman group tour packages, andaman group tour packages from chennai, andaman group tour package, andaman group tour, andaman group, andaman',
-    description: 'Exciting water activities are awaiting in Andaman Group Tour Packages for you in India\'s most stunning island attractions, Andaman.',
+    title: "Andaman Group Tour Packages | Coimbatore & Chennai",
+    keywords:
+      "andaman group tour packages, andaman group tour packages from chennai, andaman group tour package, andaman group tour, andaman group, andaman",
+    description:
+      "Exciting water activities are awaiting in Andaman Group Tour Packages for you in India's most stunning island attractions, Andaman.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/tour/andaman-group-tour-packages/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/tour/andaman-group-tour-packages/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/tour/andaman-group-tour-packages/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/tour/andaman-group-tour-packages/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
 
   return (
     <>
-    <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} />
 
       <nav className="tour-navigation">
@@ -192,21 +195,6 @@ const TourPage = () => {
               <Sidebar />
             </div>
           </div>
-          {/* Full-width gallery */}
-          <div className="row">
-            <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
-            </div>
-          </div>
-
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
@@ -221,7 +209,22 @@ const TourPage = () => {
               />
             </div>
           </div>
+          {/* Full-width gallery */}
 
+          <div className="row">
+            <div className="col-12" ref={detailsitinerary}>
+              <Itinerary
+                title="Itinerary"
+                itineraryData={selectedTour.itinerary}
+              />
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12" ref={detailsGalleryRef}>
+              <DetailsGallery images={selectedTour.gallerydata} />
+            </div>
+          </div>
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={locationMapRef}>
