@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
-import bali from "../../img/tour/12.jpg";
-import bali2 from "../../img/tour/34.jpg";
-import maldives from "../../img/tour/2151682910.jpg";
+import bali from "../../img/kerala/17.jpg";
+import bali2 from "../../img/andaman/6.jpg";
+import maldives from "../../img/tour/11021.jpg";
+import manali from "../../img/kashmir/7.jpg";
+import srilanka from "../../img/srilanka/3.jpg";
+import singapore from "../../img/singapore/s1.jpg";
+import thailand from "../../img/Thailand/779.jpg";
+import vietnam from "../../img/vietnam/12.jpg";
 import Contentbg from "../../components/contentbg";
 import Sidebar from "../../components/sidebar";
 import Pagination from "../../components/blogpagination"; // Your Pagination component
+import bg1 from "../../img/bg/hero_bg_7_1.jpg";
 
 const TourList = () => {
   // The array of tour items
@@ -35,7 +41,7 @@ const TourList = () => {
       detailPath: "/tour/bali-group-tour-package",
     },
     {
-      imgSrc: maldives,
+      imgSrc: manali,
       title: "Shimla Manali Group Tour",
       rating: 4.7,
       price: "9,350",
@@ -43,7 +49,7 @@ const TourList = () => {
       detailPath: "/tour/dubai-tour-packages-from-chennai",
     },
     {
-      imgSrc: maldives,
+      imgSrc: srilanka,
       title: "Sri Lanka Group Tour Package – 4N/5D",
       rating: 4.7,
       price: "21,250",
@@ -51,7 +57,7 @@ const TourList = () => {
       detailPath: "/tour/sri-lanka-group-tour-package/",
     },
     {
-      imgSrc: maldives,
+      imgSrc: singapore,
       title: "Singapore Malaysia Group Tour – 4N / 5D",
       rating: 4.7,
       price: "34,000",
@@ -59,7 +65,7 @@ const TourList = () => {
       detailPath: '/tour-destination/singapore-malaysia-tour',
     },
     {
-      imgSrc: maldives,
+      imgSrc: thailand,
       title: "Thailand Group Tour Package – 4N / 5D",
       rating: 4.7,
       price: "14,025",
@@ -67,7 +73,7 @@ const TourList = () => {
       detailPath: '/tour/thailand-group-tour-package',
     },
     {
-      imgSrc: maldives,
+      imgSrc: vietnam,
       title: "Vietnam Group Tour Packages – 3N / 4D",
       rating: 4.7,
       price: "17,000",
@@ -95,7 +101,7 @@ const TourList = () => {
 
   return (
     <>
-      <Contentbg heading={"Group Tour Packages"} />
+      <Contentbg heading={"Group Tour Packages"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

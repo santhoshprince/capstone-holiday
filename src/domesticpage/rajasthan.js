@@ -3,8 +3,9 @@ import TourList from "../components/card/rajasthan";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import RajasthanTour from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/Rajasthan/7.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/Rajasthan/6.jpg";
 
 const RajasthanTours = () => {
   const faqRajasthan = [
@@ -36,7 +37,7 @@ const RajasthanTours = () => {
 
   return (
     <>
-      <Contentsection heading={"Rajasthan"} children={"Destination"} />
+      <Contentsection heading={"Rajasthan"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

@@ -3,8 +3,9 @@ import TourList from "../components/card/andaman";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import AndamanDescription from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/andaman/3.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/andaman/9.jpg";
 
 const AndamanTour = () => {
   const faqAndaman = [
@@ -44,7 +45,7 @@ const AndamanTour = () => {
 
   return (
     <>
-      <Contentsection heading={"Andaman"} children={"Destination"} />
+      <Contentsection heading={"Andaman"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

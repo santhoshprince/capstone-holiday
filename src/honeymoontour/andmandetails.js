@@ -7,23 +7,24 @@ import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../assets/honeymoonimg/anadman/thailand-4470985_1920.jpg";
-import galleryImage2 from "../assets/honeymoonimg/anadman/jail-6810893_1920.jpg";
-import galleryImage3 from "../assets/honeymoonimg/anadman/phuket-4092829_1920.jpg";
-import galleryImage4 from "../assets/honeymoonimg/anadman/phuket-4092829_1920.jpg";
-import galleryImage5 from "../assets/honeymoonimg/anadman/beach-3492416_1920.jpg";
-import galleryImage6 from "../img/tour/365.jpg";
+import galleryImage1 from "../img/andaman/8.jpg";
+import galleryImage2 from "../img/andaman/7.jpg";
+import galleryImage3 from "../img/andaman/4.jpg";
+import galleryImage4 from "../img/andaman/13.jpg";
+import galleryImage5 from "../img/andaman/6.jpg";
+import galleryImage6 from "../img/andaman/7.jpg";
 
-import galleryImage1_1 from "../img/gallery/358.jpg";
-import galleryImage2_2 from "../img/gallery/343.jpg";
-import galleryImage3_3 from "../img/gallery/369.jpg";
-import galleryImage4_4 from "../img/gallery/963.jpg";
-import galleryImage5_5 from "../img/gallery/11021.jpg";
-import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+import galleryImage1_1 from "../img/andaman/8.jpg";
+import galleryImage2_2 from "../img/andaman/9.jpg";
+import galleryImage3_3 from "../img/andaman/10.jpg";
+import galleryImage4_4 from "../img/andaman/11.jpg";
+import galleryImage5_5 from "../img/andaman/12.jpg";
+import galleryImage6_6 from "../img/andaman/13.jpg";
 
 import anadamanbg from "../assets/honeymoonimg/anadman/phi-phi-island-5076128_1920.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
+import bg1 from "../img/andaman/9.jpg";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -176,7 +177,7 @@ Airport. Tour Ends.
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={anadamanbg} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
         <ul>

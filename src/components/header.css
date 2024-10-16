@@ -76,9 +76,10 @@ li:hover .dropdown {
   background-color: #DF1F2C;
   color: white;
   padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 10px;
+  height: 50px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
@@ -207,8 +208,8 @@ nav ul li a:hover {
 .main-menu a {
   color: #333;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   padding: 10px 15px; /* Adjust padding for alignment */
   transition: color 0.3s ease, padding 0.3s ease;
   line-height: 1.5;
@@ -248,7 +249,7 @@ nav ul li a:hover {
 
 /* Section Heading */
 .dropdown-section h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px; /* Adjust heading margin */
 }
@@ -344,7 +345,7 @@ nav ul li a:hover {
 
 /* Section Heading */
 .dropdown-sectionnew h3 {
-  font-size: 16px; /* Font size for heading */
+  font-size: 18px; /* Font size for heading */
   font-weight: bold; /* Bold heading */
   margin-bottom: 10px; /* Space below heading */
 }

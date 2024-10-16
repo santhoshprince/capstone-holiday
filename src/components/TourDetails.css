@@ -10,7 +10,7 @@
    --secondary-color: #DF1F2C;
   --accent-color: #00796b;
   --bg-color: #fff8ea;
-  --font-family:Montserrat;
+  --font-family:"Manrope-Medium", sans-serif;
   --border-radius: 8px;
   --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@
     color: var(--primary-color); /* Darker color for heading */
     margin-bottom: 20px;
     text-align: center;
-    font-family:var(--font-family);
+    font-family:var(--style-font);
     font-weight: bold;
   }
   
@@ -57,7 +57,7 @@
     font-size: 22px;
     color: var(--primary-color); /* Blue color for section titles */
     margin-bottom: 15px;
-    font-family:var(--font-family)
+    font-family:var(--style-font)
   }
   
   /* List styles */

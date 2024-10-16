@@ -1,7 +1,7 @@
 import React from "react";
 import TourItem from "../../components/tourcard";
-import bali from "../../img/tour/12.jpg";
-import bali2 from "../../img/tour/34.jpg";
+import bali from "../../img/kerala/11.jpg";
+import bali2 from "../../img/kerala/16.jpg";
 
 const TourList = () => {
   const tours = [

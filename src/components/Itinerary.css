@@ -28,7 +28,7 @@
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    font-family: var(--font-family);
+    font-family: var(--style-font);
     color: var(--primary-color) !important;
     margin-bottom: 50px;
     letter-spacing: 1.2px;

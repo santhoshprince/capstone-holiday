@@ -58,7 +58,7 @@ const VideoSlider = () => {
                 className="video-iframe"
               ></iframe>
               {!isPlaying && (
-                <div className="play-button" onClick={handlePlayClick}></div>
+                <div className="" onClick={handlePlayClick}></div>
               )}
             </div>
           </SwiperSlide>

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
-import bali from "../../img/tour/12.jpg";
-import bali2 from "../../img/tour/34.jpg";
-import maldives from "../../img/tour/2151682910.jpg";
+import bali from "../../img/azerbaijan/8.jpg";
+import bali2 from "../../img/china/13.jpg";
+import maldives from "../../img/greece/5.jpg";
 import Contentbg from "../../components/contentbg";
 import Sidebar from "../../components/sidebar";
 import Pagination from "../../components/blogpagination"; // Your Pagination component
+import bg1 from "../../img/tour/d1.jpg";
 
 const TourList = () => {
   // The array of tour items
@@ -55,7 +56,7 @@ const TourList = () => {
 
   return (
     <>
-      <Contentbg heading={"Europe Tour Packages"} />
+      <Contentbg heading={"Europe Tour Packages"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

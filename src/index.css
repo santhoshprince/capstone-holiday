@@ -15,9 +15,9 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #e9edf5;
-  --title-font: "Montserrat", sans-serif;
-  --body-font: "Montserrat", sans-serif;
-  --style-font: "Montserrat", cursive;
+  --title-font: "Amaranth-Bold", sans-serif;
+  --body-font: "Manrope-Medium", sans-serif;
+  --style-font: "Amaranth-Bold";
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1320px;
   --container-gutters: 24px;
@@ -37,6 +37,23 @@
   font-family: Montserrat;
   src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+
+@font-face {
+  font-family: Amaranth-Bold;
+  src: url(../public/fonts/Amaranth-Bold.ttf);
+}
+
+@font-face {
+  font-family: Manrope-Medium;
+  src: url(../public/fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url(../public/fonts/Manrope-SemiBold.ttf);
+}
+
+
 
 html,
 body {
@@ -2131,7 +2148,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   text-align: center;
   background-color: var(--theme-color);
   color: var(--white-color);
-  font-family: var(--body-font);
+  font-family: var(--style-font);
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2146,7 +2163,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   align-items: center;
   text-transform: capitalize;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   padding: 18.8px 35px;
   border-radius: 48px;
@@ -2574,7 +2591,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .sub-title {
   display: block;
   color: var(--title-color);
-  font-size: 40px;
+  font-size: 33px;
   line-height: 40px;
   font-weight: 400;
   font-family: var(--style-font) !important;
@@ -2641,7 +2658,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 .title-area .sec-title {
   margin-bottom: 22px;
-  font-family: Montserrat !important;
+  font-family: Manrope-SemiBold !important;
   margin-top: 15px !important;
   font-size: 30px;
 }
@@ -4787,7 +4804,7 @@ a.text-theme:hover,
   color: var(--black-color);
   border-radius: 0;
   border-bottom: 1px solid var(--gray-color);
-  font-family: "Montserrat";
+  font-family: "Manrope-SemiBold";
 }
 .widget_nav_menu a img,
 .widget_nav_menu a i,
@@ -6640,7 +6657,7 @@ ol.wp-block-rss {
   color: var(--black-color2);
   text-transform: capitalize;
   text-decoration: none;
-  font-family: Montserrat !important;
+  font-family: Manrope-SemiBold !important;
 }
 .main-menu a:hover {
   color: var(--theme-color);
@@ -7508,7 +7525,7 @@ ol.wp-block-rss {
 .newsletter-top .newsletter-title {
   font-size: 35px;
   font-weight: 600;
-  font-family: Montserrat !important;
+  font-family: Amaranth-Bold !important;
 }
 @media (max-width: 1199px) {
   .newsletter-top .newsletter-title {
@@ -7560,7 +7577,7 @@ ol.wp-block-rss {
   border: 1px solid #f9af2a;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  height: 60px;
+  height: 50px;
   border-radius: 35px;
 }
 .form-control {
@@ -19250,6 +19267,7 @@ span.select2-selection.select2-selection--single:focus {
 .category-area {
   padding: 165px 0 120px 0;
   margin-top: -55px;
+  padding-bottom: 55px;
 }
 .category-area .th-container {
   --main-container: 1750px;
@@ -24336,21 +24354,21 @@ nav ul li.dropdown:hover .dropdown-content {
   display: block !important;
 }
 .boxnew a {
-  font-family: Montserrat !important;
-  font-size: 19px !important;
+  font-family: Amaranth-Bold !important;
+  font-size: 22px !important;
 }
 .hero-title {
-  font-family: Montserrat !important;
-  font-size: 40px !important;
+  font-family: Amaranth-Bold !important;
+  font-size: 50px !important;
 }
 .sec-title {
-  font-family: Montserrat !important;
+  font-family: Amaranth-Bold !important;
 }
 .heading-new {
-  font-family: Montserrat !important;
+  font-family: Amaranth-Bold !important;
 }
 .sec-new {
-  font-family: Montserrat !important;
+  font-family: Amaranth-Bold !important;
 }
 
 .swipper-new .swiper-pagination {
@@ -24415,7 +24433,7 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .gallery-area {
-  margin-top: 50px !important;
+  margin-top: 100px !important;
   margin-bottom: 50px !important;
 }
 .new-tag {
@@ -24447,7 +24465,7 @@ nav ul li.dropdown:hover .dropdown-content {
     background-color 0.3s ease; /* Smooth transition */
   padding: 5px 10px; /* Add some padding for better click area */
   border-radius: 3px; /* Rounded corners for each item */
-  font-family: Montserrat;
+  font-family: Manrope-SemiBold;
   font-weight: 600;
 }
 
@@ -24500,11 +24518,11 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .modal-title {
-  font-family: Montserrat;
+  font-family: Manrope-SemiBold;
 }
 
 .modal-body p {
-  font-family: Montserrat;
+  font-family: Manrope-SemiBold;
 }
 
 .hero-description {
@@ -24513,7 +24531,7 @@ nav ul li.dropdown:hover .dropdown-content {
   margin-top: 10px; /* Add some spacing above the description */
 }
 .mt-5{
-  font-family: Montserrat;
+  font-family: Manrope-SemiBold;
   
 }
 
@@ -24552,7 +24570,7 @@ nav ul li.dropdown:hover .dropdown-content {
 
 .about-contact-details-text{
   color: #000000 !important;
-  font-family: Montserrat !important;
+  font-family: Manrope-SemiBold !important;
 }
 
 .video-background {

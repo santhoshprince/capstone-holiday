@@ -3,8 +3,9 @@ import TourList from "../components/card/sikkim";
 import Sidebar from "../components/sidebar";
 import Contentsection from "../components/contentbg";
 import Sikkim from "../components/tourdescription";
-import Balidesc from "../img/tour/358.jpg";
+import Balidesc from "../img/sikkim/3.jpg";
 import FAQ from "../components/Faq";
+import bg1 from "../img/sikkim/11.jpg";
 
 
 const SikkimTours = () => {
@@ -41,7 +42,7 @@ const SikkimTours = () => {
 
   return (
     <>
-      <Contentsection heading={"Sikkim"} children={"Destination"} />
+      <Contentsection heading={"Sikkim"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
