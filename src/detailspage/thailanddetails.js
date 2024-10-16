@@ -24,6 +24,7 @@ import galleryImage6_6 from "../img/Thailand/786.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/Thailand/2150668931.jpg";
+import { Helmet } from 'react-helmet';
 
 const TourThailand = () => {
   const { id } = useParams();
@@ -112,6 +113,26 @@ const TourThailand = () => {
   };
   return (
     <>
+     <Helmet>
+        <title>Thailand Tour Package from Chennai | Coimbatore</title>
+        <meta name="description" content="Our Thailand Tour Package from Chennai takes you to the finest tourist destinations to explore the Thai cultural identity and cuisines." />
+        <meta name="keywords" content="Thailand tour package from chennai, thailand tour, alcazar show, coral island, bangkok, pattaya, phuket, krabi, thai airways" />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/thailand-tour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">

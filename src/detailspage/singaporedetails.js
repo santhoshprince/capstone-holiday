@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/singapore/s10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/singapore/s2.jpg";
-
+import { Helmet } from 'react-helmet';
 const TourSingapore = () => {
   const { id } = useParams();
 
@@ -122,6 +122,26 @@ const TourSingapore = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Singapore and Malaysia Tour Packages | Chennai & Coimbatore</title>
+        <meta name="description" content="Check our customizable Singapore and Malaysia tour packages at Capstone Holidays to have a relaxed yet entertaining holiday." />
+        <meta name="keywords" content="Singapore and malaysia tour packages, singapore tour package, malaysia tour packages, flight tickets, malaysian airlines" />
+        
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/singapore-and-malaysia-tour-packages/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
       {/* Navigation Links */}
       <nav className="tour-navigation">

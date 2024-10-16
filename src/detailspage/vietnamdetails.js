@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/vietnam/10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/vietnam/3.jpg";
-
+import { Helmet } from 'react-helmet';
 const TourSingapore = () => {
   const { id } = useParams();
 
@@ -120,6 +120,26 @@ const TourSingapore = () => {
   };
   return (
     <>
+    <Helmet>
+        <title>Vietnam Cambodia Tour Package | Vietnam Sightseeing Places</title>
+        <meta name="description" content="With the Vietnam Cambodia tour package, you can visit the hotspot sites where we provide you with a hassle-free experience throughout the journey." />
+        <meta name="keywords" content="vietnam cambodia tour package, Vietnam tourist places, Vietnam sightseeing places, Vietnam tour package from Chennai, Vietnam combodia" />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/vietnam-cambodia-tour-package/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/vietnam-cambodia-tour-package/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">

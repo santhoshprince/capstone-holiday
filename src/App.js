@@ -83,9 +83,11 @@ import Layout from "./components/layout";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "typeface-poppins";
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router>
       <Layout>
         <ScrollToTop />
@@ -320,6 +322,7 @@ function App() {
         <Footer />
       </Layout>
     </Router>
+    </HelmetProvider>
   );
 }
 

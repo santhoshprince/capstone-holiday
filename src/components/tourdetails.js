@@ -2,7 +2,7 @@ import React from "react";
 import "./TourDetails.css"; // Import your CSS styles
 
 const TourDetails = ({
-  title,
+  title1,
   description,
   tourCode,
   duration,
@@ -20,7 +20,7 @@ const TourDetails = ({
 }) => {
   return (
     <div className="tour-details">
-      <h1>{title}</h1>
+      <h1>{title1}</h1>
       <p>{description}</p>
 
       <div className="tour-info">

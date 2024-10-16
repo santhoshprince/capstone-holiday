@@ -23,6 +23,7 @@ import galleryImage5_5 from "../img/Turkey/61059.jpg";
 import galleryImage6_6 from "../img/Turkey/2149275774.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/Turkey/176.jpg";
+import { Helmet } from 'react-helmet';
 
 const TourTurkey = () => {
   const { id } = useParams();
@@ -134,6 +135,26 @@ const TourTurkey = () => {
   };
   return (
     <>
+    <Helmet>
+        <title>Turkey Tour Packages from India | Chennai & Coimbatore</title>
+        <meta name="description" content="Turkey Tour Packages From India takes you to the must-visit places including Istanbul, Bursa, Kemaliye, Ahlat, Hatay, Vize, and many more." />
+        <meta name="keywords" content="turkey tour packages from india, turkey tourist places, turkey tour, turkey tour package from Chennai, tour tour package" />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/turkey-tour-packages-from-india/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/turkey-tour-packages-from-india/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">

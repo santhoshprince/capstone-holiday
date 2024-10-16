@@ -11,8 +11,7 @@ import destinationImg2 from "../assets/aboutusimg/tour-guide-6816049_1920.jpg";
 import destinationImg3 from "../assets/aboutusimg/plane-723888_1920.jpg";
 import destinationImg4 from "../assets/aboutusimg/map-of-the-world-60526_1920.jpg";
 
-
-
+import { Helmet } from 'react-helmet-async';
 import aboutbg from "../assets/aboutusimg/passport-2606782_1920.jpg";
 const AboutUs = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,6 +41,11 @@ const AboutUs = () => {
   };
   return (
     <>
+     <Helmet>
+        <title>About Us | Top Tour and Travel Companies in India</title>
+        <meta name="keywords" content="best tour and travel company, top tour and travel companies in India, tours and travels near me, best tour and travel company" />
+        <meta name="description" content="Launched in 2016, Capstone Holidays has an innovative team of specialists, and the best tour and travel company in Chennai with custom travel solutions." />
+      </Helmet>
       <ContentSection
         heading={"About Us"}
         children={"Tours and Travels company in Chennai"}

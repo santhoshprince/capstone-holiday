@@ -5,9 +5,9 @@ import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
-import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
+import { Helmet } from 'react-helmet';
 import galleryImage1 from "../img/tour/11021.jpg";
 import galleryImage2 from "../img/tour/12.jpg";
 import galleryImage3 from "../img/tour/835.jpg";
@@ -106,6 +106,20 @@ const BaliDetails = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727415378982!5m2!1sen!2sin",
 
       iconSrc: [location1],
+      tle: 'Bali Tour Packages from Chennai | Capstone Holidays',
+      keywords: 'bali tour packages from chennai, capstone holidays, bali tour, Coimbatore, bali tour package',
+      description: 'The Bali tour packages from Chennai are the solution for the ideal fusion of adventure and honeymoon',
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/bali-tour-packages-from-chennai/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/tour/bali-tour-packages-from-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
     },
     "bali-tour-places": {
       heading: "Bali Tourist Places",
@@ -162,12 +176,40 @@ const BaliDetails = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010291.3909974314!2d115.07157700000002!3d-8.455471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1728100116204!5m2!1sen!2sin",
 
       iconSrc: [location1],
+      title: 'Bali Tourist Places | Capstone Holidays',
+      keywords: 'bali tourist places, bali sightseeing places, bali international packages, bali flight tickets',
+      description: 'The Bali tour packages from Chennai are the solution for the ideal fusion of adventure and honeymoon',
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/bali-tourist-places/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/tour/bali-tourist-places/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
     }
   };
+  const { tourId } = useParams();
+ 
+
+
 
   // Get the path name to determine which tour details to show
   const path = window.location.pathname.split('/').pop(); // Gets the last part of the URL
-  const tour = tourDetails[path];
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour ? {
+    title: tour.title || "Default Title",
+    description: tour.description || "Default Description",
+    keywords: tour.keywords || "Default Keywords",
+  } : {
+    title: "Default Title",
+    description: "Default Description",
+    keywords: "Default Keywords",
+  };
 
   if (!tour) {
     return <div>Tour not found!</div>; // Fallback in case of no match
@@ -183,6 +225,12 @@ const BaliDetails = () => {
   return (
     <div>
       <>
+      <Helmet>
+        <title>{metaDetails.title}</title>
+        <meta name="description" content={metaDetails.description} />
+        <meta name="keywords" content={metaDetails.keywords} />
+        <script type="application/ld+json">{JSON.stringify(tour.schema)}</script>
+      </Helmet>
       <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">

@@ -61,6 +61,7 @@ import normal6 from "../img/normal/3.jpg";
 import normal7 from "../img/normal/4.jpg";
 import VideoSlider from "../components/videoslider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -153,6 +154,11 @@ const HeroSlider = () => {
   };
   return (
     <>
+     <Helmet>
+        <title>Tour Packages from Chennai | Family Tour Packages</title>
+        <meta name="keywords" content="Tour packages from Chennai, Tour packages, International tour packages, Domestic tour packages, Group tour packages, Family tour packages, Vacation packages, Holiday packages, Trip packages" />
+        <meta name="description" content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices." />
+      </Helmet>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
   {/* Video Background */}
   <div className="video-background">
