@@ -51,8 +51,8 @@ const TourPage = () => {
         galleryImage6_6,
       ],
 
-      description: [
-        "Embark on an unforgettable journey through Southeast Asia with our Singapore, Penang, and Phuket Cruise! This extraordinary voyage combines vibrant cityscapes, rich cultural heritage, and breathtaking beaches, offering the perfect blend of adventure and relaxation.",
+      description1: [
+        "Choose our Singapore Malaysia tour package with cruise on to experience the ultimate adventurous and fun trip. Singapore is an all-around romantic escape for couples due to its tropical atmosphere. Singapore is a traveler's paradise, especially during the January New Year, the big shopping festival from June to August, and the mid-autumn festival in October. Sentosa Island, Gardens by the Bay, Marina Bay, Henderson Bridge, Jurong Bird Park, and Universal Studios are the most visited and crowded tourist destinations in Singapore. Kuala Lumpur, Batu Caves, Mount Kinabalu, Sipadan Island, Pantai Cenang beach, Desaru beach, are the most admired tourist destinations in Malaysia. November to May is when Malaysia is most admired. During this month, which is favorable for tourism, our Singapore and Malaysia Tour Packages organise trips to both Singapore and Malaysia. Singapore can be visited and enjoyed throughout the year",
       ],
       duration: ["4 Nights, 5 Days"],
       shiphighlights: [
@@ -166,7 +166,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title={selectedTour.title}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

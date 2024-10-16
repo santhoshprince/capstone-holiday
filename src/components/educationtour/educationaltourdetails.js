@@ -82,7 +82,7 @@ const BaliDetails = () => {
         {
           day: "Day 1",
           details:
-            "Welcome to Kazakhstan. On arrival in Almaty our local representative outside the baggage hall area at the airport. Proceed to the hotel. Check into your hotel (Standard Check in time after 1500Hrs). Later in the evening proceed for orientation tour followed by dinner. Return to hotel.",
+            "Choose our Almaty tour package from India to witness the epic wonder of The Kolsai Lakes, Charyn Canyon, and Altyn-Emel National Park. These are Almaty's three main natural attractions, earning it the moniker Golden Triangle of Kazakhstan. This national park is the best illustration of Almaty's famed natural beauty. The park, which stretches from the George Turgen to the Chimlogan River, is the heart and spirit of the city. Lake Kaindy, First Presidents Park, Green Bazaar, Arasan Baths, Panfilov parks, Central State Museum, Shymbulak Ski Resort, Kok Tobe Hill, Ascension Cathedral, and Medeu are the places most loved by tourists every year. July to September (Summer) and November to January (Winter) are the best times to witness this natural wonder. Contact our Almaty tour operators at Capstone Holidays for more details",
         },
         {
           day: "Day 2",
@@ -215,8 +215,8 @@ const BaliDetails = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Embark on a captivating journey through the enchanting cities of Paris and the breathtaking landscapes of Switzerland. Begin your adventure in Paris, where you’ll discover the timeless beauty of the Eiffel Tower, cruise along the Seine River, and delve into the world-renowned art of the Louvre Museum. Explore the charming streets, indulge in French cuisine, and soak in the vibrant culture.",
+      description1: [
+        "Check our Paris Switzerland tour package from India to have a gorgeous honeymoon to celebrate your love at snow-capped Alps and the majestic Eiffel Tower. The three most romantic locations you can add and customize in your Switzerland tour package for couples are Mount Rigi, the Lauterbrunnen Valley, and Lake Geneva. Our Switzerland tour package for couples and Switzerland tour packages for family covers the trip to the most beautiful places like Basel, Zermatt, Saint Moritz, Chillon Castle, Matterhorn, Geneva, Interlaken, Bern, Rhine Falls, Zurich, Lucerne, Chapel Bridge, and so on. Paris is lovely throughout the year, be it the brilliant sunny days or the crisp fall air. Springtime in the city is bright and cheery, while summers are warmer. With vibrant leaves scattered across cobblestone streets, fall in Paris is just as picturesque",
       ],
       //   tourCode: ["CBT-22/01"],
       duration: ["9 Days 8 Nights"],
@@ -393,7 +393,7 @@ const BaliDetails = () => {
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
                   title1={tour.title1}
-                  description={tour.description}
+                  description1={tour.description1}
                   duration={tour.duration}
                   tourCode={tour.tourCode}
                   priceIncludes={tour.priceIncludes}
