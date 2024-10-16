@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 const TourItem = ({ imgSrc, title, rating, price, duration, detailPath }) => { 
   return (
     <div className="col-md-12" style={{marginBottom:"20px"}}>
-      <div className="tour-box th-ani">
-        <div className="tour-box_img global-img">
+      <div className="tour-box th-ani new-card">
+        <div className="tour-box_img global-img card-new img-card-total">
           <img src={imgSrc} alt="image" />
         </div>
         <div className="tour-content">

@@ -22,7 +22,7 @@ import galleryImage3_3 from "../img/gallery/4911.jpg";
 import galleryImage4_4 from "../img/gallery/4852.jpg";
 import galleryImage5_5 from "../img/gallery/835.jpg";
 import galleryImage6_6 from "../img/gallery/1110.jpg";
-
+import { Helmet } from 'react-helmet';
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/bg/5.jpg";
 
@@ -129,8 +129,29 @@ const TourMaldives = () => {
     ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   };
   return (
+
     <>
+    <Helmet>
+                <title>Maldives Tour Package from Chennai | Coimbatore</title>
+                <meta name="description" content="Our Maldives Tour Package From Chennai takes you to the most blissful places to enjoy with the family or as a couple" />
+                <meta name="keywords" content="maldives tour package from chennai, maldives tour, hotel, maldives flight, Maldives tour package" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Capstone Holidays",
+                        "url": "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    })}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+
+
         {/* Navigation Links */}
         <nav className="tour-navigation">
         <ul>

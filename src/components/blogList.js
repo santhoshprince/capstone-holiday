@@ -198,24 +198,22 @@ const BlogList = () => {
 
   return (
     <section className="th-blog-wrapper space-top space-extra-bottom">
-      <div className="container">
-        <div className="row">
-          <div className="col-xxl-10 col-lg-10">
-            {/* Blog List */}
-            {currentBlogs.map((blog, index) => (
-              <BlogItem key={index} {...blog} />
-            ))}
-
-            {/* Pagination */}
-            <Pagination
-              totalPages={totalPages}
-              currentPage={currentPage}
-              onPageChange={handlePageChange}
-            />
+    <div className="container">
+      <div className="row">
+        {currentBlogs.map((blog, index) => (
+          <div className="col-lg-6 col-md-6 col-sm-12" key={index}>
+            <BlogItem {...blog} />
           </div>
-        </div>
+        ))}
       </div>
-    </section>
+      {/* Pagination */}
+      <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
+    </div>
+  </section>
   );
 };
 

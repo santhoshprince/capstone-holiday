@@ -14,7 +14,7 @@ import galleryImage3 from "../img/kashmir/2.jpg";
 import galleryImage4 from "../img/kashmir/3.jpg";
 import galleryImage5 from "../img/kashmir/12.jpg";
 import galleryImage6 from "../img/kashmir/11.jpg";
-
+import { Helmet } from "react-helmet";
 import galleryImage1_1 from "../img/kashmir/10.jpg";
 import galleryImage2_2 from "../img/kashmir/9.jpg";
 import galleryImage3_3 from "../img/kashmir/8.jpg";
@@ -35,7 +35,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "Kashmir Honeymoon Tour Package",
-      title: "Kashmir Honeymoon Tour Package",
+      title1: "Kashmir Honeymoon Tour Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -123,9 +123,42 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: "Kashmir Honeymoon Package for Couple | Capstone",
+    keywords:
+      "kashmir honeymoon package for couple, kashmir honeymoon packages from chennai, kashmir honeymoon packages, kashmir honeymoon plan, kashmir honeymoon trip",
+    description:
+      "Capstone Holidays provides customised Kashmir honeymoon package for couple that are made to guarantee an unforgettable experience with affordable costs.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/kashmir-honeymoon-package-for-couple/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/kashmir-honeymoon-package-for-couple/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
+
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -175,7 +208,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

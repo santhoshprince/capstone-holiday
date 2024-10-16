@@ -14,7 +14,7 @@ import galleryImage3 from "../img/Thailand/1025.jpg";
 import galleryImage4 from "../img/Thailand/1358.jpg";
 import galleryImage5 from "../img/Thailand/568.jpg";
 import galleryImage6 from "../img/Thailand/771.jpg";
-
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/Thailand/434.jpg";
 import galleryImage2_2 from "../img/Thailand/895.jpg";
 import galleryImage3_3 from "../img/Thailand/570.jpg";
@@ -38,7 +38,7 @@ const TourThailand = () => {
   const toursData = {
     1: {
       heading: "Thailand Group Tour Package – 4N / 5D",
-      title: "Thailand Group Tour Package – 4N / 5D",
+      title1: "Thailand Group Tour Package – 4N / 5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -110,8 +110,34 @@ const TourThailand = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Thailand Group Tour Package | 4N/5D Thailand Tour Packages',
+    keywords: 'thailand group tour package, 4n 5d thailand tour packages, thailand group tour package, thailand group tour, thailand group, thailand',
+    description: 'Thailand is the ideal destination for group tours. Choose the Thailand Group Tour Package when it comes to group tours.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/thailand-group-tour-package/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/thailand-group-tour-package/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
+
   return (
     <>
+    <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
       {/* Navigation Links */}
       <nav className="tour-navigation">
@@ -164,7 +190,7 @@ const TourThailand = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}

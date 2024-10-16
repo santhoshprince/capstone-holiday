@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import Sidebar from "../../components/sidebar";
+import { useParams } from "react-router-dom";
+
 import Contentsection from "../../components/contentbg";
 import DetailSlider from "../../components/detailslider";
 import DetailsGallery from "../../components/detailsgallery";
@@ -22,6 +24,8 @@ import galleryImage5_5 from "../../img/gallery/11021.jpg";
 import galleryImage6_6 from "../../img/gallery/2151625212.jpg";
 import location1 from "../../img/icon/location-dot3.svg";
 
+import { Helmet } from "react-helmet";
+
 const BaliDetails = () => {
   const detailsitinerary = useRef(null);
   const detailsGalleryRef = useRef(null);
@@ -29,9 +33,9 @@ const BaliDetails = () => {
   const locationMapRef = useRef(null);
   // Sample data - you can replace this with your actual content
   const tourDetails = {
-    "almaty-tour-package": {
+    "almaty-tour-package-from-india": {
       heading: "Almaty Tour Packages",
-      title: "Almaty Tour Packages",
+      title1: "Almaty Tour Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -119,10 +123,24 @@ const BaliDetails = () => {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186085.0994370431!2d76.9525157!3d43.2183046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2sAlmaty%2C%20Kazakhstan!5e0!3m2!1sen!2sin!4v1728873560658!5m2!1sen!2sin",
 
       iconSrc: [location1],
+      title: 'Almaty Tour Package from India | Chennai & Coimbatore',
+      keywords: 'almaty tour package from india, almaty tour package, almaty tour, almaty, almaty tour package from chennai, velachery',
+      description: 'Choose our Almaty tour package from India to witness the epic wonder of The Kolsai Lakes, Charyn Canyon, and Altyn-Emel National Park.',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/almaty-tour-package-from-india/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/almaty-tour-package-from-india/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
     },
-    "paris-and-swiss-tour-package": {
+    "paris-switzerland-tour-package-from-india": {
       heading: "Trip to	Paris & Swiss",
-      title: "Trip to Paris & Swiss",
+      title1: "Trip to Paris & Swiss",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -221,12 +239,40 @@ const BaliDetails = () => {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9185124463!2d2.347035!3d48.85885484999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1728873398440!5m2!1sen!2sin",
 
       iconSrc: [location1],
+
+      title: 'Paris Switzerland Tour Package from India | Capstone Holidays',
+      keywords: 'paris switzerland tour package from india, paris switzerland tour package, paris switzerland tour package from chennai, paris switzerland tour, paris switzerland',
+      description: 'Check our Paris Switzerland tour package from India to have a gorgeous honeymoon to celebrate your love at snow-capped Alps and the majestic Eiffel Tower.',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/paris-switzerland-tour-package-from-india/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/paris-switzerland-tour-package-from-india/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
+      
     }
   };
- 
+  const { tourId } = useParams();
   // Get the path name to determine which tour details to show
-  const path = window.location.pathname.split('/').pop(); // Gets the last part of the URL
-  const tour = tourDetails[path];
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
 
   if (!tour) {
     return <div>Tour not found!</div>; // Fallback in case of no match
@@ -242,6 +288,14 @@ const BaliDetails = () => {
   return (
     <div>
       <>
+      <Helmet>
+          <title>{metaDetails.title}</title>
+          <meta name="description" content={metaDetails.description} />
+          <meta name="keywords" content={metaDetails.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(tour.schema)}
+          </script>
+        </Helmet>
       <Contentsection heading={tour.heading} children={""} />
 
       <nav className="tour-navigation">
@@ -292,7 +346,7 @@ const BaliDetails = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={tour.title}
+                title1={tour.title1}
                 description={tour.description}
                 duration={tour.duration}
                 tourCode={tour.tourCode}

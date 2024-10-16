@@ -40,7 +40,7 @@ const Header = () => {
       },
     ],
     groupTour: [
-      { name: "Kerala", link: "/tour-destination/kerala-group-tour" },
+      { name: "Kerala", link: "/tour/kerala-group-tour-package" },
       { name: "Andaman", link: "/tour/andaman-group-tour-packages" },
       { name: "Bali", link: "/tour/bali-group-tour-package" },
       { name: "Shimla & Manali", link: "/tour/shimla-manali-group-tour" },
@@ -53,16 +53,16 @@ const Header = () => {
       { name: "Vietnam", link: "/tour/vietnam-group-tour-packages" },
     ],
     EuropeTour: [
-      { name: "Azerbaijan", link: "/tour-destination/azerbaijan-europe-tour" },
-      { name: "China", link: "/tour/china-europe-tour-package" },
-      { name: "Greece", link: "/tour/greece-europe-tour-package" },
+      { name: "Azerbaijan", link: "/azerbaijan-tour-packages-from-india" },
+      { name: "China", link: "/china-tour-package-from-chennai" },
+      { name: "Greece", link: "/greece-tour-packages-from-india" },
     ],
     HoneymoonTour: [
-      { name: "Andaman", link: "/tour/anadaman-honeymoon-tour-packages" },
-      { name: "Bali", link: "/tour/bali-honeymoon-tour-packages" },
-      { name: "Kashmir", link: "/tour/kashmir-honeymoon-tour-packages" },
-      { name: "Kerala", link: "/tour/kerala-honeymoon-tour-packages" },
-      { name: "Rajasthan", link: "/tour/rajasthan-honeymoon-tour-packages" },
+      { name: "Andaman", link: "/andaman-honeymoon-packages-from-chennai" },
+      { name: "Bali", link: "/bali-honeymoon-packages-from-chennai" },
+      { name: "Kashmir", link: "/kashmir-honeymoon-package-for-couple" },
+      { name: "Kerala", link: "/kerala-honeymoon-packages-from-chennai" },
+      { name: "Rajasthan", link: "/agra-honeymoon-package" },
     ],
   };
 
@@ -81,11 +81,11 @@ const Header = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="international-tour-package">Tour Packages</Link>
+              <Link to="#">Tour Packages</Link>
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <Link to="international-tour-package"  className="link-container">
+                    <Link to="/international-tour-packages-from-chennai"  className="link-container">
                       <h3>International Packages</h3>
                     </Link>
                     <ul>
@@ -101,7 +101,7 @@ const Header = () => {
                   </div>
                   {/* <div className="divider" />  */}
                   <div className="dropdown-section domestic">
-                    <Link to="domestic-tour-package">
+                    <Link to="/domestic-tour-packages-from-chennai">
                       <h3>Domestic Packages</h3>
                     </Link>
 
@@ -143,11 +143,11 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link to="europe-tour-packages">Europe Tour</Link>
+              <Link to="europe-tour-packages-from-chennai">Europe Tour</Link>
               <div className="dropdownnew">
                 <div className="dropdown-containernew">
                   <div className="dropdown-sectionnew international">
-                    <Link to="europe-tour-packages" className="link-container">
+                    <Link to="europe-tour-packages-from-chennai" className="link-container">
                       <h3>Europe Tour Packages</h3>
                     </Link>
 
@@ -166,11 +166,11 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link to="/honeymoon-tour-packages">Honeymoon Tour</Link>
+              <Link to="/honeymoon-packages-from-chennai">Honeymoon Tour</Link>
               <div className="dropdownnew">
                 <div className="dropdown-containernew">
                   <div className="dropdown-sectionnew international">
-                    <Link to="/honeymoon-tour-packages" className="link-container">
+                    <Link to="/honeymoon-packages-from-chennai" className="link-container">
                       <h3>Honeymoon Tour Packages</h3>
                     </Link>
                     <ul>
@@ -189,7 +189,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link to="/blogs">Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
 
             <li>

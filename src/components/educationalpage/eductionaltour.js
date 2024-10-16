@@ -4,12 +4,40 @@ import Sidebar from "../../components/sidebar";
 import Contentsection from "../../components/contentbg";
 import EducationalDescription from "../../components/tourdescription";
 import Balidesc from "../../img/tour/358.jpg";
+import { Helmet } from 'react-helmet';
 
 const HimchalTour = () => {
 
+  const seoData = {
+    title: 'Educational Tour Packages | Educational Trips for Students',
+    keywords: 'educational tour packages, educational trips for students, educational tour, educational tour packages in india, capstone, chennai, students trip',
+    description: 'Choose our educational tour packages for research and educational tours. Take a break from your hectic study schedule and we are always happy to help you.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/educational-tour-packages/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/educational-tour-packages/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
-      <Contentsection heading={"Educational Tour Package"} children={"Destination"} />
+     <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
+      <Contentsection
+        heading={"Educational Tour Package"}
+        children={"Destination"}
+      />
 
       <section className="space">
         <div className="container">

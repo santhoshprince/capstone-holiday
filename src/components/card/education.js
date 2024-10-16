@@ -12,8 +12,9 @@ const TourList = () => {
       rating: 4.8,
       price: "9,435",
       duration: "4 Days 5 Nights",
-      detailPath: '/tour/almaty-tour-package',
+      detailPath: '/almaty-tour-package-from-india',
     },
+    
     {
       id: 2,
       imgSrc: bali2,
@@ -21,7 +22,7 @@ const TourList = () => {
       rating: 4.8,
       price: "5,80,000",
       duration: "8 Nights, 9 Days",
-      detailPath: '/tour/paris-and-swiss-tour-package',
+      detailPath: '/paris-switzerland-tour-package-from-india',
     },
   ];
 

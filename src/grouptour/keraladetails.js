@@ -14,6 +14,7 @@ import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
+import { Helmet } from 'react-helmet';
 
 import galleryImage1_1 from "../img/gallery/358.jpg";
 import galleryImage2_2 from "../img/gallery/343.jpg";
@@ -34,7 +35,7 @@ const GroupTour = () => {
   const toursData = {
     1: {
       heading: "Kerala Group Tour package",
-     title: "Kerala Group Tour package",
+     title1: "Kerala Group Tour package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -131,8 +132,32 @@ const GroupTour = () => {
       inline: "nearest",
     });
   };
+  const seoData = {
+    title: 'Kerala Group Tour Package | Kerala Munnar Group Tour',
+    keywords: 'kerala group tour package, kerala munnar group tour, kerala group tour, kerala group, kerala munnar group tour packages, kerala munnar group tour',
+    description: 'We offer the greatest Kerala Group Tour package that is affordable for an exciting holiday with a group of people.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/kerala-group-tour-package/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/kerala-group-tour-package/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+     <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} />
 
       <nav className="tour-navigation">
@@ -183,7 +208,7 @@ const GroupTour = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

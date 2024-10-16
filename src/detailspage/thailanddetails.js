@@ -15,6 +15,7 @@ import galleryImage4 from "../img/Thailand/1358.jpg";
 import galleryImage5 from "../img/Thailand/568.jpg";
 import galleryImage6 from "../img/Thailand/771.jpg";
 
+
 import galleryImage1_1 from "../img/Thailand/434.jpg";
 import galleryImage2_2 from "../img/Thailand/895.jpg";
 import galleryImage3_3 from "../img/Thailand/570.jpg";

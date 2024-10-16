@@ -22,6 +22,8 @@ import galleryImage4_4 from "../img/kerala/3.jpg";
 import galleryImage5_5 from "../img/kerala/2.jpg";
 import galleryImage6_6 from "../img/kerala/1.jpg";
 
+import { Helmet } from "react-helmet";
+
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/kerala/17.jpg";
 
@@ -36,7 +38,7 @@ const TourPage = () => {
   const tourDetails = {
     "kerala-tour-packages-from-chennai": {
       heading: "Kerala Tour Packages from Chennai",
-      title: "Kerala Tour Packages from Chennai",
+      title1: "Kerala Tour Packages from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -111,10 +113,24 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8033168.194719898!2d76.138367!3d10.544276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1728191882805!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: 'Kerala Tour Packages from Chennai | Coimbatore',
+        keywords: 'kerala tour packages from chennai, kerala tour package, kerala tour, kerala tourist places, kerala tour, kerala',
+        description: 'Our Kerala tour packages from Chennai covers Kerala honeymoon trip and Kerala family trip to the must visit beaches, hill stations and backwaters in a week',
+        schema: {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/kerala-tour-packages-from-chennai/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.capstoneholidays.in/tour/kerala-tour-packages-from-chennai/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
     },
     "munnar-tour-package": {
       heading: "Cochin Munnar Tour Package",
-      title: "Cochin Munnar Tour Package",
+      title1: "Cochin Munnar Tour Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -192,10 +208,42 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8033168.194719898!2d76.138367!3d10.544276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1728191882805!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: 'Munnar Tour Package | Chennai & Coimbatore',
+      keywords: 'Munnar Tour Package, munnar tour, munnar, kerala, munnar sightseeing places, capstone holidays',
+      description: 'We have selected the best Munnar tour package to add more particular touches in endless tea estates and slopes with delectable cuisines to your Munnar trip',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/munnar-tour-package/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/munnar-tour-package/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
     },
   };
+  const { tourId } = useParams();
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
-  const selectedTour = tourDetails[path];
+  
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
+
+  if (!tour) {
+    return <div>Tour not found!</div>; // Fallback in case of no match
+  }
   // const tourDetails = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
@@ -207,7 +255,15 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+     <Helmet>
+          <title>{metaDetails.title1}</title>
+          <meta name="description" content={metaDetails.description} />
+          <meta name="keywords" content={metaDetails.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(tour.schema)}
+          </script>
+        </Helmet>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
 
       <nav className="tour-navigation">
         <ul>
@@ -229,7 +285,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -242,14 +298,14 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={selectedTour.itinerary}
+                itineraryData={tour.itinerary}
               />
             </div>
           </div>
@@ -257,14 +313,14 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
+                title1={tour.title1}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
               />
             </div>
           </div>
@@ -274,8 +330,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

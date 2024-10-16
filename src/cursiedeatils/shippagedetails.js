@@ -15,6 +15,8 @@ import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
 
+import { Helmet } from 'react-helmet';
+
 import galleryImage1_1 from "../img/gallery/358.jpg";
 import galleryImage2_2 from "../img/gallery/343.jpg";
 import galleryImage3_3 from "../img/gallery/369.jpg";
@@ -107,8 +109,34 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Singapore Malaysia Tour Package with Cruise',
+    keywords: 'singapore malaysia tour package with cruise, cruise tour packages, cruise packages, cruise tour, cruise ship tour plan',
+    description: 'Choose our Singapore Malaysia tour package with cruise on these months to experience the ultimate adventurous and fun trip.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-with-cruise/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+
+<Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} />
 
       <nav className="tour-navigation">

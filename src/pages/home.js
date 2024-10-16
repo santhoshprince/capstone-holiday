@@ -196,7 +196,7 @@ const HeroSlider = () => {
               data-ani="slideinup"
               data-ani-delay="0.6s"
             >
-              <a href="international-tour-package" className="th-btn th-icon">
+              <a href="/international-tour-packages-from-chennai" className="th-btn th-icon">
                 Explore Tours
               </a>
               <a href="contact" className="th-btn style2 th-icon">
@@ -244,7 +244,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/international-tour-package">International Tour</a>
+                  <a href="/international-tour-packages-from-chennai">International Tour</a>
                 </h3>
 
                 <a
@@ -272,7 +272,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="domestic-tour-package">Domestic Tour</a>
+                  <a href="/domestic-tour-packages-from-chennai">Domestic Tour</a>
                 </h3>
                 <a
                   className="line-btn"
@@ -299,7 +299,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="europe-tour-packages">Europe Tour</a>
+                  <a href="europe-tour-packages-from-chennai">Europe Tour</a>
                 </h3>
                 <a
                   className="line-btn"
@@ -324,7 +324,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="honeymoon-tour-packages">Honeymoon Package</a>
+                  <a href="/honeymoon-packages-from-chennai">Honeymoon Package</a>
                 </h3>
                 <a
                   className="line-btn"
@@ -374,7 +374,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/tour-destination/educational-tour">Educational Tour</a>
+                  <a href="/educational-tour-packages">Educational Tour</a>
                 </h3>
                 <a
                   className="line-btn"
@@ -399,7 +399,7 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/tour/cruise-package">Cruise</a>
+                  <a href="/singapore-malaysia-tour-package-with-cruise">Cruise</a>
                 </h3>
                 <a
                   className="line-btn"

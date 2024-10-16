@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
 import bali from "../../img/kerala/17.jpg";
 import bali2 from "../../img/andaman/6.jpg";
@@ -9,9 +9,8 @@ import singapore from "../../img/singapore/s1.jpg";
 import thailand from "../../img/Thailand/779.jpg";
 import vietnam from "../../img/vietnam/12.jpg";
 import Contentbg from "../../components/contentbg";
-import Sidebar from "../../components/sidebar";
-import Pagination from "../../components/blogpagination"; // Your Pagination component
 import bg1 from "../../img/bg/hero_bg_7_1.jpg";
+import { Helmet } from 'react-helmet';
 
 const TourList = () => {
   // The array of tour items
@@ -22,7 +21,7 @@ const TourList = () => {
       rating: 4.7,
       price: "7,225",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour-destination/kerala-group-tour",
+      detailPath: "/tour/kerala-group-tour-package",
     },
     {
       imgSrc: bali2,
@@ -82,44 +81,44 @@ const TourList = () => {
     },
   ];
 
-  // Pagination state
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2; // Number of items to show per page
-
-  // Calculate total pages
-  const totalPages = Math.ceil(tours.length / itemsPerPage);
-
-  // Get current page items
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentTours = tours.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Function to handle page change
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  const seoData = {
+    title: 'Group Tour Packages | International Group Tour Packages',
+    keywords: 'group tour packages, international group tour packages, domestic group tour packages from india, international group tour, domestic group tour',
+    description: 'Avail our Group Tour Packages for thrilling yet memorable domestic and international trips. Choose Capstone Holidays for customized group tours.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/group-tour-packages/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/group-tour-packages/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
 
   return (
     <>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <Contentbg heading={"Group Tour Packages"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-lg-7">
-              {currentTours.map((tour, index) => (
-                <TotalCard key={index} {...tour} />
-              ))}
-              {/* Pagination component */}
-              <Pagination
-                totalPages={totalPages}
-                currentPage={currentPage}
-                onPageChange={handlePageChange}
-              />
-            </div>
-            <div className="col-xxl-4 col-lg-5">
-              <Sidebar />
-            </div>
+            {/* Map through tours and create cards */}
+            {tours.map((tour, index) => (
+              <div className="col-xxl-4 col-lg-4 col-md-6" key={index}>
+                <TotalCard {...tour} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -15,6 +15,8 @@ import galleryImage4 from "../img/china/1.jpg";
 import galleryImage5 from "../img/china/9.jpg";
 import galleryImage6 from "../img/china/15.jpg";
 
+import { Helmet } from 'react-helmet';
+
 import galleryImage1_1 from "../img/china/10.jpg";
 import galleryImage2_2 from "../img/china/11.jpg";
 import galleryImage3_3 from "../img/china/3.jpg";
@@ -147,8 +149,32 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+  const seoData = {
+    title: 'China Tour Package from Chennai | Velachery',
+        keywords: 'china tour package from chennai, china tour package, china tour, china, china tour from india',
+        description: 'Our China tour package from Chennai is designed ideally so that our customers do not miss these legacies in China.',
+        schema: {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/china-tour-package-from-chennai/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.capstoneholidays.in/china-tour-package-from-chennai/{search_term_string}",
+                "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+     <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">

@@ -25,17 +25,17 @@ import galleryImage6_6 from "../img/andaman/13.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/andaman/9.jpg";
 
-const TourPage = () => {
-  const { id } = useParams();
+import { Helmet } from "react-helmet";
 
+const TourPage = () => {
   const detailsitinerary = useRef(null);
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
-    1: {
+  const tourDetails = {
+    "andaman-tour-package-from-chennai": {
       heading: "Andaman Tour Package from Chennai",
-      title: "Andaman Tour Package from Chennai",
+      title1: "Andaman Tour Package from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -122,10 +122,24 @@ const TourPage = () => {
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d250116.67994327686!2d92.722464!3d11.618137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088946c176b5971%3A0x5bfa43a5e9a5ed30!2sSri%20Vijaya%20Puram%2C%20Andaman%20and%20Nicobar%20Islands!5e0!3m2!1sen!2sin!4v1728185002454!5m2!1sen!2sin",
 
       iconSrc: [location1],
+      title: 'Andaman Tour Package from Chennai | Andaman Holiday Packages',
+      keywords: 'andaman tour package from chennai, andaman holiday packages, andaman tour package, andaman tour, andaman',
+      description: 'Andaman tour package from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for a Andaman trip in October to April',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/andaman-tour-package-from-chennai/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/andaman-tour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      } 
     },
-    2: {
+    "andaman-and-nicobar-islands-package": {
       heading: "Andaman and Nicobar Islands Package",
-      title: "Andaman and Nicobar Islands Package",
+      title1: "Andaman and Nicobar Islands Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -205,10 +219,46 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d250116.67994327686!2d92.722464!3d11.618137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088946c176b5971%3A0x5bfa43a5e9a5ed30!2sSri%20Vijaya%20Puram%2C%20Andaman%20and%20Nicobar%20Islands!5e0!3m2!1sen!2sin!4v1728184776704!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: 'Andaman and Nicobar Islands Package | Andaman Island Package',
+      keywords: 'andaman and nicobar islands package, andaman island package, andaman hotels, meals, andaman beach, andaman island, nicober island',
+      description: 'Explore the most magnificent spots with the Andaman and Nicobar Islands package from beaches to Islands that one may visit in the Andaman Islands',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/andaman-and-nicobar-islands-package/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/andaman-and-nicobar-islands-package/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
+      
     },
   };
 
-  const selectedTour = toursData[id] || toursData[1];
+  const { tourId } = useParams();
+
+  // Get the path name to determine which tour details to show
+  const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
+
+  if (!tour) {
+    return <div>Tour not found!</div>; // Fallback in case of no match
+  }
+
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
@@ -219,7 +269,15 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+    <Helmet>
+          <title>{metaDetails.title}</title>
+          <meta name="description" content={metaDetails.description} />
+          <meta name="keywords" content={metaDetails.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(tour.schema)}
+          </script>
+        </Helmet>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
 
       <nav className="tour-navigation">
         <ul>
@@ -241,7 +299,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -254,14 +312,14 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={selectedTour.itinerary}
+                itineraryData={tour.itinerary}
               />
             </div>
           </div>
@@ -269,14 +327,14 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
+                title1={tour.title}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
               />
             </div>
           </div>
@@ -286,8 +344,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

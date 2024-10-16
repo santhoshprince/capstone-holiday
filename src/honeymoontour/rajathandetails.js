@@ -14,7 +14,7 @@ import galleryImage3 from "../img/Rajasthan/8.jpg";
 import galleryImage4 from "../img/Rajasthan/9.jpg";
 import galleryImage5 from "../img/Rajasthan/10.jpg";
 import galleryImage6 from "../img/Rajasthan/2.jpg";
-
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/Rajasthan/12.jpg";
 import galleryImage2_2 from "../img/Rajasthan/11.jpg";
 import galleryImage3_3 from "../img/Rajasthan/14.jpg";
@@ -34,9 +34,9 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
 
   const tourDetails = {
-    "rajasthan-honeymoon-tour-packages": {
-      heading: "Rajasthan Honeymoon Tour Packages",
-      title: "Rajasthan Honeymoon Tour Packages",
+    "agra-honeymoon-package": {
+      heading: "Agra Honeymoon Tour Packages",
+      title1: "Agra Honeymoon Tour Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -110,10 +110,12 @@ const TourPage = () => {
         },
       ],
       mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14608903.200457694!2d73.878347!3d26.628408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1728201755880!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.76975425675!2d77.98001294999999!3d27.1761745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1729060120261!5m2!1sen!2sin",
       iconSrc: [location1],
     },
   };
+
+
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
   const selectedTour = tourDetails[path];
   // const tourDetails = toursData[id] || toursData[1];
@@ -125,8 +127,32 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+  const seoData = {
+    title: 'Agra Honeymoon Package | Capstone Holidays Coimbatore',
+    keywords: 'agra honeymoon package, agra honeymoon package from Chennai, agra honeymoon packages, agra honeymoon tour, agra honeymoon tour plan',
+    description: 'The Agra honeymoon package is intended for honeymoon couples to rediscover their love in the city that is home to the pinnacle of romantic architecture.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/agra-honeymoon-package/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/agra-honeymoon-package/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+      <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
@@ -177,7 +203,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

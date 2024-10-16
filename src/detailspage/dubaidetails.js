@@ -9,6 +9,7 @@ import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/Dubai/d7.jpg";
+import { Helmet } from 'react-helmet';
 import galleryImage2 from "../img/Dubai/d8.jpg";
 import galleryImage3 from "../img/Dubai/d9.jpg";
 import galleryImage4 from "../img/Dubai/d10.jpg";
@@ -123,6 +124,24 @@ const TourDubai = () => {
   return (
     <>
       <Contentsection heading={selectedTour.heading} children={""}  backgroundImage={bg1}/>
+      <Helmet>
+                <title>Dubai Tour Packages from Chennai | Coimbatore | Capstone</title>
+                <meta name="description" content="Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots" />
+                <meta name="keywords" content="Dubai tour packages from chennai, dubai tour, dubai tourist places, dubai flight, dubai tour package" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Capstone Holidays",
+                        "url": "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://www.capstoneholidays.in/tour/dubai-tour-packages-from-chennai/{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    })}
+                </script>
+            </Helmet>
       {/* Navigation Links */}
       <nav className="tour-navigation">
         <ul>

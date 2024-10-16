@@ -14,7 +14,7 @@ import galleryImage3 from "../img/vietnam/9.jpg";
 import galleryImage4 from "../img/vietnam/12.jpg";
 import galleryImage5 from "../img/vietnam/7.jpg";
 import galleryImage6 from "../img/vietnam/v1.jpg";
-
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/vietnam/v1.jpg";
 import galleryImage2_2 from "../img/vietnam/v2.jpg";
 import galleryImage3_3 from "../img/vietnam/3.jpg";
@@ -37,7 +37,7 @@ const TourSingapore = () => {
   const toursData = {
     1: {
       heading: "Vietnam Group Tour Packages – 3N / 4D",
-      title: "Vietnam Group Tour Packages – 3N / 4D",
+      title1: "Vietnam Group Tour Packages – 3N / 4D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -118,8 +118,33 @@ const TourSingapore = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Vietnam Group Tour Packages | 3N/4D Vietnam Group Tour Plan',
+    keywords: 'Vietnam Group Tour Packages, Vietnam Group Tour Packages from India, Vietnam Group Tour Packages from Chennai, Vietnam Group Tour, Vietnam',
+    description: 'The Vietnam Group Tour Packages takes you to the main cities such as Da Nang, Hanoi, and Ho Chi Minh City (Saigon), Hue, Hoi An, Nha Trang, Da Lat, and Mui Ne.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/vietnam-group-tour-packages/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/vietnam-group-tour-packages/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+     <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">
@@ -172,7 +197,7 @@ const TourSingapore = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}

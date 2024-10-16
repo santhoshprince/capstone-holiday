@@ -14,7 +14,7 @@ import galleryImage3 from "../img/kashmir/2.jpg";
 import galleryImage4 from "../img/kashmir/3.jpg";
 import galleryImage5 from "../img/kashmir/12.jpg";
 import galleryImage6 from "../img/kashmir/11.jpg";
-
+import { Helmet } from "react-helmet";
 import galleryImage1_1 from "../img/kashmir/10.jpg";
 import galleryImage2_2 from "../img/kashmir/9.jpg";
 import galleryImage3_3 from "../img/kashmir/8.jpg";
@@ -32,7 +32,7 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
+  const tourDetails = {
     "kashmir-tour-packages-from-chennai": {
       heading: "Kashmir Tour Packages from Chennai",
       title: "Kashmir Tour Packages from Chennai",
@@ -142,6 +142,20 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405659.0703622214!2d75.264724!3d33.531573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1092499ffa89d%3A0x6567a6d4697e7f1!2sJammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1728194518249!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: 'Kashmir Tour Packages from Chennai | Coimbatore',
+      keywords: 'kashmir tour packages from Chennai, Kashmir tour package, Kashmir tour, kashmir',
+      description: 'We provide Kashmir tour packages from Chennai so you may enjoy some regions like Gulmarg, Sri Nagar, Pahalgam, and Sonmarg in the springtime',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/kashmir-tour-packages-from-chennai/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/kashmir-tour-packages-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
     },
 
    "srinagar-tour-packages" : {
@@ -240,12 +254,45 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405659.0703622214!2d75.264724!3d33.531573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1092499ffa89d%3A0x6567a6d4697e7f1!2sJammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1728194518249!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: 'Srinagar Tour Packages | Capstone Holidays Coimbatore',
+      keywords: 'srinagar tour packages, srinagar tour, kashmir flight tickets, kashmir hotels',
+      description: 'Book our Srinagar Tour Packages and enjoy the memorable Dal Lake Shikara ride, Mughal Gardens visit, and relish the tastiest retreat of Kashmir',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/srinagar-tour-packages/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/srinagar-tour-packages/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
     },
   };
 
+  const { tourId } = useParams();
 
+  // Get the path name to determine which tour details to show
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
-  const selectedTour = toursData[path];
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
+
+  if (!tour) {
+    return <div>Tour not found!</div>; // Fallback in case of no match
+  }
+
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",
@@ -255,7 +302,15 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+    <Helmet>
+          <title>{metaDetails.title}</title>
+          <meta name="description" content={metaDetails.description} />
+          <meta name="keywords" content={metaDetails.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(tour.schema)}
+          </script>
+        </Helmet>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
 
       <nav className="tour-navigation">
         <ul>
@@ -277,7 +332,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -290,14 +345,14 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={selectedTour.itinerary}
+                itineraryData={tour.itinerary}
               />
             </div>
           </div>
@@ -305,15 +360,15 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
-                note={selectedTour.note}
+                title={tour.title}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
+                note={tour.note}
               />
             </div>
           </div>
@@ -323,8 +378,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

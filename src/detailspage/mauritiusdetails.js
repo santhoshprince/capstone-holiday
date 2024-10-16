@@ -14,6 +14,7 @@ import galleryImage3 from "../img/mauritius/1356.jpg";
 import galleryImage4 from "../img/mauritius/1821.jpg";
 import galleryImage5 from "../img/mauritius/2684.jpg";
 import galleryImage6 from "../img/mauritius/4224.jpg";
+import { Helmet } from 'react-helmet';
 
 import galleryImage1_1 from "../img/mauritius/2.jpg";
 import galleryImage2_2 from "../img/mauritius/47014.jpg";
@@ -123,6 +124,24 @@ const TourMauritius = () => {
   };
   return (
     <>
+     <Helmet>
+                <title>Mauritius Tour Package from Chennai | Velachery</title>
+                <meta name="description" content="The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers" />
+                <meta name="keywords" content="mauritius tour package from chennai, mauritius tour, mauritius flight tickets, chennai, Coimbatore, Mauritius tour package" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "WebSite",
+                        "name": "Capstone Holidays",
+                        "url": "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://www.capstoneholidays.in/tour/mauritius-tour-package-from-chennai/{search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    })}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
       {/* Navigation Links */}
       <nav className="tour-navigation">

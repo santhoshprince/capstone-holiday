@@ -24,6 +24,7 @@ import galleryImage6_6 from "../img/sikkim/14.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/sikkim/11.jpg";
+import { Helmet } from "react-helmet";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -32,10 +33,10 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
+  const tourDetails = {
     "darjeeling-gangtok-tour-packages": {
       heading: "Darjeeling Gangtok Tour Packages",
-      title: "Darjeeling Gangtok Tour Packages",
+      title1: "Darjeeling Gangtok Tour Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -122,11 +123,26 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d907105.3984781149!2d88.185276!3d27.363831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6886dd7a93aad%3A0x89f571f15943050d!2sWest%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1728202748525!5m2!1sen!2sin",
       iconSrc: [location1],
+
+      title: 'Darjeeling Gangtok Tour Packages | Capstone Holidays Chennai',
+      keywords: 'darjeeling gangtok tour packages, darjeeling gangtok tour, darjeeling gangtok, darjeeling, gangtok',
+      description: 'Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year.',
+      schema: {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Capstone Holidays",
+          "url": "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/",
+          "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/tour/darjeeling-gangtok-tour-packages/{search_term_string}",
+              "query-input": "required name=search_term_string"
+          }
+      }
     },
    
     "sikkim-travel-packages": {
       heading: "Sikkim Travel Packages",
-      title: "Sikkim Travel Packages",
+      title1: "Sikkim Travel Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -206,12 +222,47 @@ const TourPage = () => {
       mapSrc:
       "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d907105.3984781149!2d88.185276!3d27.363831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6886dd7a93aad%3A0x89f571f15943050d!2sWest%20Sikkim%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1728202748525!5m2!1sen!2s",
       iconSrc: [location1],
+      title: 'Sikkim Travel Packages | Sikkim Tour Itinerary',
+        keywords: 'sikkim travel packages, sikkim tour itinerary, sikkim travel, sikkim tour, sikkim tour plan',
+        description: 'Sikkim travel packages are best sold in December where you can experience bright and clear weather, making it perfect for outdoor activities and touring.',
+        schema: {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/tour/sikkim-travel-packages/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.capstoneholidays.in/tour/sikkim-travel-packages/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
     },
   };
   
   
+  
+  const { tourId } = useParams();
+
+  // Get the path name to determine which tour details to show
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
-  const selectedTour = toursData[path];
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
+
+  if (!tour) {
+    return <div>Tour not found!</div>; // Fallback in case of no match
+  }
+
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
@@ -222,7 +273,15 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+     <Helmet>
+          <title>{metaDetails.title}</title>
+          <meta name="description" content={metaDetails.description} />
+          <meta name="keywords" content={metaDetails.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(tour.schema)}
+          </script>
+        </Helmet>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
         <ul>
@@ -244,7 +303,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -257,14 +316,14 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
               <Itinerary
                 title="Itinerary"
-                itineraryData={selectedTour.itinerary}
+                itineraryData={tour.itinerary}
               />
             </div>
           </div>
@@ -272,15 +331,15 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
-                note={selectedTour.note}
+                title1={tour.title1}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
+                note={tour.note}
               />
             </div>
           </div>
@@ -290,8 +349,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

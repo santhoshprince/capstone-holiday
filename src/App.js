@@ -96,7 +96,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blog" element={<Blog />} />
 
           <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
@@ -177,7 +177,7 @@ function App() {
             element={<AndamanDetails />}
           />
           <Route
-            path="/tour/andaman-and-nicobar-islands-package/:id"
+            path="/tour/andaman-and-nicobar-islands-package"
             element={<AndamanDetails />}
           />
           <Route path="/tour-destination/goa-tour" element={<Goa />} />
@@ -243,7 +243,7 @@ function App() {
 
           {/* Gropu Tour  */}
           <Route
-            path="tour-destination/kerala-group-tour"
+            path="/tour/kerala-group-tour-package"
             element={<KeralalaGroup />}
           />
           <Route
@@ -273,49 +273,54 @@ function App() {
           />
 
           <Route
-            path="/tour-destination/azerbaijan-europe-tour"
+            path="/azerbaijan-tour-packages-from-india"
             element={<AzerbaijanEurope />}
           />
+      
           <Route
-            path="/tour/china-europe-tour-package"
+            path="/china-tour-package-from-chennai"
             element={<ChinaEurope />}
           />
           <Route
-            path="/tour/greece-europe-tour-package"
+            path="/greece-tour-packages-from-india"
             element={<GreeceEurope />}
           />
+     
           <Route
-            path="/international-tour-package"
+            path="/international-tour-packages-from-chennai"
             element={<InternationalPackages />}
           />
-
-          <Route path="/domestic-tour-package" element={<DomesticPackages />} />
-          <Route path="/group-tour-packages" element={<GroupTourPackages />} />
-          <Route path="/europe-tour-packages" element={<EuropeTourPackages />} />
-          <Route path="/honeymoon-tour-packages" element={<HoneymoonTourPackages />} />
-
-
-          <Route path="/tour/anadaman-honeymoon-tour-packages" element={<AndamanHoneymoon />} />
-          <Route path="/tour/bali-honeymoon-tour-packages" element={<BaliHoneymoon />} />
-          <Route path="/tour/kashmir-honeymoon-tour-packages" element={<KashmirHoneymoon />} />
-          <Route path="/tour/kerala-honeymoon-tour-packages" element={<KeralaHoneymoon />} />
-          <Route path="/tour/rajasthan-honeymoon-tour-packages" element={<RajasthanHoneymoon />} />
          
+
+          <Route path="/domestic-tour-packages-from-chennai" element={<DomesticPackages />} />
+          <Route path="/group-tour-packages" element={<GroupTourPackages />} />
+          <Route path="/europe-tour-packages-from-chennai" element={<EuropeTourPackages />} />
+          <Route path="/honeymoon-packages-from-chennai" element={<HoneymoonTourPackages />} />
+
+          <Route path="/andaman-honeymoon-packages-from-chennai" element={<AndamanHoneymoon />} />
+          <Route path="/bali-honeymoon-packages-from-chennai" element={<BaliHoneymoon />} />
+          <Route path="/kashmir-honeymoon-package-for-couple" element={<KashmirHoneymoon />} />
+          <Route path="/kerala-honeymoon-packages-from-chennai" element={<KeralaHoneymoon />} />
+          <Route path="/agra-honeymoon-package" element={<RajasthanHoneymoon />} />
+      
           <Route
-            path="/tour-destination/educational-tour/"
+            path="/educational-tour-packages"
             element={<EducationalTour />}
           />
+     
           <Route
-            path="/tour/almaty-tour-package"
+            path="/paris-switzerland-tour-package-from-india"
             element={<SwissDetails />}
           />
+     
           <Route
-            path="/tour/paris-and-swiss-tour-package"
+            path="/almaty-tour-package-from-india"
             element={<AlmatyDetails />}
           />
  
+
             <Route
-            path="/tour/cruise-package"
+            path="/singapore-malaysia-tour-package-with-cruise"
             element={<CruiseDetails />}
           />
         </Routes>

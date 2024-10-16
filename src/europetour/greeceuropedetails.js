@@ -15,6 +15,7 @@ import galleryImage4 from "../img/greece/4.jpg";
 import galleryImage5 from "../img/greece/5.jpg";
 import galleryImage6 from "../img/greece/6.jpg";
 
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/greece/7.jpg";
 import galleryImage2_2 from "../img/greece/8.jpg";
 import galleryImage3_3 from "../img/greece/9.jpg";
@@ -35,7 +36,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "Greece Europe Tour",
-      title: "Greece Europe Tour",
+      title1: "Greece Europe Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -147,8 +148,34 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Greece Tour Packages from India | Chennai & Coimbatore',
+    keywords: 'greece tour packages from india, greece tour packages from chennai, greece tour packages, greece tour, greece',
+    description: 'Our Greece Tour Packages from India helps to witness the Greek mythology\'s well-known love tales that have fascinated audiences for years.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/greece-tour-packages-from-india/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/greece-tour-packages-from-india/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+
+<Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
@@ -199,7 +226,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

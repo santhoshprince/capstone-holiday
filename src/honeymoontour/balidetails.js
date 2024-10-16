@@ -23,6 +23,8 @@ import galleryImage6_6 from "../img/gallery/2151625212.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/bg/contact_bg_7.jpg";
 
+import { Helmet } from "react-helmet";
+
 const BaliDetails = () => {
   const detailsitinerary = useRef(null);
   const detailsGalleryRef = useRef(null);
@@ -30,9 +32,9 @@ const BaliDetails = () => {
   const locationMapRef = useRef(null);
   // Sample data - you can replace this with your actual content
   const tourDetails = {
-    "bali-honeymoon-tour-packages": {
+    "bali-honeymoon-packages-from-chennai": {
       heading: "Bali HoneyMoon Tour Package",
-      title: "Bali HoneyMoon Tour Package",
+      title1: "Bali HoneyMoon Tour Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -82,13 +84,13 @@ const BaliDetails = () => {
         "Kuta: Ramada By Wyndham Bali Sunset Road Kuta (4 star) - 01 - 02",
         "Ubud: Dedary Resort Ubud (4 star) - 01 - 02 - One Bedroom Garden View Villa with Private Pool and Bathtub",
       ],
-      tours:[
+      tours: [
         "Uluwatu Temple Tour with Kecak Dance ** PVT Basis ** (Include: Entrance Fee Uluwatu Temple, Ticket Kecak Dance)",
-  "West Nusa Penida Island Tour (min 2 Pax) ** PVT Basis ** (Inclusion: Return ticket fast boat on SIC, Entrance Ticket Visit: Kelingking Beach, Broken Beach, Angel Billabong, Crystal Bay, Indonesian Lunch & Driver Cum Guide. (NOTE: CHANGE LUNCH TO INDIAN RESTAURANT ADDITIONAL USD 10 / PAX))",
-  "Watersport Tanjung Benoa A1 ** PVT Basis ** (Include: 1x Parasailing, 1x Banana Boat, 1x Jet Ski)",
-  "Garuda Wisnu Kencana (GWK) ** PVT Basis **",
-  "My Swing (Swing + Nest) ** PVT Basis ** (Included: 2 Single Swing, Fun Adrenaline Swing, Exciting Adrenaline Swing, Ultimate Swing, Couple Swing, Romantic Bed Swing, Family Bed Swing, Chicken Nest, Bird Nest, Sweet Love Nest, Glass Floor)",
-  "Kintamani Volcano - Tegalalang Rice Field - Tegenungan Waterfall - Ubud Market ** PVT Basis ** (Include: Entrance Fees Kintamani Mount of Batur View, Tegalalang, Tegenungan Waterfall, Ubud Market)"
+        "West Nusa Penida Island Tour (min 2 Pax) ** PVT Basis ** (Inclusion: Return ticket fast boat on SIC, Entrance Ticket Visit: Kelingking Beach, Broken Beach, Angel Billabong, Crystal Bay, Indonesian Lunch & Driver Cum Guide. (NOTE: CHANGE LUNCH TO INDIAN RESTAURANT ADDITIONAL USD 10 / PAX))",
+        "Watersport Tanjung Benoa A1 ** PVT Basis ** (Include: 1x Parasailing, 1x Banana Boat, 1x Jet Ski)",
+        "Garuda Wisnu Kencana (GWK) ** PVT Basis **",
+        "My Swing (Swing + Nest) ** PVT Basis ** (Included: 2 Single Swing, Fun Adrenaline Swing, Exciting Adrenaline Swing, Ultimate Swing, Couple Swing, Romantic Bed Swing, Family Bed Swing, Chicken Nest, Bird Nest, Sweet Love Nest, Glass Floor)",
+        "Kintamani Volcano - Tegalalang Rice Field - Tegenungan Waterfall - Ubud Market ** PVT Basis ** (Include: Entrance Fees Kintamani Mount of Batur View, Tegalalang, Tegenungan Waterfall, Ubud Market)",
       ],
       note: [
         "Once the booking is reconfirmed, 100% cancellation will be charged if cancelled less than 21 days prior to arrival.\n" +
@@ -146,10 +148,43 @@ const BaliDetails = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: "Bali Honeymoon Packages from Chennai | Capstone Holidays",
+    keywords:
+      "bali honeymoon packages from chennai, bali honeymoon packages, bali honeymoon packages trip, bali honeymoon plan, bali honeymoon packages from india",
+    description:
+      "Bali honeymoon packages from Chennai vary in price depending on the package you select and the length of your stay.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/bali-honeymoon-packages-from-chennai/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/bali-honeymoon-packages-from-chennai/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
+
   return (
     <div>
       <>
-        <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
+        <Helmet>
+          <title>{seoData.title}</title>
+          <meta name="description" content={seoData.description} />
+          <meta name="keywords" content={seoData.keywords} />
+          <script type="application/ld+json">
+            {JSON.stringify(seoData.schema)}
+          </script>
+        </Helmet>
+        <Contentsection
+          heading={tour.heading}
+          children={""}
+          backgroundImage={bg1}
+        />
 
         <nav className="tour-navigation">
           <ul>
@@ -198,7 +233,7 @@ const BaliDetails = () => {
             <div className="row">
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
-                  title={tour.title}
+                  title1={tour.title1}
                   description={tour.description}
                   duration={tour.duration}
                   tourCode={tour.tourCode}

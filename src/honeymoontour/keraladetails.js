@@ -15,6 +15,8 @@ import galleryImage4 from "../img/kerala/2.jpg";
 import galleryImage5 from "../img/kerala/8.jpg";
 import galleryImage6 from "../img/kerala/1.jpg";
 
+import { Helmet } from 'react-helmet';
+
 import galleryImage1_1 from "../img/kerala/6.jpg";
 import galleryImage2_2 from "../img/kerala/5.jpg";
 import galleryImage3_3 from "../img/kerala/4.jpg";
@@ -34,9 +36,9 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
 
   const tourDetails = {
-    "kerala-honeymoon-tour-packages": {
+    "kerala-honeymoon-packages-from-chennai": {
       heading: "Kerala Honeymoon Tour Packages",
-      title: "Kerala Honeymoon Tour Packages",
+      title1: "Kerala Honeymoon Tour Packages",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -127,8 +129,34 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Kerala Honeymoon Packages from Chennai | Coimbatore',
+    keywords: 'kerala honeymoon packages from chennai, kerala honeymoon packages, kerala honeymoon trip, kerala honeymoon plan, kerala and munnar tour',
+    description: "Take opportunity of our 5 day 4 night Kerala Honeymoon packages from Chennai and enjoy the tropical pleasures that God's own nation has to offer!",
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/kerala-honeymoon-packages-from-chennai/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/kerala-honeymoon-packages-from-chennai/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+
+<Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
@@ -179,7 +207,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

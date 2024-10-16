@@ -5,8 +5,8 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
   return (
     <div className="th-blog blog-single has-post-thumbnail">
       {isVideo ? (
-        <div className="blog-img" data-overlay="bg-title" data-opacity="5">
-          <Link to={`/${slug}`}> {/* Use slug here */}
+        <div className="blog-img bolg" data-overlay="bg-title" data-opacity="5">
+          <Link to={`/${slug}`}>
             <img src={image} alt="Blog Image" />
           </Link>
           <a href={videoLink} className="play-btn popup-video">
@@ -14,9 +14,9 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
           </a>
         </div>
       ) : (
-        <div className="blog-img">
-          <Link to={`/${slug}`}> {/* Use slug here */}
-            <img src={image} alt="Blog Image" />
+        <div className="blog-img img-container">
+          <Link to={`/${slug}`}>
+            <img src={image} alt="Blog Image"  className='img-new'/>
           </Link>
         </div>
       )}
@@ -33,10 +33,10 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
           </a>
         </div>
         <h2 className="blog-title">
-          <Link to={`/${slug}`}>{title}</Link> {/* Use slug here */}
+          <Link to={`/${slug}`}>{title}</Link>
         </h2>
         <p className="blog-text">{text}</p>
-        <Link to={`/${slug}`} className="th-btn style4 th-icon">Read More</Link> {/* Use slug here */}
+        <Link to={`/${slug}`} className="th-btn style4 th-icon">Read More</Link>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ import galleryImage3 from "../img/singapore/s6.jpg";
 import galleryImage4 from "../img/singapore/s3.jpg";
 import galleryImage5 from "../img/singapore/s2.jpg";
 import galleryImage6 from "../img/singapore/s1.jpg";
-
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/singapore/s4.jpg";
 import galleryImage2_2 from "../img/singapore/s5.jpg";
 import galleryImage3_3 from "../img/singapore/s13.jpg";
@@ -37,7 +37,7 @@ const TourSingapore = () => {
   const toursData = {
     1: {
       heading: "Singapore Malaysia Group Tour – 4N / 5D",
-      title: "Singapore Malaysia Group Tour – 4N / 5D",
+      title1: "Singapore Malaysia Group Tour – 4N / 5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -120,8 +120,33 @@ const TourSingapore = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Singapore Malaysia Group Tour | 4N/5D Tour Package',
+    keywords: 'singapore malaysia group tour, singapore malaysia group, singapore malaysia group tour packages, singapore malaysia group tour from chennai, 4n 5d tour package',
+    description: 'We uniquely create our Singapore Malaysia Group Tour packages so that you can spend 3 days in Malaysia and 2.5 days in Singapore.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/singapore-malaysia-group-tour/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/singapore-malaysia-group-tour/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+     <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">
@@ -174,7 +199,7 @@ const TourSingapore = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}

@@ -25,6 +25,8 @@ import galleryImage6_6 from "../img/Rajasthan/17.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/Rajasthan/6.jpg";
 
+import { Helmet } from "react-helmet";
+
 const TourPage = () => {
   const { id } = useParams();
 
@@ -32,10 +34,10 @@ const TourPage = () => {
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
   const locationMapRef = useRef(null);
-  const toursData = {
+  const tourDetails = {
     "delhi-agra-jaipur-tour-package": {
       heading: "Delhi Agra Jaipur Tour Package",
-      title: "Delhi Agra Jaipur Tour Package",
+      title1: "Delhi Agra Jaipur Tour Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -123,11 +125,28 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14608903.200457694!2d73.878347!3d26.628408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1728201755880!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: "Delhi Agra Jaipur Tour Package | Golden Triangle Tour",
+      keywords:
+        "delhi agra jaipur tour package, golden triangle tour, delhi agra jaipur tour, delhi agra jaipur tour plan",
+      description:
+        "Check out Capstone Holidays Delhi Agra Jaipur Tour Package if you want to see more of the route and culture of the Golden Triangle",
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/delhi-agra-jaipur-tour-package/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/delhi-agra-jaipur-tour-package/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
 
     "rajasthan-trip-package": {
       heading: "Rajasthan Trip package",
-      title: "Rajasthan Trip package",
+      title1: "Rajasthan Trip package",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -207,12 +226,48 @@ const TourPage = () => {
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14608903.200457694!2d73.878347!3d26.628408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1728201755880!5m2!1sen!2sin",
       iconSrc: [location1],
+      title: "Rajasthan Trip Package | Rajasthan Tour Plan",
+      keywords:
+        "rajasthan trip package, rajasthan tour plan, rajasthan tour, rajasthan travel, rajasthan tourist places",
+      description:
+        "Our Rajasthan Trip Packages explore Rajasthan's contemporary infrastructure, calm city atmosphere, and historical significant spots suitable for honeymoon too.",
+      schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        name: "Capstone Holidays",
+        url: "https://www.capstoneholidays.in/tour/rajasthan-trip-package/",
+        potentialAction: {
+          "@type": "SearchAction",
+          target:
+            "https://www.capstoneholidays.in/tour/rajasthan-trip-package/{search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
     },
   };
- 
 
+  const { tourId } = useParams();
+
+  // Get the path name to determine which tour details to show
   const path = window.location.pathname.split("/").pop(); // Gets the last part of the URL
-  const selectedTour = toursData[path];
+  const tour = tourDetails[path] || [tourId];
+
+  const metaDetails = tour
+    ? {
+        title: tour.title || "Default Title",
+        description: tour.description || "Default Description",
+        keywords: tour.keywords || "Default Keywords",
+      }
+    : {
+        title: "Default Title",
+        description: "Default Description",
+        keywords: "Default Keywords",
+      };
+
+  if (!tour) {
+    return <div>Tour not found!</div>; // Fallback in case of no match
+  }
+
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",
@@ -222,7 +277,19 @@ const TourPage = () => {
   };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>{metaDetails.title1}</title>
+        <meta name="description" content={metaDetails.description} />
+        <meta name="keywords" content={metaDetails.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(tour.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={tour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -244,7 +311,7 @@ const TourPage = () => {
                   id="tab-grid"
                   role="tabpanel"
                 >
-                  <DetailSlider images={selectedTour.galleryImages} />
+                  <DetailSlider images={tour.galleryImages} />
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -257,30 +324,27 @@ const TourPage = () => {
           {/* Full-width gallery */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>
-              <DetailsGallery images={selectedTour.gallerydata} />
+              <DetailsGallery images={tour.gallerydata} />
             </div>
           </div>
           <div className="row">
             <div className="col-12" ref={detailsitinerary}>
-              <Itinerary
-                title="Itinerary"
-                itineraryData={selectedTour.itinerary}
-              />
+              <Itinerary title="Itinerary" itineraryData={tour.itinerary} />
             </div>
           </div>
 
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
-                description={selectedTour.description}
-                duration={selectedTour.duration}
-                tourCode={selectedTour.tourCode}
-                priceIncludes={selectedTour.priceIncludes}
-                hotelDetails={selectedTour.hotelDetails}
-                PackageInclusion={selectedTour.PackageInclusion}
-                Priceexclusions={selectedTour.Priceexclusions}
-                note={selectedTour.note}
+                title1={tour.title1}
+                description={tour.description}
+                duration={tour.duration}
+                tourCode={tour.tourCode}
+                priceIncludes={tour.priceIncludes}
+                hotelDetails={tour.hotelDetails}
+                PackageInclusion={tour.PackageInclusion}
+                Priceexclusions={tour.Priceexclusions}
+                note={tour.note}
               />
             </div>
           </div>
@@ -290,8 +354,8 @@ const TourPage = () => {
             <div className="col-12" ref={locationMapRef}>
               <LocationMap
                 title="Location"
-                mapSrc={selectedTour.mapSrc}
-                iconSrc={selectedTour.iconSrc}
+                mapSrc={tour.mapSrc}
+                iconSrc={tour.iconSrc}
               />
             </div>
           </div>

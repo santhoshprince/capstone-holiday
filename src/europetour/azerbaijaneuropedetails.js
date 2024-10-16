@@ -24,7 +24,7 @@ import galleryImage6_6 from "../img/azerbaijan/3.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/azerbaijan/15.jpg";
-
+import { Helmet } from "react-helmet";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -36,7 +36,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "Azerbaijan Europe Tour",
-      title: "Azerbaijan Europe Tour",
+      title1: "Azerbaijan Europe Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -55,14 +55,14 @@ const TourPage = () => {
       ],
 
       priceIncludes: [
-      "Accommodation in Baku, 3 nights.",
-    "Accommodation in Guba, 3 nights.",
-    "Accommodation in Gabala, 3 nights.",
-    "Breakfasts at the hotels.",
-    "Transfers from/to airport.",
-    "Transportation during program with comfortable car.",
-    "English speaking driver.",
-    "Water per each excursion day." 
+        "Accommodation in Baku, 3 nights.",
+        "Accommodation in Guba, 3 nights.",
+        "Accommodation in Gabala, 3 nights.",
+        "Breakfasts at the hotels.",
+        "Transfers from/to airport.",
+        "Transportation during program with comfortable car.",
+        "English speaking driver.",
+        "Water per each excursion day.",
       ],
       Priceexclusions: [
         "Air tickets and insurance.",
@@ -70,20 +70,20 @@ const TourPage = () => {
         "Entrance fees to museums/entertainment.",
         "Personal expenses.",
         "PCR test costs.",
-        "Visa cost."
+        "Visa cost.",
       ],
       description: [
-       "Explore the enchanting beauty and rich cultural heritage of Azerbaijan, a country where the East meets the West. Your journey begins in the vibrant capital, Baku, known for its stunning architecture, including the modern Flame Towers and the historic Old City, a UNESCO World Heritage site. Enjoy leisurely walks along the picturesque Baku Boulevard and indulge in local cuisine at charming restaurants."
+        "Explore the enchanting beauty and rich cultural heritage of Azerbaijan, a country where the East meets the West. Your journey begins in the vibrant capital, Baku, known for its stunning architecture, including the modern Flame Towers and the historic Old City, a UNESCO World Heritage site. Enjoy leisurely walks along the picturesque Baku Boulevard and indulge in local cuisine at charming restaurants.",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["10 Days 9 Nights"],
       hotelDetails: [
         "Baku – West Shine or Alba Hotel 4*.",
-    "Gabala – White Boutique 4*.",
-    "Guba – Gold Guba Hotel 3*."
+        "Gabala – White Boutique 4*.",
+        "Guba – Gold Guba Hotel 3*.",
       ],
-      note:[
-"Additionally, 3% will be added to the cost during the payment process; the company has the right to change the program in case of necessity. Package is not valid during the Eid period (26.06-01.07). Kindly check availability before quoting to the customers."
+      note: [
+        "Additionally, 3% will be added to the cost during the payment process; the company has the right to change the program in case of necessity. Package is not valid during the Eid period (26.06-01.07). Kindly check availability before quoting to the customers.",
       ],
       itinerary: [
         {
@@ -94,8 +94,7 @@ const TourPage = () => {
         {
           day: "Day 2",
           details:
-            "Breakfast at the hotel in Baku. Excursion program (pick-up time 10:00): Highland Park and Flame Towers Complex. Ferris Wheel. International Mugham and 'Baku Venice.' Azerbaijan Carpet Museum. Baku Boulevard. Old city tour (Maiden Tower, Shirvanshah Palace, etc). Fountain Square. The Heydar Aliyev Center. Transfer to Hotel. Overnight in Baku."
-
+            "Breakfast at the hotel in Baku. Excursion program (pick-up time 10:00): Highland Park and Flame Towers Complex. Ferris Wheel. International Mugham and 'Baku Venice.' Azerbaijan Carpet Museum. Baku Boulevard. Old city tour (Maiden Tower, Shirvanshah Palace, etc). Fountain Square. The Heydar Aliyev Center. Transfer to Hotel. Overnight in Baku.",
         },
         {
           day: "Day 3",
@@ -110,34 +109,32 @@ const TourPage = () => {
         {
           day: "Day 5",
           details:
-           "Breakfast at the hotel. Excursion program (pick-up time 10:00). 7 Gozal Waterfall (7 Beauties). Nohur Lake. Lunch break 13.00-14.00. Tufandagh Tourism Complex. Gabala Shooting Club. Return to the hotel. Free time. Overnight in Gabala."
+            "Breakfast at the hotel. Excursion program (pick-up time 10:00). 7 Gozal Waterfall (7 Beauties). Nohur Lake. Lunch break 13.00-14.00. Tufandagh Tourism Complex. Gabala Shooting Club. Return to the hotel. Free time. Overnight in Gabala.",
         },
         {
           day: "Day 6",
           details:
-         "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 10:00). Arrival to Guba hotel. Check-in to the hotel. Free time for rest. Overnight in Guba."
+            "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 10:00). Arrival to Guba hotel. Check-in to the hotel. Free time for rest. Overnight in Guba.",
         },
         {
           day: "Day 7",
           details:
-         "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 09:00). Excursion program: Besh Barmag Shrine, Red settlement, Carpet weaving factory, Gachrash Forests, Mastdargah. Lunch break. Check-in to the hotel. Overnight in Guba."
-
+            "Breakfast at the hotel in Baku. Transfer to Guba (pick-up time 09:00). Excursion program: Besh Barmag Shrine, Red settlement, Carpet weaving factory, Gachrash Forests, Mastdargah. Lunch break. Check-in to the hotel. Overnight in Guba.",
         },
         {
           day: "Day 8",
           details:
-         "Breakfast at the hotel in Baku. Transfer to Shahdag Mountain Resort (pick-up time 10:00). Excursion program: Visiting Shahdag Mountain Resort, Using activities which are available at that moment, Going to Laza village. Lunch break. Return to the hotel. Overnight in Guba."
+            "Breakfast at the hotel in Baku. Transfer to Shahdag Mountain Resort (pick-up time 10:00). Excursion program: Visiting Shahdag Mountain Resort, Using activities which are available at that moment, Going to Laza village. Lunch break. Return to the hotel. Overnight in Guba.",
         },
         {
           day: "Day 9",
           details:
-         "Breakfast at the hotel. Check-out from the hotel by 12:00. Way to Baku (around 3 hours). Check-in to the hotel. Shopping time in local bazaars (Sharg Bazaar, Yashil Bazaar) and shopping malls (Daniz Mall, 28 Mall, Ganjlik Mall). Overnight in Baku."
-
+            "Breakfast at the hotel. Check-out from the hotel by 12:00. Way to Baku (around 3 hours). Check-in to the hotel. Shopping time in local bazaars (Sharg Bazaar, Yashil Bazaar) and shopping malls (Daniz Mall, 28 Mall, Ganjlik Mall). Overnight in Baku.",
         },
         {
           day: "Day 10",
           details:
-         "Breakfast at the hotel. Check-out. Transfer to the Azerbaijan International Airport (3 hours before the flight timing). Departure."
+            "Breakfast at the hotel. Check-out. Transfer to the Azerbaijan International Airport (3 hours before the flight timing). Departure.",
         },
       ],
       mapSrc:
@@ -145,7 +142,7 @@ const TourPage = () => {
       iconSrc: [location1],
     },
   };
- 
+
   const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
@@ -155,9 +152,41 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: "Azerbaijan Tour Packages from India | Chennai & Coimbatore",
+    keywords:
+      "azerbaijan tour packages from india, azerbaijan tour packages, azerbaijan tour, azerbaijan, azerbaijan tour from chennai",
+    description:
+      "Our Azerbaijan tour packages from India are designed ideally to cover all the major tourist attractions including Baku tourist attractions.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/azerbaijan-tour-packages-from-india/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/azerbaijan-tour-packages-from-india/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1}/>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
       <nav className="tour-navigation">
         <ul>
@@ -207,7 +236,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

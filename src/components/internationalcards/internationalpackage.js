@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
 import bali from "../../img/tour/12.jpg";
 import bali2 from "../../img/tour/34.jpg";
@@ -11,8 +11,7 @@ import singapore from "../../img/singapore/s5.jpg";
 import vietnam from "../../img/vietnam/8.jpg";
 import srilanka from "../../img/srilanka/travels-3758193_1920.jpg";
 import Contentbg from "../../components/contentbg";
-import Sidebar from "../../components/sidebar";
-import Pagination from "../../components/blogpagination"; // Your Pagination component
+import { Helmet } from "react-helmet";
 import bg1 from "../../img/tour/emirates.jpg";
 
 const TourList = () => {
@@ -64,7 +63,7 @@ const TourList = () => {
       rating: 4.7,
       price: "25,075",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/mauritius-tour-package-from-chennai',
+      detailPath: "/tour/mauritius-tour-package-from-chennai",
     },
     {
       imgSrc: mauritius,
@@ -72,7 +71,7 @@ const TourList = () => {
       rating: 4.7,
       price: "135,320",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/turkey-tour-packages-from-india',
+      detailPath: "/tour/turkey-tour-packages-from-india",
     },
     {
       imgSrc: singapore,
@@ -80,7 +79,7 @@ const TourList = () => {
       rating: 4.7,
       price: "38,250",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/singapore-and-malaysia-tour-packages',
+      detailPath: "/tour/singapore-and-malaysia-tour-packages",
     },
     {
       imgSrc: vietnam,
@@ -88,7 +87,7 @@ const TourList = () => {
       rating: 4.7,
       price: "20,400",
       duration: "3 Nights, 4 Days",
-      detailPath: '/tour/vietnam-cambodia-tour-package',
+      detailPath: "/tour/vietnam-cambodia-tour-package",
     },
     {
       imgSrc: srilanka,
@@ -96,48 +95,53 @@ const TourList = () => {
       rating: 4.7,
       price: "25,415",
       duration: "4 Nights, 5 Days",
-      detailPath: '/tour/srilanka-tour-package-from-chennai',
+      detailPath: "/tour/srilanka-tour-package-from-chennai",
     },
   ];
 
-  // Pagination state
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2; // Number of items to show per page
-
-  // Calculate total pages
-  const totalPages = Math.ceil(tours.length / itemsPerPage);
-
-  // Get current page items
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentTours = tours.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Function to handle page change
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+  const seoData = {
+    title: "International Tour Packages from Chennai | Coimbatore",
+    keywords:
+      "international tour packages from chennai, international tour packages, international tour packages for family, international tour packages from india including flights, international tour packages from india, international tour",
+    description:
+      "We offer the greatest International Tour packages from Chennai that are affordable for an exciting holiday for couples and family to share golden memories.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/international-tour-packages-from-chennai/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/international-tour-packages-from-chennai/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
   };
 
   return (
     <>
-      <Contentbg heading={"International Tour Packages"} backgroundImage={bg1}/>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
+      <Contentbg
+        heading={"International Tour Packages"}
+        backgroundImage={bg1}
+      />
 
       <section className="space">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-lg-7">
-              {currentTours.map((tour, index) => (
-                <TotalCard key={index} {...tour} />
-              ))}
-              {/* Pagination component */}
-              <Pagination
-                totalPages={totalPages}
-                currentPage={currentPage}
-                onPageChange={handlePageChange}
-              />
-            </div>
-            <div className="col-xxl-4 col-lg-5">
-              <Sidebar />
-            </div>
+            {tours.map((tour, index) => (
+              <div className="col-md-4" key={index}>
+                <TotalCard {...tour} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

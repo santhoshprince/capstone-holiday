@@ -14,7 +14,7 @@ import galleryImage3 from "../img/Manali/9.jpg";
 import galleryImage4 from "../img/Manali/8.jpg";
 import galleryImage5 from "../img/Manali/4.jpg";
 import galleryImage6 from "../img/Manali/9.jpg";
-
+import { Helmet } from 'react-helmet';
 import galleryImage1_1 from "../img/Manali/7.jpg";
 import galleryImage2_2 from "../img/Manali/8.jpg";
 import galleryImage3_3 from "../img/Manali/9.jpg";
@@ -35,7 +35,7 @@ const TourPage = () => {
   const toursData = {
     1: {
       heading: "Shimla Manali Group Tour",
-      title: "Shimla Manali Group Tour",
+      title1: "Shimla Manali Group Tour",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -148,8 +148,34 @@ const TourPage = () => {
       inline: "nearest",
     });
   };
+
+  const seoData = {
+    title: 'Shimla Manali Group Tour | Group Tour from Chennai',
+    keywords: 'shimla manali group tour, group tour from chennai, shimla manali group, group tour, shimla manali, shimla manali group tour packages',
+    description: 'Shimla, Manali, Dalhousie, Chamba, and Kasauli are the most admired tourist places that our Shimla Manali Group Tour packages include.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/shimla-manali-group-tour/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/shimla-manali-group-tour/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
+
   return (
     <>
+    <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
@@ -200,7 +226,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TotalCard from "../../components/totalcard"; // Ensure the import path is correct
 import bali from "../../img/andaman/8.jpg";
 import bali2 from "../../img/tour/365.jpg";
@@ -6,9 +6,8 @@ import maldives from "../../img/kashmir/12.jpg";
 import kerala from "../../img/kerala/6.jpg";
 import rajasthan from "../../img/Rajasthan/10.jpg";
 import Contentbg from "../../components/contentbg";
-import Sidebar from "../../components/sidebar";
-import Pagination from "../../components/blogpagination"; // Your Pagination component
 import bg1 from "../../img/tour/99.jpg";
+import { Helmet } from "react-helmet";
 
 const TourList = () => {
   const tours = [
@@ -18,7 +17,7 @@ const TourList = () => {
       rating: 4.7,
       price: "19,900",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/anadaman-honeymoon-tour-packages",
+      detailPath: "/andaman-honeymoon-packages-from-chennai",
     },
     {
       imgSrc: bali2,
@@ -26,7 +25,7 @@ const TourList = () => {
       rating: 4.7,
       price: "21,000",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/bali-honeymoon-tour-packages",
+      detailPath: "/bali-honeymoon-packages-from-chennai",
     },
     {
       imgSrc: maldives,
@@ -34,7 +33,7 @@ const TourList = () => {
       rating: 4.7,
       price: "20,500",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/kashmir-honeymoon-tour-packages",
+      detailPath: "/kashmir-honeymoon-package-for-couple",
     },
     {
       imgSrc: kerala,
@@ -42,7 +41,7 @@ const TourList = () => {
       rating: 4.7,
       price: "19,000",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/kerala-honeymoon-tour-packages",
+      detailPath: "/kerala-honeymoon-packages-from-chennai",
     },
     {
       imgSrc: rajasthan,
@@ -50,42 +49,50 @@ const TourList = () => {
       rating: 4.7,
       price: "17,500",
       duration: "5 Days 4 Nights",
-      detailPath: "/tour/rajasthan-honeymoon-tour-packages",
+      detailPath: "/agra-honeymoon-package",
     },
   ];
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2;
-
-  const totalPages = Math.ceil(tours.length / itemsPerPage);
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentTours = tours.slice(indexOfFirstItem, indexOfLastItem);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+  const seoData = {
+    title: "Honeymoon Packages from Chennai",
+    keywords:
+      "honeymoon packages from chennai, honeymoon tour packages, honeymoon packages, international honeymoon packages, domestic honeymoon packages",
+    description:
+      "Our customized Honeymoon packages from Chennai should be on your bucket list if you are planning to celebrate a grand yet dreamy honeymoon.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/honeymoon-packages-from-chennai/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/honeymoon-packages-from-chennai/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
   };
 
   return (
     <>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <Contentbg heading={"Honeymoon Tour Packages"} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-lg-7">
-              {currentTours.map((tour, index) => (
-                <TotalCard key={index} {...tour} />
-              ))}
-              <Pagination
-                totalPages={totalPages}
-                currentPage={currentPage}
-                onPageChange={handlePageChange}
-              />
-            </div>
-            <div className="col-xxl-4 col-lg-5">
-              <Sidebar />
-            </div>
+            {tours.map((tour, index) => (
+              <div className="col-xxl-4 col-lg-4 col-md-6 mb-4" key={index}>
+                <TotalCard {...tour} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -14,6 +14,7 @@ import galleryImage3 from "../img/srilanka/1.jpg";
 import galleryImage4 from "../img/srilanka/2.jpg";
 import galleryImage5 from "../img/srilanka/5.jpg";
 import galleryImage6 from "../img/srilanka/4.jpg";
+import { Helmet } from 'react-helmet';
 
 import galleryImage1_1 from "../img/srilanka/5.jpg";
 import galleryImage2_2 from "../img/srilanka/6.jpg";
@@ -36,7 +37,7 @@ const TourSrilanka = () => {
   const toursData = {
     1: {
       heading: "Sri Lanka Group Tour Package – 4N/5D",
-      title: "Sri Lanka Group Tour Package – 4N/5D",
+      title1: "Sri Lanka Group Tour Package – 4N/5D",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -132,8 +133,34 @@ const TourSrilanka = () => {
       inline: "nearest",
     });
   };
+
+
+  const seoData = {
+    title: 'Sri Lanka Group Tour Package | 4N/5D Group Tour Packages',
+    keywords: 'sri lanka group tour package, 4n/5d group tour packages, sri lanka group tour package from chennai, srilanka group tour packages, group tour package',
+    description: 'Take benefit from Capstone Holidays\' Awesome Sri Lanka Group Tour Package to have the most amazing 4 nights and 5 days of your life.',
+    schema: {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/tour/sri-lanka-group-tour-package/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.capstoneholidays.in/tour/sri-lanka-group-tour-package/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+};
   return (
     <>
+      <Helmet>
+                <title>{seoData.title}</title>
+                <meta name="description" content={seoData.description} />
+                <meta name="keywords" content={seoData.keywords} />
+                <script type="application/ld+json">
+                    {JSON.stringify(seoData.schema)}
+                </script>
+            </Helmet>
       <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
       {/* Navigation Links */}
       <nav className="tour-navigation">
@@ -186,7 +213,7 @@ const TourSrilanka = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title={selectedTour.title}
+                title1={selectedTour.title1}
                 description={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}

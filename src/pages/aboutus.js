@@ -240,7 +240,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="international-tour-package">International Tour</a>
+                    <a href="/international-tour-packages-from-chennai">International Tour</a>
                   </h3>
                   <p className="destination-text">9 Listing</p>
                   <a
@@ -265,7 +265,7 @@ const AboutUs = () => {
                 </div>
                 <div className="destination-content">
                   <h3 className="box-title">
-                    <a href="domestic-tour-package">Domestic Tour</a>
+                    <a href="/domestic-tour-packages-from-chennai">Domestic Tour</a>
                   </h3>
                   <p className="destination-text">7 Listing</p>
                   <a

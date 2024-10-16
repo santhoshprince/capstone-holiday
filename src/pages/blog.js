@@ -10,21 +10,17 @@ const BlogPage = () => {
   return (
     <>
      <ContentSection heading={"Blogs"} children={""} backgroundImage={blogbg} />
-    <section className="th-blog-wrapper space-top space-extra-bottom">
-        
-      <div className="container">
-        <div className="row">
-          <div className="col-xxl-8 col-lg-7">
-        
-            <BlogList />
-            <Pagination />
-          </div>
-          <div className="col-xxl-4 col-lg-3">
-              <Sidebar />
+      <section className="th-blog-wrapper space-top space-extra-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-12 col-lg-12">
+            {/* <h3 className="blog-title" style={{textAlign:"center"}}>TourPackages Blogs</h3> */}
+              <BlogList />
+              <Pagination />
             </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
    
   );
