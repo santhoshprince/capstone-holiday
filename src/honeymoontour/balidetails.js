@@ -75,8 +75,8 @@ const BaliDetails = () => {
         "Tips.",
       ],
 
-      description: [
-        "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
+      description1: [
+        "Bali honeymoon packages from Chennai vary in price depending on the package you select and the length of your stay. With reasonably priced Bali honeymoon travel packages that are customized to your preferences and budget, Capstone Holidays guarantees a wonderful and exciting escape. Also, we provide a selection of Bali packages from Chennai based on your intended stay's length and price. Everything will be handled by us, including travel insurance, adventure activities, free breakfast and dinner, sightseeing, adventure activities, and visa and flight arrangements"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["5 Days 4 Nights (BALI)"],
@@ -223,7 +223,7 @@ const BaliDetails = () => {
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
                   title1={tour.title1}
-                  description={tour.description}
+                  description1={tour.description1}
                   duration={tour.duration}
                   tourCode={tour.tourCode}
                   priceIncludes={tour.priceIncludes}

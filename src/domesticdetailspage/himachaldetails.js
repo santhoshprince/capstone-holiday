@@ -75,8 +75,8 @@ const TourPage = () => {
         "GST 5% (On final bill amount)",
       ],
 
-      description: [
-        "Ready to explore the most romantic site in India? Then the Shimla Manali tour package is for you. The Shimla Manali tour package is the best to discover picturesque landscapes, charming hill stations, and a range of cultural experiences. It’s the perfect spot for lovely couples where the Shimla Manali honeymoon package offers the most lovely timing with your loved one. The place feels like heaven on earth in which Shimla Manali tour package is one of the most sought-after Shimla Manali honeymoon package in India.",
+      description1: [
+        "Our Shimla Manali Tour package from Chennai arranges a Shimla trip in the winter season, Since Winter is the most admired time to enjoy snowfall in Shimla. There are no better destinations to head to than Shimla and Manali when you sense the call of the mountains. Welcoming its guests with snow-capped mountains, outdoor activities, gushing waterfalls, and a romantic environment, these are some of the most beloved tourist sites in India. Our Manali Holiday Package covers all the beautiful and mighty waterfalls of Manali such as Rozy waterfalls, Jogini waterfalls, Rahala waterfalls, Knoi waterfalls, and Jana waterfalls. Some honeymoon destinations in Manali are Solang Valley, Beas Kund, Gulaba, Van Vihar, Rohtang Pass, and Jogini waterfalls. ",
       ],
       duration: ["6 Days,5 Nights"],
       hotelDetails: [
@@ -174,8 +174,8 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Discover the Mesmerizing Beauty of Himachal Pradesh! Escape the ordinary and embark on an unforgettable journey through the breathtaking landscapes of Himachal Pradesh. Immerse yourself in the splendor of snow-capped mountains, lush valleys, and glistening rivers.",
+      description1: [
+        "The greatest season for a reasonably priced Himachal Tour Package is during the monsoon, which runs from July to October. Shimla, Manali, Dalhousie, Chamba, and Kasauli are the most admired tourist places that our Himachal Pradesh Tour Package offers to visit in Himachal Pradesh Tour. Wintertime, from October to January, is the best time to see snow and enjoy winter activities. Kayaking, Trekking, White-water rafting and Hot air balloon flying are the best adventure activities covered with our Himachal Pradesh Tour Package.",
       ],
       duration: ["06 Days / 05 Nights"],
       hotelDetails: [
@@ -354,7 +354,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title1}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

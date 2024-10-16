@@ -74,8 +74,8 @@ const GroupTour = () => {
         "GST 5% (On final bill amount)",
       ],
 
-      description: [
-        "Get ready to have a delightful experience of cultural exploration, natural beauty, and relaxing moments with our Kerala group tour package. The specially curated Kerala family tour package all the important places in Kerala like Kochi, Thiruvananthapuram, and Alappuzha. With our family and group-friendly accommodations, we provide amenities suitable for all age groups. Create a memorable experience with our Kerala group tour package.",
+      description1: [
+        "Kerala offers a diverse range of enjoyable activities to suit the tastes of distinguishing travelers. You can choose from a wide range of adventures in Kerala and have a lot to discover in this paradise if you still consider Kerala to be a tiny slice of land in southern India.We offer the greatest  Kerala Group Tour package that is affordable for an exciting holiday with a group of people that share your enthusiasm and similar interests",
       ],
       duration: ["05 Days,04 Nights"],
       // tourCode: ["AH-KRL-17"],
@@ -197,7 +197,7 @@ const GroupTour = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

@@ -57,8 +57,8 @@ const TourThailand = () => {
 
       Priceexclusions: ["GST 5%", "Air Fare"],
 
-      description: [
-        "Without a question, one of the greatest places to go on a vacation is Thailand. Thailand is a country in Southeast Asia that receives thousands of visitors every year. A group vacation to Thailand is just what you need if you love to travel and want to have the best tour of your life. Capstone Holidays has created the greatest thailand group tour package at an incredibly low cost. You may experience the vibrant nightlife of the city, as well as stunning beaches, islands, resorts, monasteries, temples, and other well-known tourist destinations. With Thailand group travel, you may escape the hustle and bustle of your everyday life and venture out to discover this incredible nation.",
+      description1: [
+        "Due to its beautiful beaches and plethora of water sports. Thailand is the ideal destination for group tours. Choose the Thailand Group Tour Package when it comes to group tours. Thailand guarantees utmost fun and entertainment for group tour activities in places like Bangkok, Phuket, and Krabi. Your accommodations will be in the best five-star hotels and resorts during your tour, which will last five days and four nights.",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -180,7 +180,7 @@ const TourThailand = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

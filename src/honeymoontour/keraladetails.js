@@ -77,8 +77,8 @@ const TourPage = () => {
         "Sightseeing in Pvt Car",
       ],
 
-      description: [
-        "Ready to visit the god’s own country with our Kerala honeymoon package? Our Kerala tour packages are a unique blend of natural beauty, cultural experiences, and serene backwaters. We make your travel more exciting and fun-filled where you can visit some of the most popular tourist attraction sites like Fort Kochi, Mattancherry Palace, Jew Town, and St. Francis Church. So why wait? It’s time to explore Kerala with our Kerala tour packages.",
+      description1: [
+        "Take opportunity of our 5 day 4 night Kerala Honeymoon packages from Chennai and enjoy the tropical pleasures that God's own nation has to offer! We would be delighted to customize your Honeymoon Packages to better fit your preferences, pace, and financial constraints! Get detailed information about the travel schedule and lodging by giving our tourism experts a call. We will handle the tiresome planning and scheduling so you may have a pleasant and wonderful honeymoon in Kerala."
       ],
       duration: ["05 Days,04 Nights"],
       hotelDetails: [
@@ -199,7 +199,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

@@ -72,8 +72,8 @@ const TourDubai = () => {
         "Air Fare",
       ],
 
-      description: [
-        "Dubai is the place to go if you want to have a luxurious vacation somewhere else. To make your ideal vacation a reality, be sure to look over the many Dubai tour packages that Capstone Holidays offers. Every one of these tourism packages for Dubai has a customized itinerary to meet your preferences. They also include the majority of the necessities for traveling, like accommodation, food, and sightseeing",
+      description1: [
+        "Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots. With its majestic skyscrapers, rich historical legacy, enormous desert dunes, stunning white sand beaches, thrilling adventure sports, thrilling theme parks, wealthy retail complexes, and more, Dubai is a destination for thrill-seekers seeking an exciting vacation. Often referred to as the Venice of the Gulf, Dubai serves as the primary port and commercial center of the United Arab Emirates. The best time to maximize the value of your Dubai package is from November to March",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -186,7 +186,7 @@ const TourDubai = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

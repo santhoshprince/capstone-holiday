@@ -72,8 +72,8 @@ const TourSingapore = () => {
         "Air Fare",
       ],
 
-      description: [
-        "Our Singapore-Malaysia trip packages provide tourists with visits to all the captivating and well-liked tourist attractions, including Universal Studios, Sentosa Island, and Marina Bay. With our Singapore-Malaysia vacation packages, you may discover the dynamic cultures of both amazing locations. Singapore and Malaysia both have rich cultural histories dating back many generations.",
+      description1: [
+        "Singapore and Malaysia Tour Packages is the best example for all-around romantic and entertaining escape for couples. Sentosa Island, Gardens by the Bay, Marina Bay, Henderson Bridge, Jurong Bird Park, and Universal Studios are the most visited tourist destinations in Singapore. Kuala Lumpur, Batu Caves, Mount Kinabalu, Sipadan Island, Pantai Cenang beach, Desaru beach, are the most admired tourist destinations in Malaysia"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -196,7 +196,7 @@ const TourSingapore = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

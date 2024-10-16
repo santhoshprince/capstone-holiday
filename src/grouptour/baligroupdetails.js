@@ -60,8 +60,8 @@ const TourPage = () => {
         "Entrance fee",
         "1 Jimbaran Bay Dinner",
       ],
-      description: [
-        "Welcome to Bali: The Island of Paradise Explore the Blissful Bali with our Capstone Holidays Bali group tour package. Breathtaking insights are waiting for you at Bali!..",
+      description1: [
+        "Practically all Bali trip packages include Mt. Batur on their list of attractions. Take a Bali group trip to maximize your time on the volcanic expedition. The best time to hike is early in the morning and the views are breathtaking. Invest in a Bali group tour package and engage on a spiritual journey to Tanah Lot, Ulun Danu Beratan Temple, and Uluwatu Temple. It also has the accompanying traditional Kecak dance. Find your way through the beautiful fields of the Tegallalang rice terraces. For adventure, add White water rafting to your Bali group trip and you will be amazed with the enjoyment it offers.",
       ],
       tourCode: ["CBT-22/01"],
       duration: ["3 Days 2 Nights (BALI)"],
@@ -164,7 +164,7 @@ const TourPage = () => {
                   role="tabpanel"
                 >
                   <DetailSlider images={selectedTour.galleryImages} />
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>
@@ -177,7 +177,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

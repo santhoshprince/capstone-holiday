@@ -76,8 +76,8 @@ const TourPage = () => {
         "GST 5% (On final bill amount)",
       ],
 
-      description: [
-        "Welcome to Finest Goa Trip! Discover the tropical paradise of Goa, where golden sandy beaches, azure waters, and vibrant culture blend seamlessly to create a memorable vacation experience. At Finest Goa Trip, we specialize in crafting exceptional itineraries that cater to your every need, ensuring you have the finest holiday in this enchanting destination. Whether you’re a beach lover, an adventure seeker, or a culture enthusiast, Goa has something for everyone, and we’re here to make your trip extraordinary.",
+      description1: [
+        "The greatest time to look for discounts on Goa Tour Package From Chennai rates is during the summer when you can explore its greatest beaches. Goa's exciting nightlife and lively parties have made it the ideal location for travelers who want to party. We advise scheduling your vacation between November and February if you're seeking the best time to go. Goa is endowed with some of India's greatest shorelines, from Calangute to Palolem and Candolim. If you are a party lover and you are in North Goa, Anjuna and Baga are great. However, South Goa has the most isolated beaches that provide couples seeking a peaceful stroll on a romantic evening with a calm and soothing ambiance"
       ],
       duration: ["4 Days,3 Nights"],
       hotelDetails: [
@@ -188,8 +188,8 @@ const TourPage = () => {
         "GST 5% (On final bill amount)",
       ],
 
-      description: [
-        "Excited to explore which Goa tour places to visit? We got you! Our Goa travel packages give you an unforgettable experience of beaches, nightlife, water sports, historical sites, cuisine, and festivals. Our Goa travel packages are fun-filled ones where we provide few like parasailing, jet-skiing, windsurfing, and banana boat rides. This Goa travel packages is your best choice to revamp your holidays.",
+      description1: [
+        "Almost all the popular beaches are covered in our Goa Travel Packages and also you can witness its vibrant churches, party culture, and stunning beaches. Goa is the ideal merge of Indian and Portuguese cultures. People come here to enjoy the world-class parties, cuisines, and sunsets. The popular Goa Tour Places to Visit are Palolem Beach, Panaji, Vagator, Agonda, Calangute, Candolim, Anjuna, North Goa, and South Goa. Some of them are Candolim Beach, Sinquerim Beach, Arambol Beach, Morjim Beach, Miramar Beach, Ashwem Beach, Mandrem Beach, Kalacha Beach, Dona Paula Beach, Vagator Beach, and Anjuna Beach. ",
       ],
       duration: ["4 Days,3 Nights"],
       tourCode: ["AH-GOA-21"],
@@ -339,7 +339,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

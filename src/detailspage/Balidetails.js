@@ -60,8 +60,8 @@ const BaliDetails = () => {
         "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
         "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
       ],
-      description: [
-        "Discover the Bali Island Tour Package – Your Ultimate Island Escape! Enjoy the adventurous and thrilling water activities such as scuba diving, snorkelling, parasailing, sea surfing, canyon tubing with our Bali Island Tour Packages. With our Bali trip package, escape the fast-paced way of life and engage in all these activities.",
+      description1: [
+        "The Bali tour packages from Chennai are the solution for the ideal fusion of adventure and honeymoon. Surrounded by the most breathtaking beaches, and rolling hills all awaiting to celebrate your perfect honeymoon or holiday. Jimbaran Beach, Bingin Beach, Suluban Beach, Padang-Padang Beach, Uluwatu, and Mount Batur are the major tourist attractions included in Bali Honeymoon Packages and Bali Couple Package. Take advantage of our holiday packages to escape the fast-paced lifestyle and partake in all of these activities",
       ],
       tourCode: ["CBT-22/04"],
       duration: ["6 Days 5 Nights (BALI)"],
@@ -126,7 +126,7 @@ const BaliDetails = () => {
     },
     "bali-tour-places": {
       heading: "Bali Tourist Places",
-      title: "Bali Tourist Places",
+      title1: "Bali Tourist Places",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -143,8 +143,8 @@ const BaliDetails = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Welcome to Bali The Island of Paradise,Bali Sightseeing Places are so fascinating with its tropical destination and breathtaking beaches and mountains. Its rich cultural heritage adds to the allure of this picturesque island.",
+      description1: [
+        "The prominent Bali tourist places are covered with our Bali Island Tour Package and Bali Indonesia Package within a week. Bali tour places are more fascinating that provide a wide range of experiences. Some most visited destinations in Bali include Nusa Dua, Nusa Penida, Kuta, Ubung, Ubud, Gates of Heaven, Mt Batur, Jimbaran Beach, Bingin Beach, Suluban Beach, Padang-Padang Beach, Uluwatu, and many more",
       ],
       tourCode: ["CBT-22/01"],
       duration: ["3 Days 2 Nights (BALI)"],
@@ -282,7 +282,7 @@ const BaliDetails = () => {
               <div className="col-12" ref={tourDetailsRef}>
                 <TourDetails
                   title1={tour.title1}
-                  description={tour.description}
+                  description1={tour.description1}
                   duration={tour.duration}
                   tourCode={tour.tourCode}
                   priceIncludes={tour.priceIncludes}

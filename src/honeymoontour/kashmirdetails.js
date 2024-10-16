@@ -72,8 +72,8 @@ const TourPage = () => {
         "Cable Car / Pony Ride in Gulmarg, Pahalgam, & Sonamarg.",
       ],
 
-      description: [
-        "Experience the tour of Srinagar, the summer capital of Jammu and Kashmir, with our Srinagar tour packages which offer a mix of cultural, natural, and romantic experiences. Jammu Kashmir travel and tourism includes all the unique experiences like the shikhara ride on Dal Lake, Lal Chowk, and Polo View Market, for traditional Kashmiri handicrafts, Pashmina shawls, and more. With Srinagar tour packages you explore local Kashmiri cuisine, including Wazwan dishes, Rogan Josh, and Yakhni.",
+      description1: [
+        "Capstone Holidays provides customised Kashmir honeymoon package for couple that are made to guarantee an unforgettable experience with affordable costs. Travellers have always found Kashmir to be a very popular location. Due to the pristine landscape and captivating beauty of this land, people swarm here. Because of its amazing natural beauty and whitish sceneries, the Valleys of Kashmir are often referred to as Heaven on Earth. One of the most popular travel places in India for honeymoon has also been Kashmir."
       ],
       duration: ["4 Nights, 5 Days"],
       hotelDetails: [
@@ -194,7 +194,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

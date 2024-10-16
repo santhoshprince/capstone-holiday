@@ -72,8 +72,8 @@ const TourPage = () => {
       //     "PCR test costs.",
       //     "Visa cost."
       //   ],
-      description: [
-        "Discover the enchanting beauty and rich history of Greece, a land where ancient traditions and stunning landscapes come together to create an unforgettable travel experience. Your journey begins in Athens, the cradle of civilization, where you'll explore iconic landmarks such as the Acropolis, Parthenon, and the ancient Agora. Immerse yourself in the vibrant culture of this historic city, savoring traditional Greek cuisine in charming tavernas and exploring bustling markets.",
+      description1: [
+        "Our Greece Tour Packages from India helps to witness the Greek mythology's well-known love tales have fascinated audiences for years. Greece in the modern era is just as romantic, filling you with wonderful emotions with its breathtaking scenery, lively culture, and thrilling underwater excursions for couples. The abundance of historic artifacts, white-painted structures, cobblestone streets, mouth watering food, and quaint outdoor cafes can inspire admiration unlike anything else.  Greece is a uniquely beautiful and hospitable country to explore. Athens, Parthenon, Meteora, Acropolis Museum, Santorini, Elafonissi Beach, Mykonos, Knossos Palace, Temple of Olympian Zeus, and many more are the main tourist destinations that are loved by international tourists.",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["9 Days 8 Nights"],
@@ -218,7 +218,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

@@ -73,8 +73,8 @@ const TourPage = () => {
       //     "PCR test costs.",
       //     "Visa cost."
       //   ],
-      description: [
-        "Embark on an unforgettable journey through the diverse landscapes and rich history of China, a country that seamlessly blends ancient traditions with modern marvels. Your adventure begins in Beijing, the vibrant capital, where you will explore iconic landmarks such as the Great Wall, Forbidden City, and Temple of Heaven. Experience the vibrant culture and culinary delights as you stroll through local markets and savor authentic Peking duck.",
+      description1: [
+        "Our China tour package from Chennai is designed ideally so that our customers do not miss the legacies in China. China has a fascinating fusion of cutting-edge modernism and ancient history. Travelers looking to experience magical tourism will find China a diverse and unforgettable destination with its vibrant cities, lovely Mother Nature, and rich cultural legacy. The Great Wall of China, Forbidden City, The Bund, Summer Palace, Yu Garden, Temple of Heaven, Zhangjiajie National Park, Leshan Giant Buddha, Beijing, Shanghai, Lijiang, and many more are the favorite places for International tourists in China. Autumn and Spring are lovely seasons in China. Our China tour packages will take you at any time between March to May and September to November",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["9 Days 8 Nights"],
@@ -219,7 +219,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

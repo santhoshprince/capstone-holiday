@@ -71,8 +71,8 @@ const TourPage = () => {
         "PCR test costs.",
         "Visa cost.",
       ],
-      description: [
-        "Explore the enchanting beauty and rich cultural heritage of Azerbaijan, a country where the East meets the West. Your journey begins in the vibrant capital, Baku, known for its stunning architecture, including the modern Flame Towers and the historic Old City, a UNESCO World Heritage site. Enjoy leisurely walks along the picturesque Baku Boulevard and indulge in local cuisine at charming restaurants.",
+      description1: [
+        "Our Azerbaijan tour packages from India are designed ideally to cover all the major tourist attractions including Baku tourist attractions. Travel to Azerbaijan encourages you to see the lovely semi-desert landscapes where history and modernity meet along the Caucasian stretch of the Silk Road. Baku, Shamaki, Sheki, Gebele, Ganja, Quba, Qobustan, Khinaliq, and Lankaran are the major Azerbaijan tourist places that are loved by international tourists. Avoid Summers(May-September) in Azerbaijan since it gets hotter and flaming. Our customizable Azerbaijan tour packages take you to the Azerbaijan tourist places during the rest of the months with pleasant weather and to enjoy the delightful surroundings"
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["10 Days 9 Nights"],
@@ -222,7 +222,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

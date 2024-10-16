@@ -75,8 +75,8 @@ const TourPage = () => {
         "Air Fare",
       ],
 
-      description: [
-        "Delve into an Andaman tour package with curated destinations that explore the versatile geography. It is one of Andaman best tour packages which covers most of the must-visit places. This Andaman tour package gives you the experience of a wide range of flora and fauna. The rich biodiversity of Andaman islands will be explored with this Andaman tour package which gives you once in a lifetime kind of experience",
+      description1: [
+        "Andaman tour package from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for a Andaman trip in October to April. The Andaman and Nicobar Islands are an excellent option if you're thinking of a romantic escape with your soulmate that involves delicious food with a candle-light dinner, thrilling water activities, and lovely beaches and a favorable atmosphere for admiration and sightseeing. The most beautiful and most-visited beaches in Andaman and Nicobar are Radhanagar Beach, Elephant Beach, Wandoor Beach, Rock Beach, and Vijaya Nagar Beach",
       ],
       duration: ["4 Nights, 5 Days"],
       hotelDetails: [
@@ -156,8 +156,8 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "The Andaman and Nicobar islands package explores the strategical location of these islands as a whole which plays a crucial role in Indian security. With this Andaman and Nicobar islands package, you can witness the Indian navy’s significant presence in this region without disturbing the biodiversity. Andaman and Nicobar islands package consists of both airways and waterways transport where you can enjoy the collaborative experience",
+      description1: [
+        "Explore the most magnificent spots with the Andaman and Nicobar Islands package from beaches to Islands that one may visit in the Andaman Islands. With their bright skies, golden beaches, turquoise waters, and pristine surroundings, the Andaman and Nicobar Islands are the perfect getaway destination. Andaman islands also consist of many places of historical importance like The Cellular Jail, Mahatma Gandhi Marine National Park, Ross Island, Havelock Island, Laxmanpur Beach, Bharatpur Beach, Barren Island North Bay Island, Chatham Saw Mill, Baratang Island, Corbyn’s Cove beach, Mount Harriet, and many more. ",
       ],
       duration: ["3 Nights, 4 Days"],
       hotelDetails: [
@@ -315,7 +315,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

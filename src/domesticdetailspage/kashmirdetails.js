@@ -53,8 +53,8 @@ const TourPage = () => {
         galleryImage6_6,
       ],
 
-      description: [
-        "We promise romantic and enchanting Kashmir honeymoon packages in which you can experience stunning landscapes, serene lakes, and charming houseboats with this Kashmir tour package. A romantic shikara ride on Dal Lake, beautiful Mughal Gardens, and Shah Hamdan’s shrine give you the best experience with our Kashmir tour package. A romantic candlelight dinner, a traditional Kashmiri music performance, or a private shikara ride for special moments will make your Kashmir tour package a fulfilled one",
+      description1: [
+        "We provide Kashmir tour packages from Chennai so you may enjoy some regions like Gulmarg, Sri Nagar, Pahalgam, and Sonmarg in the springtime. Although Kashmir is worth seeing throughout the year, spring and winter are the best times to go. Every area of Kashmir appears as though it were captured from a painting because of the snow-capped mountain peaks, verdant meadows, nice weather, cascading streams, lakes, and blossoming meadows and landscapes. This nature’s paradise, local foods are very interesting and mouthwatering",
       ],
       duration: [
         "07 Days,06 Nights  Patanitop 1N/Srinagar 2N/Pahalgam 1N/Gulmarg 1N/Jammu 1N (Tour Duration)",
@@ -180,8 +180,8 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Experience the tour of Srinagar, the summer capital of Jammu and Kashmir, with our Srinagar tour packages which offer a mix of cultural, natural, and romantic experiences. Jammu Kashmir travel and tourism includes all the unique experiences like the shikhara ride on Dal Lake, Lal Chowk, and Polo View Market, for traditional Kashmiri handicrafts, Pashmina shawls, and more. With Srinagar tour packages you explore local Kashmiri cuisine, including Wazwan dishes, Rogan Josh, and Yakhni.",
+      description1: [
+        "Book our Srinagar Tour Packages and enjoy the memorable Dal Lake Shikara ride, Mughal Gardens visit, and relish the tastiest retreat of Kashmir. Let us know when you are selecting Srinagar Tour packages if you have always wanted to take a trip on one of these exquisitely adorned boats. Several stunning and storied Mughal gardens, including Shalimar Bagh, Nishat Bagh, and Cheshma Shahi, can be found in Srinagar. Since there is only road connectivity to locations outside of Srinagar, Jammu Kashmir Tourism provides public buses or private taxis if you want to travel within Kashmir. Some of the popular Kashmiri  foods are Goshtaba, Mutton Roghan Josh, Kahwa, Kashmiri Wazwan, Dum Aloo, Khambir, Modur Pulav, and Lyodur Tschaman",
       ],
       duration: [
         "05 Days / 04 Nights - Srinagar (2N) – Gulmarg (1N) – Pahalgam (1N) (Tour Duration)",
@@ -358,7 +358,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title1}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

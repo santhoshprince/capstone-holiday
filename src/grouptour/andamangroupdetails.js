@@ -74,8 +74,8 @@ const TourPage = () => {
         "Air Fare",
       ],
 
-      description: [
-        "Welcome to Andaman Tour! Discover the breathtaking beauty and mesmerizing charm of the Andaman Islands, nestled in the azure waters of the Bay of Bengal. With pristine beaches, lush forests, and abundant marine life, this tropical paradise is a haven for nature lovers and adventure enthusiasts alike. At Andaman Tour, we offer you a chance to explore this idyllic destination and create unforgettable memories.",
+      description1: [
+        "If you search for beach vacations in India  then the Andaman and Nicobar Islands will be listed for sure. Because the beaches are really nice. But this island is not only for sunburn, sandpit, and snorkelling. Exciting water activities for groups are awaiting for you in India's most stunning island attractions, Andaman. Discover the previously unknown aspect of the Andaman Group Tour Packages. Explore white sand beaches melting under sunsets, diverse undersea marine life, and ancient jungles and have fun filled Andaman group tours.",
       ],
       duration: ["4 Nights, 5 Days"],
       hotelDetails: [
@@ -199,7 +199,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

@@ -73,8 +73,8 @@ const TourPage = () => {
       //   "Sightseeing in Pvt Car",
       // ],
 
-      description: [
-        "Ready to explore the ‘Land of Kings’ with our Rajasthan tout package? Yes, our Rajasthan travel packages offer the exciting experience of a vibrant and culturally rich state in northern India. With our Rajasthan tour packages, you can explore majestic palaces, forts, colorful festivals, and desert landscapes. Some key spots in Rajasthan that our Rajasthan tour package covers are Jaipur: The Pink City, Udaipur: The City of Lakes, Jodhpur: The Blue City, and many more.",
+      description1: [
+        "The Agra honeymoon package is especially intended for newlywed couples who wish to rediscover their love in the city that is home to the pinnacle of romantic architecture. By reserving this 3 nights, 4 days honeymoon vacation, you and your beloved can take in the breathtaking early morning view of the sun rising behind the Taj Mahal. We would be delighted to customize your Honeymoon Packages to better fit your preferences, pace, and financial constraints! Get detailed information about the travel schedule and lodging by giving our tourism experts a call.",
       ],
       duration: ["05 Days,04 Nights"],
       // hotelDetails: [
@@ -195,7 +195,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

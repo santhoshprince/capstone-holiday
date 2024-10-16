@@ -82,8 +82,8 @@ const TourSrilanka = () => {
         "All Entrance Fees cost at sightseeing",
       ],
 
-      description: [
-        "Welcome to Sri Lanka Tour! Nestled in the Indian Ocean, Sri Lanka is a jewel waiting to be explored. From pristine beaches to ancient temples, lush tea plantations to wildlife sanctuaries, this island nation offers a diverse and captivating travel experience.",
+      description1: [
+        "With our valuable Srilanka Tour Package from Chennai, experience the historic yet trendy Sri Lanka tourist spots. Sri Lanka is a small yet modest country because it boasts eight UNESCO World Heritage Sites, religious sites, many national parks, lush tea estates, and beaches, of course. Sri Lanka’s nightlife is thrilling and colorful where you can enjoy a quick game of chance in a casino or take a gorgeous train journey that passes by plantations and hills. Whatever your kind of pleasure, Sri Lanka has it all with its top tourist destinations. ",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -209,7 +209,7 @@ const TourSrilanka = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

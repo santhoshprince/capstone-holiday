@@ -73,8 +73,8 @@ const TourPage = () => {
         "Any service, Sightseeing which not mentioned in inclusion.",
         "GST 5% (On final bill amount)",
       ],
-      description: [
-        "Want to have fun with your group of friends or family? Our Shimla Manali group tour package is specially designed for group tours to Himachal Pradesh. We organize the Shimla Manali Group Tour efficiently and ensure everyone’s comfort and enjoyment to the fullest. We curated this Shimla Manali group tour which can be modified according to group size which influences accommodation choices, transportation arrangements, and overall logistics.",
+      description1: [
+        "Shimla, Manali, Dalhousie, Chamba, and Kasauli are the most admired tourist places that our Shimla Manali Group Tour packages include. Wintertime, from October to January, is the best time to see snow and enjoy winter activities. Kayaking, Trekking, White-water rafting and Hot air balloon flying are the best adventure activities for group tours covered with our Himachal Pradesh Tour Package, and Shimla Manali Tour Package from Chennai.",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["6 Days 5 Nights"],
@@ -220,7 +220,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

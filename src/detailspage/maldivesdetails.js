@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebar";
@@ -22,13 +21,13 @@ import galleryImage3_3 from "../img/gallery/4911.jpg";
 import galleryImage4_4 from "../img/gallery/4852.jpg";
 import galleryImage5_5 from "../img/gallery/835.jpg";
 import galleryImage6_6 from "../img/gallery/1110.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/bg/5.jpg";
 
 const TourMaldives = () => {
   const { id } = useParams();
-    
+
   const detailSliderRef = useRef(null);
   const detailsGalleryRef = useRef(null);
   const tourDetailsRef = useRef(null);
@@ -84,8 +83,8 @@ const TourMaldives = () => {
         "If a guest celebrates a birthday on the island during the stay a birthday cake will be provided per stay",
         "If a guest celebrates their wedding anniversary on the island during their stay a cake will be provided per stay",
       ],
-      description: [
-        "Are you trying to find the ideal Maldives tour package? No need to search any farther – Capstone Holidays has you covered! Whether you’re planning a family adventure with Maldives Honeymoon Package or a romantic retreat with Maldives vacation packages for couples, we have a wide selection of packages. One option is the Maldives Package with Water Resort. You can discover the perfect Maldives package at Capstone Holidays to make your fantasy vacation to the Maldives happen.",
+      description1: [
+        "Our Maldives Tour Package From Chennai takes you to the most blissful places to enjoy with the family or as a couple. The Maldives is an island nation that should go on everyone's bucket list; it is a small group of islands in the Indian Ocean with perfect beaches, the purest turquoise waters, magnificent marine life, over-the-water bungalows, and much more! Male, Addu Atoll, The Muraka Conrad, Vaadhoo Island, Grand Friday Mosque, Artificial Beach, National Museum, Fulhadhoo Island, and Maafushi Island are a few of the Maldives' locations with a good feel",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights,5 Days"],
@@ -126,34 +125,47 @@ const TourMaldives = () => {
   const selectedTour = toursData[id] || toursData[1];
 
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
   return (
-
     <>
-    <Helmet>
-                <title>Maldives Tour Package from Chennai | Coimbatore</title>
-                <meta name="description" content="Our Maldives Tour Package From Chennai takes you to the most blissful places to enjoy with the family or as a couple" />
-                <meta name="keywords" content="maldives tour package from chennai, maldives tour, hotel, maldives flight, Maldives tour package" />
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "WebSite",
-                        "name": "Capstone Holidays",
-                        "url": "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/",
-                        "potentialAction": {
-                            "@type": "SearchAction",
-                            "target": "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/{search_term_string}",
-                            "query-input": "required name=search_term_string"
-                        }
-                    })}
-                </script>
-            </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
+      <Helmet>
+        <title>Maldives Tour Package from Chennai | Coimbatore</title>
+        <meta
+          name="description"
+          content="Our Maldives Tour Package From Chennai takes you to the most blissful places to enjoy with the family or as a couple"
+        />
+        <meta
+          name="keywords"
+          content="maldives tour package from chennai, maldives tour, hotel, maldives flight, Maldives tour package"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            name: "Capstone Holidays",
+            url: "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/",
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.capstoneholidays.in/tour/maldivestour-package-from-chennai/{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          })}
+        </script>
+      </Helmet>
+      <Contentsection
+        heading={selectedTour.heading}
+        children={""}
+        backgroundImage={bg1}
+      />
 
-
-        {/* Navigation Links */}
-        <nav className="tour-navigation">
+      {/* Navigation Links */}
+      <nav className="tour-navigation">
         <ul>
           {/* <li onClick={() => scrollToSection(detailSliderRef)}>Detail Slider</li> */}
           <li onClick={() => scrollToSection(detailsGalleryRef)}>Gallery</li>
@@ -173,9 +185,9 @@ const TourMaldives = () => {
                   role="tabpanel"
                 >
                   <div ref={detailSliderRef}>
-                  <DetailSlider images={selectedTour.galleryImages}  />
+                    <DetailSlider images={selectedTour.galleryImages} />
                   </div>
-                
+
                   {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
@@ -186,13 +198,12 @@ const TourMaldives = () => {
             </div>
           </div>
           {/* Full-width gallery */}
-         
 
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}
@@ -214,7 +225,7 @@ const TourMaldives = () => {
           </div> */}
           {/* Full-width map */}
           <div className="row">
-            <div className="col-12"  ref={detailsGalleryRef}>
+            <div className="col-12" ref={detailsGalleryRef}>
               <DetailsGallery images={selectedTour.gallerydata} />
             </div>
           </div>

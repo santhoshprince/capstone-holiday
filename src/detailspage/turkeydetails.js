@@ -81,8 +81,8 @@ const TourTurkey = () => {
         "Domestic flight from Kayseri Airport to Istanbul"
       ],
 
-      description: [
-        "Travel Turkey with the Top-Rated Local Guided Tours. Indulge in a wonderful stay, stunning scenery, and much more in Turkey. Whichever your type of travel, Capstone Holidays offers the ideal Turkey vacation packages for you to pick from, whether you’re looking for a quick trip or a lengthy one, an active holiday or a leisurely stay."
+      description1: [
+        "Turkey Tour Packages From India takes you to the must-visit places including Istanbul, Bursa, Kemaliye, Ahlat, Hatay, Vize, and many more. Istanbul's timeless appeal can be attributed in great part to its rich historical background. The city was formerly known as Constantinople. It served as the epicenter of several ancient empires. Numerous easily accessible architectural wonders that still stand as a testimony to previous civilizations are located in the city's core. The best season to travel to Turkey is during the summer, which extends from April through October"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -195,7 +195,7 @@ const TourTurkey = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

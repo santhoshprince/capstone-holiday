@@ -71,8 +71,8 @@ const TourSingapore = () => {
         "Bank Charges 40 USD per Invoice. (Mandatory)",
       ],
 
-      description: [
-        "Vietnam is a country in eastern Asia that has everything from seacoasts to hill stations. It is well known for its quiet, serenity, and its youthful vitality that penetrate the whole country. With holiday packages from India, you may see a country known for its breathtaking natural beauty, rich cultural traditions, and a number of vibrant hill-tribe settlements. Vietnam is captivating and just as intriguing! You’ll be speechless with awe at the beauty of the nation!",
+      description1: [
+        "There are countless chances to be astounded everywhere you go in Vietnam, from the far North to the deep South. In addition to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho chi Minh city, beautiful Hoi An, there are more must-see locations that are taken into account when organising your journey for Vietnam group tour packages. The Vietnam Group Tour Packages takes you to the main cities such as Da Nang, Hanoi, and Ho Chi Minh City (Saigon), Hue, Hoi An, Nha Trang, Da Lat, and Mui Ne. The 3 nights and 4 days of your Vietnam trip covers the mentioned destinations and its respective adventure activities."
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["3 Nights, 4 Days"],
@@ -194,7 +194,7 @@ const TourSingapore = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

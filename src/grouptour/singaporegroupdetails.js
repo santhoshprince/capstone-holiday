@@ -72,8 +72,8 @@ const TourSingapore = () => {
         "Air Fare",
       ],
 
-      description: [
-        "Welcome to Singapore & Malaysia Tour! With our Singapore-Malaysia tour package, have an exhilarating trip to these vibrant locations and enjoy these international global capitals. Enjoy the magnificent buildings, unique tourist attractions, and mouthwatering cuisine when visiting these places, and make the most of your stay there",
+      description1: [
+        "We uniquely create our Singapore Malaysia Group Tour packages so that you can spend 3 days in Malaysia and 2.5 days in Singapore. The lodging, meals, and travel expenses for any number of registered group members are included in this group tour package. Because that's what group tours are for, you'll participate in all the adventure activities in Singapore and Malaysia in addition to visiting the tourist attractions. Take advantage of our great Singapore Malaysia Group Tour packages and have the most enjoyable and exciting 4 nights and 5 days of your life",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -193,7 +193,7 @@ const TourSingapore = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

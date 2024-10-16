@@ -77,8 +77,8 @@ const TourPage = () => {
         "GST 5% (On final bill amount)",
       ],
 
-      description: [
-        "Ready to visit the god’s own country with our Kerala honeymoon package? Our Kerala tour packages are a unique blend of natural beauty, cultural experiences, and serene backwaters. We make your travel more exciting and fun-filled where you can visit some of the most popular tourist attraction sites like Fort Kochi, Mattancherry Palace, Jew Town, and St. Francis Church. So why wait? It’s time to explore Kerala with our Kerala tour packages.",
+      description1: [
+        "Our Kerala tour packages from Chennai covers Kerala honeymoon trip and Kerala family trip to the must visit beaches, hill stations and backwaters in a week. Many families and senior citizens celebrate Kerala for its vibrant culture and tradition. The Western Ghats gives a pleasant climate throughout the year and becomes a romantic escape. So, book Kerala tour packages from Chennai at the peak season time to get drenched in the beauty of its backwaters and blissful climate. The best and clean beaches in Kerala include Kovalam beach, Varkala beach, Kappad beach, Cherai beach, Marari beach, Bekal beach, Alleppey beach and Fort Kochi beach. Munnar, Thekkady, Wayanad and Kumarakom are the beautiful hill stations of Kerala"
       ],
       duration: ["04 Days,03 Nights"],
       tourCode: ["AH-KRL-17"],
@@ -147,8 +147,8 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Want to explore the lush tea plantations and learn about the tea-making process in Munnar? Then our Munnar tour package is the right choice. In this Munnar tour package, you can visit many tourist attractions like Eravikulam National Park which is home to the endangered Nilgiri Tahr, Mattupetty Dam where you can enjoy boat rides, and the picturesque Attukal Waterfalls. So why wait? Explore the Munnar and Wayanad trip packages we made",
+      description1: [
+        "We have selected the best Munnar tour package to add more particular touches in endless tea estates and slopes with delectable cuisines to your Munnar trip. Munnar is a gorgeous location with endless tea estates and immaculate slopes that are ideal for a romantic getaway. This charming tiny hill station has a lot to offer for exploration like Lakkam Waterfalls, Eravikulam National Park, Tea Museum, Attukad Waterfalls, Blossom Park, Mattupetty Dam, Pothamedu Viewpoint, Kundala lake, Chinnar Wildlife Sanctuary. You may go hiking or paragliding, visit one of the few wildlife reserves in the area around Munnar, or indulge in some delectable cuisine",
       ],
       duration: ["06 Days / 05 Nights - 1N Cochin + 2N Munnar (Tour Duration)"],
       tourCode: ["AH-KRL-15"],
@@ -300,7 +300,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title1}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

@@ -79,8 +79,8 @@ const TourPage = () => {
         "5% GST.",
       ],
 
-      description: [
-        "Welcome to Andaman Tour! Discover the breathtaking beauty and mesmerizing charm of the Andaman Islands, nestled in the azure waters of the Bay of Bengal. With pristine beaches, lush forests, and abundant marine life, this tropical paradise is a haven for nature lovers and adventure enthusiasts alike. At Andaman Tour, we offer you a chance to explore this idyllic destination and create unforgettable memories.",
+      description1: [
+        "The Andaman honeymoon packages from Chennai are an excellent option if you're thinking of a romantic getaway that involves delicious food, thrilling activities, and stunning beaches. Select Andaman honeymoon packages that feature water-based pursuits like jet skiing, snorkeling, scuba diving, sea racing, and underwater sea walking if you're an enthusiastic water sports lover. The best time to reserve a cheap Andaman honeymoon travel package is during the monsoon. When engaging in water activities, respect all safety recommendations. This entails staying away from the beach after dark, swimming only in designated locations, and hiring qualified teachers to learn how to scuba dive or engage in other water sports"
       ],
       duration: ["4 Nights, 5 Days"],
       hotelDetails: [
@@ -324,7 +324,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

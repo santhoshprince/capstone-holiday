@@ -72,7 +72,7 @@ const TourSingapore = () => {
       ],
 
       description: [
-        "The Vietnam tour package provides a trip to Ha Long Bay where you see a collection of islands that were named a World Heritage Site in 1994. The islands are known for their majestic limestone columns, picturesque islets, and the green waters of the Gulf of Tonkin. It should come as no surprise that a visit of Ha Long Bay is one of the most popular tours in Vietnam. Travel packages to Hanoi will take you to the capital of Vietnam, which has remarkably recovered from the destruction of war"
+        "With the Vietnam Cambodia tour package, you can witness the hotspot sites that lie in both countries and Capstone Holidays provide you with a hassle-free experience throughout the journey. Vietnam and Cambodia are 2 beautiful travel destinations situated in southeast Asia. There are countless chances to be astounded everywhere you go, from the far North to the deep South. In addition to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho chi Minh city, romantic Hoi An, there are more must-see locations that are taken into account when organising your journey for Vietnam group tour packages and Vietnam and Cambodia tour package"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["3 Nights, 4 Days"],
@@ -180,7 +180,7 @@ const TourSingapore = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}
@@ -189,7 +189,7 @@ const TourSingapore = () => {
               />
             </div>
           </div>
-          
+
           <div className="row">
             <div className="col-12" ref={InitiaryMapRef}>
               <Itinerary

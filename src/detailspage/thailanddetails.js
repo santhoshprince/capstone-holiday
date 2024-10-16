@@ -58,8 +58,8 @@ const TourThailand = () => {
 
       Priceexclusions: ["GST 5%", "Air Fare"],
 
-      description: [
-        "Thailand’s friendly, hospitable populace has earned it its nickname, “Land of Smiles.” It is among the most well-liked locations for tourists from all over the world to visit when using a Thailand trip package. Most tourists choose a Thailand tour package in order to visit beaches, go island hopping, or learn more about the Buddhist culture. The islands of Thailand are well-known for their distinctive food, water sports, and underwater explorations. Thailand is a fantastic destination for a Thailand vacation because of these factors.",
+      description1: [
+        "Our Thailand Tour Package from Chennai takes you to the best tourist destinations such as The Sweet Tamarind Fair, Mae Hong Son Winter Feast, Alcazar show in Pattaya, Phi Phi Island tour, and Nakhon Sawan Chinese New Year, The Loi Krathong and the Chiang Mai Flower Festival. Thailand is geographically located in the midst of Southeast Asia. Thailand is known for its numerous islands with beautiful beaches and a mild climate. Thailand truly stands true to its nickname, “the origin of happiness,” since its citizens are incredibly warm and inviting."
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -180,7 +180,7 @@ const TourThailand = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

@@ -3,7 +3,7 @@ import "./TourDetails.css"; // Import your CSS styles
 
 const TourDetails = ({
   title1,
-  description,
+  description1,
   tourCode,
   duration,
   priceIncludes,
@@ -21,7 +21,7 @@ const TourDetails = ({
   return (
     <div className="tour-details">
       <h1>{title1}</h1>
-      <p>{description}</p>
+      <p>{description1}</p>
 
       <div className="tour-info">
         {tourCode ? <h4>Tour Code: {tourCode}</h4> : null}

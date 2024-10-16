@@ -68,8 +68,8 @@ const TourMauritius = () => {
         "All Tax",
       ],
 
-      description: [
-        "Mauritius Honeymoon Package are the best option if you’re searching for an amazing Mauritius Package and trip. With the most customisable Mauritius tour options, Capstone Holidays caters to all types of travellers from Chennai. Choose a lot more from Mauritius travel packages with incredible offers and savings.",
+      description1: [
+        "The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers. The Republic of Mauritius, which is the perfect honeymoon beach destination, is located in the Indian Ocean. A week is more than enough to thoroughly experience Mauritius's stunning beaches and resorts, which are accessible throughout the whole year",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -191,7 +191,7 @@ const TourMauritius = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

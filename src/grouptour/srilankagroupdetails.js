@@ -81,8 +81,8 @@ const TourSrilanka = () => {
         "All Entrance Fees cost at sightseeing",
       ],
 
-      description: [
-        "Let us first introduce you to Sri Lankan tourism and the reasons it is, in our opinion, the ideal trip destination for you, before you browse about the deals we offer. Sri Lanka has everything one could want for an adventure, be it romantic, adventurous, or solo. Sri Lanka, formerly known as Ceylon, is an amazing, varied, and stunning country. Visitors can take use of countless beaches and breathtaking coastlines for relaxing or a variety of adventurous activities.",
+      description1: [
+        "Take benefit from Capstone Holidays' Awesome Sri Lanka Group Tour Package to have the most amazing 4 nights and 5 days of your life. Adventure activities are typically included in group travel packages, allowing you to participate in all exhilarating activities safely and at a reasonable cost. Check the price and lodging options with our customized group tour package for Sri Lanka."
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -193,7 +193,7 @@ const TourSrilanka = () => {
                     <DetailSlider images={selectedTour.galleryImages} />
                   </div>
 
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>
@@ -206,7 +206,7 @@ const TourSrilanka = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description={selectedTour.description}
+                description1={selectedTour.description}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

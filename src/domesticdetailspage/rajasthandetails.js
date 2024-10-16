@@ -55,8 +55,8 @@ const TourPage = () => {
         galleryImage6_6,
       ],
 
-      description: [
-        "Ready to explore the ‘Land of Kings’ with our Rajasthan tout package? Yes, our Rajasthan travel packages offer the exciting experience of a vibrant and culturally rich state in northern India. With our Rajasthan tour packages, you can explore majestic palaces, forts, colorful festivals, and desert landscapes. Some key spots in Rajasthan that our Rajasthan tour package covers are Jaipur: The Pink City, Udaipur: The City of Lakes, Jodhpur: The Blue City, and many more.",
+      description1: [
+        "Check out Capstone Holidays Delhi Agra Jaipur Tour Package if you want to see more of the route and culture of the Golden Triangle.  Part of the Golden Triangle, the cities of Agra, Jaipur, and Delhi are well-liked travel destinations because of their exquisite historical, architectural, and cultural routes and landmarks. This is a 4 days and 3 nights trip package. You will be taken to Mathura, Taj Mahal, Hawa Mahal, Nahargarh Fort, Jantar Mantar, Qutub Minar, Jama Masjid, Red Fort and Rastrapathi Bhavan. When choosing this package, you can also schedule a group tour or your honeymoon. You will spend your night staycation at the best hotels of Delhi, Agra, and Jaipur. Contact our tour planner at Capstone Holidays for any additional clarity, and we will gladly address any concerns."
       ],
       duration: ["05 Days / 04 Nights"],
       tourCode: ["AH-RJ-17"],
@@ -163,8 +163,8 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
-        "Explore the popular destination of Rajasthan with our Rajasthan trip package. Our Rajasthan holiday package is a combination of numerous palaces, forts, temples, and havelis that showcase the opulence and grandeur of Rajasthan’s history. You can also explore Rajasthan’s architecture which is often a blend of Mughal, Rajput, and medieval styles in our Rajasthan trip package. Popular ones include Amber Fort in Jaipur, Mehrangarh Fort in Jodhpur, City Palace in Udaipur, and Hawa Mahal in Jaipur.",
+      description1: [
+        "Our Rajasthan Trip Packages explore Rajasthan's contemporary infrastructure, calm city atmosphere and historical significant spots suitable for honeymoon too. Our Rajasthan Trip Package covers the main tourist destinations such as Jaipur, Udaipur, Jaisalmer, Jodhpur, Ranthambore National Park, Mount Abu, Ajmer, Bikaner, and Pushkar. Avoid going to Rajasthan from April to September. The temperature is extremely hot and makes your tour dull. This is generally the off-season in Rajasthan and the best time is from November to February. The weather will be pleasant outside and you can have a colorful yet memorable Rajasthan trip",
       ],
       duration: ["04 Days / 03 Nights"],
       tourCode: ["AH-RAJ-15"],
@@ -278,7 +278,7 @@ const TourPage = () => {
   return (
     <>
       <Helmet>
-        <title>{metaDetails.title1}</title>
+        <title>{metaDetails.title}</title>
         <meta name="description" content={metaDetails.description} />
         <meta name="keywords" content={metaDetails.keywords} />
         <script type="application/ld+json">
@@ -326,7 +326,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title1}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}

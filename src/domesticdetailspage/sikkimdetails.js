@@ -54,8 +54,8 @@ const TourPage = () => {
         galleryImage6_6,
       ],
 
-      description: [
-        "Visit the beautiful state nestled in the northeastern part of India, Sikkim is known for its stunning landscapes, diverse flora and fauna, and vibrant culture with our Sikkim tour package. Sikkim tour places include Gangtok, Nathula Pass Tsomgo Lake, Lachen, and Lachung, Pelling, and Yuksom. Our Sikkim tour package offers a delightful mix of nature, spirituality, and adventure, making it a perfect destination for those seeking a unique and memorable experience.",
+      description1: [
+        "Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year. Darjeeling is surrounded by the recognizable Kanchenjunga peaks, which makes it the ideal location for a romantic holiday. It also has  many smaller hills with immaculate tea gardens, exotic orchids, majestic stretches of forests of pines, and the sound of little mountain rails passing by. Darjeeling's throughout the year with a pleasing temperature makes it a popular destination. It should come as no surprise that March through May is the busiest travel period and when Darjeeling honeymoon packages are most affordable"
       ],
       duration: ["05 Days / 04 Nights"],
       tourCode: ["AH-NE-17"],
@@ -162,7 +162,7 @@ const TourPage = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-      description: [
+      description1: [
         "Sikkim travel packages combine the cultural richness of Sikkim with the picturesque landscapes of Darjeeling and Kalimpong in West Bengal. Explore local attractions like Batasia Loop, Himalayan Mountaineering Institute, and Peace Pagoda with west Bengal tour packages. We offer a diverse experience of the Eastern Himalayas with our Sikkim travel packages. We with our Sikkim travel packages curate specific travel packages that suit your needs.",
       ],
       duration: ["04 Days / 03 Nights"],
@@ -324,7 +324,7 @@ const TourPage = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={tour.title1}
-                description={tour.description}
+                description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}
                 priceIncludes={tour.priceIncludes}
