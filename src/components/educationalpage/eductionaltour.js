@@ -3,8 +3,9 @@ import TourList from "../../components/card/education";
 import Sidebar from "../../components/sidebar";
 import Contentsection from "../../components/contentbg";
 import EducationalDescription from "../../components/tourdescription";
-import Balidesc from "../../img/tour/358.jpg";
+import Balidesc from "../../img/swiss/s1.jpg";
 import { Helmet } from 'react-helmet';
+import bg1 from "../../img/bg/hero_bg_5_1.png";
 
 const HimchalTour = () => {
 
@@ -36,7 +37,7 @@ const HimchalTour = () => {
             </Helmet>
       <Contentsection
         heading={"Educational Tour Package"}
-        children={"Destination"}
+        children={"Destination"} backgroundImage={bg1}
       />
 
       <section className="space">

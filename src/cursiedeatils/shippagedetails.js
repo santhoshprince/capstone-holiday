@@ -7,21 +7,23 @@ import DetailsGallery from "../components/detailsgallery";
 import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/tour/11021.jpg";
-import galleryImage2 from "../img/tour/354.jpg";
-import galleryImage3 from "../img/tour/835.jpg";
-import galleryImage4 from "../img/tour/15793.jpg";
-import galleryImage5 from "../img/tour/340.jpg";
-import galleryImage6 from "../img/tour/365.jpg";
+import galleryImage1 from "../img/cruise/c8.jpg";
+import galleryImage2 from "../img/cruise/c2.jpg";
+import galleryImage3 from "../img/cruise/c7.jpg";
+import galleryImage4 from "../img/cruise/12.jpg";
+import galleryImage5 from "../img/cruise/11.jpg";
+import galleryImage6 from "../img/cruise/c4.jpg";
 
 import { Helmet } from "react-helmet";
 
-import galleryImage1_1 from "../img/gallery/358.jpg";
-import galleryImage2_2 from "../img/gallery/343.jpg";
-import galleryImage3_3 from "../img/gallery/369.jpg";
-import galleryImage4_4 from "../img/gallery/963.jpg";
-import galleryImage5_5 from "../img/gallery/11021.jpg";
-import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+import galleryImage1_1 from "../img/cruise/c9.jpg";
+import galleryImage2_2 from "../img/cruise/c7.jpg";
+import galleryImage3_3 from "../img/cruise/c6.jpg";
+import galleryImage4_4 from "../img/cruise/c5.jpg";
+import galleryImage5_5 from "../img/cruise/c3.jpg";
+import galleryImage6_6 from "../img/cruise/c2.jpg";
+
+import bg1 from "../img/cruise/c1.jpg";
 
 const TourPage = () => {
   const { id } = useParams();
@@ -129,7 +131,7 @@ const TourPage = () => {
           {JSON.stringify(seoData.schema)}
         </script>
       </Helmet>
-      <Contentsection heading={selectedTour.heading} children={""} />
+      <Contentsection heading={selectedTour.heading} children={""} backgroundImage={bg1} />
 
       <nav className="tour-navigation">
         <ul>

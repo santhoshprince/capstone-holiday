@@ -9,20 +9,21 @@ import Itinerary from "../../components/itinerary";
 import PopularTags from "../../components/populartags";
 import LocationMap from "../../components/deatilsmap";
 import TourDetails from "../../components/tourdetails";
-import galleryImage1 from "../../img/tour/11021.jpg";
-import galleryImage2 from "../../img/tour/12.jpg";
-import galleryImage3 from "../../img/tour/835.jpg";
-import galleryImage4 from "../../img/tour/15793.jpg";
-import galleryImage5 from "../../img/tour/340.jpg";
-import galleryImage6 from "../../img/tour/365.jpg";
+import galleryImage1 from "../../img/almaty/s11.jpg";
+import galleryImage2 from "../../img/almaty/visitalmaty-3457149_1920.jpg";
+import galleryImage3 from "../../img/almaty/s9.jpg";
+import galleryImage4 from "../../img/almaty/s8.jpg";
+import galleryImage5 from "../../img/almaty/sunset-2459531_1920.jpg";
+import galleryImage6 from "../../img/almaty/s6.jpg";
 
-import galleryImage1_1 from "../../img/gallery/358.jpg";
-import galleryImage2_2 from "../../img/gallery/343.jpg";
-import galleryImage3_3 from "../../img/gallery/369.jpg";
-import galleryImage4_4 from "../../img/gallery/963.jpg";
-import galleryImage5_5 from "../../img/gallery/11021.jpg";
-import galleryImage6_6 from "../../img/gallery/2151625212.jpg";
+import galleryImage1_1 from "../../img/almaty/21.jpg";
+import galleryImage2_2 from "../../img/almaty/s12.jpg";
+import galleryImage3_3 from "../../img/almaty/s5.jpg";
+import galleryImage4_4 from "../../img/almaty/s4.jpg";
+import galleryImage5_5 from "../../img/almaty/s2.jpg";
+import galleryImage6_6 from "../../img/almaty/nauryz-707701_1920.jpg";
 import location1 from "../../img/icon/location-dot3.svg";
+import bg1 from "../../img/almaty/kazakhstan-7955879_1920.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -354,7 +355,7 @@ const BaliDetails = () => {
             {JSON.stringify(tour.schema)}
           </script>
         </Helmet>
-        <Contentsection heading={tour.heading} children={""} />
+        <Contentsection heading={tour.heading} children={""} backgroundImage={bg1} />
 
         <nav className="tour-navigation">
           <ul>
