@@ -63,8 +63,8 @@ const BaliDetails = () => {
       //     "3* - Legian Village Hotel or Legian Paradiso or Swiss-Belexpress Kuta Legian or Similar",
       //     "4* - J4 Hotel Legian or Bedrock Hotel Legian or Grand Ixora Hotel or Similar",
       //   ],
-      description: [
-        "Discover the natural beauty and rich culture of Almaty, Kazakhstan’s largest city and a gateway to stunning landscapes. Nestled at the foot of the majestic Tien Shan Mountains, Almaty offers a unique blend of modern city life and breathtaking nature.",
+      description1: [
+        "Choose our Almaty tour package from India to witness the epic wonder of The Kolsai Lakes, Charyn Canyon, and Altyn-Emel National Park. These are Almaty's three main natural attractions, earning it the moniker Golden Triangle  of Kazakhstan. This national park is the best illustration of Almaty's famed natural beauty. The park, which stretches from the George Turgen to the Chimlogan River, is the heart and spirit of the city. Lake Kaindy, First Presidents Park, Green Bazaar, Arasan Baths, Panfilov parks, Central State Museum, Shymbulak Ski Resort, Kok Tobe Hill, Ascension Cathedral, and Medeu are the places most loved by tourists every year. July to September (Summer) and November to January (Winter) are the best times to witness this natural wonder. Contact our Almaty tour operators at Capstone Holidays for more details",
       ],
       //   tourCode: ["CBT-22/04"],
       //   duration: ["6 Days 5 Nights"],
