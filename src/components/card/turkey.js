@@ -8,9 +8,9 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: maldives,
-      title: "Mauritius Tour Package from Chennai",
+      title: "Turkey Tour Packages from India – 4N / 5D",
       rating: 4.7,
-      price: "135,320",
+      price: "25,075",
       duration: "4 Nights, 5 Days",
       detailPath: '/tour/turkey-tour-packages-from-india',
     },
