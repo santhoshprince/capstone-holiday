@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* .sticky-header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+} */
 
 /* Main Header Section */
 .main-header {
@@ -92,30 +99,6 @@ li:hover .dropdown {
 } */
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main-menu {
-    flex-direction: column;
-    gap: 10px; /* Adjust gap for smaller screens */
-    margin-top: 15px;
-  }
-
-  .header-button {
-    margin-top: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .th-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
 
 /* Flight Icon Animation */
 @keyframes flightArrival {
@@ -398,3 +381,60 @@ nav ul li a:hover {
   overflow: hidden; /* Hide any overflow */
   text-overflow: ellipsis; /* Add ellipsis if text overflows */
 }
+
+
+
+
+
+/* Default styles */
+.mobile-menu-toggle {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Color of the toggle button */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+
+/* Hover effect for the toggle button */
+.mobile-menu-toggle:hover {
+  background: rgba(0, 0, 0, 0.1); /* Slightly darker background on hover */
+  border-radius: 5px; /* Rounded corners for better aesthetics */
+}
+
+/* Active state when the menu is open */
+.mobile-menu-toggle.active {
+  color: #e63946; /* Change color when active */
+  transform: rotate(90deg); /* Optional: Rotate the icon */
+}
+
+/* Menu styles */
+.main-menu {
+  display: flex; /* Default display for larger screens */
+}
+
+/* Hide the menu on mobile */
+@media (max-width: 768px) {
+  .main-menu {
+    display: none; /* Hide the menu on mobile by default */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust as per your header height */
+    left: 0; /* Align to the left */
+    background-color: white; /* Background color for the menu */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Bring it in front of other content */
+  }
+
+  /* Show menu when toggle button is active */
+  .main-menu.open {
+    display: flex; /* Show the menu when open */
+  }
+  .mobile-menu-toggle {
+    display: block; /* Show the toggle button on mobile */
+  }
+}
+
+

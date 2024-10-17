@@ -1,13 +1,38 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link ,useLocation} from "react-router-dom";
 import logo from "../img/logo/capstonelogo.png";
 import "../components/header.css";
 
 const Header = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const handleMouseEnter = (dropdown) => setActiveDropdown(dropdown);
-  const handleMouseLeave = () => setActiveDropdown(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const location = useLocation(); // Get the current location
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
+  // Close menu on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Close menu on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false); // Close the menu when the route changes
+  }, [location]); // This effect runs every time location changes
+
+
 
   const tourPackages = {
     international: [
@@ -76,7 +101,19 @@ const Header = () => {
             </Link>
           </div>
 
-          <ul className="main-menu">
+          <button
+            className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
+            onClick={toggleMobileMenu}
+            aria-expanded={isMobileMenuOpen} // Accessibility
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"} // Accessibility
+          >
+            {isMobileMenuOpen ? "✖" : "☰"} {/* Change icon based on state */}
+          </button>
+
+          <ul
+            className={`main-menu ${isMobileMenuOpen ? "open" : ""}`}
+            ref={menuRef}
+          >
             <li>
               <Link to="/about">About Us</Link>
             </li>
@@ -85,7 +122,10 @@ const Header = () => {
               <div className="dropdown">
                 <div className="dropdown-container">
                   <div className="dropdown-section international">
-                    <Link to="/international-tour-packages-from-chennai"  className="link-container">
+                    <Link
+                      to="/international-tour-packages-from-chennai"
+                      className="link-container"
+                    >
                       <h3>International Packages</h3>
                     </Link>
                     <ul>
@@ -99,12 +139,10 @@ const Header = () => {
                       ))}
                     </ul>
                   </div>
-                  {/* <div className="divider" />  */}
                   <div className="dropdown-section domestic">
                     <Link to="/domestic-tour-packages-from-chennai">
                       <h3>Domestic Packages</h3>
                     </Link>
-
                     <ul>
                       {tourPackages.domestic.map((pkg, index) => (
                         <li key={index}>
@@ -121,77 +159,16 @@ const Header = () => {
             </li>
             <li>
               <Link to="/group-tour-packages">Group Tour</Link>
-              <div className="dropdownnew">
-                <div className="dropdown-containernew">
-                  <div className="dropdown-sectionnew international">
-                    <Link to="group-tour-packages" className="link-container">
-                      <h3>Group Tour Packages</h3>
-                    </Link>
-
-                    <ul>
-                      {tourPackages.groupTour.map((pkg, index) => (
-                        <li key={index} className="link-container">
-                          <Link to={pkg.link}>
-                            <span className="icon fas fa-plane"></span>{" "}
-                            {pkg.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </li>
             <li>
-              <Link to="europe-tour-packages-from-chennai">Europe Tour</Link>
-              <div className="dropdownnew">
-                <div className="dropdown-containernew">
-                  <div className="dropdown-sectionnew international">
-                    <Link to="europe-tour-packages-from-chennai" className="link-container">
-                      <h3>Europe Tour Packages</h3>
-                    </Link>
-
-                    <ul>
-                      {tourPackages.EuropeTour.map((pkg, index) => (
-                        <li key={index}>
-                          <Link to={pkg.link}>
-                            <span className="icon fas fa-plane"></span>{" "}
-                            {pkg.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <Link to="/europe-tour-packages-from-chennai">Europe Tour</Link>
             </li>
             <li>
               <Link to="/honeymoon-packages-from-chennai">Honeymoon Tour</Link>
-              <div className="dropdownnew">
-                <div className="dropdown-containernew">
-                  <div className="dropdown-sectionnew international">
-                    <Link to="/honeymoon-packages-from-chennai" className="link-container">
-                      <h3>Honeymoon Tour Packages</h3>
-                    </Link>
-                    <ul>
-                      {tourPackages.HoneymoonTour.map((pkg, index) => (
-                        <li key={index}>
-                          <Link to={pkg.link}>
-                            <span className="icon fas fa-plane"></span>{" "}
-                            {pkg.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </li>
-
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-
             <li>
               <Link to="/contact">Contact Us</Link>
             </li>
