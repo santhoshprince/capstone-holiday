@@ -159,12 +159,71 @@ const Header = () => {
             </li>
             <li>
               <Link to="/group-tour-packages">Group Tour</Link>
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="group-tour-packages" className="link-container">
+                      <h3>Group Tour Packages</h3>
+                    </Link>
+
+                    <ul>
+                      {tourPackages.groupTour.map((pkg, index) => (
+                        <li key={index} className="link-container">
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <Link to="/europe-tour-packages-from-chennai">Europe Tour</Link>
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="europe-tour-packages-from-chennai" className="link-container">
+                      <h3>Europe Tour Packages</h3>
+                    </Link>
+
+                    <ul>
+                      {tourPackages.EuropeTour.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <Link to="/honeymoon-packages-from-chennai">Honeymoon Tour</Link>
+              <div className="dropdownnew">
+                <div className="dropdown-containernew">
+                  <div className="dropdown-sectionnew international">
+                    <Link to="/honeymoon-packages-from-chennai" className="link-container">
+                      <h3>Honeymoon Tour Packages</h3>
+                    </Link>
+                    <ul>
+                      {tourPackages.HoneymoonTour.map((pkg, index) => (
+                        <li key={index}>
+                          <Link to={pkg.link}>
+                            <span className="icon fas fa-plane"></span>{" "}
+                            {pkg.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <Link to="/blog">Blog</Link>
