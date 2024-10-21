@@ -20061,12 +20061,18 @@ span.select2-selection.select2-selection--single:focus {
 }
 .tour-box .box-title {
   color:#080808;
-  background: linear-gradient(to right, rgb(226, 31, 45), #f9af28) !important;
+ 
     width: 100% !important;
-    padding: 10px !important;
+
   font-size: 18px !important;
   font-weight: 500;
   margin-bottom: 5px;
+}
+.new-title-card .box-title{
+ background: linear-gradient(to right, rgb(226, 31, 45), #f9af28) !important; 
+  padding: 10px !important; 
+  font-size: 18px !important;
+
 }
 .tour-box .tour-rating {
   display: -webkit-box;

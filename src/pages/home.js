@@ -752,7 +752,7 @@ const HeroSlider = () => {
               {tours.map((tour, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    className="tour-box th-ani gsap-cursor"
+                    className="tour-box th-ani gsap-cursor new-title-card"
                     data-aos="fade-right"
                     data-aos-delay="100"
                     data-aos-easing="ease-in"
@@ -768,7 +768,7 @@ const HeroSlider = () => {
                         }}
                       />
                       <div className="image-overlay">
-                        <h2 className="box-title new-title-card">
+                        <h2 className="box-title">
                           <a href={`/tour/${tour.slug}`}>{tour.title}</a>
                         </h2>
                       </div>
