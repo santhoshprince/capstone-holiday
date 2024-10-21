@@ -61,7 +61,7 @@ import normal6 from "../img/normal/3.jpg";
 import normal7 from "../img/normal/4.jpg";
 import VideoSlider from "../components/videoslider";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -154,26 +154,32 @@ const HeroSlider = () => {
   };
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Tour Packages from Chennai | Family Tour Packages</title>
-        <meta name="keywords" content="Tour packages from Chennai, Tour packages, International tour packages, Domestic tour packages, Group tour packages, Family tour packages, Vacation packages, Holiday packages, Trip packages" />
-        <meta name="description" content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices." />
+        <meta
+          name="keywords"
+          content="Tour packages from Chennai, Tour packages, International tour packages, Domestic tour packages, Group tour packages, Family tour packages, Vacation packages, Holiday packages, Trip packages"
+        />
+        <meta
+          name="description"
+          content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices."
+        />
       </Helmet>
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
-  {/* Video Background */}
-  <div className="video-background">
-    <video
-      className="background-video"
-      autoPlay
-      loop
-      muted
-      playsInline
-      controls={false}
-    >
-      <source src="/video/video-banners.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
+        {/* Video Background */}
+        <div className="video-background">
+          <video
+            className="background-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+          >
+            <source src="/video/video-banners.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
         <div className="container">
           <div className="hero-style1">
@@ -189,14 +195,18 @@ const HeroSlider = () => {
               data-ani="slideinup"
               data-ani-delay="0.5s"
             >
-              {descriptions[currentHeadingIndex]} {/* Display current description */}
+              {descriptions[currentHeadingIndex]}{" "}
+              {/* Display current description */}
             </p>
             <div
               className="btn-group"
               data-ani="slideinup"
               data-ani-delay="0.6s"
             >
-              <a href="/international-tour-packages-from-chennai" className="th-btn th-icon">
+              <a
+                href="/international-tour-packages-from-chennai"
+                className="th-btn th-icon"
+              >
                 Explore Tours
               </a>
               <a href="contact" className="th-btn style2 th-icon">
@@ -244,7 +254,9 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/international-tour-packages-from-chennai">International Tour</a>
+                  <a href="/international-tour-packages-from-chennai">
+                    International Tour
+                  </a>
                 </h3>
 
                 <a
@@ -272,7 +284,9 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/domestic-tour-packages-from-chennai">Domestic Tour</a>
+                  <a href="/domestic-tour-packages-from-chennai">
+                    Domestic Tour
+                  </a>
                 </h3>
                 <a
                   className="line-btn"
@@ -324,7 +338,9 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/honeymoon-packages-from-chennai">Honeymoon Package</a>
+                  <a href="/honeymoon-packages-from-chennai">
+                    Honeymoon Package
+                  </a>
                 </h3>
                 <a
                   className="line-btn"
@@ -399,7 +415,9 @@ const HeroSlider = () => {
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/singapore-malaysia-tour-package-with-cruise">Cruise</a>
+                  <a href="/singapore-malaysia-tour-package-with-cruise">
+                    Cruise
+                  </a>
                 </h3>
                 <a
                   className="line-btn"
@@ -749,40 +767,10 @@ const HeroSlider = () => {
                           objectFit: "cover",
                         }}
                       />
-                    </div>
-                    <div className="tour-content tournew">
-                      <h3 className="box-title">
-                        <a href={`/tour/${tour.slug}`}>{tour.title}</a>
-                      </h3>
-                      <div className="tour-rating">
-                        <div
-                          className="star-rating"
-                          role="img"
-                          aria-label={`Rated ${tour.rating} out of 5`}
-                        >
-                          <span style={{ width: "100%" }}>
-                            Rated{" "}
-                            <strong className="rating">{tour.rating}</strong>{" "}
-                            out of 5
-                          </span>
-                        </div>
-                        {/* <a href="tour-details.html" className="woocommerce-review-link">
-                  (<span className="count">{tour.rating}</span> Rating)
-                </a> */}
-                      </div>
-                      <h4 className="tour-box_price">
-                        <span className="currency">{tour.price}</span>/Person
-                      </h4>
-                      <div className="tour-action">
-                        <span>
-                          <i className="fa-light fa-clock"></i> {tour.duration}
-                        </span>
-                        <button
-                          className="th-btn style4 th-icon"
-                          onClick={() => navigate(`/tour/${tour.slug}`)} // Navigate to dynamic page
-                        >
-                          Book Now
-                        </button>
+                      <div className="image-overlay">
+                        <h2 className="box-title new-title-card">
+                          <a href={`/tour/${tour.slug}`}>{tour.title}</a>
+                        </h2>
                       </div>
                     </div>
                   </div>
@@ -1035,9 +1023,7 @@ const HeroSlider = () => {
                     <a href="blogs">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">
-                    Best Travel Agents in Chennai
-                    </a>
+                    <a href="blogs">Best Travel Agents in Chennai</a>
                   </h3>
                   <a href="blogs" className="th-btn style4 th-icon">
                     Read More
@@ -1062,9 +1048,7 @@ const HeroSlider = () => {
                     <a href="blogs">8 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">
-                    Best Travel agency in Velachery
-                    </a>
+                    <a href="blogs">Best Travel agency in Velachery</a>
                   </h3>
                   <a href="blogs" className="th-btn style4 th-icon">
                     Read More
@@ -1091,9 +1075,7 @@ const HeroSlider = () => {
                     <a href="#">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">
-                    Best Tour Operators in Chennai
-                    </a>
+                    <a href="blogs">Best Tour Operators in Chennai</a>
                   </h3>
                   <a href="blogs" className="th-btn style4 th-icon">
                     Read More

@@ -2635,6 +2635,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .box-title a:hover {
   color: var(--theme-color);
 }
+/* .new-title-card a:hover {
+  color: var(--title-color) !important ;
+} */
 .box-subtitle {
   margin-bottom: 8px;
 }
@@ -20057,8 +20060,11 @@ span.select2-selection.select2-selection--single:focus {
   padding: 24px 24px 16px 24px;
 }
 .tour-box .box-title {
-  color: var(--black-color2);
-  font-size: 18px;
+  color:#080808;
+  background: linear-gradient(to right, rgb(226, 31, 45), #f9af28) !important;
+    width: 100% !important;
+    padding: 20px !important;
+  font-size: 18px !important;
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -24656,10 +24662,47 @@ nav ul li.dropdown:hover .dropdown-content {
 .mt-5{
   padding-bottom: 20px;
 }
-
-
-
-
-.accordion-button {
-  font-size: 16px !important;
+.tour-box {
+  position: relative !important; /* Required for absolute positioning of the overlay */
+  border: 1px solid #e1e1e1 !important; /* Border */
+  border-radius: 8px !important; /* Rounded corners */
+  overflow: hidden !important; /* Avoid overflow from child elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Shadow for depth */
+  transition: transform 0.3s !important; /* Smooth hover effect */
 }
+
+.tour-box:hover {
+  transform: scale(1.05) !important; /* Scale effect on hover */
+}
+
+.tour-box_img {
+  position: relative !important; /* Positioning context for the overlay */
+}
+
+.image-overlay {
+  position: absolute !important; /* Absolutely position the overlay */
+  top: 0 !important; /* Aligns to the top */
+  left: 0 !important; /* Aligns to the left */
+  width: 100% !important; /* Full width */
+  height: 100% !important; /* Full height */
+  display: flex !important; /* Use flexbox to center text */
+  flex-direction: column !important; /* Align children vertically */
+  justify-content: center !important; /* Center vertically */
+  align-items: center !important; /* Center horizontally */
+ /* Semi-transparent white background for better text visibility */
+  color: #333 !important; /* Text color for contrast */
+  text-align: center !important; /* Center the text */
+  opacity: 1 !important; /* Always visible */
+  transition: none !important; /* No transition since it's always visible */
+}
+
+.box-title {
+  font-size: 1.5rem !important; /* Font size for the title */
+  margin: 0 !important; /* Remove default margin */
+}
+
+.box-description {
+  font-size: 1rem !important; /* Font size for description */
+  margin-top: 8px !important; /* Space between title and description */
+}
+
