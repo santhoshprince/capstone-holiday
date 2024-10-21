@@ -19409,7 +19409,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 24px;
 }
 .accordion-card .accordion-button {
-  font-size: 24px !important;
+  /* font-size: 14px !important; */
   font-weight: 600;
   font-family: var(--title-font);
   border: 0;
@@ -24660,3 +24660,6 @@ nav ul li.dropdown:hover .dropdown-content {
 
 
 
+.accordion-button {
+  font-size: 16px !important;
+}
