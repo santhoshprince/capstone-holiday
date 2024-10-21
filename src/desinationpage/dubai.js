@@ -6,6 +6,7 @@ import Dubai from "../components/tourdescription";
 import Balidesc from "../img/bg/d1.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/bg/d3.jpg";
+import { Helmet } from 'react-helmet';
 
 const DubaiPage = () => {
   const faqDubai = [
@@ -33,6 +34,26 @@ const DubaiPage = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Best places to visit on your Dubai Tour | Best Places to Visit in Dubai</title>
+        <meta name="keywords" content="dubai tour, best places to visit in dubai, dubai international tour, dubai tour package in coimbatore" />
+        <meta name="description" content="Take a Dubai tour from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/dubai-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/dubai-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Dubai Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -48,7 +69,7 @@ const DubaiPage = () => {
                   <TourList />
                   <Dubai
                     title="Explore Dubai"
-                    description="Discover the best of Dubai, a city that blends modern luxury with rich heritage. Visit iconic landmarks like the Burj Khalifa, enjoy a thrilling desert safari, relax at the luxurious Palm Jumeirah, and shop at the world-famous Dubai Mall. Immerse yourself in culture at Dubai Creek, explore the traditional souks, and marvel at the stunning architecture of Jumeirah Mosque and Dubai Frame. Dubai offers an unforgettable experience with its mix of adventure, culture, and luxury."
+                    description="Take a Dubai tour from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots. The best places to visit in Dubai are its majestic skyscrapers, rich historical legacy, enormous desert dunes, radiant white sand beaches, thrilling adventure sports, thrilling theme parks, wealthy retail complexes, and more. Dubai international tour is for thrill-seekers seeking an exciting vacation. Often referred to as the Venice of the Gulf, Dubai serves as the primary port and commercial centre of the United Arab Emirates. The best time to maximise the value of your dubai tour package in coimbatore is from November to March"
                     imageUrl={Balidesc}
                   />
                 </div>

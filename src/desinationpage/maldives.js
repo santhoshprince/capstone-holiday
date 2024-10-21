@@ -6,6 +6,7 @@ import Maldives from "../components/tourdescription";
 import Balidesc from "../img/tour/99.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/bg/6.jpg";
+import { Helmet } from 'react-helmet';
 
 
 const TourPage = () => {
@@ -34,6 +35,26 @@ const TourPage = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Enjoy your Maldives Tour at an Affordable Price at Capstone | Affordable Price at Capstone</title>
+        <meta name="keywords" content="maldives tour, cheap maldives tour packages, maldives tour package cost, capstone maldives tour package" />
+        <meta name="description" content="Our Maldives Tour takes you to the most blissful places to enjoy with the family or as a couple." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/maldives-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/maldives-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Maldives Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -49,7 +70,7 @@ const TourPage = () => {
                   <TourList />
                   <Maldives
                     title="Explore Maldives"
-                    description="Escape to the breathtaking paradise of the Maldives, where crystal-clear waters meet pristine white-sand beaches. Our Maldives Tour Packages are designed for travelers seeking luxury, relaxation, and adventure in one of the world's most beautiful destinations."
+                    description="Our Maldives Tour From Chennai takes you to the most blissful places to enjoy with the family or as a couple. The Maldives is an island nation that should go on everyone's bucket list; Our cheap Maldives tour packages show you the small group of islands in the Indian Ocean with perfect beaches, the purest turquoise waters, magnificent marine life, over-the-water bungalows, and much more! Our Capstone Maldives tour package helps you to visit Male, Addu Atoll, The Muraka Conrad, Vaadhoo Island, Grand Friday Mosque, Artificial Beach, National Museum, Fulhadhoo Island, and Maafushi Island.  Check our tour operator to know about the Maldives tour package cost."
                     imageUrl={Balidesc}
                   />
                 </div>

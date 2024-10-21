@@ -6,6 +6,7 @@ import Vietnam from "../components/tourdescription";
 import Balidesc from "../img/vietnam/v1.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/vietnam/3.jpg";
+import { Helmet } from 'react-helmet';
 
 const mauritius = () => {
   const faqVietnamCambodia = [
@@ -37,6 +38,26 @@ const mauritius = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Plan a Vietnam Tour with our greatest Vietnam Tour Plan Itinerary | Vietnam Tour Plan Itinerary</title>
+        <meta name="keywords" content="vietnam tour, vietnam tour plan itinerary, vietnam tour package, vietnam itinerary, cambodia tour plan" />
+        <meta name="description" content="We plan a Vietnam tour so you can visit the hotspot sites where we provide you with a hassle-free experience throughout the journey." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/vietnam-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/vietnam-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Vietnam Tour"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
@@ -52,7 +73,7 @@ const mauritius = () => {
                   <TourList />
                   <Vietnam
                     title="Vietnam and Cambodia"
-                    description="Embark on an unforgettable journey through the stunning landscapes, rich cultures, and historical treasures of Vietnam and Cambodia. This tour offers a perfect blend of natural beauty and ancient heritage, showcasing the best each country has to offer"
+                    description="We plan a Vietnam tour so you can visit the hotspot sites where we provide you with a hassle-free experience throughout the journey. Vietnam and Cambodia are 2 beautiful travel destinations situated in southeast Asia. There are countless chances to be astounded everywhere you go in the Vietnam itinerary, from the far North to the deep South. In addition, our Vietnam tour plan itinerary takes you to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho Chi Minh City, romantic Hoi An, more must-see locations are taken into account when organizing your journey for Vietnam tour packages, Cambodia tour plan and Vietnam and Cambodia tour package"
                     imageUrl={Balidesc}
                   />
                 </div>

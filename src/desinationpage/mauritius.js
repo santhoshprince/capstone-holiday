@@ -6,6 +6,8 @@ import Mauritius from "../components/tourdescription";
 import Balidesc from "../img/mauritius/2.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/mauritius/1343.jpg";
+import { Helmet } from 'react-helmet';
+
 
 
 const mauritius = () => {
@@ -34,6 +36,26 @@ const mauritius = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Go on a Mauritius Tour with Friends and Family. | Group and Family Tour Package</title>
+        <meta name="keywords" content="mauritius tour, mauritius tour cost, north island tour mauritius, south island tour mauritius, mauritius tour from coimbatore" />
+        <meta name="description" content="The highly customized Mauritius Tour From Chennai serves a wide range of Capstone Holidays' customers." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/mauritius-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/mauritius-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Mauritius Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -49,7 +71,7 @@ const mauritius = () => {
                   <TourList />
                   <Mauritius
                     title="Explore Mauritius"
-                    description="Experience the paradise of Mauritius with its pristine beaches, crystal-clear waters, and lush greenery. Relax on white sand shores, explore vibrant coral reefs, and enjoy thrilling water sports. Discover the island’s unique culture, visit botanical gardens, and hike through scenic mountains. A Mauritius tour promises a perfect mix of relaxation, adventure, and natural beauty."
+                    description="The highly customized Mauritius Tour from Chennai serves a wide range of Capstone Holidays' customers. The Republic of Mauritius, which is the perfect honeymoon beach destination, is located in the Indian Ocean. A week is more than enough to thoroughly experience Mauritius's radiant beaches and resorts, which are accessible throughout the whole year. Book our Mauritius tour from Coimbatore to visit North island tour Mauritius, and South island tour Mauritius. Check our tour operator to know about the Mauritius tour cost"
                     imageUrl={Balidesc}
                   />
                 </div>

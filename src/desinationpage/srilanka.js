@@ -6,6 +6,7 @@ import Singapore from "../components/tourdescription";
 import Balidesc from "../img/srilanka/water-fall-4579771_1920.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/srilanka/sunrise-4823732_1920.jpg";
+import { Helmet } from 'react-helmet';
 
 const Srilanka = () => {
   const faqSriLanka = [
@@ -41,6 +42,26 @@ const Srilanka = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Enjoy our Sri Lanka Tour and visit blissful Sri Lanka Tourism | Sri Lanka Tourism</title>
+        <meta name="keywords" content="sri lanka tour, sri lanka tourism, srilanka tour, srilanka tour plan, sri lanka itinerary" />
+        <meta name="description" content="With our valuable Srilanka Tour from Chennai, experience the historic yet trendy Sri Lanka tourist spots." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/sri-lanka-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/sri-lanka-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Sri Lanka Tour"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
@@ -56,7 +77,7 @@ const Srilanka = () => {
                   <TourList />
                   <Singapore
                     title="Explore Srilanka"
-                    description="Explore the natural beauty and rich culture of Sri Lanka. From ancient temples and lush tea plantations to stunning beaches and wildlife safaris, this island offers an unforgettable experience. Visit iconic landmarks like Sigiriya Rock Fortress, enjoy a scenic train ride through the hills of Ella, relax on the golden beaches of Mirissa, and embark on a safari at Yala National Park to see elephants and leopards. Sri Lanka is a perfect blend of adventure, relaxation, and history"
+                    description="With our valuable Srilanka Tour from Chennai, experience the historic yet trendy Sri Lanka tourist spots. Sri Lanka Tourism depicts it as a small yet modest country because it boasts eight UNESCO World Heritage Sites, religious sites, many national parks, lush tea estates, and beaches, of course. Sri Lanka tour includes enjoying its nightlife, which is thrilling and colorful where you can enjoy a quick game of chance in a casino or take a gorgeous train journey that passes by plantations and hills. Plan a Sri Lanka tour plan, and Sri Lanka itinerary that has all its top tourist destinations to have a leisure journey"
                     imageUrl={Balidesc}
                   />
                 </div>

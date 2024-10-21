@@ -6,7 +6,7 @@ import Sikkim from "../components/tourdescription";
 import Balidesc from "../img/sikkim/3.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/sikkim/11.jpg";
-
+import { Helmet } from 'react-helmet';
 
 const SikkimTours = () => {
   const faqDarjeeling = [
@@ -42,6 +42,26 @@ const SikkimTours = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Book our Budget Sikkim Tour at Capstone Holidays | Budget North Sikkim Tour Itinerary</title>
+        <meta name="keywords" content="sikkim tour, budget north sikkim tour itinerary, sikkim tourism, sikkim tourist places, sikkim travel" />
+        <meta name="description" content="Sikkim tours are best sold in December when you can experience bright and clear weather, making it perfect for outdoor activities and touring." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/sikkim-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/sikkim-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Sikkim"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -57,7 +77,7 @@ const SikkimTours = () => {
                   <TourList />
                   <Sikkim
                     title="Explore Sikkim"
-                    description="Embark on a captivating journey through the enchanting landscapes of Sikkim, where the majestic Himalayas cradle lush valleys, vibrant flora, and rich culture. This tour offers a perfect blend of adventure, tranquility, and breathtaking scenery."
+                    description="Sikkim tours are best sold in December when you can experience bright and clear weather, whereas Sikkim tourism makes it perfect for outdoor activities and touring. Sikkim tourist places are abundant with numerous radiant lakes. The people of Sikkim hold the majority of the lakes in high regard and consider them to be sacred. The most attractive sites in Sikkim to tour with our budget north Sikkim tour itinerary are Yumthang Valley, Tsongo Lake, Lachen, and Lachung. With its sensational landscapes, abundant natural beauty, and lively local cultures, Sikkim Travel provides the ideal combination of adventure and nature discovery."
                     imageUrl={Balidesc}
                   />
                 </div>

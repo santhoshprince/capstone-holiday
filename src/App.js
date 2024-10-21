@@ -100,7 +100,7 @@ function App() {
 
           <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
-          <Route path="/tour-destination/bali-tour" element={<Bali />} />
+          <Route path="/bali-tour" element={<Bali />} />
           <Route
             path="/tour/bali-tour-packages-from-chennai"
             element={<BaliDetails />}
@@ -108,20 +108,20 @@ function App() {
           <Route path="/tour/bali-tour-places" element={<BaliDetails />} />
 
           <Route
-            path="/tour-destination/maldives-tour"
+            path="/maldives-tour"
             element={<Maldives />}
           />
           <Route
             path="/tour/maldivestour-package-from-chennai"
             element={<Maldivesdetails />}
           />
-          <Route path="/tour-destination/dubai-tour" element={<Dubai />} />
+          <Route path="/dubai-tour" element={<Dubai />} />
           <Route
             path="/tour/dubai-tour-packages-from-chennai"
             element={<Dubaidetails />}
           />
           <Route
-            path="/tour-destination/thailand-tour"
+            path="/thailand-tour"
             element={<Thailand />}
           />
           <Route
@@ -129,7 +129,7 @@ function App() {
             element={<Thailanddetails />}
           />
           <Route
-            path="/tour-destination/mauritius-tour"
+            path="/mauritius-tour"
             element={<Mauritius />}
           />
           <Route
@@ -137,7 +137,7 @@ function App() {
             element={<Mauritiusdetails />}
           />
           <Route
-            path="/tour-destination/turkey-tour-package"
+            path="/turkey-tour"
             element={<Turkey />}
           />
           <Route
@@ -145,7 +145,7 @@ function App() {
             element={<Turkeydetails />}
           />
           <Route
-            path="/tour-destination/singapore-malaysia-tour"
+            path="/singapore-malaysia-tour"
             element={<Singapore />}
           />
           <Route
@@ -153,7 +153,7 @@ function App() {
             element={<Singaporedetails />}
           />
           <Route
-            path="/tour-destination/vietnam-tour-package"
+            path="/vietnam-tour-package"
             element={<Vietnam />}
           />
           <Route
@@ -161,7 +161,7 @@ function App() {
             element={<Vietnamdetails />}
           />
           <Route
-            path="/tour-destination/sri-lanka-tour-package"
+            path="/sri-lanka-tour"
             element={<Srilanka />}
           />
           <Route
@@ -169,7 +169,7 @@ function App() {
             element={<Srilankadetails />}
           />
           <Route
-            path="/tour-destination/andaman-tour-package"
+            path="/andaman-tour"
             element={<Andaman />}
           />
           <Route
@@ -180,14 +180,14 @@ function App() {
             path="/tour/andaman-and-nicobar-islands-package"
             element={<AndamanDetails />}
           />
-          <Route path="/tour-destination/goa-tour" element={<Goa />} />
+          <Route path="/goa-tour" element={<Goa />} />
           <Route
             path="/tour/goa-tour-package-from-chennai"
             element={<GoaDetails />}
           />
           <Route path="/tour/goa-travel-packages" element={<GoaDetails />} />
           <Route
-            path="/tour-destination/himachal-tour/"
+            path="/himachal-tour"
             element={<Himachal />}
           />
           <Route
@@ -198,14 +198,14 @@ function App() {
             path="/tour/himachal-tour-package/"
             element={<HimachalDetails />}
           />
-          <Route path="/tour-destination/kerala-tour/" element={<Kerala />} />
+          <Route path="/kerala-tour" element={<Kerala />} />
           <Route
             path="/tour/kerala-tour-packages-from-chennai"
             element={<KeralaDetails />}
           />
           <Route path="tour/munnar-tour-package" element={<KeralaDetails />} />
           <Route
-            path="tour-destination/jammu-and-kashmir-tour/"
+            path="/kashmir-tour"
             element={<Kashmir />}
           />
           <Route
@@ -217,7 +217,7 @@ function App() {
             element={<KashmirDetails />}
           />
           <Route
-            path="/tour-destination/rajasthan-tour/"
+            path="/rajasthan-tour"
             element={<Rajasthan />}
           />
           <Route
@@ -229,7 +229,7 @@ function App() {
             element={<RajasthanDetails />}
           />
           <Route
-            path="/tour-destination/sikkim-and-west-bengal-tour/"
+            path="/sikkim-tour"
             element={<Sikkim />}
           />
           <Route

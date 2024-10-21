@@ -6,6 +6,7 @@ import HimachalDescription from "../components/tourdescription";
 import Balidesc from "../img/Himachal/8.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/Himachal/11.jpg";
+import { Helmet } from 'react-helmet';
 
 const HimchalTour = () => {
   const faqShimlaManali = [
@@ -45,6 +46,26 @@ const HimchalTour = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Plan a Himachal Tour with our Himachal Pradesh Tour Plan | Himachal Pradesh Tour Plan</title>
+        <meta name="keywords" content="himachal tour, himachal pradesh tour plan, himachal tourist places, himachal tour itinerary" />
+        <meta name="description" content="The greatest season for a reasonably priced Himachal Tour Package is during the monsoon, which runs from July to October." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/himachal-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/himachal-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Himachal"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
@@ -60,9 +81,7 @@ const HimchalTour = () => {
                   <TourList />
                   <HimachalDescription
                     title="Explore Himachal"
-                    description="Embark on a breathtaking journey to Himachal Pradesh, a paradise nestled in the lap of the Himalayas. Known for its scenic beauty, serene landscapes, and adventure activities, Himachal offers an unforgettable experience for nature lovers and adventure enthusiasts alike.
-
-Explore the charming hill stations of Shimla, Manali, and Dharamshala, each offering its own unique blend of colonial charm, lush valleys, and snow-capped peaks. Stroll through the Mall Road in Shimla, visit the famous Hadimba Temple in Manali, and experience Tibetan culture in Dharamshala."
+                    description="The greatest season for a reasonably priced Himachal Tour Package is during the monsoon, which runs from July to October. Shimla, Manali, Dalhousie, Chamba, and Kasauli are the most admired tourist places that our Himachal Pradesh Tour Plan offers to visit in the Himachal Tour itinerary. Wintertime, from October to January, is the best time to see snow and enjoy winter activities. Kayaking, Trekking, White-water rafting, and Hot air balloon flying are the best adventure activities in Himachal tourist places that are covered with our Himachal Pradesh Tour Package."
                     imageUrl={Balidesc}
                   />
                 </div>

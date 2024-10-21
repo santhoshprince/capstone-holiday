@@ -6,6 +6,7 @@ import GoaDescription from "../components/tourdescription";
 import Balidesc from "../img/goa/2.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/goa/9.jpg";
+import { Helmet } from 'react-helmet';
 
 const Andaman = () => {
   const faqGoa = [
@@ -49,6 +50,26 @@ const Andaman = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Book your Goa Tour at Capstone Holidays | Book Your Goa Tour @ Capstone</title>
+        <meta name="keywords" content="goa tour, goa tour packages for 4 person, dolphin tour goa, goa tour packages for couple, goa tour guide" />
+        <meta name="description" content="The greatest time to look for discounts on Goa Tour From Chennai rates is during the summer when you can explore its greatest beaches." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/goa-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/goa-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection
         heading={"Goa Tour"}
         children={"Destination"}
@@ -68,11 +89,7 @@ const Andaman = () => {
                   <TourList />
                   <GoaDescription
                     title="Explore Goa"
-                    description="Discover the vibrant beauty of Goa, India’s premier beach destination. Known for its stunning coastlines, rich culture, and lively nightlife, Goa offers something for everyone. Relax on the golden sands of popular beaches like Baga and Calangute, or explore the tranquil shores of Palolem and Agonda.
-
-Indulge in Goa's unique cuisine, featuring fresh seafood and local flavors. Visit historical sites such as the Basilica of Bom Jesus and the stunning forts overlooking the Arabian Sea. Experience the lively markets, vibrant nightlife, and the warm hospitality of the locals.
-
-Engage in exciting water sports, including parasailing, jet skiing, and scuba diving, or unwind with a peaceful yoga session on the beach. Whether you're looking for adventure, relaxation, or cultural experiences, a tour of Goa promises unforgettable memories in this tropical paradise."
+                    description="The greatest time to look for discounts on Goa Tour From Chennai rates is during the summer when you can explore its greatest beaches. Our Goa tour packages for 4 person show Goa's exciting nightlife and lively parties have made it the ideal location for travelers who want to party. We advise scheduling your dolphin tour Goa vacation between November and February if you're seeking the best time to go. Goa tour packages for couple is endowed with some of India's greatest shorelines, from Calangute to Palolem and Candolim. If you are a party lover and you are in North Goa, Anjuna and Baga are great. However, South Goa has the most isolated beaches that provide couples seeking a peaceful stroll on a romantic evening with a calm and soothing ambiance. Contact our Goa tour guide to get more details about Goa honeymoon packages. "
                     imageUrl={Balidesc}
                   />
                 </div>

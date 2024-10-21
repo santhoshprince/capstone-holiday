@@ -6,6 +6,7 @@ import AndamanDescription from "../components/tourdescription";
 import Balidesc from "../img/andaman/3.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/andaman/9.jpg";
+import { Helmet } from 'react-helmet';
 
 const AndamanTour = () => {
   const faqAndaman = [
@@ -45,6 +46,26 @@ const AndamanTour = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Andaman Tour | Andaman Tourism Itinerary</title>
+        <meta name="keywords" content="andaman tour, andaman tourism itinerary, andaman island, andaman tour plan" />
+        <meta name="description" content="The Andaman tour from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for an Andaman trip from October to April." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/andaman-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/andaman-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Andaman"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -60,7 +81,7 @@ const AndamanTour = () => {
                   <TourList />
                   <AndamanDescription
                     title="Explore Andaman"
-                    description="Discover the serene beauty of the Andaman Islands, a tropical paradise known for its crystal-clear waters, white sandy beaches, and lush greenery. Visit popular destinations like Havelock Island, famous for Radhanagar Beach, one of Asia’s best beaches. Explore the coral reefs and marine life with snorkeling and scuba diving adventures. Experience the history of Port Blair by visiting the Cellular Jail and enjoy breathtaking sunsets at Chidiya Tapu. The Andaman tour is perfect for those seeking relaxation, adventure, and unforgettable experiences in nature"
+                    description="The Andaman tour from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for an Andaman tourism itinerary from October to April. The Andaman and Nicobar Islands are an excellent option if you're thinking of a romantic escape with your soulmate that involves delicious food with a candlelight dinner, thrilling water activities, lovely beaches, and a favorable atmosphere for admiration and sightseeing. Our Andaman tour plan will show the most beautiful and most-visited beaches in Andaman Island like Radhanagar Beach, Elephant Beach, Wandoor Beach, Rock Beach, and Vijaya Nagar Beach. "
                     imageUrl={Balidesc}
                   />
                 </div>

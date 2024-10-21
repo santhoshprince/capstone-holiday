@@ -6,6 +6,8 @@ import BaliDescription from "../components/tourdescription";
 import FAQ from "../components/Faq";
 import Balidesc from "../img/tour/358.jpg";
 import bg1 from "../img/bg/contact_bg_7.jpg";
+import { Helmet } from 'react-helmet';
+
 
 const TourPage = () => {
   const faqBali = [
@@ -37,6 +39,26 @@ const TourPage = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Book Your Bali Tour at Capstone Holidays</title>
+        <meta name="keywords" content="bali tour, bali indonesia tour package, bali tour packages Chennai, bali tour from coimbatore" />
+        <meta name="description" content="Capstone Holidays are fully equipped to give you a Bali tour from India with an excellent value for your money." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/bali-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/bali-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Bali"} children={"Destination"} backgroundImage={bg1}/>
 
       <section className="space">
@@ -52,7 +74,7 @@ const TourPage = () => {
                   <TourList />
                   <BaliDescription
                     title="Explore Bali"
-                    description="A Bali tour offers an unforgettable journey through one of Indonesia's most enchanting islands. Explore Bali's breathtaking beaches, such as Kuta, Seminyak, and Nusa Dua, where you can relax on golden sands, surf world-class waves, or indulge in luxurious resorts. Venture inland to the cultural heart of Ubud, where terraced rice paddies, art markets, and ancient temples like the iconic Uluwatu Temple await. Experience Bali's rich traditions through captivating dance performances, temple ceremonies, and local crafts."
+                    description="Bali tours from Chennai vary in price depending on the package you select and the length of your stay. With reasonably priced Bali Indonesia tour packages that are customized to your preferences and budget, Capstone Holidays guarantees a wonderful and exciting escape. Also, we provide a selection of Bali tour packages from Chennai, and Bali tour from Coimbatore based on your intended stay's length and price."
                     imageUrl={Balidesc}
                   />
                    

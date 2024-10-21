@@ -6,6 +6,7 @@ import Dubai from "../components/tourdescription";
 import Balidesc from "../img/Thailand/771.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/Thailand/2150668931.jpg";
+import { Helmet } from 'react-helmet';
 
 const ThailandPage = () => {
   const faqThailand = [
@@ -37,6 +38,26 @@ const ThailandPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Take a Thailand Tour to visit Bangkok, Pattaya, Phuket and Krabi | Bangkok | Pattaya | Phuket | Krabi</title>
+        <meta name="keywords" content="thailand tour, thailand tour package, pattaya tour, phuket tour, bangkok tour, krabi tour" />
+        <meta name="description" content="Our Thailand Tour from Chennai takes you to the finest tourist destinations to explore the Thai cultural identity and cuisines." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/thailand-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/thailand-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Thailand Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -52,7 +73,7 @@ const ThailandPage = () => {
                   <TourList />
                   <Dubai
                     title="Explore Thailand"
-                    description="Discover the beauty of Thailand, from the vibrant streets of Bangkok to the serene beaches of Phuket. Visit ancient temples, explore bustling markets, and enjoy delicious Thai cuisine. Relax on tropical islands, visit cultural landmarks, and experience the rich history and traditions of the country. A Thailand tour offers the perfect blend of adventure, relaxation, and cultural immersion"
+                    description="Our Thailand Tour from Chennai takes you to the best tourist destinations such as The Sweet Tamarind Fair, Mae Hong Son Winter Feast, Alcazar show in Pattaya, Phi Phi Island tour, and Nakhon Sawan Chinese New Year, The Loi Krathong and the Chiang Mai Flower Festival with our Thailand tour package. Thailand is geographically located amid Southeast Asia. Thailand is known for its numerous islands with beautiful beaches and a mild climate. Our Pattaya tour, Phuket tour, Bangkok tour, and Krabi tour will let you know why Thailand is called as “the origin of happiness,” since its citizens are incredibly warm and inviting."
                     imageUrl={Balidesc}
                   />
                 </div>

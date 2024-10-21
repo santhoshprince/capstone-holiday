@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import blog1 from "../assets/blogdetailsimg/1/mahabalipuram-554237_1920.jpg";
 import blogimg1 from "../assets/blogdetailsimg/1/tour-7612130_1920.jpg";
 
-
 import blog4 from "../assets/blogsimg/town-6843799_1280.jpg";
 import blog2 from "../assets/blogsimg/mountains-5969476_1280.jpg";
 import blogimg2 from "../assets/blogdetailsimg/1/village-7098270_1920.jpg";
@@ -40,6 +39,7 @@ import blogimg13 from "../assets/blogdetailsimg/1/beach-5281431_1920.jpg";
 
 import "./blogdeatils.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Dummy data for blogs
 
@@ -48,13 +48,30 @@ const BlogDetails = () => {
 
   const blogs = [
     {
-      id:1,
+      id: 1,
       image: blog1,
       slug: "best-travel-agents-in-chennai",
       author: "Blog",
       date: "September 27, 2024",
       category: "Tour Guide",
       title: "Best Travel Agents in Chennai",
+      metaTitle: "Best Travel Agents in Chennai | International Travel Agent", // Add meta title
+      metaKeywords:
+        "best travel agents in chennai, travel agents in chennai, capstone travel agent, travel agencies, local travel agent, international travel agent, domestic travel agent", // Add meta keywords
+      metaDescription:
+        "Book a trip for your loved one’s in the best travel agents in Chennai, Capstone Holidays because they bring you heaven of new place.", // Add meta description
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/best-travel-agents-in-chennai/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/best-travel-agents-in-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }`,
       content: (
         <div>
           <div className="container">
@@ -469,8 +486,25 @@ const BlogDetails = () => {
       author: "Blog",
       date: "September 24, 2024",
       category: "Tour Guide",
-      title:
-        "Kashmir Tour Packages",
+      title: "Kashmir Tour Packages",
+      metaTitle: "Kashmir Tour Packages | Kashmir Family Tour Packages",
+      metaKeywords:
+        "kashmir tour packages, kashmir family tour packages, kashmir trip package, kashmir tour packages for family with flight, jammu kashmir tour package",
+      metaDescription:
+        "Many dream of flying above this snow carpet tourist spot with affordable Kashmir Tour Packages, since it’s one of the soulful dreamy spots.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/kashmir-tour-packages/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/kashmir-tour-packages/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
       content: (
         <div>
           <div className="container">
@@ -483,7 +517,8 @@ const BlogDetails = () => {
                         <i className="fa-light fa-user"></i>Blog Details
                       </a>
                       <a href="blog.html">
-                        <i className="fa-regular fa-calendar"></i>September 24, 2024
+                        <i className="fa-regular fa-calendar"></i>September 24,
+                        2024
                       </a>
                       <a href="blog-details.html">
                         <img src="assets/img/icon/map.svg" alt="" />
@@ -517,7 +552,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg2} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg2}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -760,6 +799,24 @@ const BlogDetails = () => {
       date: "September 14, 2024",
       category: "Tour Guide",
       title: "Best Tours And Travels in Chennai",
+      metaTitle: "Best Tours and Travels in Chennai | Capstone Holidays",
+      metaKeywords:
+        "best tours and travels in chennai, tours and travels in chennai, capstone tours and travels, tour and travel agency, tours and travels agency",
+      metaDescription:
+        "Explore the majestic destinations with Capstone, which is the best tours and travels in Chennai and enjoy the inclusions in Itinerary.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/best-tours-and-travels-in-chennai/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/best-tours-and-travels-in-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
       content: (
         <div>
           <div className="container">
@@ -805,7 +862,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg3} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg3}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1139,6 +1200,26 @@ const BlogDetails = () => {
       date: "September 6, 2024",
       category: "Tour Guide",
       title: "Best Tour Operators in Chennai",
+      metaTitle:
+        "Best Tour Operators in Chennai | International Tour Operators",
+      metaKeywords:
+        "best tour operators in chennai, best international tour operators in chennai, tour operators in chennai, foreign tour operators in chennai, top 10 tour operators in chennai",
+      metaDescription:
+        "Witness the extraordinary travel destinations & enjoy compatible services with our best tour operators in Chennai - Capstone Holidays.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/best-tour-operators-in-chennai/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/best-tour-operators-in-chennai/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -1524,6 +1605,25 @@ const BlogDetails = () => {
       date: "August 22, 2024",
       category: "Tour Guide",
       title: "Bali Tour Package",
+      metaTitle: "Bali Tour Package | Bali Holiday Packages Including Flights",
+      metaKeywords:
+        "bali tour package, bali holiday packages including flights, bali trip package, bali travel packages, bali tours",
+      metaDescription:
+        "Witness the blue beaches, volcanoes, waterfalls & landscapes in our Capstone Bali Tour Package, which drags you to a vibrant world.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/bali-tour-package/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/bali-tour-package/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -1568,7 +1668,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg5} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg5}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1848,6 +1952,25 @@ const BlogDetails = () => {
       date: "August 9, 2024",
       category: "Tour Guide",
       title: "Best Travel agency in Velachery",
+      metaTitle: "Best Travel Agency in Velachery | Capstone Holidays Chennai",
+      metaKeywords:
+        "best travel agency in velachery, best travel agency in madipakkam, best travel agency in tharamani, best travel agency in perungudi, best travel agency in thiruvanmiyur, best travel agency in palavakkam",
+      metaDescription:
+        "The Best Travel agency in Velachery is Capstone because it goes far surpassing the call of duty to satisfy customers in the travels industry.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/best-travel-agency-in-velachery/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/best-travel-agency-in-velachery/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -1893,7 +2016,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg6} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg6}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -2158,6 +2285,25 @@ const BlogDetails = () => {
       date: "August 5, 2024",
       category: "Tour Guide",
       title: "Thailand Tour Package",
+      metaTitle: "Thailand Tour Package | Thailand Tour Package with Flight",
+      metaKeywords:
+        "thailand tour package, thailand tour package with flight, 5 days thailand tour package price, singapore malaysia thailand tour package, thailand tour package from india",
+      metaDescription:
+        "The secured Thailand tour package and Thailand tour package from India are all exclusively ready to explore the honeymoon sites for a couple.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/thailand-tour-package/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/thailand-tour-package/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -2209,7 +2355,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg7} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg7}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -2428,6 +2578,26 @@ const BlogDetails = () => {
       date: "July 23, 2024",
       category: "Tour Guide",
       title: "Maldives Honeymoon Package",
+      metaTitle:
+        "Maldives Honeymoon Package | Book Your Honeymoon Packages Now",
+      metaKeywords:
+        "maldives honeymoon package, maldives honeymoon package for 7 days, maldives honeymoon package for 4 days including flights, maldives honeymoon package from chennai, best honeymoon packages for maldives",
+      metaDescription:
+        "We have the ideal list for an exemplary Maldives honeymoon package if you’re searching for the blissful spots to visit in Maldives as couple.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/maldives-honeymoon-package/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/maldives-honeymoon-package/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -2478,7 +2648,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg8} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg8}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -2769,6 +2943,25 @@ const BlogDetails = () => {
       date: "July 16, 2024",
       category: "Blog",
       title: "Sri Lanka Tour Package",
+      metaTitle: "Sri Lanka Tour Packages | Ramayana Tour Packages",
+      metaKeywords:
+        "sri lanka tour packages, sri lanka tour package with flight, sri lanka tour packages price, srilanka tour package from india, Ramayana Tour Packages",
+      metaDescription:
+        "Experience these historic yet trendy Sri Lanka tourist spots with our valuable Sri Lanka tour packages & Srilanka tour package from India.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/srilanka-tour-package/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/srilanka-tour-package/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -2818,7 +3011,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg9} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg9}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -3128,6 +3325,26 @@ const BlogDetails = () => {
       date: "June 26, 2024",
       category: "Blog",
       title: "Dubai Tour Packages from India",
+      metaTitle:
+        "Dubai Tour Packages from India | Book Your Dubai Holiday Trip",
+      metaKeywords:
+        "dubai tour packages from india, dubai tour packages, dubai tour package with flight, dubai tour package price, dubai holiday packages",
+      metaDescription:
+        "We at Capstone Holidays are fully equipped to give you Dubai tour packages from India with an excellent value for your money.",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/dubai-tour-packages-from-india/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/dubai-tour-packages-from-india/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -3168,7 +3385,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg10} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg10}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -3650,6 +3871,26 @@ const BlogDetails = () => {
       date: "June 24, 2024",
       category: "Blog",
       title: "Vietnam Tour Packages from India",
+      metaTitle:
+        "Vietnam Tour Packages from India | Cambodia And Vietnam Tours Packages",
+      metaKeywords:
+        "vietnam tour packages from india, vietnam tour package, vietnam tour packages with flights, vietnam cambodia tour package, cambodia and vietnam tours packages",
+      metaDescription:
+        "Explore the beauty of Vietnam Tour packages from India with Vietnam and Cambodia tour at Capstone Holidays. Let’s travel to make life easier!",
+      schema: `
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Capstone Holidays",
+        "url": "https://www.capstoneholidays.in/vietnam-tour-packages-from-india/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.capstoneholidays.in/vietnam-tour-packages-from-india/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+`,
+
       content: (
         <div>
           <div className="container">
@@ -3693,7 +3934,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg11} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg11}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -3988,11 +4233,31 @@ const BlogDetails = () => {
     {
       id: 12,
       image: blog12,
-      slug:"singapore-malaysia-tour-package-from-chennai",
+      slug: "singapore-malaysia-tour-package-from-chennai",
       author: "Blog",
       date: "June 24, 2024",
       category: "Blog",
       title: "Singapore Malaysia Tour Package from Chennai",
+      metaTitle:
+        "Singapore Malaysia Tour Package from Chennai | Capstone Chennai",
+      metaKeywords:
+        "singapore malaysia tour package from chennai, best singapore malaysia tour packages from chennai, singapore malaysia tour packages, singapore malaysia thailand tour package, singapore malaysia tour package with cruise",
+      metaDescription:
+        "Explore Asia’s top destinations, Singapore Malaysia tour package from Chennai. Enjoy all-inclusive travel itinerary to ensure satisfaction.",
+      schema: `
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Capstone Holidays",
+  "url": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-from-chennai/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.capstoneholidays.in/singapore-malaysia-tour-package-from-chennai/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+`,
+
       content: (
         <div>
           <div className="container">
@@ -4033,7 +4298,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg12} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg12}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -4377,11 +4646,30 @@ const BlogDetails = () => {
     {
       id: 13,
       image: blog13,
-      slug:"tours-and-travels-in-chennai",
+      slug: "tours-and-travels-in-chennai",
       author: "Blog",
       date: "June 24, 2024",
       category: "Blog",
       title: "Best Travel Agency in Chennai",
+      metaTitle: "Best Tours and Travels in Chennai | Capstone Holidays",
+      metaKeywords:
+        "best tours and travels in chennai, tours and travels in chennai, capstone tours and travels, tour and travel agency, tours and travels agency",
+      metaDescription:
+        "Explore the majestic destinations with Capstone, which is the best tours and travels in Chennai and enjoy the inclusions in Itinerary.",
+      schema: `
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Capstone Holidays",
+  "url": "https://www.capstoneholidays.in/best-tours-and-travels-in-chennai/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.capstoneholidays.in/best-tours-and-travels-in-chennai/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+`,
+
       content: (
         <div>
           <div className="container">
@@ -4420,7 +4708,11 @@ const BlogDetails = () => {
                     <div className="row gy-4">
                       <div className="col-12">
                         <div className="blog-img">
-                          <img className="w-100" src={blogimg13} alt="Blog Image" />
+                          <img
+                            className="w-100"
+                            src={blogimg13}
+                            alt="Blog Image"
+                          />
                         </div>
                       </div>
                     </div>
@@ -4801,10 +5093,19 @@ const BlogDetails = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{blog.metaTitle}</title>
+        <meta name="description" content={blog.metaDescription} />
+        <meta name="keywords" content={blog.metaKeywords} />
+        <script type="application/ld+json">{blog.schema}</script>
+      </Helmet>
       {/* Full-width image section */}
       <div
         className="blog-header"
-        style={{ backgroundImage: `url(${blog.image})` ,backgroundPosition:"center"}}
+        style={{
+          backgroundImage: `url(${blog.image})`,
+          backgroundPosition: "center",
+        }}
       >
         <div className="overlay">
           <div className="container">

@@ -6,6 +6,7 @@ import Singapore from "../components/tourdescription";
 import Balidesc from "../img/singapore/s3.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/singapore/s2.jpg";
+import { Helmet } from 'react-helmet';
 
 const mauritius = () => {
   const faqSingaporeMalaysia = [
@@ -33,6 +34,26 @@ const mauritius = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Have a joyous Turkey Tour with our Turkey International Tour Package | Turkey International Tour Package</title>
+        <meta name="keywords" content="turkey tour, turkey international tour package, turkey tour plan, turkey travel" />
+        <meta name="description" content="Turkey Tour From India takes you to the must-visit places including Istanbul, Bursa, Kemaliye, Ahlat, Hatay, Vize, and many more." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/turkey-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/turkey-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Singapore & Malaysia Tour"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -48,7 +69,7 @@ const mauritius = () => {
                   <TourList />
                   <Singapore
                     title="Explore Singapore and Malaysia"
-                    description="Embark on a thrilling adventure as you explore two of Southeast Asia's most vibrant destinations: Singapore and Malaysia. This tour combines the modern marvels of Singapore with the rich cultural heritage of Malaysia, ensuring an unforgettable experience."
+                    description="Singapore and Malaysia Tour is the best example for all-around romantic and entertaining escape for couples. Take a Singapore and Malaysia tour and visit Singapore tour places like Sentosa Island, Gardens by the Bay, Marina Bay, Henderson Bridge, Jurong Bird Park, and Universal Studios. The Malaysia tour includes visits to Kuala Lumpur, Batu Caves, Mount Kinabalu, Sipadan Island, Pantai Cenang beach, and Desaru beach."
                     imageUrl={Balidesc}
                   />
                 </div>

@@ -61,7 +61,7 @@ const TourList = () => {
       rating: 4.7,
       price: "34,000",
       duration: "4 Nights, 5 Days",
-      detailPath: "/tour-destination/singapore-malaysia-tour",
+      detailPath: "/singapore-malaysia-tour",
     },
     {
       imgSrc: thailand,

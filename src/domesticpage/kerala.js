@@ -6,6 +6,7 @@ import HimachalDescription from "../components/tourdescription";
 import Balidesc from "../img/kerala/13.jpg";
 import FAQ from "../components/Faq";
 import bg1 from "../img/kerala/17.jpg";
+import { Helmet } from 'react-helmet';
 
 const HimchalTour = () => {
   const faqKerala = [
@@ -37,6 +38,26 @@ const HimchalTour = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Book Your Munnar Trip Now with our Kerala Tour Packages | Book Your Munnar Trip Now</title>
+        <meta name="keywords" content="kerala tour, book your munnar trip now, kerala and munnar tour, munnar tour, munnar tour package" />
+        <meta name="description" content="Our Kerala tour from Chennai covers the Kerala honeymoon trip and the Kerala family trip to the must-visit beaches, hill stations, and backwaters in a week." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Capstone Holidays",
+            "url": "https://www.capstoneholidays.in/kerala-tour/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.capstoneholidays.in/kerala-tour/{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Contentsection heading={"Kerala"} children={"Destination"} backgroundImage={bg1} />
 
       <section className="space">
@@ -52,8 +73,7 @@ const HimchalTour = () => {
                   <TourList />
                   <HimachalDescription
                     title="Explore Kerala"
-                    description="Discover the natural beauty and cultural heritage of Kerala, the God's Own Country. This tour takes you through Kerala's scenic landscapes, backwaters, beaches, and hill stations, offering an authentic experience of its rich culture and traditions.
-                    Start your journey in Kochi, a vibrant port city known for its colonial architecture and lively markets. Then, move on to Munnar, the charming hill station covered with lush tea plantations and misty mountains. Enjoy a houseboat cruise in the serene backwaters of Alleppey, where you’ll witness life along the narrow canals and paddy fields. End your trip by relaxing on the golden beaches of Kovalam, basking in the beauty of the Arabian Sea."
+                    description="Our Kerala tour from Chennai covers the Kerala honeymoon trip and the Kerala family trip to the must-visit beaches, hill stations, and backwaters in a week. Many families and senior citizens celebrate Kerala for its vibrant culture and tradition. The Western Ghats gives a pleasant climate throughout the year and becomes a romantic escape. So, book your Munnar trip now at the peak season time to get drenched in the beauty of its backwaters and blissful climate. We have selected the best Munnar tour package to add more particular touches to endless tea estates and slopes with delectable cuisines to your Munnar tour. Our Kerala and Munnar tour takes you to a gorgeous location with endless tea estates and immaculate slopes that are ideal for a romantic honeymoon.  "
                     imageUrl={Balidesc}
                   />
                 </div>
