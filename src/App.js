@@ -84,6 +84,7 @@ import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "typeface-poppins";
 import { HelmetProvider } from 'react-helmet-async';
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
@@ -322,6 +323,10 @@ function App() {
             <Route
             path="/singapore-malaysia-tour-package-with-cruise"
             element={<CruiseDetails />}
+          />
+           <Route
+            path="/privacy-policy"
+            element={<PrivacyPolicy />}
           />
         </Routes>
         <Footer />
