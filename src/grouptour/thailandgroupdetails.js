@@ -58,7 +58,7 @@ const TourThailand = () => {
       Priceexclusions: ["GST 5%", "Air Fare"],
 
       description1: [
-        "Due to its beautiful beaches and plethora of water sports. Thailand is the ideal destination for group tours. Choose the Thailand Group Tour Package when it comes to group tours. Thailand guarantees utmost fun and entertainment for group tour activities in places like Bangkok, Phuket, and Krabi. Your accommodations will be in the best five-star hotels and resorts during your tour, which will last five days and four nights.",
+        "Choose the Thailand Group Tour Package when it comes to group tours since Thailand is the ideal destination for group tours. Due to its beautiful beaches and plethora of water sports, Thailand guarantees the utmost fun and entertainment for group tour activities in places like Bangkok, Phuket, and Krabi. Your accommodations will be in the best five-star hotels and resorts during your tour, which will last five days and four nights. ",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],
@@ -167,7 +167,7 @@ const TourThailand = () => {
                     <DetailSlider images={selectedTour.galleryImages} />
                   </div>
 
-                  <PopularTags />
+                  {/* <PopularTags /> */}
                   {/* Move DetailsGallery and DetailsMap outside of the sidebar column */}
                 </div>
               </div>
@@ -180,7 +180,7 @@ const TourThailand = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description1={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 // tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}

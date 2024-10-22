@@ -74,7 +74,7 @@ const TourPage = () => {
         "GST 5% (On final bill amount)",
       ],
       description1: [
-        "Shimla, Manali, Dalhousie, Chamba, and Kasauli are the most admired tourist places that our Shimla Manali Group Tour packages include. Wintertime, from October to January, is the best time to see snow and enjoy winter activities. Kayaking, Trekking, White-water rafting and Hot air balloon flying are the best adventure activities for group tours covered with our Himachal Pradesh Tour Package, and Shimla Manali Tour Package from Chennai.",
+        "Our Shimla Manali Group Tour packages include the most admired tourist places like Shimla, Manali, Dalhousie, Chamba, and Kasauli. Wintertime, from October to January, is the best time to see snow and enjoy winter activities. Kayaking, Trekking, White-water rafting and Hot air balloon flying are the best adventure activities for group tours covered with our Himachal Pradesh Tour Package, and Shimla Manali Tour Package from Chennai",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["6 Days 5 Nights"],
@@ -129,7 +129,7 @@ const TourPage = () => {
         {
           day: "Day 6",
           details:
-            "After breakfast we transfer you Shimla to Delhi (340 Kms / 7 Hrs) or Shimla to Chandigarh (110 Kms / 3.30 Hrs) Whenever reach at Delhi or Chandigarh airport/railway station proceed as per your further journey schedule towards to your home town. Tour ends with sweet memorize by Capstone Holidays. .",
+            "After breakfast we transfer you Shimla to Delhi (340 Kms / 7 Hrs) or Shimla to Chandigarh (110 Kms / 3.30 Hrs) Whenever reach at Delhi or Chandigarh airport/railway station proceed as per your further journey schedule towards to your home town. Tour ends with sweet memories by Capstone Holidays. .",
         },
       ],
       mapSrc:

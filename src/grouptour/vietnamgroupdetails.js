@@ -72,7 +72,7 @@ const TourSingapore = () => {
       ],
 
       description1: [
-        "There are countless chances to be astounded everywhere you go in Vietnam, from the far North to the deep South. In addition to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho chi Minh city, beautiful Hoi An, there are more must-see locations that are taken into account when organising your journey for Vietnam group tour packages. The Vietnam Group Tour Packages takes you to the main cities such as Da Nang, Hanoi, and Ho Chi Minh City (Saigon), Hue, Hoi An, Nha Trang, Da Lat, and Mui Ne. The 3 nights and 4 days of your Vietnam trip covers the mentioned destinations and its respective adventure activities."
+        "The Vietnam Group Tour Packages take you to the main cities such as Da Nang, Hanoi, Ho Chi Minh City (Saigon), Hue, Hoi An, Nha Trang, Da Lat, and Mui Ne. There are countless chances to be astounded everywhere you go in Vietnam, from the far North to the deep South. In addition to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho Chi Minh City, beautiful Hoi An, there are more must-see locations that are taken into account when organizing your journey for the Vietnam group tour packages. 3 nights and 4 days of your Vietnam trip cover the mentioned destinations and their respective adventure activities."
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["3 Nights, 4 Days"],

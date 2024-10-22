@@ -4,6 +4,7 @@ import galleryImage2 from "../img/widget/2.png";
 import galleryImage3 from "../img/widget/3.png";
 import galleryImage4 from "../img/widget/4.jpg";
 import galleryImage5 from "../img/widget/5.jpg";
+import galleryImage6 from "../img/widget/6.jpg";
 import phone1 from "../img/icon/phone.svg";
 import envelope1 from "../img/icon/envelope.svg";
 import location1 from "../img/icon/location-dot.svg";
@@ -51,6 +52,10 @@ const Footer = () => {
     {
       image: galleryImage5,
       links: [{ name: "twitter", url: "https://x.com/adamantony123" }],
+    },
+    {
+      image: galleryImage6,
+      links: [{ name: "youtube", url: "https://www.youtube.com/@capstoneholidays" }],
     },
     // Add more images and their respective links as needed
   ];
@@ -118,6 +123,9 @@ const Footer = () => {
                     </a>
                     <a href="https://www.instagram.com/capstone_holidays_chennai/">
                       <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@capstoneholidays/">
+                      <i className="fab fa-youtube"></i>
                     </a>
                   </div>
                 </div>
