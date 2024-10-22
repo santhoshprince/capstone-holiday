@@ -135,13 +135,19 @@ const Footer = () => {
                       <a href="/about">About us</a>
                     </li>
                     <li>
-                      <a href="/contact">Our Service</a>
+                      <a href="/group-tour-packages">Group Tour</a>
                     </li>
                     <li>
-                      <a href="/contact">Terms of Service</a>
+                      <a href="/europe-tour-packages-from-chennai">Europe Tour</a>
                     </li>
                     <li>
-                      <a href="/contact">Tour Booking Now</a>
+                      <a href="/honeymoon-packages-from-chennai">Honeymoon Tour</a>
+                    </li>
+                    <li>
+                      <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="/contact">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -232,7 +238,7 @@ const Footer = () => {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <p className="copyright-text">
-                Copyright 2024 Capstone Holidays All Rights Reserved |<Link to="/privacy-policy"><span style={{cursor:"pointer"}}>Privacy
+               <Link to="./"><span style={{cursor:"pointer",fontSize:"14px"}}>Copyright 2024 Capstone Holidays All Rights Reserved | </span> </Link><Link to="/privacy-policy"><span  style={{cursor:"pointer",fontSize:"14px"}}>Privacy
                 Policy</span> </Link>
               </p>
             </div>

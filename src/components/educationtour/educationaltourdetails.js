@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Sidebar from "../../components/sidebar";
+import Sidebar from "../../components/sidebardetailspage";
 import { useParams } from "react-router-dom";
 
 import Contentsection from "../../components/contentbg";

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
-import Sidebar from "../components/sidebar";
+import Sidebar from "../components/sidebardetailspage";
 import Contentsection from "../components/maldivesbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
