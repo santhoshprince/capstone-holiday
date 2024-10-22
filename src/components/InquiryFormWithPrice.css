@@ -7,7 +7,7 @@
     max-width: 600px; /* Max width for the entire container */
     margin: auto; /* Center the container */
     background-color: #f9f9f9; /* Light background for the form */
-    padding: 30px; /* Padding around the container */
+    padding: 20px; /* Padding around the container */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -29,8 +29,8 @@
   
   .inquiry-form {
     background-color: #ffffff; /* White background for the form */
-    padding: 20px; /* Padding inside the form */
-    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
   }
   
   h2 {

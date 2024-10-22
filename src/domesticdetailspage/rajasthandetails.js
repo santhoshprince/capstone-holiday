@@ -8,7 +8,7 @@ import Itinerary from "../components/itinerary";
 import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
-import galleryImage1 from "../img/Rajasthan/6.jpg";
+import galleryImage1 from "../img/Rajasthan/taj-mahal-1024327_192012.jpg";
 import galleryImage2 from "../img/Rajasthan/1.jpg";
 import galleryImage3 from "../img/Rajasthan/8.jpg";
 import galleryImage4 from "../img/Rajasthan/9.jpg";
