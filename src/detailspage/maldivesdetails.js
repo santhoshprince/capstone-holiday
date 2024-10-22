@@ -4,8 +4,6 @@ import Sidebar from "../components/sidebardetailspage";
 import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
-import Itinerary from "../components/itinerary";
-import PopularTags from "../components/populartags";
 import LocationMap from "../components/deatilsmap";
 import TourDetails from "../components/tourdetails";
 import galleryImage1 from "../img/tour/g1.jpg";

@@ -56,33 +56,22 @@ const AboutUs = () => {
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="about-content">
-                <h2 className="about-title">Travel Agency in Chennai</h2>
+                <h2 className="about-title">Top Tour and Travel Companies in India</h2>
                 <p className="about-text">
-                  Launched in 2016, Capstone Holidays has a vibrant and
-                  innovative team of specialists providing Tours and Travels
-                  company in Chennai with custom travel solutions. Our tours and
-                  travels company offer best-in-class International Tour
-                  Packages, Domestic Tour Packages and amenities at
-                  budget-friendly rates that match your needs, presenting
-                  insider contacts and industry expertise, as well as the advice
-                  and information you need to make practical travel decisions.
+                Capstone Holidays, founded in 2016, has a creative and vibrant team of specialists that has established itself as one of the Top Tour and Travel companies in India, offering personalized travel solutions. Our best tour and travel company offers best-in-class domestic and international tour packages and amenities at budget-friendly rates that match your needs, presenting insider contacts and industry expertise, as well as the advice and information you need to make practical travel decisions.
                 </p>
                 <p className="about-text">
-                  We collaborate with some of the most renowned and prevalent
-                  tours and travels companies in the world. Hence, when working
-                  with us, you can depend on us with trust because you know that
-                  by processing through us, you’ll gain more. Let Capstone
-                  Holidays plan your most extraordinary experience and cheerful
-                  memories!
+                Our travel packages are intellectually curated, so you can be confident that they will take you in the correct direction. Over the previous years, we have committed significant efforts in developing comprehensive, in-depth literature for all destinations, in order to address all of your queries. Hence, when working with our best tour and travel company, you can depend on us with trust because you know that by processing through us, you’ll gain more. Let Capstone Holidays plan your most extraordinary experience and cheerful memories!
                 </p>
                 <p className="about-text">
-                  Our adaptable approach combines with a ton of innovative
-                  thinking to provide results that are both affordable and of
-                  genuine value to our clients. Additionally, don’t worry; we’ve
-                  been doing this for a while! We are skilled at understanding
-                  the operations of international tour packages and domestic
-                  tour packages for our customers' needs.
+                Additionally, don’t worry; we’ve been doing this for a while! So, stop stravearching for “tours and travels near me” and trust our adaptable approach that combines with a ton of innovative thinking to provide results that are both affordable and of genuine value to our clients. We are skilled at understanding the operations of domestic and international tour packages for our customers' needs.
                 </p>
+                <ul>
+                  <li>Destination Planning 100%</li>
+                  <li>Customer Service 100%</li>
+                  <li>Customized Tour Packages 100%</li>
+                  <li>Knowledgeable and Experienced Staff 100%</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -123,49 +112,31 @@ const AboutUs = () => {
                   </h2>
                 </div>
                 <p className="pe-xl-5">
-                  <span style={{ fontWeight: "700" }}>Expertise:</span> There
-                  are many variations of passages of available but the majority
-                  have suffered alteration in some form, by injected hum
-                  randomised words.
+                  <span style={{ fontWeight: "700" }}>Expertise:</span> With years of experience in the travel industry, our knowledgeable team of travel consultants has a deep understanding of various destinations worldwide. We are one of the top tour and travel companies in India because we stay updated with the latest trends, ensuring that you receive the best recommendations and advice for your trip.
                 </p>
                 <p className="mb-30 pe-xl-5">
                   <span style={{ fontWeight: "700" }}>
                     {" "}
                     Personalized Attention:{" "}
                   </span>{" "}
-                  We believe in providing exceptional customer service. From the
-                  moment you contact us until you return from your trip, our
-                  dedicated team will be available to assist you, ensuring that
-                  every aspect of your journey is seamless and enjoyable.
+                  We believe in offering excellent customer service. From the minute you contact our best tour and travel company until you return from your vacation, our devoted team will be there to help you, ensuring that every element of your experience is smooth and pleasurable.
                 </p>
                 <p className="mb-30 pe-xl-5">
                   <span style={{ fontWeight: "700" }}>
                     Competitive Pricing:
                   </span>{" "}
-                  At Capstone Holidays Tours and Travels Company in Chennai, we
-                  strive to offer the best value for your money. Our strong
-                  partnerships with airlines, hotels, and local suppliers enable
-                  us to negotiate competitive rates and exclusive deals,
-                  allowing you to make the most of your travel budget.
+                  At our best Tour and Travel Company, we strive to offer the best value for your money. Our strong partnerships with airlines, hotels, and local suppliers enable us to negotiate competitive rates and exclusive deals, allowing you to make the most of your travel budget.
                 </p>
 
                 <p className="mb-30 pe-xl-5">
                   <span style={{ fontWeight: "700" }}>Safety and Security</span>{" "}
-                  Your safety and well-being are our utmost priority. We work
-                  with trusted and reliable partners around the globe, ensuring
-                  that all our itineraries adhere to the highest safety
-                  standards. Additionally, we provide comprehensive travel
-                  insurance options for your peace of mind.
+                  Your safety and well-being are our utmost priority. We work with trusted and reliable partners around the globe, ensuring that all our domestic and international tour packages adhere to the highest safety standards. Additionally, we provide comprehensive travel insurance options for your peace of mind.
                 </p>
                 <p className="mb-30 pe-xl-5">
                   <span style={{ fontWeight: "700" }}>
                     Responsible Tourism:{" "}
                   </span>{" "}
-                  We are committed to promoting sustainable and responsible
-                  travel practices. We collaborate with local communities,
-                  support conservation initiatives, and encourage our travelers
-                  to respect the environment and cultures they encounter during
-                  their journeys.
+                  We are committed to promoting sustainable and responsible travel practices. We collaborate with local communities, support conservation initiatives, and encourage our travelers to respect the environment and cultures they encounter during their journeys.
                 </p>
               </div>
             </div>
@@ -179,7 +150,7 @@ const AboutUs = () => {
       >
         <div className="container">
           <div className="title-area text-center">
-            <span className="sub-title">Services We Offer</span>
+            <span className="sub-title">Services offered by our Best tour and travel company</span>
             <h2 className="sec-title">Our Amazing Services</h2>
           </div>
           <div className="row gy-4 gx-4">
@@ -192,7 +163,7 @@ const AboutUs = () => {
                   <h3 className="box-title">
                     <a href="#">Tailor-Made Travel</a>
                   </h3>
-                  <p className="destination-text">5 Listing</p>
+                <p className="destination-text" style={{padding: "6px"}}>Air ticket, Visa and Passport processing services</p>
                   <a
                     onClick={() =>
                       handleShowModal(
@@ -217,7 +188,7 @@ const AboutUs = () => {
                   <h3 className="box-title">
                     <a href="group-tour-packages">Group Tours</a>
                   </h3>
-                  <p className="destination-text">8 Listing</p>
+                  <p className="destination-text" style={{padding: "6px"}}>Customizable Tour & Premier Cruise packages</p>
                   <a
                     onClick={() =>
                       handleShowModal(
@@ -242,7 +213,7 @@ const AboutUs = () => {
                   <h3 className="box-title">
                     <a href="/international-tour-packages-from-chennai">International Tour</a>
                   </h3>
-                  <p className="destination-text">9 Listing</p>
+                  <p className="destination-text" style={{padding: "6px"}}>Travel Insurance Policy services</p>
                   <a
                     onClick={() =>
                       handleShowModal(
@@ -267,7 +238,7 @@ const AboutUs = () => {
                   <h3 className="box-title">
                     <a href="/domestic-tour-packages-from-chennai">Domestic Tour</a>
                   </h3>
-                  <p className="destination-text">7 Listing</p>
+                  <p className="destination-text" style={{padding: "6px"}}>Accommodation & Reservations</p>
                   <a
                     onClick={() =>
                       handleShowModal(

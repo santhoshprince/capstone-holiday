@@ -59,9 +59,10 @@ import normal4 from "../img/normal/721.jpg";
 import normal5 from "../img/normal/6.jpg";
 import normal6 from "../img/normal/3.jpg";
 import normal7 from "../img/normal/4.jpg";
-import VideoSlider from "../components/videoslider";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import SubscriptionModal from '../components/SubscriptionModal';
+import { Link ,useLocation} from "react-router-dom"
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -165,6 +166,7 @@ const HeroSlider = () => {
           content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices."
         />
       </Helmet>
+      <SubscriptionModal />
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         {/* Video Background */}
         <div className="video-background">
@@ -822,7 +824,7 @@ const HeroSlider = () => {
                         <img src={test1} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Maria Doe</h3>
+                        <h3 className="box-title">Debin Wit</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -835,7 +837,17 @@ const HeroSlider = () => {
                     </div>
                   </div>
                   <p className="testi-card_text">
-                    “A home that perfectly blends sustainability with luxury...”
+                    We recently visited Singapore through Capstone holidays. All
+                    the arrangements right from Pickup from the Singapore
+                    Airport till Drop at airport was hassle free. We had amazing
+                    4 days in Singapore. Capstone holidays coordinated well and
+                    we recommend this travel agency as the customer friendly
+                    one. The staff Priya was friendly and made all the
+                    arrangements in advance. They tried their level best to make
+                    the tour successful. We will definitely contact Capstone
+                    holidays for our future travel plans. If anyone planning for
+                    an international trip, I will recommend to go with Capstone
+                    holidays as it is very economical.
                   </p>
                   <div className="testi-card-quote">
                     <img src={icont1} alt="img" />
@@ -857,7 +869,7 @@ const HeroSlider = () => {
                         <img src={test2} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Andrew Simon</h3>
+                        <h3 className="box-title">Karthik Murugesan</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -870,7 +882,11 @@ const HeroSlider = () => {
                     </div>
                   </div>
                   <p className="testi-card_text">
-                    “The home boasts sleek, contemporary architecture...”
+                    Had a fantastic experience with Capstone holidays. I booked
+                    golden triangle package, from the day of my booking till the
+                    trip get completed, the coordination from the team was very
+                    good. Highly Recommended. Looking forward to the next trip
+                    with Capstone.
                   </p>
                   <div className="testi-card-quote">
                     <img src={icont1} alt="img" />
@@ -891,7 +907,7 @@ const HeroSlider = () => {
                         <img src={test2} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Andrew Simon</h3>
+                        <h3 className="box-title">Amirtharaj M A </h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -904,7 +920,14 @@ const HeroSlider = () => {
                     </div>
                   </div>
                   <p className="testi-card_text">
-                    “The home boasts sleek, contemporary architecture...”
+                    I recently coordinated for a 4N5D Tour to Sri Lanka for my
+                    BIL's family who had come in from the US. My primary contact
+                    was with Mr. Prabhu, and he made sure all the details
+                    (places to visit, hotel, type of hotel room, kind of
+                    vehicle...) were meticulously taken care. And my BIL's
+                    family had a wonderful time there. A big thanks to Capstone
+                    Holidays. I will definitely consider them for any future
+                    trips of our family.
                   </p>
                   <div className="testi-card-quote">
                     <img src={icont1} alt="img" />
@@ -925,7 +948,7 @@ const HeroSlider = () => {
                         <img src={test2} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Andrew Simon</h3>
+                        <h3 className="box-title">Balaji Kubendiran</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -938,7 +961,13 @@ const HeroSlider = () => {
                     </div>
                   </div>
                   <p className="testi-card_text">
-                    “The home boasts sleek, contemporary architecture...”
+                    Good convenience Great experience!!!! Enjoyed a lot All
+                    facilities like Room - Car - Food - water sports - Dj cruise
+                    at boat - Temple visit - City Tour - All Entry fee arranged
+                    by them. 10 boys we njoyed a lot without any issues. They
+                    treated very well, specially Local guide helped us a lot.
+                    Worth for money If u r planned to Thailand for enjoyment u
+                    may book capstone Tourism package without doubt
                   </p>
                   <div className="testi-card-quote">
                     <img src={icont1} alt="img" />
@@ -958,7 +987,7 @@ const HeroSlider = () => {
                         <img src={test2} alt="testimonial" />
                       </div>
                       <div className="media-body">
-                        <h3 className="box-title">Andrew Simon</h3>
+                        <h3 className="box-title">Andrew Joseph</h3>
                         <span className="testi-card_desig">Traveller</span>
                       </div>
                     </div>
@@ -971,7 +1000,15 @@ const HeroSlider = () => {
                     </div>
                   </div>
                   <p className="testi-card_text">
-                    “The home boasts sleek, contemporary architecture...”
+                    Thank you Capstone for arranging a wonderful and memorable
+                    trip to me. I would like to extend my thanks to Malini who
+                    was the trip advisor and organiser for my trip to Singapore.
+                    She was consistent in following up on each process
+                    throughout. She ensured every day went as per the itinerary
+                    without any inconveniences. The whole trip was well planned
+                    and ensured punctuality in transportation. I would recommend
+                    preferring Capstone for your next International trip. Thank
+                    you team
                   </p>
                   <div className="testi-card-quote">
                     <img src={icont1} alt="img" />

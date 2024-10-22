@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <>
      <Contentsection heading={"Privacy Policy"} backgroundImage={bg1} />
     
-     <div class="container-fluid">
+     <div class="container-fluid  new-privacy">
   <div class="row justify-content-center">
     <div class="col-lg-10 col-md-12">
       <div class="privacy-policy">
