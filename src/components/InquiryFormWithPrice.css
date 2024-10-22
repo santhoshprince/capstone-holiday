@@ -48,7 +48,7 @@
     display: block; /* Labels on a new line */
     margin-bottom: 5px; /* Space between label and input */
     font-weight: bold; /* Bold label text */
-    font-family:Montserrat !important;
+    /* font-family:Montserrat !important; */
   }
   
   input, textarea {
