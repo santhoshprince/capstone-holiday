@@ -1,0 +1,53 @@
+.container-fluid {
+    padding: 0 20px; /* Adds some padding to the edges */
+    background-color: #f8f9fa; /* Light background color for the section */
+  }
+  
+  .privacy-policy {
+    background-color: #ffffff; /* White background for the content area */
+    padding: 40px; /* Adds padding inside the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #343a40; /* Darker text color for headings */
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #495057;
+    margin-top: 30px;
+  }
+  
+  .privacy-policy p, .privacy-policy ul {
+    font-size: 16px;
+    line-height: 1.8; /* Increases readability */
+    color: #6c757d; /* Gray text color for paragraphs */
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .privacy-policy li {
+    margin-bottom: 10px;
+  }
+  
+  .privacy-policy a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+  

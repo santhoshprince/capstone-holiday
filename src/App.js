@@ -84,7 +84,7 @@ import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "typeface-poppins";
 import { HelmetProvider } from 'react-helmet-async';
-import PrivacyPolicy from "./components/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (

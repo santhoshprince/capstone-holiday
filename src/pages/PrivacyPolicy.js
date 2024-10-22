@@ -1,24 +1,27 @@
 // src/PrivacyPolicy.js
 import React from 'react';
 import './PrivacyPolicy.css'; // Import the CSS file
-import Contentsection from "../components/PrivacyPolicy";
-import bg1 from "../img/tour/d1.jpg";
+import Contentsection from "../components/contentbg";
+import bg1 from "../assets/img/nature.jpg";
 
 const PrivacyPolicy = () => {
   return (
     <>
-     <Contentsection heading={"Europe Tour Packages"} backgroundImage={bg1} />
-     <div className="privacy-policy">
-      <h1>Privacy Policy</h1>
-      <p>
-        At Capstone Holidays, we are committed to protecting the privacy and security of the personal
-        information of our customers and website visitors. This Privacy Policy outlines the types of
-        personal information we collect, how we use and protect that information, and your rights
-        regarding your personal data. By using our website or providing us with your personal
-        information, you agree to the practices described in this Privacy Policy.
-      </p>
-
-      <h2>Information We Collect</h2>
+     <Contentsection heading={"Privacy Policy"} backgroundImage={bg1} />
+    
+     <div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-md-12">
+      <div class="privacy-policy">
+        {/* <h1></h1> */}
+        <p>
+          At Capstone Holidays, we are committed to protecting the privacy and security of the personal
+          information of our customers and website visitors. This Privacy Policy outlines the types of
+          personal information we collect, how we use and protect that information, and your rights
+          regarding your personal data. By using our website or providing us with your personal
+          information, you agree to the practices described in this Privacy Policy.
+        </p>
+        <h2>Information We Collect</h2>
       <ul>
         <li>Personal Information: such as your name, email address, phone number, postal address, date of birth, passport information, and other details you provide to us voluntarily.</li>
         <li>Payment Information: such as your credit card details, bank account information, and billing address, which are necessary for processing your payments for our services.</li>
@@ -95,7 +98,10 @@ const PrivacyPolicy = () => {
         and the revised version will be effective as of the “Effective Date” mentioned at the beginning
         of the policy.
       </p>
+      </div>
     </div>
+  </div>
+</div>
     </>
 
   );

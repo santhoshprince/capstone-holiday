@@ -232,8 +232,8 @@ const Footer = () => {
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6">
               <p className="copyright-text">
-                Copyright 2024 Capstone Holidays All Rights Reserved |<pan style={{cursor:"pointer"}} href="/privacy-policy">Privacy
-                Policy</pan> 
+                Copyright 2024 Capstone Holidays All Rights Reserved |<Link to="/privacy-policy"><span style={{cursor:"pointer"}}>Privacy
+                Policy</span> </Link>
               </p>
             </div>
           </div>
