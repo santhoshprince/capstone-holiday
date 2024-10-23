@@ -435,6 +435,19 @@ nav ul li a:hover {
   .mobile-menu-toggle {
     display: block; /* Show the toggle button on mobile */
   }
+  .logo{
+    width:100% !important;
+    text-align: left !important;
+  }
+  .main-header{
+    padding: 20px !important;
+  }
+  .dropdown{
+    width: 100% !important;
+  }
+  /* .main-menu-open li a :active{
+
+  } */
 }
 
 
