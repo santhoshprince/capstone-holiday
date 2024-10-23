@@ -24740,11 +24740,14 @@ nav ul li.dropdown:hover .dropdown-content {
   .boxnew{
     line-height: 1;
   }
+  .tour-box{
+    margin-bottom: 20px;
+
+  }
 
 
 }
-
-
+ 
 
 /* 
 @media (max-width: 1024px) {
