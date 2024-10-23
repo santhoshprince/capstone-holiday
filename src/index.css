@@ -24712,3 +24712,18 @@ nav ul li.dropdown:hover .dropdown-content {
   margin-top: 8px !important; /* Space between title and description */
 }
 
+
+
+
+
+
+@media (max-width: 768px) {
+  .boxnew a {
+    font-size: 14px !important;
+  }
+  .boxnew{
+    line-height: 1;
+  }
+
+}
+

@@ -62,7 +62,7 @@ import normal7 from "../img/normal/4.jpg";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SubscriptionModal from '../components/SubscriptionModal';
-import { Link ,useLocation} from "react-router-dom"
+
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -244,6 +244,24 @@ const HeroSlider = () => {
             className="categorySlider"
             id="categorySlide"
             data-aos="fade-down"
+             breakpoints={{
+        // Define breakpoints for responsive slides
+        640: {
+            slidesPerView: 1, // Show 1 slide on small screens
+        },
+        768: {
+            slidesPerView: 2, // Show 2 slides on medium screens
+        },
+        1024: {
+            slidesPerView: 3, // Show 3 slides on larger screens
+        },
+        1280: {
+            slidesPerView: 4, // Show 4 slides on large screens
+        },
+        1536: {
+            slidesPerView: 5, // Show 5 slides on extra large screens
+        },
+    }}
           >
             {/* First slide */}
             <SwiperSlide>
