@@ -20052,9 +20052,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 .tour-box_img img {
   width: 100%;
-  border-radius: 16px 16px 0 0;
-  -webkit-transition: 1.3s all ease;
-  transition: 1.3s all ease;
+    height: 300px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the box while maintaining its aspect ratio */
+    transition: 1.3s all ease;
+    border-radius: 16px 16px 0 0; /* Uncomment if needed */
 }
 .tour-box .tour-content {
   padding: 24px 24px 16px 24px;

@@ -12,18 +12,7 @@ const TourItem = ({ imgSrc, title, rating, price, duration, detailPath }) => {
           <h3 className="box-title">
             <Link to={detailPath}>{title}</Link> {/* Use Link instead of a regular anchor tag */}
           </h3>
-          {rating && (
-            <div className="tour-rating">
-              <div className="star-rating" role="img" aria-label={`Rated ${rating} out of 5`}>
-                <span style={{ width: '100%' }}>
-                  Rated <strong className="rating">{rating}</strong> out of 5 based on <span className="rating">{rating}</span> Rating
-                </span>
-              </div>
-              {/* <Link to={detailPath} className="woocommerce-review-link">
-                (<span className="count">{rating}</span> Rating)
-              </Link> */}
-            </div>
-          )}
+         
           <h4 className="tour-box_price">
             <span className="currency">₹ {price}</span>/Person
           </h4>
