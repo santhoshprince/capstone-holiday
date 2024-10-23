@@ -24654,7 +24654,7 @@ nav ul li.dropdown:hover .dropdown-content {
   border-top: transparent;
   border-radius: 16px;
   overflow: hidden;
-  width: 100%; /* Make the card take full width of its container */
+  /* width: 100%; Make the card take full width of its container */
 /* Set a maximum width */
   height: 500px; /* Set a fixed height */
   margin: 15px; /* Add spacing between cards */
