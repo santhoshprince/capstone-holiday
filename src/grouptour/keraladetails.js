@@ -198,7 +198,7 @@ const GroupTour = () => {
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
                 title1={selectedTour.title1}
-                description1={selectedTour.description}
+                description1={selectedTour.description1}
                 duration={selectedTour.duration}
                 tourCode={selectedTour.tourCode}
                 priceIncludes={selectedTour.priceIncludes}
