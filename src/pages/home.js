@@ -15,14 +15,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "swiper/css";
-// import './index.css';
-// Import required modules
-
-// import heroBg1 from "../img/hero/2149153257.jpg";
-// import heroBg2 from "../img/hero/3372.jpg";
-// import heroBg3 from "../img/hero/2149153258.jpg";
-// import leftArrow from "../img/icon/left-arrow.svg";
-// import rightArrow from "../img/icon/right-arrow.svg";
 import VideoSliders from "../components/videoslider";
 import cata1 from "../img/category/international.jpg";
 import cata2 from "../img/category/domestic.jpg";
@@ -73,13 +65,13 @@ const HeroSlider = () => {
   }, []);
   const headings = [
     "Travelling is the healthiest addiction",
-    "Discover and Explore fresh destinations with our tourism champion. ",
-    "Connect with us in just a click to discover the best chances to experience adventure.",
+    "Safety protected Tour packages to promote wellness",
+    "Explore every corner of the globe with our International Tour Packages",
   ];
 
   const descriptions = [
     "We serve you with an unlimited dosage of Tour packages from Chennai",
-    "Join us for thrilling adventures, from trekking in the hills to relaxing on sandy shores, ensuring you have the trip of a lifetime.",
+    "Discover and Explore fresh destinations with our tourism champion",
     "Connect with us in just a click to discover the best chances to experience adventure.",
   ];
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);

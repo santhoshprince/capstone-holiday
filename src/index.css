@@ -22284,10 +22284,27 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--smoke-color);
   border-radius: 16px;
   text-align: center;
+  height: 500px;
+  flex-direction: column; 
 }
 .destination-item_img {
   border-radius: 16px 16px 0px 0px;
+  height: 300px;
 }
+.destination-item_img img {
+  flex: 0; /* Do not allow the image section to grow */
+  height: 300px; /* Set a fixed height for the image */
+  overflow: hidden; /* Hide overflow */
+  display: flex; /* Use flex to center image */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+.destination-item_img img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Keep aspect ratio */
+  max-height: 100%; /* Limit height to prevent overflow */
+}
+
 @media (max-width: 991px) {
   .destination-item_img {
     margin-bottom: 0;
@@ -24724,4 +24741,5 @@ nav ul li.dropdown:hover .dropdown-content {
   }
 
 }
+
 
