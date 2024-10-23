@@ -618,7 +618,7 @@ const HeroSlider = () => {
       <div className="gallery-area">
         <div className="container th-container">
           <div className="title-area text-center">
-            <span className="sub-title" data-aos="slide-left">
+            <span className="sub-title">
               Collection of everlasting memories in our gallery
             </span>
             <h2 className="sec-title" data-aos="slide-right">

@@ -24742,4 +24742,9 @@ nav ul li.dropdown:hover .dropdown-content {
 
 }
 
-
+/* 
+@media (max-width: 1024px) {
+  .swiper-pagination {
+    display: none !important;
+  }
+} */
