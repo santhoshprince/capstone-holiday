@@ -448,6 +448,9 @@ nav ul li a:hover {
   /* .main-menu-open li a :active{
 
   } */
+  .logo img {
+    width: 180px;
+}
 }
 
 
