@@ -14,12 +14,12 @@ import galleryImage3 from "../img/tour/835.jpg";
 import galleryImage4 from "../img/tour/15793.jpg";
 import galleryImage5 from "../img/tour/340.jpg";
 import galleryImage6 from "../img/tour/365.jpg";
-import galleryImage1_1 from "../img/gallery/358.jpg";
+import galleryImage1_1 from "../img/gallery/gallery_8_5.jpg";
 import galleryImage2_2 from "../img/gallery/343.jpg";
-import galleryImage3_3 from "../img/gallery/369.jpg";
+import galleryImage3_3 from "../img/gallery/gallery_3_6.jpg";
 import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
-import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+import galleryImage6_6 from "../img/gallery/2151747443.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/bg/contact_bg_7.jpg";
 
