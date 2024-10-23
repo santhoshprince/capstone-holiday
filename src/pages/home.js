@@ -53,8 +53,7 @@ import normal6 from "../img/normal/3.jpg";
 import normal7 from "../img/normal/4.jpg";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import SubscriptionModal from '../components/SubscriptionModal';
-
+import SubscriptionModal from "../components/SubscriptionModal";
 
 const HeroSlider = () => {
   useEffect(() => {
@@ -229,31 +228,39 @@ const HeroSlider = () => {
           {/* Swiper carousel */}
           <Swiper
             modules={[Pagination, Navigation]}
-            spaceBetween={30}
-            slidesPerView={5}
+            spaceBetween={10} // Reduce space between slides for better mobile experience
+            slidesPerView={1} // Default to 1 slide per view
             navigation
             pagination={{ clickable: true }}
             className="categorySlider"
             id="categorySlide"
             data-aos="fade-down"
-             breakpoints={{
-        // Define breakpoints for responsive slides
-        640: {
-            slidesPerView: 1, // Show 1 slide on small screens
-        },
-        768: {
-            slidesPerView: 2, // Show 2 slides on medium screens
-        },
-        1024: {
-            slidesPerView: 3, // Show 3 slides on larger screens
-        },
-        1280: {
-            slidesPerView: 4, // Show 4 slides on large screens
-        },
-        1536: {
-            slidesPerView: 5, // Show 5 slides on extra large screens
-        },
-    }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1, // Show 1 slide on small screens (mobile)
+                spaceBetween: 10,
+                autoplay: true, // Enable autoplay for mobile view
+                navigation: false, // Disable arrows for mobile
+                pagination: false, // Disable dots for mobile
+              },
+              768: {
+                slidesPerView: 2, // Show 2 slides on tablets
+                spaceBetween: 20,
+                autoplay: true, // Enable autoplay for tablets
+                navigation: false, // Disable arrows for tablets
+                pagination: false, // Disable dots for tablets
+              },
+              1024: {
+                slidesPerView: 3, // Show 3 slides on larger screens
+                spaceBetween: 30, // Default space between slides
+              },
+              1280: {
+                slidesPerView: 4, // Show 4 slides on large screens
+              },
+              1536: {
+                slidesPerView: 5, // Show 5 slides on extra large screens
+              },
+            }}
           >
             {/* First slide */}
             <SwiperSlide>
