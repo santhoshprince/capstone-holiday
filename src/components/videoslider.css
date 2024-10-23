@@ -121,3 +121,13 @@
   font-size: 1.2rem; /* Slightly smaller for readability */
   color: #333; /* Dark color for contrast */
 }
+@media (max-width: 768px) {
+  .custom-button-right {
+      display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .custom-button-right {
+      display: none;
+  }
+}
