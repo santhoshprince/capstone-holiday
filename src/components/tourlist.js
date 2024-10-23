@@ -7,7 +7,7 @@ const TourList = () => {
   const tours = [
     {
       imgSrc: bali,
-      title: "Bali Tour Packages from Chennai",
+      title: "Bali Tour Packages",
       price: "20,825",
       duration: "6 Days 5 Nights",
       detailPath: '/tour/bali-tour-packages-from-chennai', // Direct path without id

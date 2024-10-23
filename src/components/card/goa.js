@@ -7,7 +7,7 @@ const TourList = () => {
   const tours = [
     {
       imgSrc: bali,
-      title: "Goa Tour Package from Chennai",
+      title: "Goa Tour Package",
       // rating: 4.8,
       price: "12,325",
       duration: "4 Days 3 Nights",

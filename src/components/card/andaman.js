@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: bali,
-      title: "Andaman Tour Package from Chennai",
+      title: "Andaman Tour Package",
       // rating: 4.8,
       price: "9,435",
       duration: "4 Days 5 Nights",

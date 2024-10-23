@@ -19,7 +19,7 @@ const TourList = () => {
   const tours = [
     {
       imgSrc: bali,
-      title: "Bali Tour Packages from Chennai",
+      title: "Bali Tour Packages",
       rating: 4.7,
       price: "20,825",
       duration: "6 Days 5 Nights",
@@ -35,7 +35,7 @@ const TourList = () => {
     },
     {
       imgSrc: maldives,
-      title: "Maldives Tour Package from Chennai",
+      title: "Maldives Tour Package",
       rating: 4.7,
       price: "96,390",
       duration: "4 Days 5 Nights",
@@ -43,7 +43,7 @@ const TourList = () => {
     },
     {
       imgSrc: dubai,
-      title: "Dubai Tour Packages from Chennai",
+      title: "Dubai Tour Packages",
       rating: 4.7,
       price: "43,350",
       duration: "4 Nights, 5 Days",
@@ -67,7 +67,7 @@ const TourList = () => {
     },
     {
       imgSrc: mauritius,
-      title: "Mauritius Tour Package from Chennai",
+      title: "Mauritius Tour Package",
       rating: 4.7,
       price: "135,320",
       duration: "4 Nights, 5 Days",

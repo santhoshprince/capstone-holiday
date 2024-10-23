@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: maldives,
-      title: "Dubai Tour Packages from Chennai",
+      title: "Dubai Tour Packages",
       rating: 4.7,
       price: "43,350",
       duration: "4 Nights, 5 Days",

@@ -24,7 +24,7 @@ const TourList = () => {
   const tours = [
     {
       imgSrc: bali,
-      title: "Andaman Tour Package from Chennai",
+      title: "Andaman Tour Package",
       price: "9,435",
       duration: "4 Days 5 Nights",
       detailPath: "/tour/andaman-tour-package-from-chennai",
@@ -38,7 +38,7 @@ const TourList = () => {
     },
     {
       imgSrc: goa1,
-      title: "Goa Tour Package from Chennai",
+      title: "Goa Tour Package",
       price: "12,325",
       duration: "4 Days 3 Nights",
       detailPath: "/tour/goa-tour-package-from-chennai",
@@ -66,7 +66,7 @@ const TourList = () => {
     },
     {
       imgSrc: kerala,
-      title: "Kerala Tour Packages from Chennai",
+      title: "Kerala Tour Packages",
       price: "10,370",
       duration: "4 Days 3 Nights",
       detailPath: "/tour/kerala-tour-packages-from-chennai",
@@ -80,7 +80,7 @@ const TourList = () => {
     },
     {
       imgSrc: kashmir,
-      title: "Kashmir Tour Packages from Chennai",
+      title: "Kashmir Tour Packages",
       price: "14,450",
       duration: "7 Days 6 Nights",
       detailPath: "/tour/kashmir-tour-packages-from-chennai",

@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: maldives,
-      title: "Mauritius Tour Package from Chennai",
+      title: "Mauritius Tour Package",
       rating: 4.7,
       price: "135,320",
       duration: "4 Nights, 5 Days",

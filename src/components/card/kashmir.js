@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: bali,
-      title: "Kashmir Tour Packages from Chennai",
+      title: "Kashmir Tour Packages",
       // rating: 4.8,
       price: "14,450",
       duration: "7 Days 6 Nights",
