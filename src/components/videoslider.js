@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation'; // Import for navigation arrows
-import 'swiper/css/autoplay'; // Import for autoplay
-import { Navigation, Autoplay } from 'swiper/modules'; // Import required modules
-import './videoslider.css';
+import React, { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation"; // Import for navigation arrows
+import "swiper/css/autoplay"; // Import for autoplay
+import { Navigation, Autoplay } from "swiper/modules"; // Import required modules
+import "./videoslider.css";
 
 const VideoSlider = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -30,50 +30,72 @@ const VideoSlider = () => {
 
   return (
     <>
-    <section class="youtube-section">
-  <h2 class="youtube-heading">Explore the World Through Our Lens</h2>
-  <p class="youtube-description">Join us on our adventures as we discover breathtaking destinations and share travel tips through our captivating videos!</p>
-</section>
-       <div className="video-slider-wrapper">
+      <section class="youtube-section">
+        <h2 class="youtube-heading">Explore the World Through Our Lens</h2>
+        <p class="youtube-description">
+          Join us on our adventures as we discover breathtaking destinations and
+          share travel tips through our captivating videos!
+        </p>
+      </section>
+      <div className="video-slider-wrapper">
       <Swiper
-        ref={swiperRef} // Attach the ref to Swiper
-        spaceBetween={20} // Spacing between videos
-        slidesPerView={3} // Display 3 videos at once
-        centeredSlides={true}
-        loop={true} // Enable looping
-        navigation={false} // Disable default navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }} // Enable autoplay
-        modules={[Navigation, Autoplay]} // Include modules
-        className="mySwiper"
-      >
-        {["BMB3boMwZwY", "pbEfYpU9IQA", "W52dYREUkC8", "F2V2--JDFdY"].map((videoId, index) => (
-          <SwiperSlide key={index}>
-            <div className="video-container">
-              <iframe
-                src={`https://www.youtube.com/embed/${videoId}?mute=1&controls=0&loop=1&playlist=${videoId}&vq=hd1080`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="video-iframe"
-              ></iframe>
-              {!isPlaying && (
-                <div className="" onClick={handlePlayClick}></div>
-              )}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* Custom Navigation Buttons */}
-      <button className="custom-button custom-button-left" onClick={slidePrev}>
-        <span>&lt;</span> {/* Replace with your arrow icon */}
-      </button>
-      <button className="custom-button custom-button-right" onClick={slideNext}>
-        <span>&gt;</span> {/* Replace with your arrow icon */}
-      </button>
-    </div>
+  ref={swiperRef} // Attach the ref to Swiper
+  spaceBetween={20} // Spacing between videos
+  slidesPerView={3} // Default for large screens
+  centeredSlides={true}
+  loop={true} // Enable looping
+  navigation={false} // Disable default navigation
+  autoplay={{ delay: 3000, disableOnInteraction: false }} // Enable autoplay
+  modules={[Navigation, Autoplay]} // Include modules
+  className="mySwiper"
+  breakpoints={{
+    320: {
+      slidesPerView: 1, // For mobile phones
+    },
+    768: {
+      slidesPerView: 2, // For tablets
+    },
+    1024: {
+      slidesPerView: 3, // For larger screens
+    },
+  }}
+>
+
+          {["BMB3boMwZwY", "pbEfYpU9IQA", "W52dYREUkC8", "F2V2--JDFdY"].map(
+            (videoId, index) => (
+              <SwiperSlide key={index}>
+                <div className="video-container">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}?mute=1&controls=0&loop=1&playlist=${videoId}&vq=hd1080`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="video-iframe"
+                  ></iframe>
+                  {!isPlaying && (
+                    <div className="" onClick={handlePlayClick}></div>
+                  )}
+                </div>
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
+        {/* Custom Navigation Buttons */}
+        <button
+          className="custom-button custom-button-left"
+          onClick={slidePrev}
+        >
+          <span>&lt;</span> {/* Replace with your arrow icon */}
+        </button>
+        <button
+          className="custom-button custom-button-right"
+          onClick={slideNext}
+        >
+          <span>&gt;</span> {/* Replace with your arrow icon */}
+        </button>
+      </div>
     </>
- 
   );
 };
 
