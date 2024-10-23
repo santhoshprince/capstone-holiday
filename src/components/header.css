@@ -445,11 +445,12 @@ nav ul li a:hover {
   .dropdown{
     width: 100% !important;
   }
-  /* .main-menu-open li a :active{
-
-  } */
+  
   .logo img {
     width: 180px;
+}
+li:focus .dropdown{
+  display: block !important;
 }
 }
 
