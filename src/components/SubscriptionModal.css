@@ -1,9 +1,11 @@
-/* SubscriptionModal.css */
+/* General body styles */
 body {
     font-family: 'Arial', sans-serif;
-    overflow-x: hidden; /* Disable horizontal scrolling when the modal is open */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Popup container */
 .popup {
     display: flex;
     justify-content: center;
@@ -12,92 +14,67 @@ body {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark background with more opacity */
-    animation: fadeIn 0.5s ease-in-out;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
+/* Popup content styles */
 .popup-content {
     background-color: white;
-    padding: 40px; /* More padding for a better look */
-    border-radius: 15px;
-    width: 500px; /* Increase width */
-    height: auto; /* Auto height */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(0.5); /* Start small */
-    animation: scaleUp 0.5s ease-in-out forwards;
+    padding: 20px; /* Consistent padding */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%; /* Full width on mobile */
+    max-width: 500px; /* Maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevent content overflow */
+    position: relative; /* Ensure positioning context for the close button */
 }
 
-@keyframes scaleUp {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
+/* Close button styles */
 .close-button {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s;
 }
 
-.close-button:hover,
-.close-button:focus {
-    color: #333;
-    text-decoration: none;
-}
-
+/* Header styles */
 .new-subscribe h2 {
     text-align: center;
     font-size: 24px; /* Larger heading */
     margin-bottom: 20px;
     color: #333;
-    font-weight: bold;
 }
 
+/* Label styles */
 label {
     margin-top: 10px;
     display: block;
     font-size: 14px;
-    font-weight: 500;
     color: #333;
 }
 
-input, textarea {
+/* Input and textarea styles */
+input,
+textarea {
     width: 100%;
-    padding: 12px; /* Increased padding for better look */
+    padding: 12px; /* Padding for better look */
     margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 8px; /* Rounded input fields */
-    font-size: 14px;
     outline: none;
     transition: border-color 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #007BFF; /* Blue outline on focus */
 }
 
-textarea {
-    resize: vertical; /* Allow vertical resizing for textarea */
-}
-
-button[type="submit"] {
+/* Submit button styles */
+button[type='submit'] {
     margin-top: 20px;
     padding: 12px;
     background-color: #28a745;
@@ -107,11 +84,55 @@ button[type="submit"] {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
-button[type="submit"]:hover {
-    background-color: #218838;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .popup-content {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    .close-button {
+        font-size: 24px; /* Smaller close button */
+    }
+
+    .new-subscribe h2 {
+        font-size: 20px; /* Smaller heading on mobile */
+    }
+
+    label {
+        font-size: 14px; /* Adjust label font size */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    button[type='submit'] {
+        font-size: 16px; /* Keep button font size larger for clarity */
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 10px; /* Further reduce padding for small devices */
+    }
+
+    .new-subscribe h2 {
+        font-size: 18px; /* Adjust heading for small devices */
+    }
+
+    label {
+        font-size: 12px; /* Adjust label font size */
+    }
+
+    input,
+    textarea {
+        font-size: 12px; /* Adjust input font size */
+    }
+
+    button[type='submit'] {
+        font-size: 14px; /* Keep button font size larger for clarity */
+    }
 }

@@ -1,4 +1,3 @@
-// SubscriptionModal.js
 import React, { useState, useEffect } from "react";
 import "./SubscriptionModal.css"; // Import the updated CSS file
 import { Link } from "react-router-dom";
@@ -79,8 +78,7 @@ const SubscriptionModal = () => {
                 required
               />
 
-              {/* <Link to="/contact"><button type="submit" className=''>Subscribe</button></Link> */}
-              <div className="header-button" style={{paddingTop:"20px"}}>
+              <div className="header-button" style={{ paddingTop: "20px" }}>
                 <Link to="/contact" className="th-btn">
                   <span>SUBMIT NOW</span>
                 </Link>
