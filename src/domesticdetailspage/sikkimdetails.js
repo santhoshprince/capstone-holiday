@@ -23,7 +23,8 @@ import galleryImage5_5 from "../img/sikkim/13.jpg";
 import galleryImage6_6 from "../img/sikkim/14.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/sikkim/11.jpg";
+import bg1 from "../img/correctionimg/33.jpg";
+import bg2 from "../img/correctionimg/34.jpg";
 import { Helmet } from "react-helmet";
 
 const TourPage = () => {
@@ -37,6 +38,7 @@ const TourPage = () => {
     "darjeeling-gangtok-tour-packages": {
       heading: "Darjeeling Gangtok Tour Packages",
       title1: "Darjeeling Gangtok Tour Packages",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -146,6 +148,7 @@ const TourPage = () => {
     "sikkim-travel-packages": {
       heading: "Sikkim Travel Packages",
       title1: "Sikkim Travel Packages",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -287,7 +290,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={bg1}
+        backgroundImage={tour.backgroundImages}
       />
 
       <nav className="tour-navigation">

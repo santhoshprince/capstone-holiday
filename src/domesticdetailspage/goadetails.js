@@ -23,7 +23,8 @@ import galleryImage5_5 from "../img/goa/16.jpg";
 import galleryImage6_6 from "../img/goa/17.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/goa/9.jpg";
+import bg1 from "../img/correctionimg/18.jpg";
+import bg2 from "../img/correctionimg/19.jpg";
 import { Helmet } from "react-helmet";
 
 const TourPage = () => {
@@ -38,6 +39,7 @@ const TourPage = () => {
     "goa-tour-package-from-chennai": {
       heading: "Goa Tour Package from Chennai",
       title1: "Goa Tour Package from Chennai",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -150,6 +152,7 @@ const TourPage = () => {
     "goa-travel-packages": {
       heading: "Goa Travel packages",
       title1: "Goa Travel packages",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -301,7 +304,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={bg1}
+        backgroundImage={tour.backgroundImage}
       />
 
       <nav className="tour-navigation">

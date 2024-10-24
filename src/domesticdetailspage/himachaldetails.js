@@ -23,7 +23,8 @@ import galleryImage5_5 from "../img/Himachal/13.jpg";
 import galleryImage6_6 from "../img/Himachal/14.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Himachal/11.jpg";
+import bg1 from "../img/correctionimg/20.jpg";
+import bg2 from "../img/correctionimg/21.jpg";
 import { Helmet } from "react-helmet";
 
 const TourPage = () => {
@@ -37,6 +38,7 @@ const TourPage = () => {
     "shimla-manali-tour-package-from-chennai": {
       heading: "Himachal – Shimla Manali Tour Package from Chennai",
       title1: "Himachal – Shimla Manali Tour Package from Chennai",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -158,6 +160,7 @@ const TourPage = () => {
     "himachal-tour-package": {
       heading: "Himachal Tour Package",
       title1: "Himachal Tour Package",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -317,7 +320,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={bg1}
+        backgroundImage={tour.backgroundImage}
       />
 
       <nav className="tour-navigation">

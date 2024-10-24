@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/andaman/12.jpg";
 import galleryImage6_6 from "../img/andaman/13.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/andaman/9.jpg";
+import bg1 from "../img/correctionimg/16.jpg";
 import { Helmet } from "react-helmet";
 
 const TourPage = () => {

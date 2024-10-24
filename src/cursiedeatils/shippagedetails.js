@@ -34,8 +34,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "SINGAPORE PENANG & PHUKET CRUISE",
-      title1: "SINGAPORE PENANG & PHUKET CRUISE",
+      heading: "Singapore Malaysia Tour Package with Cruise",
+      title1: "Singapore Malaysia Tour Package with Cruise",
       galleryImages: [
         galleryImage1,
         galleryImage2,

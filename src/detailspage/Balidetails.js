@@ -21,7 +21,8 @@ import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/gallery/2151747443.jpg";
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/bg/contact_bg_7.jpg";
+ import bg1 from "../img/correctionimg/1.jpg";
+ import bg2 from "../img/correctionimg/2.jpg";
 
 const BaliDetails = () => {
   const detailsitinerary = useRef(null);
@@ -49,7 +50,7 @@ const BaliDetails = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
-
+      backgroundImage:bg1,
       priceIncludes: [
         "Twin Sharing Accommodation with Breakfast",
         "Private air-conditioned vehicle for tour time & Airport Pick & Drop",
@@ -143,6 +144,7 @@ const BaliDetails = () => {
         galleryImage5_5,
         galleryImage6_6,
       ],
+      backgroundImage:bg2,
       description1: [
         "The prominent Bali tourist places are covered with our Bali Island Tour Package and Bali Indonesia Package within a week. Bali tour places are more fascinating that provide a wide range of experiences. Some most visited destinations in Bali include Nusa Dua, Nusa Penida, Kuta, Ubung, Ubud, Gates of Heaven, Mt Batur, Jimbaran Beach, Bingin Beach, Suluban Beach, Padang-Padang Beach, Uluwatu, and many more",
       ],
@@ -242,7 +244,7 @@ const BaliDetails = () => {
         <Contentsection
           heading={tour.heading}
           children={""}
-          backgroundImage={bg1}
+          backgroundImage={tour.backgroundImage}
         />
 
         <nav className="tour-navigation">

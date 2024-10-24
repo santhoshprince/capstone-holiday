@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/Manali/11.jpg";
 import galleryImage6_6 from "../img/Manali/12.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Manali/4.jpg";
+import bg1 from "../img/correctionimg/22.jpg";
 
 const TourPage = () => {
   const { id } = useParams();

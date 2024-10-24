@@ -22,7 +22,7 @@ import galleryImage4_4 from "../img/Turkey/42289.jpg";
 import galleryImage5_5 from "../img/Turkey/61059.jpg";
 import galleryImage6_6 from "../img/Turkey/2149275774.jpg";
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Turkey/176.jpg";
+import bg1 from "../img/correctionimg/7.jpg";
 import { Helmet } from 'react-helmet';
 
 const TourTurkey = () => {

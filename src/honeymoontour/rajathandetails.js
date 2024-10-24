@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/Rajasthan/16.jpg";
 import galleryImage6_6 from "../img/Rajasthan/17.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Rajasthan/6.jpg";
+import bg1 from "../img/correctionimg/32.jpg";
 
 const TourPage = () => {
   const { id } = useParams();

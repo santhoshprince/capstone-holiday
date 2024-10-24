@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/Thailand/779.jpg";
 import galleryImage6_6 from "../img/Thailand/786.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Thailand/2150668931.jpg";
+import bg1 from "../img/correctionimg/5.jpg";
 
 const TourThailand = () => {
   const { id } = useParams();

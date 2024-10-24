@@ -18,7 +18,7 @@ import galleryImage2_2 from "../img/gallery/343.jpg";
 import galleryImage3_3 from "../img/gallery/369.jpg";
 import galleryImage4_4 from "../img/gallery/963.jpg";
 import galleryImage5_5 from "../img/gallery/11021.jpg";
-import galleryImage6_6 from "../img/gallery/2151625212.jpg";
+import galleryImage6_6 from "../img/tour/365.jpg";
 import location1 from "../img/icon/location-dot3.svg";
 import bg1 from "../img/bg/contact_bg_7.jpg";
 

@@ -23,7 +23,7 @@ import galleryImage4_4 from "../../img/almaty/s4.jpg";
 import galleryImage5_5 from "../../img/almaty/s2.jpg";
 import galleryImage6_6 from "../../img/almaty/nauryz-707701_1920.jpg";
 import location1 from "../../img/icon/location-dot3.svg";
-import bg1 from "../../img/almaty/kazakhstan-7955879_1920.jpg";
+import bg1 from "../../img/correctionimg/35.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -35,8 +35,8 @@ const BaliDetails = () => {
   // Sample data - you can replace this with your actual content
   const tourDetails = {
     "almaty-tour-package-from-india": {
-      heading: "Almaty Tour Packages",
-      title1: "Almaty Tour Packages",
+      heading: "Almaty Tour Package from India",
+      title1: "Almaty Tour Package from India",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -198,8 +198,8 @@ const BaliDetails = () => {
       },
     },
     "paris-switzerland-tour-package-from-india": {
-      heading: "Trip to	Paris & Swiss",
-      title1: "Trip to Paris & Swiss",
+      heading: "Paris Switzerland tour package from India",
+      title1: "Paris Switzerland tour package from India",
       galleryImages: [
         galleryImage1,
         galleryImage2,

@@ -24,7 +24,7 @@ import galleryImage5_5 from "../img/mauritius/4224.jpg";
 import galleryImage6_6 from "../img/mauritius/7768.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/mauritius/1343.jpg";
+import bg1 from "../img/correctionimg/6.jpg";
 
 const TourMauritius = () => {
   const { id } = useParams();

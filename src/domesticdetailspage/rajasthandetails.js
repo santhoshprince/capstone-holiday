@@ -23,7 +23,8 @@ import galleryImage5_5 from "../img/Rajasthan/16.jpg";
 import galleryImage6_6 from "../img/Rajasthan/17.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/Rajasthan/6.jpg";
+import bg1 from "../img/correctionimg/30.jpg";
+import bg2 from "../img/correctionimg/31.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -38,6 +39,7 @@ const TourPage = () => {
     "delhi-agra-jaipur-tour-package": {
       heading: "Delhi Agra Jaipur Tour Package",
       title1: "Delhi Agra Jaipur Tour Package",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -147,6 +149,7 @@ const TourPage = () => {
     "rajasthan-trip-package": {
       heading: "Rajasthan Trip package",
       title1: "Rajasthan Trip package",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -288,7 +291,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={bg1}
+        backgroundImage={tour.backgroundImage}
       />
 
       <nav className="tour-navigation">

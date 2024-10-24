@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/kashmir/6.jpg";
 import galleryImage6_6 from "../img/kashmir/5.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/kashmir/9.jpg";
+import bg1 from "../img/correctionimg/29.jpg";
 
 const TourPage = () => {
   const { id } = useParams();

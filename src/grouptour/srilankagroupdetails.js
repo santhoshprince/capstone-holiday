@@ -23,7 +23,7 @@ import galleryImage4_4 from "../img/srilanka/2.jpg";
 import galleryImage5_5 from "../img/srilanka/9.jpg";
 import galleryImage6_6 from "../img/srilanka/10.jpg";
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/srilanka/sunrise-4823732_1920.jpg";
+import bg1 from "../img/correctionimg/13.jpg";
 
 const TourSrilanka = () => {
   const { id } = useParams();

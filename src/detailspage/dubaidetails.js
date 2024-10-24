@@ -22,7 +22,7 @@ import galleryImage3_3 from "../img/Dubai/d3.png";
 import galleryImage4_4 from "../img/Dubai/d4.jpg";
 import galleryImage5_5 from "../img/Dubai/d5.jpg";
 import galleryImage6_6 from "../img/Dubai/d6.jpg";
-import bg1 from "../img/bg/d3.jpg";
+import bg1 from "../img/correctionimg/3.png";
 
 import location1 from "../img/icon/location-dot3.svg";
 

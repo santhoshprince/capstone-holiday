@@ -23,7 +23,8 @@ import galleryImage5_5 from "../img/andaman/12.jpg";
 import galleryImage6_6 from "../img/andaman/13.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/andaman/9.jpg";
+import bg1 from "../img/correctionimg/14.jpg";
+import bg2 from "../img/correctionimg/15.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -36,6 +37,7 @@ const TourPage = () => {
     "andaman-tour-package-from-chennai": {
       heading: "Andaman Tour Package from Chennai",
       title1: "Andaman Tour Package from Chennai",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -140,6 +142,7 @@ const TourPage = () => {
     "andaman-and-nicobar-islands-package": {
       heading: "Andaman and Nicobar Islands Package",
       title1: "Andaman and Nicobar Islands Package",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -277,7 +280,7 @@ const TourPage = () => {
             {JSON.stringify(tour.schema)}
           </script>
         </Helmet>
-      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={tour.backgroundImage}/>
 
       <nav className="tour-navigation">
         <ul>

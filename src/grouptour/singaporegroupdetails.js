@@ -21,7 +21,7 @@ import galleryImage3_3 from "../img/singapore/s13.jpg";
 import galleryImage4_4 from "../img/singapore/s12.jpg";
 import galleryImage5_5 from "../img/singapore/s11.jpg";
 import galleryImage6_6 from "../img/singapore/s10.jpg";
-import bg1 from "../img/singapore/s2.jpg";
+import bg1 from "../img/correctionimg/9.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 

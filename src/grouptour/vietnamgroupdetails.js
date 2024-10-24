@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/vietnam/4.jpg";
 import galleryImage6_6 from "../img/vietnam/10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/vietnam/3.jpg";
+import bg1 from "../img/correctionimg/11.jpg";
 
 const TourSingapore = () => {
   const { id } = useParams();

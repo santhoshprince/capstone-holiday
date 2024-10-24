@@ -25,7 +25,9 @@ import galleryImage6_6 from "../img/kerala/1.jpg";
 import { Helmet } from "react-helmet";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/kerala/17.jpg";
+import bg1 from "../img/correctionimg/23.jpg";
+import bg2 from "../img/correctionimg/24.jpg";
+
 
 const TourPage = () => {
   const { id } = useParams();
@@ -39,6 +41,7 @@ const TourPage = () => {
     "kerala-tour-packages-from-chennai": {
       heading: "Kerala Tour Packages from Chennai",
       title1: "Kerala Tour Packages from Chennai",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -131,6 +134,7 @@ const TourPage = () => {
     "munnar-tour-package": {
       heading: "Cochin Munnar Tour Package",
       title1: "Cochin Munnar Tour Package",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -263,7 +267,7 @@ const TourPage = () => {
             {JSON.stringify(tour.schema)}
           </script>
         </Helmet>
-      <Contentsection heading={tour.heading} children={""} backgroundImage={bg1}/>
+      <Contentsection heading={tour.heading} children={""} backgroundImage={tour.backgroundImage}/>
 
       <nav className="tour-navigation">
         <ul>

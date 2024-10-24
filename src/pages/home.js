@@ -284,27 +284,25 @@ const HeroSlider = () => {
             }}
           >
             {/* First slide */}
+       
             <SwiperSlide>
               <div className="category-card single">
                 <div className="box-img global-img">
                   <img
-                    src={cata1}
+                    src={cata6}
                     alt="Cruises"
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/international-tour-packages-from-chennai">
-                    International Tour
-                  </a>
+                  <a href="/educational-tour-packages">Educational Tour</a>
                 </h3>
-
                 <a
-                  className={`line-btn ${visited["International Tour"] ? "visited" : ""}`}
+                  className="line-btn"
                   onClick={() =>
                     handleShowModal(
-                      "International Tour Package",
-                      "International Tours are unique because they offer experiences you will never have. We have a stellar record for keeping our word and organizing fantastic international trips and international tour packages at affordable prices"
+                      "Educational Tour Package (Almaty, Paris Swiss)",
+                      "We realize the significance of taking a vacation from a demanding and intense academic routine. As a result, we take great pride in setting up affordable research and educational tour packages for student groups."
                     )
                   }
                 >
@@ -312,28 +310,26 @@ const HeroSlider = () => {
                 </a>
               </div>
             </SwiperSlide>
-
-            {/* Second slide */}
             <SwiperSlide>
               <div className="category-card single">
                 <div className="box-img global-img">
                   <img
-                    src={cata2}
+                    src={cata7}
                     alt="Cruises"
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/domestic-tour-packages-from-chennai">
-                    Domestic Tour
+                  <a href="/singapore-malaysia-tour-package-with-cruise">
+                    Cruise
                   </a>
                 </h3>
                 <a
                   className="line-btn"
                   onClick={() =>
                     handleShowModal(
-                      "Domestic Tour Package",
-                      "There is no denying that India is an incredible country. Is exploring our nation from all four angles your long-term goal? We offer customized domestic tour packages to suit your travel needs at one go."
+                      "Cruise Packages (SINGAPORE PENANG)",
+                      "Capstone Holidays offers the best holiday packages, including Cruise packages. The packages are intended to give the best cruising experience with all the deluxe facilities at your favorite beach spots. "
                     )
                   }
                 >
@@ -341,7 +337,6 @@ const HeroSlider = () => {
                 </a>
               </div>
             </SwiperSlide>
-
             {/* Repeat the slides for more categories */}
             <SwiperSlide>
               <div className="category-card single">
@@ -424,20 +419,23 @@ const HeroSlider = () => {
               <div className="category-card single">
                 <div className="box-img global-img">
                   <img
-                    src={cata6}
+                    src={cata1}
                     alt="Cruises"
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/educational-tour-packages">Educational Tour</a>
+                  <a href="/international-tour-packages-from-chennai">
+                    International Tour
+                  </a>
                 </h3>
+
                 <a
-                  className="line-btn"
+                  className={`line-btn ${visited["International Tour"] ? "visited" : ""}`}
                   onClick={() =>
                     handleShowModal(
-                      "Educational Tour Package (Almaty, Paris Swiss)",
-                      "We realize the significance of taking a vacation from a demanding and intense academic routine. As a result, we take great pride in setting up affordable research and educational tour packages for student groups."
+                      "International Tour Package",
+                      "International Tours are unique because they offer experiences you will never have. We have a stellar record for keeping our word and organizing fantastic international trips and international tour packages at affordable prices"
                     )
                   }
                 >
@@ -445,26 +443,28 @@ const HeroSlider = () => {
                 </a>
               </div>
             </SwiperSlide>
+
+            {/* Second slide */}
             <SwiperSlide>
               <div className="category-card single">
                 <div className="box-img global-img">
                   <img
-                    src={cata7}
+                    src={cata2}
                     alt="Cruises"
                     style={{ width: "250px", height: "250px" }}
                   />
                 </div>
                 <h3 className="box-title boxnew">
-                  <a href="/singapore-malaysia-tour-package-with-cruise">
-                    Cruise
+                  <a href="/domestic-tour-packages-from-chennai">
+                    Domestic Tour
                   </a>
                 </h3>
                 <a
                   className="line-btn"
                   onClick={() =>
                     handleShowModal(
-                      "Cruise Packages (SINGAPORE PENANG)",
-                      "Capstone Holidays offers the best holiday packages, including Cruise packages. The packages are intended to give the best cruising experience with all the deluxe facilities at your favorite beach spots. "
+                      "Domestic Tour Package",
+                      "There is no denying that India is an incredible country. Is exploring our nation from all four angles your long-term goal? We offer customized domestic tour packages to suit your travel needs at one go."
                     )
                   }
                 >
@@ -472,6 +472,7 @@ const HeroSlider = () => {
                 </a>
               </div>
             </SwiperSlide>
+           
 
             {/* Add more slides as needed */}
             {/* The SwiperSlide component can be repeated for each category */}

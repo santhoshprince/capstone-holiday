@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/kerala/2.jpg";
 import galleryImage6_6 from "../img/kerala/1.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/kerala/17.jpg";
+import bg1 from "../img/correctionimg/25.jpg";
 import { Helmet } from "react-helmet";
 
 const GroupTour = () => {

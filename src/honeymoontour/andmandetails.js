@@ -26,7 +26,7 @@ import galleryImage6_6 from "../img/andaman/13.jpg";
 import anadamanbg from "../assets/honeymoonimg/anadman/phi-phi-island-5076128_1920.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/andaman/9.jpg";
+import bg1 from "../img/correctionimg/17.jpg";
 
 const TourPage = () => {
   const { id } = useParams();

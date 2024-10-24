@@ -21,7 +21,8 @@ import galleryImage3_3 from "../img/kashmir/8.jpg";
 import galleryImage4_4 from "../img/kashmir/7.jpg";
 import galleryImage5_5 from "../img/kashmir/6.jpg";
 import galleryImage6_6 from "../img/kashmir/5.jpg";
-import bg1 from "../img/kashmir/9.jpg";
+import bg1 from "../img/correctionimg/27.jpg";
+import bg2 from "../img/correctionimg/28.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
 
@@ -36,6 +37,7 @@ const TourPage = () => {
     "kashmir-tour-packages-from-chennai": {
       heading: "Kashmir Tour Packages from Chennai",
       title1: "Kashmir Tour Packages from Chennai",
+      backgroundImage:bg1,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -164,6 +166,7 @@ const TourPage = () => {
     "srinagar-tour-packages": {
       heading: "Srinagar Gulmarg Pahalgam Tour Packages",
       title1: "Srinagar Gulmarg Pahalgam Tour Packages",
+      backgroundImage:bg2,
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -319,7 +322,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={bg1}
+        backgroundImage={tour.backgroundImage}
       />
 
       <nav className="tour-navigation">

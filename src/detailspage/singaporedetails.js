@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/singapore/s11.jpg";
 import galleryImage6_6 from "../img/singapore/s10.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/singapore/s2.jpg";
+import bg1 from "../img/correctionimg/8.jpg";
 import { Helmet } from "react-helmet";
 const TourSingapore = () => {
   const { id } = useParams();
