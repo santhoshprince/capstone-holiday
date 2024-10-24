@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: bali,
-      title: "Himachal – Shimla Manali Tour Package from Chennai",
+      title: "Himachal – Shimla Manali Tour Package",
       // rating: 4.8,
       price: "10,540",
       duration: "6 Days 5 Nights",

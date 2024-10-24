@@ -72,7 +72,7 @@ const Andaman = () => {
       </Helmet>
       <Contentsection
         heading={"Goa Tour"}
-        children={"Destination"}
+        children={""}
         backgroundImage={bg1}
       />
 

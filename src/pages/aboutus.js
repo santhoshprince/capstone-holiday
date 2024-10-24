@@ -48,7 +48,7 @@ const AboutUs = () => {
       </Helmet>
       <ContentSection
         heading={"About Us"}
-        children={"Tours and Travels company in Chennai"}
+        children={"Best Tour and Travel Company"}
         backgroundImage={aboutbg}
       />
       <section className="about-us-section py-5">

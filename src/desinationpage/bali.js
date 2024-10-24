@@ -59,7 +59,7 @@ const TourPage = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Bali"} children={"Destination"} backgroundImage={bg1}/>
+      <Contentsection heading={"Bali"} children={""} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

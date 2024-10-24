@@ -15,7 +15,7 @@ import galleryImage4 from "../img/singapore/s3.jpg";
 import galleryImage5 from "../img/singapore/s2.jpg";
 import galleryImage6 from "../img/singapore/s1.jpg";
 import { Helmet } from "react-helmet";
-import galleryImage1_1 from "../img/singapore/s4.jpg";
+import galleryImage1_1 from "../img/singapore/temple-4580960_1920.jpg";
 import galleryImage2_2 from "../img/singapore/s5.jpg";
 import galleryImage3_3 from "../img/singapore/s13.jpg";
 import galleryImage4_4 from "../img/singapore/s12.jpg";

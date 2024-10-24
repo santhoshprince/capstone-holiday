@@ -62,7 +62,7 @@ const Srilanka = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Sri Lanka Tour"} children={"Destination"} backgroundImage={bg1}/>
+      <Contentsection heading={"Sri Lanka Tour"} children={""} backgroundImage={bg1}/>
 
       <section className="space">
         <div className="container">

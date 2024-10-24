@@ -68,7 +68,7 @@ const RajasthanTours = () => {
       </Helmet>
       <Contentsection
         heading={"Rajasthan"}
-        children={"Destination"}
+        children={""}
         backgroundImage={bg1}
       />
 

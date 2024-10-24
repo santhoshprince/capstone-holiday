@@ -54,7 +54,7 @@ const DubaiPage = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Dubai Tour"} children={"Destination"} backgroundImage={bg1} />
+      <Contentsection heading={"Dubai Tour"} children={""} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

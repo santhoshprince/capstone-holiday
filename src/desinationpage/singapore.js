@@ -54,7 +54,7 @@ const mauritius = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Singapore & Malaysia Tour"} children={"Destination"} backgroundImage={bg1} />
+      <Contentsection heading={"Singapore & Malaysia Tour"} children={""} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

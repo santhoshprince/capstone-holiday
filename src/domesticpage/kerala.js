@@ -58,7 +58,7 @@ const HimchalTour = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Kerala"} children={"Destination"} backgroundImage={bg1} />
+      <Contentsection heading={"Kerala"} children={""} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

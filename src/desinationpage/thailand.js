@@ -58,7 +58,7 @@ const ThailandPage = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Thailand Tour"} children={"Destination"} backgroundImage={bg1} />
+      <Contentsection heading={"Thailand Tour"} children={""} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

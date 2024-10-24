@@ -202,7 +202,7 @@ const HeroSlider = () => {
               >
                 Explore Tours
               </a>
-              <a href="contact" className="th-btn style2 th-icon">
+              <a href="contact-us" className="th-btn style2 th-icon">
                 Our Services
               </a>
             </div>

@@ -17,7 +17,7 @@ const ContentSection = ({ heading, children, backgroundImage ,backgroundPosition
       <div className="container">
         <div className="breadcumb-content">
         <h1 className="breadcumb-title">{heading}</h1>
-          {/* <p>{children}</p> */}
+          <p>{children}</p>
         </div>
       </div>
     </div>

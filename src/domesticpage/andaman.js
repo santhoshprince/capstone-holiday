@@ -66,7 +66,7 @@ const AndamanTour = () => {
           `}
         </script>
       </Helmet>
-      <Contentsection heading={"Andaman"} children={"Destination"} backgroundImage={bg1} />
+      <Contentsection heading={"Andaman"} children={""} backgroundImage={bg1} />
 
       <section className="space">
         <div className="container">

@@ -37,7 +37,7 @@ const HimchalTour = () => {
             </Helmet>
       <Contentsection
         heading={"Educational Tour Package"}
-        children={"Destination"} backgroundImage={bg1}
+        children={""} backgroundImage={bg1}
       />
 
       <section className="space">

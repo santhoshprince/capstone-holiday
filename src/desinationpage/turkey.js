@@ -70,7 +70,7 @@ const mauritius = () => {
       </Helmet>
       <Contentsection
         heading={"Turkey Tour"}
-        children={"Destination"}
+        children={""}
         backgroundImage={bg1}
       />
 
