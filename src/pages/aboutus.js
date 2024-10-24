@@ -192,8 +192,8 @@ const AboutUs = () => {
                   <a
                     onClick={() =>
                       handleShowModal(
-                        "Domestic Tour Package",
-                        "Are you looking to explore the beautiful destinations within your own country? Look no further! At Capstone Holidays, we specialize in organizing unforgettable domestic tours that allow you to discover the hidden gems and breathtaking landscapes right on your doorstep. Whether you’re seeking a relaxing beach getaway, an adventurous mountain expedition, or a cultural immersion in historic cities, we have the perfect tour package for you."
+                        "Group Tour packages",
+                        "Get-togethers are always fun and thrilling. Are you planning an unforgettable group holiday and aiming to select a fascinating location that aligns with your vision of the perfect retreat? View our top-rated group tour packages and most stunning group destinations"
                       )
                     }
                     className="th-btn style4 th-icon"
