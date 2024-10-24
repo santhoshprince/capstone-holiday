@@ -156,7 +156,28 @@ const HeroSlider = () => {
           name="description"
           content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices."
         />
+         <script>
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5GFM4HT');
+          `}
+        </script>
+        <meta
+          name="google-site-verification"
+          content="oUT7Gpovx4L-MAH6IIIXm_b3z1NG83G-XdDeXIPyi2A"
+        />
       </Helmet>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5GFM4HT"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
       <SubscriptionModal />
       <div className="th-hero-wrapper hero-1 new-swipper" id="hero">
         {/* Video Background */}
