@@ -35,8 +35,8 @@ const TourPage = () => {
 
   const tourDetails = {
     "agra-honeymoon-package": {
-      heading: "Agra Honeymoon Tour Packages",
-      title1: "Agra Honeymoon Tour Packages",
+      heading: "Agra Honeymoon Package",
+      title1: "Agra Honeymoon Package",
       galleryImages: [
         galleryImage1,
         galleryImage2,

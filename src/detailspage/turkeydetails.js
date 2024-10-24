@@ -36,8 +36,8 @@ const TourTurkey = () => {
 
   const toursData = {
     1: {
-      heading: "Turkey Tour Packages from India – 4N / 5D",
-      title1: "Turkey Tour Packages from India – 4N / 5D",
+      heading: "Turkey Tour Packages from India",
+      title1: "Turkey Tour Packages from India",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -114,7 +114,7 @@ const TourTurkey = () => {
         {
           day: "Day 5",
           details:
-            "(Breakfast included)After breakfast you will have free time in Cappadocia. Today we will depart for Kayseri Airport for our domestic flight to Istanbul and then back to home. We hope your tour was a memorable one and we would like to see you in the future in one of our tours again. Have a nice trip back home and thanks for choosing TravelShop Turkey.",
+            "(Breakfast included)After breakfast you will have free time in Cappadocia. Today we will depart for Kayseri Airport for our domestic flight to Istanbul and then back to home. We hope your tour was a memorable one and we would like to see you in the future in one of our tours again.Have a nice trip back home and thanks for choosing Capstone Holidays",
         },
       ],
       mapSrc:

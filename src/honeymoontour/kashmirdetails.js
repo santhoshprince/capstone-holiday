@@ -34,8 +34,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Kashmir Honeymoon Tour Package",
-      title1: "Kashmir Honeymoon Tour Package",
+      heading: "Kashmir Honeymoon Package for Couple",
+      title1: "Kashmir Honeymoon Package for Couple",
       galleryImages: [
         galleryImage1,
         galleryImage2,

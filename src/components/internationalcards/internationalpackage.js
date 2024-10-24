@@ -31,7 +31,7 @@ const TourList = () => {
       rating: 4.7,
       price: "6,800",
       duration: "3 Days 2 Nights (BALI)",
-      detailPath: "/tour/bali-tour-places",
+      detailPath: "/tour/bali-tourist-places",
     },
     {
       imgSrc: maldives,

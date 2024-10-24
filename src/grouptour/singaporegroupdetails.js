@@ -36,7 +36,7 @@ const TourSingapore = () => {
 
   const toursData = {
     1: {
-      heading: "Singapore Malaysia Group Tour – 4N / 5D",
+      heading: "Singapore Malaysia Group Tour",
       title1: "Singapore Malaysia Group Tour – 4N / 5D",
       galleryImages: [
         galleryImage1,

@@ -36,7 +36,7 @@ const TourSrilanka = () => {
 
   const toursData = {
     1: {
-      heading: "Sri Lanka Group Tour Package – 4N/5D",
+      heading: "Sri Lanka Group Tour Package",
       title1: "Sri Lanka Group Tour Package – 4N/5D",
       galleryImages: [
         galleryImage1,

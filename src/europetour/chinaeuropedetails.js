@@ -36,8 +36,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "China Europe Tour",
-      title1: "China Europe Tour",
+      heading: "China Tour Packages from Chennai",
+      title1: "China Tour Packages from Chennai",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -74,7 +74,7 @@ const TourPage = () => {
       //     "Visa cost."
       //   ],
       description1: [
-        "Our China tour package from Chennai is designed ideally so that our customers do not miss the legacies in China. China has a fascinating fusion of cutting-edge modernism and ancient history. Travelers looking to experience magical tourism will find China a diverse and unforgettable destination with its vibrant cities, lovely Mother Nature, and rich cultural legacy. The Great Wall of China, Forbidden City, The Bund, Summer Palace, Yu Garden, Temple of Heaven, Zhangjiajie National Park, Leshan Giant Buddha, Beijing, Shanghai, Lijiang, and many more are the favorite places for International tourists in China. Autumn and Spring are lovely seasons in China. Our China tour packages will take you at any time between March to May and September to November",
+        "Our China tour package from Chennai is designed ideally so that our customers do not miss these legacies in China. China offers an intriguing blend of old history and innovation. With its dynamic cities, beautiful Mother Nature, and rich cultural heritage, China is a varied and remarkable destination for tourists seeking magical travel. International tourists' favorite destinations in China include the Great Wall of China, Forbidden City, The Bund, Summer Palace, Yu Garden, Temple of Heaven, Zhangjiajie National Park, Leshan Giant Buddha, Beijing, Shanghai, Lijiang, and many more. In China, spring and autumn are beautiful seasons. You can travel to China at any time between March and May and September and November with our tour packages",
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["9 Days 8 Nights"],

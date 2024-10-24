@@ -55,7 +55,7 @@ const TourPage = () => {
       ],
 
       description1: [
-        "Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year. Darjeeling is surrounded by the recognizable Kanchenjunga peaks, which makes it the ideal location for a romantic holiday. It also has  many smaller hills with immaculate tea gardens, exotic orchids, majestic stretches of forests of pines, and the sound of little mountain rails passing by. Darjeeling's throughout the year with a pleasing temperature makes it a popular destination. It should come as no surprise that March through May is the busiest travel period and when Darjeeling honeymoon packages are most affordable"
+        "Choose from the best Darjeeling Gangtok Tour Packages and experience this fairy tale hill station in all its beauty throughout the year. The iconic Kanchenjunga peaks encircle Darjeeling, making it the perfect destination for a honeymoon. In addition, there are other smaller hills with pristine tea gardens, beautiful orchids, vast pine forests, and the sound of tiny mountain railroads moving by. Darjeeling is a well-liked location because of its pleasant climate all year round. The peak travel months are March through May, which also happens to be the most economical time to book a Darjeeling honeymoon package"
       ],
       duration: ["05 Days / 04 Nights"],
       tourCode: ["AH-NE-17"],
@@ -116,7 +116,7 @@ const TourPage = () => {
         {
           day: "Day 5",
           details:
-            "After breakfast Check-out from hotel and take the departure transfer to NJP Railway Station / IXB Airport for your onward journey. Tours end with sweet memorize by Ashirwad Holidays, Pune.",
+            "After breakfast Check-out from hotel and take the departure transfer to NJP Railway Station / IXB Airport for your onward journey to tour ends with sweet memories by Capstone Holidays",
         },
       ],
 
@@ -163,7 +163,7 @@ const TourPage = () => {
         galleryImage6_6,
       ],
       description1: [
-        "Sikkim travel packages combine the cultural richness of Sikkim with the picturesque landscapes of Darjeeling and Kalimpong in West Bengal. Explore local attractions like Batasia Loop, Himalayan Mountaineering Institute, and Peace Pagoda with west Bengal tour packages. We offer a diverse experience of the Eastern Himalayas with our Sikkim travel packages. We with our Sikkim travel packages curate specific travel packages that suit your needs.",
+        "Sikkim travel packages are best sold in December where you can experience bright and clear weather, making it perfect for outdoor activities and touring. The environment of Sikkim is rich, with many beautiful lakes. The vast majority of the lakes are revered and regarded as sacred by the Sikkim people. The Yumthang Valley, Tsongo Lake, Lachen, and Lachung are the most popular tourist destinations in Sikkim. These places offer the perfect fusion of adventure and nature exploration because of their radiant landscapes, profusion of natural beauty, and vibrant local cultures",
       ],
       duration: ["04 Days / 03 Nights"],
       tourCode: ["AH-NE-16"],
@@ -218,7 +218,7 @@ const TourPage = () => {
         {
           day: "Day 4",
           details:
-            "After breakfast Check-out from hotel and take the departures transfer to NJP Railway Station / IXB airport for your onward journey. Tours end with sweet memorize by Ashirwad Holidays, Pune.",
+            "After breakfast Check-out from hotel and take the departures transfer to NJP Railway Station / IXB airport for your onward journey to tour ends with sweet memories by Capstone Holidays",
         },
       ],
 

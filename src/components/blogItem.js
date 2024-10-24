@@ -28,9 +28,9 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
           <a href="#">
             <i className="fa-solid fa-calendar-days"></i>{date}
           </a>
-          <a href="#">
+          {/* <a href="#">
             <img src="assets/img/icon/map.svg" alt="" />{category}
-          </a>
+          </a> */}
         </div>
         <h2 className="blog-title">
           <Link to={`/${slug}`}>{title}</Link>

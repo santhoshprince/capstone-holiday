@@ -37,7 +37,7 @@ const TourSrilanka = () => {
 
   const toursData = {
     1: {
-      heading: "Sri Lanka Tour Package from Chennai – 4N/5D",
+      heading: "Sri Lanka Tour Package from Chennai",
       title1: "Sri Lanka Tour Package from Chennai – 4N/5D",
       galleryImages: [
         galleryImage1,
@@ -83,7 +83,7 @@ const TourSrilanka = () => {
       ],
 
       description1: [
-        "With our valuable Srilanka Tour Package from Chennai, experience the historic yet trendy Sri Lanka tourist spots. Sri Lanka is a small yet modest country because it boasts eight UNESCO World Heritage Sites, religious sites, many national parks, lush tea estates, and beaches, of course. Sri Lanka’s nightlife is thrilling and colorful where you can enjoy a quick game of chance in a casino or take a gorgeous train journey that passes by plantations and hills. Whatever your kind of pleasure, Sri Lanka has it all with its top tourist destinations. ",
+        "With our valuable Srilanka Tour Package from Chennai, experience the historic yet trendy Sri Lanka tourist spots. Sri Lanka is a tiny yet modest country that has 8 UNESCO World Heritage Sites, religious sites, several national parks, luscious tea estates, and, of course, beaches. Sri Lanka's nighttime is exciting and colorful, with opportunities to play a short game of chance at a casino or take a scenic train ride through plantations and hills. Sri Lanka's greatest tourism locations provide something for everyone, regardless of their interests.",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],

@@ -8,7 +8,7 @@ const TourList = () => {
     {
       id: 1,
       imgSrc: maldives,
-      title: "Turkey Tour Packages from India – 4N / 5D",
+      title: "Turkey Tour Packages - 4N / 5D",
       rating: 4.7,
       price: "25,075",
       duration: "4 Nights, 5 Days",

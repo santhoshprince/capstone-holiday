@@ -76,7 +76,7 @@ const TourPage = () => {
       ],
 
       description1: [
-        "Andaman tour package from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for a Andaman trip in October to April. The Andaman and Nicobar Islands are an excellent option if you're thinking of a romantic escape with your soulmate that involves delicious food with a candle-light dinner, thrilling water activities, and lovely beaches and a favorable atmosphere for admiration and sightseeing. The most beautiful and most-visited beaches in Andaman and Nicobar are Radhanagar Beach, Elephant Beach, Wandoor Beach, Rock Beach, and Vijaya Nagar Beach",
+        "The Andaman tour package from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for a Andaman trip in October to April. The Andaman and Nicobar Islands are a wonderful choice for a romantic vacation with your partner that includes delicious food, a candle-lit dinner, exhilarating water activities, beautiful beaches, and a pleasant atmosphere for adoration and touring. The most beautiful and popular beaches in Andaman and Nicobar are Radhanagar Beach, Elephant Beach, Wandoor Beach, Rock Beach, and Vijaya Nagar Beach.",
       ],
       duration: ["4 Nights, 5 Days"],
       hotelDetails: [
@@ -157,7 +157,7 @@ const TourPage = () => {
         galleryImage6_6,
       ],
       description1: [
-        "Explore the most magnificent spots with the Andaman and Nicobar Islands package from beaches to Islands that one may visit in the Andaman Islands. With their bright skies, golden beaches, turquoise waters, and pristine surroundings, the Andaman and Nicobar Islands are the perfect getaway destination. Andaman islands also consist of many places of historical importance like The Cellular Jail, Mahatma Gandhi Marine National Park, Ross Island, Havelock Island, Laxmanpur Beach, Bharatpur Beach, Barren Island North Bay Island, Chatham Saw Mill, Baratang Island, Corbyn’s Cove beach, Mount Harriet, and many more. ",
+        "Explore the most magnificent spots with the Andaman and Nicobar Islands package from beaches to Islands that one may visit in the Andaman Islands. The Andaman and Nicobar Islands are the ideal holiday destination, with clear skies, golden beaches, turquoise waters, and clean surroundings. The Andaman Islands also have many historical sites, including the Cellular Jail, Mahatma Gandhi Marine National Park, Ross Island, Havelock Island, Laxmanpur Beach, Bharatpur Beach, Barren Island, North Bay Island, Chatham Saw Mill, Baratang Island, Corbyn's Cove Beach, Mount Harriet, and many others",
       ],
       duration: ["3 Nights, 4 Days"],
       hotelDetails: [
@@ -314,7 +314,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title1={tour.title}
+                title1={tour.title1}
                 description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}

@@ -95,9 +95,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/travel-blog" element={<Blog />} />
 
           <Route path="/:slug" element={<BlogDetails />} />
           {/* International Packages */}
@@ -106,7 +106,7 @@ function App() {
             path="/tour/bali-tour-packages-from-chennai"
             element={<BaliDetails />}
           />
-          <Route path="/tour/bali-tour-places" element={<BaliDetails />} />
+          <Route path="/tour/bali-tourist-places" element={<BaliDetails />} />
 
           <Route
             path="/maldives-tour"

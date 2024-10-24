@@ -36,7 +36,7 @@ const TourThailand = () => {
 
   const toursData = {
     1: {
-      heading: "Thailand Group Tour Package – 4N / 5D",
+      heading: "Thailand Group Tour Package",
       title1: "Thailand Group Tour Package – 4N / 5D",
       galleryImages: [
         galleryImage1,

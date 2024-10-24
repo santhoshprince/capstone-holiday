@@ -36,7 +36,7 @@ const TourSingapore = () => {
 
   const toursData = {
     1: {
-      heading: "Vietnam Cambodia Tour Package – 3N / 4D",
+      heading: "Vietnam Cambodia Tour Package",
       title1: "Vietnam Cambodia Tour Package – 3N / 4D",
       galleryImages: [
         galleryImage1,
@@ -71,8 +71,8 @@ const TourSingapore = () => {
     "Bank Charges 40 USD per Invoice. (Mandatory)"
       ],
 
-      description: [
-        "With the Vietnam Cambodia tour package, you can witness the hotspot sites that lie in both countries and Capstone Holidays provide you with a hassle-free experience throughout the journey. Vietnam and Cambodia are 2 beautiful travel destinations situated in southeast Asia. There are countless chances to be astounded everywhere you go, from the far North to the deep South. In addition to the enchanting Ha Long Bay, the imposing Hue, and the enchanting Ho chi Minh city, romantic Hoi An, there are more must-see locations that are taken into account when organising your journey for Vietnam group tour packages and Vietnam and Cambodia tour package"
+      description1: [
+        "With the Vietnam Cambodia tour package, you can visit the hotspot sites where we provide you with a hassle-free experience throughout the journey. Vietnam and Cambodia are two radiant tourist locations in Southeast Asia. There are several opportunities to be astounded wherever you travel, from the extreme north to the deep south. In addition to the radiant Ha Long Bay, the towering Hue, the captivating Ho Chi Minh City, and the romantic Hoi An, more must-see destinations are considered while planning your travel for Vietnam group tour packages and Vietnam and Cambodia tour package"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["3 Nights, 4 Days"],

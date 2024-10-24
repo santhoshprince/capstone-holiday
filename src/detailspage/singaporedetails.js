@@ -73,7 +73,7 @@ const TourSingapore = () => {
       ],
 
       description1: [
-        "Singapore and Malaysia Tour Packages is the best example for all-around romantic and entertaining escape for couples. Sentosa Island, Gardens by the Bay, Marina Bay, Henderson Bridge, Jurong Bird Park, and Universal Studios are the most visited tourist destinations in Singapore. Kuala Lumpur, Batu Caves, Mount Kinabalu, Sipadan Island, Pantai Cenang beach, Desaru beach, are the most admired tourist destinations in Malaysia"
+        "Check our customizable Singapore and Malaysia tour packages at Capstone Holidays to have a relaxed yet entertaining holiday. Singapore & Malaysia Tour Packages are the ideal example of an all-around romantic and enjoyable holiday for couples. The most popular tourist spots in Singapore are Sentosa Island, Gardens by the Bay, Marina Bay, Henderson Bridge, Jurong Bird Park, and Universal Studios. Kuala Lumpur, Batu Caves, Mount Kinabalu, Sipadan Island, Pantai Cenang Beach, and Desaru Beach are the most popular tourist spots in Malaysia"
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],

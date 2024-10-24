@@ -80,7 +80,7 @@ const Footer = () => {
                       placeholder="Enter Email"
                       required
                     />
-                    <Link to="/contact">
+                    <Link to="/contact-us">
                       <button type="submit" className="th-btn style3">
                         Subscribe Now
                         <img
@@ -140,7 +140,7 @@ const Footer = () => {
                       <a href="./">Home</a>
                     </li>
                     <li>
-                      <a href="/about">About us</a>
+                      <a href="/about-us">About us</a>
                     </li>
                     <li>
                       <a href="/group-tour-packages">Group Tour</a>
@@ -152,10 +152,10 @@ const Footer = () => {
                       <a href="/honeymoon-packages-from-chennai">Honeymoon Tour</a>
                     </li>
                     <li>
-                      <a href="/blog">Blog</a>
+                      <a href="/travel-blog">Blog</a>
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <a href="/contact-us">Contact Us</a>
                     </li>
                   </ul>
                 </div>

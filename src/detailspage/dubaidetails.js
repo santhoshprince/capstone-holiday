@@ -73,7 +73,10 @@ const TourDubai = () => {
       ],
 
       description1: [
-        "Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots. With its majestic skyscrapers, rich historical legacy, enormous desert dunes, stunning white sand beaches, thrilling adventure sports, thrilling theme parks, wealthy retail complexes, and more, Dubai is a destination for thrill-seekers seeking an exciting vacation. Often referred to as the Venice of the Gulf, Dubai serves as the primary port and commercial center of the United Arab Emirates. The best time to maximize the value of your Dubai package is from November to March",
+        <>
+        Take a look at our Dubai tour packages from Chennai to make the most of your visit to the city's tourist attractions and sightseeing spots. Dubai is a destination for thrill-seekers looking for an exciting vacation, thanks to its towering skyscrapers, rich historical legacy, gigantic desert dunes, sensational white sand beaches, thrilling adventure sports, thrilling theme parks, wealthy retail complexes, and more. Dubai, known as the  <span>"Venice of the Gulf,"</span> is the UAE's principal port and economic center. The optimal time to get the most out of your Dubai package is between November and March
+        </>
+        
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],

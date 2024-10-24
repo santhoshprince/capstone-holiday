@@ -115,7 +115,7 @@ const Header = () => {
             ref={menuRef}
           >
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
               <Link to="#">Tour Packages</Link>
@@ -226,15 +226,15 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/travel-blog">Blog</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
           </ul>
 
           <div className="header-button">
-            <Link to="/contact" className="th-btn">
+            <Link to="/contact-us" className="th-btn">
               Book Now
             </Link>
           </div>

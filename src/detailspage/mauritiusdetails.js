@@ -69,7 +69,7 @@ const TourMauritius = () => {
       ],
 
       description1: [
-        "The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers. The Republic of Mauritius, which is the perfect honeymoon beach destination, is located in the Indian Ocean. A week is more than enough to thoroughly experience Mauritius's stunning beaches and resorts, which are accessible throughout the whole year",
+        "The highly customized Mauritius Tour Package From Chennai serve a wide range of Capstone Holidays' customers. The Republic of Mauritius, an ideal honeymoon beach holiday, is located in the Indian Ocean. A week is more than enough to fully see Mauritius' gorgeous beaches and resorts, which are open all year",
       ],
       // tourCode: ["CBT-22/04"],
       duration: ["4 Nights, 5 Days"],

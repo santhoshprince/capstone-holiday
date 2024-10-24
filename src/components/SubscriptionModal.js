@@ -79,7 +79,7 @@ const SubscriptionModal = () => {
               />
 
               <div className="header-button" style={{ paddingTop: "20px" }}>
-                <Link to="/contact" className="th-btn">
+                <Link to="/contact-us" className="th-btn">
                   <span>SUBMIT NOW</span>
                 </Link>
               </div>

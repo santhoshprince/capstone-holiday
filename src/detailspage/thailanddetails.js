@@ -37,7 +37,7 @@ const TourThailand = () => {
 
   const toursData = {
     1: {
-      heading: "Thailand Tour Package from Chennai – 4N / 5D",
+      heading: "Thailand Tour Package from Chennai",
       title1: "Thailand Tour Package from Chennai – 4N / 5D",
       galleryImages: [
         galleryImage1,

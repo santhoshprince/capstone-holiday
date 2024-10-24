@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "../components/sidebardetailspage";
+// import Itinerary from "../components/itinerary"
 import Contentsection from "../components/contentbg";
 import DetailSlider from "../components/detailslider";
 import DetailsGallery from "../components/detailsgallery";
@@ -213,14 +214,14 @@ const TourMaldives = () => {
               />
             </div>
           </div>
-          {/* <div className="row">
-            <div className="col-12">
+           <div className="row">
+            {/* <div className="col-12">
               <Itinerary
                 title="Itinerary"
                 itineraryData={selectedTour.itinerary}
               />
-            </div>
-          </div> */}
+            </div> */}
+          </div> 
           {/* Full-width map */}
           <div className="row">
             <div className="col-12" ref={detailsGalleryRef}>

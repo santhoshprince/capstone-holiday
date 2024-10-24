@@ -56,7 +56,7 @@ const TourPage = () => {
       ],
 
       description1: [
-        "Check out Capstone Holidays Delhi Agra Jaipur Tour Package if you want to see more of the route and culture of the Golden Triangle.  Part of the Golden Triangle, the cities of Agra, Jaipur, and Delhi are well-liked travel destinations because of their exquisite historical, architectural, and cultural routes and landmarks. This is a 4 days and 3 nights trip package. You will be taken to Mathura, Taj Mahal, Hawa Mahal, Nahargarh Fort, Jantar Mantar, Qutub Minar, Jama Masjid, Red Fort and Rastrapathi Bhavan. When choosing this package, you can also schedule a group tour or your honeymoon. You will spend your night staycation at the best hotels of Delhi, Agra, and Jaipur. Contact our tour planner at Capstone Holidays for any additional clarity, and we will gladly address any concerns."
+        "Check out Capstone Holidays Delhi Agra Jaipur Tour Package if you want to see more of the route and culture of the Golden Triangle. The cities of Agra, Jaipur, and Delhi—which make up the Golden Triangle—are popular tourist destinations due to their magnificent historical, architectural, and cultural landmarks and itineraries. This tour package lasts for four days and three nights. The Taj Mahal, Hawa Mahal, Nahargarh Fort, Jantar Mantar, Qutub Minar, Jama Masjid, Red Fort, Rastrapathi Bhavan, and Mathura will all be visited. You can plan your honeymoon or a group tour when you select this package. The finest hotels in Delhi, Agra, and Jaipur are where you will spend your overnight vacation. For further information, get in touch with Capstone Holidays' tour coordinator, and we'll be happy to answer any questions"
       ],
       duration: ["05 Days / 04 Nights"],
       tourCode: ["AH-RJ-17"],
@@ -118,7 +118,7 @@ const TourPage = () => {
         {
           day: "Day 5",
           details:
-            "After breakfast you will be transferred to Jaipur for your onwards journey. After reach at Jaipur Airport/Railway station tour ends with sweet memorize by Ashirwad Holidays.",
+            "After breakfast you will be transferred to Jaipur for your onwards journey. After reach at Jaipur Airport/Railway station to tour ends with sweet memories by Capstone Holidays",
         },
       ],
 
@@ -164,7 +164,7 @@ const TourPage = () => {
         galleryImage6_6,
       ],
       description1: [
-        "Our Rajasthan Trip Packages explore Rajasthan's contemporary infrastructure, calm city atmosphere and historical significant spots suitable for honeymoon too. Our Rajasthan Trip Package covers the main tourist destinations such as Jaipur, Udaipur, Jaisalmer, Jodhpur, Ranthambore National Park, Mount Abu, Ajmer, Bikaner, and Pushkar. Avoid going to Rajasthan from April to September. The temperature is extremely hot and makes your tour dull. This is generally the off-season in Rajasthan and the best time is from November to February. The weather will be pleasant outside and you can have a colorful yet memorable Rajasthan trip",
+        "Our Rajasthan Trip Packages explore Rajasthan's contemporary infrastructure, calm city atmosphere and historical significant spots suitable for honeymoon too. The popular tourist spots in Rajasthan, including Jaipur, Udaipur, Jaisalmer, Jodhpur, Ranthambore National Park, Mount Abu, Ajmer, Bikaner, and Pushkar, are all included in our trip package. Do not travel to Rajasthan between April and September. Your journey becomes boring due to the intense heat. In Rajasthan, this is often the off-season, with November through February being the ideal months. The weather will be nice, and your journey to Rajasthan will be colorful and unforgettable.",
       ],
       duration: ["04 Days / 03 Nights"],
       tourCode: ["AH-RAJ-15"],
@@ -219,7 +219,7 @@ const TourPage = () => {
         {
           day: "Day 4",
           details:
-            "After breakfast leave for Jaipur Airport/Railway Station for your onward journey. Tour ends with sweet memorize by Ashirwad Holidays, Pune.",
+            "After breakfast leave for Jaipur Airport/Railway Station for your onward journey tour ends with sweet memories by Capstone Holidays.",
         },
       ],
 

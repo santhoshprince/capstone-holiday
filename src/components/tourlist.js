@@ -17,7 +17,7 @@ const TourList = () => {
       title: "Bali Tourist Places",
       price: "6,800",
       duration: "3 Days 2 Nights (BALI)",
-      detailPath: '/tour/bali-tour-places', // Direct path without id
+      detailPath: '/tour/bali-tourist-places', // Direct path without id
     },
   ];
 

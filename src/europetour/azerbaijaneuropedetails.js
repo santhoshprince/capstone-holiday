@@ -34,8 +34,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Azerbaijan Europe Tour",
-      title1: "Azerbaijan Europe Tour",
+      heading: "Azerbaijan Tour Packages from India",
+      title1: "Azerbaijan Tour Packages from India",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -72,7 +72,7 @@ const TourPage = () => {
         "Visa cost.",
       ],
       description1: [
-        "Our Azerbaijan tour packages from India are designed ideally to cover all the major tourist attractions including Baku tourist attractions. Travel to Azerbaijan encourages you to see the lovely semi-desert landscapes where history and modernity meet along the Caucasian stretch of the Silk Road. Baku, Shamaki, Sheki, Gebele, Ganja, Quba, Qobustan, Khinaliq, and Lankaran are the major Azerbaijan tourist places that are loved by international tourists. Avoid Summers(May-September) in Azerbaijan since it gets hotter and flaming. Our customizable Azerbaijan tour packages take you to the Azerbaijan tourist places during the rest of the months with pleasant weather and to enjoy the delightful surroundings"
+        "Our Azerbaijan tour packages from India are designed ideally to cover all the major tourist attractions including Baku tourist attractions. The beautiful semi-desert landscapes along the Caucasian portion of the Silk Road, where history and modernity collide, are a must-see when visiting Azerbaijan. The main tourist destinations in Azerbaijan that are popular with foreign visitors are Baku, Shamaki, Sheki, Gebele, Ganja, Quba, Qobustan, Khinaliq, and Lankaran. Avoid Azerbaijan's summers (May–September) as they are hotter and more burning. During the remaining months, when the weather is favorable, you can visit the popular tourist destinations in Azerbaijan with our customized trip packages"
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["10 Days 9 Nights"],

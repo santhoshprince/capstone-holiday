@@ -5110,9 +5110,9 @@ const BlogDetails = () => {
         <div className="overlay">
           <div className="container">
             <h1 className="blog-title">{blog.title}</h1>
-            <p className="blog-meta">
+            {/* <p className="blog-meta">
               By {blog.author} on {blog.date} | Category: {blog.category}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

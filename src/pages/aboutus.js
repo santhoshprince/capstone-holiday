@@ -129,7 +129,7 @@ const AboutUs = () => {
                 </p>
 
                 <p className="mb-30 pe-xl-5">
-                  <span style={{ fontWeight: "700" }}>Safety and Security</span>{" "}
+                  <span style={{ fontWeight: "700" }}>Safety and Security:</span>{" "}
                   Your safety and well-being are our utmost priority. We work with trusted and reliable partners around the globe, ensuring that all our domestic and international tour packages adhere to the highest safety standards. Additionally, we provide comprehensive travel insurance options for your peace of mind.
                 </p>
                 <p className="mb-30 pe-xl-5">

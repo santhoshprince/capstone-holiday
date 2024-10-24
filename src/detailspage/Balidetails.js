@@ -124,7 +124,7 @@ const BaliDetails = () => {
         },
       },
     },
-    "bali-tour-places": {
+    "bali-tourist-places": {
       heading: "Bali Tourist Places",
       title1: "Bali Tourist Places",
       galleryImages: [

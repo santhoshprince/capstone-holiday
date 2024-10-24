@@ -189,7 +189,7 @@ const TourPage = () => {
       ],
 
       description1: [
-        "Almost all the popular beaches are covered in our Goa Travel Packages and also you can witness its vibrant churches, party culture, and stunning beaches. Goa is the ideal merge of Indian and Portuguese cultures. People come here to enjoy the world-class parties, cuisines, and sunsets. The popular Goa Tour Places to Visit are Palolem Beach, Panaji, Vagator, Agonda, Calangute, Candolim, Anjuna, North Goa, and South Goa. Some of them are Candolim Beach, Sinquerim Beach, Arambol Beach, Morjim Beach, Miramar Beach, Ashwem Beach, Mandrem Beach, Kalacha Beach, Dona Paula Beach, Vagator Beach, and Anjuna Beach. ",
+        "Almost all the popular beaches are covered in our Goa Travel Packages and also you can witness its vibrant churches, party culture, and radiant beaches. Goa is the perfect place to combine Portuguese and Indian culture. People travel here to take in the world-class sunsets, food, and parties. Palolem Beach, Panaji, Vagator, Agonda, Calangute, Candolim, Anjuna, North Goa, and South Goa are the most visited Goa tour destinations. Anjuna Beach, Dona Paula Beach, Vagator Beach, Ashwem Beach, Mandrem Beach, Miramar Beach, Candolim Beach, Sinquerim Beach, Arambol Beach, Morjim Beach, and Kalacha Beach are a few of them",
       ],
       duration: ["4 Days,3 Nights"],
       tourCode: ["AH-GOA-21"],
@@ -338,7 +338,7 @@ const TourPage = () => {
           <div className="row">
             <div className="col-12" ref={tourDetailsRef}>
               <TourDetails
-                title1={tour.title}
+                title1={tour.title1}
                 description1={tour.description1}
                 duration={tour.duration}
                 tourCode={tour.tourCode}

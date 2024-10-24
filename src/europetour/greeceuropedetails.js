@@ -35,8 +35,8 @@ const TourPage = () => {
   const locationMapRef = useRef(null);
   const toursData = {
     1: {
-      heading: "Greece Europe Tour",
-      title1: "Greece Europe Tour",
+      heading: "Greece Tour Packages from India",
+      title1: "Greece Tour Packages from India",
       galleryImages: [
         galleryImage1,
         galleryImage2,
@@ -73,7 +73,7 @@ const TourPage = () => {
       //     "Visa cost."
       //   ],
       description1: [
-        "Our Greece Tour Packages from India helps to witness the Greek mythology's well-known love tales have fascinated audiences for years. Greece in the modern era is just as romantic, filling you with wonderful emotions with its breathtaking scenery, lively culture, and thrilling underwater excursions for couples. The abundance of historic artifacts, white-painted structures, cobblestone streets, mouth watering food, and quaint outdoor cafes can inspire admiration unlike anything else.  Greece is a uniquely beautiful and hospitable country to explore. Athens, Parthenon, Meteora, Acropolis Museum, Santorini, Elafonissi Beach, Mykonos, Knossos Palace, Temple of Olympian Zeus, and many more are the main tourist destinations that are loved by international tourists.",
+        "Our Greece Tour Packages from India helps to witness the Greek mythology's well-known love tales have fascinated audiences for years. Greece now is equally romantic, evoking lovely feelings with its radiant landscapes, vibrant culture, and exhilarating underwater adventures for couples. Nothing may evoke adoration like the wealth of antique items, white-painted buildings, cobblestone streets, delectable cuisine, and charming outdoor cafes. Greece is a really lovely and welcoming nation to visit. International tourists adore Athens, the Parthenon, Meteora, the Acropolis Museum, Santorini, Elafonissi Beach, Mykonos, Knossos Palace, the Temple of Olympian Zeus, and many more"
       ],
       // tourCode: ["CBT-22/01"],
       duration: ["9 Days 8 Nights"],

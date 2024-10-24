@@ -70,7 +70,7 @@ const TourPage = () => {
                   <TourList />
                   <Maldives
                     title="Explore Maldives"
-                    description="Our Maldives Tour From Chennai takes you to the most blissful places to enjoy with the family or as a couple. The Maldives is an island nation that should go on everyone's bucket list; Our cheap Maldives tour packages show you the small group of islands in the Indian Ocean with perfect beaches, the purest turquoise waters, magnificent marine life, over-the-water bungalows, and much more! Our Capstone Maldives tour package helps you to visit Male, Addu Atoll, The Muraka Conrad, Vaadhoo Island, Grand Friday Mosque, Artificial Beach, National Museum, Fulhadhoo Island, and Maafushi Island.  Check our tour operator to know about the Maldives tour package cost."
+                    description="Our Maldives Tour Package From Chennai takes you to the most blissful places to enjoy with the family or as a couple. The Maldives is an island nation that everyone should see; it is a small group of islands in the Indian Ocean with ideal beaches, the clearest blue waters, magnificent marine life, over-the-water bungalows, and so much more! Male, Addu Atoll, The Muraka Conrad, Vaadhoo Island, Grand Friday Mosque, Artificial Beach, National Museum, Fulhadhoo Island, and Maafushi Island are just a few of the Maldives' appealing destinations."
                     imageUrl={Balidesc}
                   />
                 </div>

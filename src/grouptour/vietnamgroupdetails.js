@@ -36,7 +36,7 @@ const TourSingapore = () => {
 
   const toursData = {
     1: {
-      heading: "Vietnam Group Tour Packages – 3N / 4D",
+      heading: "Vietnam Group Tour Packages",
       title1: "Vietnam Group Tour Packages – 3N / 4D",
       galleryImages: [
         galleryImage1,
