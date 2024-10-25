@@ -154,6 +154,7 @@ const TourSingapore = () => {
         heading={selectedTour.heading}
         children={""}
         backgroundImage={bg1}
+        backgroundPosition="top"
       />
       {/* Navigation Links */}
       <nav className="tour-navigation">
