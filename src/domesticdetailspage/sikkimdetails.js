@@ -290,7 +290,7 @@ const TourPage = () => {
       <Contentsection
         heading={tour.heading}
         children={""}
-        backgroundImage={tour.backgroundImages}
+        backgroundImage={tour.backgroundImage}
       />
 
       <nav className="tour-navigation">

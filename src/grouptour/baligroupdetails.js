@@ -23,7 +23,7 @@ import galleryImage5_5 from "../img/gallery/11021.jpg";
 import galleryImage6_6 from "../img/tour/365.jpg";
 
 import location1 from "../img/icon/location-dot3.svg";
-import bg1 from "../img/bg/contact_bg_7.jpg";
+import bg1 from "../img/correctionimg/36.jpg";
 
 const TourPage = () => {
   const { id } = useParams();

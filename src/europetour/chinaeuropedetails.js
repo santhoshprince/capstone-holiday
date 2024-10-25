@@ -90,47 +90,89 @@ const TourPage = () => {
         {
           day: "Day 1",
           details:
-            "Upon arrival, welcome by the Tour Manager/local tour guide and transfer from the airport to the hotel for check in. (Standard check in time 1400-1500 hrs).Dinner at Indian Restaurant.",
+          <div>
+            <strong style={{paddingRight:"10px"}}>Morning Arrival in Beiijing</strong>
+  Early morning arrival at the airport. Relaxed walk in evening at the  Wangfujing Streets
+          </div>
+          
         },
         {
           day: "Day 2",
           details:
-            "After breakfast, we visit Ushiku Great Buddha which is one of the tallest statues in the world and at 120m is the tallest Buddhist statue in Japan. We then proceed to Mount Tsukuba and take a cable car and ropeway to enjoy scenic view of Mount Tsukuba. Later, we visit Kairakuen Garden which is considered one of the Three Great Gardens of Japan.",
+          <div>
+             <strong style={{paddingRight:"10px"}}>Explore the Historical Sites in Beijing</strong>
+ Explore the Historical Sites in Beijing like Tiananmen Square & Forbidden City, Visit the Temple of Heaven and evening at the Kung Fu Show with Peking Duck Dinner
+          </div>
+           
         },
         {
           day: "Day 3",
           details:
-            "After breakfast, we proceed to Hitachi Seaside Park, which is renowned for its diverse flora, including millions of flowers that bloom throughout the year. Later we visit Ryujin Suspension Bridge, one of the longest pedestrian suspension bridges in Japan. We then proceed to visit Fukuroda Falls which is one of the most renowned waterfalls in Japan.",
+          <div>
+          <strong style={{paddingRight:"10px"}}> Great Wall of China</strong>
+          Wander all along the Great Wall of China and enjoy a night out in Beijing
+       </div>
         },
         {
           day: "Day 4",
           details:
-            "After breakfast, we proceed to Tokyo and visit Tokyo Skytree which has magnificent observation decks, but first and foremost, it is Tokyo's radio tower. We then visit Asakusa Kannon which is one of Tokyo's most colorful and popular temples and Nakamise Dori street which is one of Japan's oldest shopping streets.Later, we proceed to Team Labs, which is a popular, immersive museum known for its colorful, futuristic digital art installations & photo ops Dinner at Indian Restaurant with Sushi Tasting.",
+          <div>
+          <strong style={{paddingRight:"10px"}}>Xi'an High-Speed Train</strong>
+          Reach Xi'an by high-speed rail or airplane from Beijing
+       </div>
         },
         {
           day: "Day 5",
           details:
-            "After breakfast, we proceed to Hakone region where we visit Mt. Fuji 5th station, where you can see the highest mountain in Japan, listed as the World Heritage Site. We then take the Owakudani ropeway and visit the Owakudani Valley. Later, we take Lake Ashi cruise where you can enjoy the views of the surrounding mountains and Lake Ashinoko.Dinner at Indian Restaurant.",
+           
+            <div>
+          <strong style={{paddingRight:"10px"}}>Xi'an Terracotta Warriors</strong>
+          Explore the Xi'an Terracotta Warriors site followed by Xi’an City Wall. End the day with Tang Dynasty Performance.
+       </div>
         },
         {
           day: "Day 6",
           details:
-            "After breakfast, we visit Nara & Deer Park which is home to hundreds of freely roaming deer also known as “Messengers of God” and the Todaiji temple where you can see the temple’s best known relic “Daibutsu”. In the evening, we visit Shinsaibashi - one of the most famous shopping streets in Osaka and Japan.Dinner at Indian Restaurant.",
+          <div>
+          <strong style={{paddingRight:"10px"}}>Xi'an Guilin Flight</strong>
+          See the Big Wild Goose Pagoda, stunning Karst mountains, and wander along the Ronghu and Shanhu Lakes.
+       </div>
+           
         },
         {
           day: "Day 7",
           details:
-            "Collect Packed Breakfast and proceed for a Day Trip to Hirsohima.Today, we take a bullet train ride from Osaka to Hiroshima. Upon arrival in Hirsohima, we proceed to the pier to take the ferry to the Miyajima Island and visit the Itsukushima Shrine, the centuries-old Itsukushima Shrine on Miyajima, the shrine is known worldwide for its iconic “Floating Tori (Gate)”. Later, we visit the Hiroshima Peace Park, Museum and the Atomic Bomb Dome (Genbaku Dome) which is a part of the Hiroshima Peace Memorial Park and a designated UNESCO World Heritage. We return to Osaka via a bullet train from Hiroshima.",
+          <div>
+          <strong style={{paddingRight:"10px"}}>Li River Cruise</strong>
+          Take a Li River Cruise (4-5 hours). Explore the scenery when you get to Yangshuo, or go rock climbing, cycling, or bamboo rafting on the Yulong River.Check into the Liu Sanjie light show and end up for the day
+       </div>
+           
         },
         {
           day: "Day 8",
           details:
-            "After breakfast, we visit the Arashiyama Bamboo Forest where the thick green bamboo stalks seem to continue endlessly in every direction and Visitors can stroll paths lined with endless rows of towering bamboo. We then visit the Kinkaku-ji Temple - a pagoda made to house the sacred relics of the Buddha which has given this temple the popular name of Kinkaku-ji (“Temple of the Golden Pavilion”). Later, visit Kiyomizu Dera, a UNESCO World Heritage site and one of the most famous temples in all of Japan.Dinner at Indian Restaurant with Ramen Noodles Tasting.",
+            <div>
+            <strong style={{paddingRight:"10px"}}>Shanghai</strong>
+            Visit the lively Old Town, Yu Garden, visit People's Square and the Shanghai Museum. Evenings will be enlightened up by the Huangpu River Cruise
+         </div>
         },
+
+
         {
           day: "Day 9",
           details:
-            "Today, we check out and proceed to the airport for your flight back home. It’s time to say goodbye to all the new friends you have made. We hope you take back many happy memories of your holiday. We would like you to spare a few minutes of your time to write and tell us how you enjoyed your holiday and any suggestions you may have for the future.",
+          <div>
+          <strong style={{paddingRight:"10px"}}>Jade Buddha Temple </strong>
+          See the Jade Buddha statue in the Temple's tranquil ambiance
+       </div>
+        },
+        {
+          day: "Day 10",
+          details:
+          <div>
+          <strong style={{paddingRight:"10px"}}>Departure</strong>
+          Take advantage of some free time for last-minute shopping and leave with wonderful memories created by Capstone Holidays China tour packages
+       </div>
         },
       ],
       mapSrc:

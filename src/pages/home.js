@@ -1113,7 +1113,7 @@ const HeroSlider = () => {
                 data-aos-delay="100"
                 data-aos-easing="ease-in"
               >
-                <div className="blog-img global-img">
+                <div className="blog-img global-img" >
                   <img src={blog2} alt="blog" loading="lazy" />
                 </div>
                 <div className="blog-grid2_content">
@@ -1140,7 +1140,7 @@ const HeroSlider = () => {
                 data-aos-delay="100"
                 data-aos-easing="ease-in"
               >
-                <div className="blog-img global-img">
+                <div className="blog-img global-img" style={{marginTop:"20px"}}>
                   <img src={blog3} alt="blog" loading="lazy" />
                 </div>
                 <div className="blog-grid2_content">

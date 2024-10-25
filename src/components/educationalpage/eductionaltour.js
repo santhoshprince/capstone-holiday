@@ -4,40 +4,43 @@ import Sidebar from "../../components/sidebar";
 import Contentsection from "../../components/contentbg";
 import EducationalDescription from "../../components/tourdescription";
 import Balidesc from "../../img/swiss/s1.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import bg1 from "../../img/bg/hero_bg_5_1.png";
 
 const HimchalTour = () => {
-
   const seoData = {
-    title: 'Educational Tour Packages | Educational Trips for Students',
-    keywords: 'educational tour packages, educational trips for students, educational tour, educational tour packages in india, capstone, chennai, students trip',
-    description: 'Choose our educational tour packages for research and educational tours. Take a break from your hectic study schedule and we are always happy to help you.',
+    title: "Educational Tour Packages | Educational Trips for Students",
+    keywords:
+      "educational tour packages, educational trips for students, educational tour, educational tour packages in india, capstone, chennai, students trip",
+    description:
+      "Choose our educational tour packages for research and educational tours. Take a break from your hectic study schedule and we are always happy to help you.",
     schema: {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Capstone Holidays",
-        "url": "https://www.capstoneholidays.in/educational-tour-packages/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.capstoneholidays.in/educational-tour-packages/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-};
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/educational-tour-packages/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target:
+          "https://www.capstoneholidays.in/educational-tour-packages/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
-     <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <Contentsection
         heading={"Educational Tour Package"}
-        children={""} backgroundImage={bg1}
+        children={""}
+        backgroundImage={bg1}
       />
 
       <section className="space">

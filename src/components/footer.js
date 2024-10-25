@@ -171,12 +171,12 @@ const Footer = () => {
                     </div>
                     <div className="details">
                       <p>
-                        <a href="tel:+01234567890" className="info-box_link">
+                        <a href="/contact-us" className="info-box_link">
                           +91 73584 94431
                         </a>
                       </p>
                       <p>
-                        <a href="tel:+09876543210" className="info-box_link">
+                        <a href="/contact-us" className="info-box_link">
                           +91 89254 04222
                         </a>
                       </p>
@@ -189,7 +189,7 @@ const Footer = () => {
                     <div className="details">
                       <p>
                         <a
-                          href="mailto:mailinfo00@tourm.com"
+                          href="/contact-us"
                           className="info-box_link"
                         >
                           tour@capstoneholidays.com

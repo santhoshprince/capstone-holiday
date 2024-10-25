@@ -10,7 +10,7 @@ const TourList = () => {
       imgSrc: bali,
       title: "ALMATY TOUR",
       rating: 4.8,
-      price: "9,435",
+      // price: "9,435",
       duration: "4 Days 5 Nights",
       detailPath: '/almaty-tour-package-from-india',
     },

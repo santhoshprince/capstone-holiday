@@ -25,7 +25,7 @@ const TourItem = ({ imgSrc, title, rating, price, duration, detailPath }) => {
             {/* </div>
           )}  */}
           <h4 className="tour-box_price">
-            <span className="currency">₹ {price}</span>/Person
+            <span className="currency">{price ?  "₹ " : null } {price}</span>{price ?"/Person" : null}
           </h4>
           <div className="tour-action">
             <span><i className="fa-light fa-clock"></i>{duration} Days</span>
