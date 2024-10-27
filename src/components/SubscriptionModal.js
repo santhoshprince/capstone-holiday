@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./SubscriptionModal.css"; // Import the updated CSS file
-import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+import "./SubscriptionModal.css";
 
 const SubscriptionModal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Loader state
+  const [successMessage, setSuccessMessage] = useState(""); // Success message state
 
   useEffect(() => {
-    // Automatically open the form when the component mounts
     setIsOpen(true);
   }, []);
 
@@ -24,9 +25,40 @@ const SubscriptionModal = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the form submission (e.g., send data to the server)
-    console.log("Form submitted:", formData);
-    setIsOpen(false); // Close the modal after submission
+    setIsLoading(true); // Start loading
+
+    const emailData = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_y4z6nwg",
+        "template_zi8tr79",
+        emailData,
+        "gQ-fRG2hzy4c59xWp"
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        setSuccessMessage("Your message has been sent successfully!"); // Set success message
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setIsOpen(false);
+      })
+      .catch((error) => {
+        console.error("Failed to send email. Error: ", error);
+        setSuccessMessage("Failed to send your message. Please try again.");
+      })
+      .finally(() => {
+        setIsLoading(false); // Stop loading
+      });
   };
 
   return (
@@ -79,11 +111,13 @@ const SubscriptionModal = () => {
               />
 
               <div className="header-button" style={{ paddingTop: "20px" }}>
-                <Link to="/contact-us" className="th-btn">
-                  <span>SUBMIT NOW</span>
-                </Link>
+                <button type="submit" className="th-btn" disabled={isLoading}>
+                  {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
+                </button>
               </div>
             </form>
+
+            {successMessage && <p className="success-message">{successMessage}</p>}
           </div>
         </div>
       )}
