@@ -39,12 +39,31 @@ const AboutUs = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+  const seoData = {
+    title: "About Us | Top Tour and Travel Companies in India",
+    keywords: "best tour and travel company, top tour and travel companies in India, tours and travels near me, best tour and travel company",
+    description: "Launched in 2016, Capstone Holidays has an innovative team of specialists, and the best tour and travel company in Chennai with custom travel solutions.",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Capstone Holidays",
+      "url": "https://www.capstoneholidays.in/about-us/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.capstoneholidays.in/about-us/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  };
   return (
     <>
-     <Helmet>
-        <title>About Us | Top Tour and Travel Companies in India</title>
-        <meta name="keywords" content="best tour and travel company, top tour and travel companies in India, tours and travels near me, best tour and travel company" />
-        <meta name="description" content="Launched in 2016, Capstone Holidays has an innovative team of specialists, and the best tour and travel company in Chennai with custom travel solutions." />
+    <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="keywords" content={seoData.keywords} />
+        <meta name="description" content={seoData.description} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
       </Helmet>
       <ContentSection
         heading={"About Us"}

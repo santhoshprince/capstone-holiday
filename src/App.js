@@ -154,7 +154,7 @@ function App() {
             element={<Singaporedetails />}
           />
           <Route
-            path="/vietnam-tour-package"
+            path="/vietnam-tour"
             element={<Vietnam />}
           />
           <Route

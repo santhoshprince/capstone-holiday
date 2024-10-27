@@ -152,11 +152,11 @@ const ContactPage = () => {
       "@context": "https://schema.org/",
       "@type": "WebSite",
       "name": "Capstone Holidays",
-      "url": "https://www.capstoneholidays.in/contact/",
+      "url": "https://www.capstoneholidays.in/contact-us/",
       "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.capstoneholidays.in/contact/{search_term_string}",
-      "query-input": "required name=search_term_string"    
+        "@type": "SearchAction",
+        "target": "https://www.capstoneholidays.in/contact-us/{search_term_string}",
+      "query-input": "required name=search_term_string"
         }
     }
 };

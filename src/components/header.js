@@ -46,7 +46,7 @@ const Header = () => {
         name: "Singapore & Malaysia",
         link: "/singapore-malaysia-tour",
       },
-      { name: "Vietnam", link: "/vietnam-tour-package" },
+      { name: "Vietnam", link: "/vietnam-tour" },
       { name: "Sri Lanka", link: "/sri-lanka-tour" },
     ],
     domestic: [

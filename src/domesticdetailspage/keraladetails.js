@@ -260,7 +260,7 @@ const TourPage = () => {
   return (
     <>
      <Helmet>
-          <title>{metaDetails.title1}</title>
+          <title>{metaDetails.title}</title>
           <meta name="description" content={metaDetails.description} />
           <meta name="keywords" content={metaDetails.keywords} />
           <script type="application/ld+json">

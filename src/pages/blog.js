@@ -8,13 +8,31 @@ import { Helmet } from 'react-helmet';
 
 
 const BlogPage = () => {
+  const seoData = {
+    title: "Travel Blog | Capstone Holidays Chennai",
+    keywords: "travel blog, singapore malaysia blog, bali blog, vietnam cambodia blog, international travel blog, domestic travel blogs",
+    description: "Wander, Dream, and learn. This travel blog offers free travel advice and guidance along with information about radiant places to visit throughout the globe!",
+    schema: {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Capstone Holidays",
+      "url": "https://www.capstoneholidays.in/travel-blog/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.capstoneholidays.in/travel-blog/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  };
   return (
     <>
-     <Helmet>
-        <title>Blogs</title>
-        {/* <meta name="keywords" content="andaman tour, andaman tourism itinerary, andaman island, andaman tour plan" /> */}
-        {/* <meta name="description" content="The Andaman tour from Chennai will take you to Andaman after monsoon days. So, Capstone Holidays plans for an Andaman trip from October to April." /> */}
-       
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="keywords" content={seoData.keywords} />
+        <meta name="description" content={seoData.description} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
       </Helmet>
      <ContentSection heading={"Blogs"} children={""} backgroundImage={blogbg} />
       <section className="th-blog-wrapper space-top space-extra-bottom">

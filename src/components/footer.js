@@ -81,7 +81,7 @@ const Footer = () => {
                       required
                     />
                     <Link to="/contact-us">
-                      <button type="submit" className="th-btn style3">
+                      <button type="submit" className="th-btn style3 footer-new" >
                         Subscribe Now
                         <img
                           src="assets/img/icon/plane.svg"

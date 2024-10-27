@@ -35,19 +35,19 @@ const mauritius = () => {
   return (
     <>
      <Helmet>
-        <title>Have a joyous Turkey Tour with our Turkey International Tour Package | Turkey International Tour Package</title>
-        <meta name="keywords" content="turkey tour, turkey international tour package, turkey tour plan, turkey travel" />
-        <meta name="description" content="Turkey Tour From India takes you to the must-visit places including Istanbul, Bursa, Kemaliye, Ahlat, Hatay, Vize, and many more." />
+     <title>Book Singapore Malaysia Tour from Capstone Holidays | Book Your Trip Now</title>
+        <meta name="keywords" content="singapore malaysia tour, singapore and malaysia tour, singapore tour, malaysia tour" />
+        <meta name="description" content="Explore the beauty of Singapore Malaysia Tour from India and enjoy the major destinations of Singapore and Malaysia. Let’s travel to make life easier!" />
         <script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Capstone Holidays",
-            "url": "https://www.capstoneholidays.in/turkey-tour/",
+            "url": "https://www.capstoneholidays.in/singapore-malaysia-tour/",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://www.capstoneholidays.in/turkey-tour/{search_term_string}",
+              "target": "https://www.capstoneholidays.in/singapore-malaysia-tour/{search_term_string}",
               "query-input": "required name=search_term_string"
             }
           }

@@ -144,19 +144,35 @@ const HeroSlider = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+  const seoData = {
+    title: "Tour Packages from Chennai | Family Tour Packages",
+    keywords:
+      "Tour packages from Chennai, Tour packages, International tour packages, Domestic tour packages, Group tour packages, Family tour packages, Vacation packages, Holiday packages, Trip packages",
+    description:
+      "We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://www.capstoneholidays.in/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
       <Helmet>
-        <title>Tour Packages from Chennai | Family Tour Packages</title>
-        <meta
-          name="keywords"
-          content="Tour packages from Chennai, Tour packages, International tour packages, Domestic tour packages, Group tour packages, Family tour packages, Vacation packages, Holiday packages, Trip packages"
-        />
-        <meta
-          name="description"
-          content="We offer a wide range of your favourite Tour Packages from Chennai and Family Tour Packages at exciting offer prices."
-        />
-         <script>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+
+        <script>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -175,7 +191,7 @@ const HeroSlider = () => {
           src="https://www.googletagmanager.com/ns.html?id=GTM-5GFM4HT"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <SubscriptionModal />
@@ -284,7 +300,7 @@ const HeroSlider = () => {
             }}
           >
             {/* First slide */}
-       
+
             <SwiperSlide>
               <div className="category-card single">
                 <div className="box-img global-img">
@@ -472,7 +488,6 @@ const HeroSlider = () => {
                 </a>
               </div>
             </SwiperSlide>
-           
 
             {/* Add more slides as needed */}
             {/* The SwiperSlide component can be repeated for each category */}
@@ -1113,7 +1128,7 @@ const HeroSlider = () => {
                 data-aos-delay="100"
                 data-aos-easing="ease-in"
               >
-                <div className="blog-img global-img" >
+                <div className="blog-img global-img">
                   <img src={blog2} alt="blog" loading="lazy" />
                 </div>
                 <div className="blog-grid2_content">
@@ -1140,7 +1155,10 @@ const HeroSlider = () => {
                 data-aos-delay="100"
                 data-aos-easing="ease-in"
               >
-                <div className="blog-img global-img" style={{marginTop:"20px"}}>
+                <div
+                  className="blog-img global-img"
+                  style={{ marginTop: "20px" }}
+                >
                   <img src={blog3} alt="blog" loading="lazy" />
                 </div>
                 <div className="blog-grid2_content">

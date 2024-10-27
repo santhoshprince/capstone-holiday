@@ -185,7 +185,7 @@ const BaliDetails = () => {
       keywords:
         "bali tourist places, bali sightseeing places, bali international packages, bali flight tickets",
       description:
-        "The Bali tour packages from Chennai are the solution for the ideal fusion of adventure and honeymoon",
+        "The holiday in Bali tourist places is the solution for the ideal fusion of adventure and honeymoon",
       schema: {
         "@context": "https://schema.org/",
         "@type": "WebSite",

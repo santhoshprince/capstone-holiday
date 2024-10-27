@@ -166,7 +166,7 @@ const blogs = [
     {
       id: 13,
       image: blog13,
-      slug:"tours-and-travels-in-chennai",
+      slug:"best-travel-agency-in-chennai",
       author: "Blog",
       date: "June 24, 2024",
       category: "Tour Guide",
