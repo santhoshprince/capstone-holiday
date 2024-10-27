@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import ContentSection from "../components/contentbg";
 import contact1 from "../assets/contactusimg/ship-5551818_1920.jpg";
 import icon1 from "../img/icon/location-dot2.svg";
@@ -7,6 +7,8 @@ import icon3 from "../img/icon/mail.svg";
 import icon4 from "../img/icon/location-dot3.svg";
 import contactbg from "../assets/contactusimg/paris-6803796_1920.jpg";
 import { Helmet } from 'react-helmet-async';
+import emailjs from "emailjs-com";
+  
 
 const ContactPage = () => {
   const ContactCard = ({ icon, title, details }) => (
@@ -31,12 +33,57 @@ const ContactPage = () => {
   );
 
   const ContactForm = () => {
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+    const [isLoading, setIsLoading] = useState(false);
+  
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ ...formData, [name]: value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault(); // Start loading
+  
+      const emailData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      };
+  
+      emailjs
+        .send(
+          "service_bif7gwm",
+          "template_xwbcuo6",
+          emailData,
+          "w4j75NJ-TUnDCdPF8"
+        )
+        .then((response) => {
+          console.log("Email sent successfully!", response.status, response.text);
+      
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        })
+        .catch((error) => {
+          console.error("Failed to send email. Error: ", error);
+        })
+        .finally(() => {
+          setIsLoading(false); // Stop loading
+        });
+    };
+  
     return (
-      <form
-        action="https://html.themeholy.com/tourm/demo/mail.php"
-        method="POST"
-        className="contact-form style2 ajax-contact"
-      >
+      <form onSubmit={handleSubmit} className="contact-form style2 ajax-contact">
         <h3 className="sec-title mb-30 text-capitalize">Leave us your info</h3>
         <h5>and we will get back to you</h5>
         <div className="row">
@@ -45,52 +92,53 @@ const ContactPage = () => {
               type="text"
               className="form-control"
               name="name"
-              style={{ marginBottom: "20px" }}
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Full Name"
-            />
-            <input
-              type="text"
-              className="form-control"
               style={{ marginBottom: "20px" }}
-              name="phonenumber"
-              placeholder="Phone Number"
+              required
             />
             <input
-              type="text"
-              className="form-control"
-              name="phonenumber"
-              placeholder="Subject"
-            />
-            <img src="assets/img/icon/user.svg" alt="" />
+                type="tel"
+                id="phone"
+                name="phone"
+                 placeholder="Phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+
+           
           </div>
           <div className="col-12 form-group">
             <input
               type="email"
               className="form-control"
               name="email"
-              placeholder="Your Mail"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              required
             />
-            <img src="assets/img/icon/mail.svg" alt="" />
           </div>
-
           <div className="form-group col-12">
             <textarea
               name="message"
               cols="30"
               rows="3"
               className="form-control"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your Message"
+              required
             ></textarea>
-            <img src="assets/img/icon/chat.svg" alt="" />
           </div>
           <div className="form-btn col-12 mt-24">
-            <button type="submit" className="th-btn style3">
-              Submit now
-              <img src="assets/img/icon/plane.svg" alt="" />
-            </button>
+          <button type="submit" className="th-btn" disabled={isLoading}>
+                    {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
+                  </button>
           </div>
         </div>
-        <p className="form-messages mb-0 mt-3"></p>
       </form>
     );
   };
