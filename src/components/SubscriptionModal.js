@@ -36,10 +36,10 @@ const SubscriptionModal = () => {
 
     emailjs
       .send(
-        "service_y4z6nwg",
-        "template_zi8tr79",
+        "service_bif7gwm",
+        "template_xwbcuo6",
         emailData,
-        "gQ-fRG2hzy4c59xWp"
+        "w4j75NJ-TUnDCdPF8"
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
