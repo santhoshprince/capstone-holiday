@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "capstoneholidays.in"
+          }
+        ],
+        "destination": "https://www.capstoneholidays.in",
+        "permanent": true
+      }
+    ]
+  }
+  
