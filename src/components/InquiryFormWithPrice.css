@@ -81,9 +81,7 @@
     transition: background-color 0.3s ease; /* Animation for background color change */
   }
   
-  button:hover {
-    background-color: #0056b3; /* Darker button color on hover */
-  }
+
   
   textarea {
     min-height: 100px; /* Minimum height for the textarea */
