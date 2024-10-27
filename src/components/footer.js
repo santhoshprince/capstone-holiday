@@ -38,7 +38,7 @@ const Footer = () => {
     },
     {
       image: galleryImage4,
-      links: [{ name: "whatsapp", url: "https://www.whatsapp.com/" }],
+      links: [{ name: "whatsapp", url: "https://wa.me/918925404222" }],
     },
     {
       image: galleryImage3,
@@ -118,7 +118,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/company/capstone-holidays/">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.whatsapp.com/">
+                    <a href="https://wa.me/918925404222" target="_blank">
                       <i className="fab fa-whatsapp"></i>
                     </a>
                     <a href="https://www.instagram.com/capstone_holidays_chennai/">
