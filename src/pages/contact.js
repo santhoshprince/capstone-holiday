@@ -8,6 +8,9 @@ import icon4 from "../img/icon/location-dot3.svg";
 import contactbg from "../assets/contactusimg/paris-6803796_1920.jpg";
 import { Helmet } from 'react-helmet-async';
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
   
 
 const ContactPage = () => {
@@ -41,51 +44,53 @@ const ContactPage = () => {
     });
     const [isLoading, setIsLoading] = useState(false);
   
-
     const handleChange = (e) => {
       const { name, value } = e.target;
       setFormData({ ...formData, [name]: value });
     };
   
     const handleSubmit = (e) => {
-      e.preventDefault(); // Start loading
-  
-      const emailData = {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        message: formData.message,
-      };
+      e.preventDefault();
+      setIsLoading(true);
   
       emailjs
-        .send(
-          "service_bif7gwm",
-          "template_xwbcuo6",
-          emailData,
-          "w4j75NJ-TUnDCdPF8"
-        )
+        .send("service_bif7gwm", "template_xwbcuo6", formData, "w4j75NJ-TUnDCdPF8")
         .then((response) => {
           console.log("Email sent successfully!", response.status, response.text);
-      
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
+  
+          toast.success("Your message has been sent successfully!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
           });
+  
+          setFormData({ name: "", email: "", phone: "", message: "" });
         })
         .catch((error) => {
-          console.error("Failed to send email. Error: ", error);
+          console.error("Failed to send email. Error:", error);
+          toast.error("Error sending message. Please try again.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
         })
         .finally(() => {
-          setIsLoading(false); // Stop loading
+          setIsLoading(false);
         });
     };
   
     return (
+      <>
       <form onSubmit={handleSubmit} className="contact-form style2 ajax-contact">
         <h3 className="sec-title mb-30 text-capitalize">Leave us your info</h3>
         <h5>and we will get back to you</h5>
+
         <div className="row">
           <div className="col-12 form-group">
             <input
@@ -99,16 +104,14 @@ const ContactPage = () => {
               required
             />
             <input
-                type="tel"
-                id="phone"
-                name="phone"
-                 placeholder="Phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-
-           
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
           </div>
           <div className="col-12 form-group">
             <input
@@ -134,12 +137,14 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <div className="form-btn col-12 mt-24">
-          <button type="submit" className="th-btn" disabled={isLoading}>
-                    {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
-                  </button>
+            <button type="submit" className="th-btn" disabled={isLoading}>
+              {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
+            </button>
           </div>
         </div>
       </form>
+      <ToastContainer />
+    </>
     );
   };
 
