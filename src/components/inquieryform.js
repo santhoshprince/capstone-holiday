@@ -95,7 +95,7 @@ const InquiryFormWithPrice = () => {
               * I agree with the Terms of Service and Privacy Statement.
             </label>
           </div>
-          <a href="contact.html" className="th-btn th-icon">Submit Enquiry</a>
+          <a href="contact-us" className="th-btn th-icon">Submit Enquiry</a>
         </form>
       </div>
     </div>
