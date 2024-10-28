@@ -1089,7 +1089,7 @@ const HeroSlider = () => {
             </div>
             <div className="col-lg-auto d-none d-lg-block">
               <div className="sec-btn" data-aos="slide-right">
-                <a href="blog" className="th-btn style4 th-icon new-but">
+                <a href="travel-blog" className="th-btn style4 th-icon new-but">
                   See More Articles
                 </a>
               </div>
@@ -1108,15 +1108,15 @@ const HeroSlider = () => {
                   data-aos-easing="ease-in"
                 >
                   <div className="blog-meta">
-                    <a className="author" href="blogs">
+                    <a className="author" href="travel-blog">
                       Sep 09, 2024
                     </a>
-                    <a href="blogs">6 min read</a>
+                    <a href="travel-blog">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">Best Travel Agents in Chennai</a>
+                    <a href="travel-blog">Best Travel Agents in Chennai</a>
                   </h3>
-                  <a href="blogs" className="th-btn style4 th-icon">
+                  <a href="travel-blog" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>
@@ -1133,15 +1133,15 @@ const HeroSlider = () => {
                 </div>
                 <div className="blog-grid2_content">
                   <div className="blog-meta">
-                    <a className="author" href="blogs">
+                    <a className="author" href="travel-blog">
                       Sep 10, 2024
                     </a>
-                    <a href="blogs">8 min read</a>
+                    <a href="travel-blog">8 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">Best Travel agency in Velachery</a>
+                    <a href="travel-blog">Best Travel agency in Velachery</a>
                   </h3>
-                  <a href="blogs" className="th-btn style4 th-icon">
+                  <a href="travel-blog" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>
@@ -1163,15 +1163,15 @@ const HeroSlider = () => {
                 </div>
                 <div className="blog-grid2_content">
                   <div className="blog-meta">
-                    <a className="author" href="blogs">
+                    <a className="author" href="travel-blog">
                       Sep 05, 2024
                     </a>
                     <a href="#">6 min read</a>
                   </div>
                   <h3 className="box-title">
-                    <a href="blogs">Best Tour Operators in Chennai</a>
+                    <a href="travel-blog">Best Tour Operators in Chennai</a>
                   </h3>
-                  <a href="blogs" className="th-btn style4 th-icon">
+                  <a href="travel-blog" className="th-btn style4 th-icon">
                     Read More
                   </a>
                 </div>
