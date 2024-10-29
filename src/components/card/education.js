@@ -20,7 +20,7 @@ const TourList = () => {
       imgSrc: bali2,
       title: "Paris and Swiss Package",
       rating: 4.8,
-      price: "5,80,000",
+      // price: "5,80,000",
       duration: "8 Nights, 9 Days",
       detailPath: '/paris-switzerland-tour-package-from-india',
     },
