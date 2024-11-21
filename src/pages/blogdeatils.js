@@ -34,8 +34,12 @@ import blogimg11 from "../assets/blogdetailsimg/1/vinpearl-land-6847412_1920.jpg
 import blog12 from "../assets/blogsimg/marina-bay-of-singapore-2714866_1280.jpg";
 import blogimg12 from "../assets/blogdetailsimg/1/kuala-lumpur-1283140_1920.jpg";
 
+
 import blog13 from "../assets/blogsimg/temple-2033409_1280.jpg";
+
+import blog14 from "../assets/blogsimg/map-3578213_1920.jpg";
 import blogimg13 from "../assets/blogdetailsimg/1/beach-5281431_1920.jpg";
+import blogimg14 from "../assets/blogdetailsimg/1/at-infinity-KXBkFaaFdPs-unsplash.jpg";
 
 import "./blogdeatils.css";
 import { Link } from "react-router-dom";
@@ -136,6 +140,7 @@ const BlogDetails = () => {
                             className="w-100"
                             src={blogimg1}
                             alt="Blog Image"
+                            title="Blogs Chennai"
                           />
                         </div>
                       </div>
@@ -5040,6 +5045,449 @@ const BlogDetails = () => {
                       by our best tour travel agency in Chennai!
                     </p>
 
+                    <div className="share-links clearfix">
+                      <div className="row justify-content-between">
+                        {/* <div className="col-md-auto">
+                          <span className="share-links-title">Tags:</span>
+                          <div className="tagcloud">
+                            <a href="blog.html">Apartment</a>
+                            <a href="blog.html">Buyer</a>
+                            <a href="blog.html">Modern</a>
+                            <a href="blog.html">Luxury</a>
+                          </div>
+                        </div> */}
+                        <div className="col-md-auto text-xl-end">
+                          <div className="share-links_wrapp">
+                            <span className="share-links-title">Share:</span>
+                            <div className="social-links">
+                              <a href="https://www.facebook.com/">
+                                <i className="fab fa-facebook-f"></i>
+                              </a>
+                              <a href="https://www.twitter.com/">
+                                <i className="fab fa-twitter"></i>
+                              </a>
+                              <a href="https://www.instagram.com/">
+                                <i className="fab fa-instagram"></i>
+                              </a>
+                              <a href="https://www.linkedin.com/">
+                                <i className="fab fa-linkedin-in"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Comments Section */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 14,
+      image: blog14,
+      slug: "best-travel-agency-in-coimbatore",
+      author: "Blog",
+      date: "June 24, 2024",
+      category: "Blog",
+      title: "Best Travel Agency in Coimbatore | Tour Operators in Coimbatore",
+      metaTitle:
+        "Best Travel Agency in Coimbatore | Tour Operators in Coimbatore",
+      metaKeywords:
+        "best travel agency in coimbatore, international travel agents in coimbatore, tour operators in coimbatore, best tour packages in coimbatore, group tour packages in coimbatore, honeymoon packages in coimbatore",
+      metaDescription:
+        "Our Best travel agency in Coimbatore, takes you to the best theme parks in the world, the Universal Studios in Singapore by booking our best tour packages",
+      schema: `
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Capstone Holidays",
+  "url": "https://www.capstoneholidays.in/best-travel-agency-in-coimbatore",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.capstoneholidays.in/best-travel-agency-in-coimbatore{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+`,
+
+      content: (
+        <div>
+          <div className="container">
+            <div className="row">
+              <div className="col-xxl-12 col-lg-11">
+                <div className="th-blog blog-single">
+                  <div className="blog-content">
+                    <div className="blog-meta">
+                      <a className="author" href="blog.html">
+                        <i className="fa-light fa-user"></i>Blog Details
+                      </a>
+                      <a>
+                        June 26, 2024
+                        <i className="fa-regular fa-calendar"></i>
+                      </a>
+                      <a>
+                        <img src="assets/img/icon/map.svg" alt="" />
+                        Coimbatore Travel
+                      </a>
+                    </div>
+                    <h1 className="blog-title">
+                      What is the reason behind recommending Universal Studios
+                      Singapore by your best travel agency in Coimbatore?
+                    </h1>
+                    <blockquote>
+                      <p>
+                        <p>
+                          Our Best travel agency in Coimbatore takes you to the
+                          greatest theme parks in the world. Yes, you are about
+                          to enter Universal Studios in Singapore by booking our
+                          best tour packages in Coimbatore. Located on Sentosa
+                          Island in Singapore, Resorts World Sentosa hosts
+                          Universal Studios Singapore, a theme park. It has a
+                          total of 28 rides, shows, and attractions found within
+                          seven themed zones situated around a water park.
+                        </p>
+                      </p>
+                    </blockquote>
+
+                    <div className="row gy-4">
+                      <div className="col-12">
+                        <div className="blog-img">
+                          <img
+                            className="w-100"
+                            src={blogimg14}
+                            alt="Blog Image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <p>
+                      Since its opening in 2010, Universal Studios Singapore,
+                      with its entertainment and adventures based on popular
+                      film franchises from Universal and other studios, has
+                      become one of the best tourist destinations in Singapore.
+                    </p>
+
+                    <h1 className="blog-title">
+                      How do our International Travel Agents in Coimbatore make
+                      reservations for tickets to Universal Studios?
+                    </h1>
+                    <p>
+                      Universal Studios Singapore offers various packages,
+                      including express tickets and one-day passes. Buying on
+                      the day can be quite expensive. So, our international
+                      travel agents in Coimbatore and the best tour operators in
+                      Coimbatore book online for you: You needn't wait long in
+                      the line, and it is pretty cheap. When you are sure about
+                      the dates, log on to many of these sites licensed as
+                      third-party resellers and follow the instructions given.
+                      Just remember the tickets can only be utilized for those
+                      dates that you made reservations for, and that those are
+                      non-refundable.
+                    </p>
+
+                    <p>
+                      However, our best tour operators in Coimbatore also
+                      recommend the best online reservations through our best
+                      Coimbatore tour packages and customizable honeymoon
+                      packages in Coimbatore.
+                    </p>
+
+                    <blockquote>
+                      <p>
+                        <p>
+                          Avail of our best tour packages in Coimbatore to
+                          Singapore and group tour packages in Coimbatore to
+                          Singapore for experiencing the best memory at
+                          Universal Studios, Singapore.
+                        </p>
+                      </p>
+                    </blockquote>
+
+                    <p>
+                      Our best travel agency in Coimbatore presents the guide to
+                      the exact scenario of the seven zones at Singapore
+                      Universal Studios, and each has its distinct theme. What
+                      to expect on each zone and our group tour package in
+                      Coimbatore is as follows:
+                    </p>
+
+                    <p>
+                      <strong>Zone 1 - Hollywood</strong>
+                      <br />
+                      The Hollywood Zone is an homage to the entertainment
+                      industry and all of the glitz associated with the film.
+                      Immediately transported to a reproduction of the famous
+                      Hollywood Walk of Fame, complete with superstar
+                      impersonators, the iconic Hollywood Sign, and characters
+                      from popular Universal films. The Hollywood zone amuses
+                      the visitor with its various live performances, shows, and
+                      street entertainment. The details draw the attention of
+                      the guests to real-life Hollywood ambiance.
+                    </p>
+
+                    <p>
+                      <strong>Main Attractions:</strong>
+                      Hug Time Jubilee Trolls
+                    </p>
+                    <p>
+                      <strong>Shopping Zone:</strong>
+                      The Dark Room, The Brown Debry, Hello Kitty Studio Store,
+                      Minion Mart, Universal Studios Store, and Candilicious
+                    </p>
+                    <p>
+                      <strong>Dining</strong>
+                      Mels's Dive-In, Pops! Starbucks and Popcorn Delight
+                    </p>
+                    <p>
+                      <strong>Zone 2 - New York</strong>
+                      <br />
+                      The New York area is themed after the Big Apple, with
+                      monuments and sidewalks from famous New York City. It
+                      forms a backdrop to various movies in Hollywood and
+                      captures neon-lit street scenes in post-modern New York.
+                      The yellow taxi cabs and brick structures make the area
+                      appear to be the center of New York.
+                    </p>
+                    <p>
+                      <strong>Ultimate ride:</strong>
+                      Sesame Street Spaghetti Space Chase
+                    </p>
+                    <p>
+                      <strong>Best show:</strong>
+                      Lights, Camera, Action!
+                    </p>
+
+                    <p>
+                      <strong>Best shopping:</strong>
+                      Big Bird's Emporium Dining options: Includes Me Want
+                      Cookie, Loui's NY Pizza Parlour, and KT's Grill.
+                    </p>
+                    <p>
+                      <strong>Zone 3 - Sci-Fi City</strong>
+                      <br />
+                      This zone incorporates the latest, most advanced,
+                      space-age technology to create what the cities would be
+                      like in the near future. It also houses some of the most
+                      advanced 4D rides available to date.
+                    </p>
+
+                    <p>
+                      <strong>Top Rides:</strong>
+                      Accelerator, Transformers The Ride, and Battlestar
+                      Galactica: Human vs. Cylon
+                    </p>
+
+                    <p>
+                      <strong>Meet and Greet:</strong>
+                      Voice of Cybertron: Transformers
+                    </p>
+                    <p>
+                      <strong>Shopping Zone:</strong>
+                      Vault of Transformers Supplies
+                    </p>
+                    <p>
+                      <strong>Restaurants:</strong>
+                      Starbot Cafe, Frozen Fuel, Planet Yen, and Star Dots
+                    </p>
+
+                    <p>
+                      <strong>Zone 4 - Ancient Egypt</strong>
+                      <br />
+                      From the thrill of Sci-Fi, head down to the Land of
+                      Ancient Egypt from the Mummy movie company, which is
+                      styled after breathtaking Egyptian structures and
+                      treasures discovered during the Golden Age of Egyptian
+                      Exploration in the 1930s.
+                    </p>
+
+                    <p>
+                      <strong>Top Rides:</strong>
+                      Treasure Hunters and Mummy's Revenge
+                    </p>
+                    <p>
+                      <strong>Places to eat:</strong>
+                      Oasis Spice Cafe, Cairo Market
+                    </p>
+
+                   
+                      <p> <strong>Zone 5 - The Lost World at Jurassic Park Singapore (Best
+                        enjoyed a spot in Honeymoon packages in Coimbatore)</strong>
+                        <br /></p>
+                     
+               
+                    <p>
+                      This lost world consists of two separate areas, namely
+                      Waterworld and Jurassic Park. This area has more thrilling
+                      rides than any other area in the park. It stands just
+                      beside Ancient Egypt. Come with the magic of the classic
+                      Jurassic Park movies to get a ride on the Lost World theme
+                      area.
+                    </p>
+                    <p>
+                      <strong>Top Rides:</strong>
+                      Jurassic Park Rapids Adventure, Dino-Soarin, Canopy Flyer
+                    </p>
+                    <p>
+                      <strong>Best Show:</strong>
+                      WaterWorld
+                    </p>
+                    <p>
+                      <strong>Meet and Greet Session has started!</strong>
+                      This includes Raptor Encounter with Blue and Dr. Rodney
+                    </p>
+                    <p>
+                      <strong>Shopping area</strong>
+                      Dino-Store
+                    </p>
+                    <p>
+                      <strong>Restaurants:</strong>
+                      Fossil Fuels, Jungle Bites and Discovery Food Court
+                    </p>
+
+                    <p>
+                      <strong>Zone 6 - Far Far Away</strong>
+                      <br />
+                      During a visit, several thrilling rides can be enjoyed in
+                      the Far Far Away zone. The castle is 40 meters tall and is
+                      undeniably one of the hottest attractions in the
+                      neighborhood, if not the entire park! It very recreates
+                      Princess Fiona's magical abode with its stately castle and
+                      charming, old cobblestone streets. Far Far Away has been
+                      designed in such a similar manner that a trip through it
+                      will remind one of all those memories of scenes from the
+                      movie.
+                    </p>
+
+                    <p>
+                      <strong>Best rides:</strong>
+                      Puss in Boots Giant Journey, Magic Potion Spin and
+                      Enchanted Airways
+                    </p>
+
+                    <p>
+                      <strong>Best shows:</strong>
+                      Donkey Live and Shrek 4-D Adventure
+                    </p>
+                    <p>
+                      <strong>Meet & Greet:</strong>
+                      The Dance for the Magic Beans, Happily Ever After
+                    </p>
+                    <p>
+                      <strong>Shopping:</strong>
+                      Fairy Godmother's Potion Shop
+                    </p>
+                    <p>
+                      <strong>Places to eat:</strong>
+                      Goldilocks, Friar's Good Food
+                    </p>
+
+                    <p>
+                      <strong>Zone 7 - Madagascar</strong>
+                      <br />
+                      Madagascar is based on the tales of zoo animals that broke
+                      out and began a journey to find where they belonged. Take
+                      time to indulge in the "Madagascar zone" and visit an
+                      unusual jungle lifestyle. Being next to Hollywood, it
+                      contains healthy tropical jungles similar to those seen in
+                      the film. This thrilling yet fun-filled zone is a perfect
+                      fit for group tour packages in Coimbatore.
+                    </p>
+                    <p>
+                      <strong>The best shows:</strong>
+                      Naruto The Gallery and Universal Star Power Parade.
+                    </p>
+                    <p>
+                      <strong>Meet and Greet:</strong>
+                      With King Julien, Gloria, Alex, and the Penguins Enjoy
+                      each zone in Universal Studios, and our best tour packages
+                      in Coimbatore will make you feel that you have chosen the
+                      best travel agency in Coimbatore and that you've touched
+                      the most worthy group tour packages in Coimbatore and
+                      honeymoon packages in Coimbatore.
+                    </p>
+
+                    <h1 className="blog-title">
+                      How do our International Travel Agents in Coimbatore make
+                      reservations for tickets to Universal Studios?
+                    </h1>
+
+                    <p>
+                      Now, kids can book an entire "Secret Room" in the Far Far
+                      Away castle at Universal Studios Singapore to celebrate
+                      their birthdays.
+                    </p>
+                    <p>
+                      If your birthday is to be spent at the USS, then you must
+                      collect your gift from the guest services lobby.
+                    </p>
+                    <p>
+                      Lockers are available throughout the park but they are a
+                      bit pricey.
+                    </p>
+                    <p>
+                      Our Coimbatore group tour packages and our honeymoon
+                      packages in Coimbatore will correctly make sure which ride
+                      to enjoy first by the time it reaches your destination to
+                      save you time and avoid confusion
+                    </p>
+                    <p>
+                      Once you have enjoyed all the must-see rides, then take a
+                      view of the remaining zones, which our expert
+                      International travel agents in Coimbatore recommend.
+                    </p>
+                    <p>
+                      Our Honeymoon packages in Coimbatore will help you land in
+                      the theme park at the right time, and help you avoid the
+                      busiest times, try going in the afternoon.
+                    </p>
+                    <p>
+                      You are allowed to bring your lunch with you as the food
+                      is pretty pricey.
+                    </p>
+                    <p>
+                      Smoking is banned on the USS. The studio has set up
+                      smoking areas.
+                    </p>
+                    <p>
+                      Admittance does not cover special events like Halloween
+                      Horror Nights, among others.
+                    </p>
+                    <p>Pets are not allowed within the theme park premises</p>
+                    <p>
+                      For more information, and to make the best day at
+                      Universal Studios, Singapore, get in touch with one of our
+                      tour operators here in Coimbatore at our Capstone
+                      Holidays, the best travel agency in Coimbatore.
+                    </p>
+
+                    <h1 className="blog-title">
+                      A Conclusion with our Singapore group tour packages in
+                      Coimbatore
+                    </h1>
+                    <p>
+                      Hopefully, our best travel agency in Coimbatore guide will
+                      provide you with a fair idea of what USS is all about and
+                      what you may expect from each zone. You can have a
+                      hassle-free tour of the USS with the help of our best tour
+                      packages in Coimbatore, group tour packages in Coimbatore,
+                      and honeymoon packages in Coimbatore.
+                    </p>
+                    <p>
+                      One thing, however, you simply have to do: Our best tour
+                      operators in Coimbatore and expert international travel
+                      agents in Coimbatore suggest that you handle online travel
+                      insurance to protect your entire vacation to Singapore
+                    </p>
+                    <p>
+                      Our best travel agency in Coimbatore wishes you a
+                      fantastic journey ahead of you and travel wisely!
+                    </p>
                     <div className="share-links clearfix">
                       <div className="row justify-content-between">
                         {/* <div className="col-md-auto">

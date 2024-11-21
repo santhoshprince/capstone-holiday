@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BlogItem = ({ id, slug, image, author, date, category, title, text, videoLink, isVideo }) => {
+const BlogItem = ({ id, slug, image, author, date, category, title, text, videoLink, isVideo, altText }) => {
   return (
     <div className="th-blog blog-single has-post-thumbnail">
       {isVideo ? (
         <div className="blog-img bolg" data-overlay="bg-title" data-opacity="5">
           <Link to={`/${slug}`}>
-            <img src={image} alt="Blog Image" />
+            <img src={image} title={altText} alt="Blog Image" />
           </Link>
           <a href={videoLink} className="play-btn popup-video">
             <i className="fas fa-play"></i>
@@ -16,7 +16,7 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
       ) : (
         <div className="blog-img img-container">
           <Link to={`/${slug}`}>
-            <img src={image} alt="Blog Image"  className='img-new'/>
+            <img src={image} title={altText} alt="Blog Image" className='img-new' />
           </Link>
         </div>
       )}
@@ -28,9 +28,6 @@ const BlogItem = ({ id, slug, image, author, date, category, title, text, videoL
           <a href="#">
             <i className="fa-solid fa-calendar-days"></i>{date}
           </a>
-          {/* <a href="#">
-            <img src="assets/img/icon/map.svg" alt="" />{category}
-          </a> */}
         </div>
         <h2 className="blog-title">
           <Link to={`/${slug}`}>{title}</Link>

@@ -45,7 +45,7 @@ const TourList = () => {
       rating: 4.7,
       price: "9,350",
       duration: "5 Nights, 6 Days",
-      detailPath: "/tour/dubai-tour-packages-from-chennai",
+      detailPath: "/tour/shimla-manali-group-tour",
     },
     {
       imgSrc: srilanka,

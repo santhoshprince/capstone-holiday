@@ -16,12 +16,14 @@ import blog10 from "../assets/blogsimg/dubai-4044183_1280.jpg";
 import blog11 from "../assets/blogsimg/pham-ngu-lao-3989110_1280.jpg";
 import blog12 from "../assets/blogsimg/marina-bay-of-singapore-2714866_1280.jpg";
 import blog13 from "../assets/blogsimg/temple-2033409_1280.jpg";
+import blog14 from "../assets/blogsimg/map-3578213_1920.jpg";
 
 const blogs = [
     {
       id: 1,  // Add unique IDs
       image: blog1,
       author: "Blog",
+      altText: "Best Travel Agents in Chennai",
       slug:"best-travel-agents-in-chennai",
       date: "September 27, 2024",
       category: "Tour Guide",
@@ -172,6 +174,18 @@ const blogs = [
       category: "Tour Guide",
       title: "Best Travel Agency in Chennai",
       text: "If you are one of those curious souls yearning for cosy and exquisite travel experiences that delight you or simply looking for a tour to refresh your body and soul, there are many destinations that our planet has to offer you...",
+      videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
+      isVideo: false,
+    },
+    {
+      id: 14,
+      image: blog14,
+      slug:"best-travel-agency-in-coimbatore",
+      author: "Blog",
+      date: "June 26, 2024",
+      category: "Tour Guide",
+      title: "Best Travel Agency in Coimbatore | Tour Operators in Coimbatore",
+      text: "Our Best travel agency in Coimbatore takes you to the greatest theme parks in the world.  Yes, you are about to enter Universal Studios in Singapore by booking our best tour...",
       videoLink: "https://www.youtube.com/watch?v=cQfIUPw72Dk",
       isVideo: false,
     },
