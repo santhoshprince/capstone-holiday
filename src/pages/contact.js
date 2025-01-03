@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import ContentSection from "../components/contentbg";
 import contact1 from "../assets/contactusimg/ship-5551818_1920.jpg";
 import icon1 from "../img/icon/location-dot2.svg";
@@ -6,12 +6,10 @@ import icon2 from "../img/icon/call.svg";
 import icon3 from "../img/icon/mail.svg";
 import icon4 from "../img/icon/location-dot3.svg";
 import contactbg from "../assets/contactusimg/paris-6803796_1920.jpg";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-  
 
 const ContactPage = () => {
   const ContactCard = ({ icon, title, details }) => (
@@ -43,21 +41,30 @@ const ContactPage = () => {
       message: "",
     });
     const [isLoading, setIsLoading] = useState(false);
-  
+
     const handleChange = (e) => {
       const { name, value } = e.target;
       setFormData({ ...formData, [name]: value });
     };
-  
+
     const handleSubmit = (e) => {
       e.preventDefault();
       setIsLoading(true);
-  
+
       emailjs
-        .send("service_bif7gwm", "template_xwbcuo6", formData, "w4j75NJ-TUnDCdPF8")
+        .send(
+          "service_bif7gwm",
+          "template_xwbcuo6",
+          formData,
+          "w4j75NJ-TUnDCdPF8"
+        )
         .then((response) => {
-          console.log("Email sent successfully!", response.status, response.text);
-  
+          console.log(
+            "Email sent successfully!",
+            response.status,
+            response.text
+          );
+
           toast.success("Your message has been sent successfully!", {
             position: "top-right",
             autoClose: 5000,
@@ -66,7 +73,7 @@ const ContactPage = () => {
             pauseOnHover: true,
             draggable: true,
           });
-  
+
           setFormData({ name: "", email: "", phone: "", message: "" });
         })
         .catch((error) => {
@@ -84,101 +91,109 @@ const ContactPage = () => {
           setIsLoading(false);
         });
     };
-  
+
     return (
       <>
-      <form onSubmit={handleSubmit} className="contact-form style2 ajax-contact">
-        <h3 className="sec-title mb-30 text-capitalize">Leave us your info</h3>
-        <h5>and we will get back to you</h5>
+        <form
+          onSubmit={handleSubmit}
+          className="contact-form style2 ajax-contact"
+        >
+          <h3 className="sec-title mb-30 text-capitalize">
+            Leave us your info
+          </h3>
+          <h5>and we will get back to you</h5>
 
-        <div className="row">
-          <div className="col-12 form-group">
-            <input
-              type="text"
-              className="form-control"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Full Name"
-              style={{ marginBottom: "20px" }}
-              required
-            />
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
+          <div className="row">
+            <div className="col-12 form-group">
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Full Name"
+                style={{ marginBottom: "20px" }}
+                required
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="col-12 form-group">
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div className="form-group col-12">
+              <textarea
+                name="message"
+                cols="30"
+                rows="3"
+                className="form-control"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <div className="form-btn col-12 mt-24">
+              <button type="submit" className="th-btn" disabled={isLoading}>
+                {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
+              </button>
+            </div>
           </div>
-          <div className="col-12 form-group">
-            <input
-              type="email"
-              className="form-control"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div className="form-group col-12">
-            <textarea
-              name="message"
-              cols="30"
-              rows="3"
-              className="form-control"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <div className="form-btn col-12 mt-24">
-            <button type="submit" className="th-btn" disabled={isLoading}>
-              {isLoading ? "Sending..." : <span>SUBMIT NOW</span>}
-            </button>
-          </div>
-        </div>
-      </form>
-      <ToastContainer />
-    </>
+        </form>
+        <ToastContainer />
+      </>
     );
   };
 
-  
   const seoData = {
-    title: 'Contact Us | Capstone Holidays Chennai | Coimbatore',
-    keywords: 'travel agency, tour operators, travel agent, velachery, chennai, tharamani, perungudi, palavakkam, thiruvanmiyur, madipakkam',
-    description: 'Contact our travel agency Capstone Holidays for customized and secured trips to make your dream trips to reality',
+    title: "Contact Us | Capstone Holidays Chennai | Coimbatore",
+    keywords:
+      "travel agency, tour operators, travel agent, velachery, chennai, tharamani, perungudi, palavakkam, thiruvanmiyur, madipakkam",
+    description:
+      "Contact our travel agency Capstone Holidays for customized and secured trips to make your dream trips to reality",
     schema: {
       "@context": "https://schema.org/",
       "@type": "WebSite",
-      "name": "Capstone Holidays",
-      "url": "https://www.capstoneholidays.in/contact-us/",
-      "potentialAction": {
+      name: "Capstone Holidays",
+      url: "https://www.capstoneholidays.in/contact-us/",
+      potentialAction: {
         "@type": "SearchAction",
-        "target": "https://www.capstoneholidays.in/contact-us/{search_term_string}",
-      "query-input": "required name=search_term_string"
-        }
-    }
-};
+        target:
+          "https://www.capstoneholidays.in/contact-us/{search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  };
   return (
     <>
-       <Helmet>
-                <title>{seoData.title}</title>
-                <meta name="description" content={seoData.description} />
-                <meta name="keywords" content={seoData.keywords} />
-                <script type="application/ld+json">
-                    {JSON.stringify(seoData.schema)}
-                </script>
-            </Helmet>
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.schema)}
+        </script>
+      </Helmet>
       <ContentSection
         heading={"CONTACT US"}
         children={""}
         backgroundImage={contactbg}
+        // altText="Contact"
       />
       <div className="space">
         <div className="container">
@@ -217,13 +232,14 @@ const ContactPage = () => {
               icon={icon1}
               title="Location - Coimbatore"
               details={[
-                "24A, Srinagar Rd, Peelamedu,",
-                "Chitra Nagar, Hope College,",
+                "Capstone Holidays Coimbatore - No. 58,",
+                "1 & Flat, Aishwaria Commercial Center,",
+                "Door No.42, 196 New, Thiruvenkatasamy Rd W, R.S. Puram,",
                 "Coimbatore, Tamil Nadu",
                 "641004",
               ]}
             />
-       
+
             <div className="col-md-6" style={{ paddingBottom: "20px" }}>
               <div className="contact-map style2">
                 <iframe
